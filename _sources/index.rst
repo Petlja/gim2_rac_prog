@@ -53,4 +53,6 @@
    test801.rst
    L802.rst
    test802.rst
+   L803.rst
+   test803.rst
 
