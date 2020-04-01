@@ -29,36 +29,36 @@ lekcije: # 5 tipova lekcija: section, html, pdf, video ili quiz. template svake 
   - tip: html 
     ime: Увод у процесирање низова података
     order: 
-    content: _build/L801.html
+    content: L801.html
     opis:
     alias: programiranje-lekcija1
   - tip: quiz
     ime: Teст 1
     order: 
-    content: _build/test801.html
+    content: test801.html
     opis: 2, 3, 3, 4
     alias: programiranje-test1
   - tip: html 
     ime: Бројачи и суме
     order: 
-    content: _build/L802.html
+    content: L802.html
     opis:
     alias: programiranje-lekcija2
   - tip: quiz
     ime: Teст 2
     order: 
-    content: _build/test802.html
+    content: test802.html
     opis: 0, 1, 3, 1, 3
     alias: programiranje-test2
   - tip: html 
     ime: Низови симбола (стрингови или ниске)
     order: 
-    content: _build/L803.html
+    content: L803.html
     opis:
     alias: programiranje-lekcija3
   - tip: quiz
     ime: Teст 3
     order: 
-    content: _build/test803.html
+    content: test803.html
     opis: 2, 0, igra, more, mira, program, banana
     alias: programiranje-test3
