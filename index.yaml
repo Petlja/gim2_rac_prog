@@ -1,6 +1,6 @@
 ime: Drugi razred srednje škole
 dBalias: drugi-masulovic
-logo: 6ologo.png
+logo: 2slogo.png
 nauciti:
   - Курс је намењен ученицима другог разреда средње школе и прати актуелан план наставе и учења.
     Циљ курса је да покажемо основне начине анализе низова података коришћењем библиотечке функционалности са фокусом на
@@ -10,7 +10,7 @@ nauciti:
 potrebno:
   - инсталиран Python
 linkovi:
-  - https://petlja.org/skola/osnovna/sedmi
+  - https://petlja.org/skola/osnovna/sedmi < Dodatni materijali
 sadrzaj:
   - Увод у процесирање низова података
   - Бројачи и суме
