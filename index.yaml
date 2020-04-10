@@ -74,3 +74,39 @@ lekcije: # 5 tipova lekcija: section, html, pdf, video ili quiz. template svake 
     content: test804.html
     opis: 3, 0, 1, 3, 3, 3
     alias: programiranje-test4
+  - tip: html
+    ime: Сортирање
+    order: 
+    content: L805.html
+    opis:
+    alias: programiranje-lekcija5
+  - tip: quiz
+    ime: Teст 5
+    order: 
+    content: test805.html
+    opis: 1, 2, 2, 1, 0, 1
+    alias: programiranje-test5
+  - tip: html
+    ime: Филтрирање и претраживање
+    order: 
+    content: L806.html
+    opis:
+    alias: programiranje-lekcija6
+  - tip: quiz
+    ime: Teст 6
+    order: 
+    content: test806.html
+    opis: 0, 1, 3, 1, 3, 0, 1
+    alias: programiranje-test6
+  - tip: html
+    ime: Рад са текстуалним датотекама
+    order: 
+    content: L807.html
+    opis:
+    alias: programiranje-lekcija7
+  - tip: quiz
+    ime: Teст 7
+    order: 
+    content: test807.html
+    opis: 0, hamlet, 1, 1, 1, 0, 2, 2
+    alias: programiranje-test7
