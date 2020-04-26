@@ -6,22 +6,35 @@ nauciti:
     Циљ курса је да покажемо основне начине анализе низова података коришћењем библиотечке функционалности са фокусом на
     израчунавање дужине низа података, израчунавање збира, просека (аритметичке средине), најмање и највеће вредности (минимума и максимума),
     сортирање података у неопадајућем и нерастућем редоследу, филтрирање (издвајање елемената низа који задовољавају дато својство)
-    и фреквенцијску анализу (одређивање броја појављивања разних вредности у низу).
+    и фреквенцијску анализу (одређивање броја појављивања разних вредности у низу). Све ове вештине биће показане у
+    два контекста -- програмирање у Пајтону и коришћење библиотечких функција у окружењу Џупитер.
+    у 
 potrebno:
-  - инсталиран Python
-linkovi:
-  - https://petlja.org/skola/osnovna/sedmi < Dodatni materijali
+  - инсталиран Пајтон (Python)
+  - инсталиран Џупитер (Jupyter)
 sadrzaj:
-  - Увод у процесирање низова података
-  - Бројачи и суме
-  - Стрингови
-  - Текстуалне датотеке
-  - Угнежђене петље
-  - Сортирање
-  - Филтрирање и претраживање
+  - Програмирање:
+  - 1. Увод у процесирање низова података
+  - 2. Бројачи и суме
+  - 3. Стрингови
+  - 4. Текстуалне датотеке
+  - 5. Угнежђене петље
+  - 6. Сортирање
+  - 7. Филтрирање и претраживање
+  - Рад са подацима у текстуалном програмском језику
+  - 1. Увод у Џупитер (Jupyter)
+  - 2. Низови података и линијски дијаграми
+  - 3. Хистограми и боје
+  - 4. Просек и медијана низа бројева
+  - 5. Фреквенцијска анализа и секторски дијаграми
+  - 6. Табеларно представљени подаци
+  - 7. Индексирање и транспоновање табеле
+  - 8. Модификације табеле и записивање табеле у датотеку
+  - 9. Сортирање, филтрирање и фреквенцијска анализа
+  - 10. Џупитер и Ексел
 lekcije: # 5 tipova lekcija: section, html, pdf, video ili quiz. template svake lekcije je isti.
   - tip: section 
-    ime: Садржај
+    ime: Програмирање
     order: 1 #kod sekcije postoji u suprotnom prazan, ako mozda iz nekog razloga zelite da promesate redosled sekcija dozvoljeno je. Neophodno je zapamtiti da sve lekcije koje se nalaze ispod neke sekcije pripadaju toj sekciji, sve do sledece sekcije. (nema duplog ugnjezdavanja)
     content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
     opis:
@@ -110,3 +123,123 @@ lekcije: # 5 tipova lekcija: section, html, pdf, video ili quiz. template svake 
     content: test807.html
     opis: 0, hamlet, 1, 1, 1, 0, 2, 2
     alias: programiranje-test7
+  - tip: section 
+    ime: Рад са подацима у текстуалном програмском језику
+    order: 2 #kod sekcije postoji u suprotnom prazan, ako mozda iz nekog razloga zelite da promesate redosled sekcija dozvoljeno je. Neophodno je zapamtiti da sve lekcije koje se nalaze ispod neke sekcije pripadaju toj sekciji, sve do sledece sekcije. (nema duplog ugnjezdavanja)
+    content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis:
+    alias: programiranje-jupyter
+  - tip: html
+    ime: Увод у Џупитер (Jupyter)
+    order: 
+    content: L2805.html
+    opis:
+    alias: programiranje-lekcija5b
+  - tip: html
+    ime: Низови података и линијски дијаграми
+    order: 
+    content: L2806.html
+    opis:
+    alias: programiranje-lekcija6b
+  - tip: quiz
+    ime: Teст 8
+    order: 
+    content: test2806.html
+    opis: 2, 1, 3, 0
+    alias: programiranje-test7b
+  - tip: html
+    ime: Хистограми и боје
+    order: 
+    content: L2807.html
+    opis:
+    alias: programiranje-lekcija7b
+  - tip: quiz
+    ime: Teст 9
+    order: 
+    content: test2807.html
+    opis: 1, 3, 2, 3
+    alias: programiranje-test6b
+  - tip: html
+    ime: Просек и медијана низа бројева
+    order: 
+    content: L2808.html
+    opis:
+    alias: programiranje-lekcija8b
+  - tip: quiz
+    ime: Teст 10
+    order: 
+    content: test2808.html
+    opis: 3, 0, 1, 2, 0, 1
+    alias: programiranje-test8b
+  - tip: html
+    ime: Фреквенцијска анализа и секторски дијаграми
+    order: 
+    content: L2809.html
+    opis:
+    alias: programiranje-lekcija9b
+  - tip: quiz
+    ime: Teст 11
+    order: 
+    content: test2809.html
+    opis: 3, 0, 3, 2
+    alias: programiranje-test9b
+  - tip: html
+    ime: Табеларно представљени подаци
+    order: 
+    content: L2810.html
+    opis:
+    alias: programiranje-lekcija10b
+  - tip: quiz
+    ime: Teст 12
+    order: 
+    content: test2810.html
+    opis: 2, 2, 1, 0, 1, 0
+    alias: programiranje-test10b
+  - tip: html
+    ime: Индексирање и транспоновање табеле
+    order: 
+    content: L2811.html
+    opis:
+    alias: programiranje-lekcija11b
+  - tip: quiz
+    ime: Teст 13
+    order: 
+    content: test2811.html
+    opis: 1, 3, 3, 3
+    alias: programiranje-test11b
+  - tip: html
+    ime: Модификације табеле и записивање табеле у датотеку
+    order: 
+    content: L2812.html
+    opis:
+    alias: programiranje-lekcija12b
+  - tip: quiz
+    ime: Teст 14
+    order: 
+    content: test2812.html
+    opis: 0, 2, 3, 3
+    alias: programiranje-test12b
+  - tip: html
+    ime: Сортирање, филтрирање и фреквенцијска анализа
+    order: 
+    content: L2813.html
+    opis:
+    alias: programiranje-lekcija13b
+  - tip: quiz
+    ime: Teст 15
+    order: 
+    content: test2813.html
+    opis: 0, 0, 2, 0, 4, 0, 3
+    alias: programiranje-test13b
+  - tip: html
+    ime: Џупитер и Ексел
+    order: 
+    content: L2814.html
+    opis:
+    alias: programiranje-lekcija14b
+  - tip: quiz
+    ime: Teст 16
+    order: 
+    content: test2814.html
+    opis: 3, 2, 3, 3
+    alias: programiranje-test14b
