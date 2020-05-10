@@ -211,7 +211,7 @@
            i += 1
            if y == x: n = i
        return n
-	
+       
    # Провера
    B = ["ovo", "ono", "oko", "oro", "era", "rad", "dar", "oko", "era", "ono"]
    print(posl_pojav("oko", B))

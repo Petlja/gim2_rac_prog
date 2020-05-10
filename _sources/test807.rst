@@ -22,10 +22,10 @@
    
    .. code-block:: text
       
-	  hamlet.txt
-	  iliad.txt
-	  poema.txt
-	  
+      hamlet.txt
+      iliad.txt
+      poema.txt
+      
    Који стринг треба корисник да унесе у следећи Пајтон програм да би он пребројао редове у датотеци ``hamlet.txt``?
    
    .. code-block:: python

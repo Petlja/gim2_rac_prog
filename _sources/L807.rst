@@ -285,7 +285,7 @@ VIEWES). Врста
    prvi_red = True
    for red in f:
        if prvi_red:
-	       prvi_red = False
+           prvi_red = False
        else:
            s = red.split(",")
            if int(s[3]) > br_vid:
@@ -301,7 +301,7 @@ VIEWES). Врста
 
 .. code-block:: python
 
-	f = open("pesmica.txt", "w")
+    f = open("pesmica.txt", "w")
 
 или овако:
 

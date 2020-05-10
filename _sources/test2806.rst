@@ -28,7 +28,7 @@
    .. code-block:: python
 
       import matplotlib.pyplot as plt
-	  
+      
    требало позвати функцију `plot` из библиотеке `matplotlib.pyplot`?
 
 

@@ -78,7 +78,7 @@
    .. code-block:: python
 
       L = [1, 2, 3]
-	  L.append(0)
+      L.append(0)
 
 .. mchoice:: Тест6_Питање5
    :answer_a: [0, 0, 1]

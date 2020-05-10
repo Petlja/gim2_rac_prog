@@ -190,10 +190,10 @@
 
 .. activecode:: primer4-8
 
-   for a in range(9):
-       for b in range(9):
-           for c in range(9):
-               for d in range(9):
+   for a in range(10):
+       for b in range(10):
+           for c in range(10):
+               for d in range(10):
                    if 1000*a + 100*b + 10*c + d == (a + b + c + d)**3:
                        print(1000*a + 100*b + 10*c + d)
    
@@ -203,7 +203,7 @@
 .. code-block:: text
 
      Ime Pol Starost Masa Visina
- --------------------------------	 
+ --------------------------------
      Ana  ž    13     46    160
    Bojan  m    14     52    165
    Vlada  m    13     47    157
@@ -235,7 +235,7 @@
              ["Ivana",   "ž", 13, 45, 158],
              ["Jasna",   "ž", 14, 51, 162]]
    
-(Ако извршиш ову наредбу неће се десити ништа: систем ће само наведен податке спремити у променљиву ``razred``.)
+(Ако извршиш ову наредбу неће се десити ништа: систем ће само наведене податке спремити у променљиву ``razred``.)
 
 Као и у већини модерних програмских језика, индекси елемената низа у Пајтону почињу од нуле. Зато је:
 
@@ -293,6 +293,7 @@
    for ucenik in razred:
        if ucenik[1] == "ž" and ucenik[4] > visina:
            ime = ucenik[0]
+           visina = ucenik[4]
    print("Najvisa devojcica je", ime)
 
 

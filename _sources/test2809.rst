@@ -15,7 +15,7 @@
    .. code-block:: python
 
       ocene = [3, 4, 5, 4, 5, 3, 4, 5, 2, 4, 5, 4, 5, 4, 2, 3, 1, 4, 5, 4, 3, 2, 3, 4, 5, 4, 5, 5, 4, 3]
-	  for i in [5, 4, 3, 2, 1]:
+      for i in [5, 4, 3, 2, 1]:
           print("Ocenu", i, "ima", ocene.count(i), "ucenika")
 
 .. mchoice:: Тест29_Питање2

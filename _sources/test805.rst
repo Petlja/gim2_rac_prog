@@ -17,7 +17,7 @@
    .. code-block:: python
 
       L = [5, 1, 6, 2, 3, 0]
-	  L.sort()
+      L.sort()
 
 .. mchoice:: Тест5_Питање2
    :answer_a: [5, 1, 6, 2, 3, 0], тј. ништа се неће променити.
@@ -35,7 +35,7 @@
    .. code-block:: python
 
       L = [5, 1, 6, 2, 3, 0]
-	  L.sort(reverse=True)
+      L.sort(reverse=True)
 
 .. mchoice:: Тест5_Питање3
    :answer_a: ["Ана", "Боки", "Цеца", "Деки"]
@@ -53,7 +53,7 @@
    .. code-block:: python
 
       L = ["Ана", "Боки", "Цеца", "Деки"]
-	  L.sort(reverse=True)
+      L.sort(reverse=True)
 
 .. mchoice:: Тест5_Питање4
    :answer_a: [6, 5, 4, 1, 2, 3]

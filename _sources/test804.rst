@@ -17,8 +17,8 @@
    .. code-block:: python
 
       for i in range(3):
-	      for j in range(4):
-		      print("Zdravo!")
+          for j in range(4):
+              print("Zdravo!")
 
 .. mchoice:: Тест4_Питање2
    :answer_a: 1 ред
@@ -36,8 +36,8 @@
    .. code-block:: python
 
       for i in range(3):
-	      for j in range(4):
-		      print("Zdravo!", end="")
+          for j in range(4):
+              print("Zdravo!", end="")
 
 .. mchoice:: Тест4_Питање3
    :answer_a: 1 ред

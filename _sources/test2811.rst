@@ -98,6 +98,6 @@
       tabela = pd.DataFrame(podaci)
       tabela.columns=["Ime", "Pol", "Starost", "Masa", "Visina"]
       tabela1=tabela.set_index("Ime")
-	  tabela2=tabela1.T
+      tabela2=tabela1.T
 
    па означи исказ који садржи навише тачних информација (*само један*):
