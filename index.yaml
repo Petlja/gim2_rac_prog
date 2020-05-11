@@ -12,6 +12,7 @@ nauciti:
 potrebno:
   - инсталиран Пајтон (Python)
   - инсталиран Џупитер (Jupyter)
+linkovi: #opciono
 sadrzaj:
   - Програмирање:
   - 1. Увод у процесирање низова података
