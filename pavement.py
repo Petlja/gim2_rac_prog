@@ -23,10 +23,10 @@ options(
 
     build = Bunch(
         builddir="./_build",
-        sourcedir="_sources",
+        sourcedir="_intermediate",
         outdir="./_build",
         confdir=".",
-        project_name = "VODIC-FINAL",
+        project_name = "Настава програмирања за Други разред гимназије",
 
         # leave template_args empty, use html_context from conf.py
         template_args= {}

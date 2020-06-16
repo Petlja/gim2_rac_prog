@@ -100,10 +100,12 @@
 
 {%- block content %}
 {{ navBar() }}
-
+<div style="margin-left: 50%;margin-top: 5%;font-size: 20px;">
+  {{ sidebar()}}
+  </div>
 <div class="container col-md-12" id="continue-reading"></div>
 
-<div class="container col-md-8 col-md-offset-2" id="main-content">
+<div class="container col-md-10 col-md-offset-2" id="main-content" style="margin-top: 70px;">
   {% block body %}{% endblock %}
   {% block nextprevious %}
       {% include "subchapter.html" %}
