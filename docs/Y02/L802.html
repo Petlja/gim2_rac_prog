@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Бројачи и суме &#8212; Petlja - Настава програмирања за Други разред гимназије</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/runestonebase.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../_static/jquery-fix.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/waypoints.min.js"></script>
+    <script src="../_static/rangy-core.js"></script>
+    <script src="../_static/rangy-textrange.js"></script>
+    <script src="../_static/rangy-cssclassapplier.js"></script>
+    <script src="../_static/user-highlights.js"></script>
+    <script src="../_static/jquery.idle-timer.js"></script>
+    <script src="../_static/processing-1.4.1.min.js"></script>
+    <script src="../_static/jquery.hotkey.js"></script>
+    <script src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Тест" href="test802.html" />
+    <link rel="prev" title="Лекција 22." href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'Настава програмирања за Други разред гимназије';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'Настава програмирања за Други разред гимназије';
+  eBookConfig.runestone_version = '3.1.1';
+  eBookConfig.imagesDir = '../_images/';
+  eBookConfig.staticDir = '../_static/';
+  if(typeof(Sk) != "undefined")
+      Sk.imgPath = eBookConfig.imagesDir;
+</script>
+
+<div id="fb-root"></div>
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <img src="../_static/img/logo.png" style="width:80px; height: 80px;"> 
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 10px; margin-left: 25px;">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../">Petlja - Настава програмирања за Други разред гимназије</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="margin-left: 50%;margin-top: 5%;font-size: 20px;">
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../J01/index.html">IPYTHON DIRECTIVE DEBUG</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../J01/J01.html">JUPYTER TEST</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E01/index.html">Лекција 1.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E01/E01.html">Увод у рад са програмима за табеларна израчунавања</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E01/testE01.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E02/index.html">Лекција 2.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E02/E02.html">Аутоматска рекалкулација</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E02/testE02.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E03/index.html">Лекција 3.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E03/E03.html">Селектовање групе ћелија и уређивање табеле</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E03/testE03.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E04/index.html">Лекција 4.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E04/E04.html">Разне врсте података у табели</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E04/testE04.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E05/index.html">Лекција 5.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E05/E05.html">Штампање и генерисање ПДФ документа</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E05/testE05.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E06/index.html">Лекција 6.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E06/E06.html">Апсолутне и релативне адресе ћелија</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E06/testE06.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E07/index.html">Лекција 7.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E07/E07.html">Визуелизација података</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E07/testE07.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E08/index.html">Лекција 8.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E08/E08.html">Сортирање, филтрирање и фреквенцијска анализа</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E08/testE08.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E09/index.html">Лекција 9.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E09/E09.html">Више табела у истом документу</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E09/testE09.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E10/index.html">Лекција 10.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E10/E10.html">Рад са дељеним табелама</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E10/testE10.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y01/index.html">Лекција 21.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y01/L801.html">Увод у процесирање низова података</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y01/test801.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Лекција 22.</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Бројачи и суме</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test802.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y03/index.html">Лекција 23.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y03/L803.html">Низови симбола (<em>стрингови</em> или <em>ниске</em>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y03/test803.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y04/index.html">Лекција 24.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y04/L804.html">Угнежђене петље</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y04/test804.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y05/index.html">Лекција 25.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y05/L805.html">Сортирање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y05/test805.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y06/index.html">Лекција 26.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y06/L806.html">Филтрирање и претраживање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y06/test806.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y07/index.html">Лекција 27.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y07/L807.html">Рад са текстуалним датотекама</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y07/test807.html">Тест</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+  </div>
+<div class="container col-md-12" id="continue-reading"></div>
+
+<div class="container col-md-10 col-md-offset-2" id="main-content" style="margin-top: 70px;">
+  
+  <div class="system-message" id="id1">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">&lt;rst_prolog&gt;</span>, line 3)</p>
+<p>Unknown interpreted text role „blank”.</p>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">&lt;rst_prolog&gt;</span>, line 3)</p>
+<p>Substitution definition contains illegal element &lt;problematic&gt;:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;problematic ids=&quot;id2&quot; refid=&quot;id1&quot;&gt;
+    :blank:`x`
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. |blank| replace:: :blank:`x`
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h1>Бројачи и суме<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h1>
+<p>У овој лекцији</p>
+<ol class="arabic simple">
+<li><p>уводимо појам бројача,</p></li>
+<li><p>показујемо како се рачунају суме, и</p></li>
+<li><p>то знање примењујемо на проблем рачунања просека низа бројева.</p></li>
+</ol>
+<div class="section" id="id4">
+<h2>Бројач<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>Често је потребно да пребројимо колико у низу има елемената који имају неку особину.
+Стандардни начин да се ова врста проблема реши је да се једна променљива задужи за
+посао бројања и онда се она зове <em>бројач</em>.</p>
+<div class="section" id="id5">
+<h3>Пример.<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>Написати Пајтон функцију <code class="docutils literal notranslate"><span class="pre">prebroj_petice</span></code> која у датом списку оцена броји петице. На пример,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">prebroj_petice</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>треба да врати 3 зато што наведени списак оцена садржи три петице.</p>
+<p><em>Решење.</em></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">prebroj_petice</span><span class="p">(</span><span class="n">spisak</span><span class="p">):</span>
+    <span class="n">broj</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">ocena</span> <span class="ow">in</span> <span class="n">spisak</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">ocena</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span> <span class="n">broj</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">broj</span>
+</pre></div>
+</div>
+<p>Функција <code class="docutils literal notranslate"><span class="pre">prebroj_petice</span></code> прими списак оцена у коме треба да преброји петице и онда се понаша овако.</p>
+<ol class="arabic simple">
+<li><p>Променљива <code class="docutils literal notranslate"><span class="pre">broj</span></code> ће бројати петице. Пошто још нисмо кренули са провером оцена, постављамо њену вредност на 0 (за сада нисмо наишли ни на једну петицу).</p></li>
+<li><p>Наредбом <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">ocena</span> <span class="pre">in</span> <span class="pre">spisak:</span></code> пролазимо кроз <code class="docutils literal notranslate"><span class="pre">spisak</span></code> тако што променљива <code class="docutils literal notranslate"><span class="pre">ocena</span></code> редом узима вредности које су наведене на списку. Према томе, за сваку оцену са списка ћемо проверити да ли је једнака са 5, и ако јесте увећаћемо вредност променљиве <code class="docutils literal notranslate"><span class="pre">broj</span></code>.</p></li>
+<li><p>На крају враћамо вредност променљиве <code class="docutils literal notranslate"><span class="pre">broj</span></code> као резултат рада функције.</p></li>
+</ol>
+<p>Да погледамо како функција ради:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y02/L802.rst</span>, line 46)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer2</span><span class="o">-</span><span class="mi">1</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="k">def</span> <span class="nf">prebroj_petice</span><span class="p">(</span><span class="n">spisak</span><span class="p">):</span>
+       <span class="n">broj</span> <span class="o">=</span> <span class="mi">0</span>
+       <span class="k">for</span> <span class="n">ocena</span> <span class="ow">in</span> <span class="n">spisak</span><span class="p">:</span>
+           <span class="k">if</span> <span class="n">ocena</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span> <span class="n">broj</span> <span class="o">+=</span> <span class="mi">1</span>
+       <span class="k">return</span> <span class="n">broj</span>
+
+   <span class="nb">print</span><span class="p">(</span><span class="n">prebroj_petice</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">]))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id6">
+<h3>Пример.<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>Написати Пајтон функцију <code class="docutils literal notranslate"><span class="pre">prebroj_ocene</span></code> која броји колико пута се у датом списку оцена појављује дата оцена.
+На пример,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">prebroj_ocene</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="mi">4</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>треба да врати 1 зато што наведени списак оцена садржи само једну четворку.</p>
+<p><em>Решење.</em></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">prebroj_ocene</span><span class="p">(</span><span class="n">spisak</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+    <span class="n">broj</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">ocena</span> <span class="ow">in</span> <span class="n">spisak</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">ocena</span> <span class="o">==</span> <span class="n">n</span><span class="p">:</span> <span class="n">broj</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">broj</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id7">
+<h3>Пример*.<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>Написати Пајтон функцију <code class="docutils literal notranslate"><span class="pre">prebroj_cifre</span></code> која за дати позитиван цео број утврђује колико он има цифара. На пример,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">prebroj_cifre</span><span class="p">(</span><span class="mi">12487</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>треба да врати 5 зато што број 12487 има 5 цифара.</p>
+<p><em>Решење.</em></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">prebroj_cifre</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">br_cif</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">br_cif</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="n">n</span> <span class="o">//=</span> <span class="mi">10</span>
+    <span class="k">return</span> <span class="n">br_cif</span>
+</pre></div>
+</div>
+<p>Идеја програма је следећа.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">све</span> <span class="n">док</span> <span class="n">број</span> <span class="s2">&quot;има још цифара&quot;</span><span class="p">:</span>
+    <span class="n">увећај</span> <span class="n">број</span> <span class="n">цифара</span> <span class="n">за</span> <span class="mi">1</span>
+    <span class="s2">&quot;откини&quot;</span> <span class="n">последњу</span> <span class="n">цифру</span> <span class="n">броја</span>
+</pre></div>
+</div>
+<p>Условом <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">&gt;</span> <span class="pre">0</span></code> проверавамо да ли је остала још нека цифра у броју,
+док командом <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">//=</span> <span class="pre">10</span></code> „откинемо” последњу цифру броја. Ево примера:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y02/L802.rst</span>, line 112)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer2</span><span class="o">-</span><span class="mi">2</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="n">n</span> <span class="o">=</span> <span class="mi">12487</span>
+   <span class="n">n</span> <span class="o">//=</span> <span class="mi">10</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>Ето: „откинули” смо последњу цифру броја <em>n</em>. Да пробамо да „откинемо” последње две цифре броја <em>n</em>:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y02/L802.rst</span>, line 121)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer2</span><span class="o">-</span><span class="mi">3</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="n">n</span> <span class="o">=</span> <span class="mi">12487</span>
+   <span class="n">n</span> <span class="o">//=</span> <span class="mi">10</span>
+   <span class="n">n</span> <span class="o">//=</span> <span class="mi">10</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>Дакле, у сваком пролази кроз петљу броју <em>n</em> (крволочно) „откинемо” по једну цифру, па када падне на нулу знамо да смо му откинули све цифре, и тако смо сигурни да смо их све и пребројали.</p>
+<p>Да проверимо функцију:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y02/L802.rst</span>, line 133)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer2</span><span class="o">-</span><span class="mi">4</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="k">def</span> <span class="nf">prebroj_cifre</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+       <span class="n">br_cif</span> <span class="o">=</span> <span class="mi">0</span>
+       <span class="k">while</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+           <span class="n">br_cif</span> <span class="o">+=</span> <span class="mi">1</span>
+           <span class="n">n</span> <span class="o">//=</span> <span class="mi">10</span>
+       <span class="k">return</span> <span class="n">br_cif</span>
+
+   <span class="nb">print</span><span class="p">(</span><span class="n">prebroj_cifre</span><span class="p">(</span><span class="mi">12487</span><span class="p">))</span>
+
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id8">
+<h3>Пример.<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>Подсетимо се да уграђена функција <code class="docutils literal notranslate"><span class="pre">len</span></code> одређује број елемената у низу. Она се може испрограмирати овако (мада је, наравно, увек ефикасније позвати уграђену функцију):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">duzina_niza</span><span class="p">(</span><span class="n">niz</span><span class="p">):</span>
+    <span class="n">broj</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">niz</span><span class="p">:</span>
+        <span class="n">broj</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">broj</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id9">
+<h2>Збир елемената низа<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<p>Често је потребно сабрати елементе неког низа бројева, што можемо урадити следећом Пајтон функцијом:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">saberi</span><span class="p">(</span><span class="n">L</span><span class="p">):</span>
+    <span class="n">zbir</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">L</span><span class="p">:</span>
+        <span class="n">zbir</span> <span class="o">+=</span> <span class="n">x</span>
+    <span class="k">return</span> <span class="n">zbir</span>
+</pre></div>
+</div>
+<p>Функција <code class="docutils literal notranslate"><span class="pre">saberi</span></code> прими низ бројева који треба сабрати и ради овако.</p>
+<ol class="arabic simple">
+<li><p>Променљива <code class="docutils literal notranslate"><span class="pre">zbir</span></code> ће полако акумулирати збир. Пошто још нисмо кренули са сабирањем, постављамо њену вредност на 0.</p></li>
+<li><p>Наредбом <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">x</span> <span class="pre">in</span> <span class="pre">L:</span></code> пролазимо кроз низ <code class="docutils literal notranslate"><span class="pre">L</span></code> тако што променљива <code class="docutils literal notranslate"><span class="pre">x</span></code> редом узима вредности које су наведене у низу. Тако постижемо да елементе низа, један по један, додајемо на збир <code class="docutils literal notranslate"><span class="pre">zbir</span></code>.</p></li>
+<li><p>На крају враћамо вредност променљиве <code class="docutils literal notranslate"><span class="pre">zbir</span></code> као резултат рада функције.</p></li>
+</ol>
+<p>Да погледамо како функција ради:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y02/L802.rst</span>, line 181)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer2</span><span class="o">-</span><span class="mi">5</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="k">def</span> <span class="nf">saberi</span><span class="p">(</span><span class="n">L</span><span class="p">):</span>
+       <span class="n">zbir</span> <span class="o">=</span> <span class="mi">0</span>
+       <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">L</span><span class="p">:</span>
+           <span class="n">zbir</span> <span class="o">+=</span> <span class="n">x</span>
+       <span class="k">return</span> <span class="n">zbir</span>
+
+   <span class="nb">print</span><span class="p">(</span><span class="n">saberi</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">6</span><span class="p">]))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id10">
+<h3>Пример.<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>Милица добија џепарац који је сваког месеца исти. За следећи месец Милица је испланирала низ трошкова.
+Написати Пајтон функцију <code class="docutils literal notranslate"><span class="pre">dzeparac_je_dovoljan</span></code> која проверава да ли ће Милица моћи да својим џепарцем
+покрије све планиране трошкове. Функција треба да прими два податка: висину њеног џепарца и списак трошкова,
+и треба да испише поруку о томе да ли су њени планови реални. Функција не враћа никакву вредност.</p>
+<p>На пример,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">dzeparac_je_dovoljan</span><span class="p">(</span><span class="mi">1500</span><span class="p">,</span> <span class="p">[</span><span class="mi">250</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>треба да испише:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Dzeparac</span> <span class="n">je</span> <span class="n">dovoljan</span>
+</pre></div>
+</div>
+<p>док</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">dzeparac_je_dovoljan</span><span class="p">(</span><span class="mi">1500</span><span class="p">,</span> <span class="p">[</span><span class="mi">250</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>треба да испише:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Dzeparac</span> <span class="n">NIJE</span> <span class="n">dovoljan</span>
+</pre></div>
+</div>
+<p><em>Решење.</em></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">dzeparac_je_dovoljan</span><span class="p">(</span><span class="n">dzeparac</span><span class="p">,</span> <span class="n">troskovi</span><span class="p">):</span>
+    <span class="n">ukupni_troskovi</span> <span class="o">=</span> <span class="n">saberi</span><span class="p">(</span><span class="n">troskovi</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">dzeparac</span> <span class="o">&gt;=</span> <span class="n">ukupni_troskovi</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dzeparac je dovoljan&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dzeparac NIJE dovoljan&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Да видимо како функција ради:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y02/L802.rst</span>, line 237)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer2</span><span class="o">-</span><span class="mi">6</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="k">def</span> <span class="nf">saberi</span><span class="p">(</span><span class="n">L</span><span class="p">):</span>
+       <span class="n">zbir</span> <span class="o">=</span> <span class="mi">0</span>
+       <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">L</span><span class="p">:</span>
+           <span class="n">zbir</span> <span class="o">+=</span> <span class="n">x</span>
+       <span class="k">return</span> <span class="n">zbir</span>
+
+   <span class="k">def</span> <span class="nf">dzeparac_je_dovoljan</span><span class="p">(</span><span class="n">dzeparac</span><span class="p">,</span> <span class="n">troskovi</span><span class="p">):</span>
+       <span class="n">ukupni_troskovi</span> <span class="o">=</span> <span class="n">saberi</span><span class="p">(</span><span class="n">troskovi</span><span class="p">)</span>
+       <span class="k">if</span> <span class="n">dzeparac</span> <span class="o">&gt;=</span> <span class="n">ukupni_troskovi</span><span class="p">:</span>
+           <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dzeparac je dovoljan&quot;</span><span class="p">)</span>
+       <span class="k">else</span><span class="p">:</span>
+           <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dzeparac NIJE dovoljan&quot;</span><span class="p">)</span>
+
+   <span class="n">dzeparac_je_dovoljan</span><span class="p">(</span><span class="mi">1500</span><span class="p">,</span> <span class="p">[</span><span class="mi">250</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">])</span>
+
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id11">
+<h3>Напомена.<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<p>Подсетимо се да уграђена функција <code class="docutils literal notranslate"><span class="pre">sum</span></code> одређује збир елемената у низу, попут функције <code class="docutils literal notranslate"><span class="pre">saberi</span></code>
+коју смо видели раније. Наравно, увек је ефикасније позвати уграђену функцију него нашу функцију.</p>
+</div>
+</div>
+<div class="section" id="id12">
+<h2>Просек елемената низа<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<p>Да се подсетимо, <em>просек</em> низа бројева се рачуна овако:</p>
+<div class="math notranslate nohighlight">
+\[\hbox{просек низа } [x_1, x_2, \dots, x_n] = \frac{x_1 + x_2 + \dots + x_n}{n}.\]</div>
+<p>Дакле, да бисмо добили просек низа бројева саберемо све елементе низа и тако добијени број поделимо дужином низа.</p>
+<p>У Пајтону се обе ове активности могу обавити позивом одговарајуће уграђене функције: функција <code class="docutils literal notranslate"><span class="pre">len</span></code>
+рачуна дужину низа, док функција <code class="docutils literal notranslate"><span class="pre">sum</span></code> рачуна збир елемената низа бројева.
+Како ћемо у много наврата рачунати просек, показаћемо како се дефинише функција која га рачуна:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">prosek</span><span class="p">(</span><span class="n">L</span><span class="p">):</span>
+    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">L</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="section" id="id13">
+<h3>Пример.<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<p>Мирко из музичког има 5, 4, 5 и још једну оцену која се не види јер се преко ње разлило мастило.
+Просек његових оцена из музичког је 4. Која је то оцена преко које се разлило мастило?</p>
+<p><em>Решење.</em> Испробаћемо разне могућности:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y02/L802.rst</span>, line 292)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer2</span><span class="o">-</span><span class="mi">7</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="k">def</span> <span class="nf">prosek</span><span class="p">(</span><span class="n">L</span><span class="p">):</span>
+       <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">L</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
+
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Prvi pokusaj:&quot;</span><span class="p">,</span>    <span class="n">prosek</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span>  <span class="mi">5</span><span class="p">]))</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Drugi pokusaj:&quot;</span><span class="p">,</span>   <span class="n">prosek</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span>  <span class="mi">4</span><span class="p">]))</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Treci pokusaj:&quot;</span><span class="p">,</span>   <span class="n">prosek</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span>  <span class="mi">3</span><span class="p">]))</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Cetvrti pokusaj:&quot;</span><span class="p">,</span> <span class="n">prosek</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span>  <span class="mi">2</span><span class="p">]))</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Peti pokusaj:&quot;</span><span class="p">,</span>    <span class="n">prosek</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span>  <span class="mi">1</span><span class="p">]))</span>
+</pre></div>
+</div>
+</div>
+<p>Која је то оцена?</p>
+</div>
+</div>
+<div class="section" id="id14">
+<h2>Задаци<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id15">
+<h3>Задатак 1.<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<p>Напиши Пајтон функцију <code class="docutils literal notranslate"><span class="pre">broj_pozitivnih</span></code> која утврђује колико у датом низу има позитивних бројева. На пример,
+<code class="docutils literal notranslate"><span class="pre">broj_pozitivnih([2,</span> <span class="pre">-1,</span> <span class="pre">3,</span> <span class="pre">0,</span> <span class="pre">-5,</span> <span class="pre">1,</span> <span class="pre">9])</span></code> треба да врати 4.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y02/L802.rst</span>, line 315)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: zadatak2-1
+   :coach:
+
+   def broj_pozitivnih(L):
+       ???
+
+   # Провера
+   print(broj_pozitivnih([1, 2, 3, 4]))
+   print(broj_pozitivnih([-1, -2, -3, -4]))
+   print(broj_pozitivnih([2, -1, 3, 0, -5, 1, 9]))
+
+
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id16">
+<h3>Задатак 2.<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<p>Написати Пајтон функцију <code class="docutils literal notranslate"><span class="pre">broj_prestupnih</span></code> која прими две године и утврди колико преступних година има у
+наведеном интервалу. На пример, <code class="docutils literal notranslate"><span class="pre">broj_prestupnih(1987,</span> <span class="pre">2019)</span></code> треба да врати 8.
+У томе ће ти помоћи функција <code class="docutils literal notranslate"><span class="pre">prestupna_godina</span></code> која проверава да ли је година преступна.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y02/L802.rst</span>, line 335)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: zadatak2-2
+   :coach:
+
+   def prestupna_godina(g):
+       if g % 400 == 0 or (g % 100 != 0 and g % 4 == 0):
+           return True
+       else:
+           return False
+
+   def broj_prestupnih(g1, g2):
+       ???
+
+   # Провера
+   print(broj_prestupnih(1987, 2019))
+   print(broj_prestupnih(2019, 2021))
+   print(broj_prestupnih(1997, 2003))
+
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id17">
+<h3>Задатак 3.<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+<p>Напиши функцију <code class="docutils literal notranslate"><span class="pre">prebroj_max(A)</span></code> која утврђује колико пута се у датом низу бројева појављује највећа вредност низа.
+(Напомена: највећи елемент низа се може израчунати помоћу функције <code class="docutils literal notranslate"><span class="pre">max</span></code>.)</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y02/L802.rst</span>, line 359)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: zadatak2-3
+   :coach:
+
+   def prebroj_max(A):
+       ???
+
+   # Провера
+   print(prebroj_max([1, 2, 3, 2, 3, 3, 3]))
+   print(prebroj_max([0, 0, 0]))
+   print(prebroj_max([5]))
+
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id18">
+<h3>Задатак 4.<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
+<p>Напиши функцију <code class="docutils literal notranslate"><span class="pre">zbir_cifara</span></code> која рачуна збир цифара датог позитивног целог броја. На пример,
+<code class="docutils literal notranslate"><span class="pre">zbir_cifara(12487)</span></code> треба да врати 22.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y02/L802.rst</span>, line 377)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: zadatak2-4
+   :coach:
+
+   def zbir_cifara(n):
+       ???
+
+   # Провера
+   print(zbir_cifara(2573))
+   print(zbir_cifara(9))
+
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id19">
+<h3>Задатак 5*.<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<p><em>Судбински број</em> неке особе се добија овако:</p>
+<ol class="arabic simple">
+<li><p>Запишемо датум рођења те особе као један низ цифара, на пример: 15. мај 2001. –&gt; 15052001</p></li>
+<li><p>Саберемо цифре тог броја.</p></li>
+<li><p>Ако смо добили једноцифрени број, то је судбински број особе.</p></li>
+<li><p>Ако нисмао добили једноцифренi број саберемо цифре добијеног броја, и тако све док не добијемо једноцифрени број.</p></li>
+</ol>
+<p><strong>Важна напомена!</strong> Ово је само вежбица из програмирања у Пајтону. Немојте придавати никакав значај добијеном броју! Нумерологија је изашла из моде пре око хиљаду година.</p>
+<p><em>(а)</em> Израчунај свој судбински број користећи функцију <cite>zbir_cifara</cite> из претходног задатка.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y02/L802.rst</span>, line 403)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: zadatak2-5а
+   :coach:
+
+   def zbir_cifara(n):
+       # овде ископирај функцију zbir_cifara из претxодног задатка
+
+   # уместо три упитника унеси број који одговара твом датуму рођења
+   print(zbir_cifara(???))
+
+   # понови поступак ако ниси добио једноцифрени број
+</pre></div>
+</div>
+</div>
+<p><em>(б)</em> Напиши функцију <code class="docutils literal notranslate"><span class="pre">sudbinski_broj</span></code> која рачуна судбински број неке особе на основу броја који одговара њеном датуму рођења.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y02/L802.rst</span>, line 416)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: zadatak2-5b
+   :coach:
+
+   def zbir_cifara(n):
+       # овде ископирај функцију zbir_cifara из претxодног задатка
+
+   def sudbinski_broj(n):
+       ???
+
+   # Провера
+   print(sudbinski_broj(10102010))
+   print(sudbinski_broj(29091999))
+   # уместо три упитника унеси број који одговара твом датуму рођења
+   # и упореди са резултатом под (а)
+   print(sudbinski_broj(???))
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id20">
+<h3>Задатак 6*.<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Милorad у дневнику има неколико оцена из информатике. Напиши Пајтон функцију <code class="docutils literal notranslate"><span class="pre">koliko_do_odlicnog_uspeha</span></code>
+која прима низ Милорадових оцена и онда одређује који је најмањи број петица које Милорад треба да добије из информатике
+да би наставник морао да му закључи 5. (Према Правилнику о оцењивању, наставник мора да закључи оцену 5
+ученику чији просек оцена је барем 4,50.)</p>
+<p>На пример, <code class="docutils literal notranslate"><span class="pre">koliko_do_odlicnog_uspeha([3,3])</span></code> треба да врати 6 јер је (3 + 3 + 5 + 5 + 5 + 5 + 5 + 5) / 8 = 4,50.</p>
+</div></blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y02/L802.rst</span>, line 442)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: zadatak2-6
+   :coach:
+
+   def prosek(A):
+       return sum(A) / len(A)
+
+   def koliko_do_odlicnog_uspeha(A):
+       ???
+
+   # Провера
+   print(koliko_do_odlicnog_uspeha([4]))
+   print(koliko_do_odlicnog_uspeha([4, 4]))
+   print(koliko_do_odlicnog_uspeha([3, 3]))
+   print(koliko_do_odlicnog_uspeha([5, 5, 5]))
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+  
+      <div class="col-md-12">
+<ul class="pager">
+    <li id="relations-prev" title='Previous chapter - Лекција 22.' data-toggle="tooltip"><a href="index.html"><i class="fas fa-arrow-left"></i></a></li>
+    
+        <li id="relations-next" title='Next chapter - Тест' data-toggle="tooltip"><a href="test802.html"><i class="fas fa-arrow-right"></i></a></li>
+</ul>
+
+<!-- <ul class="pager"> -->
+    <!-- -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Лекција 22.' data-toggle="tooltip"><a href="index.html">Претходно поглавље</a></li> -->
+    <!--  -->
+    <!-- -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Тест' data-toggle="tooltip"><a href="test802.html">Следеће поглавље</a></li> -->
+    <!-- -->
+<!-- </ul> -->
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+</div>
+  
+</div>
+<footer class="footer col-md-12">
+    <div class="container">
+        <div class="text-center">
+            <hr>
+            <p class="text-muted">
+                <span class="pull-left">&copy; 2019 Petlja (Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

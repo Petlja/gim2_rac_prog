@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Угнежђене петље &#8212; Petlja - Настава програмирања за Други разред гимназије</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/runestonebase.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../_static/jquery-fix.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/waypoints.min.js"></script>
+    <script src="../_static/rangy-core.js"></script>
+    <script src="../_static/rangy-textrange.js"></script>
+    <script src="../_static/rangy-cssclassapplier.js"></script>
+    <script src="../_static/user-highlights.js"></script>
+    <script src="../_static/jquery.idle-timer.js"></script>
+    <script src="../_static/processing-1.4.1.min.js"></script>
+    <script src="../_static/jquery.hotkey.js"></script>
+    <script src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Тест" href="test804.html" />
+    <link rel="prev" title="Лекција 24." href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'Настава програмирања за Други разред гимназије';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'Настава програмирања за Други разред гимназије';
+  eBookConfig.runestone_version = '3.1.1';
+  eBookConfig.imagesDir = '../_images/';
+  eBookConfig.staticDir = '../_static/';
+  if(typeof(Sk) != "undefined")
+      Sk.imgPath = eBookConfig.imagesDir;
+</script>
+
+<div id="fb-root"></div>
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <img src="../_static/img/logo.png" style="width:80px; height: 80px;"> 
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 10px; margin-left: 25px;">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../">Petlja - Настава програмирања за Други разред гимназије</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="margin-left: 50%;margin-top: 5%;font-size: 20px;">
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../J01/index.html">IPYTHON DIRECTIVE DEBUG</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../J01/J01.html">JUPYTER TEST</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E01/index.html">Лекција 1.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E01/E01.html">Увод у рад са програмима за табеларна израчунавања</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E01/testE01.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E02/index.html">Лекција 2.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E02/E02.html">Аутоматска рекалкулација</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E02/testE02.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E03/index.html">Лекција 3.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E03/E03.html">Селектовање групе ћелија и уређивање табеле</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E03/testE03.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E04/index.html">Лекција 4.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E04/E04.html">Разне врсте података у табели</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E04/testE04.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E05/index.html">Лекција 5.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E05/E05.html">Штампање и генерисање ПДФ документа</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E05/testE05.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E06/index.html">Лекција 6.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E06/E06.html">Апсолутне и релативне адресе ћелија</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E06/testE06.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E07/index.html">Лекција 7.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E07/E07.html">Визуелизација података</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E07/testE07.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E08/index.html">Лекција 8.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E08/E08.html">Сортирање, филтрирање и фреквенцијска анализа</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E08/testE08.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E09/index.html">Лекција 9.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E09/E09.html">Више табела у истом документу</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E09/testE09.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E10/index.html">Лекција 10.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E10/E10.html">Рад са дељеним табелама</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E10/testE10.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y01/index.html">Лекција 21.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y01/L801.html">Увод у процесирање низова података</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y01/test801.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y02/index.html">Лекција 22.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y02/L802.html">Бројачи и суме</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y02/test802.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y03/index.html">Лекција 23.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y03/L803.html">Низови симбола (<em>стрингови</em> или <em>ниске</em>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y03/test803.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Лекција 24.</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Угнежђене петље</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test804.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y05/index.html">Лекција 25.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y05/L805.html">Сортирање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y05/test805.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y06/index.html">Лекција 26.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y06/L806.html">Филтрирање и претраживање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y06/test806.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y07/index.html">Лекција 27.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y07/L807.html">Рад са текстуалним датотекама</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y07/test807.html">Тест</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+  </div>
+<div class="container col-md-12" id="continue-reading"></div>
+
+<div class="container col-md-10 col-md-offset-2" id="main-content" style="margin-top: 70px;">
+  
+  <div class="system-message" id="id1">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">&lt;rst_prolog&gt;</span>, line 3)</p>
+<p>Unknown interpreted text role „blank”.</p>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">&lt;rst_prolog&gt;</span>, line 3)</p>
+<p>Substitution definition contains illegal element &lt;problematic&gt;:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;problematic ids=&quot;id2&quot; refid=&quot;id1&quot;&gt;
+    :blank:`x`
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. |blank| replace:: :blank:`x`
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h1>Угнежђене петље<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h1>
+<p>У овој лекцији показујемо:</p>
+<ol class="arabic simple">
+<li><p>како раде угнежђене петље,</p></li>
+<li><p>како се користе угнежђене петље за исписивање табела са подацима, и</p></li>
+<li><p>како се обрађују подаци представљени табелама.</p></li>
+</ol>
+<div class="section" id="id4">
+<h2>Петља у петљи<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>Када се у телу петље нађе друга петља, као у овом примеру:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tablica mnozenja sa&quot;</span><span class="p">,</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+    <span class="c1">######### ovo je petlja u petlji</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;=&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>онда кажемо да је друга петља <em>угнежђена</em>, јер је обухваћена оном првом као у гнезду.
+За прву кажемо још и да је <em>спољашња</em> петља, док је ова друга <em>унутрашња</em>. Погледајмо како овај прогам ради:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y04/L804.rst</span>, line 27)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer4</span><span class="o">-</span><span class="mi">1</span>
+
+   <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+       <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tablica mnozenja sa&quot;</span><span class="p">,</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+       <span class="c1">######### ovo je petlja u petlji</span>
+       <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+           <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;=&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<p>Угнежђене петље се природно јављају када радимо са табелама података, или са подацима који треба да буду организовани
+у две димензије (и хоризонтално и вертикално).</p>
+<div class="section" id="id5">
+<h3>Пример.<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>Написати програм који приказује таблицу множења 10 x 10.</p>
+<p><em>Решење</em>. Први покушај да се овај проблем реши би могао да изгледа овако:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">((</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>али то није оно што смо желели. Желимо таблицу множења да испишемо као <em>таблицу</em>.
+Проблем је у томе што наредба <code class="docutils literal notranslate"><span class="pre">print</span></code> пређе у нови ред чим нешто испише, а ми желимо да испишемо низ бројева
+у једном реду пре него што пређемо у нови ред.</p>
+<p>Наредби <code class="docutils literal notranslate"><span class="pre">print</span></code> можемо рећи да не прелази у нови ред тако што као опцију додамо <code class="docutils literal notranslate"><span class="pre">end</span> <span class="pre">=</span> <span class="pre">&quot;&quot;</span></code>.
+Тада ће све што наредба испише бити смештено у исти ред. Када завршимо исписивање бројева који треба да буду
+у истом реду прелазимо у нови ред наредбом <code class="docutils literal notranslate"><span class="pre">print()</span></code>. Ова наредба, заправо, ништа не испише, већ само пређе у нови ред.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y04/L804.rst</span>, line 59)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer4</span><span class="o">-</span><span class="mi">3</span>
+
+   <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+       <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+           <span class="nb">print</span><span class="p">((</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+       <span class="nb">print</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<p>Сада је мало боље, али и даље далеко од онога што желимо. Треба нам мали размак између бројева. То је лако додати:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y04/L804.rst</span>, line 68)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer4</span><span class="o">-</span><span class="mi">4</span>
+
+   <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+       <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+           <span class="nb">print</span><span class="p">((</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+       <span class="nb">print</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<p>Добили смо таблицу множења <em>у принципу</em>. Једини је проблем у томе што су редови и даље неуредни.</p>
+<p>Да бисмо у таблици поравнали редове није, дакле, довољно само додати мали размак, већ треба обезбедити да
+<em>за сваки број буде употребљен исти број места</em> независно од тога да ли број има једну, две или три цифре.
+За то ћемо користити уграђену функцију <code class="docutils literal notranslate"><span class="pre">rjust</span></code> (од енглеског <em>right justified</em> што значи „поравнато о десној ивици”)
+која приказује податке на посебан начин. На пример,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;Python&quot;</span><span class="o">.</span><span class="n">rjust</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>ће од стринга <code class="docutils literal notranslate"><span class="pre">&quot;Python&quot;</span></code> направити нови стринг <code class="docutils literal notranslate"><span class="pre">&quot;</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Python&quot;</span></code> који има дужину 15. Функција
+<code class="docutils literal notranslate"><span class="pre">rjust</span></code> ће на пошетак стринга додати потребан број празнина тако да дужина новог стринга буде дати број. С друге стране,
+ако желимо неки број да испишемо на дати број места поравнато по десној ивици морамо прво од њега да направимо стринг кога
+ћемо потом поравнати по десној ивици функцијом <code class="docutils literal notranslate"><span class="pre">rjust</span></code>. Тако,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">str</span><span class="p">(</span><span class="mi">56</span><span class="p">)</span><span class="o">.</span><span class="n">rjust</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>ће <em>форматирати</em> број 56 као стринг дужине 4 у коме је садржај поравнат по десној ивици: <code class="docutils literal notranslate"><span class="pre">&quot;</span>&#160; <span class="pre">56&quot;</span></code>.</p>
+<p>Коначно, ево програма који исписује таблицу множења <em>као табелу</em>:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y04/L804.rst</span>, line 99)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer4</span><span class="o">-</span><span class="mi">5</span>
+
+   <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+       <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+           <span class="n">s</span> <span class="o">=</span> <span class="nb">str</span><span class="p">((</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+           <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">rjust</span><span class="p">(</span><span class="mi">4</span><span class="p">),</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+       <span class="nb">print</span><span class="p">()</span>
+
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id6">
+<h3>Пример.<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>Написати Пајтон функцију <code class="docutils literal notranslate"><span class="pre">trougao_brojeva(n)</span></code> која исписује следећи троугао бројева:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>1
+1  2
+1  2  3
+1  2  3  4
+1  2  3  4  5
+</pre></div>
+</div>
+<p>итд. Ово је пример позива функције за <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">5</span></code>.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y04/L804.rst</span>, line 123)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer4</span><span class="o">-</span><span class="mi">6</span>
+
+   <span class="k">def</span> <span class="nf">trougao_brojeva</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+       <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+           <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+               <span class="n">s</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+               <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">rjust</span><span class="p">(</span><span class="mi">4</span><span class="p">),</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+           <span class="nb">print</span><span class="p">()</span>
+
+   <span class="c1"># Провера</span>
+   <span class="n">trougao_brojeva</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id7">
+<h3>Пример.<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>Написати Пајтон функцију <code class="docutils literal notranslate"><span class="pre">trougao_brojeva_2(n)</span></code> која исписује следећи троугао бројева:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span> 1
+ 2   3
+ 4   5   6
+ 7   8   9  10
+11  12  13  14  15
+</pre></div>
+</div>
+<p>итд. Ово је пример позива функције за <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">5</span></code>. Видимо да троугао има n редова, да су дужине редова
+1, 2, 3, …, n, и да се бројеви редом уписују у табелу.</p>
+<p><em>Решење.</em></p>
+<p>Идеја решења је да уведемо бројач који ће садржати следећи број који треба уписати на одговарајуће место,
+док ће две петље само регулисати облик троугла, овако:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y04/L804.rst</span>, line 157)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer4</span><span class="o">-</span><span class="mi">7</span>
+
+   <span class="k">def</span> <span class="nf">trougao_brojeva_2</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+       <span class="n">broj</span> <span class="o">=</span> <span class="mi">1</span>
+       <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+           <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+               <span class="n">s</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">broj</span><span class="p">)</span>
+               <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">rjust</span><span class="p">(</span><span class="mi">4</span><span class="p">),</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+               <span class="n">broj</span> <span class="o">+=</span> <span class="mi">1</span>
+           <span class="nb">print</span><span class="p">()</span>
+
+   <span class="c1"># Провера</span>
+   <span class="n">trougao_brojeva_2</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id8">
+<h3>Пример.<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>Наћи све бројеве са највише четири цифре који су једнаки трећем степену збира својих цифара.</p>
+<p><em>Решење.</em></p>
+<p>Број са највише четири цифре се може записати у облику <span class="math notranslate nohighlight">\(\langle abcd\rangle\)</span>,
+при чему је дозвољено да свака од цифара буде нула (траже се бројеви са највише четири цифре; према томе,
+за троцифрени број ће бити <span class="math notranslate nohighlight">\(a = 0\)</span>).</p>
+<p>Дакле, тражимо бројеве <span class="math notranslate nohighlight">\(\langle abcd\rangle\)</span> такве да је <span class="math notranslate nohighlight">\(\langle abcd\rangle = (a + b + c + d)^3\)</span>.
+Подсетимо се још да је:</p>
+<div class="math notranslate nohighlight">
+\[\langle abcd\rangle = 1000 a + 100 b + 10 c + d.\]</div>
+<p>Сада се програм лако пише:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y04/L804.rst</span>, line 190)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer4</span><span class="o">-</span><span class="mi">8</span>
+
+   <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">9</span><span class="p">):</span>
+       <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">9</span><span class="p">):</span>
+           <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">9</span><span class="p">):</span>
+               <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">9</span><span class="p">):</span>
+                   <span class="k">if</span> <span class="mi">1000</span><span class="o">*</span><span class="n">a</span> <span class="o">+</span> <span class="mi">100</span><span class="o">*</span><span class="n">b</span> <span class="o">+</span> <span class="mi">10</span><span class="o">*</span><span class="n">c</span> <span class="o">+</span> <span class="n">d</span> <span class="o">==</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span> <span class="o">+</span> <span class="n">d</span><span class="p">)</span><span class="o">**</span><span class="mi">3</span><span class="p">:</span>
+                       <span class="nb">print</span><span class="p">(</span><span class="mi">1000</span><span class="o">*</span><span class="n">a</span> <span class="o">+</span> <span class="mi">100</span><span class="o">*</span><span class="n">b</span> <span class="o">+</span> <span class="mi">10</span><span class="o">*</span><span class="n">c</span> <span class="o">+</span> <span class="n">d</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="id9">
+<h2>Табеле са подацима<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<p>Веома често су подаци у вези са неким проблемом представљени табелом. Рецимо, ова табела садржи податке о једној групи деце (при чему је, наравно, старост изражена у годинама, маса у килограмима, а висина у центиметрима):</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>    Ime Pol Starost Masa Visina
+--------------------------------
+    Ana  ž    13     46    160
+  Bojan  m    14     52    165
+  Vlada  m    13     47    157
+Gordana  ž    15     54    165
+  Dejan  m    15     56    163
+  Đorđe  m    13     45    159
+  Elena  ž    14     49    161
+Žaklina  ž    15     52    164
+  Zoran  m    15     57    167
+  Ivana  ž    13     45    158
+  Jasna  ž    14     51    162
+</pre></div>
+</div>
+<p>Да бисмо могли машински да обрађујемо и анализирамо податке, прво их морамо представити на погодан начин.</p>
+<p>Један једноставан начин да се то уради је да сваки ред табеле представимо једном низом, и да потом све те низове
+запакујемо у један велики низ, рецимо овако:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y04/L804.rst</span>, line 225)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer4</span><span class="o">-</span><span class="n">podaci</span><span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">razredu</span>
+
+   <span class="n">razred</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">&quot;Ana&quot;</span><span class="p">,</span>     <span class="s2">&quot;ž&quot;</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">46</span><span class="p">,</span> <span class="mi">160</span><span class="p">],</span>
+             <span class="p">[</span><span class="s2">&quot;Bojan&quot;</span><span class="p">,</span>   <span class="s2">&quot;m&quot;</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">52</span><span class="p">,</span> <span class="mi">165</span><span class="p">],</span>
+             <span class="p">[</span><span class="s2">&quot;Vlada&quot;</span><span class="p">,</span>   <span class="s2">&quot;m&quot;</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">47</span><span class="p">,</span> <span class="mi">157</span><span class="p">],</span>
+             <span class="p">[</span><span class="s2">&quot;Gordana&quot;</span><span class="p">,</span> <span class="s2">&quot;ž&quot;</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">54</span><span class="p">,</span> <span class="mi">165</span><span class="p">],</span>
+             <span class="p">[</span><span class="s2">&quot;Dejan&quot;</span><span class="p">,</span>   <span class="s2">&quot;m&quot;</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">56</span><span class="p">,</span> <span class="mi">163</span><span class="p">],</span>
+             <span class="p">[</span><span class="s2">&quot;Đorđe&quot;</span><span class="p">,</span>   <span class="s2">&quot;m&quot;</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">159</span><span class="p">],</span>
+             <span class="p">[</span><span class="s2">&quot;Elena&quot;</span><span class="p">,</span>   <span class="s2">&quot;ž&quot;</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">49</span><span class="p">,</span> <span class="mi">161</span><span class="p">],</span>
+             <span class="p">[</span><span class="s2">&quot;Žaklina&quot;</span><span class="p">,</span> <span class="s2">&quot;ž&quot;</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">52</span><span class="p">,</span> <span class="mi">164</span><span class="p">],</span>
+             <span class="p">[</span><span class="s2">&quot;Zoran&quot;</span><span class="p">,</span>   <span class="s2">&quot;m&quot;</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">57</span><span class="p">,</span> <span class="mi">167</span><span class="p">],</span>
+             <span class="p">[</span><span class="s2">&quot;Ivana&quot;</span><span class="p">,</span>   <span class="s2">&quot;ž&quot;</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">158</span><span class="p">],</span>
+             <span class="p">[</span><span class="s2">&quot;Jasna&quot;</span><span class="p">,</span>   <span class="s2">&quot;ž&quot;</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">51</span><span class="p">,</span> <span class="mi">162</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+<p>(Ако извршиш ову наредбу неће се десити ништа: систем ће само наведен податке спремити у променљиву <code class="docutils literal notranslate"><span class="pre">razred</span></code>.)</p>
+<p>Као и у већини модерних програмских језика, индекси елемената низа у Пајтону почињу од нуле. Зато је:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y04/L804.rst</span>, line 243)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer4</span><span class="o">-</span><span class="mi">9</span>
+   <span class="p">:</span><span class="n">include</span><span class="p">:</span> <span class="n">primer4</span><span class="o">-</span><span class="n">podaci</span><span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">razredu</span>
+
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Prvi red tabele:&quot;</span><span class="p">,</span> <span class="n">razred</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Drugi red tabele:&quot;</span><span class="p">,</span> <span class="n">razred</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Vlada je visok&quot;</span><span class="p">,</span> <span class="n">razred</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">4</span><span class="p">],</span> <span class="s2">&quot;cm&quot;</span><span class="p">)</span>
+
+</pre></div>
+</div>
+</div>
+<p>Последња наредба заслужује доддатни коментар.
+Пошто се подаци о Влади налазе у трећем реду табеле (чији индекс је 2 – индексирање почиње од нуле!),
+а висина се налази у том низу на петом месту (чији индекс је 4) израз <code class="docutils literal notranslate"><span class="pre">razred[2][4]</span></code> каже:
+<em>из табеле ``razred`` одабери прво ред са индексом 2, па из тог реда податак са индексом 4
+(при томе водећи рачуна да индексирање почиње од нуле!)</em></p>
+<p>Ако желимо да израчунамо просечну висину ученика у разреду учинићемо то овако:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y04/L804.rst</span>, line 259)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer4</span><span class="o">-</span><span class="mi">10</span>
+   <span class="p">:</span><span class="n">include</span><span class="p">:</span> <span class="n">primer4</span><span class="o">-</span><span class="n">podaci</span><span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">razredu</span>
+
+   <span class="n">br_ucenika</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">razred</span><span class="p">)</span>
+   <span class="n">zbir</span> <span class="o">=</span> <span class="mi">0</span>
+   <span class="k">for</span> <span class="n">ucenik</span> <span class="ow">in</span> <span class="n">razred</span><span class="p">:</span>
+       <span class="n">zbir</span> <span class="o">+=</span> <span class="n">ucenik</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Prosecna visina je&quot;</span><span class="p">,</span> <span class="n">zbir</span><span class="o">/</span><span class="n">br_ucenika</span><span class="p">)</span>
+
+</pre></div>
+</div>
+</div>
+<p>Ако желимо да пребројимо колико у разреду има дечака, а колико девојчица, можемо то учинити овако
+(имајући у виду да се информација о полу налази на другом месту у реду, чији индекс је 1):</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y04/L804.rst</span>, line 272)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer4</span><span class="o">-</span><span class="mi">11</span>
+   <span class="p">:</span><span class="n">include</span><span class="p">:</span> <span class="n">primer4</span><span class="o">-</span><span class="n">podaci</span><span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">razredu</span>
+
+   <span class="n">br_decaka</span> <span class="o">=</span> <span class="mi">0</span>
+   <span class="n">br_devojcica</span> <span class="o">=</span> <span class="mi">0</span>
+   <span class="k">for</span> <span class="n">ucenik</span> <span class="ow">in</span> <span class="n">razred</span><span class="p">:</span>
+       <span class="k">if</span> <span class="n">ucenik</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;m&quot;</span><span class="p">:</span>
+           <span class="n">br_decaka</span> <span class="o">+=</span> <span class="mi">1</span>
+       <span class="k">else</span><span class="p">:</span>
+           <span class="n">br_devojcica</span> <span class="o">+=</span> <span class="mi">1</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Decaka ima&quot;</span><span class="p">,</span> <span class="n">br_decaka</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Devojcica ima&quot;</span><span class="p">,</span> <span class="n">br_devojcica</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>Ево како можемо одредити највишу девојчицу:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y04/L804.rst</span>, line 287)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer4</span><span class="o">-</span><span class="mi">12</span>
+   <span class="p">:</span><span class="n">include</span><span class="p">:</span> <span class="n">primer4</span><span class="o">-</span><span class="n">podaci</span><span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">razredu</span>
+
+   <span class="c1"># ne znamo koja devojcica je najvisa, pa stavljamo prazan string u ime</span>
+   <span class="n">ime</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+   <span class="c1"># ne znamo nista o njenoj visini, pa stavljamo vrednost koja je manja od svake razumne vrednosti</span>
+   <span class="n">visina</span> <span class="o">=</span> <span class="mi">0</span>
+   <span class="k">for</span> <span class="n">ucenik</span> <span class="ow">in</span> <span class="n">razred</span><span class="p">:</span>
+       <span class="k">if</span> <span class="n">ucenik</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;ž&quot;</span> <span class="ow">and</span> <span class="n">ucenik</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">visina</span><span class="p">:</span>
+           <span class="n">ime</span> <span class="o">=</span> <span class="n">ucenik</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Najvisa devojcica je&quot;</span><span class="p">,</span> <span class="n">ime</span><span class="p">)</span>
+
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id10">
+<h2>Задаци<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<p><strong>Задатак 1.</strong> Испистати таблицу <em>сабирања</em>, али само за цифре 0, 1, …, 9</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span> + | 0   1   2   3   4   5   6   7   8   9
+---+----------------------------------------
+ 0 | 0   1   2   3   4   5   6   7   8   9
+ 1 | 1   2   3   4   5   6   7   8   9  10
+ 2 | 2   3   4   5   6   7   8   9  10  11
+ 3 | 3   4   5   6   7   8   9  10  11  12
+ 4 | 4   5   6   7   8   9  10  11  12  13
+ 5 | 5   6   7   8   9  10  11  12  13  14
+ 6 | 6   7   8   9  10  11  12  13  14  15
+ 7 | 7   8   9  10  11  12  13  14  15  16
+ 8 | 8   9  10  11  12  13  14  15  16  17
+ 9 | 9  10  11  12  13  14  15  16  17  18
+</pre></div>
+</div>
+<p><strong>Задатак 2.</strong> Написати функцију <code class="docutils literal notranslate"><span class="pre">spec_trougao(n)</span></code> која исписује првих <em>n</em> редова следећег троугла бројева:</p>
+<p><em>(а)</em></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>1
+1 1
+1 1 1
+1 1 1 1
+</pre></div>
+</div>
+<p><em>(б)</em></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>1
+2 1
+3 2 1
+4 3 2 1
+5 4 3 2 1
+</pre></div>
+</div>
+<p><em>(в)</em></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>1
+2  3  2
+3  4  5  4  3
+4  5  6  7  6  5  4
+5  6  7  8  9  8  7  6  5
+</pre></div>
+</div>
+<p><strong>Задатак 3.</strong> Написати функцију <code class="docutils literal notranslate"><span class="pre">zmijasto(n)</span></code> која бројеве 1, 2, 3, …, <span class="math notranslate nohighlight">\(n^2\)</span>
+уписује у квадрат <span class="math notranslate nohighlight">\(n \times n\)</span> „змијасто”. На пример, за <span class="math notranslate nohighlight">\(n = 5\)</span> функција исписује:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span> 1   2   3   4   5
+10   9   8   7   6
+11  12  13  14  15
+20  19  18  17  16
+21  22  23  24  25
+</pre></div>
+</div>
+<p><strong>Задатак 4.</strong> Наћи све бројеве са највише четири цифре који су једнаки</p>
+<p><em>(а)</em> квадрату збира својих цифара;</p>
+<p><em>(б)</em> четвртом степену збира својих цифара.</p>
+<p><strong>Задатак 5*.</strong> Наћи сва могућа дешифровања следећег сабирања:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>АВ + ... + АВ = ЛАВ
+</pre></div>
+</div>
+<p>где са десне стране имамо најмање два сабирка. Наравно, истим словима одговарају исте цифре,
+а различитим словима различите. При томе цифре А и Л не смеју да буду 0.</p>
+<p><strong>Задатак 6*.</strong> Наћи сва могућа дешифровања следећег сабирања:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>ЛАВ + ... + ЛАВ = МРАВ
+</pre></div>
+</div>
+<p>где са десне стране имамо најмање два сабирка. Наравно, истим словима одговарају исте цифре,
+а различитим словима различите. При томе цифре Л и М не смеју да буду 0.</p>
+<p><strong>Задатак 7.</strong> Дати су подаци о ученицима једног разреда. Напиши Пајтон програм који одређује
+ко је најлакши у разреду, и ко је налјакши дечак у разреду.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y04/L804.rst</span>, line 390)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: primer4-13
+
+   razred = [[&quot;Ana&quot;,     &quot;ž&quot;, 13, 46, 160],
+             [&quot;Bojan&quot;,   &quot;m&quot;, 14, 52, 165],
+             [&quot;Vlada&quot;,   &quot;m&quot;, 13, 47, 157],
+             [&quot;Gordana&quot;, &quot;ž&quot;, 15, 54, 165],
+             [&quot;Dejan&quot;,   &quot;m&quot;, 15, 56, 163],
+             [&quot;Đorđe&quot;,   &quot;m&quot;, 13, 45, 159],
+             [&quot;Elena&quot;,   &quot;ž&quot;, 14, 49, 161],
+             [&quot;Žaklina&quot;, &quot;ž&quot;, 15, 52, 164],
+             [&quot;Zoran&quot;,   &quot;m&quot;, 15, 57, 167],
+             [&quot;Ivana&quot;,   &quot;ž&quot;, 13, 45, 158],
+             [&quot;Jasna&quot;,   &quot;ž&quot;, 14, 51, 162]]
+
+   # овде напиши програм
+   ???
+
+   print(&quot;Najlaksi ucenik u razredu je&quot;, ime1)
+   print(&quot;Najlaksi decak u razredu je&quot;, ime2)
+</pre></div>
+</div>
+</div>
+<p><strong>Задатак 8.</strong> Ево трошкова живота једне породице током једне године, по месецима (сви износи су представљени у динарима):</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span> Stavka              Jan    Feb    Mar    Apr    Maj    Jun    Jul    Avg    Sep    Okt    Nov    Dec
+-----------------   -----  -----  -----  -----  -----  -----  -----  -----  -----  -----  -----  -----
+ Stanarina          8.251  8.436  8.524  8.388  8.241  8.196  8.004  7.996  7.991  8.015  8.353  8.456
+ Struja             4.321  4.530  4.115  3.990  3.985  3.726  3.351  3.289  3.295  3.485  3.826  3.834
+ Telefon (fiksni)   1.425  1.538  1.623  1.489  1.521  1.485  1.491  1.399  1.467  1.531  1.410  1.385
+ Telefon (mobilni)  2.181  2.235  2.073  1.951  1.989  1.945  3.017  2.638  2.171  1.831  1.926  1.833
+ TV i internet      2.399  2.399  2.399  2.399  2.399  2.399  2.399  2.399  2.399  2.399  2.399  2.399
+ Prevoz             1.830  1.830  1.830  1.830  1.950  1.950  1.450  1.450  1.950  1.950  2.050  2.050
+ Hrana             23.250 23.780 24.019 24.117 24.389 24.571 24.736 24.951 25.111 25.389 25.531 25.923
+ Ostalo             4.500  3.700  5.100  3.500  2.750  4.250  7.320  8.250  3.270  4.290  3.200  8.390
+</pre></div>
+</div>
+<p>Испод су исти подаци представљени табелом. Напиши Пајтон програм који рачуна укупне трошкове ове породице по месецима (колико је породица укупно потрошила у јануару, колико у фебруару итд).</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y04/L804.rst</span>, line 427)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: primer4-14
+
+   troskovi = [
+     [&quot;Stanarina&quot;, 8251, 8436, 8524, 8388, 8241, 8196, 8004, 7996, 7991, 8015, 8353, 8456],
+     [&quot;Struja&quot;, 4321, 4530, 4115, 3990, 3985, 3726, 3351, 3289, 3295, 3485, 3826, 3834],
+     [&quot;Telefon (fiksni)&quot;, 1425, 1538, 1623, 1489, 1521, 1485, 1491, 1399, 1467, 1531, 1410, 1385],
+     [&quot;Telefon (mobilni)&quot;, 2181, 2235, 2073, 1951, 1989, 1945, 3017, 2638, 2171, 1831, 1926, 1833],
+     [&quot;TV i internet&quot;, 2399, 2399, 2399, 2399, 2399, 2399, 2399, 2399, 2399, 2399, 2399, 2399 ],
+     [&quot;Prevoz&quot;, 1830, 1830, 1830, 1830, 1950, 1950, 1450, 1450, 1950, 1950, 2050, 2050],
+     [&quot;Hrana&quot;, 23250, 23780, 24019, 24117, 24389, 24571, 24736, 24951, 25111, 25389, 25531, 25923],
+     [&quot;Ostalo&quot;, 4500, 3700, 5100, 3500, 2750, 4250, 7320, 8250, 3270, 4290, 3200, 8390]
+   ]
+
+   # овде напиши програм
+   ???
+
+
+
+
+
+
+
+
+
+
+
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+  
+      <div class="col-md-12">
+<ul class="pager">
+    <li id="relations-prev" title='Previous chapter - Лекција 24.' data-toggle="tooltip"><a href="index.html"><i class="fas fa-arrow-left"></i></a></li>
+    
+        <li id="relations-next" title='Next chapter - Тест' data-toggle="tooltip"><a href="test804.html"><i class="fas fa-arrow-right"></i></a></li>
+</ul>
+
+<!-- <ul class="pager"> -->
+    <!-- -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Лекција 24.' data-toggle="tooltip"><a href="index.html">Претходно поглавље</a></li> -->
+    <!--  -->
+    <!-- -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Тест' data-toggle="tooltip"><a href="test804.html">Следеће поглавље</a></li> -->
+    <!-- -->
+<!-- </ul> -->
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+</div>
+  
+</div>
+<footer class="footer col-md-12">
+    <div class="container">
+        <div class="text-center">
+            <hr>
+            <p class="text-muted">
+                <span class="pull-left">&copy; 2019 Petlja (Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

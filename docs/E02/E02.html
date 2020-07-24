@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Аутоматска рекалкулација &#8212; Petlja - Настава програмирања за Други разред гимназије</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/runestonebase.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../_static/jquery-fix.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/waypoints.min.js"></script>
+    <script src="../_static/rangy-core.js"></script>
+    <script src="../_static/rangy-textrange.js"></script>
+    <script src="../_static/rangy-cssclassapplier.js"></script>
+    <script src="../_static/user-highlights.js"></script>
+    <script src="../_static/jquery.idle-timer.js"></script>
+    <script src="../_static/processing-1.4.1.min.js"></script>
+    <script src="../_static/jquery.hotkey.js"></script>
+    <script src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Тест" href="testE02.html" />
+    <link rel="prev" title="Лекција 2." href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'Настава програмирања за Други разред гимназије';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'Настава програмирања за Други разред гимназије';
+  eBookConfig.runestone_version = '3.1.1';
+  eBookConfig.imagesDir = '../_images/';
+  eBookConfig.staticDir = '../_static/';
+  if(typeof(Sk) != "undefined")
+      Sk.imgPath = eBookConfig.imagesDir;
+</script>
+
+<div id="fb-root"></div>
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <img src="../_static/img/logo.png" style="width:80px; height: 80px;"> 
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 10px; margin-left: 25px;">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../">Petlja - Настава програмирања за Други разред гимназије</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="margin-left: 50%;margin-top: 5%;font-size: 20px;">
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../J01/index.html">IPYTHON DIRECTIVE DEBUG</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../J01/J01.html">JUPYTER TEST</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E01/index.html">Лекција 1.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E01/E01.html">Увод у рад са програмима за табеларна израчунавања</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E01/testE01.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Лекција 2.</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Аутоматска рекалкулација</a></li>
+<li class="toctree-l2"><a class="reference internal" href="testE02.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E03/index.html">Лекција 3.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E03/E03.html">Селектовање групе ћелија и уређивање табеле</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E03/testE03.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E04/index.html">Лекција 4.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E04/E04.html">Разне врсте података у табели</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E04/testE04.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E05/index.html">Лекција 5.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E05/E05.html">Штампање и генерисање ПДФ документа</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E05/testE05.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E06/index.html">Лекција 6.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E06/E06.html">Апсолутне и релативне адресе ћелија</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E06/testE06.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E07/index.html">Лекција 7.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E07/E07.html">Визуелизација података</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E07/testE07.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E08/index.html">Лекција 8.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E08/E08.html">Сортирање, филтрирање и фреквенцијска анализа</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E08/testE08.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E09/index.html">Лекција 9.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E09/E09.html">Више табела у истом документу</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E09/testE09.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E10/index.html">Лекција 10.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E10/E10.html">Рад са дељеним табелама</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E10/testE10.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y01/index.html">Лекција 21.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y01/L801.html">Увод у процесирање низова података</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y01/test801.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y02/index.html">Лекција 22.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y02/L802.html">Бројачи и суме</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y02/test802.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y03/index.html">Лекција 23.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y03/L803.html">Низови симбола (<em>стрингови</em> или <em>ниске</em>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y03/test803.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y04/index.html">Лекција 24.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y04/L804.html">Угнежђене петље</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y04/test804.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y05/index.html">Лекција 25.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y05/L805.html">Сортирање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y05/test805.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y06/index.html">Лекција 26.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y06/L806.html">Филтрирање и претраживање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y06/test806.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y07/index.html">Лекција 27.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y07/L807.html">Рад са текстуалним датотекама</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y07/test807.html">Тест</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+  </div>
+<div class="container col-md-12" id="continue-reading"></div>
+
+<div class="container col-md-10 col-md-offset-2" id="main-content" style="margin-top: 70px;">
+  
+  <div class="system-message" id="id1">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">&lt;rst_prolog&gt;</span>, line 3)</p>
+<p>Unknown interpreted text role „blank”.</p>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">&lt;rst_prolog&gt;</span>, line 3)</p>
+<p>Substitution definition contains illegal element &lt;problematic&gt;:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;problematic ids=&quot;id2&quot; refid=&quot;id1&quot;&gt;
+    :blank:`x`
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. |blank| replace:: :blank:`x`
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h1>Аутоматска рекалкулација<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h1>
+<p>На овом часу ћемо:</p>
+<ol class="arabic simple">
+<li><p>поновити унос формула у табелу,</p></li>
+<li><p>поновити унос бројева и формула у табелу,</p></li>
+<li><p>показати брзо копирање формула,</p></li>
+<li><p>показати аутоматску рекалкулацију у случају измене података, и</p></li>
+<li><p>показати додавање врста и колона табели.</p></li>
+</ol>
+<div class="section" id="id4">
+<h2>Пример: Летњи послови<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>Неколико студената је током лета радило преко Студентске задруге како би зарадили мало новца за летовање.
+Студентска задруга плаћа послове по сату, с тим да је накнада за сат рада током радног дана нижа од накнаде за сат
+рад преко викенда. Студенти су радили на различитим пословима, па се и накнаде разликују.</p>
+</div>
+<div class="section" id="id5">
+<h2>Преузимање табеле и покретање Ексела<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p><strong>Корак 1.</strong> Преузми табелу са следећег линка <a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/LetnjiPoslovi.xlsx">LetnjiPoslovi.xlsx</a>
+тако што ћеш кликнути на линк <em>десним тастером миша („чудни клик”)</em> и онда у малом менију који се појави одабрати опцију
+„Save link as…” како је то показано на следећој слици:</p>
+<a class="reference internal image-reference" href="../_images/Recalc2.jpg"><img alt="../_images/Recalc2.jpg" class="align-center" src="../_images/Recalc2.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 2.</strong> Пронађи табелу на свом рачунару (највероватније је завршила у <em>Downloads</em> фолдеру) и отвори је:</p>
+<a class="reference internal image-reference" href="../_images/Recalc1.jpg"><img alt="../_images/Recalc1.jpg" class="align-center" src="../_images/Recalc1.jpg" style="width: 600px;" /></a>
+</div>
+<div class="section" id="id6">
+<h2>Унос података и формула у табелу<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p><strong>Корак 3.</strong> Сада за сваког студента унеси бројеве који представљају сате проведене на послу радним даном и викендом.
+Унеси произвољне вредности. Када завршиш табела треба да изгледа овако (с тим да ћеш ти имати другачије вредности у колонама B и C):</p>
+<a class="reference internal image-reference" href="../_images/Recalc3.jpg"><img alt="../_images/Recalc3.jpg" class="align-center" src="../_images/Recalc3.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 4.</strong> Израчунај колико је сваки студент зарадио на свом летњем послу. За првог студента на списку коначна зарада се рачуна по формули</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span> <span class="n">B3</span><span class="o">*</span><span class="n">D3</span> <span class="o">+</span> <span class="n">C3</span><span class="o">*</span><span class="n">E3</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/Recalc4.jpg"><img alt="../_images/Recalc4.jpg" class="align-center" src="../_images/Recalc4.jpg" style="width: 600px;" /></a>
+<p>Како гласи формула за другог студента?</p>
+<a class="reference internal image-reference" href="../_images/Recalc5.jpg"><img alt="../_images/Recalc5.jpg" class="align-center" src="../_images/Recalc5.jpg" style="width: 600px;" /></a>
+<p>Вероватно ти се по глави већ мота она народна „И тако летњи дан до подне”. Да не бисмо исти досадни посао радили још сто пута (и при томе вероватно направили доста грешака) <em>сада ћемо показати користан трик који ће за нас урадити посао.</em> Кликни на ћелију F4 и примети да је доњи десни угао зеленог оквира око ћелије истакнут (оквир има „бубуљицу”):</p>
+<a class="reference internal image-reference" href="../_images/Recalc6.jpg"><img alt="../_images/Recalc6.jpg" class="align-center" src="../_images/Recalc6.jpg" style="width: 600px;" /></a>
+<p>Ухвати мишем бубуљицу и „развуци оквир” до дна колоне. Ексел ће попунити ћелије неким вредностима:</p>
+<a class="reference internal image-reference" href="../_images/Recalc7.jpg"><img alt="../_images/Recalc7.jpg" class="align-center" src="../_images/Recalc7.jpg" style="width: 600px;" /></a>
+<p>Кликни сада, рецимо, на ћелију F9 и погледај у оквиру за формуле (<em>formula bar</em>) која формула је уписана у ћелију.</p>
+<a class="reference internal image-reference" href="../_images/Recalc8.jpg"><img alt="../_images/Recalc8.jpg" class="align-center" src="../_images/Recalc8.jpg" style="width: 600px;" /></a>
+<p><strong>Ооооо, да! Ексел је „погодио” коју формулу смо желели да упишемо у ћелију!</strong></p>
+<p>Да буде одмах јасно, ово није никаква магија већ прост алгоритам. На основу формуле која је била уписана у ћелију F4 Ексел је простим алгоритмом генерисао формуле и уписао их редом у све ћелије кроз које смо „развукли оквир”. Идеја алгоритма је да се слова у адреси ћелије не мењају, а бројеви у адреси ћелије се редом повећавају. Ево и табеларног прегледа:</p>
+<table class="docutils align-left" id="id9">
+<caption><span class="caption-text">Формуле у одговарајућим ћелијама табеле</span><a class="headerlink" href="#id9" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Ћелија</p></th>
+<th class="head"><p>Формула</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>F3</p></td>
+<td><p>= B3*D3 + C3*E3</p></td>
+</tr>
+<tr class="row-odd"><td><p>F4</p></td>
+<td><p>= B4*D4 + C4*E4</p></td>
+</tr>
+<tr class="row-even"><td><p>F5</p></td>
+<td><p>= B5*D5 + C5*E5</p></td>
+</tr>
+<tr class="row-odd"><td><p>F6</p></td>
+<td><p>= B6*D6 + C6*E6</p></td>
+</tr>
+</tbody>
+</table>
+<p>и тако даље. Ова погодност се зове <em>брзо копирање формула</em> и често ћемо је користити.</p>
+<p><strong>Корак 5.</strong> Израчунаћемо сада колико су просечно сати радили студенти радним данима и викендом, и колико су зарадили у просеку. Ексел уме аутоматски да израчуна просек низа бројева. Само треба позвати функцију AVERAGE (енгл. „просек”).</p>
+<p>У ћелију A12 упиши „Prosečno”. Сада желимо да у ћелији B12 прикажемо просечно време које су наведени студенти провели на послу. Дакле, желимо да израчунамо просек бројева који су уписани у ћелије B3, B4, …, B11. Један начин да то урадимо је да у ћелију унесемо формулу</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span> <span class="p">(</span><span class="n">B3</span> <span class="o">+</span> <span class="n">B4</span> <span class="o">+</span> <span class="n">B5</span> <span class="o">+</span> <span class="n">B6</span> <span class="o">+</span> <span class="n">B7</span> <span class="o">+</span> <span class="n">B8</span> <span class="o">+</span> <span class="n">B9</span> <span class="o">+</span> <span class="n">B10</span> <span class="o">+</span> <span class="n">B11</span><span class="p">)</span><span class="o">/</span><span class="mi">9</span>
+</pre></div>
+</div>
+<p>али постоји бржи начин! У ћелију B12 ћемо унети формулу</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">AVERAGE</span><span class="p">(</span><span class="n">B3</span><span class="p">:</span><span class="n">B11</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>која рачуна просек (AVERAGE) бројева у ћелијама B3, B4, …, B11 (B3:B11). „AVERAGE” је још једна функција коју Ексел познаје.</p>
+<a class="reference internal image-reference" href="../_images/Recalc9.jpg"><img alt="../_images/Recalc9.jpg" class="align-center" src="../_images/Recalc9.jpg" style="width: 600px;" /></a>
+<p>На исти начин ћемо израчунати просек бројева у ћелијама C3:C11 и F3:F11</p>
+<a class="reference internal image-reference" href="../_images/Recalc10.jpg"><img alt="../_images/Recalc10.jpg" class="align-center" src="../_images/Recalc10.jpg" style="width: 600px;" /></a>
+</div>
+<div class="section" id="id7">
+<h2>Аутоматска рекалкулација и додавање врста и колона табели<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p><strong>Корак 6.</strong> Сада се мало играј са бројевима. Промени неке вредности и примети како Ексел аутоматски прерачунава све ћелије чија вредност зависи од начињене измене.</p>
+<a class="reference internal image-reference" href="../_images/Recalc11.jpg"><img alt="../_images/Recalc11.jpg" class="align-center" src="../_images/Recalc11.jpg" style="width: 600px;" /></a>
+<p>То је највећа снага Ексела! Можемо да се играмо са подацима, а сав рачун ће машина урадити за нас.</p>
+<p><em>То је и циљ модерног рачунарства: све досадне послове треба препусити машини што ће нама, људима, олакшати да испољимо своју креативност!</em></p>
+<p><strong>Корак 7.</strong> Администрација Студентске задруге је заборавила да у табелу унесе једног студента. Уметнућемо врсту између Дарка и Ненада и њу попунити подацима о том студенту.</p>
+<p>Десним („чудним”) кликом кликни на редни број врсте 5 (баш на број 5) и у малом менију који се појавио одабери „Insert”:</p>
+<a class="reference internal image-reference" href="../_images/Recalc12.jpg"><img alt="../_images/Recalc12.jpg" class="align-center" src="../_images/Recalc12.jpg" style="width: 600px;" /></a>
+<p>Појавиће се нова празна врста:</p>
+<a class="reference internal image-reference" href="../_images/Recalc13.jpg"><img alt="../_images/Recalc13.jpg" class="align-center" src="../_images/Recalc13.jpg" style="width: 600px;" /></a>
+<p>Унеси неко име и неке податке о радним сатима и накнадама, као и формулу за обрачун зараде, рецимо овако:</p>
+<a class="reference internal image-reference" href="../_images/Recalc14.jpg"><img alt="../_images/Recalc14.jpg" class="align-center" src="../_images/Recalc14.jpg" style="width: 600px;" /></a>
+<p>и уочи да је <em>Ексел аутоматски прерачунао све податке у табели!</em></p>
+<p><strong>Корак 8.</strong> Администрацији Студентске задруге је потом јављено да неки студенти нису испоштовали уговор са фирмом код које су радили преко лета и да због тога треба да буду кажњени (новчано). Зато ћемо уметнути нову колону између колона E и F и у њу унети податке о казнама.</p>
+<p>Десним („чудним”) кликом кликни на име колоне F (баш на слово F) и у малом менију који се појавио одабери „Insert”:</p>
+<a class="reference internal image-reference" href="../_images/Recalc15.jpg"><img alt="../_images/Recalc15.jpg" class="align-center" src="../_images/Recalc15.jpg" style="width: 600px;" /></a>
+<p>Појавиће се нова празна колона:</p>
+<a class="reference internal image-reference" href="../_images/Recalc16.jpg"><img alt="../_images/Recalc16.jpg" class="align-center" src="../_images/Recalc16.jpg" style="width: 600px;" /></a>
+<p>У ћелију F2 упиши „Kazna” и попуни остале ћелије колоне F (ако студент није кажњен упиши 0), рецимо овако:</p>
+<a class="reference internal image-reference" href="../_images/Recalc17.jpg"><img alt="../_images/Recalc17.jpg" class="align-center" src="../_images/Recalc17.jpg" style="width: 600px;" /></a>
+<p>Овај пут Ексел није ништа прерачунао аутоматски: вредности зараде се нису измениле! Разлог је то што Ексел не зна како да укључи нове податке у обрачун зараде – <em>за то нам је потребна нова формула!</em> Зато ћемо сада у ћелију G3 унети формулу која узима и казну у обзир:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span> <span class="n">B3</span><span class="o">*</span><span class="n">D3</span> <span class="o">+</span> <span class="n">C3</span><span class="o">*</span><span class="n">E3</span> <span class="o">-</span> <span class="n">F3</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/Recalc18.jpg"><img alt="../_images/Recalc18.jpg" class="align-center" src="../_images/Recalc18.jpg" style="width: 600px;" /></a>
+<p>и онда ћемо брзим копирањем ту формулу „развући” на ћелије G3:G12</p>
+<a class="reference internal image-reference" href="../_images/Recalc19.jpg"><img alt="../_images/Recalc19.jpg" class="align-center" src="../_images/Recalc19.jpg" style="width: 600px;" /></a>
+<p>Дакле, у ситуацијама које су јасне <em>Ексел ће аутоматски да прерачунао све податке у табели</em>, али Ексел нема начина да схвати шта се дешава ако се мења формула по којој се врши обрачун. У том случају морамо ручно променити формуле.</p>
+</div>
+<div class="section" id="id8">
+<h2>Задаци<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<p><strong>Задатак 1.</strong> Са следећег линка <a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/Razred.xlsx">Razred.xlsx</a> преузми документ <em>Razred.xlsx</em> и сними га на свој рачунар.
+Документ садржи податке о оценама из информатике неких ученика. Према Правилнику о закључивању оцена, закључена оцена не
+сме да буде нижа од заокруженог просека свих оцена уписаних у дневник, нити сме да буде виша од максималне оцене уписане у дневник.
+У овом задатку ћемо помоћи наставнику да одреди у ком интервалу може да се креће закључена оцена.</p>
+<ol class="arabic simple">
+<li><p>Колоне „P1” „P2” и „P3” садрже оцене са првог, другог и трећег писменог задатка. У ћелијама E19, J19, M19 израчунај просечну оцену одговарајућег писменог задатка. Прошири колоне да би се виделе децимале!</p></li>
+<li><p>Шта мислиш, зашто Ексел приказује 5 када је колона уска, а 4.67 када је колона проширена?</p></li>
+<li><p>За сваког ученика у колони „Prosek” израчунај просек његових оцена.</p></li>
+<li><p>У колони „Zaokruženo” заокружи оцену сваког ученика на цео броj користећи функцију <code class="docutils literal notranslate"><span class="pre">ROUND</span></code>. На пример, за првог ученика у ћелију Q2 унеси формулу <code class="docutils literal notranslate"><span class="pre">=ROUND(P2,0)</span></code> која број из ћелије „P2” заокружује на 0 децимала (дакле, на цео број). Онда „развуци” формулу до краја табеле. Прошири колону ако је потребно.</p></li>
+<li><p>У колони „Maks ocena” за сваког ученика израчунај максималну оцену која је том ученику уписана у дневник.</p></li>
+<li><p>Сними табелу.</p></li>
+</ol>
+<p><strong>Задатак 2.</strong> Ученици једног разреда су скакали у даљ. Сваки ученик је имао три покушаја. У случају преступа податак није унет у табелу.
+Са следећег линка <a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/SkokUDalj.xlsx">SkokUDalj.xlsx</a> преузми документ <em>SkokUDalj.xlsx</em> и сними га на свој рачунар.</p>
+<ol class="arabic simple">
+<li><p>Прошири колоне ако је потребно да би се садржај лепо видео.</p></li>
+<li><p>За сваког ученика у табели израчунај просечну дужину његових покушаја.</p></li>
+<li><p>За сваког ученика у табели израчунај дужину његовог најдужег скока.</p></li>
+<li><p>Сними табелу.</p></li>
+</ol>
+</div>
+</div>
+
+
+  
+      <div class="col-md-12">
+<ul class="pager">
+    <li id="relations-prev" title='Previous chapter - Лекција 2.' data-toggle="tooltip"><a href="index.html"><i class="fas fa-arrow-left"></i></a></li>
+    
+        <li id="relations-next" title='Next chapter - Тест' data-toggle="tooltip"><a href="testE02.html"><i class="fas fa-arrow-right"></i></a></li>
+</ul>
+
+<!-- <ul class="pager"> -->
+    <!-- -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Лекција 2.' data-toggle="tooltip"><a href="index.html">Претходно поглавље</a></li> -->
+    <!--  -->
+    <!-- -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Тест' data-toggle="tooltip"><a href="testE02.html">Следеће поглавље</a></li> -->
+    <!-- -->
+<!-- </ul> -->
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+</div>
+  
+</div>
+<footer class="footer col-md-12">
+    <div class="container">
+        <div class="text-center">
+            <hr>
+            <p class="text-muted">
+                <span class="pull-left">&copy; 2019 Petlja (Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

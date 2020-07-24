@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Разне врсте података у табели &#8212; Petlja - Настава програмирања за Други разред гимназије</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/runestonebase.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../_static/jquery-fix.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/waypoints.min.js"></script>
+    <script src="../_static/rangy-core.js"></script>
+    <script src="../_static/rangy-textrange.js"></script>
+    <script src="../_static/rangy-cssclassapplier.js"></script>
+    <script src="../_static/user-highlights.js"></script>
+    <script src="../_static/jquery.idle-timer.js"></script>
+    <script src="../_static/processing-1.4.1.min.js"></script>
+    <script src="../_static/jquery.hotkey.js"></script>
+    <script src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Тест" href="testE04.html" />
+    <link rel="prev" title="Лекција 4." href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'Настава програмирања за Други разред гимназије';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'Настава програмирања за Други разред гимназије';
+  eBookConfig.runestone_version = '3.1.1';
+  eBookConfig.imagesDir = '../_images/';
+  eBookConfig.staticDir = '../_static/';
+  if(typeof(Sk) != "undefined")
+      Sk.imgPath = eBookConfig.imagesDir;
+</script>
+
+<div id="fb-root"></div>
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <img src="../_static/img/logo.png" style="width:80px; height: 80px;"> 
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 10px; margin-left: 25px;">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../">Petlja - Настава програмирања за Други разред гимназије</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="margin-left: 50%;margin-top: 5%;font-size: 20px;">
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../J01/index.html">IPYTHON DIRECTIVE DEBUG</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../J01/J01.html">JUPYTER TEST</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E01/index.html">Лекција 1.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E01/E01.html">Увод у рад са програмима за табеларна израчунавања</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E01/testE01.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E02/index.html">Лекција 2.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E02/E02.html">Аутоматска рекалкулација</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E02/testE02.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E03/index.html">Лекција 3.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E03/E03.html">Селектовање групе ћелија и уређивање табеле</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E03/testE03.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Лекција 4.</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Разне врсте података у табели</a></li>
+<li class="toctree-l2"><a class="reference internal" href="testE04.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E05/index.html">Лекција 5.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E05/E05.html">Штампање и генерисање ПДФ документа</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E05/testE05.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E06/index.html">Лекција 6.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E06/E06.html">Апсолутне и релативне адресе ћелија</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E06/testE06.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E07/index.html">Лекција 7.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E07/E07.html">Визуелизација података</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E07/testE07.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E08/index.html">Лекција 8.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E08/E08.html">Сортирање, филтрирање и фреквенцијска анализа</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E08/testE08.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E09/index.html">Лекција 9.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E09/E09.html">Више табела у истом документу</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E09/testE09.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E10/index.html">Лекција 10.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E10/E10.html">Рад са дељеним табелама</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E10/testE10.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y01/index.html">Лекција 21.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y01/L801.html">Увод у процесирање низова података</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y01/test801.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y02/index.html">Лекција 22.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y02/L802.html">Бројачи и суме</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y02/test802.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y03/index.html">Лекција 23.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y03/L803.html">Низови симбола (<em>стрингови</em> или <em>ниске</em>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y03/test803.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y04/index.html">Лекција 24.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y04/L804.html">Угнежђене петље</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y04/test804.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y05/index.html">Лекција 25.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y05/L805.html">Сортирање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y05/test805.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y06/index.html">Лекција 26.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y06/L806.html">Филтрирање и претраживање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y06/test806.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y07/index.html">Лекција 27.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y07/L807.html">Рад са текстуалним датотекама</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y07/test807.html">Тест</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+  </div>
+<div class="container col-md-12" id="continue-reading"></div>
+
+<div class="container col-md-10 col-md-offset-2" id="main-content" style="margin-top: 70px;">
+  
+  <div class="system-message" id="id1">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">&lt;rst_prolog&gt;</span>, line 3)</p>
+<p>Unknown interpreted text role „blank”.</p>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">&lt;rst_prolog&gt;</span>, line 3)</p>
+<p>Substitution definition contains illegal element &lt;problematic&gt;:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;problematic ids=&quot;id2&quot; refid=&quot;id1&quot;&gt;
+    :blank:`x`
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. |blank| replace:: :blank:`x`
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h1>Разне врсте података у табели<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h1>
+<p>Већ смо видели да једна ћелија Ексел табеле може да садржи неки текст или неки број. У пословним применама се често дешава да у табели треба представити датуме и времена одржавања неких догађаја. На овом часу ћемо видети:</p>
+<ol class="arabic simple">
+<li><p>планирање табеле,</p></li>
+<li><p>унос датума и времена у табелу,</p></li>
+<li><p>рачун са подацима који представљају датум и време,</p></li>
+<li><p>оквире око ћелије и поравнавање садржаја ћелије.</p></li>
+</ol>
+<div class="section" id="id4">
+<h2>Пример: Донације – валуте у Ексел табели<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>У овом примеру ћемо показати како се у Ексел табели приказују валуте (као што су еври или амерички долари).</p>
+<p><strong>Корак 1.</strong> Са следећег линка <a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/Donacije.xlsx">Donacije.xlsx</a> преузми документ <em>Donacije.xlsx</em> и сними га на свој рачунар.</p>
+<p><strong>Корак 2.</strong> Покрени Ексел и отвори фајл. Видећеш да су у фајлу наведене донације које је једно спортско друштво примило. За сваку донацију је наведено име донатора (у колони „Name”), датум донације (у колони „Date”) и износ (у колони „Amount”):</p>
+<a class="reference internal image-reference" href="../_images/DataTypes301.jpg"><img alt="../_images/DataTypes301.jpg" class="align-center" src="../_images/DataTypes301.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 3.</strong> Корестећи клизач:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes302.jpg"><img alt="../_images/DataTypes302.jpg" class="align-center" src="../_images/DataTypes302.jpg" style="width: 600px;" /></a>
+<p>спусти се до дна табеле и додај три нове врсте:</p>
+<ul class="simple">
+<li><p>Total</p></li>
+<li><p>Min</p></li>
+<li><p>Max</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/DataTypes303.jpg"><img alt="../_images/DataTypes303.jpg" class="align-center" src="../_images/DataTypes303.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 4.</strong> У поље C136 унеси формулу</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">SUM</span><span class="p">(</span><span class="n">C2</span><span class="p">:</span><span class="n">C135</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>како би добио укупну вредност донација:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes304.jpg"><img alt="../_images/DataTypes304.jpg" class="align-center" src="../_images/DataTypes304.jpg" style="width: 600px;" /></a>
+<p>Потом у поље C137 унеси формулу</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">MIN</span><span class="p">(</span><span class="n">C2</span><span class="p">:</span><span class="n">C135</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>а у поље C138 формулу</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">MАX</span><span class="p">(</span><span class="n">C2</span><span class="p">:</span><span class="n">C135</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>како би добио вредност најмање и највеће донације:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes305.jpg"><img alt="../_images/DataTypes305.jpg" class="align-center" src="../_images/DataTypes305.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 5.</strong> Пошто су све донације биле у еврима, форматираћемо све бројеве у колони C тако да се испред броја појави ознака за евро. Селектуј ћелије C2:C138</p>
+<a class="reference internal image-reference" href="../_images/DataTypes306.jpg"><img alt="../_images/DataTypes306.jpg" class="align-center" src="../_images/DataTypes306.jpg" style="width: 600px;" /></a>
+<p>Кликни на стрелицу поред ознаке формата ћелије и појавиће се мали мени:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes307.jpg"><img alt="../_images/DataTypes307.jpg" class="align-center" src="../_images/DataTypes307.jpg" style="width: 600px;" /></a>
+<p>У њему постоји опција „Currency” (енгл. „валута”, трећа од врха), али ако је одаберемо Ексел ће износе означити симболом за амерички долар. Зато ћемо да одаберемо „More Number Formats…” како је на горњој слици и предложено.</p>
+<p>Добијамо нови дијалог:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes308.jpg"><img alt="../_images/DataTypes308.jpg" class="align-center" src="../_images/DataTypes308.jpg" style="width: 600px;" /></a>
+<p>У одељку „Category” (енгл. „Категорија”) одаберемо „Currency” (енгл. „валута”). Ексел нам поново нуди симбол за амерички долар. Да бисмо променили симбол кликнемо на стрелицу која отвара избор расположивих симбола валута. Тако добијамо листу у којој потражимо симбол за евро (за ово треба стрпљења; симбол за евро уопште није близу врха):</p>
+<a class="reference internal image-reference" href="../_images/DataTypes309.jpg"><img alt="../_images/DataTypes309.jpg" class="align-center" src="../_images/DataTypes309.jpg" style="width: 600px;" /></a>
+<p>Одаберемо симбол за евро и кликнемо ОК:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes310.jpg"><img alt="../_images/DataTypes310.jpg" class="align-center" src="../_images/DataTypes310.jpg" style="width: 600px;" /></a>
+<p>Табела сада изгледа овако:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes311.jpg"><img alt="../_images/DataTypes311.jpg" class="align-center" src="../_images/DataTypes311.jpg" style="width: 600px;" /></a>
+<p><strong>ШТА ЈЕ САД? ГДЕ СУ НЕСТАЛИ ИЗНОСИ У ВРСТИ „Total” И „Max”?</strong></p>
+<p>Када у некој ћелији Ексел прикаже</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#############</span>
+</pre></div>
+</div>
+<p>то значи да се ту налази неки број, али је ћелија сувише уска да би тај број могао да буде приказан у целости. Само треба проширити колону C и све ће бити у реду:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes312.jpg"><img alt="../_images/DataTypes312.jpg" class="align-center" src="../_images/DataTypes312.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 6.</strong> Сними табелу за крај.</p>
+</div>
+<div class="section" id="id5">
+<h2>Пример: Музички фестивали у Европи – датуми у Ексел табели<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>У овом примеру ћемо направити табелу која представља списак неких музичких фестивала у Европи.</p>
+<p><strong>Корак 1.</strong> Покрени Ексел и направи празан документ:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes101.jpg"><img alt="../_images/DataTypes101.jpg" class="align-center" src="../_images/DataTypes101.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 2.</strong> Прва врста ће представљати <em>заглавље табеле</em> и у ћелије чемо унети имена колона:</p>
+<ul class="simple">
+<li><p>Име фестивала</p></li>
+<li><p>Место одржавања</p></li>
+<li><p>Од дана</p></li>
+<li><p>До дана</p></li>
+</ul>
+<p>Прошири колоне тако да имена колона буду видљива у целости:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes102.jpg"><img alt="../_images/DataTypes102.jpg" class="align-center" src="../_images/DataTypes102.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 3.</strong> У табелу унеси податке које желиш. Ми ћемо у табелу унети податке о следећим фестивалима:</p>
+<table class="docutils align-left" id="id8">
+<caption><span class="caption-text">Музички фестивали</span><a class="headerlink" href="#id8" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Ime festivala</p></th>
+<th class="head"><p>Mesto održavanja</p></th>
+<th class="head"><p>Od dana</p></th>
+<th class="head"><p>Do dana</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Rock am Ring &amp; Rock im Park</p></td>
+<td><p>Mendig i Nirnberg, Nemačka</p></td>
+<td><p>7.6.2019.</p></td>
+<td><p>9.6.2019.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Hellfest Open Air</p></td>
+<td><p>Klison, Francuska</p></td>
+<td><p>21.6.2019.</p></td>
+<td><p>23.6.2019.</p></td>
+</tr>
+<tr class="row-even"><td><p>Glastonbury</p></td>
+<td><p>Pilton, Velika Britanija</p></td>
+<td><p>26.6.2019.</p></td>
+<td><p>30.6.2019.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Defqon.1 Weekend Festival</p></td>
+<td><p>Bidinghujzen, Holandija</p></td>
+<td><p>28.6.2019.</p></td>
+<td><p>30.6.2019.</p></td>
+</tr>
+<tr class="row-even"><td><p>Roskilde</p></td>
+<td><p>Roskilde, Danska</p></td>
+<td><p>29.6.2019.</p></td>
+<td><p>6.7.2019.</p></td>
+</tr>
+<tr class="row-odd"><td><p>EXIT Festival</p></td>
+<td><p>Novi Sad, Srbija</p></td>
+<td><p>4.7.2019.</p></td>
+<td><p>8.7.2019.</p></td>
+</tr>
+<tr class="row-even"><td><p>Lovebox</p></td>
+<td><p>London, Velika Britanija</p></td>
+<td><p>12.7.2019.</p></td>
+<td><p>13.7.2019.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ultra Europe</p></td>
+<td><p>Split, Hrvatska</p></td>
+<td><p>12.7.2019.</p></td>
+<td><p>14.7.2019.</p></td>
+</tr>
+<tr class="row-even"><td><p>Super Bock Super Rock</p></td>
+<td><p>Lisabon, Portugal</p></td>
+<td><p>18.7.2019.</p></td>
+<td><p>20.7.2019.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sziget Festival</p></td>
+<td><p>Budimpešta, Mađarska</p></td>
+<td><p>7.8.2019.</p></td>
+<td><p>13.8.2019.</p></td>
+</tr>
+<tr class="row-even"><td><p>Creamfields</p></td>
+<td><p>Dersberi, Velika Britanija</p></td>
+<td><p>22.8.2019.</p></td>
+<td><p>25.8.2019.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Име фестивала и место одржавања су обични текстови које лако уносимо. Датуме уносимо тако што у кућицу унесемо дан, месец и годину <em>раздвојене цртицама</em>. За први фестивал на нашем списку то су датуми:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">7</span><span class="o">-</span><span class="mi">6</span><span class="o">-</span><span class="mi">2019</span>
+<span class="mi">9</span><span class="o">-</span><span class="mi">6</span><span class="o">-</span><span class="mi">2019</span>
+</pre></div>
+</div>
+<p>Ексел ће препознати да су то датуми (енгл. <em>Date</em> значи „датум”) и приказаће их као:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">07</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">19</span>
+<span class="mi">09</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">19</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/DataTypes103.jpg"><img alt="../_images/DataTypes103.jpg" class="align-center" src="../_images/DataTypes103.jpg" style="width: 600px;" /></a>
+<p>Унесимо податке о осталим фестивалима. У нашем примеру табела изгледа овако:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes104.jpg"><img alt="../_images/DataTypes104.jpg" class="align-center" src="../_images/DataTypes104.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 4.</strong> Сада ћемо да израчунамо колико дана траје сваки фестивал. У кућицу E1 ћемо уписати „Trajanje” (то је име нове колоне коју формирамо) и онда ћемо у кућицу E2 уписати формулу</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">D2</span><span class="o">-</span><span class="n">C2</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/DataTypes105.jpg"><img alt="../_images/DataTypes105.jpg" class="align-center" src="../_images/DataTypes105.jpg" style="width: 600px;" /></a>
+<p><strong>О, да! Ексел уме да рачуна са датумима!</strong> Када притиснемо [ENTER] добијамо следеће стање:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes106.jpg"><img alt="../_images/DataTypes106.jpg" class="align-center" src="../_images/DataTypes106.jpg" style="width: 600px;" /></a>
+<p>Видимо да је за фестивал који се одржава 7.6, 8.6. и 9.6.2019. Ексел обрачунао да траје 2 дана. Разлог је у томе што се у пословном свету ова функција углавном користи за обрачун дневница (од 7.6. до 8.6. је једна дневница, и од 8.6. до 9.6. је друга дневница). Овај фестивал, с друге стране, траје три дана: цео 7.6, цео 8.6. и цео 9.6. Зато морамо да прилагодимо формулу нашој ситуацији и да унесемо:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">D2</span><span class="o">-</span><span class="n">C2</span><span class="o">+</span><span class="mi">1</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/DataTypes107.jpg"><img alt="../_images/DataTypes107.jpg" class="align-center" src="../_images/DataTypes107.jpg" style="width: 600px;" /></a>
+<p>Ако сада формулу брзо ископирамо наниже (кликнемо на ћелију Е2, ухватимо за „бубуљицу” и развучемо наниже) добијамо:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes108.jpg"><img alt="../_images/DataTypes108.jpg" class="align-center" src="../_images/DataTypes108.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 5.</strong> Снимићемо табелу под именом „MuzickiFestivali.xlsx”
+Сада ћемо израчунати просечно трајање фестивала у табели, као и најкраће и најдуже фестивале у табели.</p>
+<p><strong>Корак 6.</strong> Додај табели три нова реда: „Prosek”, „Najkraći” и „Najduži”:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes109.jpg"><img alt="../_images/DataTypes109.jpg" class="align-center" src="../_images/DataTypes109.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 7.</strong> У одговарајућа поља колоне E унеси следеће формуле:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">AVERAGE</span><span class="p">(</span><span class="n">E2</span><span class="p">:</span><span class="n">E12</span><span class="p">)</span>
+<span class="o">=</span><span class="n">MIN</span><span class="p">(</span><span class="n">E2</span><span class="p">:</span><span class="n">E12</span><span class="p">)</span>
+<span class="o">=</span><span class="n">MAX</span><span class="p">(</span><span class="n">E2</span><span class="p">:</span><span class="n">E12</span><span class="p">)</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/DataTypes110.jpg"><img alt="../_images/DataTypes110.jpg" class="align-center" src="../_images/DataTypes110.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 8.</strong> Поље које одговара просеку прикажи са две децимале:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes111.jpg"><img alt="../_images/DataTypes111.jpg" class="align-center" src="../_images/DataTypes111.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 9.</strong> Једном бојом обој <em>све податке</em> о фестивалу који траје најкраће, а другом <em>све податке</em> о фестивалу који траје најдуже:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes112.jpg"><img alt="../_images/DataTypes112.jpg" class="align-center" src="../_images/DataTypes112.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 10.</strong> Постави стил слова у ћелијама A1:E1 на <strong>bold</strong> (кликни на <strong>B</strong>), а у ћелијама A13:E15 на <em>italic</em> (кликни на <em>I</em>):</p>
+<a class="reference internal image-reference" href="../_images/DataTypes113.jpg"><img alt="../_images/DataTypes113.jpg" class="align-center" src="../_images/DataTypes113.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 11.</strong> Сада ћемо да подвучемо линију испод заглавља (прве врсте) и података о последњем фестивалу на списку (у нашем примеру то је дванаеста врста).</p>
+<p>Селектуј ћелије А1:Е1</p>
+<a class="reference internal image-reference" href="../_images/DataTypes114.jpg"><img alt="../_images/DataTypes114.jpg" class="align-center" src="../_images/DataTypes114.jpg" style="width: 600px;" /></a>
+<p>Онда кликни на стрелицу поред иконе за уоквиравање ћелија и одабери „Bottom Border”:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes115.jpg"><img alt="../_images/DataTypes115.jpg" class="align-center" src="../_images/DataTypes115.jpg" style="width: 600px;" /></a>
+<p>Исто то уради заврсту која садржи податке о последњем фестивалу у табели. Добијамо:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes116.jpg"><img alt="../_images/DataTypes116.jpg" class="align-center" src="../_images/DataTypes116.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 12.</strong> Још само једна естетска ситница и готови смо! Датуми одржавања фестивала и трајање фестивала су поравнати по десној ивици, док су имена одговарајућих колона (C, D и E) поравната по левој ивици. Поравнаћемо и њих по десној ивици, да нам табела буде лепша. Томе служе команде из групе „Alignment” (енгл. „поравнавање”):</p>
+<a class="reference internal image-reference" href="../_images/DataTypes117.jpg"><img alt="../_images/DataTypes117.jpg" class="align-center" src="../_images/DataTypes117.jpg" style="width: 600px;" /></a>
+<p>Вертикално поравнавање садржаја ћелије може бити уз горњу ивицу, центрирано, или уз доњу ивицу. Хоризонтално поравнавање садржаја ћелије може бити уз леву ивицу, центрирано, или уз десну ивицу. (Команде „Wrap Text” и „Merge Cells” ћемо објаснити ускоро.)</p>
+<p>Желимо да поравнамо садржај уз десну ивицу. Зато селектуј ћелије C1:E1 и одабери поравнавање уз десну ивицу:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes119.jpg"><img alt="../_images/DataTypes119.jpg" class="align-center" src="../_images/DataTypes119.jpg" style="width: 600px;" /></a>
+<p>Тако добијамо коначан изглед табеле:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes120.jpg"><img alt="../_images/DataTypes120.jpg" class="align-center" src="../_images/DataTypes120.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 13.</strong> Сними табелу.</p>
+</div>
+<div class="section" id="id6">
+<h2>Пример: Плеј-листа – време у Ексел табели<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>Овако изгледа плеј-листа албума „re:member” популарног исландског музичара Olafurа Arnaldsа:</p>
+<table class="docutils align-left" id="id9">
+<caption><span class="caption-text">Плеј-листа албума „re:member” Olafurа Arnaldsа</span><a class="headerlink" href="#id9" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Rb</p></th>
+<th class="head"><p>Numera</p></th>
+<th class="head"><p>Trajanje</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>re:member</p></td>
+<td><p>6:04</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>unfold</p></td>
+<td><p>3:58</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>saman</p></td>
+<td><p>2:11</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>brot</p></td>
+<td><p>2:54</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>inconsist</p></td>
+<td><p>4:31</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>they sink</p></td>
+<td><p>2:35</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>ypsilon</p></td>
+<td><p>3:55</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>partial</p></td>
+<td><p>3:16</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>momentary</p></td>
+<td><p>2:05</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>undir</p></td>
+<td><p>6:30</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>ekki hugsa</p></td>
+<td><p>4:41</p></td>
+</tr>
+<tr class="row-odd"><td><p>12</p></td>
+<td><p>nyepi</p></td>
+<td><p>4:14</p></td>
+</tr>
+</tbody>
+</table>
+<p>Унећемо ове податке у Ексел и израчунати колико је укупно трајање албума.</p>
+<p><strong>Корак 1.</strong> Са следећег линка <a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/Remember.xlsx">Remember.xlsx</a> преузми датотеку која садржи имена нумера,
+покрени Ексел и учитај датотеку:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes201.jpg"><img alt="../_images/DataTypes201.jpg" class="align-center" src="../_images/DataTypes201.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 2.</strong> За сваку од нумера унеси трајање. Податке који се односе на трајање (време) треба у Ексел да унесемо у облику</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">hh</span><span class="p">:</span><span class="n">mm</span><span class="p">:</span><span class="n">ss</span>
+</pre></div>
+</div>
+<p>где <em>hh</em> означава сате, <em>mm</em> минуте, а <em>ss</em> секунде, раздвојено двотачкама. Увек морамо унети све три компоненте (и сате, и минуте и секунде), чак и ако је неки од њих 0. На пример, за прву нумеру ћемо унети</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">0</span><span class="p">:</span><span class="mi">6</span><span class="p">:</span><span class="mi">4</span>
+</pre></div>
+</div>
+<p>што значи 0 сати, 6 минута и 4 секунде. Тако добијамо:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes202.jpg"><img alt="../_images/DataTypes202.jpg" class="align-center" src="../_images/DataTypes202.jpg" style="width: 600px;" /></a>
+<p>Унесимо сада на исти начин и трајање свих осталих нумера:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes203.jpg"><img alt="../_images/DataTypes203.jpg" class="align-center" src="../_images/DataTypes203.jpg" style="width: 600px;" /></a>
+<p>Ексел уме да рачуна са временима, па је лако одредити укупно трајање албума. У ћелију C2 ћемо уписати укупно трајање албума тако што ћемо унети формулу:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">SUM</span><span class="p">(</span><span class="n">C5</span><span class="p">:</span><span class="n">C6</span><span class="p">)</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/DataTypes204.jpg"><img alt="../_images/DataTypes204.jpg" class="align-center" src="../_images/DataTypes204.jpg" style="width: 600px;" /></a>
+<p>Ексел је сабрао трајање свих нумера и у поље уписао трајање целог албума:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes205.jpg"><img alt="../_images/DataTypes205.jpg" class="align-center" src="../_images/DataTypes205.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 3.</strong> За крај ћемо мало улепшати табелу. Прво ћемо центрирати садржај у ћелијама A4:А16</p>
+<a class="reference internal image-reference" href="../_images/DataTypes206.jpg"><img alt="../_images/DataTypes206.jpg" class="align-center" src="../_images/DataTypes206.jpg" style="width: 600px;" /></a>
+<p>док ћемо ћелију C4 поравнати по десној ивици:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes207.jpg"><img alt="../_images/DataTypes207.jpg" class="align-center" src="../_images/DataTypes207.jpg" style="width: 600px;" /></a>
+<p>Позадину ћелија A1:C2 ћемо обојити црно, а слова бело. Исто тако и ћелије A4:C4</p>
+<a class="reference internal image-reference" href="../_images/DataTypes208.jpg"><img alt="../_images/DataTypes208.jpg" class="align-center" src="../_images/DataTypes208.jpg" style="width: 600px;" /></a>
+<p>Стил слова у ћелији B1 (име аутора) ћемо поставити на <em>italic</em>, а у ћелијама B2:C2 (име албума и трајање) на <strong>bold</strong>. Коначно, ћелије A5:C16 ћемо обојити светло сиво:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes209.jpg"><img alt="../_images/DataTypes209.jpg" class="align-center" src="../_images/DataTypes209.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 4.</strong> Сними табелу.</p>
+</div>
+<div class="section" id="id7">
+<h2>Задаци.<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p><strong>Задатак 1.</strong> Направи Ексел табелу која садржи одсуствовања са наставе неког ученика. Табела треба да има три колоне:</p>
+<ul class="simple">
+<li><p>Od</p></li>
+<li><p>Do</p></li>
+<li><p>Dana</p></li>
+</ul>
+<p>У колоне „Od” и „Do” унеси неколико података о одсуствима. Онда у колони „Dana” израчунај колико је трајало свако одсуство. Користи формулу као што је ова:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">B2</span><span class="o">-</span><span class="n">A2</span><span class="o">+</span><span class="mi">1</span>
+</pre></div>
+</div>
+<p>У последњи ред табеле у колону „Od” упиши „Ukupno” и онда у колони „Dana” израчунај колико си укупно одсуствовање корисећи формулу сличну овој:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">SUM</span><span class="p">(</span><span class="n">C2</span><span class="p">:</span><span class="n">C7</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Улепшај табелу и сними је. Табела на крају треба да изгледа отприлике овако:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes210.jpg"><img alt="../_images/DataTypes210.jpg" class="align-center" src="../_images/DataTypes210.jpg" style="width: 600px;" /></a>
+<p><strong>Задатак 2.</strong> Направи Ексел табелу која садржи дневник рада једног ученика. Табела треба да има следеће колоне:</p>
+<ul class="simple">
+<li><p>Datum</p></li>
+<li><p>Početak učenja</p></li>
+<li><p>Kraj učenja</p></li>
+<li><p>Trajanje</p></li>
+</ul>
+<p>У табелу унеси податке о томе када је ученик почео да учи и када је завршио учење за неколико дана. Онда за сваки дан израчунај колико времена је провео учећи. На крају табеле додај табели редове који се зову</p>
+<ul class="simple">
+<li><p>Prosečno</p></li>
+<li><p>Min</p></li>
+<li><p>Max</p></li>
+</ul>
+<p>па израчунај колико је тај ученик учио у просеку, колико је најмање времена провео учећи, а колико највише. Улепшај табелу и сними је.</p>
+<p>Табела коју добијеш треба да изгледа отприлике овако:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes214.jpg"><img alt="../_images/DataTypes214.jpg" class="align-center" src="../_images/DataTypes214.jpg" style="width: 600px;" /></a>
+<p><strong>Задатак 3*.</strong> Направи Ексел табелу која садржи распоред излагања презентација из неког предмета. Табела треба да има три колоне:</p>
+<ul class="simple">
+<li><p>Učenik</p></li>
+<li><p>Naslov prezentacije</p></li>
+<li><p>Od</p></li>
+<li><p>Do</p></li>
+</ul>
+<p>Први ученик креће са излагањем у 9:05. Сваки ученик има 12 минута за излагање презентације, и предвиђено је 4 минута паузе између два излагања. Ако знаш када је ученик почео са излагањем, крај излагања ћеш добити тако што ћеш, на пример у ћелију D2 унети формулу:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">C2</span><span class="o">+</span><span class="n">TIME</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Ова формула на садржај ћелије C2 (почетак излагања) додаје <em>време</em> (енгл. TIME) у трајању од 0 сати, 12 минута и 0 секунди.</p>
+<p>Да би се аутоматски израчунао почетак наредног излагања на крај последњег излагања треба додати 4 минута. На пример, у ћелију C3 треба унети формулу:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">D2</span><span class="o">+</span><span class="n">TIME</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>(Можеш да „развучеш наниже” формуле у обе колоне како би брзо попунио табелу.)</p>
+<p>Пошто нам у овом примеру секунде нису битне, форматирај ћелије које садрже време тако да се приказују само сати и минути како следи. Селектуј ћелије које садрже време почетка и краја сваког излагања, кликни на стрелицу поред ћелије која описује формат, па одабери „More Number Formats”:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes211.jpg"><img alt="../_images/DataTypes211.jpg" class="align-center" src="../_images/DataTypes211.jpg" style="width: 600px;" /></a>
+<p>У листи „Category” одабери „Time”, па онда у листи „Type” одабери „13:30”, што представља пример формата:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes212.jpg"><img alt="../_images/DataTypes212.jpg" class="align-center" src="../_images/DataTypes212.jpg" style="width: 600px;" /></a>
+<p>Улепшај табелу и сними је. Табела на крају треба да изгледа отприлике овако:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes213.jpg"><img alt="../_images/DataTypes213.jpg" class="align-center" src="../_images/DataTypes213.jpg" style="width: 600px;" /></a>
+</div>
+</div>
+
+
+  
+      <div class="col-md-12">
+<ul class="pager">
+    <li id="relations-prev" title='Previous chapter - Лекција 4.' data-toggle="tooltip"><a href="index.html"><i class="fas fa-arrow-left"></i></a></li>
+    
+        <li id="relations-next" title='Next chapter - Тест' data-toggle="tooltip"><a href="testE04.html"><i class="fas fa-arrow-right"></i></a></li>
+</ul>
+
+<!-- <ul class="pager"> -->
+    <!-- -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Лекција 4.' data-toggle="tooltip"><a href="index.html">Претходно поглавље</a></li> -->
+    <!--  -->
+    <!-- -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Тест' data-toggle="tooltip"><a href="testE04.html">Следеће поглавље</a></li> -->
+    <!-- -->
+<!-- </ul> -->
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+</div>
+  
+</div>
+<footer class="footer col-md-12">
+    <div class="container">
+        <div class="text-center">
+            <hr>
+            <p class="text-muted">
+                <span class="pull-left">&copy; 2019 Petlja (Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

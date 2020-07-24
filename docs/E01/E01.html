@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Увод у рад са програмима за табеларна израчунавања &#8212; Petlja - Настава програмирања за Други разред гимназије</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/runestonebase.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../_static/jquery-fix.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/waypoints.min.js"></script>
+    <script src="../_static/rangy-core.js"></script>
+    <script src="../_static/rangy-textrange.js"></script>
+    <script src="../_static/rangy-cssclassapplier.js"></script>
+    <script src="../_static/user-highlights.js"></script>
+    <script src="../_static/jquery.idle-timer.js"></script>
+    <script src="../_static/processing-1.4.1.min.js"></script>
+    <script src="../_static/jquery.hotkey.js"></script>
+    <script src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Тест" href="testE01.html" />
+    <link rel="prev" title="Лекција 1." href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'Настава програмирања за Други разред гимназије';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'Настава програмирања за Други разред гимназије';
+  eBookConfig.runestone_version = '3.1.1';
+  eBookConfig.imagesDir = '../_images/';
+  eBookConfig.staticDir = '../_static/';
+  if(typeof(Sk) != "undefined")
+      Sk.imgPath = eBookConfig.imagesDir;
+</script>
+
+<div id="fb-root"></div>
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <img src="../_static/img/logo.png" style="width:80px; height: 80px;"> 
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 10px; margin-left: 25px;">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../">Petlja - Настава програмирања за Други разред гимназије</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="margin-left: 50%;margin-top: 5%;font-size: 20px;">
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../J01/index.html">IPYTHON DIRECTIVE DEBUG</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../J01/J01.html">JUPYTER TEST</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Лекција 1.</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Увод у рад са програмима за табеларна израчунавања</a></li>
+<li class="toctree-l2"><a class="reference internal" href="testE01.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E02/index.html">Лекција 2.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E02/E02.html">Аутоматска рекалкулација</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E02/testE02.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E03/index.html">Лекција 3.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E03/E03.html">Селектовање групе ћелија и уређивање табеле</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E03/testE03.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E04/index.html">Лекција 4.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E04/E04.html">Разне врсте података у табели</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E04/testE04.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E05/index.html">Лекција 5.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E05/E05.html">Штампање и генерисање ПДФ документа</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E05/testE05.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E06/index.html">Лекција 6.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E06/E06.html">Апсолутне и релативне адресе ћелија</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E06/testE06.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E07/index.html">Лекција 7.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E07/E07.html">Визуелизација података</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E07/testE07.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E08/index.html">Лекција 8.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E08/E08.html">Сортирање, филтрирање и фреквенцијска анализа</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E08/testE08.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E09/index.html">Лекција 9.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E09/E09.html">Више табела у истом документу</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E09/testE09.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E10/index.html">Лекција 10.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E10/E10.html">Рад са дељеним табелама</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E10/testE10.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y01/index.html">Лекција 21.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y01/L801.html">Увод у процесирање низова података</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y01/test801.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y02/index.html">Лекција 22.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y02/L802.html">Бројачи и суме</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y02/test802.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y03/index.html">Лекција 23.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y03/L803.html">Низови симбола (<em>стрингови</em> или <em>ниске</em>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y03/test803.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y04/index.html">Лекција 24.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y04/L804.html">Угнежђене петље</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y04/test804.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y05/index.html">Лекција 25.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y05/L805.html">Сортирање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y05/test805.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y06/index.html">Лекција 26.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y06/L806.html">Филтрирање и претраживање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y06/test806.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y07/index.html">Лекција 27.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y07/L807.html">Рад са текстуалним датотекама</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y07/test807.html">Тест</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+  </div>
+<div class="container col-md-12" id="continue-reading"></div>
+
+<div class="container col-md-10 col-md-offset-2" id="main-content" style="margin-top: 70px;">
+  
+  <div class="system-message" id="id1">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">&lt;rst_prolog&gt;</span>, line 3)</p>
+<p>Unknown interpreted text role „blank”.</p>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">&lt;rst_prolog&gt;</span>, line 3)</p>
+<p>Substitution definition contains illegal element &lt;problematic&gt;:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;problematic ids=&quot;id2&quot; refid=&quot;id1&quot;&gt;
+    :blank:`x`
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. |blank| replace:: :blank:`x`
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h1>Увод у рад са програмима за табеларна израчунавања<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h1>
+<p>На овом часу ћемо причати о:</p>
+<ol class="arabic simple">
+<li><p>Значају обраде података у савременом друштву, и</p></li>
+<li><p>Екселу као алату за обраду табеларно приказаних података (како покренути Ексел, како унети податке у табелу и како снимити табелу).</p></li>
+</ol>
+<div class="section" id="id4">
+<h2>Подаци и информације<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>Доношење важних одлука се мора ослањати на анализу података. Модерно друштво је тако организовано да смо све чешће у прилици да морамо да доносимо важне одлуке, што значи да смо све чешће у прилици да морамо да анализирамо податке. Анализа података постаје незаобилазан елемент чак и на личном нивоу.</p>
+<p><strong>Пример 1.</strong> Да ли узети кредит са нижом каматном стопом и дужим периодом отплате, или обрнуто?</p>
+<p><strong>Пример 2.</strong> За брзе и краће позајмице новца од банке, да ли је боље определити се за кредитну картицу или за дозвољени минус?</p>
+<p><strong>Пример 3.</strong> Да ли је боље узети стамбени кредит који је индексиран у еврима, динарима или швајцарским францима?</p>
+<p>Ниједан од ових проблема се не може решити „у глави”, без озбиљне анализе услова који су везани за сваку опцију, и озбиљне анализе очекиваних прилива средстава у породицу. Дакле, без озбиљне <em>анализе података</em>.</p>
+<p>Податке добијамо посматрањем, прикупљањем, анкетирањем,… Анализом података долазимо до <em>информације</em>:</p>
+<a class="reference internal image-reference" href="../_images/podatak-obrada-inf.jpg"><img alt="../_images/podatak-obrada-inf.jpg" class="align-center" src="../_images/podatak-obrada-inf.jpg" style="width: 600px;" /></a>
+<p><strong>Податак</strong> може бити неки број, неколико бројева, или пакет бројева представљен у облику табеле.</p>
+<p><strong>Обрада података</strong> се своди на рачунање <em>статистика</em> као што су минимум, максимум, збир, просек, медијана, али и на преуређивање и одабир релевантних података из почетне групе како би се лакше уочиле законистости (<em>сортирање</em> и <em>филтрирање</em>).</p>
+<p><strong>Информација</strong> коју добијамо обрадом података може бити представљена у облику једног броја (просек оцена), табеле (списак свих такмичара који су се квалификовали за наредни степен такмичења), или графикона (промена температуре током године).</p>
+<div class="section" id="id5">
+<h3>Пример.<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>Једна породица је куповала прибор за почетак нове школске године. Ево списка ствари које су купили:</p>
+<table class="docutils align-left" id="id11">
+<caption><span class="caption-text">Школски прибор</span><a class="headerlink" href="#id11" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Опис</p></th>
+<th class="head"><p>Цена по ком.</p></th>
+<th class="head"><p>Комада</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Свеска А4 меки повез</p></td>
+<td><p>80,96</p></td>
+<td><p>12</p></td>
+</tr>
+<tr class="row-odd"><td><p>Свеска А5 меки повез</p></td>
+<td><p>71,89</p></td>
+<td><p>12</p></td>
+</tr>
+<tr class="row-even"><td><p>Свеска А4 тврди повез</p></td>
+<td><p>112,59</p></td>
+<td><p>8</p></td>
+</tr>
+<tr class="row-odd"><td><p>Нотна свеска</p></td>
+<td><p>15,37</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>Гумица</p></td>
+<td><p>37,30</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-odd"><td><p>Мине 0.5 ХБ</p></td>
+<td><p>41,12</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-even"><td><p>Увијач А4 (10 ком)</p></td>
+<td><p>247,30</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-odd"><td><p>Фасцикла А4</p></td>
+<td><p>68,93</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>Налепнице Б6</p></td>
+<td><p>32,75</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p>Лепак у стику 71г</p></td>
+<td><p>73,42</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-even"><td><p>Блокчић А6</p></td>
+<td><p>140,69</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-odd"><td><p>Блок за цртање 5</p></td>
+<td><p>69,86</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>Шестар</p></td>
+<td><p>218,05</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Вежбанка А4 квадрати</p></td>
+<td><p>18,96</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>Вежбанка А4 линије</p></td>
+<td><p>18,96</p></td>
+<td><p>6</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ператоница</p></td>
+<td><p>499,56</p></td>
+<td><p>2</p></td>
+</tr>
+</tbody>
+</table>
+<p>Колико је коштао прибор? Израчунајте уз помоћ калкулатора, па проверите рачун са учеником до себе.</p>
+<p>Сада ћемо показати како овај (и много сложенији рачуни!) могу да се <em>аутоматизују</em>!</p>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>Покретање Ексела<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>Мајкрософтов Ексел (<em>Microsoft Excel</em>) представља један од најраспрострањенијих софтверских производа за обраду табеларно представљених података. Ексел своју популарност дугује томе што је табела у коју се уносе подаци „опипљива”, она је ту, корисник може само да кликне на поље и да унесе податак или формулу.</p>
+<p>Да бисмо га покренули, прво морамо да пронађемо Ексел на рачунару. Оперативни систем <em>Windows</em> омогућује да до програма дођемо на разне начине.</p>
+<p>Можемо га потражити у списку апликација које су инсталиране на рачунару, или је пречица већ издвојена на Старт менију:</p>
+<a class="reference internal image-reference" href="../_images/StartExcel.jpg"><img alt="../_images/StartExcel.jpg" class="align-center" src="../_images/StartExcel.jpg" style="width: 600px;" /></a>
+<p>а постоји и могућност да се пречица која води ка програму већ налази на радној површини (десктоп):</p>
+<a class="reference internal image-reference" href="../_images/StartExcel2.jpg"><img alt="../_images/StartExcel2.jpg" class="align-center" src="../_images/StartExcel2.jpg" style="width: 600px;" /></a>
+<p>Када се покрене, Ексел нам нуди могућност да направимо нови документ, или да учитамо неки од постојећих:</p>
+<a class="reference internal image-reference" href="../_images/OpenExcel.jpg"><img alt="../_images/OpenExcel.jpg" class="align-center" src="../_images/OpenExcel.jpg" style="width: 600px;" /></a>
+<p>Ако се одлучимо да кренемо од празног документа (<em>Blank workbook</em>) отвориће се нови празан радни лист:</p>
+<a class="reference internal image-reference" href="../_images/Excel0.jpg"><img alt="../_images/Excel0.jpg" class="align-center" src="../_images/Excel0.jpg" style="width: 600px;" /></a>
+<p>Одмах испод заглавља прозора (тања зелена линија) налази се <em>командна трака</em> (енгл. <em>command ribbon</em> или кратко само <em>ribbon</em>) на којој су сличицама (које се зову <em>иконе</em> или <em>иконице</em>) приказане разне акције које Ексел уме да изврши. О некима од њих ћемо детаљно причати касније.</p>
+</div>
+<div class="section" id="id7">
+<h2>Навигација и уношење података у табелу<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p>Највећи део прозора представља табела чије колоне су означене словима (A, B, C, D, …), а врсте бројевима (1, 2, 3, …). Табела се састоји од „кућица” које зовемо <em>ћелије</em>. Ћелија може да садржи</p>
+<ul class="simple">
+<li><p>неки текст (опис),</p></li>
+<li><p>неки број, или</p></li>
+<li><p><em>формулу</em>, што је главна снага Ексела.</p></li>
+</ul>
+<p>Име сваке ћелије се састоји од слова (колоне у којој се налази) и броја (врсте у којој се налази). Дакле, као у шаху!</p>
+<p>Ћелија око које се налази зелени оквир се зове <em>активна ћелија</em>. На слици је то ћелија А1. Активна ћелија је ћелија у коју можемо да унесемо неки садржај.</p>
+<p>Да бисмо унели неки податак рецимо у ћелију Е12 треба да кликнемо мишем на њу или да се стрелицама „дошетамо” до ње. Онда можемо да унесемо неки текст или број, рецимо овако:</p>
+<a class="reference internal image-reference" href="../_images/Excel2.jpg"><img alt="../_images/Excel2.jpg" class="align-center" src="../_images/Excel2.jpg" style="width: 600px;" /></a>
+<p><strong>Након уноса податка обавезно треба притиснути тастер [ENTER]</strong>:</p>
+<a class="reference internal image-reference" href="../_images/Excel3.jpg"><img alt="../_images/Excel3.jpg" class="align-center" src="../_images/Excel3.jpg" style="width: 600px;" /></a>
+<p><strong>ПАЖЊА!</strong> У зависности од тога како су у оперативном систему постављена регионална подешавања (<em>Reginal Settings</em>) Ексел приказује бројеве користећи децималну тачку (по англо-саксонском стандарду) или користећи децимални зарез (по централноевропском стандарду кога је усвојила и Србија).</p>
+<p><strong>У овом курсу ћемо користити англо-саксонски стандард јер је то стање ствари у програмирању на свим континентима и у свим државама света!</strong></p>
+<div class="section" id="id8">
+<h3>Пример<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>Сада ћемо направити нови празан документ и у њега унети табелу са почетка (куповина школског прибора). Не морате да прекуцавате податке. Уместо тога унесте неке своје податке, али водите рачуна да табела треба да има три колоне које се зову „Опис”, „Цена по ком.” и „Комада” и да мора да има барем 15 редова.</p>
+<p>Кренемо од празне табеле:</p>
+<a class="reference internal image-reference" href="../_images/Excel100.jpg"><img alt="../_images/Excel100.jpg" class="align-center" src="../_images/Excel100.jpg" style="width: 600px;" /></a>
+<p>Ексел аутоматски додели неку „стандардну” ширину колонама и висину врстама табеле. Ако ништа не променимо унос података ће бити непријатан и табела ће на крају изгледати некако овако:</p>
+<a class="reference internal image-reference" href="../_images/Excel101.jpg"><img alt="../_images/Excel101.jpg" class="align-center" src="../_images/Excel101.jpg" style="width: 600px;" /></a>
+<p>Пошто су колоне сувише уске описи се не виде добро. Колоне се могу проширити тако што мишем „ухватите” границу између два слова у заглављу табеле и развучете колону колико вам прија:</p>
+<a class="reference internal image-reference" href="../_images/Excel101-1.jpg"><img alt="../_images/Excel101-1.jpg" class="align-center" src="../_images/Excel101-1.jpg" style="width: 600px;" /></a>
+<p>Тако добијамо табелу која је много прегледнија:</p>
+<a class="reference internal image-reference" href="../_images/Excel102.jpg"><img alt="../_images/Excel102.jpg" class="align-center" src="../_images/Excel102.jpg" style="width: 600px;" /></a>
+<p>На исти начин се могу проширити и врсте у табели, али то нам у овом примеру није било потребно.</p>
+<p>Да нам труд не пропадне треба да снимимо табелу коју смо направили. Кликните на „File”:</p>
+<a class="reference internal image-reference" href="../_images/Excel103.jpg"><img alt="../_images/Excel103.jpg" class="align-center" src="../_images/Excel103.jpg" style="width: 600px;" /></a>
+<p>па онда на „Save as” и „This PC”:</p>
+<a class="reference internal image-reference" href="../_images/Excel104.jpg"><img alt="../_images/Excel104.jpg" class="align-center" src="../_images/Excel104.jpg" style="width: 600px;" /></a>
+<p>У одговарајуће поље унесите име фајла и кликните на „Save”:</p>
+<a class="reference internal image-reference" href="../_images/Excel105.jpg"><img alt="../_images/Excel105.jpg" class="align-center" src="../_images/Excel105.jpg" style="width: 600px;" /></a>
+</div>
+</div>
+<div class="section" id="id9">
+<h2>Једноставне формуле<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<p>Моћ Ексела лежи у томе што у ћелију можемо да упишемо формулу која објашњава како треба да се израчуна вредност ћелије.</p>
+<p>Све Ексел формуле почињу знаком = (једнако). Идеја је јасна: „будућа вредност ћелије = формула”.</p>
+<p>Формула се у ћелију уноси тако што кликнемо на ћелију и откуцамо „= формула”. Најједноставније формуле изгледају овако:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="p">(</span><span class="n">B3</span><span class="o">+</span><span class="n">C3</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+<span class="o">=</span><span class="n">C7</span><span class="o">+</span><span class="n">D7</span><span class="o">*</span><span class="p">(</span><span class="n">D8</span><span class="o">-</span><span class="mi">12</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Дакле, то су неки математички изрази који описују како се од вредности уписаних у неке друге ћелије рачуна вредност ћелије у којој је формула. Заграде користимо као што смо и навикли, док су симболи операција мало другачији него у математици:
+множење се означава звездицом, а дељење косом цртом.</p>
+<p>Сада ћемо показати како у примеру са школским прибором објаснити Екселу да за нас израчуна колико је новца потрошено. Прво ћемо кликнути на ћелију D1 и у њу уписати „Ukupno”, да се зна шта представљају подаци у тој колони:</p>
+<a class="reference internal image-reference" href="../_images/Excel106.jpg"><img alt="../_images/Excel106.jpg" class="align-center" src="../_images/Excel106.jpg" style="width: 600px;" /></a>
+<p>Потом ћемо кликнути на ћелију D2 и у њу унети формулу</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">B2</span><span class="o">*</span><span class="n">C2</span>
+</pre></div>
+</div>
+<p>Како уносимо формулу Ексел показује које ћелије учествују у формули:</p>
+<a class="reference internal image-reference" href="../_images/Excel107.jpg"><img alt="../_images/Excel107.jpg" class="align-center" src="../_images/Excel107.jpg" style="width: 600px;" /></a>
+<p>Када притиснемо [ENTER] Ексел ће израчунати вредност формуле и уписати одговарајући број у ћелију:</p>
+<a class="reference internal image-reference" href="../_images/Excel108.jpg"><img alt="../_images/Excel108.jpg" class="align-center" src="../_images/Excel108.jpg" style="width: 600px;" /></a>
+<p>Важно је да разумемо да <em>Ексел није заборавио формулу!</em> Она је и даље уписана у ћелију, али се приказује <em>вредност формуле</em> јер је то оно што ми као корисници желимо да видимо. Ако сада поново кликнемо на ћелију, формула се јасно види и реду изнад (који се зове <em>formula bar</em>):</p>
+<a class="reference internal image-reference" href="../_images/Excel109.jpg"><img alt="../_images/Excel109.jpg" class="align-center" src="../_images/Excel109.jpg" style="width: 600px;" /></a>
+<p>Сада ћемо у ћелију D3 унети формулу</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">B3</span><span class="o">*</span><span class="n">C3</span>
+</pre></div>
+</div>
+<p>и тако до краја. Ово је мало досадно и може се убрзати, али о томе касније:</p>
+<a class="reference internal image-reference" href="../_images/Excel110.jpg"><img alt="../_images/Excel110.jpg" class="align-center" src="../_images/Excel110.jpg" style="width: 600px;" /></a>
+<p>На овај начин је Ексел за нас израчунао колико новца је потрошено на сваку појединачну ставку. Још само да видимо колико новца је укупно потрошено, и задатак је готов.</p>
+<p>Сада желимо да у ћелији D18 (<em>Пази! У твом случају то може бити нека друга ћелија!</em>) израчунамо колико је укупно новца потрошено према овој табели. Један начин да то урадимо је да у ћелију унесемо формулу</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span> <span class="n">D2</span> <span class="o">+</span> <span class="n">D3</span> <span class="o">+</span> <span class="n">D4</span> <span class="o">+</span> <span class="n">D5</span> <span class="o">+</span> <span class="n">D6</span> <span class="o">+</span> <span class="n">D7</span> <span class="o">+</span> <span class="n">D8</span> <span class="o">+</span> <span class="n">D9</span> <span class="o">+</span> <span class="n">D10</span> <span class="o">+</span> <span class="n">D11</span> <span class="o">+</span> <span class="n">D12</span> <span class="o">+</span> <span class="n">D13</span> <span class="o">+</span> <span class="n">D14</span> <span class="o">+</span> <span class="n">D15</span> <span class="o">+</span> <span class="n">D16</span> <span class="o">+</span> <span class="n">D17</span>
+</pre></div>
+</div>
+<p>али је то неудобно, и приликом уноса можемо направити разне грешке.</p>
+<p>Уместо тога, у ћелију ћемо унети следећу формулу:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">SUM</span><span class="p">(</span><span class="n">D2</span><span class="p">:</span><span class="n">D17</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Ова формула каже Екселу да у ћелију D18 упише <em>збир</em> (SUM) вредности уписаних у ћелије D2, D3,…, D17 (D2:D17), што смо и желели. „SUM” се зове <em>функција</em>, а запис „D2:D17” се зове <em>распон</em> или <em>опсег ћелија.</em></p>
+<p>Приликом уноса формуле Ексел означава ћелије које учествују у рачуну:</p>
+<a class="reference internal image-reference" href="../_images/Excel111.jpg"><img alt="../_images/Excel111.jpg" class="align-center" src="../_images/Excel111.jpg" style="width: 600px;" /></a>
+<p>па када притиснемо [ENTER] добијамо:</p>
+<a class="reference internal image-reference" href="../_images/Excel112.jpg"><img alt="../_images/Excel112.jpg" class="align-center" src="../_images/Excel112.jpg" style="width: 600px;" /></a>
+<p>Задатак готов! Само још једном да снимимо табелу.</p>
+</div>
+<div class="section" id="id10">
+<h2>Задаци<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<p><strong>Задатак 1.</strong> Направите табелу са списком предмета и оцена које сте добили на крају прошле школске године. Табела треба да има следеће колоне:</p>
+<ul class="simple">
+<li><p>Предмет</p></li>
+<li><p>Оцена</p></li>
+</ul>
+<p>Онда израчунајте просечну оцену. Да се подсетимо – просек бројева се рачуна овако:</p>
+<div class="math notranslate nohighlight">
+\[\hbox{просек бројева } x_1, x_2, \dots, x_n = \frac{x_1 + x_2 + \dots + x_n}{n}.\]</div>
+<p>Дакле, за рачунање просека можете користити формулу сличну овој:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="p">(</span><span class="n">B2</span><span class="o">+</span><span class="n">B3</span><span class="o">+</span><span class="n">B4</span><span class="o">+</span><span class="n">B5</span><span class="o">+</span><span class="n">B6</span><span class="o">+</span><span class="n">B7</span><span class="o">+</span><span class="n">B8</span><span class="o">+</span><span class="n">B9</span><span class="p">)</span><span class="o">/</span><span class="mi">8</span>
+</pre></div>
+</div>
+<p>или, још боље, формулу сличну овој:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">AVERAGE</span><span class="p">(</span><span class="n">B2</span><span class="p">:</span><span class="n">B9</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>која аутоматски рачуна просек (енгл. <em>AVERAGE</em>) бројева у ћелијама B2, B3, …, B9 (B2:B9). <em>Водите рачуна о томе да се у вашој табели може радити о другим ћелијама!</em></p>
+<p><strong>Задатак 2.</strong> Направите табелу са плеј-листом једног ди-џеја. Табела треба да има следеће колоне:</p>
+<ul class="simple">
+<li><p>Аутор</p></li>
+<li><p>Албум</p></li>
+<li><p>Нумера</p></li>
+<li><p>Трајање (у минутима)</p></li>
+</ul>
+<p>Онда израчунајте укупно трајање музике у плеј-листи у минутима.</p>
+</div>
+</div>
+
+
+  
+      <div class="col-md-12">
+<ul class="pager">
+    <li id="relations-prev" title='Previous chapter - Лекција 1.' data-toggle="tooltip"><a href="index.html"><i class="fas fa-arrow-left"></i></a></li>
+    
+        <li id="relations-next" title='Next chapter - Тест' data-toggle="tooltip"><a href="testE01.html"><i class="fas fa-arrow-right"></i></a></li>
+</ul>
+
+<!-- <ul class="pager"> -->
+    <!-- -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Лекција 1.' data-toggle="tooltip"><a href="index.html">Претходно поглавље</a></li> -->
+    <!--  -->
+    <!-- -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Тест' data-toggle="tooltip"><a href="testE01.html">Следеће поглавље</a></li> -->
+    <!-- -->
+<!-- </ul> -->
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+</div>
+  
+</div>
+<footer class="footer col-md-12">
+    <div class="container">
+        <div class="text-center">
+            <hr>
+            <p class="text-muted">
+                <span class="pull-left">&copy; 2019 Petlja (Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

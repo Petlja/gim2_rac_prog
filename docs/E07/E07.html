@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Визуелизација података &#8212; Petlja - Настава програмирања за Други разред гимназије</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/runestonebase.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../_static/jquery-fix.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/waypoints.min.js"></script>
+    <script src="../_static/rangy-core.js"></script>
+    <script src="../_static/rangy-textrange.js"></script>
+    <script src="../_static/rangy-cssclassapplier.js"></script>
+    <script src="../_static/user-highlights.js"></script>
+    <script src="../_static/jquery.idle-timer.js"></script>
+    <script src="../_static/processing-1.4.1.min.js"></script>
+    <script src="../_static/jquery.hotkey.js"></script>
+    <script src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Тест" href="testE07.html" />
+    <link rel="prev" title="Лекција 7." href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'Настава програмирања за Други разред гимназије';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'Настава програмирања за Други разред гимназије';
+  eBookConfig.runestone_version = '3.1.1';
+  eBookConfig.imagesDir = '../_images/';
+  eBookConfig.staticDir = '../_static/';
+  if(typeof(Sk) != "undefined")
+      Sk.imgPath = eBookConfig.imagesDir;
+</script>
+
+<div id="fb-root"></div>
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <img src="../_static/img/logo.png" style="width:80px; height: 80px;"> 
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 10px; margin-left: 25px;">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../">Petlja - Настава програмирања за Други разред гимназије</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="margin-left: 50%;margin-top: 5%;font-size: 20px;">
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../J01/index.html">IPYTHON DIRECTIVE DEBUG</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../J01/J01.html">JUPYTER TEST</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E01/index.html">Лекција 1.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E01/E01.html">Увод у рад са програмима за табеларна израчунавања</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E01/testE01.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E02/index.html">Лекција 2.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E02/E02.html">Аутоматска рекалкулација</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E02/testE02.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E03/index.html">Лекција 3.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E03/E03.html">Селектовање групе ћелија и уређивање табеле</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E03/testE03.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E04/index.html">Лекција 4.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E04/E04.html">Разне врсте података у табели</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E04/testE04.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E05/index.html">Лекција 5.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E05/E05.html">Штампање и генерисање ПДФ документа</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E05/testE05.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E06/index.html">Лекција 6.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E06/E06.html">Апсолутне и релативне адресе ћелија</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E06/testE06.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Лекција 7.</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Визуелизација података</a></li>
+<li class="toctree-l2"><a class="reference internal" href="testE07.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E08/index.html">Лекција 8.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E08/E08.html">Сортирање, филтрирање и фреквенцијска анализа</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E08/testE08.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E09/index.html">Лекција 9.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E09/E09.html">Више табела у истом документу</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E09/testE09.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E10/index.html">Лекција 10.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E10/E10.html">Рад са дељеним табелама</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E10/testE10.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y01/index.html">Лекција 21.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y01/L801.html">Увод у процесирање низова података</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y01/test801.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y02/index.html">Лекција 22.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y02/L802.html">Бројачи и суме</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y02/test802.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y03/index.html">Лекција 23.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y03/L803.html">Низови симбола (<em>стрингови</em> или <em>ниске</em>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y03/test803.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y04/index.html">Лекција 24.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y04/L804.html">Угнежђене петље</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y04/test804.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y05/index.html">Лекција 25.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y05/L805.html">Сортирање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y05/test805.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y06/index.html">Лекција 26.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y06/L806.html">Филтрирање и претраживање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y06/test806.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y07/index.html">Лекција 27.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y07/L807.html">Рад са текстуалним датотекама</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y07/test807.html">Тест</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+  </div>
+<div class="container col-md-12" id="continue-reading"></div>
+
+<div class="container col-md-10 col-md-offset-2" id="main-content" style="margin-top: 70px;">
+  
+  <div class="system-message" id="id1">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">&lt;rst_prolog&gt;</span>, line 3)</p>
+<p>Unknown interpreted text role „blank”.</p>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">&lt;rst_prolog&gt;</span>, line 3)</p>
+<p>Substitution definition contains illegal element &lt;problematic&gt;:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;problematic ids=&quot;id2&quot; refid=&quot;id1&quot;&gt;
+    :blank:`x`
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. |blank| replace:: :blank:`x`
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h1>Визуелизација података<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h1>
+<p>У овој лекцији ћемо дискутовати о:</p>
+<ol class="arabic simple">
+<li><p>раду са командним тракама у Екселу,</p></li>
+<li><p>приказивању података разним врстама графикона, и</p></li>
+<li><p>приказивању две групе података на истом графикону.</p></li>
+</ol>
+<div class="section" id="ribbons">
+<h2>Рад са командним тракама (<em>ribbons</em>)<a class="headerlink" href="#ribbons" title="Permalink to this headline">¶</a></h2>
+<p>Увек је важно податке приказати у виду графикона зато што људи најлакше и најбрже обрађују визуелне податке. (Вероватно знаш за изреку да <em>једна слика вреди више од хиљаду речи</em>.) Научићемо да приказујемо податке разним врстама графикона. Важно је напоменути да није свака врста графикона погодна за приказивање сваке врсте података.</p>
+<p>Ексел, наравно, има могућност да на основу података који су дати направи графикон. Одговарајуће опције се налазе на командној траци (енгл. <em>ribbon</em>) који се зове „Insert”. При врху прозора се налази списак свих командних трака:</p>
+<a class="reference internal image-reference" href="../_images/gr1.jpg"><img alt="../_images/gr1.jpg" class="align-center" src="../_images/gr1.jpg" style="width: 600px;" /></a>
+<p>Одабиром било које од њих можемо да добијамо нови сет команди као што ћемо показати у наредном одељку. Кликом на „Home” увек можемо да се вратимо на основну командну траку („да се вратимо кући”).</p>
+</div>
+<div class="section" id="id4">
+<h2>Промена величине у времену<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p><strong>Корак 1.</strong> Са следећег линка преузми документ <em>BrLjudiNaSvetu.xlsx</em> и сними га на свој рачунар:</p>
+<p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/BrLjudiNaSvetu.xlsx">Broj ljudi</a></p>
+<p>Отвори документ и пређи на командну траку „Insert” на којој су нам доступне нове могућности. За креирање графикона ће нам бити важне оне које се налазе у групи „Charts” (енгл. „графикон”):</p>
+<a class="reference internal image-reference" href="../_images/gr3.jpg"><img alt="../_images/gr3.jpg" class="align-center" src="../_images/gr3.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 2.</strong> У табели коју смо учитали приказан је процењени број становника наше планете у разним историјским периодима, при чему је број људи исказан у милијардама. Дакле, ради се о подацима који показују како се неки параметар (број становника наше планете) мењао у времену. Да бисмо ове податке приказали графиконом селектоваћемо целу табелу <em>укључујући и имена колона</em>:</p>
+<a class="reference internal image-reference" href="../_images/gr4.jpg"><img alt="../_images/gr4.jpg" class="align-center" src="../_images/gr4.jpg" style="width: 600px;" /></a>
+<p>На основу имена колона табеле Ексел у највећем броју случајева може да закључи како треба да се зове табела.</p>
+<p><strong>Корак 3.</strong> На командној траци „Insert” из групе „Charts” одабраћемо опцију „Scatter (X,Y)”:</p>
+<a class="reference internal image-reference" href="../_images/gr5.jpg"><img alt="../_images/gr5.jpg" class="align-center" src="../_images/gr5.jpg" style="width: 600px;" /></a>
+<p>како бисмо добили списак расположивих стилова ове врсте графикона:</p>
+<a class="reference internal image-reference" href="../_images/gr6.jpg"><img alt="../_images/gr6.jpg" class="align-center" src="../_images/gr6.jpg" style="width: 600px;" /></a>
+<p>Одаберимо назначени стил (тачке спојене линијама):</p>
+<a class="reference internal image-reference" href="../_images/gr7.jpg"><img alt="../_images/gr7.jpg" class="align-center" src="../_images/gr7.jpg" style="width: 600px;" /></a>
+<p>Добијамо графикон који је део документа:</p>
+<a class="reference internal image-reference" href="../_images/gr8.jpg"><img alt="../_images/gr8.jpg" class="align-center" src="../_images/gr8.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 4.</strong> Пошто је графикон превелики и прекрива податке, можемо га мало смањити („ухватимо” мишем за истакнуту тачку у углу графикона и подесимо величину), а можемо га и преместити (клинемо у празан део оквира и <em>не отпуштајући тастер на мишу</em> преместимо графикон).
+Примети да је Ексел исправно схватио како графикон треба да се зове:</p>
+<a class="reference internal image-reference" href="../_images/gr9.jpg"><img alt="../_images/gr9.jpg" class="align-center" src="../_images/gr9.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 5.</strong> За крај ћемо снимити документ као Ексел документ и као ПДФ. Ако погледамо ПДФ документ, видећемо да је графикон заиста саставни део документа:</p>
+<a class="reference internal image-reference" href="../_images/gr10.jpg"><img alt="../_images/gr10.jpg" class="align-center" src="../_images/gr10.jpg" style="width: 600px;" /></a>
+</div>
+<div class="section" id="id5">
+<h2>Компаративна анализа<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>Често подаци служе томе да се изврши <em>компаративна анализа</em>, дакле, да се неке врсте упореде (<em>компарација</em> = упоређивање) и да се установи која врста је више, а која мање заступљена у подацима.</p>
+<p><strong>Корак 1.</strong> Са следећег линка преузми документ <em>Zarada2.xlsx</em> и сними га на свој рачунар:</p>
+<p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/Zarada2.xlsx">Zarade</a></p>
+<p>Табела садржи податке о продаји воћа и оствареној заради:</p>
+<a class="reference internal image-reference" href="../_images/Zarada201.jpg"><img alt="../_images/Zarada201.jpg" class="align-center" src="../_images/Zarada201.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 2.</strong> Желимо да илуструјемо зараду и да визуелизујемо допринос сваке врсте продатог воћа заради. Пређи на командну траку „Insert” и уочи (немој још ништа да кликнеш!) опцију која црта хистограме (зову се још и <em>стубичасти дијаграми</em>, а на енглеском <em>column charts</em> или <em>bar charts</em>):</p>
+<a class="reference internal image-reference" href="../_images/Zarada202.jpg"><img alt="../_images/Zarada202.jpg" class="align-center" src="../_images/Zarada202.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 3.</strong> У овом примеру треба да прикажемо само део података из табеле, и при томе колоне које садрже те податке нису једна до друге. Зато ћемо морати да селектујемо <em>две групе података</em> овако:</p>
+<ol class="arabic simple">
+<li><p>селектуј ћелије A2:A11 као и раније, па</p></li>
+<li><p>притисни тастер [CTRL] и <em>држећи га притиснутог</em> селектуј ћелије D2:D11</p></li>
+</ol>
+<p>Треба да добијеш:</p>
+<a class="reference internal image-reference" href="../_images/Zarada203.jpg"><img alt="../_images/Zarada203.jpg" class="align-center" src="../_images/Zarada203.jpg" style="width: 600px;" /></a>
+<p><em>Обрати пажњу на то да смо у обе групе података селектовали и име колоне!</em></p>
+<p><strong>Корак 4.</strong> Сада кликни на опцију која црта стубичасте дијаграме и одабери стил који ти се највише свиђа:</p>
+<a class="reference internal image-reference" href="../_images/Zarada204.jpg"><img alt="../_images/Zarada204.jpg" class="align-center" src="../_images/Zarada204.jpg" style="width: 600px;" /></a>
+<p>Добили смо графикон:</p>
+<a class="reference internal image-reference" href="../_images/Zarada205.jpg"><img alt="../_images/Zarada205.jpg" class="align-center" src="../_images/Zarada205.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 5.</strong> Ако графикон прекрива текст можемо га мало смањити и померити:</p>
+<a class="reference internal image-reference" href="../_images/Zarada206.jpg"><img alt="../_images/Zarada206.jpg" class="align-center" src="../_images/Zarada206.jpg" style="width: 600px;" /></a>
+</div>
+<div class="section" id="id6">
+<h2>Визуелизација удела у целини<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>Ако желимо да визуелизујемо у којој мери појединачни делови учествују у целини користимо <em>секторски дијаграм</em> (или <em>питасти дијаграм</em> од енгл. <em>pie chart</em>).</p>
+<p><strong>Корак 1.</strong> Преузми поново документ <em>Zarada2.xlsx</em> и сними га на свој рачунар (ако треба, „прегази” стару верзију документа):</p>
+<p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/Zarada2.xlsx">Zarade</a></p>
+<p><strong>Корак 2.</strong> Пређи на командну траку „Insert” и уочи (немој још ништа да кликнеш!) опцију која црта секторске дијаграме:</p>
+<a class="reference internal image-reference" href="../_images/Zarada207.jpg"><img alt="../_images/Zarada207.jpg" class="align-center" src="../_images/Zarada207.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 3.</strong> Поново селектуј <em>две групе података</em>:</p>
+<ol class="arabic simple">
+<li><p>селектуј ћелије A2:A11 као и раније, па</p></li>
+<li><p>притисни тастер [CTRL] и <em>држећи га притиснутог</em> селектуј ћелије D2:D11</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/Zarada203.jpg"><img alt="../_images/Zarada203.jpg" class="align-center" src="../_images/Zarada203.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 4.</strong> Сада кликни на опцију која црта секторске дијаграме и одабери стил који ти се највише свиђа:</p>
+<a class="reference internal image-reference" href="../_images/Zarada208.jpg"><img alt="../_images/Zarada208.jpg" class="align-center" src="../_images/Zarada208.jpg" style="width: 600px;" /></a>
+<p>Добили смо дијаграм:</p>
+<a class="reference internal image-reference" href="../_images/Zarada209.jpg"><img alt="../_images/Zarada209.jpg" class="align-center" src="../_images/Zarada209.jpg" style="width: 600px;" /></a>
+<p>кога опет можемо мало уредити ако прекрива текст:</p>
+<a class="reference internal image-reference" href="../_images/Zarada210.jpg"><img alt="../_images/Zarada210.jpg" class="align-center" src="../_images/Zarada210.jpg" style="width: 600px;" /></a>
+<p>Ако кликнемо на дијаграм, Ексел ће нам приказати који подаци су приказани на дијаграму:</p>
+<a class="reference internal image-reference" href="../_images/Zarada211.jpg"><img alt="../_images/Zarada211.jpg" class="align-center" src="../_images/Zarada211.jpg" style="width: 600px;" /></a>
+</div>
+<div class="section" id="id8">
+<h2>Приказивање две групе података на истом дијаграму<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<p>Могуће је на истом графикону приказати две групе података. Ево примера.</p>
+<p><strong>Корак 1.</strong> „Нормална телесна температура” је заправо интервал температура који се мења са узрастом особе. Када се температура мери испод пазуха, нормална телесна температура (у степенима Целзијуса) је описана табелом <em>NormalnaTT.xlsx</em> коју можеш да преузмеш са следећег линка:</p>
+<p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/NormalnaTT.xlsx">NormalnaTT</a></p>
+<p>Табела изгледа овако:</p>
+<a class="reference internal image-reference" href="../_images/ntt1.jpg"><img alt="../_images/ntt1.jpg" class="align-center" src="../_images/ntt1.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 2.</strong></p>
+<ol class="arabic simple">
+<li><p>Селектуј ћелије A2:C6,</p></li>
+<li><p>одабери радну траку „Insert”</p></li>
+<li><p>Из групе „Charts” одабери опцију „Line Chart” (<em>линијски дијаграми</em>)</p></li>
+<li><p>па од понуђених стилова одабери стил као на слици:</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/ntt2.jpg"><img alt="../_images/ntt2.jpg" class="align-center" src="../_images/ntt2.jpg" style="width: 600px;" /></a>
+<p>Добили смо графикон као на слици:</p>
+<a class="reference internal image-reference" href="../_images/ntt3.jpg"><img alt="../_images/ntt3.jpg" class="align-center" src="../_images/ntt3.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 3.</strong> Примети да је Ексел приказао две групе података на истом графикону, додао је графикону и легенду, <em>али није успео да схвати како цео графикон треба да се зове</em> па је зато ставио „Chart Title” као подсетник да морамо ми ручно да унесемо име графикона.</p>
+<p>Ако кликнемо на „Chart Title” једном да га селектујемо, па онда још једном (дакле, не двоклик тик-тик, већ два клика клик-пауза-клик) појавиће се курсор:</p>
+<a class="reference internal image-reference" href="../_images/ntt4.jpg"><img alt="../_images/ntt4.jpg" class="align-center" src="../_images/ntt4.jpg" style="width: 600px;" /></a>
+<p>Сада можемо да унесемо име графикона:</p>
+<a class="reference internal image-reference" href="../_images/ntt5.jpg"><img alt="../_images/ntt5.jpg" class="align-center" src="../_images/ntt5.jpg" style="width: 600px;" /></a>
+<p>и да прераспоредимо елементе табеле, ако је то потребно:</p>
+<a class="reference internal image-reference" href="../_images/ntt6.jpg"><img alt="../_images/ntt6.jpg" class="align-center" src="../_images/ntt6.jpg" style="width: 600px;" /></a>
+</div>
+<div class="section" id="id9">
+<h2>Задаци<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<p><strong>Задатак 1.</strong> Са следећег линка преузми датотеку која садржи податке о маси (у килограмима) и дужини/висини (у центиметрима) једног дечака од његовог шестог месеца па до његових 6,5 година.</p>
+<p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/Decak.xlsx">Decak.xlsx</a></p>
+<p>Прикажи једним графиконом како се мењала његова маса, а другим како се мењала његова висина.</p>
+<p><strong>Задатак 2.</strong> Процењује се да је Кина на дан 1.7.2019. имала 1.420.062.022 становника. Број становника у Кини се сваке године повећа за 0,35%. Под претпоставком да се годишњи раст броја становника у Кини неће мењати, приказати графиконом очекивани број становника Кине у наредних десет година.</p>
+<p><strong>Задатак 3.</strong> Са следећег линка преузми датотеку која садржи податке о броју становника Србије у 2017. години по годинама старости:</p>
+<p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/StanovnistvoSrbije2017.xlsx">StanovnistvoSrbije2017.xlsx</a></p>
+<p>Додај табели нову колону „M/Ž” па у свакој врсти табеле (дакле, за сваки узраст за који у табели постоје подаци) одреди количник припадника мушког и женског пола тог узраста.</p>
+<p>Прикажи податке стубичастим дијаграмом. Шта уочаваш?</p>
+</div>
+</div>
+
+
+  
+      <div class="col-md-12">
+<ul class="pager">
+    <li id="relations-prev" title='Previous chapter - Лекција 7.' data-toggle="tooltip"><a href="index.html"><i class="fas fa-arrow-left"></i></a></li>
+    
+        <li id="relations-next" title='Next chapter - Тест' data-toggle="tooltip"><a href="testE07.html"><i class="fas fa-arrow-right"></i></a></li>
+</ul>
+
+<!-- <ul class="pager"> -->
+    <!-- -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Лекција 7.' data-toggle="tooltip"><a href="index.html">Претходно поглавље</a></li> -->
+    <!--  -->
+    <!-- -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Тест' data-toggle="tooltip"><a href="testE07.html">Следеће поглавље</a></li> -->
+    <!-- -->
+<!-- </ul> -->
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+</div>
+  
+</div>
+<footer class="footer col-md-12">
+    <div class="container">
+        <div class="text-center">
+            <hr>
+            <p class="text-muted">
+                <span class="pull-left">&copy; 2019 Petlja (Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

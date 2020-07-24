@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Увод у процесирање низова података &#8212; Petlja - Настава програмирања за Други разред гимназије</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/runestonebase.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../_static/jquery-fix.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/waypoints.min.js"></script>
+    <script src="../_static/rangy-core.js"></script>
+    <script src="../_static/rangy-textrange.js"></script>
+    <script src="../_static/rangy-cssclassapplier.js"></script>
+    <script src="../_static/user-highlights.js"></script>
+    <script src="../_static/jquery.idle-timer.js"></script>
+    <script src="../_static/processing-1.4.1.min.js"></script>
+    <script src="../_static/jquery.hotkey.js"></script>
+    <script src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Тест" href="test801.html" />
+    <link rel="prev" title="Лекција 21." href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'Настава програмирања за Други разред гимназије';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'Настава програмирања за Други разред гимназије';
+  eBookConfig.runestone_version = '3.1.1';
+  eBookConfig.imagesDir = '../_images/';
+  eBookConfig.staticDir = '../_static/';
+  if(typeof(Sk) != "undefined")
+      Sk.imgPath = eBookConfig.imagesDir;
+</script>
+
+<div id="fb-root"></div>
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <img src="../_static/img/logo.png" style="width:80px; height: 80px;"> 
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 10px; margin-left: 25px;">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../">Petlja - Настава програмирања за Други разред гимназије</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="margin-left: 50%;margin-top: 5%;font-size: 20px;">
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../J01/index.html">IPYTHON DIRECTIVE DEBUG</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../J01/J01.html">JUPYTER TEST</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E01/index.html">Лекција 1.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E01/E01.html">Увод у рад са програмима за табеларна израчунавања</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E01/testE01.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E02/index.html">Лекција 2.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E02/E02.html">Аутоматска рекалкулација</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E02/testE02.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E03/index.html">Лекција 3.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E03/E03.html">Селектовање групе ћелија и уређивање табеле</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E03/testE03.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E04/index.html">Лекција 4.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E04/E04.html">Разне врсте података у табели</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E04/testE04.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E05/index.html">Лекција 5.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E05/E05.html">Штампање и генерисање ПДФ документа</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E05/testE05.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E06/index.html">Лекција 6.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E06/E06.html">Апсолутне и релативне адресе ћелија</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E06/testE06.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E07/index.html">Лекција 7.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E07/E07.html">Визуелизација података</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E07/testE07.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E08/index.html">Лекција 8.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E08/E08.html">Сортирање, филтрирање и фреквенцијска анализа</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E08/testE08.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E09/index.html">Лекција 9.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E09/E09.html">Више табела у истом документу</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E09/testE09.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E10/index.html">Лекција 10.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E10/E10.html">Рад са дељеним табелама</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E10/testE10.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Лекција 21.</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Увод у процесирање низова података</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test801.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y02/index.html">Лекција 22.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y02/L802.html">Бројачи и суме</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y02/test802.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y03/index.html">Лекција 23.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y03/L803.html">Низови симбола (<em>стрингови</em> или <em>ниске</em>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y03/test803.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y04/index.html">Лекција 24.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y04/L804.html">Угнежђене петље</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y04/test804.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y05/index.html">Лекција 25.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y05/L805.html">Сортирање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y05/test805.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y06/index.html">Лекција 26.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y06/L806.html">Филтрирање и претраживање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y06/test806.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y07/index.html">Лекција 27.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y07/L807.html">Рад са текстуалним датотекама</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y07/test807.html">Тест</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+  </div>
+<div class="container col-md-12" id="continue-reading"></div>
+
+<div class="container col-md-10 col-md-offset-2" id="main-content" style="margin-top: 70px;">
+  
+  <div class="system-message" id="id1">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">&lt;rst_prolog&gt;</span>, line 3)</p>
+<p>Unknown interpreted text role „blank”.</p>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">&lt;rst_prolog&gt;</span>, line 3)</p>
+<p>Substitution definition contains illegal element &lt;problematic&gt;:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;problematic ids=&quot;id2&quot; refid=&quot;id1&quot;&gt;
+    :blank:`x`
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. |blank| replace:: :blank:`x`
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h1>Увод у процесирање низова података<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h1>
+<p>У овој лекцији ћемо:</p>
+<ol class="arabic simple">
+<li><p>поновити како се записују низови података,</p></li>
+<li><p>поновити како се дефинишу функције,</p></li>
+<li><p>написаћемо своју функцију која рачуна најмањи број у датом низу бројева, и</p></li>
+<li><p>поновити неколико функција које су уграћене у Пајтон.</p></li>
+</ol>
+<div class="section" id="id4">
+<h2>Записивање низова података<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>Да се подсетимо, низови података се у Пајтону записују унутар угластих заграда,
+у облику <em>листе</em>. На пример, оцене неког ученика из једног предмета могу да се запишу као низ овако:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Dejanove_ocene</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Ово је пример нумеричког низа података, где су сви подаци бројеви. Низ података, наравно, не
+мора бити нумерички. На пример:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">predmeti</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;matematika&quot;</span><span class="p">,</span> <span class="s2">&quot;srpski&quot;</span><span class="p">,</span> <span class="s2">&quot;likovno&quot;</span><span class="p">,</span> <span class="s2">&quot;istorija&quot;</span><span class="p">,</span> <span class="s2">&quot;fizičko&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>или овако:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Ocene</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Dejan&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Раније смо видели да подаци у низу могу бити и други низови података:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Ocene_VIII3</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">[</span><span class="s2">&quot;Dejan&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+  <span class="p">[</span><span class="s2">&quot;Milica&quot;</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span>
+  <span class="p">[</span><span class="s2">&quot;Milan&quot;</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>О низу података можемо да размишљамо као о улици у којој свака кућица има свој кућни број.
+Специфичност Пајтона је у томе да кућни бројеви увек почињу од 0, рецимо овако:</p>
+<a class="reference internal image-reference" href="../_images/Y101.jpg"><img alt="../_images/Y101.jpg" src="../_images/Y101.jpg" style="width: 600px;" /></a>
+<p>Број елемената низа се добија позивом уграђене функције <code class="docutils literal notranslate"><span class="pre">len</span></code>
+(од енглеског <em>length</em> што значи „дужина”):</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y01/L801.rst</span>, line 53)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer1</span><span class="o">-</span><span class="mi">5</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="n">predmeti</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;matematika&quot;</span><span class="p">,</span> <span class="s2">&quot;srpski&quot;</span><span class="p">,</span> <span class="s2">&quot;likovno&quot;</span><span class="p">,</span> <span class="s2">&quot;istorija&quot;</span><span class="p">,</span> <span class="s2">&quot;fizičko&quot;</span><span class="p">]</span>
+   <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">predmeti</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<p>Ако желимо да приступимо појединачној кућици довољно је да наведемо њену „адресу” која се,
+као и поштанска адреса, састоји од имена улице иза кога се наводи кућни број, рецимо овако:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y01/L801.rst</span>, line 62)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer1</span><span class="o">-</span><span class="mi">6</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="n">Dejanove_ocene</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">Dejanove_ocene</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<p>Вредности бројева у кућицама се могу мењати веома једноставно.
+Рецимо, ако Дејан је поправио оцену која је уписана у прву кућицу
+(<em>чији кућни број је 0!</em>) то можемо регистровати овако:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y01/L801.rst</span>, line 72)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer1</span><span class="o">-</span><span class="mi">7</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="n">Dejanove_ocene</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+   <span class="n">Dejanove_ocene</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">Dejanove_ocene</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<p>Стање у улици <code class="docutils literal notranslate"><span class="pre">Dejanove_ocene</span></code> сада изгледа овако:</p>
+<a class="reference internal image-reference" href="../_images/Y102.jpg"><img alt="../_images/Y102.jpg" src="../_images/Y102.jpg" style="width: 600px;" /></a>
+<p>Ако узмемо да низ <code class="docutils literal notranslate"><span class="pre">predmeti</span></code> садржи имена предмета из којих је Дејан оцењен онда извештај о Дејановим оценама можемо
+исписати на следећи начин:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y01/L801.rst</span>, line 88)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer1</span><span class="o">-</span><span class="mi">8</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="n">predmeti</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;matematika&quot;</span><span class="p">,</span> <span class="s2">&quot;srpski&quot;</span><span class="p">,</span> <span class="s2">&quot;likovno&quot;</span><span class="p">,</span> <span class="s2">&quot;istorija&quot;</span><span class="p">,</span> <span class="s2">&quot;fizičko&quot;</span><span class="p">]</span>
+   <span class="n">Dejanove_ocene</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dejanove ocene:&quot;</span><span class="p">)</span>
+   <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+      <span class="nb">print</span><span class="p">(</span><span class="n">predmeti</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">Dejanove_ocene</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>Стандардне функције<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>Како би се писање програма поједноставило за велики број важних задатака који се веома
+често користе у Пајтону већ постоје функције које их обављају. На пример, функција
+<code class="docutils literal notranslate"><span class="pre">len</span></code> рачуна дужину низа, као што смо већ видели.
+Одређивање најмањег и највећег елемента низа бројева спадају међу важне задатке,
+и зато Пајтон има уграђене функције <code class="docutils literal notranslate"><span class="pre">min</span></code> и <code class="docutils literal notranslate"><span class="pre">max</span></code> које могу да одреде најмањи,
+односно, највећи елемент неколико бројева који су унапред наведени, или целог низа бројева:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y01/L801.rst</span>, line 108)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer1</span><span class="o">-</span><span class="mi">9</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="nb">print</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y01/L801.rst</span>, line 113)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer1</span><span class="o">-</span><span class="mi">10</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="nb">print</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y01/L801.rst</span>, line 118)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer1</span><span class="o">-</span><span class="mi">11</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="n">Dejanove_ocene</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Najmanja Dejanova ocena je&quot;</span><span class="p">,</span> <span class="nb">min</span><span class="p">(</span><span class="n">Dejanove_ocene</span><span class="p">))</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Najveca Dejanova ocena je&quot;</span><span class="p">,</span> <span class="nb">max</span><span class="p">(</span><span class="n">Dejanove_ocene</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id6">
+<h3>Пример 1.<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>У следећем малом програму унеси своје оцене из неког предмета и допиши програмски код који ће израчунати
+највећу и најмању од њих, као и колико оцена имаш из тог предмета.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y01/L801.rst</span>, line 131)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: primer1-12
+   :coach:
+
+   predmet = &quot;???&quot;  # &lt;-- уместо три упитника упиши име предмета
+   ocene = [???] # &lt;-- уместо три упитника упиши своје оцене
+   # У наредне три наредбе уместо три упитника упиши ИЗРАЗ који ће
+   # ИЗРАЧУНАТИ одговарајући број на основу података у низу ocene
+   print(&quot;Moja najmanja ocena iz predmeta&quot;, predmet, &quot;je&quot;, ???)
+   print(&quot;Moja najveca ocena iz predmeta&quot;, predmet, &quot;je&quot;, ???)
+   print(&quot;Imam&quot;, ???, &quot;ocena iz predmeta&quot;, predmet)
+
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id7">
+<h3>Пример 2.<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>Функција <code class="docutils literal notranslate"><span class="pre">sum</span></code> рачуна збир елемената низа, рецимо овако:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y01/L801.rst</span>, line 148)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer1</span><span class="o">-</span><span class="mi">13</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="n">brojevi</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+   <span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">brojevi</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<p>Просек оцена се рачуна као</p>
+<div class="math notranslate nohighlight">
+\[\frac{\mathrm{збир\ свих\ оцена}}{\mathrm{укупан\ број\ оцена}}\]</div>
+<p>У следећем малом програму унеси своје оцене из неког предмета и допиши програмски код који ће израчунати
+просек товјих оцена из тог предмета.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y01/L801.rst</span>, line 162)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: primer1-14
+   :coach:
+
+   predmet = &quot;???&quot;  # &lt;-- уместо три упитника упиши име предмета
+   ocene = [???] # &lt;-- уместо три упитника упиши своје оцене
+   # У наредби испод уместо три упитника упиши ИЗРАЗ који ће
+   # ИЗРАЧУНАТИ просек оцена на основу података у низу ocene
+   print(&quot;Prosek mojih ocena iz predmeta&quot;, predmet, &quot;je&quot;, ???)
+
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="id8">
+<h2>Дефинисање функција и минимум низа<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<p>Када неки компликован процес треба поновити више пута, а не постоји већ дефинисана функција
+која то може да уради за нас, постоји могућност да дефинишемо своју функцију.
+Функција је мала целина која мора бити именована како бисмо касније могли да је
+брзо и лако позовемо кад год нам затреба. На пример, ево функције која исписује извештај о оценама неког
+ученика:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">izvestaj_o_ocenama</span><span class="p">(</span><span class="n">ime_ucenika</span><span class="p">,</span> <span class="n">spisak_predmeta</span><span class="p">,</span> <span class="n">ocene</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Učenik:&quot;</span><span class="p">,</span> <span class="n">ime_ucenika</span><span class="p">)</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">spisak_predmeta</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+       <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="n">spisak_predmeta</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">ocene</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>Извештај о Дејановим оценама сада лако можемо добити позивом ове функције:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y01/L801.rst</span>, line 191)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer1</span><span class="o">-</span><span class="mi">15</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="c1"># Прво дефинишемо функцију</span>
+   <span class="k">def</span> <span class="nf">izvestaj_o_ocenama</span><span class="p">(</span><span class="n">ime_ucenika</span><span class="p">,</span> <span class="n">spisak_predmeta</span><span class="p">,</span> <span class="n">ocene</span><span class="p">):</span>
+       <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Učenik:&quot;</span><span class="p">,</span> <span class="n">ime_ucenika</span><span class="p">)</span>
+       <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">spisak_predmeta</span><span class="p">)</span>
+       <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+          <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="n">spisak_predmeta</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">ocene</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+
+   <span class="c1"># Сада је можемо позвати више пута ако нам треба извештај о оценама</span>
+   <span class="c1"># за неколико ученика</span>
+
+   <span class="n">predmeti</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;matematika&quot;</span><span class="p">,</span> <span class="s2">&quot;srpski&quot;</span><span class="p">,</span> <span class="s2">&quot;likovno&quot;</span><span class="p">,</span> <span class="s2">&quot;istorija&quot;</span><span class="p">,</span> <span class="s2">&quot;fizičko&quot;</span><span class="p">]</span>
+   <span class="n">Dejanove_ocene</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+   <span class="n">Milenine_ocene</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+
+   <span class="n">izvestaj_o_ocenama</span><span class="p">(</span><span class="s2">&quot;Dejan&quot;</span><span class="p">,</span> <span class="n">predmeti</span><span class="p">,</span> <span class="n">Dejanove_ocene</span><span class="p">)</span>
+   <span class="n">izvestaj_o_ocenama</span><span class="p">(</span><span class="s2">&quot;Milena&quot;</span><span class="p">,</span> <span class="n">predmeti</span><span class="p">,</span> <span class="n">Milenine_ocene</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>Функције се најчешће користе за аутоматизацију релативно компликованих рачунских процеса.</p>
+<div class="section" id="id9">
+<h3>Пример 3.<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<p>Написати функцију <code class="docutils literal notranslate"><span class="pre">min_niza(A)</span></code> која одређује најмањи елемент низа <code class="docutils literal notranslate"><span class="pre">A</span></code>
+и враћа га као резултат свог рада, али без коришћења уграђене функције <code class="docutils literal notranslate"><span class="pre">min</span></code>.</p>
+<p><em>Решење.</em> Погледајмо, прво, како бисмо овај проблем решили када тражимо мањи од два броја, А0 и А1:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">manji_od_dva</span><span class="p">(</span><span class="n">A0</span><span class="p">,</span> <span class="n">A1</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">A0</span> <span class="o">&lt;</span> <span class="n">A1</span><span class="p">:</span> <span class="k">return</span> <span class="n">A0</span>
+    <span class="k">else</span><span class="p">:</span> <span class="k">return</span> <span class="n">A1</span>
+</pre></div>
+</div>
+<p>Дакле, ако је А0 мањи, то је резултат рада. У супротном је А1 резултат рада.</p>
+<p>Ова идеја ради у случају два броја, али није погодна за уопштења.
+Зато ћемо написати нову верзију функције <code class="docutils literal notranslate"><span class="pre">manji_od_dva</span></code> која на први поглед делује чудно,
+али ће ускоро постати јасно зашто је погодна.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">manji_od_dva_ponovo</span><span class="p">(</span><span class="n">A0</span><span class="p">,</span> <span class="n">A1</span><span class="p">):</span>
+    <span class="n">manji</span> <span class="o">=</span> <span class="n">A0</span>
+    <span class="k">if</span> <span class="n">A1</span> <span class="o">&lt;</span> <span class="n">manji</span><span class="p">:</span> <span class="n">manji</span> <span class="o">=</span> <span class="n">A1</span>
+    <span class="k">return</span> <span class="n">manji</span>
+</pre></div>
+</div>
+<p>Идеја се састоји у томе да гледамо елементе један по један, као да нам долазе на траци. Када стигне први елемент, то је најмањи елемен кога смо до сада уочили. Када стигне други елемент проверимо како се он односи према до сада најмањем уоченом елементу и ако је мањи од најмањег до сада, он постаје нови најмањи елемент.</p>
+<p>Ево како се идеја коју смо управо описали проширује на три елемента:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">najmanji_od_tri</span><span class="p">(</span><span class="n">A0</span><span class="p">,</span> <span class="n">A1</span><span class="p">,</span> <span class="n">A2</span><span class="p">):</span>
+    <span class="n">najmanji</span> <span class="o">=</span> <span class="n">A0</span>
+    <span class="k">if</span> <span class="n">A1</span> <span class="o">&lt;</span> <span class="n">najmanji</span><span class="p">:</span> <span class="n">najmanji</span> <span class="o">=</span> <span class="n">A1</span>
+    <span class="k">if</span> <span class="n">A2</span> <span class="o">&lt;</span> <span class="n">najmanji</span><span class="p">:</span> <span class="n">najmanji</span> <span class="o">=</span> <span class="n">A2</span>
+    <span class="k">return</span> <span class="n">najmanji</span>
+</pre></div>
+</div>
+<p>и на ситуацију са пет елемената:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">najmanji_od_pet</span><span class="p">(</span><span class="n">A0</span><span class="p">,</span> <span class="n">A1</span><span class="p">,</span> <span class="n">A2</span><span class="p">,</span> <span class="n">A3</span><span class="p">,</span> <span class="n">A4</span><span class="p">):</span>
+    <span class="n">najmanji</span> <span class="o">=</span> <span class="n">A0</span>
+    <span class="k">if</span> <span class="n">A1</span> <span class="o">&lt;</span> <span class="n">najmanji</span><span class="p">:</span> <span class="n">najmanji</span> <span class="o">=</span> <span class="n">A1</span>
+    <span class="k">if</span> <span class="n">A2</span> <span class="o">&lt;</span> <span class="n">najmanji</span><span class="p">:</span> <span class="n">najmanji</span> <span class="o">=</span> <span class="n">A2</span>
+    <span class="k">if</span> <span class="n">A3</span> <span class="o">&lt;</span> <span class="n">najmanji</span><span class="p">:</span> <span class="n">najmanji</span> <span class="o">=</span> <span class="n">A3</span>
+    <span class="k">if</span> <span class="n">A4</span> <span class="o">&lt;</span> <span class="n">najmanji</span><span class="p">:</span> <span class="n">najmanji</span> <span class="o">=</span> <span class="n">A4</span>
+    <span class="k">return</span> <span class="n">najmanji</span>
+</pre></div>
+</div>
+<p>Видимо да се корак који садржи <code class="docutils literal notranslate"><span class="pre">if</span></code> понавља за сваки елемент посебно.
+Тако се ова идеја лако уопштава на произвољне низове:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">min_niza</span><span class="p">(</span><span class="n">A</span><span class="p">):</span>
+    <span class="n">najmanji</span> <span class="o">=</span> <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">najmanji</span><span class="p">:</span> <span class="n">najmanji</span> <span class="o">=</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">najmanji</span>
+</pre></div>
+</div>
+<p>Да проверимо како ова функција ради:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y01/L801.rst</span>, line 277)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer1</span><span class="o">-</span><span class="mi">16</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="k">def</span> <span class="nf">min_niza</span><span class="p">(</span><span class="n">A</span><span class="p">):</span>
+       <span class="n">najmanji</span> <span class="o">=</span> <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+       <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)):</span>
+           <span class="k">if</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">najmanji</span><span class="p">:</span> <span class="n">najmanji</span> <span class="o">=</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+       <span class="k">return</span> <span class="n">najmanji</span>
+
+   <span class="nb">print</span><span class="p">(</span><span class="n">min_niza</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]))</span>
+
+
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="id10">
+<h2>Задаци<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id11">
+<h3>Задатак 1.<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<p>Напиши функцију <code class="docutils literal notranslate"><span class="pre">najveci_od_tri(A0,</span> <span class="pre">A1,</span> <span class="pre">A2)</span></code> која рачуна  и враћа највећи од три дата броја, али без употребе стандардне функције <code class="docutils literal notranslate"><span class="pre">max</span></code>.
+Уместо три упитника напиши тело фукције, па онда провери како функција ради.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y01/L801.rst</span>, line 299)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: zadatak1-1
+   :coach:
+
+   def najveci_od_tri(A0, A1, A2):
+       ???
+
+   # Провера
+   print(najveci_od_tri(5, 7, 11))
+   print(najveci_od_tri(5, 75, 11))
+   print(najveci_od_tri(55, 7, 11))
+
+
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id12">
+<h3>Задатак 2.<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<p>Напиши функцију <code class="docutils literal notranslate"><span class="pre">najveci_od_pet(A0,</span> <span class="pre">A1,</span> <span class="pre">A2,</span> <span class="pre">A3,</span> <span class="pre">A4)</span></code>
+која рачуна и враћа највећи од пет датих броја, али без употребе стандардне функције <code class="docutils literal notranslate"><span class="pre">max</span></code>.
+Уместо три упитника напиши тело фукције, па онда провери како функција ради.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y01/L801.rst</span>, line 319)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: zadatak1-2
+   :coach:
+
+   def najveci_od_pet(A0, A1, A2):
+       ???
+
+   # Провера
+   print(najveci_od_pet(1, 2, 3, 4, 55))
+   print(najveci_od_pet(1, 2, 3, 44, 5))
+   print(najveci_od_pet(1, 2, 33, 4, 5))
+   print(najveci_od_pet(1, 22, 3, 4, 5))
+   print(najveci_od_pet(11, 2, 3, 4, 5))
+
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id13">
+<h3>Задатак 3.<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<p>Напиши функцију <code class="docutils literal notranslate"><span class="pre">max_niza(A)</span></code> која за дати низ <code class="docutils literal notranslate"><span class="pre">А</span></code>
+рачуна и враћа највећи елемент, али без употребе стандардне функције <code class="docutils literal notranslate"><span class="pre">max</span></code>.
+Уместо три упитника напиши тело фукције, па онда провери како функција ради.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y01/L801.rst</span>, line 340)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: zadatak1-3
+   :coach:
+
+   def max_niza(A):
+       ???
+
+   # Провера
+   print(max_niza([1, 2, 3, 4, 55, 6]))
+   print(max_niza([1, 2, 3, 4, 55, 777]))
+   print(max_niza([111, 2, 3, 4]))
+   print(max_niza([1, 222]))
+   print(max_niza([22]))
+
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id14">
+<h3>Задатак 4.<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<p>Напиши функцију <code class="docutils literal notranslate"><span class="pre">min_i_max(A)</span></code> која исписује најмањи и највећи елемент
+низа <code class="docutils literal notranslate"><span class="pre">А</span></code>. (<em>Напомена: ова функција не треба да врати никакву вредност!
+Она само треба да испише два броја на екран.</em>)
+Уместо три упитника напиши тело фукције, па онда провери како функција ради.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y01/L801.rst</span>, line 362)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: zadatak1-4
+   :coach:
+
+   def min_i_max(A):
+       ???
+
+   # Провера
+   print(min_i_max([1, 2, 3, 4, 55, 6]))
+   print(min_i_max([2, 2]))
+   print(min_i_max([5]))
+
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id15">
+<h3>Задатак 5*.<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<p>Напиши функцију <code class="docutils literal notranslate"><span class="pre">srednji_od_tri(A0,</span> <span class="pre">A1,</span> <span class="pre">A2)</span></code> која рачуна и враћа средњи од три дата броја.
+Уместо три упитника напиши тело фукције, па онда провери како функција ради.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y01/L801.rst</span>, line 381)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: zadatak1-5
+   :coach:
+
+   def srednji_od_tri(A):
+       ???
+
+   # Провера
+   print(srednji_od_tri(2, 7, 5))
+   print(srednji_od_tri(2, 5, 5))
+   print(srednji_od_tri(5, 5, 1))
+   print(srednji_od_tri(2, 2, 2))
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+  
+      <div class="col-md-12">
+<ul class="pager">
+    <li id="relations-prev" title='Previous chapter - Лекција 21.' data-toggle="tooltip"><a href="index.html"><i class="fas fa-arrow-left"></i></a></li>
+    
+        <li id="relations-next" title='Next chapter - Тест' data-toggle="tooltip"><a href="test801.html"><i class="fas fa-arrow-right"></i></a></li>
+</ul>
+
+<!-- <ul class="pager"> -->
+    <!-- -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Лекција 21.' data-toggle="tooltip"><a href="index.html">Претходно поглавље</a></li> -->
+    <!--  -->
+    <!-- -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Тест' data-toggle="tooltip"><a href="test801.html">Следеће поглавље</a></li> -->
+    <!-- -->
+<!-- </ul> -->
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+</div>
+  
+</div>
+<footer class="footer col-md-12">
+    <div class="container">
+        <div class="text-center">
+            <hr>
+            <p class="text-muted">
+                <span class="pull-left">&copy; 2019 Petlja (Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

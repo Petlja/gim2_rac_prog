@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Низови симбола (стрингови или ниске) &#8212; Petlja - Настава програмирања за Други разред гимназије</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/runestonebase.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../_static/jquery-fix.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/waypoints.min.js"></script>
+    <script src="../_static/rangy-core.js"></script>
+    <script src="../_static/rangy-textrange.js"></script>
+    <script src="../_static/rangy-cssclassapplier.js"></script>
+    <script src="../_static/user-highlights.js"></script>
+    <script src="../_static/jquery.idle-timer.js"></script>
+    <script src="../_static/processing-1.4.1.min.js"></script>
+    <script src="../_static/jquery.hotkey.js"></script>
+    <script src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Тест" href="test803.html" />
+    <link rel="prev" title="Лекција 23." href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'Настава програмирања за Други разред гимназије';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'Настава програмирања за Други разред гимназије';
+  eBookConfig.runestone_version = '3.1.1';
+  eBookConfig.imagesDir = '../_images/';
+  eBookConfig.staticDir = '../_static/';
+  if(typeof(Sk) != "undefined")
+      Sk.imgPath = eBookConfig.imagesDir;
+</script>
+
+<div id="fb-root"></div>
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <img src="../_static/img/logo.png" style="width:80px; height: 80px;"> 
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 10px; margin-left: 25px;">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../">Petlja - Настава програмирања за Други разред гимназије</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="margin-left: 50%;margin-top: 5%;font-size: 20px;">
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../J01/index.html">IPYTHON DIRECTIVE DEBUG</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../J01/J01.html">JUPYTER TEST</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E01/index.html">Лекција 1.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E01/E01.html">Увод у рад са програмима за табеларна израчунавања</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E01/testE01.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E02/index.html">Лекција 2.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E02/E02.html">Аутоматска рекалкулација</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E02/testE02.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E03/index.html">Лекција 3.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E03/E03.html">Селектовање групе ћелија и уређивање табеле</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E03/testE03.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E04/index.html">Лекција 4.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E04/E04.html">Разне врсте података у табели</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E04/testE04.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E05/index.html">Лекција 5.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E05/E05.html">Штампање и генерисање ПДФ документа</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E05/testE05.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E06/index.html">Лекција 6.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E06/E06.html">Апсолутне и релативне адресе ћелија</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E06/testE06.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E07/index.html">Лекција 7.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E07/E07.html">Визуелизација података</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E07/testE07.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E08/index.html">Лекција 8.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E08/E08.html">Сортирање, филтрирање и фреквенцијска анализа</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E08/testE08.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E09/index.html">Лекција 9.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E09/E09.html">Више табела у истом документу</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E09/testE09.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E10/index.html">Лекција 10.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E10/E10.html">Рад са дељеним табелама</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E10/testE10.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y01/index.html">Лекција 21.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y01/L801.html">Увод у процесирање низова података</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y01/test801.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y02/index.html">Лекција 22.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y02/L802.html">Бројачи и суме</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y02/test802.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Лекција 23.</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Низови симбола (<em>стрингови</em> или <em>ниске</em>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test803.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y04/index.html">Лекција 24.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y04/L804.html">Угнежђене петље</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y04/test804.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y05/index.html">Лекција 25.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y05/L805.html">Сортирање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y05/test805.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y06/index.html">Лекција 26.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y06/L806.html">Филтрирање и претраживање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y06/test806.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y07/index.html">Лекција 27.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y07/L807.html">Рад са текстуалним датотекама</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y07/test807.html">Тест</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+  </div>
+<div class="container col-md-12" id="continue-reading"></div>
+
+<div class="container col-md-10 col-md-offset-2" id="main-content" style="margin-top: 70px;">
+  
+  <div class="system-message" id="id1">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">&lt;rst_prolog&gt;</span>, line 3)</p>
+<p>Unknown interpreted text role „blank”.</p>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">&lt;rst_prolog&gt;</span>, line 3)</p>
+<p>Substitution definition contains illegal element &lt;problematic&gt;:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;problematic ids=&quot;id2&quot; refid=&quot;id1&quot;&gt;
+    :blank:`x`
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. |blank| replace:: :blank:`x`
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h1>Низови симбола (<em>стрингови</em> или <em>ниске</em>)<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h1>
+<p>У овој лекцији ћемо:</p>
+<ol class="arabic simple">
+<li><p>упознати стрингове као низове карактера</p></li>
+<li><p>видети како се приступа елементима стринга и како се издвајају делови стринга, и</p></li>
+<li><p>упознати основне операције са стринговима.</p></li>
+</ol>
+<div class="section" id="id4">
+<h2>Стрингови (ниске)<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>Иако су настали као машине за обраду нумеричких података рачунари су доживели врхунас свог успеха
+када се схватило да они могу да обрађују и <em>симболичке</em> податке. Обрада симболичких података данас
+представља доминантан начин употребе рачунара.</p>
+<p><em>Стринг</em> је реч књижевног енглеског језика (енгл. <em>string</em>) чије основно значење је
+„објекти исте врсте нанизани на нит”. Зато се стрингови често на српском зову и <em>ниске</em>.
+У Пајтону стринг је низ симбола. На пример, ово су стрингови:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;Zdravo! Kako si?&quot;</span>
+<span class="s1">&#39;Основна школа &quot;Јован Јовановић-Змај&quot;&#39;</span>
+<span class="s2">&quot;:-)&quot;</span>
+<span class="s1">&#39;&#39;</span>
+<span class="s2">&quot;&quot;</span>
+</pre></div>
+</div>
+<p>Видимо да се стрингови пишу тако што се између апострофа или наводника (свеједно је) наведе произвољан низ симбола.
+Последња два примера нам показују како изгледа <em>празан стринг</em>, односно, стринг који нема ниједно слово.
+Други пример нам показује како да се снађемо ако стринг треба да садржи наводнике: просто га оградимо апострофима.</p>
+<p>Број симбола у стрингу се зове <em>дужина стринга</em>. Дужине стрингова из претходног примера су, редом, 16, 36, 3, 0 и 0.</p>
+<p>Стрингове додељујемо променљивим као што смо и навикли, исписујемо их командом <cite>print</cite>, а учитавамо командом <cite>input</cite>.
+Команда <cite>input</cite> сачека да корисник унесе низ симбола и да на крају притисне [ENTER]. Она потом врати све симболе
+које је корисник унео као један низ симбола (такорећи <em>стринг</em>). На пример:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y03/L803.rst</span>, line 39)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer3</span><span class="o">-</span><span class="mi">1</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Unesi svoje ime, prvo u nominativu pa onda u vokativu&quot;</span><span class="p">)</span>
+   <span class="n">ime</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;nominativ: &quot;</span><span class="p">)</span>
+   <span class="n">ime_v</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;vokativ: &quot;</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Aha! Znao sam!&quot;</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Ti se zoveš&quot;</span><span class="p">,</span> <span class="n">ime</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Zdravo,&quot;</span><span class="p">,</span> <span class="n">ime_v</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>Уграђена функција <code class="docutils literal notranslate"><span class="pre">len</span></code> враћа дужину стринга и користи се овако:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y03/L803.rst</span>, line 51)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer3</span><span class="o">-</span><span class="mi">2</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="n">ime</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Unesi ime:&quot;</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Ti se zoveš&quot;</span><span class="p">,</span> <span class="n">ime</span><span class="p">,</span> <span class="s2">&quot;i tvoje ime ima&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">ime</span><span class="p">),</span> <span class="s2">&quot;slova&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id5">
+<h3>Пример.<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>Написати Пајтон програм који утврђује колико пута се неки симбол јавља у унетом стрингу.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y03/L803.rst</span>, line 62)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer3</span><span class="o">-</span><span class="mi">3</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Utvrdjujemo koliko puta se neki simbol javlja u unetom stringu&quot;</span><span class="p">)</span>
+   <span class="n">c</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Unesi simbol: &quot;</span><span class="p">)</span>
+   <span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Unesi string: &quot;</span><span class="p">)</span>
+   <span class="n">broj</span> <span class="o">=</span> <span class="mi">0</span>
+   <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
+       <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="n">c</span><span class="p">:</span>
+           <span class="n">broj</span> <span class="o">+=</span> <span class="mi">1</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Simbol&quot;</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="s2">&quot;se u unetom stringu javlja&quot;</span><span class="p">,</span> <span class="n">broj</span><span class="p">,</span> <span class="s2">&quot;puta&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>Конструкција <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">x</span> <span class="pre">in</span> <span class="pre">s</span></code> прође кроз цео стринг <code class="docutils literal notranslate"><span class="pre">s</span></code> слово по слово, па за свако појављивање симбола <code class="docutils literal notranslate"><span class="pre">c</span></code> увећамо бројач за 1.</p>
+</div>
+<div class="section" id="id6">
+<h3>Пример.<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>Написати Пајтон програм који утврђује да ли је у датом стрингу број отворених заграда <code class="docutils literal notranslate"><span class="pre">(</span></code> једнак броју затворених заграда <code class="docutils literal notranslate"><span class="pre">)</span></code>.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y03/L803.rst</span>, line 81)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer3</span><span class="o">-</span><span class="mi">4</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Unesi string&quot;</span><span class="p">)</span>
+   <span class="n">br_otvorenih</span> <span class="o">=</span> <span class="mi">0</span>
+   <span class="n">br_zatvorenih</span> <span class="o">=</span> <span class="mi">0</span>
+   <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
+       <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s2">&quot;(&quot;</span><span class="p">:</span> <span class="n">br_otvorenih</span> <span class="o">+=</span> <span class="mi">1</span>
+       <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s2">&quot;)&quot;</span><span class="p">:</span> <span class="n">br_zatvorenih</span> <span class="o">+=</span> <span class="mi">1</span>
+   <span class="k">if</span> <span class="n">br_otvorenih</span> <span class="o">==</span> <span class="n">br_zatvorenih</span><span class="p">:</span>
+       <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;isti je broj otvorenih i zatvorenih zagrada&quot;</span><span class="p">)</span>
+   <span class="k">else</span><span class="p">:</span>
+       <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;nije isti broj otvorenih i zatvorenih zagrada&quot;</span><span class="p">)</span>
+
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="id7">
+<h2>Приступање елементима стринга и деловима стринга<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p>Пошто је стринг низ симбола могуће је приступити појединачним симболима у стрингу, али и деловима стринга.</p>
+<a class="reference internal image-reference" href="../_images/Y103.jpg"><img alt="../_images/Y103.jpg" src="../_images/Y103.jpg" style="width: 800px;" /></a>
+<p>Стринг је, дакле, низ кућица. У сваку кућицу је уписан тачно један симбол и свака кућица има кућни број.
+Као и раније, кућни бројеви крећу од нуле. На пример, ако ставимо</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;Popokatepetl&quot;</span>
+</pre></div>
+</div>
+<p>онда имамо:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y03/L803.rst</span>, line 113)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer3</span><span class="o">-</span><span class="mi">5</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;Popokatepetl&quot;</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<p>Инересантно је (а касније ћемо видети да је и корисно!) то што низови у Пајтону имају и негативне индексе.
+Последња кућица у низу има индекс -1 („први од краја”), претпоследња -2 („други од краја”) и тако даље. Зато је:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y03/L803.rst</span>, line 123)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer3</span><span class="o">-</span><span class="mi">6</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;Popokatepetl&quot;</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<p>Из стринга можемо лако да издвојимо његове делове употребом конструкције <code class="docutils literal notranslate"><span class="pre">s[m:n]</span></code>
+која издваја део стринга који почиње од кућице са редним бројем <em>m</em> и завршава се са кућицом чији редни број је <em>n - 1</em>
+(обрати пажњу: кренемо од <em>m</em>, али <strong>не идемо</strong> до <em>n</em> већ до кућице пре). На ово ћемо морати мало да се привикнемо. На пример,</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y03/L803.rst</span>, line 134)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer3</span><span class="o">-</span><span class="mi">7</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;Popokatepetl&quot;</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">5</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<p>Дакле, из стринга <em>s</em> смо издвојили симболе <em>s[2]</em>, <em>s[3]</em> и <em>s[4]</em>, односно, кренули смо од кућице број 2 и завршили
+<em>непосредно пре</em> кућице број 5.</p>
+<p>Ако желимо да издвојимо део стринга који креће од 6. кућице и иде до краја стринга, написаћемо <em>s[6:]</em></p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y03/L803.rst</span>, line 145)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer3</span><span class="o">-</span><span class="mi">8</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;Popokatepetl&quot;</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">6</span><span class="p">:])</span>
+</pre></div>
+</div>
+</div>
+<p>С друге стране, ако желимо да издвојимо део стринга који креће од почетка стринга и иде до 6. кућице (укљућујући и њу) написаћемо
+<em>s[:7]</em></p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y03/L803.rst</span>, line 154)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer3</span><span class="o">-</span><span class="mi">9</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;Popokatepetl&quot;</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">[:</span><span class="mi">7</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<p><em>Не смемо заборавити да се кућица чији кућни број је наведен иза двотачке не укључује у сегмент!</em></p>
+<p>Издвајање делова стринга у комбинацији са негативним индексима нам омогућује да концизно запишемо веома корисне конструкције.
+Рецимо, последња четири елемента стринга добијамо овако:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y03/L803.rst</span>, line 165)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer3</span><span class="o">-</span><span class="mi">10</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;Popokatepetl&quot;</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">:])</span>
+</pre></div>
+</div>
+</div>
+<p>што је концизан запис за део стринга „од -4. кућице па до краја”. С друге стране, „све осим последња два” можемо да запишемо овако:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y03/L803.rst</span>, line 173)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer3</span><span class="o">-</span><span class="mi">11</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;Popokatepetl&quot;</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">[:</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span>
+
+</pre></div>
+</div>
+</div>
+<div class="section" id="id8">
+<h3>Пример.<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>Написати Пајтон функцију <code class="docutils literal notranslate"><span class="pre">prebroj_podstr(p,</span> <span class="pre">s)</span></code> која утврђује колико пута се стринг <code class="docutils literal notranslate"><span class="pre">p</span></code> јавља као подстринг стринга <code class="docutils literal notranslate"><span class="pre">s</span></code>.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y03/L803.rst</span>, line 185)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer3</span><span class="o">-</span><span class="mi">12</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="k">def</span> <span class="nf">prebroj_podstr</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
+       <span class="n">broj</span> <span class="o">=</span> <span class="mi">0</span>
+       <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+       <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">-</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+           <span class="k">if</span> <span class="n">p</span> <span class="o">==</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="n">n</span><span class="p">]:</span>
+               <span class="n">broj</span> <span class="o">+=</span> <span class="mi">1</span>
+       <span class="k">return</span> <span class="n">broj</span>
+
+   <span class="c1"># провера</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">prebroj_podstr</span><span class="p">(</span><span class="s2">&quot;bana&quot;</span><span class="p">,</span> <span class="s2">&quot;oprobana torta od banana&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id9">
+<h3>Пример.<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<p>У сваком рачунарском систему се подаци пакују у <em>фајлове</em> (или <em>датотеке</em>) и од самих почетака рачунарске ере постоји обичај
+да се име фајла организује тако да последњих неколико симбола у имену фајла означава тип података који је у том фајлу похрањен.
+Тај део имена фајла се обично одвоји тачком од остатка имена фајла и зове се <em>екстензија</em>. Рецимо:</p>
+<table class="docutils align-left" id="id16">
+<caption><span class="caption-text">Екстензије и типови података</span><a class="headerlink" href="#id16" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Екстензија</p></th>
+<th class="head"><p>Тип података</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>.txt</p></td>
+<td><p>текстуална датотека</p></td>
+</tr>
+<tr class="row-odd"><td><p>.log</p></td>
+<td><p>текстуална датотека</p></td>
+</tr>
+<tr class="row-even"><td><p>.png</p></td>
+<td><p>слика</p></td>
+</tr>
+<tr class="row-odd"><td><p>.jpg</p></td>
+<td><p>слика</p></td>
+</tr>
+<tr class="row-even"><td><p>.bmp</p></td>
+<td><p>слика</p></td>
+</tr>
+<tr class="row-odd"><td><p>.mpg</p></td>
+<td><p>видео</p></td>
+</tr>
+<tr class="row-even"><td><p>.mp3</p></td>
+<td><p>звук</p></td>
+</tr>
+</tbody>
+</table>
+<p>Написати Пајтон програм који од корисника учитава име фајла и на основу горње табеле одређује тип
+података који је у њему похрањен. У случају да се екстензија имена фајла не налази у овој табели
+програм треба да пријави да се ради о непознатом типу података.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y03/L803.rst</span>, line 222)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer3</span><span class="o">-</span><span class="mi">13</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="n">fajl</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Unesi ime fajla: &quot;</span><span class="p">)</span>
+   <span class="n">ekstenzija</span> <span class="o">=</span> <span class="n">fajl</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">:]</span> <span class="c1"># uzimamo poslednja 4 simbola imena</span>
+   <span class="k">if</span> <span class="n">ekstenzija</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;.log&quot;</span><span class="p">]:</span>
+       <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;tekstualni fajl&quot;</span><span class="p">)</span>
+   <span class="k">elif</span> <span class="n">ekstenzija</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;.png&quot;</span><span class="p">,</span> <span class="s2">&quot;.jpg&quot;</span><span class="p">,</span> <span class="s2">&quot;.bmp&quot;</span><span class="p">]:</span>
+       <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;slika&quot;</span><span class="p">)</span>
+   <span class="k">elif</span> <span class="n">ekstenzija</span> <span class="o">==</span> <span class="s2">&quot;.mpg&quot;</span><span class="p">:</span>
+       <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;video&quot;</span><span class="p">)</span>
+   <span class="k">elif</span> <span class="n">ekstenzija</span> <span class="o">==</span> <span class="s2">&quot;.mp3&quot;</span><span class="p">:</span>
+       <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;zvuk&quot;</span><span class="p">)</span>
+   <span class="k">else</span><span class="p">:</span>
+       <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Ovaj format mi nije poznat&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id10">
+<h3>Пример.<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>Написати Пајтон функцију <code class="docutils literal notranslate"><span class="pre">broj_reci(s)</span></code> која у датом стрингу броји речи. Реч је непрекидан низ слова.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y03/L803.rst</span>, line 243)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer3</span><span class="o">-</span><span class="mi">14</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="k">def</span> <span class="nf">broj_reci</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+       <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+       <span class="n">broj</span> <span class="o">=</span> <span class="mi">0</span>
+       <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+           <span class="k">if</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">isalpha</span><span class="p">()</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">isalpha</span><span class="p">():</span>
+               <span class="n">broj</span> <span class="o">+=</span> <span class="mi">1</span>
+       <span class="k">if</span> <span class="n">s</span><span class="p">[</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">isalpha</span><span class="p">():</span>
+           <span class="n">broj</span> <span class="o">+=</span> <span class="mi">1</span>
+       <span class="k">return</span> <span class="n">broj</span>
+
+   <span class="c1"># провера</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">broj_reci</span><span class="p">(</span><span class="s2">&quot;Ovo je samo primer!&quot;</span><span class="p">))</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">broj_reci</span><span class="p">(</span><span class="s2">&quot;Proba&quot;</span><span class="p">))</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">broj_reci</span><span class="p">(</span><span class="s2">&quot;!!!!&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="id11">
+<h2>Операције са стринговима<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<p>У Пајтону, као и у већини модерних програмских језика, стрингови су <em>непроменљиви</em> (то својство се на енглеском зове
+<em>immutability</em>). На пример, нека је</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;Banana&quot;</span>
+</pre></div>
+</div>
+<p>Ако покушамо да променимо прво слово стринга на мало слово ’b’ добићемо грешку!</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;b&quot;</span>
+<span class="c1"># ОВО НЕ МОЖЕ! СИСТЕМ ЋЕ ПРИЈАВИТИ ГРЕШКУ!</span>
+</pre></div>
+</div>
+<p>Зато се трансформације стрингова увек своде на то да се од старог стринга изгради нови стринг који има својства која желимо.
+Једна од основних операција коју при томе користимо је <em>надовезивање стрингова</em> или <em>конкатенација</em>.
+Операција надовезивања стрингова се означава знаком <cite>+</cite>. На пример:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y03/L803.rst</span>, line 282)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer3</span><span class="o">-</span><span class="mi">15</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;Novi&quot;</span>
+   <span class="n">t</span> <span class="o">=</span> <span class="s2">&quot;Beograd&quot;</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">s</span> <span class="o">+</span> <span class="n">t</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>Важно је напоменути да се стрингови надовезују на најједноставнији могући начин: просто се дода један стринг на крај
+оног другог, без уметања празнина или неке друге врсте мудровања.</p>
+<p>Користећи операцију надовезивања можемо стрингу додати неки други стринг на почетак или на крај. На пример:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y03/L803.rst</span>, line 294)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer3</span><span class="o">-</span><span class="mi">16</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;bana&quot;</span>
+   <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;opro&quot;</span> <span class="o">+</span> <span class="n">s</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+
+   <span class="n">t</span> <span class="o">=</span> <span class="s2">&quot;bana&quot;</span>
+   <span class="n">t</span> <span class="o">=</span> <span class="n">t</span> <span class="o">+</span> <span class="s2">&quot;na&quot;</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>Још једна интересантна операција је множење стринга бројем:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y03/L803.rst</span>, line 307)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer3</span><span class="o">-</span><span class="mi">17</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mir! &quot;</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id12">
+<h3>Пример.<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<p>Ђоле треба 100 пута (за казну :-)) да испише реченицу „Ученици не смеју да се гађају кредом!”. Помозите Ђолету!</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y03/L803.rst</span>, line 317)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer3</span><span class="o">-</span><span class="mi">18</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Ученици не смеју да се гађају кредом! &quot;</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id13">
+<h3>Пример.<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<p>Написати Пајтон функцију која обрће стринг.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y03/L803.rst</span>, line 327)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer3</span><span class="o">-</span><span class="mi">19</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="k">def</span> <span class="nf">obrni_string</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+       <span class="n">novi</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+       <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
+           <span class="n">novi</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">novi</span>
+       <span class="k">return</span> <span class="n">novi</span>
+
+   <span class="c1"># провера</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">obrni_string</span><span class="p">(</span><span class="s2">&quot;Proba&quot;</span><span class="p">))</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">obrni_string</span><span class="p">(</span><span class="s2">&quot;ana voli milovana&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<p>Ова функција од стринга <code class="docutils literal notranslate"><span class="pre">s</span></code> у променљивој <code class="docutils literal notranslate"><span class="pre">novi</span></code> изгради нови стринг који садржи иста слова као и стринг <code class="docutils literal notranslate"><span class="pre">s</span></code>,
+али у обрнутом редоследу. На почетку поставимо стринг <code class="docutils literal notranslate"><span class="pre">novi</span></code> на празан стринг. Потом у циклусу слова стринга
+<code class="docutils literal notranslate"><span class="pre">s</span></code> додајемо на стринг <code class="docutils literal notranslate"><span class="pre">novi</span></code>, али једно по једно на почетак стринга <code class="docutils literal notranslate"><span class="pre">novi</span></code>.
+Тако прво слово стринга <code class="docutils literal notranslate"><span class="pre">s</span></code> постаје последње слово стринга <code class="docutils literal notranslate"><span class="pre">novi</span></code>, док последње слово стринга <code class="docutils literal notranslate"><span class="pre">s</span></code>
+на крају буде прво слово стринга <code class="docutils literal notranslate"><span class="pre">novi</span></code>. Тако у стрингу <code class="docutils literal notranslate"><span class="pre">novi</span></code> изградимо слово по слово обрнуту верзију
+стринга <code class="docutils literal notranslate"><span class="pre">s</span></code>.</p>
+</div>
+<div class="section" id="id14">
+<h3>Пример.<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<p>Написати Пајтон програм који проверава да ли је дата реченица палиндром.
+Приликом провере треба игнорисати празинине и величину слова. На пример, следеће реченице су палиндроми:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Ана воли Милована!
+Сир има мирис?
+Сава зидар ради за вас
+Маја са Недом оде на сајам.
+</pre></div>
+</div>
+<p><em>Решење.</em> У решењу овог примера ћемо користити уграђену функцију <code class="docutils literal notranslate"><span class="pre">isaplha()</span></code>
+која проверава да ли је нешто слово, као и уграђену функцију <code class="docutils literal notranslate"><span class="pre">lower()</span></code> која од стринга прави нови у коме су сва слова мала.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y03/L803.rst</span>, line 363)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">activecode</span><span class="p">::</span> <span class="n">primer3</span><span class="o">-</span><span class="mi">20</span>
+   <span class="p">:</span><span class="n">coach</span><span class="p">:</span>
+
+   <span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Unesi string: &quot;</span><span class="p">)</span>
+   <span class="n">novi</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+   <span class="n">obrnut</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+   <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">s</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
+       <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">isalpha</span><span class="p">():</span>
+           <span class="n">novi</span> <span class="o">=</span> <span class="n">novi</span> <span class="o">+</span> <span class="n">x</span>
+           <span class="n">obrnut</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">obrnut</span>
+   <span class="k">if</span> <span class="n">novi</span> <span class="o">==</span> <span class="n">obrnut</span><span class="p">:</span>
+       <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;jeste palindrom&quot;</span><span class="p">)</span>
+   <span class="k">else</span><span class="p">:</span>
+       <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;nije palindrom&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="id15">
+<h2>Задаци<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+<p><strong>Задатак 1.</strong> Написати Пајтон програм који од корисника учитава стринг и онда утврђује број самогласника и број сугласника у том стрингу.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y03/L803.rst</span>, line 383)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: zadatak3-1
+   :coach:
+
+   s = input()
+   ??? # &lt;- овде напиши програм
+</pre></div>
+</div>
+</div>
+<p><strong>Задатак 2.</strong> Написати Пајтон функцију <code class="docutils literal notranslate"><span class="pre">poslednja_rec(s)</span></code> која из датог стринга издваја последњу реч која је
+наведена у стрингу. Ако у стрингу не постоји ниједно слово функција треба да врати празан стринг.
+(Напомена: реч је непрекидан низ слова.)</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y03/L803.rst</span>, line 393)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: zadatak3-2
+   :coach:
+
+   def poslednja_rec(s):
+       ???
+
+   # Провера
+   print(poslednja_rec(&quot;Ovaj string ima pet reci&quot;))
+   print(poslednja_rec(&quot;Ovaj string se zavrsava uzvicnikom!&quot;))
+   print(poslednja_rec(&quot;Test&quot;))
+   print(poslednja_rec(&quot;1 2 3 4 5&quot;))
+</pre></div>
+</div>
+</div>
+<p><strong>Задатак 3.</strong> Написати Пајтон функцију <code class="docutils literal notranslate"><span class="pre">obrni_reci(s)</span></code> која од датог стринга прави нови у коме су речи
+послагане од последње према првој. На пример, за стринг</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;Napisati program koji ispisuje reci unetog teksta u obrnutom poretku&quot;</span>
+</pre></div>
+</div>
+<p>функција треба да врати:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;poretku obrnutom u teksta unetog reci ispisuje koji program Napisati&quot;</span>
+</pre></div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y03/L803.rst</span>, line 418)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: zadatak3-3
+   :coach:
+
+   def obrni_reci(s):
+       ???
+
+   # Провера
+   print(obrni_reci(&quot;Dve reci&quot;))
+   print(obrni_reci(&quot;Ovaj string se ne zavrsava uzvicnikom&quot;))
+   print(obrni_reci(&quot;Test&quot;))
+</pre></div>
+</div>
+</div>
+<p><strong>Задатак 4*.</strong>
+Написати Пајтон функцију која проверава да ли су у датом стрингу заграде <code class="docutils literal notranslate"><span class="pre">(</span></code> и <code class="docutils literal notranslate"><span class="pre">)</span></code> <em>балансиране</em>.
+То значи да у стрингу имамо исти број отворених и затоврених заграда, и да не постоји почетни сегмент
+стринга у коме је број затворених заграда већи од броја отворених.</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y03/L803.rst</span>, line 434)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: zadatak3-4
+   :coach:
+
+   def balansirane_zagrade(s):
+       ???
+
+   # Провера
+   print(balansirane_zagrade(&quot;()&quot;)) # јесу
+   print(balansirane_zagrade(&quot;(())&quot;)) # јесу
+   print(balansirane_zagrade(&quot;(())(()(()()))&quot;)) # јесу
+   print(balansirane_zagrade(&quot;)(&quot;)) # нису
+   print(balansirane_zagrade(&quot;(()))(&quot;)) # нису
+</pre></div>
+</div>
+</div>
+<p><strong>Задатак 5*.</strong>
+Написати Пајтон функцију <code class="docutils literal notranslate"><span class="pre">razmeni(s,</span> <span class="pre">din_za_1_eur)</span></code> која конвертује дати износ из динара у евре и обрнуто.
+Стринг <code class="docutils literal notranslate"><span class="pre">s</span></code> садржи износ записан у облику <code class="docutils literal notranslate"><span class="pre">број</span> <span class="pre">валута</span></code> на пример овако:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;125 DIN&quot;</span>
+<span class="s2">&quot;217.50 EUR&quot;</span>
+<span class="s2">&quot;1527.99 DIN&quot;</span>
+<span class="s2">&quot;50 EUR&quot;</span>
+</pre></div>
+</div>
+<p>док аргумент <code class="docutils literal notranslate"><span class="pre">din_za_1_eur</span></code> представља вредност једног евра у динарима.
+Функција треба да врати стринг који има облик <code class="docutils literal notranslate"><span class="pre">број</span> <span class="pre">валута</span></code>. При томе од користи бити уграђене функције <code class="docutils literal notranslate"><span class="pre">float</span></code> и <code class="docutils literal notranslate"><span class="pre">str</span></code>.
+(За неки стринг <code class="docutils literal notranslate"><span class="pre">p</span></code> функција <code class="docutils literal notranslate"><span class="pre">float(p)</span></code> враћа број који је записан стрингом <code class="docutils literal notranslate"><span class="pre">p</span></code> игноришући при том празнине које се
+можда јављају у стрингу; с друге стране, функција <cite>str</cite> од неког броја прави стринг који садржи његов запис.)</p>
+<p>Функција <code class="docutils literal notranslate"><span class="pre">razmeni</span></code> треба да ради овако:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">razmeni</span><span class="p">(</span><span class="s2">&quot;124.99 EUR&quot;</span><span class="p">,</span> <span class="mf">117.90</span><span class="p">))</span>
+<span class="s2">&quot;14736.321‬ DIN&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">razmeni</span><span class="p">(</span><span class="s2">&quot;12000 DIN&quot;</span><span class="p">,</span> <span class="mf">117.90</span><span class="p">))</span>
+<span class="s2">&quot;‭101.7811704 EUR&quot;</span>
+</pre></div>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">/home/milena/Desktop/Programiranje_II/_intermediate/Y03/L803.rst</span>, line 473)</p>
+<p>Unknown directive type „activecode”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. activecode:: zadatak3-5
+   :coach:
+
+   def razmeni(s, din_za_1_eur):
+       ???
+
+   # Провера
+   print(razmeni(&quot;124.99 EUR&quot;, 117.90))
+   print(razmeni(&quot;12000 DIN&quot;, 117.90))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+  
+      <div class="col-md-12">
+<ul class="pager">
+    <li id="relations-prev" title='Previous chapter - Лекција 23.' data-toggle="tooltip"><a href="index.html"><i class="fas fa-arrow-left"></i></a></li>
+    
+        <li id="relations-next" title='Next chapter - Тест' data-toggle="tooltip"><a href="test803.html"><i class="fas fa-arrow-right"></i></a></li>
+</ul>
+
+<!-- <ul class="pager"> -->
+    <!-- -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Лекција 23.' data-toggle="tooltip"><a href="index.html">Претходно поглавље</a></li> -->
+    <!--  -->
+    <!-- -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Тест' data-toggle="tooltip"><a href="test803.html">Следеће поглавље</a></li> -->
+    <!-- -->
+<!-- </ul> -->
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+</div>
+  
+</div>
+<footer class="footer col-md-12">
+    <div class="container">
+        <div class="text-center">
+            <hr>
+            <p class="text-muted">
+                <span class="pull-left">&copy; 2019 Petlja (Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

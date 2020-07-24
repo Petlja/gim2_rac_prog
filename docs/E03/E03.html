@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Селектовање групе ћелија и уређивање табеле &#8212; Petlja - Настава програмирања за Други разред гимназије</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/runestonebase.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../_static/jquery-fix.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/waypoints.min.js"></script>
+    <script src="../_static/rangy-core.js"></script>
+    <script src="../_static/rangy-textrange.js"></script>
+    <script src="../_static/rangy-cssclassapplier.js"></script>
+    <script src="../_static/user-highlights.js"></script>
+    <script src="../_static/jquery.idle-timer.js"></script>
+    <script src="../_static/processing-1.4.1.min.js"></script>
+    <script src="../_static/jquery.hotkey.js"></script>
+    <script src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Тест" href="testE03.html" />
+    <link rel="prev" title="Лекција 3." href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'Настава програмирања за Други разред гимназије';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'Настава програмирања за Други разред гимназије';
+  eBookConfig.runestone_version = '3.1.1';
+  eBookConfig.imagesDir = '../_images/';
+  eBookConfig.staticDir = '../_static/';
+  if(typeof(Sk) != "undefined")
+      Sk.imgPath = eBookConfig.imagesDir;
+</script>
+
+<div id="fb-root"></div>
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <img src="../_static/img/logo.png" style="width:80px; height: 80px;"> 
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 10px; margin-left: 25px;">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../">Petlja - Настава програмирања за Други разред гимназије</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="margin-left: 50%;margin-top: 5%;font-size: 20px;">
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../J01/index.html">IPYTHON DIRECTIVE DEBUG</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../J01/J01.html">JUPYTER TEST</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E01/index.html">Лекција 1.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E01/E01.html">Увод у рад са програмима за табеларна израчунавања</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E01/testE01.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E02/index.html">Лекција 2.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E02/E02.html">Аутоматска рекалкулација</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E02/testE02.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Лекција 3.</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Селектовање групе ћелија и уређивање табеле</a></li>
+<li class="toctree-l2"><a class="reference internal" href="testE03.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E04/index.html">Лекција 4.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E04/E04.html">Разне врсте података у табели</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E04/testE04.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E05/index.html">Лекција 5.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E05/E05.html">Штампање и генерисање ПДФ документа</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E05/testE05.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E06/index.html">Лекција 6.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E06/E06.html">Апсолутне и релативне адресе ћелија</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E06/testE06.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E07/index.html">Лекција 7.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E07/E07.html">Визуелизација података</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E07/testE07.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E08/index.html">Лекција 8.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E08/E08.html">Сортирање, филтрирање и фреквенцијска анализа</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E08/testE08.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E09/index.html">Лекција 9.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E09/E09.html">Више табела у истом документу</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E09/testE09.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E10/index.html">Лекција 10.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E10/E10.html">Рад са дељеним табелама</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E10/testE10.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y01/index.html">Лекција 21.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y01/L801.html">Увод у процесирање низова података</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y01/test801.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y02/index.html">Лекција 22.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y02/L802.html">Бројачи и суме</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y02/test802.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y03/index.html">Лекција 23.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y03/L803.html">Низови симбола (<em>стрингови</em> или <em>ниске</em>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y03/test803.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y04/index.html">Лекција 24.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y04/L804.html">Угнежђене петље</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y04/test804.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y05/index.html">Лекција 25.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y05/L805.html">Сортирање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y05/test805.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y06/index.html">Лекција 26.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y06/L806.html">Филтрирање и претраживање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y06/test806.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y07/index.html">Лекција 27.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y07/L807.html">Рад са текстуалним датотекама</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y07/test807.html">Тест</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+  </div>
+<div class="container col-md-12" id="continue-reading"></div>
+
+<div class="container col-md-10 col-md-offset-2" id="main-content" style="margin-top: 70px;">
+  
+  <div class="system-message" id="id1">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">&lt;rst_prolog&gt;</span>, line 3)</p>
+<p>Unknown interpreted text role „blank”.</p>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">&lt;rst_prolog&gt;</span>, line 3)</p>
+<p>Substitution definition contains illegal element &lt;problematic&gt;:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;problematic ids=&quot;id2&quot; refid=&quot;id1&quot;&gt;
+    :blank:`x`
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. |blank| replace:: :blank:`x`
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h1>Селектовање групе ћелија и уређивање табеле<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h1>
+<p>Теме за овај час:</p>
+<ol class="arabic simple">
+<li><p>уношење формула и брзо копирање (подсећање и мала новина),</p></li>
+<li><p>селектовање групе ћелија,</p></li>
+<li><p>приказивање бројева са датим бројем децимала,</p></li>
+<li><p>промена боје ћелије, као и боје и стила текста.</p></li>
+</ol>
+<div class="section" id="id4">
+<h2>Пример: Летњи месеци<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>У табели испод су дате очекиване температуре у степенима Целзијуса у неким европским градовима у мају, јуну, јулу и августу једне
+године. Прерачунаћемо те податке у степене Фаренхајта, за сваки град одредити просек за четири наведена месеца,
+и одредићемо најтоплије и најхладније градове по месецима.</p>
+<p><strong>Корак 1.</strong> Преузми табелу са следећег линка <a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/LetnjiMeseci.xlsx">LetnjiMeseci.xlsx</a> тако што ћеш кликнути на
+линк <em>десним тастером миша</em> и онда у малом менију који се појави одабрати опцију „Save link as…”.
+Када отвориш табелу из Ексела треба да видиш следеће податке:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes1.jpg"><img alt="../_images/DataTypes1.jpg" class="align-center" src="../_images/DataTypes1.jpg" style="width: 600px;" /></a>
+</div>
+<div class="section" id="id5">
+<h2>Уношење формула и брзо копирање<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p><strong>Корак 2.</strong> У ћелију F2 унеси формулу</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">AVERAGE</span><span class="p">(</span><span class="n">B2</span><span class="p">:</span><span class="n">E2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>која ће израчунати просечну температуру за ова четири месеца у Амстердаму:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes2.jpg"><img alt="../_images/DataTypes2.jpg" class="align-center" src="../_images/DataTypes2.jpg" style="width: 600px;" /></a>
+<p>и притисни [ENTER]:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes3.jpg"><img alt="../_images/DataTypes3.jpg" class="align-center" src="../_images/DataTypes3.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 3.</strong> Сада ћемо у ћелију G2 да унесемо формулу која ће прерачунати температуру у мају у Амстердаму из степена Целзијуса у степене Фаренхајта по формули</p>
+<div class="math notranslate nohighlight">
+\[t_F = 1,8 \cdot t_C + 32\]</div>
+<p>Приликом уношења формуле морамо повести рачуна о томе да се множење означава звездицом <code class="docutils literal notranslate"><span class="pre">*</span></code>:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes4.jpg"><img alt="../_images/DataTypes4.jpg" class="align-center" src="../_images/DataTypes4.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 4.</strong> Исти посао треба урадити за јун, јул, август и за просек. Можемо исту формулу унети још четири пута, али је боље да се послужимо брзим копирањем. Ако кликнемо на ћелију G2 видећемо увек присутну „бубуљицу” у доњем десном углу:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes5.jpg"><img alt="../_images/DataTypes5.jpg" class="align-center" src="../_images/DataTypes5.jpg" style="width: 600px;" /></a>
+<p>Ухватимо „бубуљицу”, развучемо до краја врсте и добијамо:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes6.jpg"><img alt="../_images/DataTypes6.jpg" class="align-center" src="../_images/DataTypes6.jpg" style="width: 600px;" /></a>
+<p>Формула у ћелији G2 је гласила</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span> <span class="mf">1.8</span> <span class="o">*</span> <span class="n">B2</span> <span class="o">+</span> <span class="mi">32</span>
+</pre></div>
+</div>
+<p>Ако погледамо шта пише у ћелији H2 видећемо да тамо стоји формула</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span> <span class="mf">1.8</span> <span class="o">*</span> <span class="n">C2</span> <span class="o">+</span> <span class="mi">32</span>
+</pre></div>
+</div>
+<p>Као и раније, на основу формуле која је била уписана у ћелију G2 Ексел је простим алгоритмом генерисао формуле и уписао их редом у све ћелије кроз које смо „развукли оквир”. Међутим, пошто смо овај пут „оквир развукли” хоризонтално Ексел је применио други алгоритам: сада се слова у адреси ћелије редом повећавају, а бројеви у адреси ћелије се не мењају. Ево и табеларног прегледа:</p>
+<table class="docutils align-left" id="id11">
+<caption><span class="caption-text">Формуле у одговарајућим ћелијама табеле</span><a class="headerlink" href="#id11" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Ћелија</p></th>
+<th class="head"><p>Формула</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>G2</p></td>
+<td><p>= 1.8 * B2 + 32</p></td>
+</tr>
+<tr class="row-odd"><td><p>H2</p></td>
+<td><p>= 1.8 * C2 + 32</p></td>
+</tr>
+<tr class="row-even"><td><p>I2</p></td>
+<td><p>= 1.8 * D2 + 32</p></td>
+</tr>
+<tr class="row-odd"><td><p>J2</p></td>
+<td><p>= 1.8 * E2 + 32</p></td>
+</tr>
+<tr class="row-even"><td><p>K2</p></td>
+<td><p>= 1.8 * F2 + 32</p></td>
+</tr>
+</tbody>
+</table>
+<p>Дакле, брзо копрање ради на један начин када оквир „развлачимо” вертикално, а на други начин када га „развлачимо” хоризонтално. Поента је да се у сваком случају „чува логика формуле”.</p>
+</div>
+<div class="section" id="id6">
+<h2>Селектовање групе ћелија<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>До сада смо попунили тек први ред табеле. Уместо да све ове кораке понављамо за сваки ред табеле посебно, послужићемо се још једним лукавством. Означићемо низ ћелија (ова операција се у жаргону зове „селектовање” од енгл. <em>select</em> што значи „одабрати”) и онда ћемо брзим копирањем попунити све ћелије у табели.</p>
+<p><strong>Корак 5.</strong> Пошто смо попунили први ред табеле, означићемо (такорећи <em>селектоваћемо</em>) низ ћелија F2:K2 тако што ћемо кликнути на ћелију F2 (дакле, НЕ на „бубуљицу” већ у срце ћелије F2) и <em>не пуштајући миша</em> развући оквир до ћелије K2:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes7.jpg"><img alt="../_images/DataTypes7.jpg" class="align-center" src="../_images/DataTypes7.jpg" style="width: 600px;" /></a>
+<p>Овим смо означили ћелије које су интересантне (јер садрже формуле које желимо да размножимо по целој табели).</p>
+<p><strong>Корак 6.</strong> Е, <em>сада ухватимо за „бубуљицу”</em> која се налази у доњем десном углу означеног распона и „развучемо” до дна табеле:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes8.jpg"><img alt="../_images/DataTypes8.jpg" class="align-center" src="../_images/DataTypes8.jpg" style="width: 600px;" /></a>
+<p>Ексел је ископирао формуле које су се налазиле у означеним ћелијама и током копирања сваку формулу прилагодио позицији на којој се она налази. На пример, ако погледамо ћелију J11 (температура у степенима Фаренхајта у Ослу у августу) видећемо да је та вредност израчуната тако што је формула за конверзију примењена на ћелију E11 (температура у степенима Целзијуса у Ослу у августу), као што и треба:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes9.jpg"><img alt="../_images/DataTypes9.jpg" class="align-center" src="../_images/DataTypes9.jpg" style="width: 600px;" /></a>
+<p>Тако је овај део задатка решен.</p>
+</div>
+<div class="section" id="id7">
+<h2>Форматирање децималних бројева<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p><strong>Корак 7.</strong> У табели сада има много децималних бројева. Неки немају децимале, неки имају само једну децималу, а неки две и табела изгледа доста неуредно.</p>
+<p>Да би табела са много бројева (а такве су најчешће када се ради са Екселом) била прегледнија обично се Екселу наложи да бројеве са децималама приказује са унапред задатим бројем децимала, рецимо две. У том случају ће број као што је 42 бити приказан као 42.00, број 21.5 као 21.50, а број 3.1415 као 3.14.</p>
+<p>За подешавање приказа бројева у табели користимо групу команди „Number”:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes-N.jpg"><img alt="../_images/DataTypes-N.jpg" class="align-center" src="../_images/DataTypes-N.jpg" style="width: 600px;" /></a>
+<p>Да бисмо објаснили Екселу у ком делу табеле бројеве треба приказати са задатим бројем децимала, селектоваћемо део табеле као у претходном кораку, с тим да ће овај пут селектовани део табеле имати више врста и колона.</p>
+<p>Кликни мишем на ћелију F2 <em>и не пуштајући леви тастер на мишу</em> развуци оквир до ћелије K16 овако:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes10.jpg"><img alt="../_images/DataTypes10.jpg" class="align-center" src="../_images/DataTypes10.jpg" style="width: 600px;" /></a>
+<p>Кликни на стрелицу поред „General” и у менију који се појави одабери „Number”:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes11.jpg"><img alt="../_images/DataTypes11.jpg" class="align-center" src="../_images/DataTypes11.jpg" style="width: 600px;" /></a>
+<p>Сви бројеви у селектованом делу табеле ће бити приказани са две децимале.</p>
+<a class="reference internal image-reference" href="../_images/DataTypes12.jpg"><img alt="../_images/DataTypes12.jpg" class="align-center" src="../_images/DataTypes12.jpg" style="width: 600px;" /></a>
+<p>Приказивање бројева са две децимале је најчешћи захтев који корисници Ексела имају, и зато је подразумевано да ће Ексел приказати бројеве на две децимале. Ако из неких разлога желимо да прикажемо бројеве са три децимална места, или само једним, треба кликнути на стрелицу поред „General”, па уместо „Number” одабрати „More Number Formats…” („још формата бројева”):</p>
+<a class="reference internal image-reference" href="../_images/DataTypes13.jpg"><img alt="../_images/DataTypes13.jpg" class="align-center" src="../_images/DataTypes13.jpg" style="width: 600px;" /></a>
+<p>и у прозору који се појавио унети жељени број децимала:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes14.jpg"><img alt="../_images/DataTypes14.jpg" class="align-center" src="../_images/DataTypes14.jpg" style="width: 600px;" /></a>
+</div>
+<div class="section" id="id8">
+<h2>Рачунање минимума и максимума<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<p><strong>Корак 8.</strong> Сада ћемо научити како да одредимо најхладнији и најтоплији град по месецима. У ћелију А17 упиши „Minimum”, а у ћелију A18 упиши „Maksimum”:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes15.jpg"><img alt="../_images/DataTypes15.jpg" class="align-center" src="../_images/DataTypes15.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 9.</strong> У ћелију B17 упиши следећу формулу:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span> <span class="n">MIN</span><span class="p">(</span><span class="n">B2</span><span class="p">:</span><span class="n">B16</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Ова формула ће израчунати најмањи (MIN) од бројева B2, B3, …, B16 (B2:B16) и ту вредност уписати у ћелију B17:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes16.jpg"><img alt="../_images/DataTypes16.jpg" class="align-center" src="../_images/DataTypes16.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 10.</strong> Онда у ћелију B18 упиши формулу:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span> <span class="n">MAX</span><span class="p">(</span><span class="n">B2</span><span class="p">:</span><span class="n">B16</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Ова формула ће израчунати највећи (MAX) од бројева B2, B3, …, B16 (B2:B16) и ту вредност уписати у ћелију B18:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes17.jpg"><img alt="../_images/DataTypes17.jpg" class="align-center" src="../_images/DataTypes17.jpg" style="width: 600px;" /></a>
+<p>Тако смо добили најнижу и највижу температуру у мају:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes18.jpg"><img alt="../_images/DataTypes18.jpg" class="align-center" src="../_images/DataTypes18.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 11.</strong> Да бисмо то исто урадили за јун, јул и август полсужићемо се комбинацијом трикова које смо научили – селектоваћемо ћелије B17 и B18:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes19.jpg"><img alt="../_images/DataTypes19.jpg" class="align-center" src="../_images/DataTypes19.jpg" style="width: 600px;" /></a>
+<p>па ћемо „ухватити за бубуљицу” и развући селекцију до колоне Е:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes20.jpg"><img alt="../_images/DataTypes20.jpg" class="align-center" src="../_images/DataTypes20.jpg" style="width: 600px;" /></a>
+<p>Тако смо добили најниже и највише температуре које су постигнуте у ова четири месеца:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes21.jpg"><img alt="../_images/DataTypes21.jpg" class="align-center" src="../_images/DataTypes21.jpg" style="width: 600px;" /></a>
+</div>
+<div class="section" id="id9">
+<h2>Уређивање табеле<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<p>Табела сада садржи све податке које смо желели у њу да спакујемо, али је доста непрегледна. Ми, људи, нисмо добри у тумачењу велике количине бројева – много боље нам иду слике. Зато ћемо мало улепшати табелу како бисмо истакли оно што смо уочили и како бисмо раздвојили различите врсте података.</p>
+<p>За истицање елемената у табели користимо сегмент команди које се налазе у групи „Font”:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes22.jpg"><img alt="../_images/DataTypes22.jpg" class="align-center" src="../_images/DataTypes22.jpg" style="width: 600px;" /></a>
+<p>Команде представљене иконама у овој групи већ познајеш:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes23.jpg"><img alt="../_images/DataTypes23.jpg" class="align-center" src="../_images/DataTypes23.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 12.</strong> Постави боју слова у заглављу табеле (ћелије А1:К1) на бело, а боју позадине ћелија на тамно сиво тако што ћеш</p>
+<ol class="arabic simple">
+<li><p>селектовати ћелије А1:К1</p></li>
+<li><p>кликнути на стрелицу поред иконе за подешавање боје слова и одабрати белу боју, и</p></li>
+<li><p>кликнути на стрелицу поред иконе за подешавање боје позадине ћелије и одабрати тамно сиву.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/DataTypes24.jpg"><img alt="../_images/DataTypes24.jpg" class="align-center" src="../_images/DataTypes24.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 13.</strong> За слова у ћелијама А17:Е18 (минималне и максималне температуре):</p>
+<ol class="arabic simple">
+<li><p>као стил одабери <strong>B</strong> (енгл. <em>bold</em> што значи „подебљано”),</p></li>
+<li><p>зеленом обој слова која одговарају минималним температурама, а</p></li>
+<li><p>црвеном обој слова која одговарају максималним температурама.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/DataTypes25.jpg"><img alt="../_images/DataTypes25.jpg" class="align-center" src="../_images/DataTypes25.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 14.</strong> Позадину ћелија које одговарају просечним температурама (F2:F16 и K2:K16) обој жуто:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes26.jpg"><img alt="../_images/DataTypes26.jpg" class="align-center" src="../_images/DataTypes26.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 15.</strong> Температуре које су исказане у степенима Фаренхајта (ћелије G2:J16) обој светло плаво:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes27.jpg"><img alt="../_images/DataTypes27.jpg" class="align-center" src="../_images/DataTypes27.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 16.</strong> Коначно, у делу табеле B2:E16 где су температуре исказане у степенима Целзијуса</p>
+<ol class="arabic simple">
+<li><p>обој светло зелено позадину сваке ћелије која садржи температуру која је минимална за тај месец, и</p></li>
+<li><p>обој светло црвено позадину сваке ћелије која садржи температуру која је максимална за тај месец.</p></li>
+</ol>
+<p>Треба да добијеш:</p>
+<a class="reference internal image-reference" href="../_images/DataTypes28.jpg"><img alt="../_images/DataTypes28.jpg" class="align-center" src="../_images/DataTypes28.jpg" style="width: 600px;" /></a>
+<p>Шта закљућујеш гледајући само у боје ћелија?</p>
+</div>
+<div class="section" id="id10">
+<h2>Задаци<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<p><strong>Задатак 1.</strong> Са следећег линка <a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/Razred.xlsx">Razred.xlsx</a> преузми документ <em>Razred.xlsx</em> и сними га на свој рачунар.
+Документ садржи податке о оценама из информатике неких ученика.</p>
+<ol class="arabic simple">
+<li><p>Колоне „P1” „P2” и „P3” садрже оцене са првог, другог и трећег писменог задатка. У ћелијама E19, J19, M19 израчунај просечну оцену одговарајућег писменог задатка.</p></li>
+<li><p>Прикажи просек оцена на две децимале. Прошири колоне да би се виделе децимале.</p></li>
+<li><p>У колонама „P1” „P2” и „P3” обој слова црвеном и постави стил на <strong>bold</strong>.</p></li>
+<li><p>За сваког ученика у колони „Prosek” израчунај просек његових оцена и прикажи просек на две децимале.</p></li>
+<li><p>У колони „Zaokruženo” заокружи оцену сваког ученика на цео броj користећи функцију <code class="docutils literal notranslate"><span class="pre">ROUND</span></code>. На пример, за првог ученика у ћелију Q2 унеси формулу <code class="docutils literal notranslate"><span class="pre">=ROUND(P2,0)</span></code> која број из ћелије „P2” заокружује на 0 децимала (дакле, на цео број). Онда „развуци” формулу до краја табеле. Прошири колону ако је потребно.</p></li>
+<li><p>У колони „Maks ocena” за сваког ученика израчунај максималну оцену која је том ученику уписана у дневник.</p></li>
+<li><p>Позадину ћелија у колони „Zaokruženo” обој плавом, а позадину ћелија у колони „Maks ocena” наранџастом.</p></li>
+<li><p>Сними табелу.</p></li>
+</ol>
+<p><strong>Задатак 2.</strong> Ученици једног разреда су скакали у даљ. Сваки ученик је имао три покуашаја. У случају преступа податак није унет у табелу.
+Са следећег линка <a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/SkokUDalj.xlsx">SkokUDalj.xlsx</a> преузми документ <em>SkokUDalj.xlsx</em> и сними га на свој рачунар.</p>
+<ol class="arabic simple">
+<li><p>Прошири колоне ако је потребно да би се садржај лепо видео.</p></li>
+<li><p>За сваког ученика у табели израчунај просечну дужину његових покушаја.</p></li>
+<li><p>За сваког ученика у табели израчунај дужину његовог најдужег скока.</p></li>
+<li><p>Црвеном обој име сваког ученика који је начинио бар један преступ.</p></li>
+<li><p>Нека стил слова у колони која садржи просечну дужину скока буде <em>italic</em>.</p></li>
+<li><p>Нека стил слова у колони која садржи максималну дужину скока буде <strong>bold</strong>.</p></li>
+<li><p>Сними табелу.</p></li>
+</ol>
+</div>
+</div>
+
+
+  
+      <div class="col-md-12">
+<ul class="pager">
+    <li id="relations-prev" title='Previous chapter - Лекција 3.' data-toggle="tooltip"><a href="index.html"><i class="fas fa-arrow-left"></i></a></li>
+    
+        <li id="relations-next" title='Next chapter - Тест' data-toggle="tooltip"><a href="testE03.html"><i class="fas fa-arrow-right"></i></a></li>
+</ul>
+
+<!-- <ul class="pager"> -->
+    <!-- -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Лекција 3.' data-toggle="tooltip"><a href="index.html">Претходно поглавље</a></li> -->
+    <!--  -->
+    <!-- -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Тест' data-toggle="tooltip"><a href="testE03.html">Следеће поглавље</a></li> -->
+    <!-- -->
+<!-- </ul> -->
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+</div>
+  
+</div>
+<footer class="footer col-md-12">
+    <div class="container">
+        <div class="text-center">
+            <hr>
+            <p class="text-muted">
+                <span class="pull-left">&copy; 2019 Petlja (Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

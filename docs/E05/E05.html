@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Штампање и генерисање ПДФ документа &#8212; Petlja - Настава програмирања за Други разред гимназије</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/runestonebase.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../_static/jquery-fix.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/waypoints.min.js"></script>
+    <script src="../_static/rangy-core.js"></script>
+    <script src="../_static/rangy-textrange.js"></script>
+    <script src="../_static/rangy-cssclassapplier.js"></script>
+    <script src="../_static/user-highlights.js"></script>
+    <script src="../_static/jquery.idle-timer.js"></script>
+    <script src="../_static/processing-1.4.1.min.js"></script>
+    <script src="../_static/jquery.hotkey.js"></script>
+    <script src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Тест" href="testE05.html" />
+    <link rel="prev" title="Лекција 5." href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'Настава програмирања за Други разред гимназије';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'Настава програмирања за Други разред гимназије';
+  eBookConfig.runestone_version = '3.1.1';
+  eBookConfig.imagesDir = '../_images/';
+  eBookConfig.staticDir = '../_static/';
+  if(typeof(Sk) != "undefined")
+      Sk.imgPath = eBookConfig.imagesDir;
+</script>
+
+<div id="fb-root"></div>
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <img src="../_static/img/logo.png" style="width:80px; height: 80px;"> 
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 10px; margin-left: 25px;">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../">Petlja - Настава програмирања за Други разред гимназије</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="margin-left: 50%;margin-top: 5%;font-size: 20px;">
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../J01/index.html">IPYTHON DIRECTIVE DEBUG</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../J01/J01.html">JUPYTER TEST</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E01/index.html">Лекција 1.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E01/E01.html">Увод у рад са програмима за табеларна израчунавања</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E01/testE01.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E02/index.html">Лекција 2.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E02/E02.html">Аутоматска рекалкулација</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E02/testE02.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E03/index.html">Лекција 3.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E03/E03.html">Селектовање групе ћелија и уређивање табеле</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E03/testE03.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E04/index.html">Лекција 4.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E04/E04.html">Разне врсте података у табели</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E04/testE04.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Лекција 5.</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Штампање и генерисање ПДФ документа</a></li>
+<li class="toctree-l2"><a class="reference internal" href="testE05.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E06/index.html">Лекција 6.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E06/E06.html">Апсолутне и релативне адресе ћелија</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E06/testE06.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E07/index.html">Лекција 7.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E07/E07.html">Визуелизација података</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E07/testE07.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E08/index.html">Лекција 8.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E08/E08.html">Сортирање, филтрирање и фреквенцијска анализа</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E08/testE08.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E09/index.html">Лекција 9.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E09/E09.html">Више табела у истом документу</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E09/testE09.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E10/index.html">Лекција 10.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E10/E10.html">Рад са дељеним табелама</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E10/testE10.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y01/index.html">Лекција 21.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y01/L801.html">Увод у процесирање низова података</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y01/test801.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y02/index.html">Лекција 22.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y02/L802.html">Бројачи и суме</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y02/test802.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y03/index.html">Лекција 23.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y03/L803.html">Низови симбола (<em>стрингови</em> или <em>ниске</em>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y03/test803.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y04/index.html">Лекција 24.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y04/L804.html">Угнежђене петље</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y04/test804.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y05/index.html">Лекција 25.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y05/L805.html">Сортирање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y05/test805.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y06/index.html">Лекција 26.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y06/L806.html">Филтрирање и претраживање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y06/test806.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y07/index.html">Лекција 27.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y07/L807.html">Рад са текстуалним датотекама</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y07/test807.html">Тест</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+  </div>
+<div class="container col-md-12" id="continue-reading"></div>
+
+<div class="container col-md-10 col-md-offset-2" id="main-content" style="margin-top: 70px;">
+  
+  <div class="system-message" id="id1">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">&lt;rst_prolog&gt;</span>, line 3)</p>
+<p>Unknown interpreted text role „blank”.</p>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">&lt;rst_prolog&gt;</span>, line 3)</p>
+<p>Substitution definition contains illegal element &lt;problematic&gt;:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;problematic ids=&quot;id2&quot; refid=&quot;id1&quot;&gt;
+    :blank:`x`
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. |blank| replace:: :blank:`x`
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h1>Штампање и генерисање ПДФ документа<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h1>
+<p>Теме овог часа су:</p>
+<ol class="arabic simple">
+<li><p>приказивање броја у облику процента,</p></li>
+<li><p>рад са ћелијама табеле (приказивање веће количине текста у ћелији, спајање ћелија)</p></li>
+<li><p>штампање документа</p></li>
+<li><p>генерисање ПДФ документа</p></li>
+</ol>
+<div class="section" id="id4">
+<h2>Пример: Реке Србије – проценти и рад са ћелијама табеле<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p><strong>Корак 1.</strong> Са следећег линка <a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/RekeSrbije.xlsx">RekeSrbije.xlsx</a>
+преузми документ <em>RekeSrbije.xlsx</em> која садржи податке о најдужим рекама у Србији и сними га на свој рачунар.</p>
+<p>Покрени Ексел и отвори документ:</p>
+<a class="reference internal image-reference" href="../_images/Print1.jpg"><img alt="../_images/Print1.jpg" class="align-center" src="../_images/Print1.jpg" style="width: 600px;" /></a>
+</div>
+<div class="section" id="id5">
+<h2>Проширивање врсте и приказивање садржаја ћелије у више редова<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p><strong>Корак 2.</strong> Прошири колоне тако да се у потпуности види садржај ћелија:</p>
+<a class="reference internal image-reference" href="../_images/Print2.jpg"><img alt="../_images/Print2.jpg" class="align-center" src="../_images/Print2.jpg" style="width: 600px;" /></a>
+<p>Табела је ружна зато што је, рецимо, име колоне C дугачко, а бројеви који су уписани у ту колону су релативно мали. Има много празног простора и то отежава читање.</p>
+<p>Зато ћемо табелу форматирати другачије.</p>
+<p><strong>Корак 3.</strong> Сузи колоне B и C и прошири прву врсту. Да бу проширио прву врсту „ухвати” мишем границу између бројева <code class="docutils literal notranslate"><span class="pre">1</span></code> и <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<a class="reference internal image-reference" href="../_images/Print3.jpg"><img alt="../_images/Print3.jpg" class="align-center" src="../_images/Print3.jpg" style="width: 600px;" /></a>
+<p>и повуци наниже:</p>
+<a class="reference internal image-reference" href="../_images/Print4.jpg"><img alt="../_images/Print4.jpg" class="align-center" src="../_images/Print4.jpg" style="width: 600px;" /></a>
+<p>И даље се текст не види у целости: Ексел, наиме, неће сам од себе „смотати текст” у два реда чак и када је ћелија довољно висока. Морамо му наредити да то уради. Селектуј ћелије B1 и C1, па онда кликни на икону која одговара операцији „Wrap Text” (енгл. „смотај текст”):</p>
+<a class="reference internal image-reference" href="../_images/Print5.jpg"><img alt="../_images/Print5.jpg" class="align-center" src="../_images/Print5.jpg" style="width: 600px;" /></a>
+<p>Табела сада изгледа овако:</p>
+<a class="reference internal image-reference" href="../_images/Print6.jpg"><img alt="../_images/Print6.jpg" class="align-center" src="../_images/Print6.jpg" style="width: 600px;" /></a>
+</div>
+<div class="section" id="id6">
+<h2>Приказивање бројева  у облику процента<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p><strong>Корак 4.</strong> Сада ћемо за сваку од река на списку израчунати који проценат њеног тока пролази кроз Србију. Да се подсетимо: реч <em>проценaт</em> потиче од латинског <em>pro centum</em> што значи „у стотини”. Зато је</p>
+<div class="math notranslate nohighlight">
+\[47\% = \frac{47}{100} = \text{четрдесет седам од сто}.\]</div>
+<p>На пример, у једној школи која има 856 ученика њих 25% су одлични. Колико има одличних ученика у тој школи?</p>
+<p><em>Одговор.</em> У тој школи има 214 одличних ученика јер је</p>
+<div class="math notranslate nohighlight">
+\[856 \cdot 25\% = 856 \cdot \frac{25}{100} = 214.\]</div>
+<p>Дунав је дугачак 2850 км, од чега 588 км протиче кроз Србију. Који проценат свог тока Дунав проводи у Србији?</p>
+<p><em>Одговор.</em> Нека је то <span class="math notranslate nohighlight">\(x\%\)</span>. Онда је</p>
+<div class="math notranslate nohighlight">
+\[2850 \cdot x\% = 2850 \cdot \frac{x}{100} = 588.\]</div>
+<p>Одатле се лако добија да је</p>
+<div class="math notranslate nohighlight">
+\[x = \frac{588 \cdot 100}{2850} \approx 20,63\%\]</div>
+<p>Дакле, приближно <span class="math notranslate nohighlight">\(20,63\%\)</span> свог тока Дунав проводи у Србији.</p>
+<p>Проценат, дакле, представља количник дела и целине, помножен са 100. Да бисмо у Екселу израчунали проценте, довољно је израчунати количник дела и целине, и тако добијене бројеве <em>форматирати као проценат</em>.</p>
+<p>Да кренемо са послом. У ћелију D2 унесемо формулу</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">C2</span><span class="o">/</span><span class="n">B2</span>
+</pre></div>
+</div>
+<p>што значи да рачунамо количник дела и целине (<em>удео</em> тока кроз Србију у целом току Дунава):</p>
+<a class="reference internal image-reference" href="../_images/Print7.jpg"><img alt="../_images/Print7.jpg" class="align-center" src="../_images/Print7.jpg" style="width: 600px;" /></a>
+<p>Исто урадимо и за остале реке у табели. Добијамо:</p>
+<a class="reference internal image-reference" href="../_images/Print8.jpg"><img alt="../_images/Print8.jpg" class="align-center" src="../_images/Print8.jpg" style="width: 600px;" /></a>
+<p>Да бисмо ове количнике приказали као проценте селектоваћемо ћелије D2:D8, кликнути на стрелицу поред формата податка и одабрати „Percentage”:</p>
+<a class="reference internal image-reference" href="../_images/Print9.jpg"><img alt="../_images/Print9.jpg" class="align-center" src="../_images/Print9.jpg" style="width: 600px;" /></a>
+<p>Добијамо количнике форматиране као проценте, на две децимале:</p>
+<a class="reference internal image-reference" href="../_images/Print10.jpg"><img alt="../_images/Print10.jpg" class="align-center" src="../_images/Print10.jpg" style="width: 600px;" /></a>
+</div>
+<div class="section" id="id7">
+<h2>Спајање ћелија и промена величине слова<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p><strong>Корак 5.</strong> У овом кораку ћемо табели додати наслов „Najduže reke Srbije”. Како у табели нема места за наслов, убацићемо празну врсту пре прве врсте табеле.</p>
+<p>Кликни <em>десним</em> тастером миша на број <code class="docutils literal notranslate"><span class="pre">1</span></code> (редни број прве врсте), па у малом менију који се појавио одабери „Insert”:</p>
+<a class="reference internal image-reference" href="../_images/Print11.jpg"><img alt="../_images/Print11.jpg" class="align-center" src="../_images/Print11.jpg" style="width: 600px;" /></a>
+<p>Испред прве врсте се појавила нова, празна врста:</p>
+<a class="reference internal image-reference" href="../_images/Print12.jpg"><img alt="../_images/Print12.jpg" class="align-center" src="../_images/Print12.jpg" style="width: 600px;" /></a>
+<p>Пошто желимо да додамо наслов за <em>целу табелу</em> спојићемо ћелије A1, B1, C1 и D1 у <em>једну велику ћелију</em>. Селектуј ћелије A1:D1 и кликни на икону која представља операцију „Merge Cells” (енгл. „спој ћелије”):</p>
+<a class="reference internal image-reference" href="../_images/Print13.jpg"><img alt="../_images/Print13.jpg" class="align-center" src="../_images/Print13.jpg" style="width: 600px;" /></a>
+<p>Добијамо:</p>
+<a class="reference internal image-reference" href="../_images/Print14.jpg"><img alt="../_images/Print14.jpg" class="align-center" src="../_images/Print14.jpg" style="width: 600px;" /></a>
+<p>У нову, велику ћелију унеси текст „Najduže reke Srbije” (без наводника, наравно!):</p>
+<a class="reference internal image-reference" href="../_images/Print15.jpg"><img alt="../_images/Print15.jpg" class="align-center" src="../_images/Print15.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 6.</strong> Сада ћемо мало уредити табелу. Повећај фонт наслова табеле, као стил одабери <strong>bold</strong> (ако затреба, прошири прву врсту):</p>
+<a class="reference internal image-reference" href="../_images/Print16.jpg"><img alt="../_images/Print16.jpg" class="align-center" src="../_images/Print16.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 7.</strong> Ћелије B2, C2, D2 поравнај по десној ивици:</p>
+<a class="reference internal image-reference" href="../_images/Print17.jpg"><img alt="../_images/Print17.jpg" class="align-center" src="../_images/Print17.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 8.</strong> За ћелије А2:D2 одабери стил <em>italic</em> и центрирај њихов садржај <em>вертикално</em>:</p>
+<a class="reference internal image-reference" href="../_images/Print18.jpg"><img alt="../_images/Print18.jpg" class="align-center" src="../_images/Print18.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 9.</strong> на крају ћемо поставити оквир око табеле. Селектуј ћелије A2:D9 и из менија са оквирима одабери опцију „All Borders”:</p>
+<a class="reference internal image-reference" href="../_images/Print19.jpg"><img alt="../_images/Print19.jpg" class="align-center" src="../_images/Print19.jpg" style="width: 600px;" /></a>
+<p>Табела изгледа овако:</p>
+<a class="reference internal image-reference" href="../_images/Print20.jpg"><img alt="../_images/Print20.jpg" class="align-center" src="../_images/Print20.jpg" style="width: 600px;" /></a>
+<p>Сними је.</p>
+</div>
+<div class="section" id="id8">
+<h2>Штампање документа<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<p>Иако живимо у 21. веку, папирни документи и даље представљају незаобилазан сегмент пословне реалности. Зато сваки програм за уређивање текста, табела итд има могућност да одштампа документ.</p>
+<p><strong>Корак 10.</strong> Да бисмо одштампали табелу треба прво да кликнемо на „File”:</p>
+<a class="reference internal image-reference" href="../_images/Print22.jpg"><img alt="../_images/Print22.jpg" class="align-center" src="../_images/Print22.jpg" style="width: 600px;" /></a>
+<p>и у новом погледу који смо добили треба да кликнемо на „Print”:</p>
+<a class="reference internal image-reference" href="../_images/Print23.jpg"><img alt="../_images/Print23.jpg" class="align-center" src="../_images/Print23.jpg" style="width: 600px;" /></a>
+<p>Тако долазимо до менија за штампање:</p>
+<a class="reference internal image-reference" href="../_images/Print24.jpg"><img alt="../_images/Print24.jpg" class="align-center" src="../_images/Print24.jpg" style="width: 600px;" /></a>
+<p>Са десне стране нам је приказан преглед документа: тако ће документ изгледати када се одштампа. Кликом на дугме „Print” документ шаљемо на штампу:</p>
+<a class="reference internal image-reference" href="../_images/Print25.jpg"><img alt="../_images/Print25.jpg" class="align-center" src="../_images/Print25.jpg" style="width: 600px;" /></a>
+<p>Овај документ ће бити одштампан у једном примерку („Copies: 1”) на штампачу који се подразумева. Лако можемо да променимо број примерака или да документ пошаљемо на други штампач:</p>
+<a class="reference internal image-reference" href="../_images/Print26.jpg"><img alt="../_images/Print26.jpg" class="align-center" src="../_images/Print26.jpg" style="width: 600px;" /></a>
+<p>У делу менија који се зове „Settings” можемо да мењамо разне параметре штампе (маргине, оријентацију папира итд), а ми ћемо детаљно причати само о једном – параметру који одређује формат папира:</p>
+<a class="reference internal image-reference" href="../_images/Print27.jpg"><img alt="../_images/Print27.jpg" class="align-center" src="../_images/Print27.jpg" style="width: 600px;" /></a>
+<p>Стандардни формат папира за штампање у Европи, па и у Србији као држави европског културног простора, се зове А4. Његове димензије су 210мм x 297мм. (Ако те занима зашто се баш тако зове и зашто су баш те димензије потражи на интернету „формати папира” или „ДИН А формат”). С друге стране, у Северној Америци, одакле нам долазе сви програми, стандардни формат за штампање се зове „Letter” и његове димензије су 8,5” x 11” (што је 215,9 мм x 279,4 мм). Дакле, формат „Letter” је дежмекастији – мало је нижи и мало шири:</p>
+<a class="reference internal image-reference" href="../_images/A4-Letter.jpg"><img alt="../_images/A4-Letter.jpg" class="align-center" src="../_images/A4-Letter.jpg" style="width: 600px;" /></a>
+<p>Често се дешава да су након инсталације софтвера параметри подешени према америчком стандарду. Уколико је то случај, треба променити формат папира. Довољно је кликнути на стрелицу поред имена формата и одабрати жељени формат:</p>
+<a class="reference internal image-reference" href="../_images/Print28.jpg"><img alt="../_images/Print28.jpg" class="align-center" src="../_images/Print28.jpg" style="width: 600px;" /></a>
+</div>
+<div class="section" id="id9">
+<h2>Снимање документа у ПДФ формату<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<p>ПДФ (PDF) је скраћеница од <em>Protable Document Format</em>, што значи „преносни формат за документе”. Он омогућује да се документ који је направљен на једном рачунару отвори, чита и штампа на <em>било ком другом рачунару</em> независно од произвођача рачунара, независно од оперативног система под којим рачунар ради, и независно од тога колико је стар рачунар.</p>
+<p>На пример, документ направљен на персоналном рачунару (PC) који ради под оперативним системом <em>Windows 10</em> може да се отвори и прочита на рачунару који ради под оперативним системом <em>Linux</em>, или на лаптопу који ради под оперативним системом <em>macOS</em>, или на мобилном телефону који ради под оперативним системом <em>Android</em>, или на таблет рачунару који ради под оперативним системом <em>iOS</em>. И обрнуто: ПДФ документ који је направљен на таблет рачунару који ради под оперативним системом <em>iOS</em> може без проблема да се прочита и одштампа на персоналном рачунару који ради под оперативним системом <em>Windows 10</em>.</p>
+<p>Цена коју плаћамо за универзалност ПДФ формата је чињеница да ПДФ документ <em>не може да се мења!</em> Зато је веома важно запамтити следеће: ако сте ПДФ документ направили од неког другог документа, рецимо од Ексел табеле, <em>увек морате сачувати и полазни документ (Ексел табелу)!</em> Ексел не може да учита ПДФ документ и да на њему врши измене. Ако је потребно нешто променити, измене извршимо у оригиналном документу, рецимо Ексел табели, и онда поново од њега направимо ПДФ.</p>
+<p>И поред овог ограничења, ПДФ је данас постао <em>de facto</em> стандард за размену докумената. Ако некоме треба да пошаљете неке документе, а није унапред договорено  у ком формату се шаљу документи, принципи <em>дигиталне етикеције</em> налажу да се у том случају шаље <em>искључиво ПДФ</em> верзија документа. Разлог је једноставан: да би неко могао да прочита, рецимо, Ексел фајл, мора да купи одговарајући софтвер. За ПДФ, међутим, постоје <em>бесплатни</em> читачи за све врсте дигиталних уређаја које су икада направљене.</p>
+<p>Да бисмо претходни документ снимили у ПДФ формату треба да кликнемо на „File”:</p>
+<a class="reference internal image-reference" href="../_images/Print29.jpg"><img alt="../_images/Print29.jpg" class="align-center" src="../_images/Print29.jpg" style="width: 600px;" /></a>
+<p>потом одаберемо „Save a copy” (енгл. „сачувај копију”):</p>
+<a class="reference internal image-reference" href="../_images/Print30.jpg"><img alt="../_images/Print30.jpg" class="align-center" src="../_images/Print30.jpg" style="width: 600px;" /></a>
+<p>онда кликнемо на стрелицу поред формата документа како бисмо добили (огромну!) листу свих расположивих формата које Ексел подржава, и одаберемо формат ПДФ:</p>
+<a class="reference internal image-reference" href="../_images/Print31.jpg"><img alt="../_images/Print31.jpg" class="align-center" src="../_images/Print31.jpg" style="width: 600px;" /></a>
+<p>На крају кликнемо на „Save”:</p>
+<a class="reference internal image-reference" href="../_images/Print32.jpg"><img alt="../_images/Print32.jpg" class="align-center" src="../_images/Print32.jpg" style="width: 600px;" /></a>
+<p>Ако ПДФ документ отворимо из неког програма за преглед ПДФ докумената видећемо нешто слично овоме:</p>
+<a class="reference internal image-reference" href="../_images/Print33.jpg"><img alt="../_images/Print33.jpg" class="align-center" src="../_images/Print33.jpg" style="width: 600px;" /></a>
+</div>
+<div class="section" id="id10">
+<h2>Задаци<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<p><strong>Задатак 1.</strong> Са следећег линка
+<a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/Remember.xlsx">Remember.xlsx</a>
+преузми датотеку која садржи (будућу) плеј-листу.</p>
+<p>За сваку нумеру унеси трајање и одреди укупно трајање плеј-листе. Улепшај табелу и сними је као Ексел фајл и као ПДФ фајл.</p>
+<p><strong>Задатак 2.</strong> Са следећег линка
+<a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/StanovnistvoSrbije2017.xlsx">StanovnistvoSrbije2017.xlsx</a>
+преузми датотеку која садржи податке о броју становника Србије у 2017. години по годинама старости.</p>
+<p>Додај табели три колоне:</p>
+<ul class="simple">
+<li><p>Ukupno</p></li>
+<li><p>Procenat M</p></li>
+<li><p>Procenat Ž</p></li>
+</ul>
+<p>У свакој врсти табеле (дакле, за сваки узраст за који у табели постоје подаци) одреди укупан број становника тог узраста, као и проценат припадника мушког и женског пола.</p>
+<p>Улепшај табелу и сними је као Ексел фајл и као ПДФ фајл.</p>
+</div>
+</div>
+
+
+  
+      <div class="col-md-12">
+<ul class="pager">
+    <li id="relations-prev" title='Previous chapter - Лекција 5.' data-toggle="tooltip"><a href="index.html"><i class="fas fa-arrow-left"></i></a></li>
+    
+        <li id="relations-next" title='Next chapter - Тест' data-toggle="tooltip"><a href="testE05.html"><i class="fas fa-arrow-right"></i></a></li>
+</ul>
+
+<!-- <ul class="pager"> -->
+    <!-- -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Лекција 5.' data-toggle="tooltip"><a href="index.html">Претходно поглавље</a></li> -->
+    <!--  -->
+    <!-- -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Тест' data-toggle="tooltip"><a href="testE05.html">Следеће поглавље</a></li> -->
+    <!-- -->
+<!-- </ul> -->
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+</div>
+  
+</div>
+<footer class="footer col-md-12">
+    <div class="container">
+        <div class="text-center">
+            <hr>
+            <p class="text-muted">
+                <span class="pull-left">&copy; 2019 Petlja (Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

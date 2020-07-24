@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Сортирање, филтрирање и фреквенцијска анализа &#8212; Petlja - Настава програмирања за Други разред гимназије</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/runestonebase.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../_static/jquery-fix.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/waypoints.min.js"></script>
+    <script src="../_static/rangy-core.js"></script>
+    <script src="../_static/rangy-textrange.js"></script>
+    <script src="../_static/rangy-cssclassapplier.js"></script>
+    <script src="../_static/user-highlights.js"></script>
+    <script src="../_static/jquery.idle-timer.js"></script>
+    <script src="../_static/processing-1.4.1.min.js"></script>
+    <script src="../_static/jquery.hotkey.js"></script>
+    <script src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Тест" href="testE08.html" />
+    <link rel="prev" title="Лекција 8." href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'Настава програмирања за Други разред гимназије';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'Настава програмирања за Други разред гимназије';
+  eBookConfig.runestone_version = '3.1.1';
+  eBookConfig.imagesDir = '../_images/';
+  eBookConfig.staticDir = '../_static/';
+  if(typeof(Sk) != "undefined")
+      Sk.imgPath = eBookConfig.imagesDir;
+</script>
+
+<div id="fb-root"></div>
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <img src="../_static/img/logo.png" style="width:80px; height: 80px;"> 
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 10px; margin-left: 25px;">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../">Petlja - Настава програмирања за Други разред гимназије</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="margin-left: 50%;margin-top: 5%;font-size: 20px;">
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../J01/index.html">IPYTHON DIRECTIVE DEBUG</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../J01/J01.html">JUPYTER TEST</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E01/index.html">Лекција 1.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E01/E01.html">Увод у рад са програмима за табеларна израчунавања</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E01/testE01.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E02/index.html">Лекција 2.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E02/E02.html">Аутоматска рекалкулација</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E02/testE02.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E03/index.html">Лекција 3.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E03/E03.html">Селектовање групе ћелија и уређивање табеле</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E03/testE03.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E04/index.html">Лекција 4.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E04/E04.html">Разне врсте података у табели</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E04/testE04.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E05/index.html">Лекција 5.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E05/E05.html">Штампање и генерисање ПДФ документа</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E05/testE05.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E06/index.html">Лекција 6.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E06/E06.html">Апсолутне и релативне адресе ћелија</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E06/testE06.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E07/index.html">Лекција 7.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E07/E07.html">Визуелизација података</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E07/testE07.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Лекција 8.</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Сортирање, филтрирање и фреквенцијска анализа</a></li>
+<li class="toctree-l2"><a class="reference internal" href="testE08.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E09/index.html">Лекција 9.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E09/E09.html">Више табела у истом документу</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E09/testE09.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../E10/index.html">Лекција 10.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../E10/E10.html">Рад са дељеним табелама</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../E10/testE10.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y01/index.html">Лекција 21.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y01/L801.html">Увод у процесирање низова података</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y01/test801.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y02/index.html">Лекција 22.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y02/L802.html">Бројачи и суме</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y02/test802.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y03/index.html">Лекција 23.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y03/L803.html">Низови симбола (<em>стрингови</em> или <em>ниске</em>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y03/test803.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y04/index.html">Лекција 24.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y04/L804.html">Угнежђене петље</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y04/test804.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y05/index.html">Лекција 25.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y05/L805.html">Сортирање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y05/test805.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y06/index.html">Лекција 26.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y06/L806.html">Филтрирање и претраживање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y06/test806.html">Тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Y07/index.html">Лекција 27.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Y07/L807.html">Рад са текстуалним датотекама</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Y07/test807.html">Тест</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+  </div>
+<div class="container col-md-12" id="continue-reading"></div>
+
+<div class="container col-md-10 col-md-offset-2" id="main-content" style="margin-top: 70px;">
+  
+  <div class="system-message" id="id1">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">&lt;rst_prolog&gt;</span>, line 3)</p>
+<p>Unknown interpreted text role „blank”.</p>
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">&lt;rst_prolog&gt;</span>, line 3)</p>
+<p>Substitution definition contains illegal element &lt;problematic&gt;:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;problematic ids=&quot;id2&quot; refid=&quot;id1&quot;&gt;
+    :blank:`x`
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. |blank| replace:: :blank:`x`
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h1>Сортирање, филтрирање и фреквенцијска анализа<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h1>
+<p>У овој лекцији ћемо показати:</p>
+<ol class="arabic simple">
+<li><p>како сортирати табелу,</p></li>
+<li><p>како из табеле издвојити само неке врсте (филтрирање) и како се користи опција „Autosum”, и</p></li>
+<li><p>како се ради фреквенцијска анализа података и како се користи функција COUNTIF</p></li>
+</ol>
+<div class="section" id="id4">
+<h2>Сортирање података<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>Сортирати податке значи поређати их по величини, од мањих ка већим или обрнуто. Показаћемо сада како се у Екселу могу сортирати табеле. Приликом сортирања табела Ексел преуређује врсте табеле тако да бројеви уписани у неку колону буду поређани по величини.</p>
+<p><strong>Корак 1.</strong> Са следећег линка преузми документ <em>Top25YouTubers.xlsx</em> и сними га на свој рачунар:</p>
+<p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/Top25YouTubers.xlsx">YouTubers.xlsx</a></p>
+<p>Табела садржи податке о првих 25 YouTube канала према броју претплатника на дан 1. јул 2019:</p>
+<a class="reference internal image-reference" href="../_images/YT1.jpg"><img alt="../_images/YT1.jpg" class="align-center" src="../_images/YT1.jpg" style="width: 600px;" /></a>
+<p>За сваки канал је наведен његов YouTube ранг (GRADE), име канала (NAME), колико је видеа објављено на каналу (VIDEOS), колико има претплатника (SUBSRCIBERS) и колико има прегледа (VIEWS). Табела jе сортирана по броју претплатника.</p>
+<p><strong>Корак 2.</strong> Сортираћемо сада табелу по броју прегледа (VIEWS). Селектоваћемо целу табелу <em>заједно са првом врстом у којој су наведена имена колона</em>:</p>
+<a class="reference internal image-reference" href="../_images/YT2.jpg"><img alt="../_images/YT2.jpg" class="align-center" src="../_images/YT2.jpg" style="width: 600px;" /></a>
+<p>Прећи ћемо на командну траку „Data” и одабрати опцију „Sort”:</p>
+<a class="reference internal image-reference" href="../_images/YT3.jpg"><img alt="../_images/YT3.jpg" class="align-center" src="../_images/YT3.jpg" style="width: 600px;" /></a>
+<p>Појавиће се прозор у коме можемо да одаберемо колону по којој ће бити сортирана табела:</p>
+<a class="reference internal image-reference" href="../_images/YT4.jpg"><img alt="../_images/YT4.jpg" class="align-center" src="../_images/YT4.jpg" style="width: 600px;" /></a>
+<p>У одељку „Column” (енгл. „колона”) кликнемо на стрелицу, па у листи која се појавила одаберемо „VIEWS” јер желимо да сортирамо табелу по броју прегледа (колона „VIEWS”):</p>
+<a class="reference internal image-reference" href="../_images/YT5.jpg"><img alt="../_images/YT5.jpg" class="align-center" src="../_images/YT5.jpg" style="width: 600px;" /></a>
+<p>Потом у одељку „Order” (енгл. „редослед”) кликнемо на стрелицу, па у листи која се појавила одаберемо „Largest to Smallest” јер желимо да сортирамо табелу од већих ка мањим вредностима. (Да смо којим случајем правили „листу срама”, одабрали бисмо опцију „Smallest to Largest” која би наложила Екселу да сортира табелу од канала са најмање прегледа до канала са највише прегледа.)</p>
+<a class="reference internal image-reference" href="../_images/YT6.jpg"><img alt="../_images/YT6.jpg" class="align-center" src="../_images/YT6.jpg" style="width: 600px;" /></a>
+<p>Када кликнемо на „ОК” добијамо сортирану табелу (редови су испремештани тако да на првом месту буде канал са највише прегледа):</p>
+<a class="reference internal image-reference" href="../_images/YT7.jpg"><img alt="../_images/YT7.jpg" class="align-center" src="../_images/YT7.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 3.</strong> Прикажимо број прегледа по каналима хистограмом. Означимо ћелије B1:B26 и онда <em>притиснемо тастер [CTRL] и држећи га притисутог</em> означимо још и ћелије E1:E26</p>
+<a class="reference internal image-reference" href="../_images/YT7b.jpg"><img alt="../_images/YT7b.jpg" class="align-center" src="../_images/YT7b.jpg" style="width: 600px;" /></a>
+<p>Онда одаберемо командну траку „Insert” и са ње опцију за креирање стубичастих дијаграма, па одаберемо стил који нам се највише свиђа. Ако је потребно, преместимо дијаграм да не прекрива податке:</p>
+<a class="reference internal image-reference" href="../_images/YT7d.jpg"><img alt="../_images/YT7d.jpg" class="align-center" src="../_images/YT7d.jpg" style="width: 600px;" /></a>
+</div>
+<div class="section" id="id5">
+<h2>Филтрирање података<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>Филтрирање података се састоји у томе да се размотре само неки подаци из табеле. Рецимо да нас занима колико укупно видеа су објавили канали чији ранг је А+ (не А-, А++ или А; само А+). Једна могућност је да сортирамо табелу по колони „GRADE” па да нађемо сегмент табеле у коме се налазе вредност А+. Ово може бити озбиљан проблем ако је табела велика. Зато Ексел има могућност <em>аутофилтер</em> која аутоматски генерише захтеве за филтрирање.</p>
+<p><strong>Корак 1.</strong> Селектоваћемо <em>само први ред табеле</em> у коме се налазе имена колона:</p>
+<a class="reference internal image-reference" href="../_images/YT8.jpg"><img alt="../_images/YT8.jpg" class="align-center" src="../_images/YT8.jpg" style="width: 600px;" /></a>
+<p>и онда на командној траци „Data” и кликнути на „Filter”:</p>
+<a class="reference internal image-reference" href="../_images/YT9.jpg"><img alt="../_images/YT9.jpg" class="align-center" src="../_images/YT9.jpg" style="width: 600px;" /></a>
+<p>Поред имена сваке колоне се појавила стрелица. Те стрелице нам дају приступ критеријумима за филтрирање табеле.</p>
+<p><strong>Корак 2.</strong> Ако кликнемо на стрелицу поред „GRADE” појавиће се мени на коме можемо да бирамо групе података које желимо да видимо:</p>
+<a class="reference internal image-reference" href="../_images/YT10.jpg"><img alt="../_images/YT10.jpg" class="align-center" src="../_images/YT10.jpg" style="width: 600px;" /></a>
+<p>„Откачићемо” све „квачице” осим оне код „А+” и потом кликнути на OK:</p>
+<a class="reference internal image-reference" href="../_images/YT11.jpg"><img alt="../_images/YT11.jpg" class="align-center" src="../_images/YT11.jpg" style="width: 600px;" /></a>
+<p>Тако смо „профилтрирали” табелу и приказали само оне редове који у колони „GRADE” садрже вредност А+:</p>
+<a class="reference internal image-reference" href="../_images/YT12.jpg"><img alt="../_images/YT12.jpg" class="align-center" src="../_images/YT12.jpg" style="width: 600px;" /></a>
+<p>Важно је напоменути да остали редови нису уклоњени из табеле. Они су и даље ту, само се не виде. То је лако закључити ако погледамо редне бројеве колона:</p>
+<a class="reference internal image-reference" href="../_images/YT13.jpg"><img alt="../_images/YT13.jpg" class="align-center" src="../_images/YT13.jpg" style="width: 600px;" /></a>
+<p>Осим тога, специјални знак поред имена колоне „GRADE” нам каже да је укључен аутофилтер на тој колони, а у дну прозора стоји порука „6 of 25 records found” што значи да је филтрирањем пронађено 6 редова табеле (од укупно 25) који задовољавају услове.</p>
+<p><strong>Корак 3.</strong> Сада можемо да утврдимо колико видеа су објавили канали чији ранг је А+ тако што ћемо сабрати бројеве у колони „VIDEOS” у профилтрираној табели.</p>
+<p>Ако пробамо да применимо функцију SUM распон ћелија који морамо да наведемо не одговара ситуацији:</p>
+<a class="reference internal image-reference" href="../_images/YT14.jpg"><img alt="../_images/YT14.jpg" class="align-center" src="../_images/YT14.jpg" style="width: 600px;" /></a>
+<p>јер ми <em>не желимо</em> да саберемо <em>све</em> ћелије од C4 до C13, већ <em>само оне ћелије распона C4:C13 које задовољавају услове филтера</em>. Зато ћемо сумирање морати да урадимо другачије.</p>
+<p>Кликнемо на ћелију C27 и са командне траке „Formulas” одаберемо „Autosum”:</p>
+<a class="reference internal image-reference" href="../_images/YT15.jpg"><img alt="../_images/YT15.jpg" class="align-center" src="../_images/YT15.jpg" style="width: 600px;" /></a>
+<p>„Autosum” је малчице вештачки интелигентна опција која уме да проанализира контекст у коме желимо да одредимо збир и на основу тога које друге опције су укључене може да одабере праву функцију за сумирање. У нашем случају добијамо:</p>
+<a class="reference internal image-reference" href="../_images/YT16.jpg"><img alt="../_images/YT16.jpg" class="align-center" src="../_images/YT16.jpg" style="width: 600px;" /></a>
+<p>Дакле, „Autosum” се определио за функцију „SUBTOTAL(9, C2:C26)” што значи да ће на цео распон C2:C26 бити примењена 9. могућност функције „SUBTOTAL”, а то је тачно рачунање збира уз примену филтера:</p>
+<a class="reference internal image-reference" href="../_images/YT17.jpg"><img alt="../_images/YT17.jpg" class="align-center" src="../_images/YT17.jpg" style="width: 600px;" /></a>
+</div>
+<div class="section" id="id6">
+<h2>Фреквенцијска анализа<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>Фреквенцијска анализа низа података се своди на то да се преброји колико се пута који податак појављује у низу (фреквенција = учесталост). Типичан пример фреквенцијске анализе би био да пребројимо колико канала у табели коју смо до сада анализирали има рејтинг А++, колико А+, колико А, итд.</p>
+<p><strong>Корак 1.</strong> Преузми поново документ <em>Top25YouTubers.xlsx</em> и сними га на свој рачунар да бисмо кренули од свежих података:</p>
+<p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/Top25YouTubers.xlsx">YouTubers</a></p>
+<p>Табела изгледа овако:</p>
+<a class="reference internal image-reference" href="../_images/FA1.jpg"><img alt="../_images/FA1.jpg" class="align-center" src="../_images/FA1.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 2.</strong> Фреквенцијска анализа у односу са рејтинг канала се састоји у томе да за сваки од рејтинга који се појављују у колони А (А++, А+, А, А-, B+, B и B-) утврдимо колико се пута јављају у колони А.</p>
+<p>У ћелију А28 унеси текст <em>GRADE</em>, а у ћелију B28 текст <em>FREQUENCY</em>; онда у ћелије А29, А30, А31, А32, А33, А34, A35 унеси рејтинге А++, А+, А, А-, B+, B и B-:</p>
+<a class="reference internal image-reference" href="../_images/FA2.jpg"><img alt="../_images/FA2.jpg" class="align-center" src="../_images/FA2.jpg" style="width: 600px;" /></a>
+<p><strong>Корак 3.</strong> Да бисмо утврдили, рецимо, колико пута се у колони А јавља рејтинг А++ треба да кренемо да <em>бројимо</em> ћелије колоне А, али само <em>ако</em> је њихов садржај једнак са А++. Екселова функција која <em>броји</em> (енгл. <em>count</em>) ћелије, али само <em>ако</em> (енгл. <em>if</em>) је њихова вредност једнака датој, зове се COUNTIF.</p>
+<p>У ћелију B29 унеси формулу:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">A2</span><span class="p">:</span><span class="n">A26</span><span class="p">,</span> <span class="s2">&quot;A++&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/FA3.jpg"><img alt="../_images/FA3.jpg" class="align-center" src="../_images/FA3.jpg" style="width: 600px;" /></a>
+<p>Ова функција ће проћи кроз ћелије А2:А26, пребројати колико пута се појављује А++ и тај број уписати у ћелију B29:</p>
+<a class="reference internal image-reference" href="../_images/FA4.jpg"><img alt="../_images/FA4.jpg" class="align-center" src="../_images/FA4.jpg" style="width: 600px;" /></a>
+<p>Потом у ћелије B30, B31, B32, B33, B34 и B35 редом унеси формуле:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">A2</span><span class="p">:</span><span class="n">A26</span><span class="p">,</span> <span class="s2">&quot;A+&quot;</span><span class="p">)</span>
+<span class="o">=</span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">A2</span><span class="p">:</span><span class="n">A26</span><span class="p">,</span> <span class="s2">&quot;A&quot;</span><span class="p">)</span>
+<span class="o">=</span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">A2</span><span class="p">:</span><span class="n">A26</span><span class="p">,</span> <span class="s2">&quot;A-&quot;</span><span class="p">)</span>
+<span class="o">=</span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">A2</span><span class="p">:</span><span class="n">A26</span><span class="p">,</span> <span class="s2">&quot;B+&quot;</span><span class="p">)</span>
+<span class="o">=</span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">A2</span><span class="p">:</span><span class="n">A26</span><span class="p">,</span> <span class="s2">&quot;B&quot;</span><span class="p">)</span>
+<span class="o">=</span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">A2</span><span class="p">:</span><span class="n">A26</span><span class="p">,</span> <span class="s2">&quot;B-&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Табела изгледа овако:</p>
+<a class="reference internal image-reference" href="../_images/FA5.jpg"><img alt="../_images/FA5.jpg" class="align-center" src="../_images/FA5.jpg" style="width: 600px;" /></a>
+<p>Фреквенцијска анализа завршена.</p>
+<p><strong>Корак 4.</strong> Сада ћемо показати како да брже дођемо до истог резултата. Смислићемо нешто компликованију формулу за бројање рејтинга, али ћемо зато моћи да „развучемо” по остатку табеле, уместо да уносимо седам веома сличних формула.</p>
+<p>Обриши садржај ћелија B29:B35</p>
+<a class="reference internal image-reference" href="../_images/FA2.jpg"><img alt="../_images/FA2.jpg" class="align-center" src="../_images/FA2.jpg" style="width: 600px;" /></a>
+<p>а онда у ћелију B29 унеси следећу формулу:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>=COUNTIF($A$2:$A$26, А29)
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/FA6.jpg"><img alt="../_images/FA6.jpg" class="align-center" src="../_images/FA6.jpg" style="width: 600px;" /></a>
+<p>На овај начин смо</p>
+<ol class="arabic simple">
+<li><p>рекли Екселу да утврди у колико ћелија из опсега А2:А26 је уписана вредност која је наведена у ћелији А29, и</p></li>
+<li><p>да приликом копирања формуле <em>не сме</em> да мења опсег А2:А26 (јер је записом $A$2:$A$26 овај опсег фиксиран).</p></li>
+</ol>
+<p>Формула, наравно, ради свој посао врло добро:</p>
+<a class="reference internal image-reference" href="../_images/FA7.jpg"><img alt="../_images/FA7.jpg" class="align-center" src="../_images/FA7.jpg" style="width: 600px;" /></a>
+<p>Сада ћемо да кликнемо на ћелију B29 и да је развучемо до краја табеле:</p>
+<a class="reference internal image-reference" href="../_images/FA8.jpg"><img alt="../_images/FA8.jpg" class="align-center" src="../_images/FA8.jpg" style="width: 600px;" /></a>
+<p>Да проверимо да формула заиста ради, кликнућемо, рецимо, на ћелију B33 и притиснути тастер [F2]:</p>
+<a class="reference internal image-reference" href="../_images/FA9.jpg"><img alt="../_images/FA9.jpg" class="align-center" src="../_images/FA9.jpg" style="width: 600px;" /></a>
+<p>Видимо да се приликом копирања формуле опсег А2:А26 није променио (као што и треба, он је фиксиран), док је ћелија А29 из полазне формуле постала А33 (што и треба да се деси, јер у ћелију B33 треба уписати колико се пута у опсегу А2:А26 јавља рејтинг B+, што је вредност ћелије А33).</p>
+<p><strong>Корак 5.</strong> За крај ћемо утврдити колико канала у овој табели има милијарду прегледа или више. У ћелију Е28 упиши текст „BILLION+” (без наводника, наравно; примети да се милијарда на енглеском каже <em>billion</em>, мада може и <em>milliard</em>, али да не улазимо у детаље):</p>
+<a class="reference internal image-reference" href="../_images/FA11.jpg"><img alt="../_images/FA11.jpg" class="align-center" src="../_images/FA11.jpg" style="width: 600px;" /></a>
+<p>па у ћелију Е29 упиши формулу:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">E2</span><span class="p">:</span><span class="n">E26</span><span class="p">,</span> <span class="s2">&quot;&gt;= 1000000000&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/FA12.jpg"><img alt="../_images/FA12.jpg" class="align-center" src="../_images/FA12.jpg" style="width: 600px;" /></a>
+<p>Ова формула каже Екселу да утврди колико ћелија из опсега E2:E26 задовољава услов наведен под наводницима. На крају добијамо:</p>
+<a class="reference internal image-reference" href="../_images/FA13.jpg"><img alt="../_images/FA13.jpg" class="align-center" src="../_images/FA13.jpg" style="width: 600px;" /></a>
+</div>
+<div class="section" id="id7">
+<h2>Задаци<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p><strong>Задатак 1.</strong>  Са следећег линка преузми документ <em>Top25YouTubers.xlsx</em> и сними га на свој рачунар:</p>
+<p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/Top25YouTubers.xlsx">YouTubers.xlsx</a></p>
+<p>Табела садржи податке о првих 25 YouTube канала према броју претплатника на дан 1. јул 2019. За сваки канал у табели израчунар просечан број прегледа по видеу (количник бројева VIEWS и VIDEOS). Сортирај табелу по том параметру и прикажи првих десет канала стубичастим дијаграмом.</p>
+<p><strong>Задатак 2.</strong>  Са следећег линка преузми документ <em>Cricket.xlsx</em> и сними га на свој рачунар:</p>
+<p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/Cricket.xlsx">Cricket.xlsx</a></p>
+<p>Табела садржи податке о најбољим играчима крикета у историји крикета.</p>
+<p><em>Корак 1.</em> Прошири колоне табеле ако је потребно.</p>
+<p><em>Корак 2.</em> За сваког такмичара у табели израчунај параметар ARY (= Average Runs per Year) тако што ћеш поделити вредност у колони Runs разликом бројева у колонама From и To. То нам за сваког такмичара каже колико је просечно има ранова по години активног играња.</p>
+<p><em>Корак 3.</em> Сортирај табелу по колони ARY од већих вредности ка мањим.</p>
+<p><em>Корак 4.</em> Позадину ћелија за првих 25 играча у овако сортираној табели обој светло плавом.</p>
+<p><em>Корак 5.</em> Међу првих 25 играча у овако сортираној табели нађи оне који су завршили своју каријеру током XX века и позадину ћелија у којима су подаци о њима оној светло црвено.</p>
+<p>Шта уочаваш?</p>
+<p><strong>Задатак 3.</strong>  Са следећег линка преузми документ <em>Plivanje.xlsx</em> и сними га на свој рачунар:</p>
+<p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/Plivanje.xlsx">Plivanje.xlsx</a></p>
+<p>Табела садржи податке о једном такмичењу упливању на 50 м слободним стилом. За сваког учесника дат је његов такмичарски број и резултати из две трке.</p>
+<p>Такмичар се квалификовао у А финале ако је испунио норму за А финале, односно, ако је просечно време које му је потребно да преплива 50 м мање или једнако од норме за А финале.</p>
+<p>Такмичар се квалификовао у Б финале ако је испунио норму за Б финале, односно, ако је просечно време које му је потребно да преплива 50 м мање или једнако од норме за Б финале, и при томе се <em>није квалификовао</em> у А финале.</p>
+<p><em>Корак 1.</em> Прошири колоне табеле ако је потребно.</p>
+<p><em>Корак 2.</em> За сваког такмичара у табели израчунај просечно време које му је било потребно да преплива 50 м.</p>
+<p><em>Корак 3.</em> Одредити колико такмичара се квалификовало за А финале, а колико за Б финале. Ове податке немој рачунати ручно већ користи функцију COUNTIF.</p>
+<p><strong>Задатак 4.</strong> Са следећег линка преузми датотеку која садржи податке о берачима воћа на једној плантажи:</p>
+<p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/JabukeNorma.xlsx">JabukeNorma.xlsx</a></p>
+<ul class="simple">
+<li><p>Прошири колоне ако је потребно и улепшај табелу.</p></li>
+<li><p>Одреди укупну количину јабука, крушака и трешања које су убране.</p></li>
+<li><p>За сваког берача утврди колико је зарадио ако знаш да су износи убраног воћа дати у килограмима, а цена брања по килограму воћа је дата испод табеле са берачима.</p></li>
+<li><p>За сваког берача утврди колико је укупно килограма воћа убрао, па на основу тога утврди колико берача је испунило норму, а колико није. Добијене податке упиши у ћелије Е25, односно, Е26. (Берач је испунио норму ако је убрао барем ону количину воћа која је уписана у ћелију B23; податке о броју берача који су или нису испунили норму немој рачунати ручно већ користи функцију COUNTIF).</p></li>
+</ul>
+</div>
+</div>
+
+
+  
+      <div class="col-md-12">
+<ul class="pager">
+    <li id="relations-prev" title='Previous chapter - Лекција 8.' data-toggle="tooltip"><a href="index.html"><i class="fas fa-arrow-left"></i></a></li>
+    
+        <li id="relations-next" title='Next chapter - Тест' data-toggle="tooltip"><a href="testE08.html"><i class="fas fa-arrow-right"></i></a></li>
+</ul>
+
+<!-- <ul class="pager"> -->
+    <!-- -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Лекција 8.' data-toggle="tooltip"><a href="index.html">Претходно поглавље</a></li> -->
+    <!--  -->
+    <!-- -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Тест' data-toggle="tooltip"><a href="testE08.html">Следеће поглавље</a></li> -->
+    <!-- -->
+<!-- </ul> -->
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+</div>
+  
+</div>
+<footer class="footer col-md-12">
+    <div class="container">
+        <div class="text-center">
+            <hr>
+            <p class="text-muted">
+                <span class="pull-left">&copy; 2019 Petlja (Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
