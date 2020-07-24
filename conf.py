@@ -277,3 +277,8 @@ htmlhelp_basename = 'Настава програмирања за Други р�
 #tabbed_div_class = 'alert alert-warning'
 
 petljadoc.runestone_ext.config_values_for_components(globals())
+
+#extensions = ['IPython.sphinxext.ipython_console_highlighting',
+#              'IPython.sphinxext.ipython_directive']
+
+#extensions = ['jupyter_sphinx']

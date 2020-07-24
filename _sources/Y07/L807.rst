@@ -62,8 +62,8 @@
 Читање из текстуалне датотеке
 -----------------------------
 
-Са `овог линка <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/podaci/iliad.txt>`_ можеш да преузмеш текстуалну датотеку
-*iliad.txt* која садржи енглески превод Хомерове *Илијаде*. Ако отворимо ову датотеку из неког едитора као што је
+Са `овог линка <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/podaci/Iliad.txt>`_ можеш да преузмеш текстуалну датотеку
+*Iliad.txt* која садржи енглески превод Хомерове *Илијаде*. Ако отворимо ову датотеку из неког едитора као што је
 *Notepad* видећемо да текстуална датотека изгледа као текст који је организован у редове, рецимо овако:
 
 
@@ -90,9 +90,9 @@
 
 .. code-block:: python
 
-    f = open("iliad.txt", "r")
+    f = open("Iliad.txt", "r")
 
-Команда ``open`` отвара датотеку ``"iliad.txt"``. Аргумент ``"r"`` команде ``open`` каже Пајтону да датотеку треба припремити
+Команда ``open`` отвара датотеку ``"Iliad.txt"``. Аргумент ``"r"`` команде ``open`` каже Пајтону да датотеку треба припремити
 за читање (ознака ``r`` потиче од првог слова енглеске речи *read* што значи "читај").
 
 Када смо датотеку припремили за читање, најзгодније је да је прочитамо ред по ред, што се у Пајтону може постићи употребом
@@ -120,22 +120,22 @@
 Пример.
 '''''''
 
-Написати Пајтон програм који броји редове у датотеци ``iliad.txt``.
+Написати Пајтон програм који броји редове у датотеци ``Iliad.txt``.
 
 .. activecode:: primerA-1
-   :available_files: iliad.txt
+   :available_files: Iliad.txt
 
-   f = open("iliad.txt", "r")
+   f = open("Iliad.txt", "r")
    br_redova = 0
    for red in f:
        br_redova += 1
    f.close()
-   print("Datoteka iliad.txt ima", br_redova, "redova")
+   print("Datoteka Iliad.txt ima", br_redova, "redova")
 
 Пример.
 '''''''
 
-Текстуалнa datoteka *iliad.txt* садржи енглески превод Хомерове *Илијаде*.
+Текстуалнa datoteka *Iliad.txt* садржи енглески превод Хомерове *Илијаде*.
 Пошто је *Илијада* веома дугачак спев Хомер га је поделио у делове које је звао *Књиге*
 (у давна времена када је писмених људи било веома мало обичај је био да се свака мало дужа
 писана форма зове *књига*, слично као у народној песми: "Па он одмах ситну књигу пише/Те је шаље цару у Стамбола").
@@ -150,9 +150,9 @@
 (да се подсетимо, радимо са енглеским преводом *Илијаде*, па се књиге зову "book").
 
 .. activecode:: primerA-2
-   :available_files: iliad.txt
+   :available_files: Iliad.txt
 
-   f = open("iliad.txt", "r")
+   f = open("Iliad.txt", "r")
    br_knjiga = 0
    for red in f:
        if red[:4] == "BOOK":
@@ -172,9 +172,9 @@
 јављају имена ова два јунака.
 
 .. activecode:: primerA-3
-   :available_files: iliad.txt
+   :available_files: Iliad.txt
 
-   f = open("iliad.txt", "r")
+   f = open("Iliad.txt", "r")
    br_ahil = 0
    br_hektor = 0
    for red in f:
@@ -189,9 +189,9 @@
 Тада је довољно у том великом стрингу пребројати колико се пута јављају имена легендарних јунака.
 
 .. activecode:: primerA-4
-   :available_files: iliad.txt
+   :available_files: Iliad.txt
 
-   f = open("iliad.txt", "r")
+   f = open("Iliad.txt", "r")
    ceo_tekst = f.read()
    f.close()
    
@@ -469,9 +469,9 @@ VIEWES). Врста
 Пример.
 '''''''
 
-Са `овог линка <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/podaci/iliad.txt>`_ преузми текстуалну датотеку
-*iliad.txt* која садржи енглески превод Хомерове *Илијаде*, па
-напиши Пајтон програм који у датотеку duzine.txt уписује дужине редова из датотеке iliad.txt.
+Са `овог линка <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/podaci/Iliad.txt>`_ преузми текстуалну датотеку
+*Iliad.txt* која садржи енглески превод Хомерове *Илијаде*, па
+напиши Пајтон програм који у датотеку duzine.txt уписује дужине редова из датотеке Iliad.txt.
 
 *Решење.* Подсетимо се да командом ``write`` у датотеку можемо да уписујемо само стрингове.
 Ако је потребно да у датотеку упишемо неку другу врсту података, он прво мора бити конвертована у стринг
@@ -480,7 +480,7 @@ VIEWES). Врста
 
 .. code-block:: python
 
-   f = open("iliad.txt", "r")
+   f = open("Iliad.txt", "r")
    g = open("duzine.txt", "w")
    for red in f:
        n = len(red)
@@ -495,7 +495,7 @@ VIEWES). Врста
 
 Датотеке BOOK01.txt, BOOK02.txt, ..., BOOK12.txt
 садрже првих дванаест књига енглеског превода Хомерове *Илијаде*.
-Зип фајл који садржи ове датотеке можеш да преузмеш `овде <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/podaci/BOOK1-12.zip>`_.
+Зип фајл који садржи ове датотеке можеш да преузмеш `овде <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/podaci/BOOK01-12.zip>`_.
 Напиши Пајтон програм који их спаја у једну датотеку под именом iliad_vol1.txt.
 Прва два реда у датотеци треба да гласе:
 
@@ -540,22 +540,22 @@ VIEWES). Врста
 Задаци.
 -------
 
-**Задатак 1.** Написати Пајтон програм који одређује колико у датотеци *iliad.txt* има слова која нису празнине,
+**Задатак 1.** Написати Пајтон програм који одређује колико у датотеци *Iliad.txt* има слова која нису празнине,
 ни специјални симболи.
 
 .. activecode:: primerA-7
-   :available_files: iliad.txt
+   :available_files: Iliad.txt
    
    ???
 
-**Задатак 2.** Написати Пајтон програм који одређује колико у датотеци *iliad.txt* има речи.
+**Задатак 2.** Написати Пајтон програм који одређује колико у датотеци *Iliad.txt* има речи.
 
 .. activecode:: primerA-8
-   :available_files: iliad.txt
+   :available_files: Iliad.txt
    
    ???
 
-**Задатак 3.** Написати Пајтон програм који датотеку *iliad.txt* преписује у нову која се зове
+**Задатак 3.** Написати Пајтон програм који датотеку *Iliad.txt* преписује у нову која се зове
 *iliad-num.txt* у којој сваки непразан ред има свој број, рецимо овако:
 
 .. code-block:: text
@@ -623,7 +623,7 @@ VIEWES). Врста
    24,A,Fernanfloo,534,33378699,7201866552
    25,A,TheEllenShow,10542,33362512,16519572219
 
-.. datafile:: iliad.txt
+.. datafile:: Iliad.txt
    :hide:
 
    The Project Gutenberg eBook of The Iliad, by Homer
