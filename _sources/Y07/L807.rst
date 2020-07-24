@@ -495,7 +495,7 @@ VIEWES). Врста
 
 Датотеке BOOK01.txt, BOOK02.txt, ..., BOOK12.txt
 садрже првих дванаест књига енглеског превода Хомерове *Илијаде*.
-Зип фајл који садржи ове датотеке можеш да преузмеш `овде <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/podaci/BOOK01-12.zip>`_.
+Зип фајл који садржи ове датотеке можеш да преузмеш `овде <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/podaci/BOOK1-12.zip>`_.
 Напиши Пајтон програм који их спаја у једну датотеку под именом iliad_vol1.txt.
 Прва два реда у датотеци треба да гласе:
 
