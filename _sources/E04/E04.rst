@@ -13,7 +13,7 @@
 
 У овом примеру ћемо показати како се у Ексел табели приказују валуте (као што су еври или амерички долари).
 
-**Корак 1.** Са следећег линка `Donacije.xlsx <Donacije.xlsx>`_ преузми документ *Donacije.xlsx* и сними га на свој рачунар.
+**Корак 1.** Са следећег линка `Donacije.xlsx <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/Donacije.xlsx>`_ преузми документ *Donacije.xlsx* и сними га на свој рачунар.
 
 **Корак 2.** Покрени Ексел и отвори фајл. Видећеш да су у фајлу наведене донације које је једно спортско друштво примило. За сваку донацију је наведено име донатора (у колони "Name"), датум донације (у колони "Date") и износ (у колони "Amount"):
 
@@ -386,7 +386,7 @@
 
 Унећемо ове податке у Ексел и израчунати колико је укупно трајање албума.
 
-**Корак 1.** Са следећег линка `Remember.xlsx <Remember.xlsx>`_ преузми датотеку која садржи имена нумера,
+**Корак 1.** Са следећег линка `Remember.xlsx <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci/Remember.xlsx>`_ преузми датотеку која садржи имена нумера,
 покрени Ексел и учитај датотеку:
 
 .. image:: ../../_images/DataTypes201.jpg
