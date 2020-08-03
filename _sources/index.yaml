@@ -17,15 +17,10 @@ description:
       href: https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html
 
 lessons:
-  - title: IPYTHON DIRECTIVE DEBUG
-    folder: J01
-    guid: fc70fa3d-6cfd-4da2-9b2f-ae4ce4d56342
-    activities:
-      - type: reading
-        title: Лекција
-        file: J01.rst
-        guid: 75ffb1f6-65ce-4813-8561-43f09fd730c2
-  - title: Лекција 1.
+  #########################################################################
+  #  EKSEL
+  #########################################################################
+  - title: Лекција 1.1.
     folder: E01
     guid: f77c8f05-b8d8-4190-8432-deb8f2bb7d13
     activities:
@@ -37,7 +32,7 @@ lessons:
         title: Тест
         file: testE01.rst
         guid: d6d48387-1fda-4483-ae01-9f15114963bd
-  - title: Лекција 2.
+  - title: Лекција 1.2.
     folder: E02
     guid: 78721466-c43e-411a-bd0b-cf8af3261f8e
     activities:
@@ -49,7 +44,7 @@ lessons:
         title: Тест
         file: testE02.rst
         guid: 522ef612-ffde-4b75-9e27-0f712542dd75
-  - title: Лекција 3.
+  - title: Лекција 1.3.
     folder: E03
     guid: ff4d9b25-0553-431e-8353-a451da635c1d
     activities:
@@ -61,7 +56,7 @@ lessons:
         title: Тест
         file: testE03.rst
         guid: 4c88c1c0-fe19-43b5-a4d6-22715d1a5fe4
-  - title: Лекција 4.
+  - title: Лекција 1.4.
     folder: E04
     guid: 93e7639e-a018-4de7-9505-27272dfd6bba
     activities:
@@ -73,7 +68,7 @@ lessons:
         title: Тест
         file: testE04.rst
         guid: 5c029f15-e7aa-4ec4-85ca-53f624045595
-  - title: Лекција 5.
+  - title: Лекција 1.5.
     folder: E05
     guid: 41eb23b9-c0b7-4fc9-8f5c-96fa2293fb74
     activities:
@@ -85,7 +80,7 @@ lessons:
         title: Тест
         file: testE05.rst
         guid: c587a2e3-79ef-49c2-a8bc-f1270b41cb91
-  - title: Лекција 6.
+  - title: Лекција 1.6.
     folder: E06
     guid: bb546b11-873a-4d4c-809d-5dfd039d46c2
     activities:
@@ -97,7 +92,7 @@ lessons:
         title: Тест
         file: testE06.rst
         guid: 7464ba0a-629d-417b-a6a7-539da1e61dff
-  - title: Лекција 7.
+  - title: Лекција 1.7.
     folder: E07
     guid: 62a696f2-3baf-4f45-b791-376039395436
     activities:
@@ -109,7 +104,7 @@ lessons:
         title: Тест
         file: testE07.rst
         guid: f8625dbe-1a47-498c-8198-643397002298
-  - title: Лекција 8.
+  - title: Лекција 1.8.
     folder: E08
     guid: 91227beb-1a72-406f-8ba5-e74aaac21eb4
     activities:
@@ -121,7 +116,7 @@ lessons:
         title: Тест
         file: testE08.rst
         guid: 54fc969f-fe03-4d65-81ad-40c8a07650c1
-  - title: Лекција 9.
+  - title: Лекција 1.9.
     folder: E09
     guid: 177003b4-dadd-412b-a1cb-90f4971289b7
     activities:
@@ -133,7 +128,7 @@ lessons:
         title: Тест
         file: testE09.rst
         guid: 72af1f1a-39fe-45ab-8385-f41ef04e967e
-  - title: Лекција 10.
+  - title: Лекција 1.10.
     folder: E10
     guid: bdd702fa-7fca-44fe-b95b-47530eb5efb4
     activities:
@@ -145,7 +140,129 @@ lessons:
         title: Тест
         file: testE10.rst
         guid: 6d5f32c9-8d8f-4907-8849-d453e254e906
-  - title: Лекција 21.
+  #########################################################################
+  #  JUPYTER
+  #########################################################################
+  - title: Лекција 2.1.
+    folder: J01
+    guid: fc70fa3d-6cfd-4da2-9b2f-ae4ce4d56342
+    activities:
+      - type: reading
+        title: Лекција
+        file: J01.rst
+        guid: 75ffb1f6-65ce-4813-8561-43f09fd730c2
+  - title: Лекција 2.2.
+    folder: J02
+    guid: 37d8ff96-8db0-4f9d-a0e4-4edbc129b966
+    activities:
+      - type: reading
+        title: Лекција
+        file: J02.rst
+        guid: d74de1ed-a619-4e96-a051-ccb6b83ade94
+      - type: quiz 
+        title: Тест
+        file: testJ02.rst
+        guid: 9240abe3-cb61-4bd7-a210-45d625d0a1c9
+  - title: Лекција 2.3.
+    folder: J03
+    guid: 431ba1e5-f7f6-457d-be06-1b7b6f346c9f
+    activities:
+      - type: reading
+        title: Лекција
+        file: J03.rst
+        guid: 72f7632d-e790-4cd2-bbff-3cd43b382353
+      - type: quiz 
+        title: Тест
+        file: testJ03.rst
+        guid: 0cf9776c-645c-4c77-99b0-adad60887274
+  - title: Лекција 2.4.
+    folder: J04
+    guid: f5fc2c48-91a8-40b6-8af1-b274d9cc9c28
+    activities:
+      - type: reading
+        title: Лекција
+        file: J04.rst
+        guid: 55fd3835-2c20-41c9-8a59-a22e83d6b379
+      - type: quiz 
+        title: Тест
+        file: testJ04.rst
+        guid: c9960c75-a7a7-46ed-b3fc-6232000a05e9
+  - title: Лекција 2.5.
+    folder: J05
+    guid: 2f5f4da8-7eff-429e-837b-c5fbdf877a85
+    activities:
+      - type: reading
+        title: Лекција
+        file: J05.rst
+        guid: fc121b1a-d67a-44c5-b602-ed872f120601
+      - type: quiz 
+        title: Тест
+        file: testJ05.rst
+        guid: 7665c9fb-fc59-418f-ad83-5d4abb930557
+  - title: Лекција 2.6.
+    folder: J06
+    guid: 702b161e-cbf6-45ce-b51b-8a746469670f
+    activities:
+      - type: reading
+        title: Лекција
+        file: J06.rst
+        guid: d4a86a8b-c345-4ad9-9fcb-3d61a862d4ad
+      - type: quiz 
+        title: Тест
+        file: testJ06.rst
+        guid: ba5720ee-9b0d-45ca-b655-e35ddaae4c1c
+  - title: Лекција 2.7.
+    folder: J07
+    guid: 90930251-c14a-43cd-889c-2df9a832a1c1
+    activities:
+      - type: reading
+        title: Лекција
+        file: J07.rst
+        guid: 4550727a-f260-4f68-aab8-a91caf0f6341
+      - type: quiz 
+        title: Тест
+        file: testJ07.rst
+        guid: ed505e2e-f785-4d93-8daa-a2277772bf0b
+  - title: Лекција 2.8.
+    folder: J08
+    guid: 44704cbf-f354-40b0-ad38-c40e50fbef93
+    activities:
+      - type: reading
+        title: Лекција
+        file: J08.rst
+        guid: 64889144-fd61-458c-b3a9-f6e73a99f5d8
+      - type: quiz 
+        title: Тест
+        file: testJ08.rst
+        guid: 73c13268-3cf9-4958-a6e8-a9ea1b5d373f
+  - title: Лекција 2.9.
+    folder: J09
+    guid: eba4e02e-be6b-421e-b65c-b7835dbb3c31
+    activities:
+      - type: reading
+        title: Лекција
+        file: J09.rst
+        guid: a47928cf-3062-4b58-a16e-e7a606757434
+      - type: quiz 
+        title: Тест
+        file: testJ09.rst
+        guid: 13a089d9-0fff-4332-b6e8-3c0868d10874
+  - title: Лекција 2.10.
+    folder: J10
+    guid: 02778fae-ad2a-412e-b638-91bcabbc3cec
+    activities:
+      - type: reading
+        title: Лекција
+        file: J10.rst
+        guid: c23b8f42-44e1-4404-abd7-8e91889e3206
+      - type: quiz 
+        title: Тест
+        file: testJ10.rst
+        guid: 7a9050f2-ee77-44df-9e20-135320511fae
+  #########################################################################
+  #  PYTHON
+  #########################################################################
+  - title: Лекција 3.1.
     folder: Y01
     guid: ad083864-9a0f-4c21-8411-62fa0bde07bb
     activities:
@@ -157,7 +274,7 @@ lessons:
         title: Тест
         file: test801.rst
         guid: 1a8fde5e-57e1-4ce4-8ac2-c122f623b1e1
-  - title: Лекција 22.
+  - title: Лекција 3.2.
     folder: Y02
     guid: 22cbc4d0-e49e-4c79-895e-09a062190530
     activities:
@@ -169,7 +286,7 @@ lessons:
         title: Тест
         file: test802.rst
         guid: ba166ad9-1baf-4c40-88ec-8ee58d3390ff
-  - title: Лекција 23.
+  - title: Лекција 3.3.
     folder: Y03
     guid: 11ca22b1-1531-4116-be3d-7f9ea4bb088d
     activities:
@@ -181,7 +298,7 @@ lessons:
         title: Тест
         file: test803.rst
         guid: 6e537f69-8394-4968-8496-2fd21b0565f5
-  - title: Лекција 24.
+  - title: Лекција 3.4.
     folder: Y04
     guid: 8b2042e6-7128-47ad-9d3b-957a3fff8dcb
     activities:
@@ -193,7 +310,7 @@ lessons:
         title: Тест
         file: test804.rst
         guid: bfd819e8-2210-40a3-acf3-604cce73eeff
-  - title: Лекција 25.
+  - title: Лекција 3.5.
     folder: Y05
     guid: 07c4bd39-04ab-4995-86f7-2772eb51c540
     activities:
@@ -205,7 +322,7 @@ lessons:
         title: Тест
         file: test805.rst
         guid: 05b31fcb-034e-4e49-b0e2-000e1d06f916
-  - title: Лекција 26.
+  - title: Лекција 3.6.
     folder: Y06
     guid: f82c39e6-6ffe-43dd-805e-800ad62a0c28
     activities:
@@ -217,7 +334,7 @@ lessons:
         title: Тест
         file: test806.rst
         guid: 23b04976-fc6f-4897-b9b9-b6ae243a16d3
-  - title: Лекција 27.
+  - title: Лекција 3.7.
     folder: Y07
     guid: 8ae9fe29-bad4-4650-b13f-c33781c14006
     activities:
