@@ -49,7 +49,7 @@ lessons:
     folder: J00
     guid: af94fff9-3a21-45ed-8dd9-7be6d756ce78
     activities:
-      - type: section
+      - type: reading
         title: ПТПЈ
         file: J00.rst
         guid: 83b77d53-a691-4fb7-b8ab-8ab8c564e825
@@ -184,7 +184,7 @@ lessons:
     folder: Y00
     guid: f424c22c-20d0-49e7-950b-131daef5c2ed
     activities:
-      - type: section
+      - type: reading
         title: ПРОГ
         file: Y00.rst
         guid: cef2d946-1d4a-414d-9665-6e44bc54f550
