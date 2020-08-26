@@ -50,7 +50,7 @@ lessons:
     guid: af94fff9-3a21-45ed-8dd9-7be6d756ce78
     activities:
       - type: reading
-        title: ПТПЈ
+        title: Исходи
         file: J00.rst
         guid: 83b77d53-a691-4fb7-b8ab-8ab8c564e825
   - title: Припрема
@@ -58,10 +58,10 @@ lessons:
     guid: 57f0351f-0af5-4cca-bb22-405a8dd506ec
     activities:
       - type: reading
-        title: Лекција
+        title: Припрема
         file: J0A.rst
         guid: a881c6a8-b952-49b1-9a52-66c8e4da2c32
-  - title: ПТПЈ.1.
+  - title: ПТПЈ.1. Увод у Џупитер (*Jupyter*)
     folder: J01
     guid: fc70fa3d-6cfd-4da2-9b2f-ae4ce4d56342
     activities:
@@ -69,7 +69,7 @@ lessons:
         title: Лекција
         file: J01.rst
         guid: 75ffb1f6-65ce-4813-8561-43f09fd730c2
-  - title: ПТПЈ.2.
+  - title: ПТПЈ.2. Низови података и линијски дијаграми
     folder: J02
     guid: 37d8ff96-8db0-4f9d-a0e4-4edbc129b966
     activities:
@@ -81,7 +81,7 @@ lessons:
         title: Тест
         file: testJ02.rst
         guid: 9240abe3-cb61-4bd7-a210-45d625d0a1c9
-  - title: ПТПЈ.3.
+  - title: ПТПЈ.3. Хистограми и боје
     folder: J03
     guid: 431ba1e5-f7f6-457d-be06-1b7b6f346c9f
     activities:
@@ -93,7 +93,7 @@ lessons:
         title: Тест
         file: testJ03.rst
         guid: 0cf9776c-645c-4c77-99b0-adad60887274
-  - title: ПТПЈ.4.
+  - title: ПТПЈ.4. Просек и медијана низа бројева
     folder: J04
     guid: f5fc2c48-91a8-40b6-8af1-b274d9cc9c28
     activities:
@@ -105,7 +105,7 @@ lessons:
         title: Тест
         file: testJ04.rst
         guid: c9960c75-a7a7-46ed-b3fc-6232000a05e9
-  - title: ПТПЈ.5.
+  - title: ПТПЈ.5. Фреквенцијска анализа и секторски дијаграми
     folder: J05
     guid: 2f5f4da8-7eff-429e-837b-c5fbdf877a85
     activities:
@@ -117,7 +117,7 @@ lessons:
         title: Тест
         file: testJ05.rst
         guid: 7665c9fb-fc59-418f-ad83-5d4abb930557
-  - title: ПТПЈ.6.
+  - title: ПТПЈ.6. Табеларно представљени подаци
     folder: J06
     guid: 702b161e-cbf6-45ce-b51b-8a746469670f
     activities:
@@ -129,7 +129,7 @@ lessons:
         title: Тест
         file: testJ06.rst
         guid: ba5720ee-9b0d-45ca-b655-e35ddaae4c1c
-  - title: ПТПЈ.7.
+  - title: ПТПЈ.7. Индексирање и транспоновање табеле
     folder: J07
     guid: 90930251-c14a-43cd-889c-2df9a832a1c1
     activities:
@@ -141,7 +141,7 @@ lessons:
         title: Тест
         file: testJ07.rst
         guid: ed505e2e-f785-4d93-8daa-a2277772bf0b
-  - title: ПТПЈ.8.
+  - title: ПТПЈ.8. Модификације табеле и записивање табеле у датотеку
     folder: J08
     guid: 44704cbf-f354-40b0-ad38-c40e50fbef93
     activities:
@@ -153,7 +153,7 @@ lessons:
         title: Тест
         file: testJ08.rst
         guid: 73c13268-3cf9-4958-a6e8-a9ea1b5d373f
-  - title: ПТПЈ.9.
+  - title: ПТПЈ.9. Сортирање, филтрирање и фреквенцијска анализа
     folder: J09
     guid: eba4e02e-be6b-421e-b65c-b7835dbb3c31
     activities:
@@ -165,7 +165,7 @@ lessons:
         title: Тест
         file: testJ09.rst
         guid: 13a089d9-0fff-4332-b6e8-3c0868d10874
-  - title: ПТПЈ.10.
+  - title: ПТПЈ.10. Џупитер и Ексел
     folder: J10
     guid: 02778fae-ad2a-412e-b638-91bcabbc3cec
     activities:
@@ -185,10 +185,10 @@ lessons:
     guid: f424c22c-20d0-49e7-950b-131daef5c2ed
     activities:
       - type: reading
-        title: ПРОГ
+        title: Исходи
         file: Y00.rst
         guid: cef2d946-1d4a-414d-9665-6e44bc54f550
-  - title: ПРОГ.1.
+  - title: ПРОГ.1. Увод у процесирање низова података у Пајтону
     folder: Y01
     guid: ad083864-9a0f-4c21-8411-62fa0bde07bb
     activities:
@@ -200,7 +200,7 @@ lessons:
         title: Тест
         file: test801.rst
         guid: 1a8fde5e-57e1-4ce4-8ac2-c122f623b1e1
-  - title: ПРОГ.2.
+  - title: ПРОГ.2. Бројачи и суме
     folder: Y02
     guid: 22cbc4d0-e49e-4c79-895e-09a062190530
     activities:
@@ -212,7 +212,7 @@ lessons:
         title: Тест
         file: test802.rst
         guid: ba166ad9-1baf-4c40-88ec-8ee58d3390ff
-  - title: ПРОГ.3.
+  - title: ПРОГ.3. Низови симбола (*стрингови* или *ниске*)
     folder: Y03
     guid: 11ca22b1-1531-4116-be3d-7f9ea4bb088d
     activities:
@@ -224,7 +224,7 @@ lessons:
         title: Тест
         file: test803.rst
         guid: 6e537f69-8394-4968-8496-2fd21b0565f5
-  - title: ПРОГ.4.
+  - title: ПРОГ.4. Угнежђене петље
     folder: Y04
     guid: 8b2042e6-7128-47ad-9d3b-957a3fff8dcb
     activities:
@@ -236,7 +236,7 @@ lessons:
         title: Тест
         file: test804.rst
         guid: bfd819e8-2210-40a3-acf3-604cce73eeff
-  - title: ПРОГ.5.
+  - title: ПРОГ.5. Сортирање
     folder: Y05
     guid: 07c4bd39-04ab-4995-86f7-2772eb51c540
     activities:
@@ -248,7 +248,7 @@ lessons:
         title: Тест
         file: test805.rst
         guid: 05b31fcb-034e-4e49-b0e2-000e1d06f916
-  - title: ПРОГ.6.
+  - title: ПРОГ.6. Филтрирање и претраживање
     folder: Y06
     guid: f82c39e6-6ffe-43dd-805e-800ad62a0c28
     activities:
@@ -260,7 +260,7 @@ lessons:
         title: Тест
         file: test806.rst
         guid: 23b04976-fc6f-4897-b9b9-b6ae243a16d3
-  - title: ПРОГ.7.
+  - title: ПРОГ.7. Рад са текстуалним датотекама
     folder: Y07
     guid: 8ae9fe29-bad4-4650-b13f-c33781c14006
     activities:
