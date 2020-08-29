@@ -91,7 +91,7 @@ lessons:
         file: J02.rst
         guid: d74de1ed-a619-4e96-a051-ccb6b83ade94
       - type: quiz 
-        title: Тест
+        title: Квиз
         file: testJ02.rst
         guid: 9240abe3-cb61-4bd7-a210-45d625d0a1c9
   - title: ПТПЈ.3. Хистограми и боје
@@ -103,7 +103,7 @@ lessons:
         file: J03.rst
         guid: 72f7632d-e790-4cd2-bbff-3cd43b382353
       - type: quiz 
-        title: Тест
+        title: Квиз
         file: testJ03.rst
         guid: 0cf9776c-645c-4c77-99b0-adad60887274
   - title: ПТПЈ.4. Просек и медијана низа бројева
@@ -115,7 +115,7 @@ lessons:
         file: J04.rst
         guid: 55fd3835-2c20-41c9-8a59-a22e83d6b379
       - type: quiz 
-        title: Тест
+        title: Квиз
         file: testJ04.rst
         guid: c9960c75-a7a7-46ed-b3fc-6232000a05e9
   - title: ПТПЈ.5. Фреквенцијска анализа и секторски дијаграми
@@ -127,7 +127,7 @@ lessons:
         file: J05.rst
         guid: fc121b1a-d67a-44c5-b602-ed872f120601
       - type: quiz 
-        title: Тест
+        title: Квиз
         file: testJ05.rst
         guid: 7665c9fb-fc59-418f-ad83-5d4abb930557
   - title: ПТПЈ.6. Табеларно представљени подаци
@@ -139,7 +139,7 @@ lessons:
         file: J06.rst
         guid: d4a86a8b-c345-4ad9-9fcb-3d61a862d4ad
       - type: quiz 
-        title: Тест
+        title: Квиз
         file: testJ06.rst
         guid: ba5720ee-9b0d-45ca-b655-e35ddaae4c1c
   - title: ПТПЈ.7. Индексирање и транспоновање табеле
@@ -151,7 +151,7 @@ lessons:
         file: J07.rst
         guid: 4550727a-f260-4f68-aab8-a91caf0f6341
       - type: quiz 
-        title: Тест
+        title: Квиз
         file: testJ07.rst
         guid: ed505e2e-f785-4d93-8daa-a2277772bf0b
   - title: ПТПЈ.8. Модификације табеле и записивање табеле у датотеку
@@ -163,7 +163,7 @@ lessons:
         file: J08.rst
         guid: 64889144-fd61-458c-b3a9-f6e73a99f5d8
       - type: quiz 
-        title: Тест
+        title: Квиз
         file: testJ08.rst
         guid: 73c13268-3cf9-4958-a6e8-a9ea1b5d373f
   - title: ПТПЈ.9. Сортирање, филтрирање и фреквенцијска анализа
@@ -175,7 +175,7 @@ lessons:
         file: J09.rst
         guid: a47928cf-3062-4b58-a16e-e7a606757434
       - type: quiz 
-        title: Тест
+        title: Квиз
         file: testJ09.rst
         guid: 13a089d9-0fff-4332-b6e8-3c0868d10874
   - title: ПТПЈ.10. Џупитер и Ексел
@@ -187,7 +187,7 @@ lessons:
         file: J10.rst
         guid: c23b8f42-44e1-4404-abd7-8e91889e3206
       - type: quiz 
-        title: Тест
+        title: Квиз
         file: testJ10.rst
         guid: 7a9050f2-ee77-44df-9e20-135320511fae
   #########################################################################
@@ -210,7 +210,7 @@ lessons:
         file: L801.rst
         guid: f0430a4c-e26d-4bec-992e-af9b33e40939
       - type: quiz 
-        title: Тест
+        title: Квиз
         file: test801.rst
         guid: 1a8fde5e-57e1-4ce4-8ac2-c122f623b1e1
   - title: ПРОГ.2. Бројачи и суме
@@ -222,7 +222,7 @@ lessons:
         file: L802.rst
         guid: 706a8e52-a1bb-44ee-8387-0be63d677580
       - type: quiz 
-        title: Тест
+        title: Квиз
         file: test802.rst
         guid: ba166ad9-1baf-4c40-88ec-8ee58d3390ff
   - title: ПРОГ.3. Низови симбола (*стрингови* или *ниске*)
@@ -234,7 +234,7 @@ lessons:
         file: L803.rst
         guid: 3add7f21-c5f8-42a3-81f3-8162d885bb1e
       - type: quiz 
-        title: Тест
+        title: Квиз
         file: test803.rst
         guid: 6e537f69-8394-4968-8496-2fd21b0565f5
   - title: ПРОГ.4. Угнежђене петље
@@ -246,7 +246,7 @@ lessons:
         file: L804.rst
         guid: 7ec4a3d1-e8ca-48b0-92a3-b19dbdedb828
       - type: quiz 
-        title: Тест
+        title: Квиз
         file: test804.rst
         guid: bfd819e8-2210-40a3-acf3-604cce73eeff
   - title: ПРОГ.5. Сортирање
@@ -258,7 +258,7 @@ lessons:
         file: L805.rst
         guid: c0992ff2-05c8-42fc-8b56-6bb8fc2ba070
       - type: quiz 
-        title: Тест
+        title: Квиз
         file: test805.rst
         guid: 05b31fcb-034e-4e49-b0e2-000e1d06f916
   - title: ПРОГ.6. Филтрирање и претраживање
@@ -270,7 +270,7 @@ lessons:
         file: L806.rst
         guid: 4ee5bd23-8ff1-4fc0-af9c-4598cd3b6c8d
       - type: quiz 
-        title: Тест
+        title: Квиз
         file: test806.rst
         guid: 23b04976-fc6f-4897-b9b9-b6ae243a16d3
   - title: ПРОГ.7. Рад са текстуалним датотекама
@@ -282,7 +282,7 @@ lessons:
         file: L807.rst
         guid: 0fc23ea8-35a4-44ea-b291-b89a9281583c
       - type: quiz 
-        title: Тест
+        title: Квиз
         file: test807.rst
         guid: df790583-81be-4ad4-abeb-a01fe22f474d
 
