@@ -173,6 +173,13 @@
    In [1]: plt.close()
 
 
+Ево и кратког видеа који илуструје оно што смо до сада видели:
+
+.. ytpopup:: kRWZfEp0RnI
+   :width: 735
+   :height: 415
+   :align: center
+
 Задаци
 -------
 

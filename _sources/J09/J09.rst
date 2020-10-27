@@ -79,6 +79,13 @@
 
    In [1]: plt.close()
 
+Ево и кратке видео илустрације:
+
+.. ytpopup:: w36_KIyOG1Q
+   :width: 735
+   :height: 415
+   :align: center
+
 
 Филтрирање података
 --------------------
@@ -137,6 +144,12 @@
 
    In [1]: plt.close()
 
+Ево и кратке видео илустрације:
+
+.. ytpopup:: 00BmAAE34vQ
+   :width: 735
+   :height: 415
+   :align: center
 
 Фреквенцијска анализа
 ----------------------
@@ -222,6 +235,21 @@
    :suppress:
 
    In [1]: plt.close()
+
+
+Следе две кратке видео илустрације:
+
+.. ytpopup:: UOKOYyfw8Rw
+   :width: 735
+   :height: 415
+   :align: center
+
+.. ytpopup:: vCGkTXeSv5E
+   :width: 735
+   :height: 415
+   :align: center
+
+
 
 На адреси
 

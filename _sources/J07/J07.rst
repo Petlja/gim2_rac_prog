@@ -185,6 +185,13 @@
    In [1]: for ucenik in ocene1.index:
       ...:     print(ucenik, "->", round(ocene1.loc[ucenik].mean(), 2))
 
+Ево и кратке видео илустрације:
+
+.. ytpopup:: fTmkDR6HLxI
+   :width: 735
+   :height: 415
+   :align: center
+
 
 Транспоновање табеле
 ---------------------
