@@ -44,15 +44,14 @@
 Да погледамо како функција ради:
 
 .. activecode:: primer2-1
-   :coach:
+   :includesrc: _src/P2_Prebroj_petice.py
 
-   def prebroj_petice(spisak):
-       broj = 0
-       for ocena in spisak:
-           if ocena == 5: broj += 1
-       return broj
+.. infonote::
 
-   print(prebroj_petice([3, 1, 5, 4, 5, 2, 5]))
+   Изврши исти програм и у Пајтон окружењу!
+   
+   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P2_Prebroj_petice.py`` и изврши га.
+
 
 Пример.
 '''''''
@@ -62,19 +61,20 @@
 
 .. code-block:: python
 
-    prebroj_ocene([3, 1, 5, 4, 5, 2, 5], 4)
+    prebroj_ocene([3, 1, 5, 4, 5, 2, 5, 1, 2], 1)
 
-треба да врати 1 зато што наведени списак оцена садржи само једну четворку.
+треба да врати 2 зато што наведени списак оцена садржи две јединице.
 
 *Решење.*
 
-.. code-block:: python
+.. activecode:: primer2-1b
+   :includesrc: _src/P2_Prebroj_ocene.py
 
-   def prebroj_ocene(spisak, n):
-       broj = 0
-       for ocena in spisak:
-           if ocena == n: broj += 1
-       return broj
+.. infonote::
+
+   Изврши исти програм и у Пајтон окружењу!
+   
+   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P2_Prebroj_ocene.py`` и изврши га.
 
 Пример*.
 ''''''''
@@ -110,7 +110,6 @@
 док командом ``n //= 10`` "откинемо" последњу цифру броја. Ево примера:
 
 .. activecode:: primer2-2
-   :coach:
 
    n = 12487
    n //= 10
@@ -119,7 +118,6 @@
 Ето: "откинули" смо последњу цифру броја *n*. Да пробамо да "откинемо" последње две цифре броја *n*:
 
 .. activecode:: primer2-3
-   :coach:
 
    n = 12487
    n //= 10
@@ -131,16 +129,14 @@
 Да проверимо функцију:
 
 .. activecode:: primer2-4
-   :coach:
+   :includesrc: _src/P2_Prebroj_cifre.py
 
-   def prebroj_cifre(n):
-       br_cif = 0
-       while n > 0:
-           br_cif += 1
-           n //= 10
-       return br_cif
+.. infonote::
 
-   print(prebroj_cifre(12487))
+   Изврши исти програм и у Пајтон окружењу!
+   
+   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P2_Prebroj_cifre.py`` и изврши га.
+
 
 
 Пример.
@@ -160,104 +156,147 @@
 Збир елемената низа
 ------------------------
 
-Често је потребно сабрати елементе неког низа бројева, што можемо урадити следећом Пајтон функцијом:
+Често је потребно сабрати елементе неког низа бројева, што се често може урадити још током учитавања низа.
+Ево примера.
 
-.. code-block:: python
+Пример 1.
+''''''''''''''
 
-   def saberi(L):
-       zbir = 0
-       for x in L:
-           zbir += x
-       return zbir
-
-Функција ``saberi`` прими низ бројева који треба сабрати и ради овако.
-
-1. Променљива ``zbir`` ће полако акумулирати збир. Пошто још нисмо кренули са сабирањем, постављамо њену вредност на 0.
-2. Наредбом ``for x in L:`` пролазимо кроз низ ``L`` тако што променљива ``x`` редом узима вредности које су наведене у низу. Тако постижемо да елементе низа, један по један, додајемо на збир ``zbir``.
-3. На крају враћамо вредност променљиве ``zbir`` као резултат рада функције.
-
-Да погледамо како функција ради:
+Напиши Пајтон програм који од корисника учитава цео број :math:`n`, потом учитава :math:`n` реалних бројева
+и исписује њихов збир.
 
 .. activecode:: primer2-5
-   :coach:
+   :passivecode: true
+   :includesrc: _src/P2_Saberi_n.py
 
-   def saberi(L):
-       zbir = 0
-       for x in L:
-           zbir += x
-       return zbir
+.. infonote::
 
-   print(saberi([3,1,2,4,9,0,-6]))
+   Изврши програм у Пајтон окружењу!
+   
+   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P2_Saberi_n.py`` и изврши га.
 
-Пример.
-'''''''
+Пример 2.
+''''''''''''''
+
+Напиши Пајтон програм који од корисника учитава реалне бројеве све док корисник не унесе реч "stop" након чега
+исписује збир унетих бројева.
+
+.. activecode:: primer2-5-5
+   :passivecode: true
+   :includesrc: _src/P2_Sabiraj_do_stop.py
+
+.. infonote::
+
+   Изврши програм у Пајтон окружењу!
+   
+   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P2_Sabiraj_do_stop.py`` и изврши га.
+
+Пример 3.
+''''''''''''''
 
 Милица добија џепарац који је сваког месеца исти. За следећи месец Милица је испланирала низ трошкова.
-Написати Пајтон функцију ``dzeparac_je_dovoljan`` која проверава да ли ће Милица моћи да својим џепарцем
-покрије све планиране трошкове. Функција треба да прими два податка: висину њеног џепарца и списак трошкова,
-и треба да испише поруку о томе да ли су њени планови реални. Функција не враћа никакву вредност.
+Напиши Пајтон програм који од корисника учитава висину Миличиног џепарца, и онда списак трошкова које је милица планирала,
+и исписује поруку о томе да ли су њени планови реални. Програм учитава трошкове све док корисник не унесе реч "stop", а
+исписује "Dovoljan je" или "Nije dovoljan" у зависности од тога да ли је Миличин џепарац довољан за њене планове или не.
 
-На пример,
+.. activecode:: primer2-5-6
+   :passivecode: true
+   :includesrc: _src/P2_Milicin_dzeparac.py
 
-.. code-block:: python
+.. infonote::
 
-   dzeparac_je_dovoljan(1500, [250, 500, 100, 100, 100, 100, 100])
+   Изврши програм у Пајтон окружењу!
+   
+   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P2_Milicin_dzeparac.py`` и изврши га.
 
-треба да испише:
+..
+    Често је потребно сабрати елементе неког низа бројева, што можемо урадити следећом Пајтон функцијом:
     
-.. code-block:: python
-
-   Dzeparac je dovoljan
-
-док
+    .. code-block:: python
     
-.. code-block:: python
-
-   dzeparac_je_dovoljan(1500, [250, 500, 200, 300, 100, 100, 100])
-
-треба да испише:
+       def saberi(L):
+           zbir = 0
+           for x in L:
+               zbir += x
+           return zbir
     
-.. code-block:: python
-
-   Dzeparac NIJE dovoljan
-
-*Решење.*
-
-.. code-block:: python
-
-   def dzeparac_je_dovoljan(dzeparac, troskovi):
-       ukupni_troskovi = saberi(troskovi)
-       if dzeparac >= ukupni_troskovi:
-           print("Dzeparac je dovoljan")
-       else:
-           print("Dzeparac NIJE dovoljan")
-
-Да видимо како функција ради:
-
-.. activecode:: primer2-6
-   :coach:
-
-   def saberi(L):
-       zbir = 0
-       for x in L:
-           zbir += x
-       return zbir
-
-   def dzeparac_je_dovoljan(dzeparac, troskovi):
-       ukupni_troskovi = saberi(troskovi)
-       if dzeparac >= ukupni_troskovi:
-           print("Dzeparac je dovoljan")
-       else:
-           print("Dzeparac NIJE dovoljan")
-
-   dzeparac_je_dovoljan(1500, [250, 500, 200, 300, 100, 100, 100])
+    Функција ``saberi`` прими низ бројева који треба сабрати и ради овако.
+    
+    1. Променљива ``zbir`` ће полако акумулирати збир. Пошто још нисмо кренули са сабирањем, постављамо њену вредност на 0.
+    2. Наредбом ``for x in L:`` пролазимо кроз низ ``L`` тако што променљива ``x`` редом узима вредности које су наведене у низу. Тако постижемо да елементе низа, један по један, додајемо на збир ``zbir``.
+    3. На крају враћамо вредност променљиве ``zbir`` као резултат рада функције.
+    
+    Да погледамо како функција ради:
+    
+    .. activecode:: primer2-5
+       :includesrc: _src/P2_Saberi.py
+    
+    .. infonote::
+    
+       Изврши исти програм и у Пајтон окружењу!
+       
+       Покрени IDLE, из фолдера ``primeri`` учитај програм ``P2_Saberi.py`` и изврши га.
 
 
-Напомена.
-'''''''''''''''
+    Пример.
+    '''''''
 
-Подсетимо се да уграђена функција ``sum`` одређује збир елемената у низу, попут функције ``saberi``
-коју смо видели раније. Наравно, увек је ефикасније позвати уграђену функцију него нашу функцију.
+    Милица добија џепарац који је сваког месеца исти. За следећи месец Милица је испланирала низ трошкова.
+    Написати Пајтон функцију ``dzeparac_je_dovoljan`` која проверава да ли ће Милица моћи да својим џепарцем
+    покрије све планиране трошкове. Функција треба да прими два податка: висину њеног џепарца и списак трошкова,
+    и треба да испише поруку о томе да ли су њени планови реални. Функција не враћа никакву вредност.
+    
+    На пример,
+    
+    .. code-block:: python
+    
+       dzeparac_je_dovoljan(1500, [250, 500, 100, 100, 100, 100, 100])
+    
+    треба да испише:
+        
+    .. code-block:: python
+    
+       Dzeparac je dovoljan
+    
+    док
+        
+    .. code-block:: python
+    
+       dzeparac_je_dovoljan(1500, [250, 500, 200, 300, 100, 100, 100])
+    
+    треба да испише:
+        
+    .. code-block:: python
+    
+       Dzeparac NIJE dovoljan
+    
+    *Решење.*
+    
+    .. code-block:: python
+    
+       def dzeparac_je_dovoljan(dzeparac, troskovi):
+           ukupni_troskovi = saberi(troskovi)
+           if dzeparac >= ukupni_troskovi:
+               print("Dzeparac je dovoljan")
+           else:
+               print("Dzeparac NIJE dovoljan")
+    
+    Да видимо како функција ради:
+    
+    .. activecode:: primer2-6
+       :includesrc: _src/P2_Dzeparac.py
+    
+    .. infonote::
+    
+       Изврши исти програм и у Пајтон окружењу!
+       
+       Покрени IDLE, из фолдера ``primeri`` учитај програм ``P2_Dzeparac.py`` и изврши га.
+    
+    Напомена.
+    '''''''''''''''
+    
+    Подсетимо се да уграђена функција ``sum`` одређује збир елемената у низу, попут функције ``saberi``
+    коју смо видели раније. Наравно, увек је ефикасније позвати уграђену функцију него нашу функцију.
 
 
 Просек елемената низа
@@ -281,8 +320,8 @@
    def prosek(L):
        return sum(L) / len(L)
 
-Пример.
-'''''''
+Пример 1.
+''''''''''''''
 
 Мирко из музичког има 5, 4, 5 и још једну оцену која се не види јер се преко ње разлило мастило.
 Просек његових оцена из музичког је 4. Која је то оцена преко које се разлило мастило?
@@ -290,7 +329,6 @@
 *Решење.* Испробаћемо разне могућности:
 
 .. activecode:: primer2-7
-   :coach:
 
    def prosek(L):
        return sum(L) / len(L)
@@ -303,6 +341,52 @@
 
 Која је то оцена?
 
+Пример 2.
+''''''''''''''
+
+Написати програм који са стандардног улаза (од корисника) учитава природан број ``n``, потом низ од ``n``
+реалних бројева и онда утврђује колико од учитаних реалних бројева је веће од њиховог просека.
+
+.. activecode:: primer2-6-iznad-proseka-1
+   :passivecode: true
+   :includesrc: _src/P2_Iznad_proseka.py
+
+.. infonote::
+
+   Покрени IDLE окружење, из фолдера ``primeri`` учитај програм ``P2_Iznad_proseka.py`` и изврши га.
+
+
+Пример 3.
+''''''''''''''
+
+Написати програм који са стандардног улаза (од корисника) учитава природан број ``n``, потом низ од ``n``
+тачака у равни и онда рачуна и штампа координате тежишта учитаног низа тачака. Координате једне тачке уносимо
+у истом реду раздвојене једном празнином, на пример овако:
+::
+
+   4
+   -1.5 2.2
+   3.0 1.5
+   4.25 -2.29
+   3.21 8.0
+
+
+*Решење.*
+
+Тачка у равни се може описати својим *координатама* што је пар реалних бројева, на пример овако: :math:`A(2.5, -1.4)`.
+У програму нам зато требају два низа: низ :math:`x`-координата и низ :math:`y`-координата учитаних тачака.
+Координате тежишта коначног скупа тачака се рачуна тако што се израчуна просек
+:math:`x`-координата и просек :math:`y`-координата -- то су :math:`x`-координата и :math:`y`-координата тежишта.
+
+.. activecode:: primer2-6-iznad-proseka
+   :passivecode: true
+   :includesrc: _src/P2_Teziste.py
+
+.. infonote::
+
+   Покрени IDLE окружење, из фолдера ``primeri`` учитај програм ``P2_Teziste.py`` и изврши га.
+
+
 Задаци
 -----------
 
@@ -313,15 +397,31 @@
 ``broj_pozitivnih([2, -1, 3, 0, -5, 1, 9])`` треба да врати 4.
 
 .. activecode:: zadatak2-1
-   :coach:
+   :runortest: test1, test2, test3
+   :nocodelens:
 
+   # -*- acsection: general-init -*-
+   # -*- acsection: main -*-
    def broj_pozitivnih(L):
-       ???
+       # Овде напиши функцију
+       return -1234  # поправи овај ред!
 
    # Провера
-   print(broj_pozitivnih([1, 2, 3, 4]))
-   print(broj_pozitivnih([-1, -2, -3, -4]))
-   print(broj_pozitivnih([2, -1, 3, 0, -5, 1, 9]))
+   test1 = broj_pozitivnih([1, 2, 3, 4, 5])
+   test2 = broj_pozitivnih([-1, -2, -3, -4])
+   test3 = broj_pozitivnih([2, -1, 3, 0, -5, 1, 9])
+   # -*- acsection: after-main -*-
+   print(test1, test2, test3)
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+       def testOne(self):
+           run_test = acMainSection(test1=test1,test2=test2,test3=test3)
+           self.assertEqual(run_test["test1"], 5, "Вредност променљиве 'test1' треба да буде %s" % 5)
+           self.assertEqual(run_test["test2"], 0, "Вредност променљиве 'test2' треба да буде %s" % 0)
+           self.assertEqual(run_test["test3"], 4, "Вредност променљиве 'test3' треба да буде %s" % 4)
+   myTests().main()
+
 
 
 
@@ -333,21 +433,48 @@
 У томе ће ти помоћи функција ``prestupna_godina`` која проверава да ли је година преступна.
 
 .. activecode:: zadatak2-2
-   :coach:
+   :runortest: test1, test2, test3
+   :nocodelens:
 
+   # -*- acsection: general-init -*-
    def prestupna_godina(g):
        if g % 400 == 0 or (g % 100 != 0 and g % 4 == 0):
            return True
        else:
            return False
+   # -*- acsection: main -*-
 
    def broj_prestupnih(g1, g2):
-       ???
+       # Овде напиши функцију
+       return -1234  # поправи овај ред!
 
    # Провера
-   print(broj_prestupnih(1987, 2019))
-   print(broj_prestupnih(2019, 2021))
-   print(broj_prestupnih(1997, 2003))
+   test1 = broj_prestupnih(1987, 2019)
+   test2 = broj_prestupnih(2019, 2021)
+   test3 = broj_prestupnih(1997, 2003)
+   # -*- acsection: after-main -*-
+   print(test1, test2, test3)
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+       def testOne(self):
+           def __brp(g1, g2):
+              n = 0
+              g = g1
+              while g <= g2:
+                  if prestupna_godina(g): n += 1
+                  g += 1
+              return n
+           rez1 = __brp(1987, 2019)
+           rez2 = __brp(2019, 2021)
+           rez3 = __brp(1997, 2003)
+           run_test = acMainSection(test1=test1,test2=test2,test3=test3)
+           self.assertEqual(run_test["test1"], rez1, "Вредност променљиве 'test1' треба да буде %s" % rez1)
+           self.assertEqual(run_test["test2"], rez2, "Вредност променљиве 'test2' треба да буде %s" % rez2)
+           self.assertEqual(run_test["test3"], rez3, "Вредност променљиве 'test3' треба да буде %s" % rez3)
+   myTests().main()
+
+
 
 
 Задатак 3.
@@ -357,99 +484,193 @@
 (Напомена: највећи елемент низа се може израчунати помоћу функције ``max``.)
 
 .. activecode:: zadatak2-3
-   :coach:
+   :runortest: test1, test2, test3
+   :nocodelens:
 
+   # -*- acsection: general-init -*-
+   # -*- acsection: main -*-
    def prebroj_max(A):
-       ???
+       # Овде напиши функцију
+       return -1234  # поправи овај ред!
 
    # Провера
-   print(prebroj_max([1, 2, 3, 2, 3, 3, 3]))
-   print(prebroj_max([0, 0, 0]))
-   print(prebroj_max([5]))
-
+   test1 = prebroj_max([1, 2, 3, 2, 3, 3, 3])
+   test2 = prebroj_max([0, 0, 0])
+   test3 = prebroj_max([5])
+   # -*- acsection: after-main -*-
+   print(test1, test2, test3)
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+       def testOne(self):
+           run_test = acMainSection(test1=test1,test2=test2,test3=test3)
+           self.assertEqual(run_test["test1"], 4, "Вредност променљиве 'test1' треба да буде %s" % 4)
+           self.assertEqual(run_test["test2"], 3, "Вредност променљиве 'test2' треба да буде %s" % 3)
+           self.assertEqual(run_test["test3"], 1, "Вредност променљиве 'test3' треба да буде %s" % 1)
+   myTests().main()
 
 Задатак 4.
-''''''''''
+''''''''''''''''''''''
+
+Милoraд у дневнику има неколико оцена из информатике. Напиши Пајтон функцију ``koliko_do_odlicnog_uspeha``
+која прима низ Милорадових оцена и онда одређује који је најмањи број петица које Милорад треба да добије из информатике
+да би наставник морао да му закључи 5. (Према Правилнику о оцењивању, наставник мора да закључи оцену 5
+ученику чији просек оцена је барем 4,50.)
+ 
+На пример, ``koliko_do_odlicnog_uspeha([3,3])`` треба да врати 6 јер је (3 + 3 + 5 + 5 + 5 + 5 + 5 + 5) / 8 = 4,50.
+
+.. activecode:: zadatak2-6
+   :runortest: test1, test2, test3, test4
+   :nocodelens:
+
+   # -*- acsection: general-init -*-
+   def prosek(A):
+       return sum(A) / len(A)
+   # -*- acsection: main -*-
+
+   def koliko_do_odlicnog_uspeha(A):
+       # Овде напиши функцију
+       return -1234  # поправи овај ред!
+
+   # Провера
+   test1 = koliko_do_odlicnog_uspeha([4])
+   test2 = koliko_do_odlicnog_uspeha([4, 4])
+   test3 = koliko_do_odlicnog_uspeha([3, 3])
+   test4 = koliko_do_odlicnog_uspeha([5, 5, 5])
+   # -*- acsection: after-main -*-
+   print(test1, test2, test3, test4)
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+       def testOne(self):
+           def __pr(A):
+               return sum(A) / len(A)
+           def __kdou(L):
+               n=0
+               while __pr(L) < 4.5:
+                   n += 1
+                   L.append(5)
+               return n
+           rez1 = __kdou([4])
+           rez2 = __kdou([4, 4])
+           rez3 = __kdou([3, 3])
+           rez4 = __kdou([5, 5, 5])
+           run_test = acMainSection(test1=test1,test2=test2,test3=test3,test4=test4)
+           self.assertEqual(run_test["test1"], rez1, "Вредност променљиве 'test1' треба да буде %s" % rez1)
+           self.assertEqual(run_test["test2"], rez2, "Вредност променљиве 'test2' треба да буде %s" % rez2)
+           self.assertEqual(run_test["test3"], rez3, "Вредност променљиве 'test3' треба да буде %s" % rez3)
+           self.assertEqual(run_test["test4"], rez4, "Вредност променљиве 'test4' треба да буде %s" % rez4)
+   myTests().main()
+
+
+
+Задатак 5.
+'''''''''''''''''''''
 
 Напиши функцију ``zbir_cifara`` која рачуна збир цифара датог позитивног целог броја. На пример,
 ``zbir_cifara(12487)`` треба да врати 22.
 
 .. activecode:: zadatak2-4
-   :coach:
+   :runortest: test1, test2, test3
+   :nocodelens:
 
+   # -*- acsection: general-init -*-
+   # -*- acsection: main -*-
    def zbir_cifara(n):
-       ???
+       # Овде напиши функцију
+       return -1234  # поправи овај ред!
 
    # Провера
-   print(zbir_cifara(2573))
-   print(zbir_cifara(9))
+   test1 = zbir_cifara(12487)
+   test2 = zbir_cifara(1248700)
+   test3 = zbir_cifara(9)
+   # -*- acsection: after-main -*-
+   print(test1, test2, test3)
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+       def testOne(self):
+           def __zb(n):
+               s=0
+               while n > 0:
+                   s += n % 10
+                   n //= 10
+               return s
+           rez1 = __zb(12487)
+           rez2 = __zb(1248700)
+           rez3 = __zb(9)
+           run_test = acMainSection(test1=test1,test2=test2,test3=test3)
+           self.assertEqual(run_test["test1"], rez1, "Вредност променљиве 'test1' треба да буде %s" % rez1)
+           self.assertEqual(run_test["test2"], rez2, "Вредност променљиве 'test2' треба да буде %s" % rez2)
+           self.assertEqual(run_test["test3"], rez3, "Вредност променљиве 'test3' треба да буде %s" % rez3)
+   myTests().main()
 
 
-Задатак 5*.
-'''''''''''
+
+Задатак 6*.
+''''''''''''''''''''''
 
 *Судбински број* неке особе се добија овако:
 
 1. Запишемо датум рођења те особе као један низ цифара, на пример: 15. мај 2001. --> 15052001
 2. Саберемо цифре тог броја.
 3. Ако смо добили једноцифрени број, то је судбински број особе.
-4. Ако нисмао добили једноцифренi број саберемо цифре добијеног броја, и тако све док не добијемо једноцифрени број.
+4. Ако нисмао добили једноцифрени број саберемо цифре добијеног броја, и тако све док не добијемо једноцифрени број.
 
-**Важна напомена!** Ово је само вежбица из програмирања у Пајтону. Немојте придавати никакав значај добијеном броју! Нумерологија је изашла из моде пре око хиљаду година.
+**Важна напомена!** Ово је само вежбица из програмирања. Немојте придавати никакав значај добијеном броју! Нумерологија је изашла из моде пре око хиљаду година.
 
-
-*(а)* Израчунај свој судбински број користећи функцију `zbir_cifara` из претходног задатка.
-
-.. activecode:: zadatak2-5а
-   :coach:
-
-   def zbir_cifara(n):
-       # овде ископирај функцију zbir_cifara из претxодног задатка
-
-   # уместо три упитника унеси број који одговара твом датуму рођења
-   print(zbir_cifara(???))
-   
-   # понови поступак ако ниси добио једноцифрени број
-
-*(б)* Напиши функцију ``sudbinski_broj`` која рачуна судбински број неке особе на основу броја који одговара њеном датуму рођења.
+Напиши функцију ``sudbinski_broj`` која рачуна судбински број неке особе на основу броја који одговара њеном датуму рођења.
 
 .. activecode:: zadatak2-5b
-   :coach:
+   :runortest: test1, test2
+   :nocodelens:
 
-   def zbir_cifara(n):
-       # овде ископирај функцију zbir_cifara из претxодног задатка
-
+   # -*- acsection: general-init -*-
+   # -*- acsection: main -*-
    def sudbinski_broj(n):
-       ???
+       # Овде напиши функцију
+       return -1234  # поправи овај ред!
 
    # Провера
-   print(sudbinski_broj(10102010))
-   print(sudbinski_broj(29091999))
-   # уместо три упитника унеси број који одговара твом датуму рођења
-   # и упореди са резултатом под (а)
-   print(sudbinski_broj(???))   
+   test1 = sudbinski_broj(10102010)
+   test2 = sudbinski_broj(29091999)
+   # -*- acsection: after-main -*-
+   print(test1, test2)
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+       def testOne(self):
+           def __zb(n):
+               s=0
+               while n > 0:
+                   s += n % 10
+                   n //= 10
+               return s
+           def __sb(n):
+               while n > 9: n = __zb(n)
+               return n
+           rez1 = __sb(10102010)
+           rez2 = __sb(29091999)
+           run_test = acMainSection(test1=test1,test2=test2)
+           self.assertEqual(run_test["test1"], rez1, "Вредност променљиве 'test1' треба да буде %s" % rez1)
+           self.assertEqual(run_test["test2"], rez2, "Вредност променљиве 'test2' треба да буде %s" % rez2)
+   myTests().main()
 
-Задатак 6*.
-'''''''''''
 
- Милorad у дневнику има неколико оцена из информатике. Напиши Пајтон функцију ``koliko_do_odlicnog_uspeha``
- која прима низ Милорадових оцена и онда одређује који је најмањи број петица које Милорад треба да добије из информатике
- да би наставник морао да му закључи 5. (Према Правилнику о оцењивању, наставник мора да закључи оцену 5
- ученику чији просек оцена је барем 4,50.)
- 
- На пример, ``koliko_do_odlicnog_uspeha([3,3])`` треба да врати 6 јер је (3 + 3 + 5 + 5 + 5 + 5 + 5 + 5) / 8 = 4,50.
 
-.. activecode:: zadatak2-6
-   :coach:
 
-   def prosek(A):
-       return sum(A) / len(A)
 
-   def koliko_do_odlicnog_uspeha(A):
-       ???
+Задаци из Алгоритамске збирке задатака
+----------------------------------------------
 
-   # Провера
-   print(koliko_do_odlicnog_uspeha([4]))
-   print(koliko_do_odlicnog_uspeha([4, 4]))
-   print(koliko_do_odlicnog_uspeha([3, 3]))
-   print(koliko_do_odlicnog_uspeha([5, 5, 5]))
+Решавањем следећих задатака можете да увежбате додатне вештине у раду са листама. 
+
+https://petlja.org/biblioteka/r/problemi/Zbirka/prosecno_odstupanje_od_minimuma
+
+https://petlja.org/biblioteka/r/problemi/Zbirka/minimalno_odstupanje_od_proseka
+
+https://petlja.org/biblioteka/r/problemi/Zbirka/translacija_tacaka
+
+https://petlja.org/biblioteka/r/problemi/Zbirka/ciklicno_pomeranje_za_jedno_mesto
+
+

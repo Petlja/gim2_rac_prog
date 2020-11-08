@@ -5,8 +5,9 @@
 
 1. поновити како се записују низови података,
 2. поновити како се дефинишу функције,
-3. написаћемо своју функцију која рачуна најмањи број у датом низу бројева, и
-4. поновити неколико функција које су уграћене у Пајтон.
+3. написаћемо своју функцију која рачуна најмањи број у датом низу бројева,
+4. поновити неколико функција које су уграћене у Пајтон, и
+5. поновити како се листа може учитати од корисника (са стандардног улаза).
 
 Записивање низова података
 -------------------------------
@@ -51,7 +52,6 @@
 (од енглеског *length* што значи "дужина"):
 
 .. activecode:: primer1-5
-   :coach:
 
    predmeti = ["matematika", "srpski", "likovno", "istorija", "fizičko"]
    print(len(predmeti))
@@ -60,7 +60,6 @@
 као и поштанска адреса, састоји од имена улице иза кога се наводи кућни број, рецимо овако:
 
 .. activecode:: primer1-6
-   :coach:
 
    Dejanove_ocene = [2, 4, 5, 3, 5]
    print(Dejanove_ocene[0])
@@ -70,7 +69,6 @@
 (*чији кућни број је 0!*) то можемо регистровати овако:
 
 .. activecode:: primer1-7
-   :coach:
 
    Dejanove_ocene = [2, 4, 5, 3, 5]
    Dejanove_ocene[0] = 5
@@ -86,14 +84,13 @@
 
 
 .. activecode:: primer1-8
-   :coach:
+   :includesrc: _src/P1_Dejanove_ocene.py
+   
+.. infonote::
 
-   predmeti = ["matematika", "srpski", "likovno", "istorija", "fizičko"]
-   Dejanove_ocene = [2, 4, 5, 3, 5]
-   print("Dejanove ocene:")
-   for i in range(5):
-      print(predmeti[i], Dejanove_ocene[i])
-
+   Изврши исти програм и у Пајтон окружењу!
+   
+   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P1_Dejanove_ocene.py`` и изврши га.
 
 Стандардне функције
 ------------------------
@@ -106,17 +103,14 @@
 односно, највећи елемент неколико бројева који су унапред наведени, или целог низа бројева:
 
 .. activecode:: primer1-9
-   :coach:
 
    print(min(2,3))
 
 .. activecode:: primer1-10
-   :coach:
 
    print(max(4,5,-2))
 
 .. activecode:: primer1-11
-   :coach:
 
    Dejanove_ocene = [2, 4, 5, 3, 5]
    print("Najmanja Dejanova ocena je", min(Dejanove_ocene))
@@ -125,19 +119,37 @@
 Пример 1.
 '''''''''
 
-У следећем малом програму унеси своје оцене из неког предмета и допиши програмски код који ће израчунати
-највећу и најмању од њих, као и колико оцена имаш из тог предмета.
+Променљива ``Zikine_ocene`` садржи Жикине оцене из информатике. Она је сакривена негде на овој страни и ти је не видиш.
+У следећем малом програму поправи програмски код тако да добијеш највећу и најмању Жикину оцену из информатике,
+као и колико оцена је Жика добио из информатике.
 
 .. activecode:: primer1-12
-   :coach:
+   :include: Zikine_ocene
+   :runortest: najmanja, najveca, broj, Zikine_ocene
+   :nocodelens:
 
-   predmet = "???"  # <-- уместо три упитника упиши име предмета
-   ocene = [???] # <-- уместо три упитника упиши своје оцене
-   # У наредне три наредбе уместо три упитника упиши ИЗРАЗ који ће
-   # ИЗРАЧУНАТИ одговарајући број на основу података у низу ocene
-   print("Moja najmanja ocena iz predmeta", predmet, "je", ???)
-   print("Moja najveca ocena iz predmeta", predmet, "je", ???)
-   print("Imam", ???, "ocena iz predmeta", predmet)
+   У три наредбе испод уместо 0 упиши одговарајуће ИЗРАЗЕ који ће
+   на основу низа оцена у променљивој ``Zikine_ocene`` (који је сакривен од тебе!)
+   ИЗРАЧУНАТИ најмању и највећу Жикину оцену из информатике, као и број оцена које
+   је Жика добио из информатике
+   ~~~~
+   # -*- acsection: general-init -*-
+   # -*- acsection: main -*-
+   najmanja = 0 # поправи овај ред
+   najveca = 0 # поправи овај ред
+   broj = 0 # поправи овај ред
+   # -*- acsection: after-main -*-
+   print("Žikina najmanja ocena iz informatike je", najmanja)
+   print("Žikina najveća ocena iz informatike je", najveca)
+   print("Žika je dobio", broj, "ocena iz informatike")
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+       def testOne(self):
+           self.assertEqual(acMainSection(Zikine_ocene=Zikine_ocene)["najmanja"], min(Zikine_ocene), "Вредност променљиве 'najmanja' треба да буде %s" % min(Zikine_ocene))
+           self.assertEqual(acMainSection(Zikine_ocene=Zikine_ocene)["najveca"], max(Zikine_ocene), "Вредност променљиве 'najveca' треба да буде %s" % max(Zikine_ocene))
+           self.assertEqual(acMainSection(Zikine_ocene=Zikine_ocene)["broj"], len(Zikine_ocene), "Вредност променљиве 'broj' треба да буде %s" % len(Zikine_ocene))
+   myTests().main()
 
 
 Пример 2.
@@ -146,7 +158,6 @@
 Функција ``sum`` рачуна збир елемената низа, рецимо овако:
 
 .. activecode:: primer1-13
-   :coach:
 
    brojevi = [3,2,1,4,6]
    print(sum(brojevi))
@@ -156,17 +167,31 @@
 .. math::
    \frac{\mathrm{збир\ свих\ оцена}}{\mathrm{укупан\ број\ оцена}}
 
-У следећем малом програму унеси своје оцене из неког предмета и допиши програмски код који ће израчунати
-просек товјих оцена из тог предмета.
+У следећем малом програму поправи означени ред тако да добијеш израз који рачуна просек
+Жикиних оцена из информатике. Као и раније, Жикине оцене из информатике су смештене у променљиву
+``Zikine_ocene`` која је сакривена од тебе, али је програм види.
 
 .. activecode:: primer1-14
-   :coach:
+   :include: Zikine_ocene
+   :runortest: prosek, Zikine_ocene
+   :nocodelens:
 
-   predmet = "???"  # <-- уместо три упитника упиши име предмета
-   ocene = [???] # <-- уместо три упитника упиши своје оцене
-   # У наредби испод уместо три упитника упиши ИЗРАЗ који ће
-   # ИЗРАЧУНАТИ просек оцена на основу података у низу ocene
-   print("Prosek mojih ocena iz predmeta", predmet, "je", ???)
+   У наредби испод уместо 0 упиши ИЗРАЗ који ће на основу низа оцена
+   у променљивој ``Zikine_ocene`` (који је сакривен од тебе!)
+   ИЗРАЧУНАТИ Жикину просечну оцену из информатике. Немој заокруживати просек!
+   ~~~~
+   # -*- acsection: general-init -*-
+   # -*- acsection: main -*-
+   prosek = 0 # поправи овај ред
+   # -*- acsection: after-main -*-
+   print("Prosek Žikinih ocena iz informatike je", prosek)
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+       def testOne(self):
+           x = sum(Zikine_ocene)/len(Zikine_ocene)
+           self.assertEqual(acMainSection(Zikine_ocene=Zikine_ocene)["prosek"], x, "Вредност променљиве 'prosek' треба да буде %s" % x)
+   myTests().main()
 
 
 Дефинисање функција и минимум низа
@@ -189,24 +214,14 @@
 Извештај о Дејановим оценама сада лако можемо добити позивом ове функције:
 
 .. activecode:: primer1-15
-   :coach:
+   :includesrc: _src/P1_Ocene_izvestaj.py
+   
+.. infonote::
 
-   # Прво дефинишемо функцију
-   def izvestaj_o_ocenama(ime_ucenika, spisak_predmeta, ocene):
-       print("Učenik:", ime_ucenika)
-       n = len(spisak_predmeta)
-       for i in range(n):
-          print("-", spisak_predmeta[i], ocene[i])
+   Изврши исти програм и у Пајтон окружењу!
+   
+   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P1_Ocene_izvestaj.py`` и изврши га.
 
-   # Сада је можемо позвати више пута ако нам треба извештај о оценама
-   # за неколико ученика
-
-   predmeti = ["matematika", "srpski", "likovno", "istorija", "fizičko"]
-   Dejanove_ocene = [2, 4, 5, 3, 5]
-   Milenine_ocene = [5, 5, 4, 5, 4]
-
-   izvestaj_o_ocenama("Dejan", predmeti, Dejanove_ocene)
-   izvestaj_o_ocenama("Milena", predmeti, Milenine_ocene)
 
 Функције се најчешће користе за аутоматизацију релативно компликованих рачунских процеса.
 
@@ -275,17 +290,46 @@
 Да проверимо како ова функција ради:
 
 .. activecode:: primer1-16
-   :coach:
+   :includesrc: _src/P1_Min_niza.py
+   
+.. infonote::
 
-   def min_niza(A):
-       najmanji = A[0]
-       for i in range(len(A)):
-           if A[i] < najmanji: najmanji = A[i]
-       return najmanji
-
-   print(min_niza([3,1,5,-1,2]))
+   Изврши исти програм и у Пајтон окружењу!
+   
+   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P1_Min_niza.py`` и изврши га.
 
 
+Учитавање низова
+---------------------------------------
+
+Постоје ситуације када је потребно од корисника учитати низ података и обрадити га. У следећем примеру
+ћемо се подсетити како се низови бројева учитавају од корисника.
+
+Пример.
+'''''''''
+
+Написати програм који од корисника учитава оцене из неколико предмета, а онда исписује из којих предмета има најлошију оцену, а из којих има
+најбољу оцену.
+
+.. activecode:: Primer_1_4-NOVO
+    :passivecode: true
+    :includesrc: _src/P1_Naj_predmeti.py
+
+У овом програму имамо два низа: низ у коме памтимо имена предмета и низ у коме памтимо оцене. Оба низа су на почетку празни, а током рада
+for-циклуса се на крај сваког од њих дода по један податак: име новог предмета и оцена из тог предмета. Да се подсетимо, наредба
+
+.. code-block:: python
+
+   L.append(x)
+
+додаје податак ``x`` на крај листе ``L``.
+
+Након тога позивом стандардних функција ``min`` и ``mix`` одредимо најлошију и најбољу оцену коју је ученик добио, па у последњем делу програма
+(у "трећој фази") испишемо имена предмета из којих је ученик најбоље оцењен и имена предмета из којих је ученик најлошије оцењен.
+
+.. infonote::
+
+   Да би видео како програм ради покрени IDLE окружење из фолдера ``primeri`` учитај програм ``P1_Naj_predmeti.py`` и изврши га.
 
 Задаци
 -----------
@@ -294,18 +338,37 @@
 ''''''''''
 
 Напиши функцију ``najveci_od_tri(A0, A1, A2)`` која рачуна  и враћа највећи од три дата броја, али без употребе стандардне функције ``max``.
-Уместо три упитника напиши тело фукције, па онда провери како функција ради.
+Напиши тело функције, па онда провери како функција ради.
 
 .. activecode:: zadatak1-1
-   :coach:
+   :runortest: test1, test2, test3
+   :nocodelens:
 
+   # -*- acsection: general-init -*-
+   # -*- acsection: main -*-
    def najveci_od_tri(A0, A1, A2):
-       ???
+       # Овде напиши функцију која рачуна највећи од бројева A0, A1, A2
+       return -1234  # поправи овај ред!
 
    # Провера
-   print(najveci_od_tri(5, 7, 11))
-   print(najveci_od_tri(5, 75, 11))
-   print(najveci_od_tri(55, 7, 11))
+   test1 = najveci_od_tri(5, 7, 11)
+   test2 = najveci_od_tri(5, 75, 11)
+   test3 = najveci_od_tri(55, 7, 11)
+   # -*- acsection: after-main -*-
+   print(test1, test2, test3)
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+       def testOne(self):
+           rez1 = max([5, 7,  11])
+           rez2 = max([5, 75, 11])
+           rez3 = max([55, 7, 11])
+           run_test = acMainSection(test1=test1,test2=test2,test3=test3)
+           self.assertEqual(run_test["test1"], rez1, "Вредност променљиве 'test1' треба да буде %s" % rez1)
+           self.assertEqual(run_test["test2"], rez2, "Вредност променљиве 'test2' треба да буде %s" % rez2)
+           self.assertEqual(run_test["test3"], rez3, "Вредност променљиве 'test3' треба да буде %s" % rez3)
+   myTests().main()
+
 
 
 
@@ -314,20 +377,42 @@
 
 Напиши функцију ``najveci_od_pet(A0, A1, A2, A3, A4)``
 која рачуна и враћа највећи од пет датих броја, али без употребе стандардне функције ``max``.
-Уместо три упитника напиши тело фукције, па онда провери како функција ради.
+Напиши тело функције, па онда провери како функција ради.
 
 .. activecode:: zadatak1-2
-   :coach:
+   :runortest: test1, test2, test3, test4, test5
+   :nocodelens:
 
-   def najveci_od_pet(A0, A1, A2):
-       ???
+   # -*- acsection: general-init -*-
+   # -*- acsection: main -*-
+   def najveci_od_pet(A0, A1, A2, A3, A4):
+       # Овде напиши функцију која рачуна највећи од бројева A0, A1, A2, A3, A4
+       return -1234  # поправи овај ред!
 
    # Провера
-   print(najveci_od_pet(1, 2, 3, 4, 55))
-   print(najveci_od_pet(1, 2, 3, 44, 5))
-   print(najveci_od_pet(1, 2, 33, 4, 5))
-   print(najveci_od_pet(1, 22, 3, 4, 5))
-   print(najveci_od_pet(11, 2, 3, 4, 5))
+   test1 = najveci_od_pet(1, 2, 3, 4, 55)
+   test2 = najveci_od_pet(1, 2, 3, 44, 5)
+   test3 = najveci_od_pet(1, 2, 33, 4, 5)
+   test4 = najveci_od_pet(1, 22, 3, 4, 5)
+   test5 = najveci_od_pet(11, 2, 3, 4, 5)
+   # -*- acsection: after-main -*-
+   print(test1, test2, test3, test4, test5)
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+       def testOne(self):
+           rez1 = max(1, 2, 3, 4, 55)
+           rez2 = max(1, 2, 3, 44, 5)
+           rez3 = max(1, 2, 33, 4, 5)
+           rez4 = max(1, 22, 3, 4, 5)
+           rez5 = max(11, 2, 3, 4, 5)
+           run_test=acMainSection(test1=test1,test2=test2,test3=test3,test4=test4,test5=test5)
+           self.assertEqual(run_test["test1"], rez1, "Вредност променљиве 'test1' треба да буде %s" % rez1)
+           self.assertEqual(run_test["test2"], rez2, "Вредност променљиве 'test2' треба да буде %s" % rez2)
+           self.assertEqual(run_test["test3"], rez3, "Вредност променљиве 'test3' треба да буде %s" % rez3)
+           self.assertEqual(run_test["test4"], rez4, "Вредност променљиве 'test4' треба да буде %s" % rez4)
+           self.assertEqual(run_test["test5"], rez5, "Вредност променљиве 'test5' треба да буде %s" % rez5)
+   myTests().main()
 
 
 Задатак 3.
@@ -335,57 +420,186 @@
 
 Напиши функцију ``max_niza(A)`` која за дати низ ``А``
 рачуна и враћа највећи елемент, али без употребе стандардне функције ``max``.
-Уместо три упитника напиши тело фукције, па онда провери како функција ради.
+Напиши тело функције, па онда провери како функција ради.
 
 .. activecode:: zadatak1-3
-   :coach:
+   :runortest: test1, test2, test3, test4, test5
+   :nocodelens:
 
+   # -*- acsection: general-init -*-
+   # -*- acsection: main -*-
    def max_niza(A):
-       ???
+       # Овде напиши функцију
+       return -1234  # поправи овај ред!
 
    # Провера
-   print(max_niza([1, 2, 3, 4, 55, 6]))
-   print(max_niza([1, 2, 3, 4, 55, 777]))
-   print(max_niza([111, 2, 3, 4]))
-   print(max_niza([1, 222]))
-   print(max_niza([22]))
+   test1 = max_niza([1, 2, 3, 4, 55, 6])
+   test2 = max_niza([1, 2, 3, 4, 55, 777])
+   test3 = max_niza([111, 2, 3, 4])
+   test4 = max_niza([1, 222])
+   test5 = max_niza([22])
+   # -*- acsection: after-main -*-
+   print(test1, test2, test3, test4, test5)
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+       def testOne(self):
+           rez1 = max([1, 2, 3, 4, 55, 6])
+           rez2 = max([1, 2, 3, 4, 55, 777])
+           rez3 = max([111, 2, 3, 4])
+           rez4 = max([1, 222])
+           rez5 = max([22])
+           run_test=acMainSection(test1=test1,test2=test2,test3=test3,test4=test4,test5=test5)
+           self.assertEqual(run_test["test1"], rez1, "Вредност променљиве 'test1' треба да буде %s" % rez1)
+           self.assertEqual(run_test["test2"], rez2, "Вредност променљиве 'test2' треба да буде %s" % rez2)
+           self.assertEqual(run_test["test3"], rez3, "Вредност променљиве 'test3' треба да буде %s" % rez3)
+           self.assertEqual(run_test["test4"], rez4, "Вредност променљиве 'test4' треба да буде %s" % rez4)
+           self.assertEqual(run_test["test5"], rez5, "Вредност променљиве 'test5' треба да буде %s" % rez5)
+   myTests().main()
+
+
 
 
 Задатак 4.
-''''''''''
-
-Напиши функцију ``min_i_max(A)`` која исписује најмањи и највећи елемент
-низа ``А``. (*Напомена: ова функција не треба да врати никакву вредност!
-Она само треба да испише два броја на екран.*)
-Уместо три упитника напиши тело фукције, па онда провери како функција ради.
-
-.. activecode:: zadatak1-4
-   :coach:
-
-   def min_i_max(A):
-       ???
-
-   # Провера
-   print(min_i_max([1, 2, 3, 4, 55, 6]))
-   print(min_i_max([2, 2]))
-   print(min_i_max([5]))
-
-
-Задатак 5*.
 '''''''''''
 
+На контролној провери из информатике у једној школи се ради шест задатака од којих сваки носи по 20 поена, али наставник даје оцену
+на основу пет најбоље урађених задатака. Напиши функцију ``zbir_najboljih_5(Z1, Z2, Z3, Z4, Z5, Z6)`` која
+за списак поена по задацима које је освојио неки ученик на тој контролној провери враћа збир поена пет најбоље урађених задатака.
+Напиши тело функције, па онда провери како функција ради.
+(Упутство: Задатак можеш решити употребом неколико if-ова, али и употребом стандардних функција ``sum`` и ``min``)
+
+.. activecode:: zadatak1-4
+   :runortest: test1, test2, test3
+   :nocodelens:
+
+   # -*- acsection: general-init -*-
+   # -*- acsection: main -*-
+   def zbir_najboljih_5(Z1, Z2, Z3, Z4, Z5, Z6):
+       # Овде напиши функцију
+       return -1234  # поправи овај ред!
+
+   # Провера
+   test1 = zbir_najboljih_5(20, 20, 20, 20, 20, 20)
+   test2 = zbir_najboljih_5(10,  0, 15, 20,  0, 20)
+   test3 = zbir_najboljih_5( 5,  7, 10, 15, 17, 20)
+   # -*- acsection: after-main -*-
+   print(test1, test2, test3)
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+       def testOne(self):
+           L = [20, 20, 20, 20, 20, 20]; rez1 = sum(L) - min(L)
+           L = [10,  0, 15, 20,  0, 20]; rez2 = sum(L) - min(L)
+           L = [ 5,  7, 10, 15, 17, 20]; rez3 = sum(L) - min(L)
+           run_test = acMainSection(test1=test1,test2=test2,test3=test3)
+           self.assertEqual(run_test["test1"], rez1, "Вредност променљиве 'test1' треба да буде %s" % rez1)
+           self.assertEqual(run_test["test2"], rez2, "Вредност променљиве 'test2' треба да буде %s" % rez2)
+           self.assertEqual(run_test["test3"], rez3, "Вредност променљиве 'test3' треба да буде %s" % rez3)
+   myTests().main()
+
+
+Задатак 5.
+''''''''''
+
 Напиши функцију ``srednji_od_tri(A0, A1, A2)`` која рачуна и враћа средњи од три дата броја.
-Уместо три упитника напиши тело фукције, па онда провери како функција ради.
+Напиши тело функције, па онда провери како функција ради.
+(Упутство: Задатак можеш решити употребом неколико if-ова, али и употребом функција ``sum``, ``min`` и ``max``!)
 
 
 .. activecode:: zadatak1-5
-   :coach:
+   :runortest: test1, test2, test3, test4
+   :nocodelens:
 
-   def srednji_od_tri(A):
-       ???
+   # -*- acsection: general-init -*-
+   # -*- acsection: main -*-
+   def srednji_od_tri(A0, A1, A2):
+       # Овде напиши функцију
+       return -1234  # поправи овај ред!
 
    # Провера
-   print(srednji_od_tri(2, 7, 5))
-   print(srednji_od_tri(2, 5, 5))
-   print(srednji_od_tri(5, 5, 1))
-   print(srednji_od_tri(2, 2, 2))
+   test1 = srednji_od_tri(2, 7, 5)
+   test2 = srednji_od_tri(2, 5, 5)
+   test3 = srednji_od_tri(5, 5, 1)
+   test4 = srednji_od_tri(2, 2, 2)
+   # -*- acsection: after-main -*-
+   print(test1, test2, test3, test4)
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+       def testOne(self):
+           L = [2, 7, 5]; rez1 = sum(L) - min(L) - max(L)
+           L = [2, 5, 5]; rez2 = sum(L) - min(L) - max(L)
+           L = [5, 5, 1]; rez3 = sum(L) - min(L) - max(L)
+           L = [2, 2, 2]; rez4 = sum(L) - min(L) - max(L)
+           run_test=acMainSection(test1=test1,test2=test2,test3=test3,test4=test4)
+           self.assertEqual(run_test["test1"], rez1, "Вредност променљиве 'test1' треба да буде %s" % rez1)
+           self.assertEqual(run_test["test2"], rez2, "Вредност променљиве 'test2' треба да буде %s" % rez2)
+           self.assertEqual(run_test["test3"], rez3, "Вредност променљиве 'test3' треба да буде %s" % rez3)
+           self.assertEqual(run_test["test4"], rez4, "Вредност променљиве 'test4' треба да буде %s" % rez4)
+   myTests().main()
+
+
+
+Задатак 6.
+'''''''''''
+
+Један наставник информатике закључује оцене тако што пре рачунања просечне оцене одбаци највећу и најмању оцену,
+па просек рачуна на основу преосталих оцена. Напиши функцију ``prosek_bez_ekstrema(ocene)`` која
+за списак оцена које је неки ученик добио из информатике рачуна просечну оцену на описани начин.
+Напиши тело функције, па онда провери како функција ради.
+(Упутство: Задатак можеш решити употребом стандардних функција ``sum``, ``min``, ``max`` и ``len``)
+
+.. activecode:: zadatak1-6
+   :runortest: test1, test2, test3
+   :nocodelens:
+
+   # -*- acsection: general-init -*-
+   # -*- acsection: main -*-
+   def prosek_bez_ekstrema(ocene):
+       # Овде напиши функцију
+       return -1234  # поправи овај ред!
+
+   # Провера
+   test1 = prosek_bez_ekstrema([5, 5, 5, 5, 5])
+   test2 = prosek_bez_ekstrema([1, 2, 5])
+   test3 = prosek_bez_ekstrema([1, 2, 3, 4, 5])
+   # -*- acsection: after-main -*-
+   print(test1, test2, test3)
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+       def testOne(self):
+           L = [5, 5, 5, 5, 5]; rez1 = (sum(L) - min(L) - max(L))/(len(L) - 2)
+           L = [1, 2, 5];       rez2 = (sum(L) - min(L) - max(L))/(len(L) - 2)
+           L = [1, 2, 3, 4, 5]; rez3 = (sum(L) - min(L) - max(L))/(len(L) - 2)
+           run_test = acMainSection(test1=test1,test2=test2,test3=test3)
+           self.assertEqual(run_test["test1"], rez1, "Вредност променљиве 'test1' треба да буде %s" % rez1)
+           self.assertEqual(run_test["test2"], rez2, "Вредност променљиве 'test2' треба да буде %s" % rez2)
+           self.assertEqual(run_test["test3"], rez3, "Вредност променљиве 'test3' треба да буде %s" % rez3)
+   myTests().main()
+
+
+
+Задаци из Алгоритамске збирке задатака
+----------------------------------------------
+
+У следећим задацима можете да увежбате основне операције са низовима. 
+
+https://petlja.org/biblioteka/r/problemi/Zbirka/ispis_u_obratnom_redosledu
+
+https://petlja.org/biblioteka/r/problemi/Zbirka/parni_i_neparni_elementi
+
+|
+
+(Администрација)
+----------------------------------------------
+
+*Овде не треба ништа да радиш! Слободно пређи на следећу лекцију!*
+
+.. activecode:: Zikine_ocene
+   :nocodelens:
+   :autorun:
+   :hidecode:
+   
+   Zikine_ocene = [2, 4, 3, 5, 4, 5, 4, 3]

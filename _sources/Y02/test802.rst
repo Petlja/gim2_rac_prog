@@ -61,7 +61,15 @@
    :feedback_b: Тачно!
    :feedback_c: Погледај још једном дефиницију функције ``saberi``.
 
-   Шта ће исписати наредба ``print(saberi([]))``? (Функцију ``saberi`` смо видели у лекцији!)
+   Шта ће исписати наредба ``print(saberi([]))`` где је функција ``saberi`` дата овако:
+
+   .. code-block:: python
+   
+      def saberi(L):
+          zbir = 0
+          for x in L:
+              zbir += x
+          return zbir
 
 Питање 5.
 ~~~~~~~~~~~

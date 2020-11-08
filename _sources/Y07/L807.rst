@@ -62,8 +62,13 @@
 Читање из текстуалне датотеке
 -----------------------------
 
-Са `овог линка <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/podaci/Iliad.txt>`_ можеш да преузмеш текстуалну датотеку
-*Iliad.txt* која садржи енглески превод Хомерове *Илијаде*. Ако отворимо ову датотеку из неког едитора као што је
+..
+   Са `овог линка <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/podaci/Iliad.txt>`_ можеш да преузмеш текстуалну датотеку
+
+У фолдеру ``primeri`` на твом рачунару се налази текстуална датотека
+*Iliad.txt* која садржи енглески превод Хомерове *Илијаде*.
+
+Ако отворимо ову датотеку из неког едитора као што је
 *Notepad* видећемо да текстуална датотека изгледа као текст који је организован у редове, рецимо овако:
 
 
@@ -124,13 +129,14 @@
 
 .. activecode:: primerA-1
    :available_files: Iliad.txt
+   :includesrc: _src/P7_Broj_redova.py
+   
+.. infonote::
 
-   f = open("Iliad.txt", "r")
-   br_redova = 0
-   for red in f:
-       br_redova += 1
-   f.close()
-   print("Datoteka Iliad.txt ima", br_redova, "redova")
+   Изврши исти програм и у Пајтон окружењу!
+   
+   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P7_Broj_redova.py`` и изврши га.
+   (Да те подсетимо, датотека *Iliad.txt* се већ налази у фолдеру ``primeri`` на твом рачунару!)
 
 Пример.
 '''''''
@@ -151,14 +157,14 @@
 
 .. activecode:: primerA-2
    :available_files: Iliad.txt
+   :includesrc: _src/P7_Broj_knjiga.py
+   
+.. infonote::
 
-   f = open("Iliad.txt", "r")
-   br_knjiga = 0
-   for red in f:
-       if red[:4] == "BOOK":
-           br_knjiga += 1
-   f.close()
-   print("Homerova Ilijada ima", br_knjiga, "knjiga(e)")
+   Изврши исти програм и у Пајтон окружењу!
+   
+   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P7_Broj_knjiga.py`` и изврши га.
+   (Да те подсетимо, датотека *Iliad.txt* се већ налази у фолдеру ``primeri`` на твом рачунару!)
 
 
 Пример.
@@ -173,16 +179,14 @@
 
 .. activecode:: primerA-3
    :available_files: Iliad.txt
+   :includesrc: _src/P7_Ahil_Hektor_1.py
+   
+.. infonote::
 
-   f = open("Iliad.txt", "r")
-   br_ahil = 0
-   br_hektor = 0
-   for red in f:
-       br_ahil += red.count("Achilles")
-       br_hektor += red.count("Hector")
-   f.close()
-   print("Ahil se pominje", br_ahil, "puta")
-   print("Hektor se pominje", br_hektor, "puta")
+   Изврши исти програм и у Пајтон окружењу!
+   
+   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P7_Ahil_Hektor_1.py`` и изврши га.
+   (Да те подсетимо, датотека *Iliad.txt* се већ налази у фолдеру ``primeri`` на твом рачунару!)
 
 *Решење 2.* Ако су датотеке са којима радимо релативно мале (а то зависи од количине меморије коју имамо)
 могуће је функцијом ``read()`` учитати целу датотеку у меморију као један велики стринг.
@@ -190,13 +194,14 @@
 
 .. activecode:: primerA-4
    :available_files: Iliad.txt
-
-   f = open("Iliad.txt", "r")
-   ceo_tekst = f.read()
-   f.close()
+   :includesrc: _src/P7_Ahil_Hektor_2.py
    
-   print("Ahil se pominje", ceo_tekst.count("Achilles"), "puta")
-   print("Hektor se pominje", ceo_tekst.count("Hector"), "puta")
+.. infonote::
+
+   Изврши исти програм и у Пајтон окружењу!
+   
+   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P7_Ahil_Hektor_2.py`` и изврши га.
+   (Да те подсетимо, датотека *Iliad.txt* се већ налази у фолдеру ``primeri`` на твом рачунару!)
 
 
 Читање сложенијих података представљених текстуалним датотекама
@@ -205,8 +210,13 @@
 Као што смо већ видели, постоје разни формати за табеларно представљање података,
 а најједноставнији од њих се зове *CSV*, (од енгл. *comma separated values* што значи "вредности раздвојене зарезима").
 Интересантно је да је *CSV* датотека је *текстуална датотека* у којој редови одговарају редовима табеле,
-а подаци унутар истог реда су раздвојени зарезима. На пример,
-на `овом линку <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/podaci/Top25YouTubers.csv>`_ се налази датотека *Top25YouTubers.csv* која изгледа овако:
+а подаци унутар истог реда су раздвојени зарезима.
+
+..
+   На пример, на `овом линку <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/podaci/Top25YouTubers.csv>`_
+
+У фолдеру ``primeri`` на твом рачунару
+се налази датотека *Top25YouTubers.csv* која изгледа овако:
 
 .. code-block:: text
 
@@ -264,7 +274,7 @@ VIEWES). Врста
 Пример.
 '''''''
 
-датотека Top25YouTubers.csv садржи податке о 25 најпопуларнијих Јутјубера према броју претплатника на дан 1.7.2019.
+Датотека Top25YouTubers.csv садржи податке о 25 најпопуларнијих Јутјубера према броју претплатника на дан 1.7.2019.
 Први ред табеле представља заглавље табеле које нам каже да табела има шест колона
 (RANK, GRADE, NAME, VIDEOS, SUBSCRIBERS, VIEWES).
 
@@ -282,21 +292,15 @@ VIEWES). Врста
 
 .. activecode:: primerA-6
    :available_files: Top25YouTubers.csv
+   :includesrc: _src/P7_Top25.py
+   
+.. infonote::
 
-   f = open("Top25YouTubers.csv", "r")
-   br_vid = 0
-   naj_kanal = ""
-   prvi_red = True
-   for red in f:
-       if prvi_red:
-	       prvi_red = False
-       else:
-           s = red.split(",")
-           if int(s[3]) > br_vid:
-               br_vid = int(s[3])
-               naj_kanal = s[2]
-   f.close()
-   print("Najvise videa je objavio kanal", naj_kanal)
+   Изврши исти програм и у Пајтон окружењу!
+   
+   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P7_Top25.py`` и изврши га.
+   (Да те подсетимо, датотека *Top25YouTubers.csv* се већ налази у фолдеру ``primeri`` на твом рачунару!)
+
 
 Писање у текстуалну датотеку
 -----------------------------
@@ -364,6 +368,13 @@ VIEWES). Врста
    f.write("nad obe katete.")
    f.close()
 
+.. infonote::
+
+   Изврши овај програм у Пајтон окружењу!
+   
+   Покрени IDLE, у фолдеру ``primeri`` **направи фајл** ``P7_Pitagora.py``, унеси горњи програм и изврши га.
+
+
 Ако сада погледамо шта је уписано у датотеку, рецимо користећи програм *Notepad*, видећемо да ствари нису баш онакве
 како смо из замислили:
 
@@ -399,6 +410,12 @@ VIEWES). Врста
    :align: center
 
 као што смо и желели. Приметимо да је други позив наредбе ``open("pitagora.txt", "w")`` прво обрисао стару датотеку!
+
+.. infonote::
+
+   Изврши овај програм у Пајтон окружењу!
+   
+   Покрени IDLE, у фолдеру ``primeri`` пронађи свој фајл ``P7_Pitagora.py``. Учитај га у окружење, измени програм и изврши га.
 
 Пример.
 '''''''
@@ -451,6 +468,13 @@ VIEWES). Врста
    f.write("'Put those monkeys back to bed!'\n")
    f.close()
 
+.. infonote::
+
+   Изврши овај програм у Пајтон окружењу!
+   
+   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P7_Pesmica.py`` и изврши га.
+
+
 Рад са више датотека истовремено
 --------------------------------
 
@@ -469,9 +493,13 @@ VIEWES). Врста
 Пример.
 '''''''
 
-Са `овог линка <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/podaci/Iliad.txt>`_ преузми текстуалну датотеку
-*Iliad.txt* која садржи енглески превод Хомерове *Илијаде*, па
-напиши Пајтон програм који у датотеку duzine.txt уписује дужине редова из датотеке Iliad.txt.
+
+..
+   Са `овог линка <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/podaci/Iliad.txt>`_ преузми текстуалну датотеку
+   *Iliad.txt* која садржи енглески превод Хомерове *Илијаде*, па
+
+Напиши Пајтон програм који у датотеку duzine.txt уписује дужине редова из датотеке Iliad.txt.
+(Да те подсетимо, датотека *Iliad.txt* се већ налази у фолдеру ``primeri`` на твом рачунару!)
 
 *Решење.* Подсетимо се да командом ``write`` у датотеку можемо да уписујемо само стрингове.
 Ако је потребно да у датотеку упишемо неку другу врсту података, он прво мора бити конвертована у стринг
@@ -488,16 +516,26 @@ VIEWES). Врста
    f.close()
    g.close()
 
+.. infonote::
+
+   Изврши овај програм у Пајтон окружењу!
+   
+   Покрени IDLE, у фолдеру ``primeri`` **направи нову датотеку** ``P7_Duzine_redova.py``, унеси у њу горњи програм и изврши га.
+   (Да те подсетимо, датотека *Iliad.txt* се већ налази у фолдеру ``primeri`` на твом рачунару!)
 
 
 Пример.
 '''''''
 
 Датотеке BOOK01.txt, BOOK02.txt, ..., BOOK12.txt
-садрже првих дванаест књига енглеског превода Хомерове *Илијаде*.
-Зип фајл који садржи ове датотеке можеш да преузмеш `овде <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/podaci/BOOK1-12.zip>`_.
+садрже првих дванаест књига енглеског превода Хомерове *Илијаде*
+и већ се налазе на твом рачунару у фолдеру ``primeri``.
 Напиши Пајтон програм који их спаја у једну датотеку под именом iliad_vol1.txt.
 Прва два реда у датотеци треба да гласе:
+
+..
+   Зип фајл који садржи ове датотеке можеш да преузмеш `овде <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/podaci/BOOK1-12.zip>`_.
+
 
 .. code-block:: text
 
@@ -536,26 +574,93 @@ VIEWES). Врста
    vol1.write("END OF VOLUME I.\n")
    vol1.close()
 
+.. infonote::
+
+   Изврши овај програм у Пајтон окружењу!
+   Покрени IDLE, у фолдеру ``primeri`` **направи нову датотеку** ``P7_Spajanje.py``, унеси у њу горњи програм и изврши га.
+   (Да те подсетимо, датотекe BOOK01.txt, BOOK02.txt, ..., BOOK12.txt се већ налазе у фолдеру ``primeri`` на твом рачунару!)
 
 Задаци.
 -------
 
-**Задатак 1.** Написати Пајтон програм који одређује колико у датотеци *Iliad.txt* има слова која нису празнине,
-ни специјални симболи.
+Задатак 1.
+''''''''''''''''''''''
+
+Написати Пајтон програм који одређује колико у датотеци *Iliad.txt* има слова која нису празнине
+ни специјални симболи. У овоме ти може помоћи функција ``isalpha()``.
 
 .. activecode:: primerA-7
    :available_files: Iliad.txt
-   
-   ???
+   :runortest: n
+   :nocodelens:
 
-**Задатак 2.** Написати Пајтон програм који одређује колико у датотеци *Iliad.txt* има речи.
+   # -*- acsection: general-init -*-
+   # -*- acsection: main -*-
+   
+   # овде напиши програм који у у променљиву n смешта број слова
+   # која нису празнине ни специјални симболи
+   
+   n = 0 # поправи овај ред!
+
+   # -*- acsection: after-main -*-
+
+   print("Datoteka 'Iliad.txt' ima", n, "slova")
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+       def testOne(self):
+           rez = 606583
+           run_test = acMainSection(n=n)
+           self.assertEqual(run_test["n"], rez, "Вредност променљиве 'n' треба да буде %s" % rez)
+   myTests().main()
+   
+
+.. infonote::
+
+   Реши овај задатак и у Пајтон окружењу!
+   (Да те подсетимо, датотека *Iliad.txt* се већ налази у фолдеру ``primeri`` на твом рачунару!)
+
+
+Задатак 2.
+''''''''''''''''''''''
+
+Написати Пајтон програм који одређује колико у датотеци *Iliad.txt* има речи.
 
 .. activecode:: primerA-8
    :available_files: Iliad.txt
-   
-   ???
+   :runortest: n
+   :nocodelens:
 
-**Задатак 3.** Написати Пајтон програм који датотеку *Iliad.txt* преписује у нову која се зове
+   # -*- acsection: general-init -*-
+   # -*- acsection: main -*-
+   
+   # овде напиши програм који у у променљиву n смешта број речи
+   
+   n = 0 # поправи овај ред!
+
+   # -*- acsection: after-main -*-
+
+   print("Datoteka 'Iliad.txt' ima", n, "reči")
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+       def testOne(self):
+           rez = 148518
+           run_test = acMainSection(n=n)
+           self.assertEqual(run_test["n"], rez, "Вредност променљиве 'n' треба да буде %s" % rez)
+   myTests().main()
+   
+
+.. infonote::
+
+   Реши овај задатак и у Пајтон окружењу!
+   (Да те подсетимо, датотека *Iliad.txt* се већ налази у фолдеру ``primeri`` на твом рачунару!)
+
+Задатак 3.
+''''''''''''''''''''''
+
+(Задатак реши у IDLE окружењу)
+Написати Пајтон програм који датотеку *Iliad.txt* преписује у нову која се зове
 *iliad-num.txt* у којој сваки непразан ред има свој број, рецимо овако:
 
 .. code-block:: text
@@ -577,14 +682,28 @@ VIEWES). Врста
       13. Confronted stood by Peleus' godlike son.
       14. ...
 
-**Задатак 4.** у тексуталној датотеци `brojevi.txt <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/podaci/brojevi.txt>`_ налази се више редова текста,
+
+Задатак 4.
+''''''''''''''''''''''
+
+(Задатак реши у IDLE окружењу)
+У тексуталној датотеци *brojevi.txt* која се већ налази у фолдеру ``primeri`` на твом рачунару
+налази се више редова текста,
 а сваки ред се састоји из низа бројева раздвојених зарезима. Написати Пајтон програм који чита ову
 датотеку и у текстулану датотеку *brojevi-izlaz.txt* уписује, ред по ред, збирове бројева из сваког реда.
 Дакле, први ред датотеке *brojevi-izlaz.txt* садржи само један број који је збир бројева из првог реда датотеке
 *brojevi.txt* и тако редом.
 
-**Задатак 5.** У једној од ранијих вежби си већ преузео датотеке ``BOOK01.txt``, ``BOOK02.txt``, ..., ``BOOK12.txt``
-садрже првих дванаест књига енглеског превода Хомерове *Илијаде*.
+..
+   `brojevi.txt <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/podaci/brojevi.txt>`_
+
+
+Задатак 5.
+''''''''''''''''''''''
+
+(Задатак реши у IDLE окружењу)
+Да те подсетимо: датотеке BOOK01.txt, BOOK02.txt, ..., BOOK12.txt
+садрже првих дванаест књига енглеског превода Хомерове *Илијаде* и већ се налазе у фолдеру ``primeri`` на твом рачунару.
 
 *(а)* Напиши Пајтон програм који утврђује која од ових дванаест књига има највише речи, као и о ком броју речи се ради.
 

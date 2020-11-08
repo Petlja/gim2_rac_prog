@@ -97,12 +97,15 @@
 Коначно, ево програма који исписује таблицу множења *као табелу*:
 
 .. activecode:: primer4-5
+   :includesrc: _src/P4_Tablica_mnoz.py
 
-   for i in range(10):
-       for j in range(10):
-           s = str((i + 1)*(j + 1))
-           print(s.rjust(4), end="")
-       print()
+.. infonote::
+
+   Изврши исти програм и у Пајтон окружењу!
+   
+   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P4_Tablica_mnoz.py`` и изврши га.
+
+
 
 
 Пример.
@@ -121,16 +124,13 @@
 итд. Ово је пример позива функције за ``n = 5``.
 
 .. activecode:: primer4-6
+   :includesrc: _src/P4_Trougao.py
 
-   def trougao_brojeva(n):
-       for i in range(n + 1):
-           for j in range(i):
-               s = str(j + 1)
-               print(s.rjust(4), end="")
-           print()
+.. infonote::
 
-   # Провера
-   trougao_brojeva(6)
+   Изврши исти програм и у Пајтон окружењу!
+   
+   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P4_Trougao.py`` и изврши га.
 
 
 Пример.
@@ -155,18 +155,14 @@
 док ће две петље само регулисати облик троугла, овако:
 
 .. activecode:: primer4-7
+   :includesrc: _src/P4_Trougao_2.py
 
-   def trougao_brojeva_2(n):
-       broj = 1
-       for i in range(n + 1):
-           for j in range(i):
-               s = str(broj)
-               print(s.rjust(4), end="")
-               broj += 1
-           print()
+.. infonote::
 
-   # Провера
-   trougao_brojeva_2(6)
+   Изврши исти програм и у Пајтон окружењу!
+   
+   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P4_Trougao_2.py`` и изврши га.
+
 
 Пример.
 '''''''
@@ -188,13 +184,14 @@
 Сада се програм лако пише:
 
 .. activecode:: primer4-8
+   :includesrc: _src/P4_Treci_stepen_cif.py
 
-   for a in range(9):
-       for b in range(9):
-           for c in range(9):
-               for d in range(9):
-                   if 1000*a + 100*b + 10*c + d == (a + b + c + d)**3:
-                       print(1000*a + 100*b + 10*c + d)
+.. infonote::
+
+   Изврши исти програм и у Пајтон окружењу!
+   
+   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P4_Treci_stepen_cif.py`` и изврши га.
+
    
 Табеле са подацима
 ------------------
@@ -289,18 +286,30 @@
 
    # ne znamo koja devojcica je najvisa, pa stavljamo prazan string u ime
    ime = ""
+
    # ne znamo nista o njenoj visini, pa stavljamo vrednost koja je manja od svake razumne vrednosti
    visina = 0
+
    for ucenik in razred:
        if ucenik[1] == "ž" and ucenik[4] > visina:
            ime = ucenik[0]
    print("Najvisa devojcica je", ime)
 
+.. infonote::
+
+   Изврши исти програм и у Пајтон окружењу!
+   
+   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P4_Grupa_dece.py`` и изврши га.
 
 Задаци
 ------
 
-**Задатак 1.** Испистати таблицу *сабирања*, али само за цифре 0, 1, ..., 9
+Задатак 1.
+''''''''''''''''''''''
+
+(Задатак реши у IDLE окружењу)
+Напиши Пајтон програм који исписује таблицу *сабирања*, али само за цифре 0, 1, ..., 9, овако:
+
 
 .. code-block:: text
 
@@ -316,8 +325,13 @@
      7 | 7   8   9  10  11  12  13  14  15  16 
      8 | 8   9  10  11  12  13  14  15  16  17 
      9 | 9  10  11  12  13  14  15  16  17  18 
-   
-**Задатак 2.** Написати функцију ``spec_trougao(n)`` која исписује првих *n* редова следећег троугла бројева:
+
+  
+Задатак 2.
+''''''''''''''''''''''
+
+(Задатак реши у IDLE окружењу)
+Написати Пајтон програм који од корисника учитава природан број *n* и онда исписује првих *n* редова следећег троугла бројева:
 
 *(а)*
 
@@ -349,8 +363,12 @@
     5  6  7  8  9  8  7  6  5
 
 
-**Задатак 3.** Написати функцију ``zmijasto(n)`` која бројеве 1, 2, 3, ..., :math:`n^2`
-уписује у квадрат :math:`n \times n` "змијасто". На пример, за :math:`n = 5` функција исписује:
+Задатак 3.
+''''''''''''''''''''''
+
+(Задатак реши у IDLE окружењу)
+Написати Пајтон програм који од корисника учитава природан број *n* и онда бројеве 1, 2, 3, ..., :math:`n^2`
+уписује у квадрат :math:`n \times n` "змијасто". На пример, за :math:`n = 5` програм исписује:
 
 .. code-block:: text
 
@@ -360,22 +378,34 @@
     20  19  18  17  16
     21  22  23  24  25
 
-**Задатак 4.** Наћи све бројеве са највише четири цифре који су једнаки
+Задатак 4.
+''''''''''''''''''''''
+
+(Задатак реши у IDLE окружењу)
+Наћи све бројеве са највише четири цифре који су једнаки
 
 *(а)* квадрату збира својих цифара;
 
 *(б)* четвртом степену збира својих цифара.
 
-**Задатак 5*.** Наћи сва могућа дешифровања следећег сабирања:
+Задатак 5.
+''''''''''''''''''''''
+
+(Задатак реши у IDLE окружењу)
+Наћи сва могућа дешифровања следећег сабирања:
 
 .. code-block:: text
 
-    АВ + ... + АВ = ЛАВ
+    АВ + ... + АВ = ПАС
 
 где са десне стране имамо најмање два сабирка. Наравно, истим словима одговарају исте цифре,
 а различитим словима различите. При томе цифре А и Л не смеју да буду 0.
 
-**Задатак 6*.** Наћи сва могућа дешифровања следећег сабирања:
+Задатак 6.
+''''''''''''''''''''''
+
+(Задатак реши у IDLE окружењу)
+Наћи сва могућа дешифровања следећег сабирања:
 
 .. code-block:: text
 
@@ -384,30 +414,60 @@
 где са десне стране имамо најмање два сабирка. Наравно, истим словима одговарају исте цифре,
 а различитим словима различите. При томе цифре Л и М не смеју да буду 0.
 
-**Задатак 7.** Дати су подаци о ученицима једног разреда. Напиши Пајтон програм који одређује
-ко је најлакши у разреду, и ко је налјакши дечак у разреду.
+Задатак 7.
+''''''''''''''''''''''
+
+Дати су подаци о ученицима једног разреда. Напиши Пајтон програм који одређује
+ко је најлакши у разреду, и ко је најтежи дечак у разреду.
 
 .. activecode:: primer4-13
+   :runortest: ime1, ime2
+   :nocodelens:
 
+   # -*- acsection: general-init -*-
    razred = [["Ana",     "ž", 13, 46, 160],
              ["Bojan",   "m", 14, 52, 165],
              ["Vlada",   "m", 13, 47, 157],
              ["Gordana", "ž", 15, 54, 165],
              ["Dejan",   "m", 15, 56, 163],
-             ["Đorđe",   "m", 13, 45, 159],
+             ["Đorđe",   "m", 13, 47, 159],
              ["Elena",   "ž", 14, 49, 161],
              ["Žaklina", "ž", 15, 52, 164],
              ["Zoran",   "m", 15, 57, 167],
              ["Ivana",   "ž", 13, 45, 158],
              ["Jasna",   "ž", 14, 51, 162]]
-
-   # овде напиши програм
-   ???
+   # -*- acsection: main -*-
    
-   print("Najlaksi ucenik u razredu je", ime1)
-   print("Najlaksi decak u razredu je", ime2)
+   # овде напиши програм који име најлакшег ученика (независно од пола!) у разреду
+   # смешта у променљиву ime1, а име најтежег дечака у разреду у променљиву ime2
+   
+   ime1 = "" # поправи овај ред!
+   ime2 = "" # поправи овај ред!
 
-**Задатак 8.** Ево трошкова живота једне породице током једне године, по месецима (сви износи су представљени у динарима):
+   # -*- acsection: after-main -*-
+
+   print("Najlaksi ucenik u razredu je", ime1)
+   print("Najtezi decak u razredu je", ime2)
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+       def testOne(self):
+           rez1 = "Ivana"
+           rez2 = "Zoran"
+           run_test = acMainSection(ime1=ime1,ime2=ime2)
+           self.assertEqual(run_test["ime1"], rez1, "Вредност променљиве 'ime1' треба да буде %s" % rez1)
+           self.assertEqual(run_test["ime2"], rez2, "Вредност променљиве 'ime2' треба да буде %s" % rez2)
+   myTests().main()
+
+
+
+Задатак можеш решити и у Пајтон окружењу.
+Покрени IDLE па из фолдера ``primeri`` учитај програм ``P4_Grupa_dece_2.py``.
+
+Задатак 8.
+''''''''''''''''''''''
+
+Ево трошкова живота једне породице током једне године, по месецима (сви износи су представљени у динарима):
 
 .. code-block:: text
   
@@ -422,32 +482,70 @@
     Hrana             23.250 23.780 24.019 24.117 24.389 24.571 24.736 24.951 25.111 25.389 25.531 25.923
     Ostalo             4.500  3.700  5.100  3.500  2.750  4.250  7.320  8.250  3.270  4.290  3.200  8.390
 
-Испод су исти подаци представљени табелом. Напиши Пајтон програм који рачуна укупне трошкове ове породице по месецима (колико је породица укупно потрошила у јануару, колико у фебруару итд).
+Испод су исти подаци представљени табелом. Напиши Пајтон програм који рачуна укупне трошкове ове породице по месецима
+(колико је породица укупно потрошила у јануару, колико у фебруару итд).
 
 .. activecode:: primer4-14
+   :includesrc: _src/P4_Troskovi.py
 
-   troskovi = [
-     ["Stanarina", 8251, 8436, 8524, 8388, 8241, 8196, 8004, 7996, 7991, 8015, 8353, 8456],
-     ["Struja", 4321, 4530, 4115, 3990, 3985, 3726, 3351, 3289, 3295, 3485, 3826, 3834],
-     ["Telefon (fiksni)", 1425, 1538, 1623, 1489, 1521, 1485, 1491, 1399, 1467, 1531, 1410, 1385],
-     ["Telefon (mobilni)", 2181, 2235, 2073, 1951, 1989, 1945, 3017, 2638, 2171, 1831, 1926, 1833],
-     ["TV i internet", 2399, 2399, 2399, 2399, 2399, 2399, 2399, 2399, 2399, 2399, 2399, 2399 ],
-     ["Prevoz", 1830, 1830, 1830, 1830, 1950, 1950, 1450, 1450, 1950, 1950, 2050, 2050],
-     ["Hrana", 23250, 23780, 24019, 24117, 24389, 24571, 24736, 24951, 25111, 25389, 25531, 25923],
-     ["Ostalo", 4500, 3700, 5100, 3500, 2750, 4250, 7320, 8250, 3270, 4290, 3200, 8390]
-   ]
-   
-   # овде напиши програм
-   ???
+Задатак можеш решити и у Пајтон окружењу.
+Покрени IDLE па из фолдера ``primeri`` учитај програм ``P4_Troskovi.py``.
 
 
+Задаци из Алгоритамске збирке задатака
+----------------------------------------------
 
+Решавањем следећих задатака можете да увежбате додатне вештине у раду са угнежђеним циклусима. 
 
+|
 
+**Уводни задаци**
 
+https://petlja.org/biblioteka/r/problemi/Zbirka/serije_123
 
+https://petlja.org/biblioteka/r/problemi/Zbirka/serije_neparni_parni
 
+https://petlja.org/biblioteka/r/problemi/Zbirka/tablica_mnozenja
 
+|
 
+**Комбинаторни објекти**
 
+https://petlja.org/biblioteka/r/problemi/Zbirka/ciklicne_permutacije
+
+https://petlja.org/biblioteka/r/problemi/Zbirka/kockice_za_jamb
+
+https://petlja.org/biblioteka/r/problemi/Zbirka/trouglovi_datog_obima
+
+https://petlja.org/biblioteka/r/problemi/Zbirka/kombinacije_poena
+
+https://petlja.org/biblioteka/r/problemi/Zbirka/varijacije_trojki
+
+https://petlja.org/biblioteka/r/problemi/Zbirka/brojevi_u_datoj_osnovi
+
+https://petlja.org/biblioteka/r/problemi/Zbirka/mali_loto
+
+|
+
+**Сегменти**
+
+https://petlja.org/biblioteka/r/problemi/Zbirka/svi_desni_segmenti_1_n
+
+https://petlja.org/biblioteka/r/problemi/Zbirka/svi_levi_segmenti_1_n
+
+https://petlja.org/biblioteka/r/problemi/Zbirka/sve_podreci
+
+https://petlja.org/biblioteka/r/problemi/Zbirka/sve_podreci_po_opadajucoj_duzini
+
+|
+
+**ASCII цртежи**
+
+https://petlja.org/biblioteka/r/problemi/Zbirka/kvadrat_od_zvezdica
+
+https://petlja.org/biblioteka/r/problemi/Zbirka/trougao_od_zvezdica
+
+https://petlja.org/biblioteka/r/problemi/Zbirka/romb_od_zvezdica
+
+https://petlja.org/biblioteka/r/problemi/Zbirka/trougao_od_reci
 

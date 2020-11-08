@@ -20,7 +20,7 @@
    .. code-block:: python
 
       L = [5, 1, 6, 2, 3, 0]
-	  L.sort()
+      L.sort()
 
 Питање 2.
 ~~~~~~~~~~~~~~
@@ -41,7 +41,7 @@
    .. code-block:: python
 
       L = [5, 1, 6, 2, 3, 0]
-	  L.sort(reverse=True)
+      L.sort(reverse=True)
 
 Питање 3.
 ~~~~~~~~~~~~~~
@@ -62,7 +62,7 @@
    .. code-block:: python
 
       L = ["Ана", "Боки", "Цеца", "Деки"]
-	  L.sort(reverse=True)
+      L.sort(reverse=True)
 
 Питање 4.
 ~~~~~~~~~~~~~~

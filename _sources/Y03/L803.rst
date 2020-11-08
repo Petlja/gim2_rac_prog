@@ -37,19 +37,17 @@
 које је корисник унео као један низ симбола (такорећи *стринг*). На пример:
 
 .. activecode:: primer3-1
-   :coach:
+   :includesrc: _src/P3_Vokativ.py
 
-   print("Unesi svoje ime, prvo u nominativu pa onda u vokativu")
-   ime = input("nominativ: ")
-   ime_v = input("vokativ: ")
-   print("Aha! Znao sam!")
-   print("Ti se zoveš", ime)
-   print("Zdravo,", ime_v)
+.. infonote::
+
+   Изврши исти програм и у Пајтон окружењу!
+   
+   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P3_Vokativ.py`` и изврши га.
 
 Уграђена функција ``len`` враћа дужину стринга и користи се овако:
 
 .. activecode:: primer3-2
-   :coach:
 
    ime = input("Unesi ime:")
    print("Ti se zoveš", ime, "i tvoje ime ima", len(ime), "slova")
@@ -60,18 +58,16 @@
 Написати Пајтон програм који утврђује колико пута се неки симбол јавља у унетом стрингу.
 
 .. activecode:: primer3-3
-   :coach:
-
-   print("Utvrdjujemo koliko puta se neki simbol javlja u unetom stringu")
-   c = input("Unesi simbol: ")
-   s = input("Unesi string: ")
-   broj = 0
-   for x in s:
-       if x == c:
-           broj += 1
-   print("Simbol", c, "se u unetom stringu javlja", broj, "puta")
+   :includesrc: _src/P3_Broj_simbola.py
 
 Конструкција ``for x in s`` прође кроз цео стринг ``s`` слово по слово, па за свако појављивање симбола ``c`` увећамо бројач за 1.
+
+.. infonote::
+
+   Изврши исти програм и у Пајтон окружењу!
+   
+   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P3_Broj_simbola.py`` и изврши га.
+
 
 Пример.
 '''''''
@@ -79,18 +75,13 @@
 Написати Пајтон програм који утврђује да ли је у датом стрингу број отворених заграда ``(`` једнак броју затворених заграда ``)``.
 
 .. activecode:: primer3-4
-   :coach:
+   :includesrc: _src/P3_Zagrade.py
 
-   s = input("Unesi string")
-   br_otvorenih = 0
-   br_zatvorenih = 0
-   for x in s:
-       if x == "(": br_otvorenih += 1
-       if x == ")": br_zatvorenih += 1
-   if br_otvorenih == br_zatvorenih:
-       print("isti je broj otvorenih i zatvorenih zagrada")
-   else:
-       print("nije isti broj otvorenih i zatvorenih zagrada")
+.. infonote::
+
+   Изврши исти програм и у Пајтон окружењу!
+   
+   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P3_Zagrade.py`` и изврши га.
 
    
 Приступање елементима стринга и деловима стринга
@@ -111,7 +102,6 @@
 онда имамо:
 
 .. activecode:: primer3-5
-   :coach:
 
    s = "Popokatepetl"
    print(s[4])
@@ -121,7 +111,6 @@
 Последња кућица у низу има индекс -1 ("први од краја"), претпоследња -2 ("други од краја") и тако даље. Зато је:
 
 .. activecode:: primer3-6
-   :coach:
 
    s = "Popokatepetl"
    print(s[-1])
@@ -132,7 +121,6 @@
 (обрати пажњу: кренемо од *m*, али **не идемо** до *n* већ до кућице пре). На ово ћемо морати мало да се привикнемо. На пример,
 
 .. activecode:: primer3-7
-   :coach:
 
    s = "Popokatepetl"
    print(s[2:5])
@@ -143,7 +131,6 @@
 Ако желимо да издвојимо део стринга који креће од 6. кућице и иде до краја стринга, написаћемо *s[6:]*
 
 .. activecode:: primer3-8
-   :coach:
 
    s = "Popokatepetl"
    print(s[6:])
@@ -152,7 +139,6 @@
 *s[:7]*
 
 .. activecode:: primer3-9
-   :coach:
 
    s = "Popokatepetl"
    print(s[:7])
@@ -163,7 +149,6 @@
 Рецимо, последња четири елемента стринга добијамо овако:
 
 .. activecode:: primer3-10
-   :coach:
 
    s = "Popokatepetl"
    print(s[-4:])
@@ -171,7 +156,6 @@
 што је концизан запис за део стринга "од -4. кућице па до краја". С друге стране, "све осим последња два" можемо да запишемо овако:
 
 .. activecode:: primer3-11
-   :coach:
 
    s = "Popokatepetl"
    print(s[:-2])
@@ -183,18 +167,14 @@
 Написати Пајтон функцију ``prebroj_podstr(p, s)`` која утврђује колико пута се стринг ``p`` јавља као подстринг стринга ``s``.
 
 .. activecode:: primer3-12
-   :coach:
+   :includesrc: _src/P3_Prebroj_podstr.py
 
-   def prebroj_podstr(p, s):
-       broj = 0
-       n = len(p)
-       for i in range(len(s) - n + 1):
-           if p == s[i:i+n]:
-               broj += 1
-       return broj
+.. infonote::
 
-   # провера
-   print(prebroj_podstr("bana", "oprobana torta od banana"))
+   Изврши исти програм и у Пајтон окружењу!
+   
+   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P3_Prebroj_podstr.py`` и изврши га.
+
 
 Пример.
 '''''''
@@ -220,20 +200,14 @@
 програм треба да пријави да се ради о непознатом типу података.
 
 .. activecode:: primer3-13
-   :coach:
+   :includesrc: _src/P3_Ekstenzije.py
 
-   fajl = input("Unesi ime fajla: ")
-   ekstenzija = fajl[-4:] # uzimamo poslednja 4 simbola imena
-   if ekstenzija in [".txt", ".log"]:
-       print("tekstualni fajl")
-   elif ekstenzija in [".png", ".jpg", ".bmp"]:
-       print("slika")
-   elif ekstenzija == ".mpg":
-       print("video")
-   elif ekstenzija == ".mp3":
-       print("zvuk")
-   else:
-       print("Ovaj format mi nije poznat")
+.. infonote::
+
+   Изврши исти програм и у Пајтон окружењу!
+   
+   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P3_Ekstenzije.py`` и изврши га.
+
 
 Пример.
 '''''''
@@ -241,22 +215,15 @@
 Написати Пајтон функцију ``broj_reci(s)`` која у датом стрингу броји речи. Реч је непрекидан низ слова.
 
 .. activecode:: primer3-14
-   :coach:
+   :includesrc: _src/P3_Broj_reci.py
 
-   def broj_reci(s):
-       n = len(s)
-       broj = 0
-       for i in range(n-1):
-           if s[i].isalpha() and not s[i+1].isalpha():
-               broj += 1
-       if s[n-1].isalpha():
-           broj += 1
-       return broj
+.. infonote::
 
-   # провера
-   print(broj_reci("Ovo je samo primer!"))
-   print(broj_reci("Proba"))
-   print(broj_reci("!!!!"))
+   Изврши исти програм и у Пајтон окружењу!
+   
+   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P3_Broj_reci.py`` и изврши га.
+
+
 
 Операције са стринговима
 ------------------------
@@ -280,7 +247,6 @@
 Операција надовезивања стрингова се означава знаком `+`. На пример:
 
 .. activecode:: primer3-15
-   :coach:
 
    s = "Novi"
    t = "Beograd"
@@ -292,7 +258,6 @@
 Користећи операцију надовезивања можемо стрингу додати неки други стринг на почетак или на крај. На пример:
 
 .. activecode:: primer3-16
-   :coach:
 
    s = "bana"
    s = "opro" + s
@@ -305,7 +270,6 @@
 Још једна интересантна операција је множење стринга бројем:
 
 .. activecode:: primer3-17
-   :coach:
 
    print("Mir! " * 3)
 
@@ -315,7 +279,6 @@
 Ђоле треба 100 пута (за казну :-)) да испише реченицу "Ученици не смеју да се гађају кредом!". Помозите Ђолету!
 
 .. activecode:: primer3-18
-   :coach:
 
    print("Ученици не смеју да се гађају кредом! " * 100)
 
@@ -325,17 +288,13 @@
 Написати Пајтон функцију која обрће стринг.
 
 .. activecode:: primer3-19
-   :coach:
+   :includesrc: _src/P3_Obrni_string.py
 
-   def obrni_string(s):
-       novi = ""
-       for x in s:
-           novi = x + novi
-       return novi
+.. infonote::
 
-   # провера
-   print(obrni_string("Proba"))
-   print(obrni_string("ana voli milovana"))
+   Изврши исти програм и у Пајтон окружењу!
+   
+   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P3_Obrni_string.py`` и изврши га.
 
 Ова функција од стринга ``s`` у променљивој ``novi`` изгради нови стринг који садржи иста слова као и стринг ``s``,
 али у обрнутом редоследу. На почетку поставимо стринг ``novi`` на празан стринг. Потом у циклусу слова стринга
@@ -361,48 +320,162 @@
 која проверава да ли је нешто слово, као и уграђену функцију ``lower()`` која од стринга прави нови у коме су сва слова мала.
 
 .. activecode:: primer3-20
-   :coach:
+   :includesrc: _src/P3_Palindrom.py
 
-   s = input("Unesi string: ")
-   novi = ""
-   obrnut = ""
-   for x in s.lower():
-       if x.isalpha():
-           novi = novi + x
-           obrnut = x + obrnut
-   if novi == obrnut:
-       print("jeste palindrom")
-   else:
-       print("nije palindrom")
+.. infonote::
+
+   Изврши исти програм и у Пајтон окружењу!
+   
+   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P3_Palindrom.py`` и изврши га.
+
 
 Задаци
 ------
 
-**Задатак 1.** Написати Пајтон програм који од корисника учитава стринг и онда утврђује број самогласника и број сугласника у том стрингу.
+Задатак 1.
+''''''''''''''''''''''
+
+Написати Пајтон функцију ``broj_samoglasnika(s)`` која
+утврђује број самогласника у стрингу ``s``. Претпостављамо да ``s`` садржи реченицу
+српског језика, па треба пребројати само самогласнике који се јављају у српском (а, е, и, о, у),
+*независно од тога да ли је реченица написана ћирилицом или латиницом!*
+(Водити рачуна о великим и малим словима!)
 
 .. activecode:: zadatak3-1
-   :coach:
+   :runortest: test1, test2, test3, test4
+   :nocodelens:
 
-   s = input()
-   ??? # <- овде напиши програм
+   # -*- acsection: general-init -*-
+   # -*- acsection: main -*-
+   def broj_samoglasnika(s):
+       # Овде напиши функцију
+       return -1234  # поправи овај ред!
 
-**Задатак 2.** Написати Пајтон функцију ``poslednja_rec(s)`` која из датог стринга издваја последњу реч која је
+   # Провера
+   test1 = broj_samoglasnika("Ovde ima mnogo samoglasnika")
+   test2 = broj_samoglasnika("Led je čvrst, krt i tvrd.")
+   test3 = broj_samoglasnika("Čvrst, krt, tvrd zvrk!")
+   test4 = broj_samoglasnika("")
+   # -*- acsection: after-main -*-
+   print(test1, test2, test3, test4)
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+       def testOne(self):
+           def __samogl(c):
+               return c.lower() in ["a", "e", "i", "o", "u", "а", "е", "и", "о", "у"]
+           def __brsam(s):
+               n=0
+               for c in s:
+                   if __samogl(c): n += 1
+               return n
+           rez1 = __brsam("Ovde ima mnogo samoglasnika")
+           rez2 = __brsam("Led je čvrst, krt i tvrd.")
+           rez3 = __brsam("Čvrst, krt, tvrd zvrk!")
+           rez4 = __brsam("")
+           run_test = acMainSection(test1=test1,test2=test2,test3=test3,test4=test4)
+           self.assertEqual(run_test["test1"], rez1, "Вредност променљиве 'test1' треба да буде %s" % rez1)
+           self.assertEqual(run_test["test2"], rez2, "Вредност променљиве 'test2' треба да буде %s" % rez2)
+           self.assertEqual(run_test["test3"], rez3, "Вредност променљиве 'test3' треба да буде %s" % rez3)
+           self.assertEqual(run_test["test4"], rez4, "Вредност променљиве 'test4' треба да буде %s" % rez4)
+   myTests().main()
+
+Задатак 2.
+''''''''''''''''''''''
+
+Написати Пајтон функцију ``broj_suglasnika(s)`` која
+утврђује број сугласника у стрингу ``s``. Претпостављамо да ``s`` садржи реченицу
+српског језика, па је сугласник свако слово које је различито од а, е, и, о, у
+*независно од тога да ли је реченица написана ћирилицом или латиницом!*
+(Водити рачуна о великим и малим словима!)
+
+.. activecode:: zadatak3-1b
+   :runortest: test1, test2, test3, test4
+   :nocodelens:
+
+   # -*- acsection: general-init -*-
+   # -*- acsection: main -*-
+   def broj_suglasnika(s):
+       # Овде напиши функцију
+       return -1234  # поправи овај ред!
+
+   # Провера
+   test1 = broj_suglasnika("Ovde ima mnogo samoglasnika")
+   test2 = broj_suglasnika("Led je čvrst, krt i tvrd.")
+   test3 = broj_suglasnika("Čvrst, krt, tvrd zvrk!")
+   test4 = broj_suglasnika("")
+   # -*- acsection: after-main -*-
+   print(test1, test2, test3, test4)
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+       def testOne(self):
+           def __samogl(c):
+               return c.lower() in ["a", "e", "i", "o", "u", "а", "е", "и", "о", "у"]
+           def __sugl(c):
+               return c.isalpha() and not __samogl(c)
+           def __brsug(s):
+               n=0
+               for c in s:
+                   if __sugl(c): n += 1
+               return n
+           rez1 = __brsug("Ovde ima mnogo samoglasnika")
+           rez2 = __brsug("Led je čvrst, krt i tvrd.")
+           rez3 = __brsug("Čvrst, krt, tvrd zvrk!")
+           rez4 = __brsug("")
+           run_test = acMainSection(test1=test1,test2=test2,test3=test3,test4=test4)
+           self.assertEqual(run_test["test1"], rez1, "Вредност променљиве 'test1' треба да буде %s" % rez1)
+           self.assertEqual(run_test["test2"], rez2, "Вредност променљиве 'test2' треба да буде %s" % rez2)
+           self.assertEqual(run_test["test3"], rez3, "Вредност променљиве 'test3' треба да буде %s" % rez3)
+           self.assertEqual(run_test["test4"], rez4, "Вредност променљиве 'test4' треба да буде %s" % rez4)
+   myTests().main()
+
+
+
+Задатак 3.
+''''''''''''''''''''''
+
+Написати Пајтон функцију ``poslednja_rec(s)`` која из датог стринга издваја последњу реч која је
 наведена у стрингу. Ако у стрингу не постоји ниједно слово функција треба да врати празан стринг.
 (Напомена: реч је непрекидан низ слова.)
 
 .. activecode:: zadatak3-2
-   :coach:
+   :runortest: test1, test2, test3, test4
+   :nocodelens:
 
+   # -*- acsection: general-init -*-
+   # -*- acsection: main -*-
    def poslednja_rec(s):
-       ???
+       # Овде напиши функцију
+       return -1234  # поправи овај ред!
 
    # Провера
-   print(poslednja_rec("Ovaj string ima pet reci"))
-   print(poslednja_rec("Ovaj string se zavrsava uzvicnikom!"))
-   print(poslednja_rec("Test"))
-   print(poslednja_rec("1 2 3 4 5"))
+   test1 = poslednja_rec("Ovaj string ima pet reci")
+   test2 = poslednja_rec("Ovaj string se zavrsava uzvicnicima!!!")
+   test3 = poslednja_rec("Test")
+   test4 = poslednja_rec("1 2 3 4 5")
+   # -*- acsection: after-main -*-
+   print(test1, test2, test3, test4)
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+       def testOne(self):
+           rez1 = "reci"
+           rez2 = "uzvicnicima"
+           rez3 = "Test"
+           rez4 = ""
+           run_test = acMainSection(test1=test1,test2=test2,test3=test3,test4=test4)
+           self.assertEqual(run_test["test1"], rez1, "Вредност променљиве 'test1' треба да буде 'reci'")
+           self.assertEqual(run_test["test2"], rez2, "Вредност променљиве 'test2' треба да буде 'uzvicnicima'")
+           self.assertEqual(run_test["test3"], rez3, "Вредност променљиве 'test3' треба да буде 'Test'")
+           self.assertEqual(run_test["test4"], rez4, "Вредност променљиве 'test4' треба да буде празан стринг")
+   myTests().main()
 
-**Задатак 3.** Написати Пајтон функцију ``obrni_reci(s)`` која од датог стринга прави нови у коме су речи
+
+Задатак 4*.
+''''''''''''''''''''''
+
+Написати Пајтон функцију ``obrni_reci(s)`` која од датог стринга прави нови у коме су речи
 послагане од последње према првој. На пример, за стринг
 
 .. code-block:: python
@@ -416,35 +489,110 @@
     "poretku obrnutom u teksta unetog reci ispisuje koji program Napisati"
 
 .. activecode:: zadatak3-3
-   :coach:
+   :runortest: test1, test2, test3
+   :nocodelens:
+
+   # -*- acsection: general-init -*-
+   # -*- acsection: main -*-
 
    def obrni_reci(s):
-       ???
+       # Овде напиши функцију
+       return -1234  # поправи овај ред!
 
    # Провера
-   print(obrni_reci("Dve reci"))
-   print(obrni_reci("Ovaj string se ne zavrsava uzvicnikom"))
-   print(obrni_reci("Test"))
+   test1 = obrni_reci("Dve reci")
+   test2 = obrni_reci("Ovaj string se ne zavrsava uzvicnikom")
+   test3 = obrni_reci("Test")
+   # -*- acsection: after-main -*-
+   
+   print(test1)
+   print(test2)
+   print(test3)
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+       def testOne(self):
+           def __obrnir(s):
+              s += " "
+              t = ""
+              w = ""
+              for i in range(len(s)-1):
+                  if s[i].isalpha():
+                      w += s[i]
+                      if not(s[i+1].isalpha()):
+                          if t == "":
+                              t = w
+                          else:
+                              t = w + " " + t
+                          w = ""
+              return t
+           rez1 = __obrnir("Dve reci")
+           rez2 = __obrnir("Ovaj string se ne zavrsava uzvicnikom")
+           rez3 = __obrnir("Test")
+           run_test = acMainSection(test1=test1,test2=test2,test3=test3)
+           self.assertEqual(run_test["test1"], rez1, "Вредност променљиве 'test1' треба да буде '%s'" % rez1)
+           self.assertEqual(run_test["test2"], rez2, "Вредност променљиве 'test2' треба да буде '%s'" % rez2)
+           self.assertEqual(run_test["test3"], rez3, "Вредност променљиве 'test3' треба да буде '%s'" % rez3)
+   myTests().main()
 
-**Задатак 4*.**
+
+
+
+
+Задатак 5*.
+''''''''''''''''''''''
+
 Написати Пајтон функцију која проверава да ли су у датом стрингу заграде ``(`` и ``)`` *балансиране*.
-То значи да у стрингу имамо исти број отворених и затоврених заграда, и да не постоји почетни сегмент
-стринга у коме је број затворених заграда већи од броја отворених.
+То значи да:
+
+1. у стрингу имамо исти број отворених и затоврених заграда, и
+2. не постоји почетни сегмент стринга у коме је број затворених заграда већи од броја отворених.
 
 .. activecode:: zadatak3-4
-   :coach:
+   :runortest: test1, test2, test3, test4, test5
+   :nocodelens:
 
+   # -*- acsection: general-init -*-
+   # -*- acsection: main -*-
    def balansirane_zagrade(s):
-       ???
+       # Овде напиши функцију
+       return -1234  # поправи овај ред!
 
    # Провера
-   print(balansirane_zagrade("()")) # јесу
-   print(balansirane_zagrade("(())")) # јесу
-   print(balansirane_zagrade("(())(()(()()))")) # јесу
-   print(balansirane_zagrade(")(")) # нису
-   print(balansirane_zagrade("(()))(")) # нису
+   test1 = balansirane_zagrade("()") # јесу
+   test2 = balansirane_zagrade("(())") # јесу
+   test3 = balansirane_zagrade("(())(()(()()))") # јесу
+   test4 = balansirane_zagrade(")(") # нису
+   test5 = balansirane_zagrade("(()))(") # нису
+   # -*- acsection: after-main -*-
+   print(test1, test2, test3, test4, test5)
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+       def testOne(self):
+           rez1 = True
+           rez2 = True
+           rez3 = True
+           rez4 = False
+           rez5 = False
+           run_test = acMainSection(test1=test1,test2=test2,test3=test3,test4=test4,test5=test5)
+           self.assertEqual(run_test["test1"], rez1, "Вредност променљиве 'test1' треба да буде %s" % rez1)
+           self.assertEqual(run_test["test2"], rez2, "Вредност променљиве 'test2' треба да буде %s" % rez2)
+           self.assertEqual(run_test["test3"], rez3, "Вредност променљиве 'test3' треба да буде %s" % rez3)
+           self.assertEqual(run_test["test4"], rez4, "Вредност променљиве 'test4' треба да буде %s" % rez4)
+           self.assertEqual(run_test["test5"], rez5, "Вредност променљиве 'test5' треба да буде %s" % rez5)
+   myTests().main()
 
-**Задатак 5*.**
+
+
+
+
+
+
+
+Задатак 6.
+''''''''''''''''''''''
+
 Написати Пајтон функцију ``razmeni(s, din_za_1_eur)`` која конвертује дати износ из динара у евре и обрнуто.
 Стринг ``s`` садржи износ записан у облику ``број валута`` на пример овако:
 
@@ -456,49 +604,100 @@
     "50 EUR"
 
 док аргумент ``din_za_1_eur`` представља вредност једног евра у динарима.
-Функција треба да врати стринг који има облик ``број валута``. При томе од користи бити уграђене функције ``float`` и ``str``.
+Функција треба да врати стринг који има облик ``број валута``. При томе користи бити уграђене функције ``float`` и ``str``.
 (За неки стринг ``p`` функција ``float(p)`` враћа број који је записан стрингом ``p`` игноришући при том празнине које се
-можда јављају у стрингу; с друге стране, функција `str` од неког броја прави стринг који садржи његов запис.)
+можда јављају у стрингу; с друге стране, функција ``str`` од неког броја прави стринг који садржи његов запис.)
+
+*Добијене износе НЕ ТРЕБА заокруживати на две децимале!*
 
 Функција ``razmeni`` треба да ради овако:
 
 .. code-block:: python
 
-   print(razmeni("124.99 EUR", 117.90))
-   "14736.321‬ DIN"
+   >>> razmeni("124.99 EUR", 117.90)
+   '14736.321‬ DIN'
 
-   print(razmeni("12000 DIN", 117.90))
-   "‭101.7811704 EUR"
+   >>> razmeni("12000 DIN", 117.90)
+   ‭'101.7811704 EUR'
+
+Ако корисник унесе неку трећу валуту, програм треба да врати стринг "?VALUTA":
+
+.. code-block:: python
+
+   >>> razmeni("124.99 USD", 117.90)
+   '?VALUTA'
+
 
 .. activecode:: zadatak3-5
-   :coach:
+   :runortest: test1, test2, test3, test4
+   :nocodelens:
+
+   # -*- acsection: general-init -*-
+   # -*- acsection: main -*-
 
    def razmeni(s, din_za_1_eur):
-       ???
+       # Овде напиши функцију
+       return -1234  # поправи овај ред!
 
    # Провера
-   print(razmeni("124.99 EUR", 117.90))
-   print(razmeni("12000 DIN", 117.90))
+   test1 = razmeni("1 EUR", 117.90)
+   test2 = razmeni("124.99 EUR", 117.90)
+   test3 = razmeni("12000 DIN", 117.90)
+   test4 = razmeni("1 USD", 107.90)
+   # -*- acsection: after-main -*-
+   
+   print(test1)
+   print(test2)
+   print(test3)
+   print(test4)
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+       def testOne(self):
+           def __razmeni(s, dz1e):
+               x = s.split()
+               iznos = float(x[0])
+               valuta = x[1]
+               if valuta.upper() == "DIN": return str(iznos/dz1e) + " EUR"
+               if valuta.upper() == "EUR": return str(iznos * dz1e) + " DIN"
+               return "?VALUTA"
+           rez1 = __razmeni("1 EUR", 117.90)
+           rez2 = __razmeni("124.99 EUR", 117.90)
+           rez3 = __razmeni("12000 DIN", 117.90)
+           rez4 = __razmeni("1 USD", 107.90)
+           run_test = acMainSection(test1=test1,test2=test2,test3=test3,test4=test4)
+           self.assertEqual(run_test["test1"], rez1, "Вредност променљиве 'test1' треба да буде '%s'" % rez1)
+           self.assertEqual(run_test["test2"], rez2, "Вредност променљиве 'test2' треба да буде '%s'" % rez2)
+           self.assertEqual(run_test["test3"], rez3, "Вредност променљиве 'test3' треба да буде '%s'" % rez3)
+           self.assertEqual(run_test["test4"], rez4, "Вредност променљиве 'test4' треба да буде '%s'" % rez4)
+   myTests().main()
 
 
 
+Задаци из Алгоритамске збирке задатака
+----------------------------------------------
 
+Решавањем следећих задатака можете да увежбате додатне вештине у раду са стринговима. 
 
+https://petlja.org/biblioteka/r/problemi/Zbirka/prezime_pa_ime
 
+https://petlja.org/biblioteka/r/problemi/Zbirka/da_li_je_podniska
 
+https://petlja.org/biblioteka/r/problemi/Zbirka/izbacivanje_podniski
 
+https://petlja.org/biblioteka/r/problemi/Zbirka/rec_frankenstajn
 
+https://petlja.org/biblioteka/r/problemi/Zbirka/cezarov_kod
 
+https://petlja.org/biblioteka/r/problemi/Zbirka/vrednost_izraza
 
+https://petlja.org/biblioteka/r/problemi/Zbirka/spreadsheet_kolone
 
+https://petlja.org/biblioteka/r/problemi/Zbirka/brojevne_osnove
 
+https://petlja.org/biblioteka/r/problemi/Zbirka/arapski_u_rimski
 
-
-
-
-
-
-
+https://petlja.org/biblioteka/r/problemi/Zbirka/rimski_u_arapski
 
 
 
