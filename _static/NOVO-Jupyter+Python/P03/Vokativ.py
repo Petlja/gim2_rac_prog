@@ -1,6 +1,0 @@
-print("Unesi svoje ime, prvo u nominativu pa onda u vokativu")
-ime = input("nominativ: ")
-ime_v = input("vokativ: ")
-print("Aha! Znao sam!")
-print("Ti se zoveš", ime)
-print("Zdravo,", ime_v)
