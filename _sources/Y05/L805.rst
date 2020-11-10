@@ -82,13 +82,13 @@
 тако сортираног низа.
 
 .. activecode:: primer5-444
-   :includesrc: _src/P5_K_najvecih.py
+   :includesrc: _src/P05/K_najvecih.py
 
 .. infonote::
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P5_K_najvecih.py`` и изврши га.
+   Покрени IDLE, из фолдера ``P05`` учитај програм ``K_najvecih.py`` и изврши га.
 
 Пример.
 ''''''''
@@ -125,13 +125,13 @@
    \frac{2.9 + 3.1415}{2} = 3.02075
 
 .. activecode:: primer5-445
-   :includesrc: _src/P5_Broj_na_sredini.py
+   :includesrc: _src/P05/Broj_na_sredini.py
 
 .. infonote::
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P5_Broj_na_sredini.py`` и изврши га.
+   Покрени IDLE, из фолдера ``P05`` учитај програм ``Broj_na_sredini.py`` и изврши га.
 
 
 Како раде алгоритми за сортирање
@@ -252,13 +252,13 @@
 зараде запослених и штампа те зараде по величини, од највеће до најмање.
 
 .. activecode:: primer5-446
-   :includesrc: _src/P5_Od_najvece_do_najmanje.py
+   :includesrc: _src/P05/Od_najvece_do_najmanje.py
 
 .. infonote::
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P5_Od_najvece_do_najmanje.py`` и изврши га.
+   Покрени IDLE, из фолдера ``P05`` учитај програм ``Od_najvece_do_najmanje.py`` и изврши га.
 
 
 Пример.
@@ -276,13 +276,13 @@
 Овај пут ћемо применити наш алгоритам
 
 .. activecode:: primer5-447
-   :includesrc: _src/P5_Samo_K_najvecih.py
+   :includesrc: _src/P05/Samo_K_najvecih.py
 
 .. infonote::
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P5_Samo_K_najvecih.py`` и изврши га.
+   Покрени IDLE, из фолдера ``P05`` учитај програм ``Samo_K_najvecih.py`` и изврши га.
 
 
 Пример.
@@ -308,13 +308,13 @@
 колоне ``k``. На пример, ``selection_sort_by(0, razred)`` ће сортирати низ ``razred`` по колони 0, дакле, по имену.
 
 .. activecode:: primer5-10
-   :includesrc: _src/P5_SelSort_po_kriterijumu.py
+   :includesrc: _src/P05/SelSort_po_kriterijumu.py
 
 .. infonote::
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P5_SelSort_po_kriterijumu.py`` и изврши га.
+   Покрени IDLE, из фолдера ``P05`` учитај програм ``SelSort_po_kriterijumu.py`` и изврши га.
 
 
 Бабл-сорт алгоритам (*bubble sort*)
@@ -468,13 +468,13 @@
 колоне ``k``. На пример, ``bubble_sort_by(0, razred)`` ће сортирати низ ``razred`` по колони 0, дакле, по имену.
 
 .. activecode:: primer5-11
-   :includesrc: _src/P5_BubSort_po_kriterijumu.py
+   :includesrc: _src/P05/BubSort_po_kriterijumu.py
 
 .. infonote::
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P5_BubSort_po_kriterijumu.py`` и изврши га.
+   Покрени IDLE, из фолдера ``P05`` учитај програм ``BubSort_po_kriterijumu.py`` и изврши га.
 
 
 Задаци.
@@ -735,13 +735,13 @@
    ]
 
 .. activecode:: primer5-Z3
-   :includesrc: _src/P5_Po_prezimenu.py
+   :includesrc: _src/P05/Po_prezimenu.py
 
 .. infonote::
 
    Реши задатак и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``primeri`` учитај датотеку ``P5_Po_prezimenu.py`` и ту реши задатак.
+   Покрени IDLE, из фолдера ``P05`` учитај датотеку ``Po_prezimenu.py`` и ту реши задатак.
 
 Задатак 8.
 ''''''''''''''''''''''
@@ -775,13 +775,13 @@
     Nenad 40
 
 .. activecode:: primer5-Z7
-   :includesrc: _src/P5_Rang_lista.py
+   :includesrc: _src/P05/Rang_lista.py
 
 .. infonote::
 
    Реши задатак и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``primeri`` учитај датотеку ``P5_Rang_lista.py`` и ту реши задатак.
+   Покрени IDLE, из фолдера ``P05`` учитај датотеку ``Rang_lista.py`` и ту реши задатак.
 
 
 Задатак 9.
@@ -796,13 +796,13 @@
 Решење смо започели за тебе:
 
 .. activecode:: primer5-Z100
-   :includesrc: _src/P5_Jaca_i_slabija_grupa.py
+   :includesrc: _src/P05/Jaca_i_slabija_grupa.py
 
 .. infonote::
 
    Реши задатак и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``primeri`` учитај датотеку ``P5_Jaca_i_slabija_grupa.py`` и ту реши задатак.
+   Покрени IDLE, из фолдера ``P05`` учитај датотеку ``Jaca_i_slabija_grupa.py`` и ту реши задатак.
 
 Задатак 10.
 ''''''''''''''''''''''
@@ -817,13 +817,13 @@
 Решење смо започели за тебе:
 
 .. activecode:: primer5-Z101
-   :includesrc: _src/P5_Dve_grupe.py
+   :includesrc: _src/P05/Dve_grupe.py
 
 .. infonote::
 
    Реши задатак и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``primeri`` учитај датотеку ``P5_Dve_grupe.py`` и ту реши задатак.
+   Покрени IDLE, из фолдера ``P05`` учитај датотеку ``Dve_grupe.py`` и ту реши задатак.
 
 
 
@@ -834,13 +834,13 @@
 Написати Пајтон функцију ``svi_razliciti(L)`` која проверава да ли су сви елементи низа ``L`` различити.
 
 .. activecode:: primer5-Z6
-   :includesrc: _src/P5_Svi_razliciti.py
+   :includesrc: _src/P05/Svi_razliciti.py
 
 .. infonote::
 
    Реши задатак и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``primeri`` учитај датотеку ``P5_Svi_razliciti.py`` и ту реши задатак.
+   Покрени IDLE, из фолдера ``P05`` учитај датотеку ``Svi_razliciti.py`` и ту реши задатак.
 
   
 Задатак 12*.
@@ -851,13 +851,13 @@
 провере да ли је један стринг анаграм оног другог празнине и величина слова не играју никакву улогу!
 
 .. activecode:: primer5-Z8
-   :includesrc: _src/P5_Anagram.py
+   :includesrc: _src/P05/Anagram.py
 
 .. infonote::
 
    Реши задатак и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``primeri`` учитај датотеку ``P5_Anagram.py`` и ту реши задатак.
+   Покрени IDLE, из фолдера ``P05`` учитај датотеку ``Anagram.py`` и ту реши задатак.
 
 
 Задаци из Алгоритамске збирке задатака

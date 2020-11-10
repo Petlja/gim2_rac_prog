@@ -44,13 +44,13 @@
 Да погледамо како функција ради:
 
 .. activecode:: primer2-1
-   :includesrc: _src/P2_Prebroj_petice.py
+   :includesrc: _src/P02/Prebroj_petice.py
 
 .. infonote::
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P2_Prebroj_petice.py`` и изврши га.
+   Покрени IDLE, из фолдера ``P02`` учитај програм ``Prebroj_petice.py`` и изврши га.
 
 
 Пример.
@@ -68,13 +68,13 @@
 *Решење.*
 
 .. activecode:: primer2-1b
-   :includesrc: _src/P2_Prebroj_ocene.py
+   :includesrc: _src/P02/Prebroj_ocene.py
 
 .. infonote::
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P2_Prebroj_ocene.py`` и изврши га.
+   Покрени IDLE, из фолдера ``P02`` учитај програм ``Prebroj_ocene.py`` и изврши га.
 
 Пример*.
 ''''''''
@@ -129,13 +129,13 @@
 Да проверимо функцију:
 
 .. activecode:: primer2-4
-   :includesrc: _src/P2_Prebroj_cifre.py
+   :includesrc: _src/P02/Prebroj_cifre.py
 
 .. infonote::
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P2_Prebroj_cifre.py`` и изврши га.
+   Покрени IDLE, из фолдера ``P02`` учитај програм ``Prebroj_cifre.py`` и изврши га.
 
 
 
@@ -167,13 +167,13 @@
 
 .. activecode:: primer2-5
    :passivecode: true
-   :includesrc: _src/P2_Saberi_n.py
+   :includesrc: _src/P02/Saberi_n.py
 
 .. infonote::
 
    Изврши програм у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P2_Saberi_n.py`` и изврши га.
+   Покрени IDLE, из фолдера ``P02`` учитај програм ``Saberi_n.py`` и изврши га.
 
 Пример 2.
 ''''''''''''''
@@ -183,13 +183,13 @@
 
 .. activecode:: primer2-5-5
    :passivecode: true
-   :includesrc: _src/P2_Sabiraj_do_stop.py
+   :includesrc: _src/P02/Sabiraj_do_stop.py
 
 .. infonote::
 
    Изврши програм у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P2_Sabiraj_do_stop.py`` и изврши га.
+   Покрени IDLE, из фолдера ``P02`` учитај програм ``Sabiraj_do_stop.py`` и изврши га.
 
 Пример 3.
 ''''''''''''''
@@ -201,13 +201,13 @@
 
 .. activecode:: primer2-5-6
    :passivecode: true
-   :includesrc: _src/P2_Milicin_dzeparac.py
+   :includesrc: _src/P02/Milicin_dzeparac.py
 
 .. infonote::
 
    Изврши програм у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P2_Milicin_dzeparac.py`` и изврши га.
+   Покрени IDLE, из фолдера ``P02`` учитај програм ``Milicin_dzeparac.py`` и изврши га.
 
 ..
     Често је потребно сабрати елементе неког низа бројева, што можемо урадити следећом Пајтон функцијом:
@@ -229,13 +229,13 @@
     Да погледамо како функција ради:
     
     .. activecode:: primer2-5
-       :includesrc: _src/P2_Saberi.py
+       :includesrc: _src/P02/Saberi.py
     
     .. infonote::
     
        Изврши исти програм и у Пајтон окружењу!
        
-       Покрени IDLE, из фолдера ``primeri`` учитај програм ``P2_Saberi.py`` и изврши га.
+       Покрени IDLE, из фолдера ``P02`` учитај програм ``Saberi.py`` и изврши га.
 
 
     Пример.
@@ -284,13 +284,13 @@
     Да видимо како функција ради:
     
     .. activecode:: primer2-6
-       :includesrc: _src/P2_Dzeparac.py
+       :includesrc: _src/P02/Dzeparac.py
     
     .. infonote::
     
        Изврши исти програм и у Пајтон окружењу!
        
-       Покрени IDLE, из фолдера ``primeri`` учитај програм ``P2_Dzeparac.py`` и изврши га.
+       Покрени IDLE, из фолдера ``P02`` учитај програм ``Dzeparac.py`` и изврши га.
     
     Напомена.
     '''''''''''''''
@@ -349,11 +349,11 @@
 
 .. activecode:: primer2-6-iznad-proseka-1
    :passivecode: true
-   :includesrc: _src/P2_Iznad_proseka.py
+   :includesrc: _src/P02/Iznad_proseka.py
 
 .. infonote::
 
-   Покрени IDLE окружење, из фолдера ``primeri`` учитај програм ``P2_Iznad_proseka.py`` и изврши га.
+   Покрени IDLE окружење, из фолдера ``P02`` учитај програм ``Iznad_proseka.py`` и изврши га.
 
 
 Пример 3.
@@ -380,11 +380,11 @@
 
 .. activecode:: primer2-6-iznad-proseka
    :passivecode: true
-   :includesrc: _src/P2_Teziste.py
+   :includesrc: _src/P02/Teziste.py
 
 .. infonote::
 
-   Покрени IDLE окружење, из фолдера ``primeri`` учитај програм ``P2_Teziste.py`` и изврши га.
+   Покрени IDLE окружење, из фолдера ``P02`` учитај програм ``Teziste.py`` и изврши га.
 
 
 Задаци

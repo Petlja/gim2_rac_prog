@@ -32,13 +32,13 @@
 низ ``А`` има негативних елемената.
 
 .. activecode:: primer6-1
-   :includesrc: _src/P6_Poz_neg.py
+   :includesrc: _src/P06/Poz_neg.py
 
 .. infonote::
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P6_Poz_neg.py`` и изврши га.
+   Покрени IDLE, из фолдера ``P06`` учитај програм ``Poz_neg.py`` и изврши га.
    
    
 Пример.
@@ -47,13 +47,13 @@
 Написати Пајтон функцију која из низа стрингова издваја оне који имају највише пет слова.
 
 .. activecode:: primer6-2
-   :includesrc: _src/P6_Maks_5_slova.py
+   :includesrc: _src/P06/Maks_5_slova.py
 
 .. infonote::
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P6_Maks_5_slova.py`` и изврши га.
+   Покрени IDLE, из фолдера ``P06`` учитај програм ``Maks_5_slova.py`` и изврши га.
 
 
 Пример.
@@ -79,13 +79,13 @@
 Издвојити у један низ дечаке, а у други девојчице које имају 13 или 14 година.
 
 .. activecode:: primer6-3
-   :includesrc: _src/P6_Decaci_devojcice.py
+   :includesrc: _src/P06/Decaci_devojcice.py
 
 .. infonote::
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P6_Decaci_devojcice.py`` и изврши га.
+   Покрени IDLE, из фолдера ``P06`` учитај програм ``Decaci_devojcice.py`` и изврши га.
 
 
 Филтрирање података "пешке"
@@ -107,13 +107,13 @@
 Написати Пајтон функцију ``izdvoj_pozitivne`` која из датог низа бројева издваја све позитивне бројеве.
 
 .. activecode:: primer6-4
-   :includesrc: _src/P6_Izdvoj_pozitivne.py
+   :includesrc: _src/P06/Izdvoj_pozitivne.py
 
 .. infonote::
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P6_Izdvoj_pozitivne.py`` и изврши га.
+   Покрени IDLE, из фолдера ``P06`` учитај програм ``Izdvoj_pozitivne.py`` и изврши га.
 
 
 Да се подсетимо:
@@ -130,13 +130,13 @@
 Написати Пајтон функцију ``pozicije_pozitivnih`` која за дати низ бројева враћа индексе елемената који су позитивни.
 
 .. activecode:: primer6-5
-   :includesrc: _src/P6_Pozicije_pozitivnih.py
+   :includesrc: _src/P06/Pozicije_pozitivnih.py
 
 .. infonote::
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P6_Pozicije_pozitivnih.py`` и изврши га.
+   Покрени IDLE, из фолдера ``P06`` учитај програм ``Pozicije_pozitivnih.py`` и изврши га.
 
 
 Видимо да ова функција комбинује идеју филтрирања и бројач.
@@ -165,13 +165,13 @@
 функција враћа -1.
 
 .. activecode:: primer6-7
-   :includesrc: _src/P6_Prvo_pojav.py
+   :includesrc: _src/P06/Prvo_pojav.py
 
 .. infonote::
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P6_Prvo_pojav.py`` и изврши га.
+   Покрени IDLE, из фолдера ``P06`` учитај програм ``Prvo_pojav.py`` и изврши га.
 
 
 Ова функција користи бројач како би знала редни број елемента кога упоређује са ``x``.
@@ -185,13 +185,13 @@
 Ако се елемент ``x`` не јавља у низу ``L`` функција враћа -1.
 
 .. activecode:: primer6-8
-   :includesrc: _src/P6_Posl_pojav.py
+   :includesrc: _src/P06/Posl_pojav.py
 
 .. infonote::
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``primeri`` учитај програм ``P6_Posl_pojav.py`` и изврши га.
+   Покрени IDLE, из фолдера ``P06`` учитај програм ``Posl_pojav.py`` и изврши га.
 
 
 Ова функција користи бројач ``i`` како би знала редни број елемента кога упоређује са ``x``,
@@ -300,13 +300,13 @@
 изнад print наредбе.
 
 .. activecode:: primer6-Z3
-   :includesrc: _src/P6_Zad_ucenici.py
+   :includesrc: _src/P06/Zad_ucenici.py
 
 .. infonote::
 
    Реши задатак и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``primeri`` учитај датотеку ``P6_Zad_ucenici.py`` и ту реши задатак.
+   Покрени IDLE, из фолдера ``P06`` учитај датотеку ``Zad_ucenici.py`` и ту реши задатак.
 
 
 
@@ -316,13 +316,13 @@
 Написати функцију ``nadji_sve(x, L)`` која враћа низ са позицијама свих појављивања елемента ``x`` у низу ``L``.
 
 .. activecode:: primer6-Z4
-   :includesrc: _src/P6_Nadji_sve.py
+   :includesrc: _src/P06/Nadji_sve.py
 
 .. infonote::
 
    Реши задатак и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``primeri`` учитај датотеку ``P6_Nadji_sve.py`` и ту реши задатак.
+   Покрени IDLE, из фолдера ``P06`` учитај датотеку ``Nadji_sve.py`` и ту реши задатак.
 
 Задатак 5.
 ''''''''''''''''''''''
@@ -330,13 +330,13 @@
 Написати Пајтон функцију ``presek(L, M)`` која враћа низ свих елемената који се јављају и у низу ``L`` и у низу ``M``.
 
 .. activecode:: primer6-Z5
-   :includesrc: _src/P6_Presek.py
+   :includesrc: _src/P06/Presek.py
 
 .. infonote::
 
    Реши задатак и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``primeri`` учитај датотеку ``P6_Presek.py`` и ту реши задатак.
+   Покрени IDLE, из фолдера ``P06`` учитај датотеку ``Presek.py`` и ту реши задатак.
 
 Задатак 6.
 ''''''''''''''''''''''
@@ -345,13 +345,13 @@
 који се јављају у једном од ова два низа, а не јављају се у другом.
 
 .. activecode:: primer6-Z6
-   :includesrc: _src/P6_Razlika.py
+   :includesrc: _src/P06/Razlika.py
 
 .. infonote::
 
    Реши задатак и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``primeri`` учитај датотеку ``P6_Razlika.py`` и ту реши задатак.
+   Покрени IDLE, из фолдера ``P06`` учитај датотеку ``Razlika.py`` и ту реши задатак.
 
 
 Задатак 7*.
