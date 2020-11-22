@@ -65,51 +65,46 @@
 **Корак 2.** Са следећег линка
 
 
-`https://github.com/Petlja/Programiranje_II-files <https://github.com/Petlja/Programiranje_II-files>`_
+`https://github.com/Petlja/Programiranje_II-files/archive/master.zip <https://github.com/Petlja/Programiranje_II-files/archive/master.zip>`_
 
-преузми *све* датотеке и фолдере и ископирај их у неки фолдер на свом рачунару:
+преузми ZIP фајл и распакуј га у неки фолдер на свом рачунару:
 
 
-.. image:: ../../_images/inst101.jpg
+.. image:: ../../_images/inst101m.jpg
    :width: 600px
    :align: center
 
 
-Из тог фолдера отвори командни прозор (рецимо *PowerShell*):
+Потом покрени команду SETUP.BAT тако што ћеш два пута кликнути на њено име:
 
 
-.. image:: ../../_images/inst102.jpg
+.. image:: ../../_images/inst101n.jpg
+   :width: 600px
+   :align: center
+
+Ова команда ће радити неко време и при томе ће инсталирати све неопходне библиотеке
+за рад са Џупитер окружењем:
+
+.. image:: ../../_images/inst101c.jpg
    :width: 600px
    :align: center
 
 
-и изврши команду
+Када се команда заврши у фолдеру ће се појавити команда START_JUPYTER.BAT и пречица
+START_IDLE:
 
-::
-
-    pip3 install -r requirements.txt
-
-
-
-.. image:: ../../_images/inst12.jpg
+.. image:: ../../_images/inst101p.jpg
    :width: 600px
    :align: center
 
+Пречица START_IDLE ће нам требати у наредном сегменту курса у коме обрађујемо
+програмирање у Пајтону и за сада је слободно можемо игнорисати.
 
-За покретање Џупитера треба у истом прозору унети команду
+За покретање Џупитера треба да покренеш команду START_JUPYTER.BAT
+тако што ћеш два пута кликнути на њено име.
 
-::
-
-    jupyter notebook
-
-
-
-.. image:: ../../_images/inst13.jpg
-   :width: 600px
-   :align: center
-
-
-На твом рачунару ће се отворити веб прегледач са страном на којој се виде линкови на радне свеске. Кликом на име, радна свеска се отвара у новом табу веб прегледача:
+На твом рачунару ће се отворити веб прегледач са страном на којој се
+виде линкови на радне свеске. Кликом на име, радна свеска се отвара у новом табу веб прегледача:
 
 
 .. image:: ../../_images/inst103.jpg
@@ -121,7 +116,7 @@
 
 Ево и кратког видеа у коме је ово демонстрирано:
 
-.. ytpopup:: xJlVaAQzdnQ
+.. ytpopup:: LRMlIIv1maQ
    :width: 735
    :height: 415
    :align: center

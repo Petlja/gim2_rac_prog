@@ -1,8 +1,8 @@
 def prvo_pojav(x, L):
-    i = -1
-    for y in L:
-        i += 1
-        if y == x: return i
+    n = len(L)
+    for i in range(n):
+        if L[i] == x:
+            return i
     return -1
 
 # Провера

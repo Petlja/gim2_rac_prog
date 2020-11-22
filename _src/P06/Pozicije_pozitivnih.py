@@ -1,9 +1,8 @@
 def pozicije_pozitivnih(L):
-    i = -1
+    n = len(L)
     rez = []
-    for x in L:
-        i += 1
-        if x > 0:
+    for i in range(n):
+        if L[i] > 0:
             rez.append(i)
     return rez
 

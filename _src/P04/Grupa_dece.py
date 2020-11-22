@@ -18,5 +18,6 @@ visina = 0
 
 for ucenik in razred:
     if ucenik[1] == "ž" and ucenik[4] > visina:
+        visina = ucenik[4]
         ime = ucenik[0]
 print("Najvisa devojcica je", ime)
