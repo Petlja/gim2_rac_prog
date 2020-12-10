@@ -238,7 +238,8 @@
        for i in range (n-1):
            m = i
            for j in range(i+1,n):
-               if L[j] < L[m]: m = j
+               if L[j] < L[m]:
+                   m = j
            L[i], L[m] = L[m], L[i]
 
 Неколико коментара:
