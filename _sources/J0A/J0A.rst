@@ -60,7 +60,7 @@
 Ако немаш инсталиран Пајтон на свом рачунару, прати први део следећег упутства (за рад са Џупитер радним свескама ти *PyGame* не треба, зато је довољно пратити само први део упутства који се односи на Пајтон):
 
 
-`Упутство за инсталацију Пајтона <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/programiranje_II/epodaci//petljamediastorage.blob.core.windows.net/root/Media/Default/Help/Uputstvo%20Python%20pygame.pdf>`_
+`Упутство за инсталацију Пајтона <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Help/Uputstvo%20Python%20pygame.pdf>`_
 
 **Корак 2.** Са следећег линка
 
