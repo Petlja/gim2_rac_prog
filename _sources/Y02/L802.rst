@@ -677,8 +677,13 @@
            self.assertEqual(run_test["test2"], rez2, "Вредност променљиве 'test2' треба да буде %s" % rez2)
    myTests().main()
 
+.. reveal:: pomoc1
+   :showtitle: Помоћ
+   :hidetitle: Сакриј помоћ
 
+   .. infonote::  
 
+      Не заборави да функције можеш дефинисати и у оквиру других функција. 
 
 
 Задаци из Алгоритамске збирке задатака
