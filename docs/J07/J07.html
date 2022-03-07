@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Индексирање и транспоновање табеле</title>
+    <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja-course.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/nbstyle.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
+    <script type="text/javascript" src="../_static/webglinteractive.js"></script>
+    <script type="text/javascript" src="../_static/FileSaver.min.js"></script>
+    <script type="text/javascript" src="../_static/Blob.js"></script>
+    <script type="text/javascript" src="../_static/karelCorner.js"></script>
+    <script type="text/javascript" src="../_static/karelRobot.js"></script>
+    <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
+    <script type="text/javascript" src="../_static/karelUI.js"></script>
+    <script type="text/javascript" src="../_static/karel.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/notes.js"></script>
+    <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
+    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
+    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
+    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
+    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
+    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
+    <script type="text/javascript" src="../_static/simanim.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
+    <script type="text/javascript" src="../_static/pycode.js"></script>
+    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+    <script type="text/javascript" src="../_static/p5js.js"></script>
+    <script type="text/javascript" src="../_static/gallery.js"></script>
+    <script type="text/javascript" src="../_static/dbDirective.js"></script>
+    <script type="text/javascript" src="../_static/sql.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../_static/course-errors.js"></script>
+    <script type="text/javascript" src="../_static/petlja.js"></script>
+    <script type="text/javascript" src="../_static/require.js"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+    <script type="text/javascript">
+      eBookConfig = {};
+      eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+      eBookConfig.app = eBookConfig.host + '/runestone';
+      eBookConfig.ajaxURL = eBookConfig.app + '/ajax/';
+      eBookConfig.course = 'Настава програмирања за Други разред гимназије';
+      eBookConfig.logLevel = '0';
+      eBookConfig.loginRequired = 'false';
+      eBookConfig.build_info = "";
+      eBookConfig.isLoggedIn = false;
+      eBookConfig.useRunestoneServices = false;
+      eBookConfig.python3 = true;
+      eBookConfig.basecourse = 'Настава програмирања за Други разред гимназије';
+      eBookConfig.runestone_version = '';
+      eBookConfig.imagesDir = '../_images/';
+      eBookConfig.staticDir = '../_static/';
+      if (typeof (Sk) != "undefined")
+        Sk.imgPath = eBookConfig.imagesDir;
+    </script>
+
+  </head>
+
+  <body>
+
+
+
+<div id="navbar" class="content-header">
+  <div class="right-side-nav">
+    
+</div>
+
+<div class="left-side-nav">
+  <div class="course-logo-nav">
+      <a target="_blank" href="https://petlja.org">
+          <img src="../_static/img/petlja-logo-wt.svg" alt="petlja.org" id="lightPetljaLogo">
+      </a>
+  </div>
+  <div class="course-logo-nav-kabinet">
+      <a target="_blank" href="https://petlja.org/net.kabinet">
+          <img src="../_static/img/netkabinet-logo-strelica-wt.svg" alt="petlja.org" id="lightNetKabinetLogo">
+      </a>
+  </div>
+</div>
+
+
+<div class="content-header-label" id = "content-header-label" href="../">Анализа података у Џупитеру и технике програмирања</div>
+
+</div>
+
+
+
+
+<div class="petljaCourseContainer">
+
+<div class="petljaCourseContent">
+  
+           <div class="tableOfContent">
+            <h5> Садржај </h5>
+            </div>
+           <div>
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J00>
+                    <h5>Рад са подацима у текстуалном програмском језику (ПТПЈ)</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../J00/J00.html><div class="studioLecture" id=activity-J00><i class="fas fa-file-alt activity-icon"></i>Исходи</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J0A>
+                    <h5>Припрема</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../J0A/J0A.html><div class="studioLecture" id=activity-J0A><i class="fas fa-file-alt activity-icon"></i>Припрема</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J01>
+                    <h5>ПТПЈ.1. Увод у Џупитер (*Jupyter*)</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../J01/J01.html><div class="studioLecture" id=activity-J01><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J02>
+                    <h5>ПТПЈ.2. Низови података и линијски дијаграми</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../J02/J02.html><div class="studioLecture" id=activity-J02><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <a href=../J02/testJ02.html><div class="studioLecture" id=activity-testJ02><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J03>
+                    <h5>ПТПЈ.3. Хистограми и боје</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../J03/J03.html><div class="studioLecture" id=activity-J03><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <a href=../J03/testJ03.html><div class="studioLecture" id=activity-testJ03><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J04>
+                    <h5>ПТПЈ.4. Просек и медијана низа бројева</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../J04/J04.html><div class="studioLecture" id=activity-J04><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <a href=../J04/testJ04.html><div class="studioLecture" id=activity-testJ04><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J05>
+                    <h5>ПТПЈ.5. Фреквенцијска анализа и секторски дијаграми</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../J05/J05.html><div class="studioLecture" id=activity-J05><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <a href=../J05/testJ05.html><div class="studioLecture" id=activity-testJ05><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J06>
+                    <h5>ПТПЈ.6. Табеларно представљени подаци</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../J06/J06.html><div class="studioLecture" id=activity-J06><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <a href=../J06/testJ06.html><div class="studioLecture" id=activity-testJ06><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J07>
+                    <h5>ПТПЈ.7. Индексирање и транспоновање табеле</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../J07/J07.html><div class="studioLecture" id=activity-J07><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <a href=../J07/testJ07.html><div class="studioLecture" id=activity-testJ07><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J08>
+                    <h5>ПТПЈ.8. Модификације табеле и записивање табеле у датотеку</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../J08/J08.html><div class="studioLecture" id=activity-J08><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <a href=../J08/testJ08.html><div class="studioLecture" id=activity-testJ08><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J09>
+                    <h5>ПТПЈ.9. Сортирање, филтрирање и фреквенцијска анализа</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../J09/J09.html><div class="studioLecture" id=activity-J09><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <a href=../J09/testJ09.html><div class="studioLecture" id=activity-testJ09><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J10>
+                    <h5>ПТПЈ.10. Џупитер и Ексел</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../J10/J10.html><div class="studioLecture" id=activity-J10><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <a href=../J10/testJ10.html><div class="studioLecture" id=activity-testJ10><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y00>
+                    <h5>Програмирање (ПРОГ)</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Y00/Y00.html><div class="studioLecture" id=activity-Y00><i class="fas fa-file-alt activity-icon"></i>Исходи</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y01>
+                    <h5>ПРОГ.1. Увод у процесирање низова података у Пајтону</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Y01/L801.html><div class="studioLecture" id=activity-L801><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <a href=../Y01/test801.html><div class="studioLecture" id=activity-test801><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y02>
+                    <h5>ПРОГ.2. Бројачи и суме</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Y02/L802.html><div class="studioLecture" id=activity-L802><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <a href=../Y02/test802.html><div class="studioLecture" id=activity-test802><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y03>
+                    <h5>ПРОГ.3. Низови симбола (*стрингови* или *ниске*)</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Y03/L803.html><div class="studioLecture" id=activity-L803><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <a href=../Y03/test803.html><div class="studioLecture" id=activity-test803><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y04>
+                    <h5>ПРОГ.4. Угнежђене петље</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Y04/L804.html><div class="studioLecture" id=activity-L804><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <a href=../Y04/test804.html><div class="studioLecture" id=activity-test804><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y05>
+                    <h5>ПРОГ.5. Сортирање</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Y05/L805.html><div class="studioLecture" id=activity-L805><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <a href=../Y05/test805.html><div class="studioLecture" id=activity-test805><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y06>
+                    <h5>ПРОГ.6. Филтрирање и претраживање</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Y06/L806.html><div class="studioLecture" id=activity-L806><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <a href=../Y06/test806.html><div class="studioLecture" id=activity-test806><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y07>
+                    <h5>ПРОГ.7. Рад са текстуалним датотекама</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Y07/L807.html><div class="studioLecture" id=activity-L807><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
+                <a href=../Y07/test807.html><div class="studioLecture" id=activity-test807><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
+                </div>
+            </div>
+                </div>
+</div>
+
+
+
+<div class="lectureContent">
+
+  <div id="errors">
+  </div>
+  
+  <div class="lectureContentMaterial">
+  
+    <div id="main-content">
+    
+  <div class="section" id="id1">
+<h1>Индексирање и транспоновање табеле<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>У овој лекцији ћемо говорити о:</p>
+<ol class="arabic simple">
+<li><p>индексирању табеле ради флексибилнијег приступа елементима табеле;</p></li>
+<li><p>приступу врстама и појединачним локацијама индексиране табеле;</p></li>
+<li><p>рачунању са целим редовима и колонама табеле; и</p></li>
+<li><p>транспоновању табеле.</p></li>
+</ol>
+<div class="section" id="id2">
+<h2>Индексирање<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Видели смо да је рад са колонама табеле веома једноставан.</p>
+<p>Да бисмо могли да радимо са редовима табеле треба прво да нађемо једну колону чија вредност једнозначно одређује цео ред табеле. На пример, у табели са прошлог часа</p>
+<table class="docutils align-left" id="id7">
+<caption><span class="caption-text">Подаци о групи деце</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Ime</p></th>
+<th class="head"><p>Pol</p></th>
+<th class="head"><p>Starost</p></th>
+<th class="head"><p>Masa</p></th>
+<th class="head"><p>Visina</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Ana</p></td>
+<td><p>ž</p></td>
+<td><p>13</p></td>
+<td><p>46</p></td>
+<td><p>160</p></td>
+</tr>
+<tr class="row-odd"><td><p>Bojan</p></td>
+<td><p>m</p></td>
+<td><p>14</p></td>
+<td><p>52</p></td>
+<td><p>165</p></td>
+</tr>
+<tr class="row-even"><td><p>Vlada</p></td>
+<td><p>m</p></td>
+<td><p>13</p></td>
+<td><p>47</p></td>
+<td><p>157</p></td>
+</tr>
+<tr class="row-odd"><td><p>Gordana</p></td>
+<td><p>ž</p></td>
+<td><p>15</p></td>
+<td><p>54</p></td>
+<td><p>165</p></td>
+</tr>
+<tr class="row-even"><td><p>Dejan</p></td>
+<td><p>m</p></td>
+<td><p>15</p></td>
+<td><p>56</p></td>
+<td><p>163</p></td>
+</tr>
+<tr class="row-odd"><td><p>Đorđe</p></td>
+<td><p>m</p></td>
+<td><p>13</p></td>
+<td><p>45</p></td>
+<td><p>159</p></td>
+</tr>
+<tr class="row-even"><td><p>Elena</p></td>
+<td><p>ž</p></td>
+<td><p>14</p></td>
+<td><p>49</p></td>
+<td><p>161</p></td>
+</tr>
+<tr class="row-odd"><td><p>Žaklina</p></td>
+<td><p>ž</p></td>
+<td><p>15</p></td>
+<td><p>52</p></td>
+<td><p>164</p></td>
+</tr>
+<tr class="row-even"><td><p>Zoran</p></td>
+<td><p>m</p></td>
+<td><p>15</p></td>
+<td><p>57</p></td>
+<td><p>167</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ivana</p></td>
+<td><p>ž</p></td>
+<td><p>13</p></td>
+<td><p>45</p></td>
+<td><p>158</p></td>
+</tr>
+<tr class="row-even"><td><p>Jasna</p></td>
+<td><p>ž</p></td>
+<td><p>14</p></td>
+<td><p>51</p></td>
+<td><p>162</p></td>
+</tr>
+</tbody>
+</table>
+<p>колона „Ime” је таква колона (колона „Visina” није погодна јер имамо двоје деце са висином 165, па када кажемо „дете са висином 165” није јасно о коме се ради; исто тако ни колоне „Pol”, „Starost” и „Masa” нису погодне).</p>
+<p>Таква колона се зове <em>кључ</em> јер је она <em>кључна</em> за приступање редовима табеле. Ако желимо да приступамо елементима табеле по редовима, морамо систему да пријавимо коју колону ћемо користити као кључ. То се постиже позивом функције <code class="docutils literal notranslate"><span class="pre">set_index</span></code> којој проследимо име колоне, а она врати нову табелу „индексирану по датом кључу”:</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [1]: </span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="gp">   ...: </span><span class="n">podaci</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">&quot;Ana&quot;</span><span class="p">,</span>     <span class="s2">&quot;ž&quot;</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">46</span><span class="p">,</span> <span class="mi">160</span><span class="p">],</span>
+<span class="gp">   ...: </span>          <span class="p">[</span><span class="s2">&quot;Bojan&quot;</span><span class="p">,</span>   <span class="s2">&quot;m&quot;</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">52</span><span class="p">,</span> <span class="mi">165</span><span class="p">],</span>
+<span class="gp">   ...: </span>          <span class="p">[</span><span class="s2">&quot;Vlada&quot;</span><span class="p">,</span>   <span class="s2">&quot;m&quot;</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">47</span><span class="p">,</span> <span class="mi">157</span><span class="p">],</span>
+<span class="gp">   ...: </span>          <span class="p">[</span><span class="s2">&quot;Gordana&quot;</span><span class="p">,</span> <span class="s2">&quot;ž&quot;</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">54</span><span class="p">,</span> <span class="mi">165</span><span class="p">],</span>
+<span class="gp">   ...: </span>          <span class="p">[</span><span class="s2">&quot;Dejan&quot;</span><span class="p">,</span>   <span class="s2">&quot;m&quot;</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">56</span><span class="p">,</span> <span class="mi">163</span><span class="p">],</span>
+<span class="gp">   ...: </span>          <span class="p">[</span><span class="s2">&quot;Đorđe&quot;</span><span class="p">,</span>   <span class="s2">&quot;m&quot;</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">159</span><span class="p">],</span>
+<span class="gp">   ...: </span>          <span class="p">[</span><span class="s2">&quot;Elena&quot;</span><span class="p">,</span>   <span class="s2">&quot;ž&quot;</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">49</span><span class="p">,</span> <span class="mi">161</span><span class="p">],</span>
+<span class="gp">   ...: </span>          <span class="p">[</span><span class="s2">&quot;Žaklina&quot;</span><span class="p">,</span> <span class="s2">&quot;ž&quot;</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">52</span><span class="p">,</span> <span class="mi">164</span><span class="p">],</span>
+<span class="gp">   ...: </span>          <span class="p">[</span><span class="s2">&quot;Zoran&quot;</span><span class="p">,</span>   <span class="s2">&quot;m&quot;</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">57</span><span class="p">,</span> <span class="mi">167</span><span class="p">],</span>
+<span class="gp">   ...: </span>          <span class="p">[</span><span class="s2">&quot;Ivana&quot;</span><span class="p">,</span>   <span class="s2">&quot;ž&quot;</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">158</span><span class="p">],</span>
+<span class="gp">   ...: </span>          <span class="p">[</span><span class="s2">&quot;Jasna&quot;</span><span class="p">,</span>   <span class="s2">&quot;ž&quot;</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">51</span><span class="p">,</span> <span class="mi">162</span><span class="p">]]</span>
+<span class="gp">   ...: </span><span class="n">tabela</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">podaci</span><span class="p">)</span>
+<span class="gp">   ...: </span><span class="n">tabela</span><span class="o">.</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Ime&quot;</span><span class="p">,</span> <span class="s2">&quot;Pol&quot;</span><span class="p">,</span> <span class="s2">&quot;Starost&quot;</span><span class="p">,</span> <span class="s2">&quot;Masa&quot;</span><span class="p">,</span> <span class="s2">&quot;Visina&quot;</span><span class="p">]</span>
+<span class="gp">   ...: </span><span class="n">tabela1</span><span class="o">=</span><span class="n">tabela</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s2">&quot;Ime&quot;</span><span class="p">)</span>
+<span class="gp">   ...: </span>
+</pre></div>
+</div>
+<p>Нова табела (<code class="docutils literal notranslate"><span class="pre">tabela1</span></code>) се од старе (<code class="docutils literal notranslate"><span class="pre">tabela</span></code>) разликује само по томе што редови више нису индексирани бројевима (0, 1, 2, …) већ именима деце (Ana, Bojan, Vlada, …). Ево старе (неиндексиране табеле) која има колону „Ime” и чији редови су индексирани бројевима:</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [2]: </span><span class="n">tabela</span>
+<span class="gh">Out[2]: </span><span class="go"></span>
+<span class="go">        Ime Pol  Starost  Masa  Visina</span>
+<span class="go">0       Ana   ž       13    46     160</span>
+<span class="go">1     Bojan   m       14    52     165</span>
+<span class="go">2     Vlada   m       13    47     157</span>
+<span class="go">3   Gordana   ž       15    54     165</span>
+<span class="go">4     Dejan   m       15    56     163</span>
+<span class="go">5     Đorđe   m       13    45     159</span>
+<span class="go">6     Elena   ž       14    49     161</span>
+<span class="go">7   Žaklina   ž       15    52     164</span>
+<span class="go">8     Zoran   m       15    57     167</span>
+<span class="go">9     Ivana   ž       13    45     158</span>
+<span class="go">10    Jasna   ž       14    51     162</span>
+</pre></div>
+</div>
+<p>А ево и нове табеле у којој су редови индексирани именима деце:</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [3]: </span><span class="n">tabela1</span>
+<span class="gh">Out[3]: </span><span class="go"></span>
+<span class="go">        Pol  Starost  Masa  Visina</span>
+<span class="go">Ime                               </span>
+<span class="go">Ana       ž       13    46     160</span>
+<span class="go">Bojan     m       14    52     165</span>
+<span class="go">Vlada     m       13    47     157</span>
+<span class="go">Gordana   ž       15    54     165</span>
+<span class="go">Dejan     m       15    56     163</span>
+<span class="go">Đorđe     m       13    45     159</span>
+<span class="go">Elena     ž       14    49     161</span>
+<span class="go">Žaklina   ž       15    52     164</span>
+<span class="go">Zoran     m       15    57     167</span>
+<span class="go">Ivana     ž       13    45     158</span>
+<span class="go">Jasna     ž       14    51     162</span>
+</pre></div>
+</div>
+<p>Колона „Ime” је и даље присутна у табели <code class="docutils literal notranslate"><span class="pre">tabela1</span></code>, али има посебан статус. Ако покушамо да јој приступимо као
+„обичној” колони</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">tabela1</span><span class="p">[</span><span class="s2">&quot;Ime&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>добићемо грешку. Међутим, она је ту као <em>индексна колона</em>:</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [4]: </span><span class="n">tabela1</span><span class="o">.</span><span class="n">index</span>
+<span class="gh">Out[4]: </span><span class="go"></span>
+<span class="go">Index([&#39;Ana&#39;, &#39;Bojan&#39;, &#39;Vlada&#39;, &#39;Gordana&#39;, &#39;Dejan&#39;, &#39;Đorđe&#39;, &#39;Elena&#39;,</span>
+<span class="go">       &#39;Žaklina&#39;, &#39;Zoran&#39;, &#39;Ivana&#39;, &#39;Jasna&#39;],</span>
+<span class="go">      dtype=&#39;object&#39;, name=&#39;Ime&#39;)</span>
+</pre></div>
+</div>
+<p>Ако желимо да прикажемо висину деце у групи графиконом тако да имена деце буду на хоризонталној оси, то сада можемо урадити овако:</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [5]: </span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="gp">   ...: </span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<span class="gp">   ...: </span><span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">tabela1</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">tabela1</span><span class="p">[</span><span class="s2">&quot;Visina&quot;</span><span class="p">])</span>
+<span class="gp">   ...: </span><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Visina dece u grupi&quot;</span><span class="p">)</span>
+<span class="gp">   ...: </span><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="gp">   ...: </span>
+</pre></div>
+</div>
+<img alt="../_images/J07slika1.png" src="../_images/J07slika1.png" />
+<p>Ознаке на хоризонталној оси узимамо из индексне колоне <code class="docutils literal notranslate"><span class="pre">tabela1.index</span></code>, док податке о висини стубића узимамо из колоне <code class="docutils literal notranslate"><span class="pre">tabela1[&quot;Visina&quot;]</span></code>.</p>
+</div>
+<div class="section" id="id3">
+<h2>Приступ врстама и појединачним ћелијама индексиране табеле<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>Структура података <em>DataFrame</em> је оптимизована за рад са колонама табеле. Срећом, када имамо индексирану табелу као што је то <code class="docutils literal notranslate"><span class="pre">tabela1</span></code>, користећи функцију <code class="docutils literal notranslate"><span class="pre">loc</span></code> (од енгл. <em>location</em> што значи „локација, положај, место”) можемо да приступамо редовима табеле, као и појединачним ћелијама табеле.</p>
+<p>Податке о појединачним редовима табеле можемо да видимо овако:</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [6]: </span><span class="n">tabela1</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s2">&quot;Dejan&quot;</span><span class="p">]</span>
+<span class="gh">Out[6]: </span><span class="go"></span>
+<span class="go">Pol          m</span>
+<span class="go">Starost     15</span>
+<span class="go">Masa        56</span>
+<span class="go">Visina     163</span>
+<span class="go">Name: Dejan, dtype: object</span>
+</pre></div>
+</div>
+<p>Као аргумент функције <code class="docutils literal notranslate"><span class="pre">loc</span></code> можемо да наведемо и распон, и тако ћемо добити одговарајући део табеле:</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [7]: </span><span class="n">tabela1</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s2">&quot;Dejan&quot;</span><span class="p">:</span><span class="s2">&quot;Zoran&quot;</span><span class="p">]</span>
+<span class="gh">Out[7]: </span><span class="go"></span>
+<span class="go">        Pol  Starost  Masa  Visina</span>
+<span class="go">Ime                               </span>
+<span class="go">Dejan     m       15    56     163</span>
+<span class="go">Đorđe     m       13    45     159</span>
+<span class="go">Elena     ž       14    49     161</span>
+<span class="go">Žaklina   ž       15    52     164</span>
+<span class="go">Zoran     m       15    57     167</span>
+</pre></div>
+</div>
+<p>Ако као други аргумент функције <code class="docutils literal notranslate"><span class="pre">loc</span></code> наведемо име колоне, рецимо овако:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">tabela1</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s2">&quot;Dejan&quot;</span><span class="p">,</span> <span class="s2">&quot;Visina&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>добићемо информацију о Дејановој висини.</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [8]: </span><span class="n">tabela1</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s2">&quot;Dejan&quot;</span><span class="p">,</span> <span class="s2">&quot;Visina&quot;</span><span class="p">]</span>
+<span class="gh">Out[8]: </span><span class="go">163</span>
+</pre></div>
+</div>
+<p>Ево како можемо да добијемо информацију о маси и висини неколико деце:</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [9]: </span><span class="n">tabela1</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s2">&quot;Dejan&quot;</span><span class="p">:</span><span class="s2">&quot;Zoran&quot;</span><span class="p">,</span> <span class="s2">&quot;Masa&quot;</span><span class="p">:</span><span class="s2">&quot;Visina&quot;</span><span class="p">]</span>
+<span class="gh">Out[9]: </span><span class="go"></span>
+<span class="go">         Masa  Visina</span>
+<span class="go">Ime                  </span>
+<span class="go">Dejan      56     163</span>
+<span class="go">Đorđe      45     159</span>
+<span class="go">Elena      49     161</span>
+<span class="go">Žaklina    52     164</span>
+<span class="go">Zoran      57     167</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>Рачун по врстама и колонама табеле<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>Кренимо од једног примера. У ћелији испод дате су оцене неких ученика из информатике, енглеског, математике, физике, хемије и ликовног:</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [10]: </span><span class="n">razred</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">&quot;Ana&quot;</span><span class="p">,</span>     <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span>
+<span class="gp">   ....: </span>          <span class="p">[</span><span class="s2">&quot;Bojan&quot;</span><span class="p">,</span>   <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span>
+<span class="gp">   ....: </span>          <span class="p">[</span><span class="s2">&quot;Vlada&quot;</span><span class="p">,</span>   <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
+<span class="gp">   ....: </span>          <span class="p">[</span><span class="s2">&quot;Gordana&quot;</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span>
+<span class="gp">   ....: </span>          <span class="p">[</span><span class="s2">&quot;Dejan&quot;</span><span class="p">,</span>   <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
+<span class="gp">   ....: </span>          <span class="p">[</span><span class="s2">&quot;Đorđe&quot;</span><span class="p">,</span>   <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
+<span class="gp">   ....: </span>          <span class="p">[</span><span class="s2">&quot;Elena&quot;</span><span class="p">,</span>   <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+<span class="gp">   ....: </span>          <span class="p">[</span><span class="s2">&quot;Žaklina&quot;</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span>
+<span class="gp">   ....: </span>          <span class="p">[</span><span class="s2">&quot;Zoran&quot;</span><span class="p">,</span>   <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span>
+<span class="gp">   ....: </span>          <span class="p">[</span><span class="s2">&quot;Ivana&quot;</span><span class="p">,</span>   <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span>
+<span class="gp">   ....: </span>          <span class="p">[</span><span class="s2">&quot;Jasna&quot;</span><span class="p">,</span>   <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">]]</span>
+<span class="gp">   ....: </span>
+</pre></div>
+</div>
+<p>Сада ћемо од ових података направити табелу чије колоне ће се звати „Ime”, „Informatika”, „Engleski”, „Matematika”, „Fizika”, „Hemija”, „Likovno” и која ће бити индексирана по колони „Ime”:</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [11]: </span><span class="n">ocene</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">razred</span><span class="p">)</span>
+<span class="gp">   ....: </span><span class="n">ocene</span><span class="o">.</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Ime&quot;</span><span class="p">,</span> <span class="s2">&quot;Informatika&quot;</span><span class="p">,</span> <span class="s2">&quot;Engleski&quot;</span><span class="p">,</span> <span class="s2">&quot;Matematika&quot;</span><span class="p">,</span> <span class="s2">&quot;Fizika&quot;</span><span class="p">,</span> <span class="s2">&quot;Hemija&quot;</span><span class="p">,</span> <span class="s2">&quot;Likovno&quot;</span><span class="p">]</span>
+<span class="gp">   ....: </span><span class="n">ocene1</span> <span class="o">=</span> <span class="n">ocene</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s2">&quot;Ime&quot;</span><span class="p">)</span>
+<span class="gp">   ....: </span><span class="n">ocene1</span>
+<span class="gp">   ....: </span>
+<span class="gh">Out[11]: </span><span class="go"></span>
+<span class="go">         Informatika  Engleski  Matematika  Fizika  Hemija  Likovno</span>
+<span class="go">Ime                                                                </span>
+<span class="go">Ana                5         3           5       2       4        5</span>
+<span class="go">Bojan              5         5           5       5       5        5</span>
+<span class="go">Vlada              4         5           3       4       5        4</span>
+<span class="go">Gordana            5         5           5       5       5        5</span>
+<span class="go">Dejan              3         4           2       3       3        4</span>
+<span class="go">Đorđe              4         5           3       4       5        4</span>
+<span class="go">Elena              3         3           3       4       2        3</span>
+<span class="go">Žaklina            5         5           4       5       4        5</span>
+<span class="go">Zoran              4         5           4       4       3        5</span>
+<span class="go">Ivana              2         2           2       2       2        5</span>
+<span class="go">Jasna              3         4           5       4       5        5</span>
+</pre></div>
+</div>
+<p>Ако желимо да израчунамо просек по предметима, треба на сваку колону ове табеле да применимо функцију <code class="docutils literal notranslate"><span class="pre">mean</span></code>. Листа са именима свих колона табеле <code class="docutils literal notranslate"><span class="pre">ocene1</span></code> се добија као <code class="docutils literal notranslate"><span class="pre">ocene1.columns</span></code>, па сада само треба да прођемо кроз ову листу и за сваку колону да израчунамо просек:</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [12]: </span><span class="k">for</span> <span class="n">predmet</span> <span class="ow">in</span> <span class="n">ocene1</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+<span class="gp">   ....: </span>    <span class="nb">print</span><span class="p">(</span><span class="n">predmet</span><span class="p">,</span> <span class="s2">&quot;-&gt;&quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">ocene1</span><span class="p">[</span><span class="n">predmet</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="mi">2</span><span class="p">))</span>
+<span class="gp">   ....: </span>
+<span class="go">Informatika -&gt; 3.91</span>
+<span class="go">Engleski -&gt; 4.18</span>
+<span class="go">Matematika -&gt; 3.73</span>
+<span class="go">Fizika -&gt; 3.82</span>
+<span class="go">Hemija -&gt; 3.91</span>
+<span class="go">Likovno -&gt; 4.55</span>
+</pre></div>
+</div>
+<p>Да бисмо израчунали просечне оцене сваког ученика функцију <code class="docutils literal notranslate"><span class="pre">mean</span></code> ћемо применити на врсте табеле које добијамо позивом функције <code class="docutils literal notranslate"><span class="pre">loc</span></code>. Погледајмо, прво, како то можемо да урадимо за једног ученика:</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [13]: </span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Đorđe ima sledeće ocene:&quot;</span><span class="p">)</span>
+<span class="gp">   ....: </span><span class="nb">print</span><span class="p">(</span><span class="n">ocene1</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s2">&quot;Đorđe&quot;</span><span class="p">])</span>
+<span class="gp">   ....: </span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Prosek njegovih ocena je:&quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">ocene1</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s2">&quot;Đorđe&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="mi">2</span><span class="p">))</span>
+<span class="gp">   ....: </span>
+<span class="go">Đorđe ima sledeće ocene:</span>
+<span class="go">Informatika    4</span>
+<span class="go">Engleski       5</span>
+<span class="go">Matematika     3</span>
+<span class="go">Fizika         4</span>
+<span class="go">Hemija         5</span>
+<span class="go">Likovno        4</span>
+<span class="go">Name: Đorđe, dtype: int64</span>
+<span class="go">Prosek njegovih ocena je: 4.17</span>
+</pre></div>
+</div>
+<p>Списак свих ученика се налази у индексној колони, па просеке по свим ученицима можемо да израчунамо овако:</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [14]: </span><span class="k">for</span> <span class="n">ucenik</span> <span class="ow">in</span> <span class="n">ocene1</span><span class="o">.</span><span class="n">index</span><span class="p">:</span>
+<span class="gp">   ....: </span>    <span class="nb">print</span><span class="p">(</span><span class="n">ucenik</span><span class="p">,</span> <span class="s2">&quot;-&gt;&quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">ocene1</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">ucenik</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="mi">2</span><span class="p">))</span>
+<span class="gp">   ....: </span>
+<span class="go">Ana -&gt; 4.0</span>
+<span class="go">Bojan -&gt; 5.0</span>
+<span class="go">Vlada -&gt; 4.17</span>
+<span class="go">Gordana -&gt; 5.0</span>
+<span class="go">Dejan -&gt; 3.17</span>
+<span class="go">Đorđe -&gt; 4.17</span>
+<span class="go">Elena -&gt; 3.0</span>
+<span class="go">Žaklina -&gt; 4.67</span>
+<span class="go">Zoran -&gt; 4.17</span>
+<span class="go">Ivana -&gt; 2.5</span>
+<span class="go">Jasna -&gt; 4.33</span>
+</pre></div>
+</div>
+<p>Ево и кратке видео илустрације:</p>
+
+    <div  id="fTmkDR6HLxI" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
+        <div style="background-image: url('https://img.youtube.com/vi/fTmkDR6HLxI/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
+            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+        </div>
+      
+
+        </div>
+    <div id="modal-fTmkDR6HLxI" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
+        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal-fTmkDR6HLxI">
+        </div>
+    </div>
+    
+    
+    </div>
+<div class="section" id="id5">
+<h2>Транспоновање табеле<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>Замена врста и колона табеле се зове <em>транспоновање</em>. Приликом транспоновања имена колона полазне табеле постају индекси нове табеле, док индексна колона полазне табеле одређује имена колона нове табеле:</p>
+<a class="reference internal image-reference" href="../_images/DataFrame-T.jpg"><img alt="../_images/DataFrame-T.jpg" class="align-center" src="../_images/DataFrame-T.jpg" style="width: 600px;" /></a>
+<p>Транспоновање се често користи када табела има мало веома дугачких редова, па је у неким ситуацијама лакше посматрати транспоновану табелу која онда има пуно релативно кратких редова. Функције <code class="docutils literal notranslate"><span class="pre">head</span></code> и <code class="docutils literal notranslate"><span class="pre">tail</span></code> нам тада омогућују да се брзо упознамо са почетком и крајем табеле и да стекнемо неку интуицију о томе како табела изгледа.</p>
+<p>Важно је рећи и то да се са табелама може радити и без транспоновања, јер све што можемо да урадимо на колонама табеле можемо да урадимо и на врстама. И поред тога, транспоновање се често користи јер је библиотека <code class="docutils literal notranslate"><span class="pre">pandas</span></code> оптимизована за рад по колонама табеле.</p>
+<p>Табела се транспонује тако што се на њу примени функција <code class="docutils literal notranslate"><span class="pre">Т</span></code> која као резултат враћа нову, транспоновану табелу.</p>
+<p>Ево примера са оценама:</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [15]: </span><span class="n">ocene1</span>
+<span class="gh">Out[15]: </span><span class="go"></span>
+<span class="go">         Informatika  Engleski  Matematika  Fizika  Hemija  Likovno</span>
+<span class="go">Ime                                                                </span>
+<span class="go">Ana                5         3           5       2       4        5</span>
+<span class="go">Bojan              5         5           5       5       5        5</span>
+<span class="go">Vlada              4         5           3       4       5        4</span>
+<span class="go">Gordana            5         5           5       5       5        5</span>
+<span class="go">Dejan              3         4           2       3       3        4</span>
+<span class="go">Đorđe              4         5           3       4       5        4</span>
+<span class="go">Elena              3         3           3       4       2        3</span>
+<span class="go">Žaklina            5         5           4       5       4        5</span>
+<span class="go">Zoran              4         5           4       4       3        5</span>
+<span class="go">Ivana              2         2           2       2       2        5</span>
+<span class="go">Jasna              3         4           5       4       5        5</span>
+</pre></div>
+</div>
+<p>Транспоновану табелу добијамо овако:</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [16]: </span><span class="n">ocene2</span> <span class="o">=</span> <span class="n">ocene1</span><span class="o">.</span><span class="n">T</span>
+</pre></div>
+</div>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [17]: </span><span class="n">ocene2</span>
+<span class="gh">Out[17]: </span><span class="go"></span>
+<span class="go">Ime          Ana  Bojan  Vlada  Gordana  Dejan  Đorđe  Elena  Žaklina  Zoran  Ivana  Jasna</span>
+<span class="go">Informatika    5      5      4        5      3      4      3        5      4      2      3</span>
+<span class="go">Engleski       3      5      5        5      4      5      3        5      5      2      4</span>
+<span class="go">Matematika     5      5      3        5      2      3      3        4      4      2      5</span>
+<span class="go">Fizika         2      5      4        5      3      4      4        5      4      2      4</span>
+<span class="go">Hemija         4      5      5        5      3      5      2        4      3      2      5</span>
+<span class="go">Likovno        5      5      4        5      4      4      3        5      5      5      5</span>
+</pre></div>
+</div>
+<p>Хајде још да се уверимо да су врсте и колоне замениле места и у пољима <code class="docutils literal notranslate"><span class="pre">index</span></code> и <code class="docutils literal notranslate"><span class="pre">columns</span></code>. У полазној табели је:</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [18]: </span><span class="n">ocene1</span><span class="o">.</span><span class="n">index</span>
+<span class="gh">Out[18]: </span><span class="go"></span>
+<span class="go">Index([&#39;Ana&#39;, &#39;Bojan&#39;, &#39;Vlada&#39;, &#39;Gordana&#39;, &#39;Dejan&#39;, &#39;Đorđe&#39;, &#39;Elena&#39;,</span>
+<span class="go">       &#39;Žaklina&#39;, &#39;Zoran&#39;, &#39;Ivana&#39;, &#39;Jasna&#39;],</span>
+<span class="go">      dtype=&#39;object&#39;, name=&#39;Ime&#39;)</span>
+</pre></div>
+</div>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [19]: </span><span class="n">ocene1</span><span class="o">.</span><span class="n">columns</span>
+<span class="gh">Out[19]: </span><span class="go">Index([&#39;Informatika&#39;, &#39;Engleski&#39;, &#39;Matematika&#39;, &#39;Fizika&#39;, &#39;Hemija&#39;, &#39;Likovno&#39;], dtype=&#39;object&#39;)</span>
+</pre></div>
+</div>
+<p>А у транспонованој табели је:</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [20]: </span><span class="n">ocene2</span><span class="o">.</span><span class="n">index</span>
+<span class="gh">Out[20]: </span><span class="go">Index([&#39;Informatika&#39;, &#39;Engleski&#39;, &#39;Matematika&#39;, &#39;Fizika&#39;, &#39;Hemija&#39;, &#39;Likovno&#39;], dtype=&#39;object&#39;)</span>
+</pre></div>
+</div>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [21]: </span><span class="n">ocene2</span><span class="o">.</span><span class="n">columns</span>
+<span class="gh">Out[21]: </span><span class="go"></span>
+<span class="go">Index([&#39;Ana&#39;, &#39;Bojan&#39;, &#39;Vlada&#39;, &#39;Gordana&#39;, &#39;Dejan&#39;, &#39;Đorđe&#39;, &#39;Elena&#39;,</span>
+<span class="go">       &#39;Žaklina&#39;, &#39;Zoran&#39;, &#39;Ivana&#39;, &#39;Jasna&#39;],</span>
+<span class="go">      dtype=&#39;object&#39;, name=&#39;Ime&#39;)</span>
+</pre></div>
+</div>
+<p>Како смо раније већ видели, просек оцена по предметима добијамо лако:</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [22]: </span><span class="k">for</span> <span class="n">predmet</span> <span class="ow">in</span> <span class="n">ocene1</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+<span class="gp">   ....: </span>    <span class="nb">print</span><span class="p">(</span><span class="n">predmet</span><span class="p">,</span> <span class="s2">&quot;-&gt;&quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">ocene1</span><span class="p">[</span><span class="n">predmet</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="mi">2</span><span class="p">))</span>
+<span class="gp">   ....: </span>
+<span class="go">Informatika -&gt; 3.91</span>
+<span class="go">Engleski -&gt; 4.18</span>
+<span class="go">Matematika -&gt; 3.73</span>
+<span class="go">Fizika -&gt; 3.82</span>
+<span class="go">Hemija -&gt; 3.91</span>
+<span class="go">Likovno -&gt; 4.55</span>
+</pre></div>
+</div>
+<p>Да бисмо добили просек оцена по ученицима, можемо да приступимо врстама табеле користећи функцију <code class="docutils literal notranslate"><span class="pre">loc</span></code> како смо то већ видели, али можемо и да употребимо транспоновану табелу (рачунање просека по колонама, јер су колоне транспоноване табеле заправо врсте полазне табеле):</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [23]: </span><span class="k">for</span> <span class="n">ucenik</span> <span class="ow">in</span> <span class="n">ocene2</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+<span class="gp">   ....: </span>    <span class="nb">print</span><span class="p">(</span><span class="n">ucenik</span><span class="p">,</span> <span class="s2">&quot;-&gt;&quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">ocene2</span><span class="p">[</span><span class="n">ucenik</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="mi">2</span><span class="p">))</span>
+<span class="gp">   ....: </span>
+<span class="go">Ana -&gt; 4.0</span>
+<span class="go">Bojan -&gt; 5.0</span>
+<span class="go">Vlada -&gt; 4.17</span>
+<span class="go">Gordana -&gt; 5.0</span>
+<span class="go">Dejan -&gt; 3.17</span>
+<span class="go">Đorđe -&gt; 4.17</span>
+<span class="go">Elena -&gt; 3.0</span>
+<span class="go">Žaklina -&gt; 4.67</span>
+<span class="go">Zoran -&gt; 4.17</span>
+<span class="go">Ivana -&gt; 2.5</span>
+<span class="go">Jasna -&gt; 4.33</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>Задаци<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>За вежбу покрени Џупитер окружење и реши задатке из радне свеске J07.ipynb</p>
+</div>
+</div>
+
+
+    </div>
+    
+    <div>
+<div class="lecture-prev-next-toggle">
+  <a  href="index.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходно лекција </span> </a>
+  
+  <a id="nextLectureLink" class="lecture-toggler-arrows"><span> Следећа лекција</span>  <i class="fas fa-arrow-right fa"></i> </a>
+</div>
+
+<script type="text/javascript">
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+</script>
+</div>
+
+    
+  </div>
+</div>
+<div class="petljadoc-resources">
+  <span class="pull-left">(Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>) <br> © 2022 Petlja</span>
+</div>
+
+<div class="lectureToolbox">
+
+  <label class="font-size-toggle" id="fontSizeToggle">
+
+      <i class="fas fa-font"></i><label>Слова</label>
+  </label>
+  <div class="font-change d-none" id="fontChangeModal">
+      <span class="dec-letter-icon" id="decLetterIcon">A-</span>
+      <label id="currentFontSize">16</label>
+      <span class="inc-letter-icon" id="incLetterIcon">A+</span>
+  </div>
+</div>
+
+</div>
+
+  </body>
+</html>
