@@ -1,4 +1,4 @@
-# Настава програмирања за Други разред гимназије
+# Nastava programiranja za drugi razred gimnazije
 
 Ovaj repozitorijum posvećen je kursu za drugi razred gimnazije za nastavnu temu Programiranje. Kurs je na Petljom portalu dotupan ovde: https://petlja.org/kurs/478/0
 
