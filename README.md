@@ -1,6 +1,12 @@
 # Настава програмирања за Други разред гимназије
 
-Ovaj repozitorijum posvećen je kursu za drugi razred gimnazije za nastavnu temu Programiranje. Kurs se na Petlji nalazi ovde https://petlja.org/kurs/478/0
+Ovaj repozitorijum posvećen je kursu za drugi razred gimnazije za nastavnu temu Programiranje. Kurs je na Petljom portalu dotupan ovde: https://petlja.org/kurs/478/0
+
+## Konverzija *HTML*
+
+U ovom repozitorijumu se nalazi izvorna forma sadržaja koju pomoću alata [PetljaDoc](https://github.com/Petlja/PetljaDoc) možete konvertovati u skup *HTML* strana.
+
+Na https://petlja.github.io/Programiranje_II možete pregledati na taj način dobijene *HTML* strane.
 
 ## License
 
