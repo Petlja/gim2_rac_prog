@@ -173,7 +173,6 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-    <link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
     <script type="text/javascript">
       eBookConfig = {};
       eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
@@ -219,7 +218,7 @@
 </div>
 
 
-<div class="content-header-label" id = "content-header-label" href="../">Анализа података у Џупитеру и технике програмирања</div>
+<div class="content-header-label" id = "content-header-label" href="../">Анализа података у Џупитеру и технике програмирања за други разред гимназије</div>
 
 </div>
 
@@ -938,13 +937,13 @@
 <p>На веб страни коју читамо може бити више табела и зато функција <code class="docutils literal notranslate"><span class="pre">read_html</span></code> враћа <em>листу табела</em>. Табела коју желимо да видимо је прва на наведеној страни и зато иза наредбе следи конструкт <code class="docutils literal notranslate"><span class="pre">[0]</span></code>. Аргумент <code class="docutils literal notranslate"><span class="pre">header=[0,1]</span></code> значи да прве две врсте треба узети за заглавље табеле. Ево како изгледа табела:</p>
 <div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [28]: </span><span class="n">US</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 <span class="gh">Out[28]: </span><span class="go"></span>
-<span class="go">  Name &amp;postal abbs. [1]                          Unnamed: 2_level_0  ... Water area[4]         Numberof Reps.</span>
-<span class="go">  Name &amp;postal abbs. [1] Name &amp;postal abbs. [1].1 Unnamed: 2_level_1  ...           mi2     km2 Numberof Reps.</span>
-<span class="go">0                Alabama                      NaN                 AL  ...          1775    4597              7</span>
-<span class="go">1                 Alaska                      NaN                 AK  ...         94743  245384              1</span>
-<span class="go">2                Arizona                      NaN                 AZ  ...           396    1026              9</span>
-<span class="go">3               Arkansas                      NaN                 AR  ...          1143    2961              4</span>
-<span class="go">4             California                      NaN                 CA  ...          7916   20501             53</span>
+<span class="go">  Name &amp;postal abbs. [1]                           ... Water area[4] Numberof Reps.</span>
+<span class="go">  Name &amp;postal abbs. [1] Name &amp;postal abbs. [1].1  ...           km2 Numberof Reps.</span>
+<span class="go">0                Alabama                      NaN  ...          4597              7</span>
+<span class="go">1                 Alaska                      NaN  ...        245384              1</span>
+<span class="go">2                Arizona                      NaN  ...          1026              9</span>
+<span class="go">3               Arkansas                      NaN  ...          2961              4</span>
+<span class="go">4             California                      NaN  ...         20501             53</span>
 
 <span class="go">[5 rows x 14 columns]</span>
 </pre></div>

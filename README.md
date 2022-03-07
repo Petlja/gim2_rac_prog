@@ -1,4 +1,4 @@
-# Nastava programiranja za drugi razred gimnazije
+# Analiza podataka u Džupiteru i tehnike programiranja za drugi razred gimnazije
 
 Ovaj repozitorijum posvećen je kursu za drugi razred gimnazije za nastavnu temu Programiranje. Kurs je na Petljom portalu dotupan ovde: https://petlja.org/kurs/478/0
 

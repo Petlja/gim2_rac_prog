@@ -173,7 +173,6 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-    <link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
     <script type="text/javascript">
       eBookConfig = {};
       eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
@@ -219,7 +218,7 @@
 </div>
 
 
-<div class="content-header-label" id = "content-header-label" href="../">Анализа података у Џупитеру и технике програмирања</div>
+<div class="content-header-label" id = "content-header-label" href="../">Анализа података у Џупитеру и технике програмирања за други разред гимназије</div>
 
 </div>
 
@@ -528,7 +527,7 @@
 <span class="go">Jasna              3         4           5       4       5        5       0.0</span>
 </pre></div>
 </div>
-<p>Сада ћемо у једном <em>for</em>-циклусу да прођемо кроз индексну колону табеле и да за сваки ред табеле израчунамо просек бројева уписаних у колоне „Informatika”–„Likovno”. (Не смемо да рачунамо просек целог реда, јер редови сада садрже и колону „ProsekUc” која не сме да се укључи у рачун просека!)</p>
+<p>Сада ћемо у једном <em>for</em>-циклусу да прођемо кроз индексну колону табеле и да за сваки ред табеле израчунамо просек бројева уписаних у колоне „Informatika”–”Likovno”. (Не смемо да рачунамо просек целог реда, јер редови сада садрже и колону „ProsekUc” која не сме да се укључи у рачун просека!)</p>
 <div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [4]: </span><span class="k">for</span> <span class="n">ucenik</span> <span class="ow">in</span> <span class="n">ocene1</span><span class="o">.</span><span class="n">index</span><span class="p">:</span>
 <span class="gp">   ...: </span>    <span class="n">ocene1</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">ucenik</span><span class="p">,</span> <span class="s2">&quot;ProsekUc&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">ocene1</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">ucenik</span><span class="p">,</span> <span class="s2">&quot;Informatika&quot;</span><span class="p">:</span><span class="s2">&quot;Likovno&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 <span class="gp">   ...: </span>
@@ -587,20 +586,22 @@
 <span class="gp">   ...: </span><span class="n">ocene1</span>
 <span class="gp">   ...: </span>
 <span class="gh">Out[7]: </span><span class="go"></span>
-<span class="go">          Informatika  Engleski  Matematika    Fizika    Hemija   Likovno  ProsekUc</span>
-<span class="go">Ime                                                                                </span>
-<span class="go">Ana          5.000000  3.000000    5.000000  2.000000  4.000000  5.000000  4.000000</span>
-<span class="go">Bojan        5.000000  5.000000    5.000000  5.000000  5.000000  5.000000  5.000000</span>
-<span class="go">Vlada        4.000000  5.000000    3.000000  4.000000  5.000000  4.000000  4.166667</span>
-<span class="go">Gordana      5.000000  5.000000    5.000000  5.000000  5.000000  5.000000  5.000000</span>
-<span class="go">Dejan        3.000000  4.000000    2.000000  3.000000  3.000000  4.000000  3.166667</span>
-<span class="go">Đorđe        4.000000  5.000000    3.000000  4.000000  5.000000  4.000000  4.166667</span>
-<span class="go">Elena        3.000000  3.000000    3.000000  4.000000  2.000000  3.000000  3.000000</span>
-<span class="go">Žaklina      5.000000  5.000000    4.000000  5.000000  4.000000  5.000000  4.666667</span>
-<span class="go">Zoran        4.000000  5.000000    4.000000  4.000000  3.000000  5.000000  4.166667</span>
-<span class="go">Ivana        2.000000  2.000000    2.000000  2.000000  2.000000  5.000000  2.500000</span>
-<span class="go">Jasna        3.000000  4.000000    5.000000  4.000000  5.000000  5.000000  4.333333</span>
-<span class="go">ProsekPr     3.909091  4.181818    3.727273  3.818182  3.909091  4.545455  4.015152</span>
+<span class="go">          Informatika  Engleski  Matematika  ...    Hemija   Likovno  ProsekUc</span>
+<span class="go">Ime                                          ...                              </span>
+<span class="go">Ana          5.000000  3.000000    5.000000  ...  4.000000  5.000000  4.000000</span>
+<span class="go">Bojan        5.000000  5.000000    5.000000  ...  5.000000  5.000000  5.000000</span>
+<span class="go">Vlada        4.000000  5.000000    3.000000  ...  5.000000  4.000000  4.166667</span>
+<span class="go">Gordana      5.000000  5.000000    5.000000  ...  5.000000  5.000000  5.000000</span>
+<span class="go">Dejan        3.000000  4.000000    2.000000  ...  3.000000  4.000000  3.166667</span>
+<span class="go">Đorđe        4.000000  5.000000    3.000000  ...  5.000000  4.000000  4.166667</span>
+<span class="go">Elena        3.000000  3.000000    3.000000  ...  2.000000  3.000000  3.000000</span>
+<span class="go">Žaklina      5.000000  5.000000    4.000000  ...  4.000000  5.000000  4.666667</span>
+<span class="go">Zoran        4.000000  5.000000    4.000000  ...  3.000000  5.000000  4.166667</span>
+<span class="go">Ivana        2.000000  2.000000    2.000000  ...  2.000000  5.000000  2.500000</span>
+<span class="go">Jasna        3.000000  4.000000    5.000000  ...  5.000000  5.000000  4.333333</span>
+<span class="go">ProsekPr     3.909091  4.181818    3.727273  ...  3.909091  4.545455  4.015152</span>
+
+<span class="go">[12 rows x 7 columns]</span>
 </pre></div>
 </div>
 <p>Ево још једног примера. На следећем линку:</p>
