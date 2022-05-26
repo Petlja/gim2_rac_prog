@@ -1,12 +1,16 @@
 # Analiza podataka u Džupiteru i tehnike programiranja za drugi razred gimnazije
 
-Ovaj repozitorijum posvećen je kursu za drugi razred gimnazije za nastavnu temu Programiranje. Kurs je na Petljom portalu dotupan ovde: https://petlja.org/kurs/478/0
+Ovaj repozitorijum posvećen je kursu za drugi razred gimnazije za nastavnu temu Programiranje.
+
+Kurs je na Petljom portalu dotupan ovde: https://petlja.org/kurs/478/0
+
+Kurs možete itegrisati u svoj LMS koristeći SCORM pakete koji se mogu preuzeti sa: https://github.com/Petlja/gim2_rac_prog/releases
 
 ## Konverzija *HTML*
 
 U ovom repozitorijumu se nalazi izvorna forma sadržaja koju pomoću alata [PetljaDoc](https://github.com/Petlja/PetljaDoc) možete konvertovati u skup *HTML* strana.
 
-Na https://petlja.github.io/Programiranje_II možete pregledati na taj način dobijene *HTML* strane.
+Na https://petlja.github.io/gim2_rac_prog možete pregledati na taj način dobijene *HTML* strane.
 
 ## License
 
