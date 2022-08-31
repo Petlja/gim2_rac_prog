@@ -34,11 +34,12 @@
 .. activecode:: primer6-1
    :includesrc: _src/P06/Poz_neg.py
 
-.. infonote::
+.. technicalnote::
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``P06`` учитај програм ``Poz_neg.py`` и изврши га.
+   Покрени овај програм на свом рачунару тако што ћеш у `фолдеру за рад офлајн <https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip>`_, покренути IDLE и из потфолдеру ``P06`` извршити програм ``Poz_neg.py``.
+
    
    
 Пример.
@@ -49,11 +50,12 @@
 .. activecode:: primer6-2
    :includesrc: _src/P06/Maks_5_slova.py
 
-.. infonote::
+.. technicalnote::
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``P06`` учитај програм ``Maks_5_slova.py`` и изврши га.
+   Покрени овај програм на свом рачунару тако што ћеш у `фолдеру за рад офлајн <https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip>`_, покренути IDLE и из потфолдеру ``P06`` извршити програм ``Maks_5_slova.py``.
+
 
 
 Пример.
@@ -81,11 +83,12 @@
 .. activecode:: primer6-3
    :includesrc: _src/P06/Decaci_devojcice.py
 
-.. infonote::
+
+.. technicalnote::
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``P06`` учитај програм ``Decaci_devojcice.py`` и изврши га.
+   Покрени овај програм на свом рачунару тако што ћеш у `фолдеру за рад офлајн <https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip>`_, покренути IDLE и из потфолдеру ``P06`` извршити програм ``Decaci_devojcice.py``.
 
    Ево и кратке видео демонстрације:
    
@@ -116,11 +119,11 @@
 .. activecode:: primer6-4
    :includesrc: _src/P06/Izdvoj_pozitivne.py
 
-.. infonote::
+.. technicalnote::
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``P06`` учитај програм ``Izdvoj_pozitivne.py`` и изврши га.
+   Покрени овај програм на свом рачунару тако што ћеш у `фолдеру за рад офлајн <https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip>`_, покренути IDLE и из потфолдеру ``P06`` извршити програм ``Izdvoj_pozitivne.py``.
 
 
 Да се подсетимо:
@@ -139,11 +142,11 @@
 .. activecode:: primer6-5
    :includesrc: _src/P06/Pozicije_pozitivnih.py
 
-.. infonote::
+.. technicalnote::
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``P06`` учитај програм ``Pozicije_pozitivnih.py`` и изврши га.
+   Покрени овај програм на свом рачунару тако што ћеш у `фолдеру за рад офлајн <https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip>`_, покренути IDLE и из потфолдеру ``P06`` извршити програм ``Pozicije_pozitivnih.py``.
 
    Ево и кратке видео демонстрације:
    
@@ -199,11 +202,12 @@
 .. activecode:: primer6-7
    :includesrc: _src/P06/Prvo_pojav.py
 
-.. infonote::
+.. technicalnote::
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``P06`` учитај програм ``Prvo_pojav.py`` и изврши га.
+   Покрени овај програм на свом рачунару тако што ћеш у `фолдеру за рад офлајн <https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip>`_, покренути IDLE и из потфолдеру ``P06`` извршити програм ``Prvo_pojav.py``.
+
 
 Ова функција користи ``for`` циклус да би прошла кроз елементе низа.
 
@@ -224,11 +228,12 @@
 .. activecode:: primer6-8
    :includesrc: _src/P06/Posl_pojav.py
 
-.. infonote::
+.. technicalnote::
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``P06`` учитај програм ``Posl_pojav.py`` и изврши га.
+   Покрени овај програм на свом рачунару тако што ћеш у `фолдеру за рад офлајн <https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip>`_, покренути IDLE и из потфолдеру ``P06`` извршити програм ``Posl_pojav.py``.
+
 
 Ова функција се заснива на чињеници да је последње појављивање елемента у низу заправо *прво када се кроз низ пролази здесна у лево*.
 Ту нам је од помоћи функција ``reversed`` која обрће низ који јој је прослеђен

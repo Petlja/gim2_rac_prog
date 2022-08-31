@@ -121,12 +121,6 @@ lessons:
     title: Увод у процесирање низова података
     type: reading
   - description: ''
-    file: 03_zadaci.html
-    guid: 4a696f93-e418-4603-a88e-dcbd112e6c11
-    src: 03_zadaci.rst
-    title: Задаци - процесирање низова
-    type: reading
-  - description: ''
     file: Kreiranje lista u Pajtonu - List comprehension.html
     guid: 392fa143-13ac-4fdb-82f4-f55145f6cd11
     src: Kreiranje lista u Pajtonu - List comprehension.rst
@@ -160,12 +154,6 @@ lessons:
     title: Сортирање
     type: reading
   - description: ''
-    file: 04_zadaci.html
-    guid: 6a946c1a-a1c9-4256-999e-d5ae3f3c77a5
-    src: 04_zadaci.rst
-    title: Задаци - сортирање
-    type: reading
-  - description: ''
     file: Сортирање - додатни задаци.html
     guid: 3a4bc728-2c22-4306-a886-f3df96cdfac9
     src:
@@ -193,12 +181,6 @@ lessons:
     guid: 7c4bf775-af06-47ef-9059-c79bde7deba2
     src: L806.rst
     title: Филтрирање и претраживање
-    type: reading
-  - description: ''
-    file: 05_zadaci.html
-    guid: 41ce3daf-2542-4e2f-a4fd-25ad2d57607c
-    src: 05_zadaci.rst
-    title: Задаци - филтрирање и претраживање
     type: reading
   - description: ''
     file: test806.html

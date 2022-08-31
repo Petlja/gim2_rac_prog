@@ -6,7 +6,6 @@
     <title>Квиз</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -109,7 +108,6 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
-    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -153,7 +151,7 @@
       eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
       eBookConfig.app = eBookConfig.host + '/runestone';
       eBookConfig.ajaxURL = eBookConfig.app + '/ajax/';
-      eBookConfig.course = 'Настава програмирања за Други разред гимназије';
+      eBookConfig.course = '';
       eBookConfig.logLevel = '0';
       eBookConfig.loginRequired = 'false';
       eBookConfig.build_info = "";
@@ -254,7 +252,6 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Y01/L801.html><div class="studioLecture" id=activity-L801><i class="fas fa-file-alt activity-icon"></i>Увод у процесирање низова података</div></a>
-                <a href=../Y01/03_zadaci.html><div class="studioLecture" id=activity-03_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - процесирање низова</div></a>
                 <a href=../Y01/Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension.html><div class="studioLecture" id=activity-Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension><i class="fas fa-file-alt activity-icon"></i>Креирање листа у Пајтону</div></a>
                 <a href=../Y01/Низови%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-Низови%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>Низови - додатни задаци</div></a>
                 <a href=../Y01/test801.html><div class="studioLecture" id=activity-test801><i class="far fa-question-circle activity-icon"></i>Квиз - Листе</div></a>
@@ -268,7 +265,6 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Y05/L805.html><div class="studioLecture" id=activity-L805><i class="fas fa-file-alt activity-icon"></i>Сортирање</div></a>
-                <a href=../Y05/04_zadaci.html><div class="studioLecture" id=activity-04_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - сортирање</div></a>
                 <a href=../Y05/Сортирање%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-Сортирање%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>Сортирање - додатни задаци</div></a>
                 <a href=../Y05/test805.html><div class="studioLecture" id=activity-test805><i class="far fa-question-circle activity-icon"></i>Квиз - Сортирање</div></a>
                 </div>
@@ -281,7 +277,6 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Y06/L806.html><div class="studioLecture" id=activity-L806><i class="fas fa-file-alt activity-icon"></i>Филтрирање и претраживање</div></a>
-                <a href=../Y06/05_zadaci.html><div class="studioLecture" id=activity-05_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - филтрирање и претраживање</div></a>
                 <a href=../Y06/test806.html><div class="studioLecture" id=activity-test806><i class="far fa-question-circle activity-icon"></i>Квиз - Филтрирање и претраживање</div></a>
                 </div>
             </div>
@@ -368,11 +363,7 @@
 <div class="section" id="id2">
 <h2>Питање 1.<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 
-            <div class="course-box course-box-question course-content petlja-problem-box choice-question">
-                <div class="image-background"></div>
-                <div class="petlja-problem-box-icon-holder"> </div>
-                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image  qchoice-image" />
-                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image-quiz  qchoice-image" /> 
+            <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="Тест5_Питање1">
             <p>Q-9: Како ће изгледати низ <code class="docutils literal notranslate"><span class="pre">L</span></code> након извршења следећег програмчића:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
@@ -395,11 +386,7 @@
 <div class="section" id="id3">
 <h2>Питање 2.<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 
-            <div class="course-box course-box-question course-content petlja-problem-box choice-question">
-                <div class="image-background"></div>
-                <div class="petlja-problem-box-icon-holder"> </div>
-                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image  qchoice-image" />
-                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image-quiz  qchoice-image" /> 
+            <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="Тест5_Питање2">
             <p>Q-10: Како ће изгледати низ <code class="docutils literal notranslate"><span class="pre">L</span></code> након извршења следећег програмчића:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
@@ -422,11 +409,7 @@
 <div class="section" id="id4">
 <h2>Питање 3.<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 
-            <div class="course-box course-box-question course-content petlja-problem-box choice-question">
-                <div class="image-background"></div>
-                <div class="petlja-problem-box-icon-holder"> </div>
-                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image  qchoice-image" />
-                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image-quiz  qchoice-image" /> 
+            <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="Тест5_Питање3">
             <p>Q-11: Како ће изгледати низ <code class="docutils literal notranslate"><span class="pre">L</span></code> након извршења следећег програмчића:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Ана&quot;</span><span class="p">,</span> <span class="s2">&quot;Боки&quot;</span><span class="p">,</span> <span class="s2">&quot;Цеца&quot;</span><span class="p">,</span> <span class="s2">&quot;Деки&quot;</span><span class="p">]</span>
@@ -449,11 +432,7 @@
 <div class="section" id="id5">
 <h2>Питање 4.<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 
-            <div class="course-box course-box-question course-content petlja-problem-box choice-question">
-                <div class="image-background"></div>
-                <div class="petlja-problem-box-icon-holder"> </div>
-                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image  qchoice-image" />
-                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image-quiz  qchoice-image" /> 
+            <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="Тест5_Питање4">
             <p>Q-12: Како изгледа следећи низ</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>L = [6, 5, 4, 1, 2, 3]
@@ -476,11 +455,7 @@
 <div class="section" id="id6">
 <h2>Питање 5.<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 
-            <div class="course-box course-box-question course-content petlja-problem-box choice-question">
-                <div class="image-background"></div>
-                <div class="petlja-problem-box-icon-holder"> </div>
-                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image  qchoice-image" />
-                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image-quiz  qchoice-image" /> 
+            <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="Тест5_Питање5">
             <p>Q-13: Колико пута ће бабл-сорт алгоритам проћи кроз низ испод пре него што се заустави?</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>L = [6, 5, 4, 1, 2, 3]
@@ -502,11 +477,7 @@
 <div class="section" id="id7">
 <h2>Питање 6.<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
 
-            <div class="course-box course-box-question course-content petlja-problem-box choice-question">
-                <div class="image-background"></div>
-                <div class="petlja-problem-box-icon-holder"> </div>
-                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image  qchoice-image" />
-                <img src="../_static/img/qchoice-img.svg" class="petlja-problem-image-quiz  qchoice-image" /> 
+            <div class="course-box course-box-question course-content">
             <ul data-component="multiplechoice" data-multipleanswers="false"  id="Тест5_Питање6">
             <p>Q-14: Низ испод сортирамо прво бабл-сорт алгоритам, па запишемо време које је алгоритму било потребно.
 Потом исти низ сортирамо алгоритмом за сортирање бирањем најмањег елемента (<em>selection sort</em>), па опет запишемо време

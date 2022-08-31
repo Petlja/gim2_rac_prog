@@ -6,7 +6,6 @@
     <title>Графичко представљање низова података</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -109,7 +108,6 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
-    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -153,7 +151,7 @@
       eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
       eBookConfig.app = eBookConfig.host + '/runestone';
       eBookConfig.ajaxURL = eBookConfig.app + '/ajax/';
-      eBookConfig.course = 'Настава програмирања за Други разред гимназије';
+      eBookConfig.course = '';
       eBookConfig.logLevel = '0';
       eBookConfig.loginRequired = 'false';
       eBookConfig.build_info = "";
@@ -254,7 +252,6 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Y01/L801.html><div class="studioLecture" id=activity-L801><i class="fas fa-file-alt activity-icon"></i>Увод у процесирање низова података</div></a>
-                <a href=../Y01/03_zadaci.html><div class="studioLecture" id=activity-03_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - процесирање низова</div></a>
                 <a href=../Y01/Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension.html><div class="studioLecture" id=activity-Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension><i class="fas fa-file-alt activity-icon"></i>Креирање листа у Пајтону</div></a>
                 <a href=../Y01/Низови%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-Низови%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>Низови - додатни задаци</div></a>
                 <a href=../Y01/test801.html><div class="studioLecture" id=activity-test801><i class="far fa-question-circle activity-icon"></i>Квиз - Листе</div></a>
@@ -268,7 +265,6 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Y05/L805.html><div class="studioLecture" id=activity-L805><i class="fas fa-file-alt activity-icon"></i>Сортирање</div></a>
-                <a href=../Y05/04_zadaci.html><div class="studioLecture" id=activity-04_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - сортирање</div></a>
                 <a href=../Y05/Сортирање%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-Сортирање%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>Сортирање - додатни задаци</div></a>
                 <a href=../Y05/test805.html><div class="studioLecture" id=activity-test805><i class="far fa-question-circle activity-icon"></i>Квиз - Сортирање</div></a>
                 </div>
@@ -281,7 +277,6 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Y06/L806.html><div class="studioLecture" id=activity-L806><i class="fas fa-file-alt activity-icon"></i>Филтрирање и претраживање</div></a>
-                <a href=../Y06/05_zadaci.html><div class="studioLecture" id=activity-05_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - филтрирање и претраживање</div></a>
                 <a href=../Y06/test806.html><div class="studioLecture" id=activity-test806><i class="far fa-question-circle activity-icon"></i>Квиз - Филтрирање и претраживање</div></a>
                 </div>
             </div>
@@ -382,10 +377,10 @@
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/technicalnote-img.svg" class="note-image technicalnote-image" /> 
         <div class="course-content">
-            
+            <p>
 <p>Остатак ове лекције препоручујемо да читаш на свом рачунару тако што ћеш у <a class="reference external" href="https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip">фолдеру за рад офлајн</a> покренути Џупитер свеску <cite>Predstavljanje nizova podataka.ipynb</cite> на начин на који је то објашњено у поглављу <a class="reference external" href="/J0A/J0A.html#jupyter">Покретање Џупитер радних свески</a> у уводу овог приручника.</p>
 
-    </div></div>
+    </p></div></div>
 <div class="section" id="matplotlib-pyplot">
 <h2>Коришћење библиотеке <code class="docutils literal notranslate"><span class="pre">matplotlib.pyplot</span></code> за визуелизацију<a class="headerlink" href="#matplotlib-pyplot" title="Permalink to this headline">¶</a></h2>
 <p>Стандардна Пајтонова библиотека нема функције за цртање графика. Зато је
@@ -404,7 +399,7 @@
 коришћених.</p>
 </div>
 <div class="section" id="id4">
-<h2>Линијски, тачкасти и стубичасти дијаграми<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<h2>Линијски, тачкасти и стубични дијаграми<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <p>Екран рачунара, као и папир на ком цртамо графиконе, има две димензије
 које користимо за потребе визуелизације. Где год да ставимо тачку, она
 име две координате: <em>x</em> по хоризонтали и <em>y</em> по вертикали. Како год да
@@ -434,16 +429,6 @@
 </pre></div>
 </div>
 <p>одмах после линије у којој је <code class="docutils literal notranslate"><span class="pre">scatter()</span></code> функција.</p>
-
-    <div class="note-wrapper infonote-type">
-        <div class="note-icon-holder"> </div>
-        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
-        <div class="course-content">
-            
-<p>Напомена</p>
-<p>Осим што цртају график, графичке функције, као и било које друге функције, врећају одговарајућу вредност. У претходном примеру смо видели да је изнад графика исписан текст <code class="docutils literal notranslate"><span class="pre">&lt;matplotlib.collections.PathCollection</span> <span class="pre">at</span> <span class="pre">0x1866f81a460&gt;</span></code>. Та нам вредност као повратна информација углавном није потребна, а често квари изглед графика. Ако желимо да функција не исписује ту вредност, на крају реда који исцртава график ставите тачка-зарез <code class="docutils literal notranslate"><span class="pre">;</span></code>. У наредним примерима ћемо овако завршавати ове линије кода како не би било непотребног исписа.</p>
-
-    </div></div>
 <p>Претходни пример је вероватно превише једноставан па ћемо дати још
 један. Ми у пракси ретко кад укуцавамо све вредности које треба
 приказати на графику. Податке за график или учитавамо из неког фајла или
@@ -467,15 +452,6 @@
 </pre></div>
 </div>
 <img alt="../_images/output_49_1.png" src="../_images/output_49_1.png" />
-
-    <div class="note-wrapper suggestionnote-type">
-        <div class="note-icon-holder"> </div>
-        <img src="../_static/img/suggestionnote-img.svg" class="note-image suggestionnote-image" /> 
-        <div class="course-content">
-            
-<p>Ако желите да се на графику појави мрежа хоризонталних и вертикалних линија за вредности које су већ означене на x и y оси, после линије која исцртава график додајте линију која црта мрежу: plt.grid().</p>
-
-    </div></div>
 <p>Тачкасти дијаграми су стандарни начин приказа података који су добијени
 мерењем. Ипак, често се уместо тачкастих користе <strong>линијски дијаграми</strong>
 који суседне тачке у низу повезују правим линијама, односно дужима. За
@@ -549,7 +525,7 @@
         <span class="n">ji</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>                <span class="c1"># dodaj ga u listu</span>
         <span class="n">broj_pobeda</span><span class="o">=</span><span class="n">ww</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>     <span class="c1"># prebroj koliko se puta pojavljuje u listi ww</span>
         <span class="n">bpw</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">broj_pobeda</span><span class="p">)</span>     <span class="c1"># dodaj broj pobeda u listu bpw za to jedinstveno ime</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="n">ji</span><span class="p">,</span><span class="n">bpw</span><span class="p">);</span>                   <span class="c1"># nacrtaj (horizonatlni) stubičasti dijagram za ji i bpw</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="n">ji</span><span class="p">,</span><span class="n">bpw</span><span class="p">)</span>                    <span class="c1"># nacrtaj (horizonatlni) stubični dijagram za ji i bpw</span>
 </pre></div>
 </div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">BarContainer</span> <span class="nb">object</span> <span class="n">of</span> <span class="mi">22</span> <span class="n">artists</span><span class="o">&gt;</span>
@@ -557,12 +533,18 @@
 </div>
 <img alt="../_images/output_61_1.png" src="../_images/output_61_1.png" />
 <p>Због прегледности дигаграма, тачније имена тенисера, овде смо нацртали
-хоризонтални стубичасти (или тракасти) дијаграм. Само смо уместо функције
+хоризонтални стубични (или тракасти) дијаграм. Само смо уместо функције
 <code class="docutils literal notranslate"><span class="pre">.bar()</span></code> користили <code class="docutils literal notranslate"><span class="pre">.barh()</span></code>.</p>
 <p>Тумачење овог дијаграма можете да урадите сами. У јулу 2022. године,
 Федерер (још увек) има највећи број освојених Вимблдона. Ажурирајте ове
 податке ако се нешто значајно промени у будућности.</p>
-<p><strong>Секторски дијаграми</strong> (или „питице”) могу да прикажу исте ове податке. Они површину круга деле на делове (секторе) чије су површине сразмерне вредностима у низу. Овај тип дијаграма се сматра атрактивним иако има лошу прегледност и слабе могућности поређења вредности у низу. Секторске дијаграме не би требало користити када је потребно да се лако упореде вредности у низу или да се уочи тренд промене. Ови дијаграми имају највише смисла када приказују удео одређених вредности у укупном броју.</p>
+<p>Постоји још једна врста дијаграма који се често користи. <strong>Секторски
+дијаграми</strong> (или “питице”) површину круга деле на секторе чије су
+површине сразмерне вредностима у низу. Иако секторски дијаграми имају
+лошу прегледност због чега су могућности поређења вредности врло
+ограничене, ова врста дијаграма је веома популарна код презентација
+података. Секторске дијаграме не би требало користити када је потребно
+да се лако упореде вредности у низу или да се уочи тренд промене.</p>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">pie</span><span class="p">(</span><span class="n">bpw</span><span class="p">,</span><span class="n">labels</span><span class="o">=</span><span class="n">ji</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
 </pre></div>
@@ -575,9 +557,9 @@
 одређеном скупу. Идеја хистограма је да се распон од најмањег до
 највећег броја у скупу подели на интервале исте ширине, да се преброји
 колико бројева упада у који од тих интервала и да се, коначно, резултат
-тог пребројавања прикаже као стубичасти дијаграм по тим интервалима.</p>
-<p>Иако хистограм изгледа као стубичасти дијаграм, постоје разлике. Док се
-стубичасти дијаграм приказује за низ бројева на <em>x</em>-оси, код хистограма се
+тог пребројавања прикаже као стубични дијаграм по тим интервалима.</p>
+<p>Иако хистограм изгледа као стубични дијаграм, постоје разлике. Док се
+стубични дијаграм приказује за низ бројева на <em>x</em>-оси, код хистограма се
 стубићи придружују интервалима. Осим тога, хистограм пре приказивања
 ради статистичку обраду података, односно дељење на интервале и
 пребројавање одговарајућих вредности.</p>
@@ -587,9 +569,9 @@
 између 0 и 1. Ако 100 пута генеришемо случајан број на овај начин и све
 их ставимо у листу, добићемо низ од 100 независно добијених случајних
 бројева.</p>
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>                             <span class="c1"># prvo uvozimo biblioteku</span>
-<span class="n">rb</span><span class="o">=</span><span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">)]</span>  <span class="c1"># za pravljenje liste koristimo list comprehension</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">rb</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">6</span><span class="p">])</span>                            <span class="c1"># prikazujemo prvih nekoliko brojeva iz liste</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>                             <span class="c1"># прво увозимо библиотеку</span>
+<span class="n">rb</span><span class="o">=</span><span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">)]</span>  <span class="c1"># за прављење листе користимо list comprehension</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">rb</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">6</span><span class="p">])</span>                            <span class="c1"># приказујемо првих неколико бројева из листе</span>
 </pre></div>
 </div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mf">0.2892938921375111</span><span class="p">,</span> <span class="mf">0.20248641226680386</span><span class="p">,</span> <span class="mf">0.3309940636093184</span><span class="p">,</span> <span class="mf">0.4324842008887402</span><span class="p">,</span> <span class="mf">0.37595924481469134</span><span class="p">,</span> <span class="mf">0.7259436975407871</span><span class="p">]</span>

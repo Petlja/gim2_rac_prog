@@ -84,11 +84,11 @@
 .. activecode:: primer5-444
    :includesrc: _src/P05/K_najvecih.py
 
-.. infonote::
+.. technicalnote::
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``P05`` учитај програм ``K_najvecih.py`` и изврши га.
+   Покрени овај програм на свом рачунару тако што ћеш у `фолдеру за рад офлајн <https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip>`_, покренути IDLE и из потфолдеру ``P05`` извршити програм ``K_najvecih.py``.
 
    Ево и кратке видео демонстрације:
    
@@ -134,11 +134,11 @@
 .. activecode:: primer5-445
    :includesrc: _src/P05/Broj_na_sredini.py
 
-.. infonote::
+.. technicalnote::
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``P05`` учитај програм ``Broj_na_sredini.py`` и изврши га.
+   Покрени овај програм на свом рачунару тако што ћеш у `фолдеру за рад офлајн <https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip>`_, покренути IDLE и из потфолдеру ``P05`` извршити програм ``Broj_na_sredini.py``.
 
 
 Како раде алгоритми за сортирање
@@ -277,11 +277,11 @@
 .. activecode:: primer5-446
    :includesrc: _src/P05/Od_najvece_do_najmanje.py
 
-.. infonote::
+.. technicalnote::
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``P05`` учитај програм ``Od_najvece_do_najmanje.py`` и изврши га.
+   Покрени овај програм на свом рачунару тако што ћеш у `фолдеру за рад офлајн <https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip>`_, покренути IDLE и из потфолдеру ``P05`` извршити програм ``Od_najvece_do_najmanje.py``.
 
 
 Пример.
@@ -301,11 +301,11 @@
 .. activecode:: primer5-447
    :includesrc: _src/P05/Samo_K_najvecih.py
 
-.. infonote::
+.. technicalnote::
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``P05`` учитај програм ``Samo_K_najvecih.py`` и изврши га.
+   Покрени овај програм на свом рачунару тако што ћеш у `фолдеру за рад офлајн <https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip>`_, покренути IDLE и из потфолдеру ``P05`` извршити програм ``Samo_K_najvecih.py``.
 
 
 Пример.
@@ -333,11 +333,11 @@
 .. activecode:: primer5-10
    :includesrc: _src/P05/SelSort_po_kriterijumu.py
 
-.. infonote::
+.. technicalnote::
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``P05`` учитај програм ``SelSort_po_kriterijumu.py`` и изврши га.
+   Покрени овај програм на свом рачунару тако што ћеш у `фолдеру за рад офлајн <https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip>`_, покренути IDLE и из потфолдеру ``P05`` извршити програм ``SelSort_po_kriterijumu.py``.
 
 
 Бабл-сорт алгоритам (*bubble sort*)
@@ -501,8 +501,9 @@
 .. activecode:: primer5-11
    :includesrc: _src/P05/BubSort_po_kriterijumu.py
 
-.. infonote::
+
+.. technicalnote::
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``P05`` учитај програм ``BubSort_po_kriterijumu.py`` и изврши га.
+   Покрени овај програм на свом рачунару тако што ћеш у `фолдеру за рад офлајн <https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip>`_, покренути IDLE и из потфолдеру ``P05`` извршити програм ``BubSort_po_kriterijumu.py``.

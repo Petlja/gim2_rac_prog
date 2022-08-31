@@ -1,8 +1,0 @@
-=======================
-IPYTHON DIRECTIVE DEBUG
-=======================
-
-.. toctree:: 
-    :maxdepth: 1
-
-    J01.rst

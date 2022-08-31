@@ -86,12 +86,14 @@
 
 .. activecode:: primer1-8
    :includesrc: _src/P01/Dejanove_ocene.py
-   
-.. infonote::
+
+
+.. technicalnote::
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``P01`` учитај програм ``Dejanove_ocene.py`` и изврши га.
+   Покрени овај програм на свом рачунару тако што ћеш у `фолдеру за рад офлајн <https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip>`_, покренути IDLE и из потфолдеру ``P01`` извршити програм ``Dejanove_ocene.py``.
+
    
 
 Стандардне функције
@@ -218,11 +220,12 @@
 .. activecode:: primer1-15
    :includesrc: _src/P01/Ocene_izvestaj.py
    
-.. infonote::
+.. technicalnote::
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``P01`` учитај програм ``Ocene_izvestaj.py`` и изврши га.
+   Покрени овај програм на свом рачунару тако што ћеш у `фолдеру за рад офлајн <https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip>`_, покренути IDLE и из потфолдеру ``P06`` извршити програм ``Ocene_izvestaj.py``.
+
 
 
 Функције се најчешће користе за аутоматизацију релативно компликованих рачунских процеса.
@@ -293,12 +296,12 @@
 
 .. activecode:: primer1-16
    :includesrc: _src/P01/Min_niza.py
-   
-.. infonote::
+
+.. technicalnote::
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени IDLE, из фолдера ``P01`` учитај програм ``Min_niza.py`` и изврши га.
+   Покрени овај програм на свом рачунару тако што ћеш у `фолдеру за рад офлајн <https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip>`_, покренути IDLE и из потфолдеру ``P01`` извршити програм ``Min_niza.py``.
 
 
 Учитавање низова

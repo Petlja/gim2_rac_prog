@@ -3,10 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Увод у Џупитер</title>
+    <title>Увод у Џупитер (Jupyter)</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -109,7 +108,6 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
-    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -153,7 +151,7 @@
       eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
       eBookConfig.app = eBookConfig.host + '/runestone';
       eBookConfig.ajaxURL = eBookConfig.app + '/ajax/';
-      eBookConfig.course = 'Настава програмирања за Други разред гимназије';
+      eBookConfig.course = '';
       eBookConfig.logLevel = '0';
       eBookConfig.loginRequired = 'false';
       eBookConfig.build_info = "";
@@ -254,7 +252,6 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Y01/L801.html><div class="studioLecture" id=activity-L801><i class="fas fa-file-alt activity-icon"></i>Увод у процесирање низова података</div></a>
-                <a href=../Y01/03_zadaci.html><div class="studioLecture" id=activity-03_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - процесирање низова</div></a>
                 <a href=../Y01/Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension.html><div class="studioLecture" id=activity-Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension><i class="fas fa-file-alt activity-icon"></i>Креирање листа у Пајтону</div></a>
                 <a href=../Y01/Низови%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-Низови%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>Низови - додатни задаци</div></a>
                 <a href=../Y01/test801.html><div class="studioLecture" id=activity-test801><i class="far fa-question-circle activity-icon"></i>Квиз - Листе</div></a>
@@ -268,7 +265,6 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Y05/L805.html><div class="studioLecture" id=activity-L805><i class="fas fa-file-alt activity-icon"></i>Сортирање</div></a>
-                <a href=../Y05/04_zadaci.html><div class="studioLecture" id=activity-04_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - сортирање</div></a>
                 <a href=../Y05/Сортирање%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-Сортирање%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>Сортирање - додатни задаци</div></a>
                 <a href=../Y05/test805.html><div class="studioLecture" id=activity-test805><i class="far fa-question-circle activity-icon"></i>Квиз - Сортирање</div></a>
                 </div>
@@ -281,7 +277,6 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Y06/L806.html><div class="studioLecture" id=activity-L806><i class="fas fa-file-alt activity-icon"></i>Филтрирање и претраживање</div></a>
-                <a href=../Y06/05_zadaci.html><div class="studioLecture" id=activity-05_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - филтрирање и претраживање</div></a>
                 <a href=../Y06/test806.html><div class="studioLecture" id=activity-test806><i class="far fa-question-circle activity-icon"></i>Квиз - Филтрирање и претраживање</div></a>
                 </div>
             </div>
@@ -363,30 +358,21 @@
   
     <div id="main-content">
     
-  <div class="section" id="id1">
-<h1>Увод у Џупитер<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="jupyter">
+<h1>Увод у Џупитер (<em>Jupyter</em>)<a class="headerlink" href="#jupyter" title="Permalink to this headline">¶</a></h1>
 <p>У овој лекцији ћеш научити:</p>
 <ol class="arabic simple">
-<li><p>шта је Џупитер, како се крећеш кроз Џупитер радну свеску (<em>Jupyter Notebook</em>) и како се Џупитер радна свеска користи за рачунање израза;</p></li>
+<li><p>шта је Џупитер (<em>Jupyter</em>), како се крећеш кроз Џупитер радну свеску (<em>Jupyter Notebook</em>) и како се Џупитер радна свеска користи за рачунање израза;</p></li>
 <li><p>како се у Џупитеру користе променљиве и како се радна свеска користи покретање мањих Пајтон (<em>Python</em>) програма; и</p></li>
 <li><p>шта су библиотеке функција и како се позивају функције из стандардних библиотека.</p></li>
 </ol>
-
-    <div class="note-wrapper technicalnote-type">
-        <div class="note-icon-holder"> </div>
-        <img src="../_static/img/technicalnote-img.svg" class="note-image technicalnote-image" /> 
-        <div class="course-content">
-            
-<p>Препоручујемо да ову лекцију покренеш на свом рачунару тако што ћеш у <a class="reference external" href="https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip">фолдеру за рад офлајн</a> покренути Џупитер свеску <cite>Ј01.ipynb</cite> на начин на који је то објашњено у поглављу <a class="reference external" href="/J0A/J0A.html#jupyter">Покретање Џупитер радних свески</a> у уводу овог приручника.</p>
-
-    </div></div>
-<p>Џупитер (<em>Jupyter</em>) уме да рачуна
-———————————-0</p>
+<div class="section" id="id1">
+<h2>Џупитер (<em>Jupyter</em>) уме да рачуна<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>Џупитер (<em>Jupyter</em>) је интерактивна радна свеска у коју можеш да уносиш текст (као текст ког управо читаш), да рачунаш, да покрећеш једноставније Пајтон програме, да обрађујеш податке, да приказујеш податке у виду табеле и дијаграма, и још много тога.</p>
 
     <div  id="9En4OAaxvVA" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/9En4OAaxvVA/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
+            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
         </div>
       
 
@@ -413,8 +399,9 @@
 </pre></div>
 </div>
 <p>Да се подсетимо, две звездице у Пајтону означавају степеновање.</p>
-<div class="section" id="id4">
-<h2>Џупитер уме да користи променљиве и да извршава Пајтон команде<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id2">
+<h2>Џупитер уме да користи променљиве и да извршава Пајтон команде<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>Понекад је згодно именовати вредности, поготово ако се ради о компликованим бројевима као што је то <span class="math notranslate nohighlight">\(\pi\)</span> или када се ради о компликованим изразима. Те вредности касније можемо да користимо тако што наведемо име које смо им дали. На пример, процењује се да је на дан 1.7.2019. на свету било 7.714.576.923 људи. Наредба</p>
 <p><code class="docutils literal notranslate"><span class="pre">BrLjudiNaSvetu_2019</span> <span class="pre">=</span> <span class="pre">7714576923</span></code></p>
 <p>ће у систем увести нову променљиву <code class="docutils literal notranslate"><span class="pre">BrLjudiNaSvetu_2019</span></code> којој ће бити додељена вредност 7714576923. Да се подсетимо: имена променљивих у Пајтону морају да почну словом и могу да садрже слова, цифре и специјални знак _ (доња црта).</p>
@@ -429,8 +416,8 @@
 <p>Приметимо да се приликом записивања децималних бројева у Пајтону користи <em>децимална тачка</em>, а не децимални зарез, како је то прописано нашим правописом!
 Хајде сада да решимо још један задатак.</p>
 </div>
-<div class="section" id="id5">
-<h2>Библиотеке функција<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id3">
+<h2>Библиотеке функција<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>У модерним програмским језицима, а Пајтон је један од њих, могу да се ураде невероватне ствари зато што долазе са обиљем <em>функција</em> које су већ испрограмиране. Тако се кориснику система (или програмеру) умногоме олакшава живот: већина ствари које просечном кориснику требају су већ испрограмиране, само треба наћи одговарајућу функцију!</p>
 <p>Да би се корисници лакше снашли у овом обиљу, све функције које долазе уз програмски језик (односно, одговарајуће окружење) су груписане у <em>библиотеке функција</em>.</p>
 <p>Рецимо, библиотека математичких функција се зове <code class="docutils literal notranslate"><span class="pre">math</span></code>. Она садржи функције као што су <code class="docutils literal notranslate"><span class="pre">sqrt</span></code> (која рачуна <em>квадратни корен</em>), <code class="docutils literal notranslate"><span class="pre">sin</span></code> (која рачуна <em>синус</em> угла) и <code class="docutils literal notranslate"><span class="pre">cos</span></code> (која рачуна <em>косинус</em> угла), али и математичке константе као што је <code class="docutils literal notranslate"><span class="pre">pi</span></code> (која представља добру апроксимацију броја <span class="math notranslate nohighlight">\(\pi\)</span>).</p>
@@ -461,7 +448,7 @@
 
     <div  id="HCuisxGXZNE" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/HCuisxGXZNE/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
+            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
         </div>
       
 
@@ -489,7 +476,7 @@
 
     <div  id="QaqMgCxg0yg" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/QaqMgCxg0yg/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
+            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
         </div>
       
 
@@ -504,7 +491,7 @@
 
     <div  id="jwzxv_YD78o" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/jwzxv_YD78o/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
+            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
         </div>
       
 
@@ -516,8 +503,8 @@
     
     
     </div>
-<div class="section" id="id6">
-<h2>Задаци<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id4">
+<h2>Задаци<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <p>За вежбу покрени Џупитер окружење и реши задатке из радне свеске J01.ipynb</p>
 </div>
 </div>
