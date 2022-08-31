@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Представљање низова података</title>
+    <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja-course.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/nbstyle.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
+    <script type="text/javascript" src="../_static/webglinteractive.js"></script>
+    <script type="text/javascript" src="../_static/FileSaver.min.js"></script>
+    <script type="text/javascript" src="../_static/Blob.js"></script>
+    <script type="text/javascript" src="../_static/karelCorner.js"></script>
+    <script type="text/javascript" src="../_static/karelRobot.js"></script>
+    <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
+    <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
+    <script type="text/javascript" src="../_static/karelUI.js"></script>
+    <script type="text/javascript" src="../_static/karel.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/notes.js"></script>
+    <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
+    <script type="text/javascript" src="../_static/gallery.js"></script>
+    <script type="text/javascript" src="../_static/associations.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../_static/course-errors.js"></script>
+    <script type="text/javascript" src="../_static/petlja.js"></script>
+    <script type="text/javascript" src="../_static/require.js"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+    <script type="text/javascript">
+      eBookConfig = {};
+      eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+      eBookConfig.app = eBookConfig.host + '/runestone';
+      eBookConfig.ajaxURL = eBookConfig.app + '/ajax/';
+      eBookConfig.course = 'Настава програмирања за Други разред гимназије';
+      eBookConfig.logLevel = '0';
+      eBookConfig.loginRequired = 'false';
+      eBookConfig.build_info = "";
+      eBookConfig.isLoggedIn = false;
+      eBookConfig.useRunestoneServices = false;
+      eBookConfig.python3 = true;
+      eBookConfig.basecourse = 'Настава програмирања за Други разред гимназије';
+      eBookConfig.runestone_version = '';
+      eBookConfig.imagesDir = '../_images/';
+      eBookConfig.staticDir = '../_static/';
+      if (typeof (Sk) != "undefined")
+        Sk.imgPath = eBookConfig.imagesDir;
+    </script>
+
+  </head>
+
+  <body>
+
+
+
+<div id="navbar" class="content-header">
+  <div class="right-side-nav">
+    
+    <div id="usefulLinksToggle" class="useful-links-toggle">
+        <a class="dropdown-toggle dropdown-toggle-burger" role="button" href="#" id="usefulLinksDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-bars fa-2x"></i>
+        </a>
+        <div class="dropdown-menu dropdown-nav-links shadow-lg" aria-labelledby="usefulLinksDropdown" x-placement="bottom-start" style="position: absolute; transform: translate3d(-55px, 32px, 0px); top: 0px; left: 0px; will-change: transform;">
+          <div class="links-title"> Корисни линкови</div>
+          <div class="useful-link">
+            <a href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html" target="_blank">Sphinx Docs</a></div>
+          <div class="useful-link">
+            <a href="https://github.com/Petlja/PetljaDoc/blob/master/README.md" target="_blank">Petljadoc</a></div>
+          <div class="useful-link">
+            <a href="https://github.com/RunestoneInteractive/overview" target="_blank">Runestone Interactive</a></div>
+          
+        </div>
+    </div>
+
+    
+</div>
+
+<div class="left-side-nav">
+  <div class="course-logo-nav">
+      <a target="_blank" href="https://petlja.org">
+          <img src="../_static/img/petlja-logo-wt.svg" alt="petlja.org" id="lightPetljaLogo">
+      </a>
+  </div>
+  <div class="course-logo-nav-kabinet">
+      <a target="_blank" href="https://petlja.org/net.kabinet">
+          <img src="../_static/img/netkabinet-logo-strelica-wt.svg" alt="petlja.org" id="lightNetKabinetLogo">
+      </a>
+  </div>
+</div>
+
+
+<div class="content-header-label" id = "content-header-label" href="../">Анализа података у Џупитеру и технике програмирања за други разред гимназије</div>
+
+</div>
+
+
+
+
+<div class="petljaCourseContainer">
+
+<div class="petljaCourseContent">
+  
+           <div class="tableOfContent">
+            <h5> Садржај </h5>
+            </div>
+           <div>
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J0A>
+                    <h5>Пре него што почнемо</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../J0A/howto.html><div class="studioLecture" id=activity-howto><i class="fas fa-file-alt activity-icon"></i>Како да користиш овај приручник</div></a>
+                <a href=../J0A/J0A.html><div class="studioLecture" id=activity-J0A><i class="fas fa-file-alt activity-icon"></i>Покретање Џупитер радних свески</div></a>
+                <a href=../J0A/J01.html><div class="studioLecture" id=activity-J01><i class="fas fa-file-alt activity-icon"></i>Увод у Џупитер</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-podsetnik>
+                    <h5>Подсетник Пајтон</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../podsetnik/Podsetnik%20-%20Pajton.html><div class="studioLecture" id=activity-Podsetnik%20-%20Pajton><i class="fas fa-file-alt activity-icon"></i>Подсетник Пајтон</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y01>
+                    <h5>Низови података</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Y01/L801.html><div class="studioLecture" id=activity-L801><i class="fas fa-file-alt activity-icon"></i>Увод у процесирање низова података</div></a>
+                <a href=../Y01/03_zadaci.html><div class="studioLecture" id=activity-03_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - процесирање низова</div></a>
+                <a href=../Y01/Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension.html><div class="studioLecture" id=activity-Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension><i class="fas fa-file-alt activity-icon"></i>Креирање листа у Пајтону</div></a>
+                <a href=../Y01/Низови%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-Низови%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>Низови - додатни задаци</div></a>
+                <a href=../Y01/test801.html><div class="studioLecture" id=activity-test801><i class="far fa-question-circle activity-icon"></i>Квиз - Листе</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y05>
+                    <h5>Сортирање</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Y05/L805.html><div class="studioLecture" id=activity-L805><i class="fas fa-file-alt activity-icon"></i>Сортирање</div></a>
+                <a href=../Y05/04_zadaci.html><div class="studioLecture" id=activity-04_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - сортирање</div></a>
+                <a href=../Y05/Сортирање%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-Сортирање%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>Сортирање - додатни задаци</div></a>
+                <a href=../Y05/test805.html><div class="studioLecture" id=activity-test805><i class="far fa-question-circle activity-icon"></i>Квиз - Сортирање</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y06>
+                    <h5>Филтрирање и претраживање</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Y06/L806.html><div class="studioLecture" id=activity-L806><i class="fas fa-file-alt activity-icon"></i>Филтрирање и претраживање</div></a>
+                <a href=../Y06/05_zadaci.html><div class="studioLecture" id=activity-05_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - филтрирање и претраживање</div></a>
+                <a href=../Y06/test806.html><div class="studioLecture" id=activity-test806><i class="far fa-question-circle activity-icon"></i>Квиз - Филтрирање и претраживање</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-predstavljanje>
+                    <h5>Представљање низова података</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../predstavljanje/Predstavljanje%20nizova%20podataka.html><div class="studioLecture" id=activity-Predstavljanje%20nizova%20podataka><i class="fas fa-file-alt activity-icon"></i>Представљање низова података</div></a>
+                <a href=../predstavljanje/Graficko_predstavljanje.html><div class="studioLecture" id=activity-Graficko_predstavljanje><i class="fas fa-file-alt activity-icon"></i>Графичко представљање низова података</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-tekstualni>
+                    <h5>Рад са текстуалним подацима</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../tekstualni/Rad%20sa%20tekstualnim%20podacima.html><div class="studioLecture" id=activity-Rad%20sa%20tekstualnim%20podacima><i class="fas fa-file-alt activity-icon"></i>Рад са текстуалним подацима</div></a>
+                <a href=../tekstualni/tekstualne_datoteke.html><div class="studioLecture" id=activity-tekstualne_datoteke><i class="fas fa-file-alt activity-icon"></i>Коришћење текстуалних датотека</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-rad%20sa%20tabelama>
+                    <h5>Рад са табелама</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../rad%20sa%20tabelama/Rad%20sa%20tabelama.html><div class="studioLecture" id=activity-Rad%20sa%20tabelama><i class="fas fa-file-alt activity-icon"></i>Рад са табелама</div></a>
+                <a href=../rad%20sa%20tabelama/indeksiranje.html><div class="studioLecture" id=activity-indeksiranje><i class="fas fa-file-alt activity-icon"></i>Индексирање табела</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-obrada_tabele>
+                    <h5>Обрада и приказ табеларних података</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../obrada_tabele/obrada_prikaz.html><div class="studioLecture" id=activity-obrada_prikaz><i class="fas fa-file-alt activity-icon"></i>Обрада и приказ табеларних података</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J10>
+                    <h5>Џупитер и Ексел</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../J10/J10.html><div class="studioLecture" id=activity-J10><i class="fas fa-file-alt activity-icon"></i>Џупитер и Ексел</div></a>
+                <a href=../J10/testJ10.html><div class="studioLecture" id=activity-testJ10><i class="far fa-question-circle activity-icon"></i>Џупитер и Ексел</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-projektni%20zadatak>
+                    <h5>Пример скупа података за пројекто учење</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../projektni%20zadatak/projekat.html><div class="studioLecture" id=activity-projekat><i class="fas fa-file-alt activity-icon"></i>Пример скупа података за пројекто учење</div></a>
+                </div>
+            </div>
+                </div>
+</div>
+
+
+
+<div class="lectureContent">
+
+  <div id="errors">
+  </div>
+  
+  <div class="lectureContentMaterial">
+  
+    <div id="main-content">
+    
+  <div class="section" id="id1">
+<h1>Представљање низова података<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>Дескриптивна статистика<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Дескриптивна статистика је стручни назив за низ различитих мера којима
+описујемо одређени скуп података. Замислимо скуп у ком су записани
+бројеви ципела свих ученика у једном одељењу. Ми ћемо, једноставности
+ради, унети измишљене податке за једно мање одељење. Ви можете лако да
+унесете праве вредности за ваше одељење.</p>
+
+<div data-childcomponent="niz" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=niz data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+             data-passivecode="True"  data-hidehistory=true
+       >
+bc=[42,44,37,41,38,38,43,38,39,47,43,37,36,44,45,40,39,43,39,43]
+</textarea>
+</div>
+<p>Мере којима описујемо овакав скуп података углавном се тичу интервала
+вредности, просека и растура. Број елемената низа, минимум и максимум
+описују интервал у ком се налазе записане вредности. За описивање
+просека или типичне вредности најчешће узимамо средњу вредност
+(аритметичку средину) или медијану. За описивање растура, тј. очекиваног
+одступања појединачних вредности од просека користимо максимално
+апсолутно одступање или стандардну девијацију.</p>
+<p>Све ове мере посебно су важне код мерења. У природним наукама се скуп
+измерених вредности <span class="math notranslate nohighlight">\(\{x_1,x_2,x_3...x_n\}\)</span> најчешће приказује као
+<span class="math notranslate nohighlight">\(\bar{x}\pm\sigma_x\)</span> при чему је <span class="math notranslate nohighlight">\(\bar{x}\)</span> средња вредност
+за цео скуп, док је <span class="math notranslate nohighlight">\(\sigma_x\)</span> стандардна девијација овог скупа
+измерених вредности.</p>
+<div class="section" id="id3">
+<h3>Мере за описивање просека<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>Пајтон у стандардној библиотеци има функције за број елемената, минимум
+и максимум, али нема функције за рачунање средње вредности или медијане.
+Ваш први задатак ће бити да напишете функције које то раде. Пошто ћемо све функције које су постављене као задаци у овој лекцији одмах примењивати, решења су дата одмах испод задатака. Ако не морате, немојте гледати у решења. Слободно решите задатак на други начин.</p>
+
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <div class="course-content">
+            
+<p><strong>Средња вредност</strong> или аритметичка средина рачуна се као збир свих вредности у низу подељен са дужином низа. Аритметичка средина се рачуна по формули</p>
+<div class="math notranslate nohighlight">
+\[\bar{x}=\frac{\sum_{k=1}^{n}x_k}{n}.\]</div>
+<p>Ова формула је само формални математички начин да запишемо да треба сабрати све вредности у низу и тај збир поделити са бројем елемената низа.</p>
+
+    </div></div>
+
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
+        <div class="course-content">
+<p>Напишите функцију која враћа средњу вредност низа бројева.</p>
+
+    </div></div>
+
+<div data-childcomponent="srednjavrednost" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=srednjavrednost data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+def sr_vred(L):
+    m=sum(L)/len(L)
+    return m
+</textarea>
+</div>
+
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <div class="course-content">
+            
+<p><strong>Медијана</strong> је вредност средишњег елемента сортираног низа. Ако је број
+елемената у низу непаран, онда је то баш вредност средишњег елемента.
+Ако је број елемената паран, онда је медијана средња вредност за пар
+елемената у средини.</p>
+
+    </div></div>
+
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
+        <div class="course-content">
+<p>Напишите функцију која враћа медијану низа бројева.</p>
+
+    </div></div>
+
+<div data-childcomponent="medijana" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=medijana data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+def medijana(L):
+    n=len(L) # ne je broj elemenata niza
+    L.sort()  # prvo sortiramo niz
+    if n%2==1: # onda proverimo da li je n neparan broj
+        md=L[n//2] # ako jeste, središte ima indeks n//2 (proverite sami)
+    else:  # ako je paran
+        md=(L[n//2-1]+L[n//2])/2 # onda uzimamo srednju vrednost dva elementa najbliža središtu
+    return md
+</textarea>
+</div>
+<p>Да видимо сада колико износе средња вредност и медијана низа бројева у
+листи <code class="docutils literal notranslate"><span class="pre">bc</span></code>.</p>
+
+<div data-childcomponent="srenja_print" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=srenja_print data-lang="python" 
+     data-include="medijana srednjavrednost niz" data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+print("srednja vrednost:",sr_vred(bc),"  medijana:",medijana(bc))
+</textarea>
+</div>
+</div>
+<div class="section" id="id4">
+<h3>Мере за описивање растура<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>За описивање низа бројева сем просечне вредности потребно нам је да
+знамо и колико појединачне вредности одступају од тог просека. Други
+назив за одступање од просека је <strong>девијација</strong>. Постоје различите мере
+одступања. Најједноставнија је <strong>максимална апсолутна девијација</strong>.
+Јасно вам је да девијације могу да буду позитивне и негативне у
+зависности да ли је вредност већа или мања од просека. За меру растура
+свеједно је да ли је одступање са доње или горње стране. Зато нас
+интересује апсолутна вредност одступања.</p>
+
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
+        <div class="course-content">
+<p>Напишите функцију која враћа, по апсолутној вредности, највеће одступање од средње вредности.</p>
+
+    </div></div>
+
+<div data-childcomponent="abs" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=abs data-lang="python" 
+     data-include="medijana srednjavrednost niz" data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+def mad(L):
+    m=sr_vred(L)  # prvo nalazimo srednju vrednost niza
+    d=[abs(x-m) for x in L]  # za svaku vrednost u nizu računamo apsolutnо odstupanje, |x-m|
+    mo=max(d) # sad uzimamo maksimalnu vrednost odstupanja
+    return mo
+</textarea>
+</div>
+<p>Употребимо сада ову функцију на нашем низу <code class="docutils literal notranslate"><span class="pre">bc</span></code></p>
+
+<div data-childcomponent="srednja_medijana" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=srednja_medijana data-lang="python" 
+     data-include="abs medijana srednjavrednost niz" data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+print(mad(bc))
+</textarea>
+</div>
+<p>Статистичари кажу да је <strong>стандардна девијација</strong> боља мера растура. Зашто је то тако нећемо објашњавати у приручнику за Пајтон, боље погледајте уџбеник статистике или обраде резултата мерења. Нама је овде важније да знамо да је израчунамо. Не дајте да вас обесхрабри рогобатна формула. Она се лако претвара у алгоритам.</p>
+
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <div class="course-content">
+            
+<p>Стандардна девијација се рачуна као квадратни корен средњег квадратног одступања, тј. као</p>
+<div class="math notranslate nohighlight">
+\[\sigma_x=\sqrt{\frac{1}{n-1}\sum_{k=1}^{n}{(x_k-\bar{x})^{2}}}.\]</div>
+<p>Ова формула значи да сабирамо квадрате одступања за све елементе низа, да тај збир онда делимо са <span class="math notranslate nohighlight">\(𝑛−1\)</span>  и да, коначно, из тог количника вадимо квадратни корен.</p>
+
+    </div></div>
+
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
+        <div class="course-content">
+<p>Напишите функцију која враћа стандардну девијацију низа бројева.</p>
+
+    </div></div>
+
+<div data-childcomponent="stdev" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=stdev data-lang="python" 
+     data-include="medijana srednjavrednost niz" data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+def std(L):
+    m=sr_vred(L)
+    n=len(L)
+    ko=[(x-m)**2 for x in L]    # **2 je dizanje broja na drugi stepen, tj. kvadriranje
+    sko=sum(ko)/(n-1)           # zbir svih kvadrata odstupanja delimo sa n-1
+    std=sko**0.5                # **0.5 je dizanje na stepen 0.5 što je isto što i korenovanje
+    return std
+</textarea>
+</div>
+
+<div data-childcomponent="standardna" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=standardna data-lang="python" 
+     data-include="srednjavrednost stdev niz" data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+print(std(bc))
+</textarea>
+</div>
+<p>Коначно, имамо и средњу вредност и стандардну девијацију па низ бројева
+ципела можемо да прикажемо онако како би то научници урадили: као средња
+вредност ± стандардна девијација.</p>
+
+<div data-childcomponent="+-stdev" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=+-stdev data-lang="python" 
+     data-include="stdev niz srednjavrednost" data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+print(round(sr_vred(bc),1),"±",round(std(bc),1)) # round(...,1) zaokružuje broj na jednu decimalu
+</textarea>
+</div>
+
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <div class="course-content">
+            
+<p>На крају ове приче о дескриптивној статистици треба да знате да ове
+функције постоје у библиотекама као што су <em>pandas</em> или <em>numpy</em>. Нисмо
+хтели сад да их користимо као готове јер је било важније да знате како
+се израчунавају.</p>
+
+    </div></div>
+</div>
+<div class="section" id="id6">
+<h3>Фреквенцијска анализа<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+
+    <div class="note-wrapper technicalnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/technicalnote-img.svg" class="note-image technicalnote-image" /> 
+        <div class="course-content">
+            
+<p>Остатак ове лекције препоручујемо да читаш на свом рачунару тако што ћеш у <a class="reference external" href="https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip">фолдеру за рад офлајн</a> покренути Џупитер свеску <cite>Predstavljanje nizova podataka.ipynb</cite> на начин на који је то објашњено у поглављу <a class="reference external" href="/J0A/J0A.html#jupyter">Покретање Џупитер радних свески</a> у уводу овог приручника.</p>
+
+    </div></div>
+<p>За било који нумерички или знаковни низ можемо да урадимо статистику
+појављивања појединачних вредности. Кад бројеви узимају вредности само
+из мањег скупа тачно одређених вредности, фреквенцијска анализа има више
+смисла. Бројеви ципела за ученике једног одељења, управо је пример
+таквог (дискретног) скупа вредности.</p>
+<p>Овде ћемо показати како распон од најмањег до највећег познатог броја
+ципела можемо да претворимо у интервал целих бројева за које
+пребројавамо колико су се пута појавили.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mn</span><span class="o">=</span><span class="nb">min</span><span class="p">(</span><span class="n">bc</span><span class="p">)</span>
+<span class="n">mx</span><span class="o">=</span><span class="nb">max</span><span class="p">(</span><span class="n">bc</span><span class="p">)</span>
+<span class="n">interval</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">mn</span><span class="p">,</span><span class="n">mx</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>        <span class="c1"># prvo pravimo &#39;range&#39; od mn do mx pa ga pretvaramo u listu</span>
+<span class="n">bp</span><span class="o">=</span><span class="p">[]</span>                                <span class="c1"># lista sa brojem pojavljivanja je na početku prazna</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">interval</span><span class="p">:</span>                   <span class="c1"># za svaki broj iz intervala</span>
+    <span class="n">broj_pojavljivanja</span><span class="o">=</span><span class="n">bc</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>   <span class="c1"># prebrojavamo koliko se puta pojavljuje</span>
+    <span class="n">bp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">broj_pojavljivanja</span><span class="p">)</span>    <span class="c1"># taj broj dodajemo listi bp</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">broj_pojavljivanja</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">36</span> <span class="mi">1</span>
+<span class="mi">37</span> <span class="mi">2</span>
+<span class="mi">38</span> <span class="mi">3</span>
+<span class="mi">39</span> <span class="mi">3</span>
+<span class="mi">40</span> <span class="mi">1</span>
+<span class="mi">41</span> <span class="mi">1</span>
+<span class="mi">42</span> <span class="mi">1</span>
+<span class="mi">43</span> <span class="mi">4</span>
+<span class="mi">44</span> <span class="mi">2</span>
+<span class="mi">45</span> <span class="mi">1</span>
+<span class="mi">46</span> <span class="mi">0</span>
+<span class="mi">47</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<p>Одавде видимо који су бројеви ципела чешћи од других. Ципеле број 43 има
+највећи број ученика. То би могла да буде корисна информација трговцима
+који набављају ципеле за средњошколце. Мера која нам даје вредност
+променљиве која се у узорку појављује највећи број пута, назива се
+<strong>мод</strong>. Пајтон у стандардној библиотеци нема ову функцију, али је
+библиотеке за анализу података имају. Да ли бисте могли да напишете
+функцију која враћа мод? Имајте у виду да различите вредности могу да
+имају исти број појављивања. Тада низ података има више модова.</p>
+<p>Из табеларног приказа није сасвим лако видети расподелу фреквенција.
+Боље би било да их прикажемо графички. Ево како су такав задатак
+решавали људи пре педесет година кад су рачунске машине штампале само
+карактере. Једноставно, за сваку вредност приказивали један исти
+карактер онолико пута колико колика им је фреквенција. Најлакше је било
+да за сваку вредност карактере прикажу у посебном реду.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">interval</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">interval</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="s2">&quot;#&quot;</span><span class="o">*</span><span class="n">bp</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">36</span> <span class="c1">#</span>
+<span class="mi">37</span> <span class="c1">##</span>
+<span class="mi">38</span> <span class="c1">###</span>
+<span class="mi">39</span> <span class="c1">###</span>
+<span class="mi">40</span> <span class="c1">#</span>
+<span class="mi">41</span> <span class="c1">#</span>
+<span class="mi">42</span> <span class="c1">#</span>
+<span class="mi">43</span> <span class="c1">####</span>
+<span class="mi">44</span> <span class="c1">##</span>
+<span class="mi">45</span> <span class="c1">#</span>
+<span class="mi">46</span>
+<span class="mi">47</span> <span class="c1">#</span>
+</pre></div>
+</div>
+<p>Видите ли да овде не постоји једна доминантна вредност око које се
+остале гомилају? Изггледа као да ова раподела има два “пика” или мода:
+један за величине 38-39, а други за 43. Истина, ципеле број 43 се
+најчешће појављују, али не знамо да ли би тако остало и да имамо већи
+узорак, тј. да смо прикупили податке од свих ученика једног разреда. На
+овој раподели видимо два брдашца или брега. Расподеле које изгледају као
+два одвојена брега називамо бимодалним. Биће да овде имамо преклопљене
+две расподеле и да један мод одговара женским, а други мушким ципелама.
+То би, такође, могла да буде корисна информација трговцима који
+набављају обућу за средњошколце.</p>
+<p>Ово је била претеча графичког приказивања фреквенција одређених
+вредности података. Тако су људи и руком на папиру радили. Ми данас не
+морамо тако. Имамо на располагању много бољу хардвер. Пајтон има
+функције које то могу да искористе.</p>
+</div>
+</div>
+</div>
+
+
+    </div>
+    
+    <div>
+<div class="lecture-prev-next-toggle">
+  <a  href="index.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходна лекција </span> </a>
+  
+  <a id="nextLectureLink" class="lecture-toggler-arrows"><span> Следећа лекција</span>  <i class="fas fa-arrow-right fa"></i> </a>
+</div>
+
+<script type="text/javascript">
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+</script>
+</div>
+
+    
+  </div>
+</div>
+
+<div class="petljadoc-resources">
+  <span class="pull-left">(Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>) <br> © 2022 Petlja</span>
+</div>
+
+
+<div class="lectureToolbox">
+
+  <label class="font-size-toggle" id="fontSizeToggle">
+
+      <i class="fas fa-font"></i><label>Слова</label>
+  </label>
+  <div class="font-change d-none" id="fontChangeModal">
+      <span class="dec-letter-icon" id="decLetterIcon">A-</span>
+      <label id="currentFontSize">16</label>
+      <span class="inc-letter-icon" id="incLetterIcon">A+</span>
+  </div>
+</div>
+
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<div>
+<div class="lecture-prev-next-toggle">
+  {%- if prev %}
+  <a  href="{{ prev.link|e }}" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> {{ _('Previous chapter') }} </span> </a>
+  {%else%}
+  <a  href="#" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span>{{ _('Previous chapter') }}</span> </a>
+  {% endif %}
+  {%- if next %}
+  <a id="nextLectureLink" class="lecture-toggler-arrows"><span> {{ _('Next chapter') }}</span>  <i class="fas fa-arrow-right fa"></i> </a>
+  {%- endif %}
+</div>
+
+<script type="text/javascript">
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+</script>
+</div>
+

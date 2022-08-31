@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Креирање листа у Пајтону уз помоћ конструкције list comprehension</title>
+    <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja-course.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/nbstyle.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
+    <script type="text/javascript" src="../_static/webglinteractive.js"></script>
+    <script type="text/javascript" src="../_static/FileSaver.min.js"></script>
+    <script type="text/javascript" src="../_static/Blob.js"></script>
+    <script type="text/javascript" src="../_static/karelCorner.js"></script>
+    <script type="text/javascript" src="../_static/karelRobot.js"></script>
+    <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
+    <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
+    <script type="text/javascript" src="../_static/karelUI.js"></script>
+    <script type="text/javascript" src="../_static/karel.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/notes.js"></script>
+    <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
+    <script type="text/javascript" src="../_static/gallery.js"></script>
+    <script type="text/javascript" src="../_static/associations.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../_static/course-errors.js"></script>
+    <script type="text/javascript" src="../_static/petlja.js"></script>
+    <script type="text/javascript" src="../_static/require.js"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+    <script type="text/javascript">
+      eBookConfig = {};
+      eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+      eBookConfig.app = eBookConfig.host + '/runestone';
+      eBookConfig.ajaxURL = eBookConfig.app + '/ajax/';
+      eBookConfig.course = 'Настава програмирања за Други разред гимназије';
+      eBookConfig.logLevel = '0';
+      eBookConfig.loginRequired = 'false';
+      eBookConfig.build_info = "";
+      eBookConfig.isLoggedIn = false;
+      eBookConfig.useRunestoneServices = false;
+      eBookConfig.python3 = true;
+      eBookConfig.basecourse = 'Настава програмирања за Други разред гимназије';
+      eBookConfig.runestone_version = '';
+      eBookConfig.imagesDir = '../_images/';
+      eBookConfig.staticDir = '../_static/';
+      if (typeof (Sk) != "undefined")
+        Sk.imgPath = eBookConfig.imagesDir;
+    </script>
+
+  </head>
+
+  <body>
+
+
+
+<div id="navbar" class="content-header">
+  <div class="right-side-nav">
+    
+    <div id="usefulLinksToggle" class="useful-links-toggle">
+        <a class="dropdown-toggle dropdown-toggle-burger" role="button" href="#" id="usefulLinksDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-bars fa-2x"></i>
+        </a>
+        <div class="dropdown-menu dropdown-nav-links shadow-lg" aria-labelledby="usefulLinksDropdown" x-placement="bottom-start" style="position: absolute; transform: translate3d(-55px, 32px, 0px); top: 0px; left: 0px; will-change: transform;">
+          <div class="links-title"> Корисни линкови</div>
+          <div class="useful-link">
+            <a href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html" target="_blank">Sphinx Docs</a></div>
+          <div class="useful-link">
+            <a href="https://github.com/Petlja/PetljaDoc/blob/master/README.md" target="_blank">Petljadoc</a></div>
+          <div class="useful-link">
+            <a href="https://github.com/RunestoneInteractive/overview" target="_blank">Runestone Interactive</a></div>
+          
+        </div>
+    </div>
+
+    
+</div>
+
+<div class="left-side-nav">
+  <div class="course-logo-nav">
+      <a target="_blank" href="https://petlja.org">
+          <img src="../_static/img/petlja-logo-wt.svg" alt="petlja.org" id="lightPetljaLogo">
+      </a>
+  </div>
+  <div class="course-logo-nav-kabinet">
+      <a target="_blank" href="https://petlja.org/net.kabinet">
+          <img src="../_static/img/netkabinet-logo-strelica-wt.svg" alt="petlja.org" id="lightNetKabinetLogo">
+      </a>
+  </div>
+</div>
+
+
+<div class="content-header-label" id = "content-header-label" href="../">Анализа података у Џупитеру и технике програмирања за други разред гимназије</div>
+
+</div>
+
+
+
+
+<div class="petljaCourseContainer">
+
+<div class="petljaCourseContent">
+  
+           <div class="tableOfContent">
+            <h5> Садржај </h5>
+            </div>
+           <div>
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J0A>
+                    <h5>Пре него што почнемо</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../J0A/howto.html><div class="studioLecture" id=activity-howto><i class="fas fa-file-alt activity-icon"></i>Како да користиш овај приручник</div></a>
+                <a href=../J0A/J0A.html><div class="studioLecture" id=activity-J0A><i class="fas fa-file-alt activity-icon"></i>Покретање Џупитер радних свески</div></a>
+                <a href=../J0A/J01.html><div class="studioLecture" id=activity-J01><i class="fas fa-file-alt activity-icon"></i>Увод у Џупитер</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-podsetnik>
+                    <h5>Подсетник Пајтон</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../podsetnik/Podsetnik%20-%20Pajton.html><div class="studioLecture" id=activity-Podsetnik%20-%20Pajton><i class="fas fa-file-alt activity-icon"></i>Подсетник Пајтон</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y01>
+                    <h5>Низови података</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Y01/L801.html><div class="studioLecture" id=activity-L801><i class="fas fa-file-alt activity-icon"></i>Увод у процесирање низова података</div></a>
+                <a href=../Y01/03_zadaci.html><div class="studioLecture" id=activity-03_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - процесирање низова</div></a>
+                <a href=../Y01/Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension.html><div class="studioLecture" id=activity-Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension><i class="fas fa-file-alt activity-icon"></i>Креирање листа у Пајтону</div></a>
+                <a href=../Y01/Низови%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-Низови%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>Низови - додатни задаци</div></a>
+                <a href=../Y01/test801.html><div class="studioLecture" id=activity-test801><i class="far fa-question-circle activity-icon"></i>Квиз - Листе</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y05>
+                    <h5>Сортирање</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Y05/L805.html><div class="studioLecture" id=activity-L805><i class="fas fa-file-alt activity-icon"></i>Сортирање</div></a>
+                <a href=../Y05/04_zadaci.html><div class="studioLecture" id=activity-04_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - сортирање</div></a>
+                <a href=../Y05/Сортирање%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-Сортирање%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>Сортирање - додатни задаци</div></a>
+                <a href=../Y05/test805.html><div class="studioLecture" id=activity-test805><i class="far fa-question-circle activity-icon"></i>Квиз - Сортирање</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y06>
+                    <h5>Филтрирање и претраживање</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Y06/L806.html><div class="studioLecture" id=activity-L806><i class="fas fa-file-alt activity-icon"></i>Филтрирање и претраживање</div></a>
+                <a href=../Y06/05_zadaci.html><div class="studioLecture" id=activity-05_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - филтрирање и претраживање</div></a>
+                <a href=../Y06/test806.html><div class="studioLecture" id=activity-test806><i class="far fa-question-circle activity-icon"></i>Квиз - Филтрирање и претраживање</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-predstavljanje>
+                    <h5>Представљање низова података</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../predstavljanje/Predstavljanje%20nizova%20podataka.html><div class="studioLecture" id=activity-Predstavljanje%20nizova%20podataka><i class="fas fa-file-alt activity-icon"></i>Представљање низова података</div></a>
+                <a href=../predstavljanje/Graficko_predstavljanje.html><div class="studioLecture" id=activity-Graficko_predstavljanje><i class="fas fa-file-alt activity-icon"></i>Графичко представљање низова података</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-tekstualni>
+                    <h5>Рад са текстуалним подацима</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../tekstualni/Rad%20sa%20tekstualnim%20podacima.html><div class="studioLecture" id=activity-Rad%20sa%20tekstualnim%20podacima><i class="fas fa-file-alt activity-icon"></i>Рад са текстуалним подацима</div></a>
+                <a href=../tekstualni/tekstualne_datoteke.html><div class="studioLecture" id=activity-tekstualne_datoteke><i class="fas fa-file-alt activity-icon"></i>Коришћење текстуалних датотека</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-rad%20sa%20tabelama>
+                    <h5>Рад са табелама</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../rad%20sa%20tabelama/Rad%20sa%20tabelama.html><div class="studioLecture" id=activity-Rad%20sa%20tabelama><i class="fas fa-file-alt activity-icon"></i>Рад са табелама</div></a>
+                <a href=../rad%20sa%20tabelama/indeksiranje.html><div class="studioLecture" id=activity-indeksiranje><i class="fas fa-file-alt activity-icon"></i>Индексирање табела</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-obrada_tabele>
+                    <h5>Обрада и приказ табеларних података</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../obrada_tabele/obrada_prikaz.html><div class="studioLecture" id=activity-obrada_prikaz><i class="fas fa-file-alt activity-icon"></i>Обрада и приказ табеларних података</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J10>
+                    <h5>Џупитер и Ексел</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../J10/J10.html><div class="studioLecture" id=activity-J10><i class="fas fa-file-alt activity-icon"></i>Џупитер и Ексел</div></a>
+                <a href=../J10/testJ10.html><div class="studioLecture" id=activity-testJ10><i class="far fa-question-circle activity-icon"></i>Џупитер и Ексел</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-projektni%20zadatak>
+                    <h5>Пример скупа података за пројекто учење</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../projektni%20zadatak/projekat.html><div class="studioLecture" id=activity-projekat><i class="fas fa-file-alt activity-icon"></i>Пример скупа података за пројекто учење</div></a>
+                </div>
+            </div>
+                </div>
+</div>
+
+
+
+<div class="lectureContent">
+
+  <div id="errors">
+  </div>
+  
+  <div class="lectureContentMaterial">
+  
+    <div id="main-content">
+    
+  <div class="section" id="list-comprehension">
+<h1>Креирање листа у Пајтону уз помоћ конструкције <em>list comprehension</em><a class="headerlink" href="#list-comprehension" title="Permalink to this headline">¶</a></h1>
+<p>Листе елемената постоје у многим програмским језицима. Најједноставнији
+начин да направите листу је да вредности елемената листе наведете ручно,
+односно да их укуцате. На пример, листа бројева мањих од 20 који су
+дељиви са 3 може да се дефинише овако:</p>
+
+<div data-childcomponent="lista" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=lista data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+d3=[3,6,9,12,15,18]
+print(d3)
+</textarea>
+</div>
+<p>Што је дужа и сложенија листа, теже нам је да укуцамо податке. Штавише,
+могућност грешке постаје све већа. Много је боље да овакав једноставан
+задатак поверимо рачунару, тј. да напишемо програм који ће направити
+листу. То можемо да урадимо на следећи начин:</p>
+
+<div data-childcomponent="lista_petlja" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=lista_petlja data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+d3=[]                  # prvo promenljivoj pridružujemo praznu listu
+for i in range(1,21):  # zapamtite da range(a,b) uzima vrednosti od a do b-1
+    if i%3==0:         # operator % nam daje sotatak pri deljenju dva cela broja pa proveravamo da li je ostatak nula
+        d3.append(i)   # konačno, listi pridružujemo tekuću vrednost izraza ako je uslov ispunjen
+print(d3)
+</textarea>
+</div>
+<p>Биле су нам потребне четири линије кôда да напишемо програм који прави
+тражену листу, али тако аутоматизујемо посао. Уместо 21 бисмо могли, на
+пример, да ставимо 2021. Програм за то би и даље био дуг четири линије,
+а завршио би посао који бисмо “пешке” укуцавали пола сата.</p>
+<p>Овакав начин креирања листе је уобичајен за све програмске језике.
+Синтакса може да буде мало другачија, али структура програма мора да
+буде иста. Пајтон је посебан по томе што има и посебну конструкцију која
+омогућава да листе креирамо једноставније. Та се конструкција на
+енглеском зове <strong>list comprehension</strong>. Она омогућава да цео програм, у
+поједностављеној варијанти, ставимо унутар угластих заграда и тако у
+једној линији креирамо листу.</p>
+
+<div data-childcomponent="komprehensija" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=komprehensija data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+d3=[i for i in range(1,21) if i%3==0]
+print(d3)
+</textarea>
+</div>
+<p>Приметите структуру кôда. У угластим заградама имамо прво израз (<code class="docutils literal notranslate"><span class="pre">i</span></code>)
+чија се вредност придружује листи, па петљу кроз коју се мења вредност
+индекса (<code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">i</span> <span class="pre">in</span> <span class="pre">range(1,21)</span></code>) и на крају услов који је неопходан да
+би се тај елемент придружио листи (<code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">i%3==0</span></code>). У <code class="docutils literal notranslate"><span class="pre">for</span></code> петљи не
+мора да се појави <code class="docutils literal notranslate"><span class="pre">range()</span></code> као колекција бројева. Уместо
+<code class="docutils literal notranslate"><span class="pre">range(1,21)</span></code> смо могли да ставимо и листу
+<code class="docutils literal notranslate"><span class="pre">[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]</span></code>. Петља би онда
+пролазила кроз листу и проверавала да ли се индекс <code class="docutils literal notranslate"><span class="pre">i</span></code> налази у листи.
+Свеједно, први начин је лакши и елегантнији.</p>
+<p>Да пробамо сада како ова конструкција ради на једном једноставнијем
+примеру. Направићемо листу квадрата свих природних бројева од 1 до 100.
+Овде нема услова већ за сваку вредност индекса <code class="docutils literal notranslate"><span class="pre">i</span></code> листи <code class="docutils literal notranslate"><span class="pre">kvad</span></code>
+придружујемо по једну вредност израза <code class="docutils literal notranslate"><span class="pre">i**2</span></code>.</p>
+
+<div data-childcomponent="kvadrat_liste" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=kvadrat_liste data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+             data-passivecode="true"  data-hidehistory=true
+       >
+kvad=[i**2 for i in range(1,101)]
+</textarea>
+</div>
+<p>Да преведемо шта смо тачно написали у претходној ћелији: листи <code class="docutils literal notranslate"><span class="pre">kvad</span></code>
+придружи квадрат броја <code class="docutils literal notranslate"><span class="pre">i</span></code> за сваку вредност <code class="docutils literal notranslate"><span class="pre">i</span></code> од 1 до 100. Ако
+вам је до сада то промакло, степен броја у Пајтону се добија помоћу
+опратора <code class="docutils literal notranslate"><span class="pre">**</span></code>. Тако је <code class="docutils literal notranslate"><span class="pre">5**2</span></code> једнако 25, док је <code class="docutils literal notranslate"><span class="pre">2**3</span></code> једнако 8.</p>
+<p>Да бисмо проверили шта се налази у листи <code class="docutils literal notranslate"><span class="pre">kvad</span></code>, одштампаћемо
+вредности првих 15 елемената.</p>
+
+<div data-childcomponent="kvadrat_15_prints" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=kvadrat_15_prints data-lang="python" 
+     data-include="kvadrat_liste" data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+print(kvad[:15])
+</textarea>
+</div>
+<p>Слично можемо да радимо и са листама у којима су стрингови. Ево једног
+примера.</p>
+
+<div data-childcomponent="string" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=string data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+             data-passivecode="true"  data-hidehistory=true
+       >
+string='Slično možemo da radimo i sa listama u kojima su stringovi. Evo jednog primera.'
+delovi=string.split()
+</textarea>
+</div>
+<p>Уз помоћ метoде <code class="docutils literal notranslate"><span class="pre">split()</span></code> смо текст из претходне ћелије (променљива
+<code class="docutils literal notranslate"><span class="pre">string</span></code>) поделили на делове и придружили листи <code class="docutils literal notranslate"><span class="pre">lista</span></code>.</p>
+
+<div data-childcomponent="print_string" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=print_string data-lang="python" 
+     data-include="string" data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+print(delovi)
+</textarea>
+</div>
+<p>Сада ћемо уз помоћ Пајтонове конструкције за листе креирати листу која
+садржи само оне елементе чије вредности имају тачно 6 знакова. Можете ли
+ово да урадите сами?</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">delovi6</span><span class="o">=</span><span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">delovi</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">==</span><span class="mi">6</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">delovi6</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Користите овај “пајтоновски” начин креирања листа кад год можете је је
+једноставан и разумљив. Провежбајте задатке на ову тему из збирке.</p>
+</div>
+
+
+    </div>
+    
+    <div>
+<div class="lecture-prev-next-toggle">
+  <a  href="03_zadaci.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходна лекција </span> </a>
+  
+  <a id="nextLectureLink" class="lecture-toggler-arrows"><span> Следећа лекција</span>  <i class="fas fa-arrow-right fa"></i> </a>
+</div>
+
+<script type="text/javascript">
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+</script>
+</div>
+
+    
+  </div>
+</div>
+
+<div class="petljadoc-resources">
+  <span class="pull-left">(Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>) <br> © 2022 Petlja</span>
+</div>
+
+
+<div class="lectureToolbox">
+
+  <label class="font-size-toggle" id="fontSizeToggle">
+
+      <i class="fas fa-font"></i><label>Слова</label>
+  </label>
+  <div class="font-change d-none" id="fontChangeModal">
+      <span class="dec-letter-icon" id="decLetterIcon">A-</span>
+      <label id="currentFontSize">16</label>
+      <span class="inc-letter-icon" id="incLetterIcon">A+</span>
+  </div>
+</div>
+
+</div>
+
+  </body>
+</html>

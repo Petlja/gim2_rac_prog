@@ -6,6 +6,7 @@
     <title>Анализа података у Џупитеру и технике програмирања за други разред гимназије</title>
     <link rel="stylesheet" type="text/css" href="_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="_static/modal-basic.css" />
@@ -24,11 +25,9 @@
     <link rel="stylesheet" type="text/css" href="_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="_static/simanim.css" />
-    <link rel="stylesheet" type="text/css" href="_static/pycode.css" />
-    <link rel="stylesheet" type="text/css" href="_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="_static/dbDirective.css" />
+    <link rel="stylesheet" type="text/css" href="_static/associations.css" />
+    <link rel="stylesheet" type="text/css" href="_static/editor.css" />
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
@@ -110,6 +109,7 @@
     <script type="text/javascript" src="_static/karelCorner.js"></script>
     <script type="text/javascript" src="_static/karelRobot.js"></script>
     <script type="text/javascript" src="_static/karelWorld.js"></script>
+    <script type="text/javascript" src="_static/karelChat.js"></script>
     <script type="text/javascript" src="_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="_static/karelUI.js"></script>
     <script type="text/javascript" src="_static/karel.js"></script>
@@ -117,40 +117,14 @@
     <script type="text/javascript" src="_static/karel-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="_static/notes.js"></script>
     <script type="text/javascript" src="_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="_static/blockly/blockly_compressed.js"></script>
-    <script type="text/javascript" src="_static/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="_static/blockly/python_compressed.js"></script>
-    <script type="text/javascript" src="_static/blockly/msg-sr.js"></script>
-    <script type="text/javascript" src="_static/blockpy/utilities.js"></script>
-    <script type="text/javascript" src="_static/blockpy/python_errors.js"></script>
-    <script type="text/javascript" src="_static/blockpy/ast_node_visitor.js"></script>
-    <script type="text/javascript" src="_static/blockpy/abstract_interpreter.js"></script>
-    <script type="text/javascript" src="_static/blockpy/pytifa.js"></script>
-    <script type="text/javascript" src="_static/blockpy/abstract_interpreter_definitions.js"></script>
-    <script type="text/javascript" src="_static/blockpy/python_to_blockly.js"></script>
-    <script type="text/javascript" src="_static/blockpy/imported.js"></script>
-    <script type="text/javascript" src="_static/blockpy/blocks/class.js"></script>
-    <script type="text/javascript" src="_static/blockpy/blocks/comment.js"></script>
-    <script type="text/javascript" src="_static/blockpy/blocks/comprehensions.js"></script>
-    <script type="text/javascript" src="_static/blockpy/blocks/dict.js"></script>
-    <script type="text/javascript" src="_static/blockpy/blocks/if.js"></script>
-    <script type="text/javascript" src="_static/blockpy/blocks/io.js"></script>
-    <script type="text/javascript" src="_static/blockpy/blocks/lists.js"></script>
-    <script type="text/javascript" src="_static/blockpy/blocks/sets.js"></script>
-    <script type="text/javascript" src="_static/blockpy/blocks/loops.js"></script>
-    <script type="text/javascript" src="_static/blockpy/blocks/parking.js"></script>
-    <script type="text/javascript" src="_static/blockpy/blocks/tuple.js"></script>
-    <script type="text/javascript" src="_static/blockpy/blocks/turtles.js"></script>
-    <script type="text/javascript" src="_static/blockpy/blocks/text.js"></script>
-    <script type="text/javascript" src="_static/blockpy-modal.js"></script>
-    <script type="text/javascript" src="_static/simanim.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
-    <script type="text/javascript" src="_static/pycode.js"></script>
-    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script type="text/javascript" src="_static/p5js.js"></script>
     <script type="text/javascript" src="_static/gallery.js"></script>
-    <script type="text/javascript" src="_static/dbDirective.js"></script>
-    <script type="text/javascript" src="_static/sql.js"></script>
+    <script type="text/javascript" src="_static/associations.js"></script>
+    <script type="text/javascript" src="_static/associations-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/associations-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="_static/editor.js"></script>
+    <script type="text/javascript" src="_static/jszip.js"></script>
+    <script type="text/javascript" src="_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/editor-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="_static/jquery-ui-1.10.3.custom.min.js"></script>
@@ -173,6 +147,7 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link rel="shortcut icon" href="_static/favicon.ico" type="image/ico" />
     <script type="text/javascript">
       eBookConfig = {};
       eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
@@ -202,6 +177,23 @@
 <div id="navbar" class="content-header">
   <div class="right-side-nav">
     
+    <div id="usefulLinksToggle" class="useful-links-toggle">
+        <a class="dropdown-toggle dropdown-toggle-burger" role="button" href="#" id="usefulLinksDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-bars fa-2x"></i>
+        </a>
+        <div class="dropdown-menu dropdown-nav-links shadow-lg" aria-labelledby="usefulLinksDropdown" x-placement="bottom-start" style="position: absolute; transform: translate3d(-55px, 32px, 0px); top: 0px; left: 0px; will-change: transform;">
+          <div class="links-title"> Корисни линкови</div>
+          <div class="useful-link">
+            <a href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html" target="_blank">Sphinx Docs</a></div>
+          <div class="useful-link">
+            <a href="https://github.com/Petlja/PetljaDoc/blob/master/README.md" target="_blank">Petljadoc</a></div>
+          <div class="useful-link">
+            <a href="https://github.com/RunestoneInteractive/overview" target="_blank">Runestone Interactive</a></div>
+          
+        </div>
+    </div>
+
+    
 </div>
 
 <div class="left-side-nav">
@@ -228,7 +220,7 @@
         <div class="course-logo">
             <img class="course-logo-img" src="_static/images/logo.svg">
         </div>
-                    <a class="course-start " id="startCourseAnonymously" href="./J00/J00.html">
+                    <a class="course-start " id="startCourseAnonymously" href="./J0A/howto.html">
                         Погледај курс одмах
                     </a>
     </div>
@@ -250,7 +242,7 @@
 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.sr_LATN">
 <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
 <br />Овај курс Фондација Петља објавила je под лиценцом <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.sr_LATN">Creative Commons Autorstvo 4.0 Međunarodna Licenca (CC BY 4.0)</a>.
-</p> 
+</p>
     
         </div>
     </div>
@@ -290,143 +282,80 @@
     <h3> Садржај </h3>
     
     <div>
-    <label>Рад са подацима у текстуалном програмском језику (ПТПЈ)</label>
+    <label>Пре него што почнемо</label>
+    <span>
+    </span>     
+    <span><i class="fas fa-file-alt"></i> 3 лекција</span> 
+    </div>
+    
+    <div>
+    <label>Подсетник Пајтон</label>
     <span>
     </span>     
     <span><i class="fas fa-file-alt"></i> 1 лекција</span> 
     </div>
     
     <div>
-    <label>Припрема</label>
+    <label>Низови података</label>
+    <span>
+    </span>     
+    <span><i class="fas fa-file-alt"></i> 5 лекција</span> 
+    </div>
+    
+    <div>
+    <label>Сортирање</label>
+    <span>
+    </span>     
+    <span><i class="fas fa-file-alt"></i> 4 лекција</span> 
+    </div>
+    
+    <div>
+    <label>Филтрирање и претраживање</label>
+    <span>
+    </span>     
+    <span><i class="fas fa-file-alt"></i> 3 лекција</span> 
+    </div>
+    
+    <div>
+    <label>Представљање низова података</label>
+    <span>
+    </span>     
+    <span><i class="fas fa-file-alt"></i> 2 лекција</span> 
+    </div>
+    
+    <div>
+    <label>Рад са текстуалним подацима</label>
+    <span>
+    </span>     
+    <span><i class="fas fa-file-alt"></i> 2 лекција</span> 
+    </div>
+    
+    <div>
+    <label>Рад са табелама</label>
+    <span>
+    </span>     
+    <span><i class="fas fa-file-alt"></i> 2 лекција</span> 
+    </div>
+    
+    <div>
+    <label>Обрада и приказ табеларних података</label>
     <span>
     </span>     
     <span><i class="fas fa-file-alt"></i> 1 лекција</span> 
     </div>
     
     <div>
-    <label>ПТПЈ.1. Увод у Џупитер (*Jupyter*)</label>
+    <label>Џупитер и Ексел</label>
+    <span>
+    </span>     
+    <span><i class="fas fa-file-alt"></i> 2 лекција</span> 
+    </div>
+    
+    <div>
+    <label>Пример скупа података за пројекто учење</label>
     <span>
     </span>     
     <span><i class="fas fa-file-alt"></i> 1 лекција</span> 
-    </div>
-    
-    <div>
-    <label>ПТПЈ.2. Низови података и линијски дијаграми</label>
-    <span>
-    </span>     
-    <span><i class="fas fa-file-alt"></i> 2 лекција</span> 
-    </div>
-    
-    <div>
-    <label>ПТПЈ.3. Хистограми и боје</label>
-    <span>
-    </span>     
-    <span><i class="fas fa-file-alt"></i> 2 лекција</span> 
-    </div>
-    
-    <div>
-    <label>ПТПЈ.4. Просек и медијана низа бројева</label>
-    <span>
-    </span>     
-    <span><i class="fas fa-file-alt"></i> 2 лекција</span> 
-    </div>
-    
-    <div>
-    <label>ПТПЈ.5. Фреквенцијска анализа и секторски дијаграми</label>
-    <span>
-    </span>     
-    <span><i class="fas fa-file-alt"></i> 2 лекција</span> 
-    </div>
-    
-    <div>
-    <label>ПТПЈ.6. Табеларно представљени подаци</label>
-    <span>
-    </span>     
-    <span><i class="fas fa-file-alt"></i> 2 лекција</span> 
-    </div>
-    
-    <div>
-    <label>ПТПЈ.7. Индексирање и транспоновање табеле</label>
-    <span>
-    </span>     
-    <span><i class="fas fa-file-alt"></i> 2 лекција</span> 
-    </div>
-    
-    <div>
-    <label>ПТПЈ.8. Модификације табеле и записивање табеле у датотеку</label>
-    <span>
-    </span>     
-    <span><i class="fas fa-file-alt"></i> 2 лекција</span> 
-    </div>
-    
-    <div>
-    <label>ПТПЈ.9. Сортирање, филтрирање и фреквенцијска анализа</label>
-    <span>
-    </span>     
-    <span><i class="fas fa-file-alt"></i> 2 лекција</span> 
-    </div>
-    
-    <div>
-    <label>ПТПЈ.10. Џупитер и Ексел</label>
-    <span>
-    </span>     
-    <span><i class="fas fa-file-alt"></i> 2 лекција</span> 
-    </div>
-    
-    <div>
-    <label>Програмирање (ПРОГ)</label>
-    <span>
-    </span>     
-    <span><i class="fas fa-file-alt"></i> 1 лекција</span> 
-    </div>
-    
-    <div>
-    <label>ПРОГ.1. Увод у процесирање низова података у Пајтону</label>
-    <span>
-    </span>     
-    <span><i class="fas fa-file-alt"></i> 2 лекција</span> 
-    </div>
-    
-    <div>
-    <label>ПРОГ.2. Бројачи и суме</label>
-    <span>
-    </span>     
-    <span><i class="fas fa-file-alt"></i> 2 лекција</span> 
-    </div>
-    
-    <div>
-    <label>ПРОГ.3. Низови симбола (*стрингови* или *ниске*)</label>
-    <span>
-    </span>     
-    <span><i class="fas fa-file-alt"></i> 2 лекција</span> 
-    </div>
-    
-    <div>
-    <label>ПРОГ.4. Угнежђене петље</label>
-    <span>
-    </span>     
-    <span><i class="fas fa-file-alt"></i> 2 лекција</span> 
-    </div>
-    
-    <div>
-    <label>ПРОГ.5. Сортирање</label>
-    <span>
-    </span>     
-    <span><i class="fas fa-file-alt"></i> 2 лекција</span> 
-    </div>
-    
-    <div>
-    <label>ПРОГ.6. Филтрирање и претраживање</label>
-    <span>
-    </span>     
-    <span><i class="fas fa-file-alt"></i> 2 лекција</span> 
-    </div>
-    
-    <div>
-    <label>ПРОГ.7. Рад са текстуалним датотекама</label>
-    <span>
-    </span>     
-    <span><i class="fas fa-file-alt"></i> 2 лекција</span> 
     </div>
     </div>
 

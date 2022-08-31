@@ -1,6 +1,12 @@
 courseId: kurs-drugi
 description:
-  externalLinks: []
+  externalLinks:
+  - href: https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html
+    text: Sphinx Docs
+  - href: https://github.com/Petlja/PetljaDoc/blob/master/README.md
+    text: Petljadoc
+  - href: https://github.com/RunestoneInteractive/overview
+    text: Runestone Interactive
   longDescription: '<div class="document">
 
     <p>Овај курс је намењен ученицима 2. разреда гимназије за предмет Рачунарство
@@ -49,25 +55,7 @@ description:
   shortDescription: Анализа података у Џупитеру и технике програмирања за други разред
     гимназије
   toc:
-  - РАД СА ПОДАЦИМА У ТЕКСТУАЛНОМ ПРОГРАМСКОМ ЈЕЗИКУ (ПТПЈ)
-  - ПТПЈ.1. Увод у Џупитер (*Jupyter*)
-  - ПТПЈ.2. Низови података и линијски дијаграми
-  - ПТПЈ.3. Хистограми и боје
-  - ПТПЈ.4. Просек и медијана низа бројева
-  - ПТПЈ.5. Фреквенцијска анализа и секторски дијаграми
-  - ПТПЈ.6. Табеларно представљени подаци
-  - ПТПЈ.7. Индексирање и транспоновање табеле
-  - ПТПЈ.8. Модификације табеле и записивање табеле у датотеку
-  - ПТПЈ.9. Сортирање, филтрирање и фреквенцијска анализа
-  - ПТПЈ.10. Џупитер и Ексел
-  - ПРОГРАМИРАЊЕ (ПРОГ)
-  - ПРОГ.1. Увод у процесирање низова података у Пајтону
-  - ПРОГ.2. Бројачи и суме
-  - ПРОГ.3. Низови симбола (*стрингови* или *ниске*)
-  - ПРОГ.4. Угнежђене петље
-  - ПРОГ.5. Сортирање
-  - ПРОГ.6. Филтрирање и претраживање
-  - ПРОГ.7. Рад са текстуалним датотекама
+  - Intro to Petljadoc INDEX.yaml
   willLearn:
   - РАД СА ПОДАЦИМА У ТЕКСТУАЛНОМ ПРОГРАМСКОМ ЈЕЗИКУ (ПТПЈ)
   - Програмски језици и окружења погодни за анализу и обраду података.
@@ -89,302 +77,241 @@ lang: sr-Cyrl
 lessons:
 - activities:
   - description: ''
-    file: J00.html
-    guid: 83b77d53-a691-4fb7-b8ab-8ab8c564e825
-    title: Исходи
+    file: howto.html
+    guid: 2cee184a-c1f8-48a8-b74d-0ad48d28f258
+    src: howto.rst
+    title: Како да користиш овај приручник
     type: reading
-  archived-activities: []
-  description: ''
-  folder: J00
-  guid: af94fff9-3a21-45ed-8dd9-7be6d756ce78
-  title: Рад са подацима у текстуалном програмском језику (ПТПЈ)
-- activities:
   - description: ''
     file: J0A.html
-    guid: a881c6a8-b952-49b1-9a52-66c8e4da2c32
-    title: Припрема
+    guid: a74ee2ce-a1ce-4f89-b23c-3c127a9c5ee7
+    src: J0A.rst
+    title: Покретање Џупитер радних свески
     type: reading
-  archived-activities: []
-  description: ''
-  folder: J0A
-  guid: 57f0351f-0af5-4cca-bb22-405a8dd506ec
-  title: Припрема
-- activities:
   - description: ''
     file: J01.html
-    guid: 75ffb1f6-65ce-4813-8561-43f09fd730c2
-    title: Лекција
+    guid: 13ba6234-160c-400c-b9bf-c222ece4f1bc
+    src: J01.rst
+    title: Увод у Џупитер
     type: reading
   archived-activities: []
-  description: ''
-  folder: J01
-  guid: fc70fa3d-6cfd-4da2-9b2f-ae4ce4d56342
-  title: ПТПЈ.1. Увод у Џупитер (*Jupyter*)
+  description: Your first lesson. Description is not required attribute
+  folder: J0A
+  guid: 491ce1ff-5c23-4a9d-9e62-14d956679bfa
+  normalized_title: Пре него што почнемо
+  title: Пре него што почнемо
 - activities:
   - description: ''
-    file: J02.html
-    guid: d74de1ed-a619-4e96-a051-ccb6b83ade94
-    title: Лекција
-    type: reading
-  - description: ''
-    file: testJ02.html
-    guid: 9240abe3-cb61-4bd7-a210-45d625d0a1c9
-    title: Квиз
-    type: quiz
-  archived-activities: []
-  description: ''
-  folder: J02
-  guid: 37d8ff96-8db0-4f9d-a0e4-4edbc129b966
-  title: ПТПЈ.2. Низови података и линијски дијаграми
-- activities:
-  - description: ''
-    file: J03.html
-    guid: 72f7632d-e790-4cd2-bbff-3cd43b382353
-    title: Лекција
-    type: reading
-  - description: ''
-    file: testJ03.html
-    guid: 0cf9776c-645c-4c77-99b0-adad60887274
-    title: Квиз
-    type: quiz
-  archived-activities: []
-  description: ''
-  folder: J03
-  guid: 431ba1e5-f7f6-457d-be06-1b7b6f346c9f
-  title: ПТПЈ.3. Хистограми и боје
-- activities:
-  - description: ''
-    file: J04.html
-    guid: 55fd3835-2c20-41c9-8a59-a22e83d6b379
-    title: Лекција
-    type: reading
-  - description: ''
-    file: testJ04.html
-    guid: c9960c75-a7a7-46ed-b3fc-6232000a05e9
-    title: Квиз
-    type: quiz
-  archived-activities: []
-  description: ''
-  folder: J04
-  guid: f5fc2c48-91a8-40b6-8af1-b274d9cc9c28
-  title: ПТПЈ.4. Просек и медијана низа бројева
-- activities:
-  - description: ''
-    file: J05.html
-    guid: fc121b1a-d67a-44c5-b602-ed872f120601
-    title: Лекција
-    type: reading
-  - description: ''
-    file: testJ05.html
-    guid: 7665c9fb-fc59-418f-ad83-5d4abb930557
-    title: Квиз
-    type: quiz
-  archived-activities: []
-  description: ''
-  folder: J05
-  guid: 2f5f4da8-7eff-429e-837b-c5fbdf877a85
-  title: ПТПЈ.5. Фреквенцијска анализа и секторски дијаграми
-- activities:
-  - description: ''
-    file: J06.html
-    guid: d4a86a8b-c345-4ad9-9fcb-3d61a862d4ad
-    title: Лекција
-    type: reading
-  - description: ''
-    file: testJ06.html
-    guid: ba5720ee-9b0d-45ca-b655-e35ddaae4c1c
-    title: Квиз
-    type: quiz
-  archived-activities: []
-  description: ''
-  folder: J06
-  guid: 702b161e-cbf6-45ce-b51b-8a746469670f
-  title: ПТПЈ.6. Табеларно представљени подаци
-- activities:
-  - description: ''
-    file: J07.html
-    guid: 4550727a-f260-4f68-aab8-a91caf0f6341
-    title: Лекција
-    type: reading
-  - description: ''
-    file: testJ07.html
-    guid: ed505e2e-f785-4d93-8daa-a2277772bf0b
-    title: Квиз
-    type: quiz
-  archived-activities: []
-  description: ''
-  folder: J07
-  guid: 90930251-c14a-43cd-889c-2df9a832a1c1
-  title: ПТПЈ.7. Индексирање и транспоновање табеле
-- activities:
-  - description: ''
-    file: J08.html
-    guid: 64889144-fd61-458c-b3a9-f6e73a99f5d8
-    title: Лекција
-    type: reading
-  - description: ''
-    file: testJ08.html
-    guid: 73c13268-3cf9-4958-a6e8-a9ea1b5d373f
-    title: Квиз
-    type: quiz
-  archived-activities: []
-  description: ''
-  folder: J08
-  guid: 44704cbf-f354-40b0-ad38-c40e50fbef93
-  title: ПТПЈ.8. Модификације табеле и записивање табеле у датотеку
-- activities:
-  - description: ''
-    file: J09.html
-    guid: a47928cf-3062-4b58-a16e-e7a606757434
-    title: Лекција
-    type: reading
-  - description: ''
-    file: testJ09.html
-    guid: 13a089d9-0fff-4332-b6e8-3c0868d10874
-    title: Квиз
-    type: quiz
-  archived-activities: []
-  description: ''
-  folder: J09
-  guid: eba4e02e-be6b-421e-b65c-b7835dbb3c31
-  title: ПТПЈ.9. Сортирање, филтрирање и фреквенцијска анализа
-- activities:
-  - description: ''
-    file: J10.html
-    guid: c23b8f42-44e1-4404-abd7-8e91889e3206
-    title: Лекција
-    type: reading
-  - description: ''
-    file: testJ10.html
-    guid: 7a9050f2-ee77-44df-9e20-135320511fae
-    title: Квиз
-    type: quiz
-  archived-activities: []
-  description: ''
-  folder: J10
-  guid: 02778fae-ad2a-412e-b638-91bcabbc3cec
-  title: ПТПЈ.10. Џупитер и Ексел
-- activities:
-  - description: ''
-    file: Y00.html
-    guid: cef2d946-1d4a-414d-9665-6e44bc54f550
-    title: Исходи
+    file: Podsetnik - Pajton.html
+    guid: aafcbaab-8b48-4d70-a713-c58186907dc4
+    src: Podsetnik - Pajton.rst
+    title: Подсетник Пајтон
     type: reading
   archived-activities: []
-  description: ''
-  folder: Y00
-  guid: f424c22c-20d0-49e7-950b-131daef5c2ed
-  title: Програмирање (ПРОГ)
+  description: Your first lesson. Description is not required attribute
+  folder: podsetnik
+  guid: 2f75836e-cef1-45ac-93f6-83f70cf7c8b2
+  normalized_title: Подсетник Пајтон
+  title: Подсетник Пајтон
 - activities:
   - description: ''
     file: L801.html
-    guid: f0430a4c-e26d-4bec-992e-af9b33e40939
-    title: Лекција
+    guid: c446aa22-83a1-4903-b9f1-a07fcda3164e
+    src: L801.rst
+    title: Увод у процесирање низова података
     type: reading
+  - description: ''
+    file: 03_zadaci.html
+    guid: 4a696f93-e418-4603-a88e-dcbd112e6c11
+    src: 03_zadaci.rst
+    title: Задаци - процесирање низова
+    type: reading
+  - description: ''
+    file: Kreiranje lista u Pajtonu - List comprehension.html
+    guid: 392fa143-13ac-4fdb-82f4-f55145f6cd11
+    src: Kreiranje lista u Pajtonu - List comprehension.rst
+    title: Креирање листа у Пајтону
+    type: reading
+  - description: ''
+    file: Низови - додатни задаци.html
+    guid: 1daa6860-4861-416f-ab9e-0299781652d5
+    src:
+    - https://petlja.org/biblioteka/r/problemi/Zbirka/ispis_u_obratnom_redosledu
+    - https://petlja.org/biblioteka/r/problemi/Zbirka/parni_i_neparni_elementi
+    title: Низови - додатни задаци
+    type: coding-quiz
   - description: ''
     file: test801.html
-    guid: 1a8fde5e-57e1-4ce4-8ac2-c122f623b1e1
-    title: Квиз
+    guid: 8682a28a-883c-476e-9faa-6322bf92c8ee
+    src: test801.rst
+    title: Квиз - Листе
     type: quiz
   archived-activities: []
-  description: ''
+  description: Your first lesson. Description is not required attribute
   folder: Y01
-  guid: ad083864-9a0f-4c21-8411-62fa0bde07bb
-  title: ПРОГ.1. Увод у процесирање низова података у Пајтону
-- activities:
-  - description: ''
-    file: L802.html
-    guid: 706a8e52-a1bb-44ee-8387-0be63d677580
-    title: Лекција
-    type: reading
-  - description: ''
-    file: test802.html
-    guid: ba166ad9-1baf-4c40-88ec-8ee58d3390ff
-    title: Квиз
-    type: quiz
-  archived-activities: []
-  description: ''
-  folder: Y02
-  guid: 22cbc4d0-e49e-4c79-895e-09a062190530
-  title: ПРОГ.2. Бројачи и суме
-- activities:
-  - description: ''
-    file: L803.html
-    guid: 3add7f21-c5f8-42a3-81f3-8162d885bb1e
-    title: Лекција
-    type: reading
-  - description: ''
-    file: test803.html
-    guid: 6e537f69-8394-4968-8496-2fd21b0565f5
-    title: Квиз
-    type: quiz
-  archived-activities: []
-  description: ''
-  folder: Y03
-  guid: 11ca22b1-1531-4116-be3d-7f9ea4bb088d
-  title: ПРОГ.3. Низови симбола (*стрингови* или *ниске*)
-- activities:
-  - description: ''
-    file: L804.html
-    guid: 7ec4a3d1-e8ca-48b0-92a3-b19dbdedb828
-    title: Лекција
-    type: reading
-  - description: ''
-    file: test804.html
-    guid: bfd819e8-2210-40a3-acf3-604cce73eeff
-    title: Квиз
-    type: quiz
-  archived-activities: []
-  description: ''
-  folder: Y04
-  guid: 8b2042e6-7128-47ad-9d3b-957a3fff8dcb
-  title: ПРОГ.4. Угнежђене петље
+  guid: 8144bc95-df86-4197-91bd-55f28e3beca1
+  normalized_title: Низови података
+  title: Низови података
 - activities:
   - description: ''
     file: L805.html
-    guid: c0992ff2-05c8-42fc-8b56-6bb8fc2ba070
-    title: Лекција
+    guid: 4a3c4ce4-5b6f-4a86-bc83-c875fbbc652f
+    src: L805.rst
+    title: Сортирање
     type: reading
   - description: ''
+    file: 04_zadaci.html
+    guid: 6a946c1a-a1c9-4256-999e-d5ae3f3c77a5
+    src: 04_zadaci.rst
+    title: Задаци - сортирање
+    type: reading
+  - description: ''
+    file: Сортирање - додатни задаци.html
+    guid: 3a4bc728-2c22-4306-a886-f3df96cdfac9
+    src:
+    - https://petlja.org/biblioteka/r/problemi/Zbirka/sortiranje_brojeva
+    - https://petlja.org/biblioteka/r/problemi/Zbirka/najvredniji_predmeti
+    - https://petlja.org/biblioteka/r/problemi/Zbirka/objedinjavanje
+    - https://petlja.org/biblioteka/r/problemi/Zbirka/presek_tri_sortirana_niza
+    title: Сортирање - додатни задаци
+    type: coding-quiz
+  - description: ''
     file: test805.html
-    guid: 05b31fcb-034e-4e49-b0e2-000e1d06f916
-    title: Квиз
+    guid: f4bd386a-8c62-494a-ad6a-ca3ba0212f35
+    src: test805.rst
+    title: Квиз - Сортирање
     type: quiz
   archived-activities: []
-  description: ''
+  description: Your first lesson. Description is not required attribute
   folder: Y05
-  guid: 07c4bd39-04ab-4995-86f7-2772eb51c540
-  title: ПРОГ.5. Сортирање
+  guid: cf5753fd-8126-4604-961f-2dfc4cf8360b
+  normalized_title: Сортирање
+  title: Сортирање
 - activities:
   - description: ''
     file: L806.html
-    guid: 4ee5bd23-8ff1-4fc0-af9c-4598cd3b6c8d
-    title: Лекција
+    guid: 7c4bf775-af06-47ef-9059-c79bde7deba2
+    src: L806.rst
+    title: Филтрирање и претраживање
+    type: reading
+  - description: ''
+    file: 05_zadaci.html
+    guid: 41ce3daf-2542-4e2f-a4fd-25ad2d57607c
+    src: 05_zadaci.rst
+    title: Задаци - филтрирање и претраживање
     type: reading
   - description: ''
     file: test806.html
-    guid: 23b04976-fc6f-4897-b9b9-b6ae243a16d3
-    title: Квиз
+    guid: ef93844c-d7e5-4b85-8f78-c521db719b2d
+    src: test806.rst
+    title: Квиз - Филтрирање и претраживање
     type: quiz
   archived-activities: []
-  description: ''
+  description: Your first lesson. Description is not required attribute
   folder: Y06
-  guid: f82c39e6-6ffe-43dd-805e-800ad62a0c28
-  title: ПРОГ.6. Филтрирање и претраживање
+  guid: ccc7f116-0390-45b6-91f2-bd86cc964974
+  normalized_title: Филтрирање и претраживање
+  title: Филтрирање и претраживање
 - activities:
   - description: ''
-    file: L807.html
-    guid: 0fc23ea8-35a4-44ea-b291-b89a9281583c
-    title: Лекција
+    file: Predstavljanje nizova podataka.html
+    guid: c1a5fe57-9934-4e63-9daa-00b18be2ca21
+    src: Predstavljanje nizova podataka.rst
+    title: Представљање низова података
     type: reading
   - description: ''
-    file: test807.html
-    guid: df790583-81be-4ad4-abeb-a01fe22f474d
-    title: Квиз
+    file: Graficko_predstavljanje.html
+    guid: 6488a57a-cfd1-453d-89c3-767bf84cc15b
+    src: Graficko_predstavljanje.rst
+    title: Графичко представљање низова података
+    type: reading
+  archived-activities: []
+  description: Your first lesson. Description is not required attribute
+  folder: predstavljanje
+  guid: 009ac2db-0765-4c51-81cc-996ed3e3d8bc
+  normalized_title: Представљање низова података
+  title: Представљање низова података
+- activities:
+  - description: ''
+    file: Rad sa tekstualnim podacima.html
+    guid: 37d711da-ebc6-46b2-901d-2c9813f2b5ed
+    src: Rad sa tekstualnim podacima.rst
+    title: Рад са текстуалним подацима
+    type: reading
+  - description: ''
+    file: tekstualne_datoteke.html
+    guid: a18298fb-a83e-4c9b-8065-b70b0c7d5324
+    src: tekstualne_datoteke.rst
+    title: Коришћење текстуалних датотека
+    type: reading
+  archived-activities: []
+  description: Your first lesson. Description is not required attribute
+  folder: tekstualni
+  guid: 15d55198-d8c8-4996-8dd1-6304a586e9ee
+  normalized_title: Рад са текстуалним подацима
+  title: Рад са текстуалним подацима
+- activities:
+  - description: ''
+    file: Rad sa tabelama.html
+    guid: 168af5d6-862c-4316-a38e-44fcd43e1d9a
+    src: Rad sa tabelama.rst
+    title: Рад са табелама
+    type: reading
+  - description: ''
+    file: indeksiranje.html
+    guid: 2eac0e8a-cb3b-4a82-a23a-403aff38933a
+    src: indeksiranje.rst
+    title: Индексирање табела
+    type: reading
+  archived-activities: []
+  description: Your first lesson. Description is not required attribute
+  folder: rad sa tabelama
+  guid: 8949936a-795f-49f0-9f84-015c1bb96953
+  normalized_title: Рад са табелама
+  title: Рад са табелама
+- activities:
+  - description: ''
+    file: obrada_prikaz.html
+    guid: ca4b6b34-d937-4e5f-850d-7aa5458a58d3
+    src: obrada_prikaz.rst
+    title: Обрада и приказ табеларних података
+    type: reading
+  archived-activities: []
+  description: Your first lesson. Description is not required attribute
+  folder: obrada_tabele
+  guid: d117abd9-de1b-4aa1-bb86-ff869da90b9f
+  normalized_title: Обрада и приказ табеларних података
+  title: Обрада и приказ табеларних података
+- activities:
+  - description: ''
+    file: J10.html
+    guid: 0066024f-323b-4d1c-9aa1-4598421c57b0
+    src: J10.rst
+    title: Џупитер и Ексел
+    type: reading
+  - description: ''
+    file: testJ10.html
+    guid: a2c6d977-59fb-4977-8353-830e2b7ed382
+    src: testJ10.rst
+    title: Џупитер и Ексел
     type: quiz
   archived-activities: []
-  description: ''
-  folder: Y07
-  guid: 8ae9fe29-bad4-4650-b13f-c33781c14006
-  title: ПРОГ.7. Рад са текстуалним датотекама
+  description: Your first lesson. Description is not required attribute
+  folder: J10
+  guid: d1fc7690-9e44-446d-8b6f-eecfe711eadf
+  normalized_title: Џупитер и Ексел
+  title: Џупитер и Ексел
+- activities:
+  - description: ''
+    file: projekat.html
+    guid: 2ae897fb-21b9-48e4-a0ea-82ed2fe70f26
+    src: projekat.rst
+    title: Пример скупа података за пројекто учење
+    type: reading
+  archived-activities: []
+  description: Your first lesson. Description is not required attribute
+  folder: projektni zadatak
+  guid: d622cf12-1824-4ac6-896d-1773d928d768
+  normalized_title: Пример скупа података за пројекто учење
+  title: Пример скупа података за пројекто учење
 title: Анализа података у Џупитеру и технике програмирања за други разред гимназије

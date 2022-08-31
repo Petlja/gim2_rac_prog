@@ -1,0 +1,47 @@
+<div class="course-description">
+    <div class="course-info">
+        <div class="course-logo">
+            <img class="course-logo-img" src="{{pathto('_static/images/logo.svg', 1)}}">
+        </div>
+                    <a class="course-start " id="startCourseAnonymously" href="./{{course.active_lessons[0].folder_url}}/{{course.active_lessons[0].active_activies[0].toc_url}}.html">
+                        {{ _('Go to course') }}
+                    </a>
+    </div>
+    <div class="course-shortdescription">
+        <h2> {{ course.shortDesc }} </h2>
+        <div class="course-description-additionalinfo">
+           {{ course.longDesc }}    
+        </div>
+    </div>
+</div>
+<div id="errors" style="width: 60%;"></div>
+<div class="studio-course-content">
+    <div class="course-requirements homepage-content">
+        <div class="mb-3">
+            <h3> {{ _('What you will learn') }} </h3>
+                <ul class="simple" style="max-height: 298px;">
+                    {% for el in course.willLearn -%}
+                    <li> {{el}}</li>
+                    {% endfor %}
+                </ul>
+        <div class="see-more-reqs" id="seeMoreReqs">{{ _('More') }}</div><div class="see-less-reqs" id="seeLessReqs">{{ _('Less') }}</div></div>
+        <div class="section">
+            <h3>{{ _('Course requires') }}</h3>
+            <ul class="simple">
+                {% for el in course.requirements -%}
+                <li> {{el}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+<div class="course-tableofcontent">
+    <h3> {{ _('Table of content') }} </h3>
+    {% for lesson in course.active_lessons %}
+    <div>
+    <label>{{lesson.title}}</label>
+    <span>
+    </span>     
+    <span><i class="fas fa-file-alt"></i> {{course.active_lessons[loop.index0].active_activies | length}} {{ _('Lecture') }}</span> 
+    </div>
+    {% endfor -%}
+</div>

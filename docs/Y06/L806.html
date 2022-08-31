@@ -6,6 +6,7 @@
     <title>Филтрирање и претраживање</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -24,11 +25,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
@@ -110,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -117,40 +117,14 @@
     <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/notes.js"></script>
     <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
-    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
-    <script type="text/javascript" src="../_static/simanim.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
-    <script type="text/javascript" src="../_static/pycode.js"></script>
-    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script type="text/javascript" src="../_static/p5js.js"></script>
     <script type="text/javascript" src="../_static/gallery.js"></script>
-    <script type="text/javascript" src="../_static/dbDirective.js"></script>
-    <script type="text/javascript" src="../_static/sql.js"></script>
+    <script type="text/javascript" src="../_static/associations.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
@@ -173,6 +147,7 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
     <script type="text/javascript">
       eBookConfig = {};
       eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
@@ -201,6 +176,23 @@
 
 <div id="navbar" class="content-header">
   <div class="right-side-nav">
+    
+    <div id="usefulLinksToggle" class="useful-links-toggle">
+        <a class="dropdown-toggle dropdown-toggle-burger" role="button" href="#" id="usefulLinksDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-bars fa-2x"></i>
+        </a>
+        <div class="dropdown-menu dropdown-nav-links shadow-lg" aria-labelledby="usefulLinksDropdown" x-placement="bottom-start" style="position: absolute; transform: translate3d(-55px, 32px, 0px); top: 0px; left: 0px; will-change: transform;">
+          <div class="links-title"> Корисни линкови</div>
+          <div class="useful-link">
+            <a href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html" target="_blank">Sphinx Docs</a></div>
+          <div class="useful-link">
+            <a href="https://github.com/Petlja/PetljaDoc/blob/master/README.md" target="_blank">Petljadoc</a></div>
+          <div class="useful-link">
+            <a href="https://github.com/RunestoneInteractive/overview" target="_blank">Runestone Interactive</a></div>
+          
+        </div>
+    </div>
+
     
 </div>
 
@@ -234,218 +226,127 @@
             </div>
            <div>
                 <div class="courseContentsSection">
-                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J00>
-                    <h5>Рад са подацима у текстуалном програмском језику (ПТПЈ)</h5>
-                    <i class="fas fa-angle-down caret-position "> </i>
-                    <i class="fas fa-angle-up caret-position d-none"></i>
-                </div>
-                <div class="courseContentsSubSection d-none"><a href=../J00/J00.html><div class="studioLecture" id=activity-J00><i class="fas fa-file-alt activity-icon"></i>Исходи</div></a>
-                </div>
-            </div>
-                
-                <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-J0A>
-                    <h5>Припрема</h5>
+                    <h5>Пре него што почнемо</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../J0A/J0A.html><div class="studioLecture" id=activity-J0A><i class="fas fa-file-alt activity-icon"></i>Припрема</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../J0A/howto.html><div class="studioLecture" id=activity-howto><i class="fas fa-file-alt activity-icon"></i>Како да користиш овај приручник</div></a>
+                <a href=../J0A/J0A.html><div class="studioLecture" id=activity-J0A><i class="fas fa-file-alt activity-icon"></i>Покретање Џупитер радних свески</div></a>
+                <a href=../J0A/J01.html><div class="studioLecture" id=activity-J01><i class="fas fa-file-alt activity-icon"></i>Увод у Џупитер</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
-                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J01>
-                    <h5>ПТПЈ.1. Увод у Џупитер (*Jupyter*)</h5>
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-podsetnik>
+                    <h5>Подсетник Пајтон</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../J01/J01.html><div class="studioLecture" id=activity-J01><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
-                </div>
-            </div>
-                
-                <div class="courseContentsSection">
-                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J02>
-                    <h5>ПТПЈ.2. Низови података и линијски дијаграми</h5>
-                    <i class="fas fa-angle-down caret-position "> </i>
-                    <i class="fas fa-angle-up caret-position d-none"></i>
-                </div>
-                <div class="courseContentsSubSection d-none"><a href=../J02/J02.html><div class="studioLecture" id=activity-J02><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
-                <a href=../J02/testJ02.html><div class="studioLecture" id=activity-testJ02><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
-                </div>
-            </div>
-                
-                <div class="courseContentsSection">
-                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J03>
-                    <h5>ПТПЈ.3. Хистограми и боје</h5>
-                    <i class="fas fa-angle-down caret-position "> </i>
-                    <i class="fas fa-angle-up caret-position d-none"></i>
-                </div>
-                <div class="courseContentsSubSection d-none"><a href=../J03/J03.html><div class="studioLecture" id=activity-J03><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
-                <a href=../J03/testJ03.html><div class="studioLecture" id=activity-testJ03><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
-                </div>
-            </div>
-                
-                <div class="courseContentsSection">
-                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J04>
-                    <h5>ПТПЈ.4. Просек и медијана низа бројева</h5>
-                    <i class="fas fa-angle-down caret-position "> </i>
-                    <i class="fas fa-angle-up caret-position d-none"></i>
-                </div>
-                <div class="courseContentsSubSection d-none"><a href=../J04/J04.html><div class="studioLecture" id=activity-J04><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
-                <a href=../J04/testJ04.html><div class="studioLecture" id=activity-testJ04><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
-                </div>
-            </div>
-                
-                <div class="courseContentsSection">
-                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J05>
-                    <h5>ПТПЈ.5. Фреквенцијска анализа и секторски дијаграми</h5>
-                    <i class="fas fa-angle-down caret-position "> </i>
-                    <i class="fas fa-angle-up caret-position d-none"></i>
-                </div>
-                <div class="courseContentsSubSection d-none"><a href=../J05/J05.html><div class="studioLecture" id=activity-J05><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
-                <a href=../J05/testJ05.html><div class="studioLecture" id=activity-testJ05><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
-                </div>
-            </div>
-                
-                <div class="courseContentsSection">
-                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J06>
-                    <h5>ПТПЈ.6. Табеларно представљени подаци</h5>
-                    <i class="fas fa-angle-down caret-position "> </i>
-                    <i class="fas fa-angle-up caret-position d-none"></i>
-                </div>
-                <div class="courseContentsSubSection d-none"><a href=../J06/J06.html><div class="studioLecture" id=activity-J06><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
-                <a href=../J06/testJ06.html><div class="studioLecture" id=activity-testJ06><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
-                </div>
-            </div>
-                
-                <div class="courseContentsSection">
-                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J07>
-                    <h5>ПТПЈ.7. Индексирање и транспоновање табеле</h5>
-                    <i class="fas fa-angle-down caret-position "> </i>
-                    <i class="fas fa-angle-up caret-position d-none"></i>
-                </div>
-                <div class="courseContentsSubSection d-none"><a href=../J07/J07.html><div class="studioLecture" id=activity-J07><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
-                <a href=../J07/testJ07.html><div class="studioLecture" id=activity-testJ07><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
-                </div>
-            </div>
-                
-                <div class="courseContentsSection">
-                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J08>
-                    <h5>ПТПЈ.8. Модификације табеле и записивање табеле у датотеку</h5>
-                    <i class="fas fa-angle-down caret-position "> </i>
-                    <i class="fas fa-angle-up caret-position d-none"></i>
-                </div>
-                <div class="courseContentsSubSection d-none"><a href=../J08/J08.html><div class="studioLecture" id=activity-J08><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
-                <a href=../J08/testJ08.html><div class="studioLecture" id=activity-testJ08><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
-                </div>
-            </div>
-                
-                <div class="courseContentsSection">
-                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J09>
-                    <h5>ПТПЈ.9. Сортирање, филтрирање и фреквенцијска анализа</h5>
-                    <i class="fas fa-angle-down caret-position "> </i>
-                    <i class="fas fa-angle-up caret-position d-none"></i>
-                </div>
-                <div class="courseContentsSubSection d-none"><a href=../J09/J09.html><div class="studioLecture" id=activity-J09><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
-                <a href=../J09/testJ09.html><div class="studioLecture" id=activity-testJ09><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
-                </div>
-            </div>
-                
-                <div class="courseContentsSection">
-                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J10>
-                    <h5>ПТПЈ.10. Џупитер и Ексел</h5>
-                    <i class="fas fa-angle-down caret-position "> </i>
-                    <i class="fas fa-angle-up caret-position d-none"></i>
-                </div>
-                <div class="courseContentsSubSection d-none"><a href=../J10/J10.html><div class="studioLecture" id=activity-J10><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
-                <a href=../J10/testJ10.html><div class="studioLecture" id=activity-testJ10><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
-                </div>
-            </div>
-                
-                <div class="courseContentsSection">
-                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y00>
-                    <h5>Програмирање (ПРОГ)</h5>
-                    <i class="fas fa-angle-down caret-position "> </i>
-                    <i class="fas fa-angle-up caret-position d-none"></i>
-                </div>
-                <div class="courseContentsSubSection d-none"><a href=../Y00/Y00.html><div class="studioLecture" id=activity-Y00><i class="fas fa-file-alt activity-icon"></i>Исходи</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../podsetnik/Podsetnik%20-%20Pajton.html><div class="studioLecture" id=activity-Podsetnik%20-%20Pajton><i class="fas fa-file-alt activity-icon"></i>Подсетник Пајтон</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y01>
-                    <h5>ПРОГ.1. Увод у процесирање низова података у Пајтону</h5>
+                    <h5>Низови података</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../Y01/L801.html><div class="studioLecture" id=activity-L801><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
-                <a href=../Y01/test801.html><div class="studioLecture" id=activity-test801><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
-                </div>
-            </div>
-                
-                <div class="courseContentsSection">
-                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y02>
-                    <h5>ПРОГ.2. Бројачи и суме</h5>
-                    <i class="fas fa-angle-down caret-position "> </i>
-                    <i class="fas fa-angle-up caret-position d-none"></i>
-                </div>
-                <div class="courseContentsSubSection d-none"><a href=../Y02/L802.html><div class="studioLecture" id=activity-L802><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
-                <a href=../Y02/test802.html><div class="studioLecture" id=activity-test802><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
-                </div>
-            </div>
-                
-                <div class="courseContentsSection">
-                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y03>
-                    <h5>ПРОГ.3. Низови симбола (*стрингови* или *ниске*)</h5>
-                    <i class="fas fa-angle-down caret-position "> </i>
-                    <i class="fas fa-angle-up caret-position d-none"></i>
-                </div>
-                <div class="courseContentsSubSection d-none"><a href=../Y03/L803.html><div class="studioLecture" id=activity-L803><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
-                <a href=../Y03/test803.html><div class="studioLecture" id=activity-test803><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
-                </div>
-            </div>
-                
-                <div class="courseContentsSection">
-                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y04>
-                    <h5>ПРОГ.4. Угнежђене петље</h5>
-                    <i class="fas fa-angle-down caret-position "> </i>
-                    <i class="fas fa-angle-up caret-position d-none"></i>
-                </div>
-                <div class="courseContentsSubSection d-none"><a href=../Y04/L804.html><div class="studioLecture" id=activity-L804><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
-                <a href=../Y04/test804.html><div class="studioLecture" id=activity-test804><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../Y01/L801.html><div class="studioLecture" id=activity-L801><i class="fas fa-file-alt activity-icon"></i>Увод у процесирање низова података</div></a>
+                <a href=../Y01/03_zadaci.html><div class="studioLecture" id=activity-03_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - процесирање низова</div></a>
+                <a href=../Y01/Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension.html><div class="studioLecture" id=activity-Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension><i class="fas fa-file-alt activity-icon"></i>Креирање листа у Пајтону</div></a>
+                <a href=../Y01/Низови%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-Низови%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>Низови - додатни задаци</div></a>
+                <a href=../Y01/test801.html><div class="studioLecture" id=activity-test801><i class="far fa-question-circle activity-icon"></i>Квиз - Листе</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y05>
-                    <h5>ПРОГ.5. Сортирање</h5>
+                    <h5>Сортирање</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../Y05/L805.html><div class="studioLecture" id=activity-L805><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
-                <a href=../Y05/test805.html><div class="studioLecture" id=activity-test805><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../Y05/L805.html><div class="studioLecture" id=activity-L805><i class="fas fa-file-alt activity-icon"></i>Сортирање</div></a>
+                <a href=../Y05/04_zadaci.html><div class="studioLecture" id=activity-04_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - сортирање</div></a>
+                <a href=../Y05/Сортирање%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-Сортирање%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>Сортирање - додатни задаци</div></a>
+                <a href=../Y05/test805.html><div class="studioLecture" id=activity-test805><i class="far fa-question-circle activity-icon"></i>Квиз - Сортирање</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y06>
-                    <h5>ПРОГ.6. Филтрирање и претраживање</h5>
+                    <h5>Филтрирање и претраживање</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../Y06/L806.html><div class="studioLecture" id=activity-L806><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
-                <a href=../Y06/test806.html><div class="studioLecture" id=activity-test806><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../Y06/L806.html><div class="studioLecture" id=activity-L806><i class="fas fa-file-alt activity-icon"></i>Филтрирање и претраживање</div></a>
+                <a href=../Y06/05_zadaci.html><div class="studioLecture" id=activity-05_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - филтрирање и претраживање</div></a>
+                <a href=../Y06/test806.html><div class="studioLecture" id=activity-test806><i class="far fa-question-circle activity-icon"></i>Квиз - Филтрирање и претраживање</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
-                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y07>
-                    <h5>ПРОГ.7. Рад са текстуалним датотекама</h5>
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-predstavljanje>
+                    <h5>Представљање низова података</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../Y07/L807.html><div class="studioLecture" id=activity-L807><i class="fas fa-file-alt activity-icon"></i>Лекција</div></a>
-                <a href=../Y07/test807.html><div class="studioLecture" id=activity-test807><i class="far fa-question-circle activity-icon"></i>Квиз</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../predstavljanje/Predstavljanje%20nizova%20podataka.html><div class="studioLecture" id=activity-Predstavljanje%20nizova%20podataka><i class="fas fa-file-alt activity-icon"></i>Представљање низова података</div></a>
+                <a href=../predstavljanje/Graficko_predstavljanje.html><div class="studioLecture" id=activity-Graficko_predstavljanje><i class="fas fa-file-alt activity-icon"></i>Графичко представљање низова података</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-tekstualni>
+                    <h5>Рад са текстуалним подацима</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../tekstualni/Rad%20sa%20tekstualnim%20podacima.html><div class="studioLecture" id=activity-Rad%20sa%20tekstualnim%20podacima><i class="fas fa-file-alt activity-icon"></i>Рад са текстуалним подацима</div></a>
+                <a href=../tekstualni/tekstualne_datoteke.html><div class="studioLecture" id=activity-tekstualne_datoteke><i class="fas fa-file-alt activity-icon"></i>Коришћење текстуалних датотека</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-rad%20sa%20tabelama>
+                    <h5>Рад са табелама</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../rad%20sa%20tabelama/Rad%20sa%20tabelama.html><div class="studioLecture" id=activity-Rad%20sa%20tabelama><i class="fas fa-file-alt activity-icon"></i>Рад са табелама</div></a>
+                <a href=../rad%20sa%20tabelama/indeksiranje.html><div class="studioLecture" id=activity-indeksiranje><i class="fas fa-file-alt activity-icon"></i>Индексирање табела</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-obrada_tabele>
+                    <h5>Обрада и приказ табеларних података</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../obrada_tabele/obrada_prikaz.html><div class="studioLecture" id=activity-obrada_prikaz><i class="fas fa-file-alt activity-icon"></i>Обрада и приказ табеларних података</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J10>
+                    <h5>Џупитер и Ексел</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../J10/J10.html><div class="studioLecture" id=activity-J10><i class="fas fa-file-alt activity-icon"></i>Џупитер и Ексел</div></a>
+                <a href=../J10/testJ10.html><div class="studioLecture" id=activity-testJ10><i class="far fa-question-circle activity-icon"></i>Џупитер и Ексел</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-projektni%20zadatak>
+                    <h5>Пример скупа података за пројекто учење</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../projektni%20zadatak/projekat.html><div class="studioLecture" id=activity-projekat><i class="fas fa-file-alt activity-icon"></i>Пример скупа података за пројекто учење</div></a>
                 </div>
             </div>
                 </div>
@@ -464,16 +365,16 @@
     
   <div class="section" id="id1">
 <h1>Филтрирање и претраживање<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>У овој лекцији ћемо видти</p>
+<p>У овој лекцији ћемо видети</p>
 <ol class="arabic simple">
 <li><p>Како се филтрирају низови употребом посебне Пајтонове конструкције;</p></li>
-<li><p>Како се низови података филтрирају „пешке” и зашто важно да и ову вештину поседујемо; и</p></li>
+<li><p>Како се низови података филтрирају „пешке” и зашто важно да и ову вештину поседујемо и</p></li>
 <li><p>Како се тражи елемент у низу.</p></li>
 </ol>
 <div class="section" id="id2">
 <h2>Филтрирање података употребом Пајтонове конструкције<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p><em>Филтрирати податке</em> значи из датог низа података издвојити оне који су нам на неки начин интересантни.
-Програмски језик Пајтон има уграђену конструкцију која омогућује да филтрирамо неки низ података у односу на неки услов.</p>
+Програмски језик Пајтон има уграђену конструкцију (list comprehension )која омогућује да филтрирамо неки низ података у односу на неки услов.</p>
 <p>Филтрирање низа <code class="docutils literal notranslate"><span class="pre">L</span></code> у односу на неки услов се може постићи конструкцијом која изгледа овако:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">L</span> <span class="k">if</span> <span class="n">Uslov</span><span class="p">(</span><span class="n">x</span><span class="p">)]</span>
 </pre></div>
@@ -503,13 +404,15 @@ print(&quot;Negativnih ima&quot;, len(negativni))
 </textarea>
 </div>
 
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p>Изврши исти програм и у Пајтон окружењу!</p>
 <p>Покрени IDLE, из фолдера <code class="docutils literal notranslate"><span class="pre">P06</span></code> учитај програм <code class="docutils literal notranslate"><span class="pre">Poz_neg.py</span></code> и изврши га.</p>
 
-    </p></div></div>
+    </div></div>
 </div>
 <div class="section" id="id4">
 <h3>Пример.<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
@@ -533,13 +436,15 @@ print(max_5_slova(niz))
 </textarea>
 </div>
 
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p>Изврши исти програм и у Пајтон окружењу!</p>
 <p>Покрени IDLE, из фолдера <code class="docutils literal notranslate"><span class="pre">P06</span></code> учитај програм <code class="docutils literal notranslate"><span class="pre">Maks_5_slova.py</span></code> и изврши га.</p>
 
-    </p></div></div>
+    </div></div>
 </div>
 <div class="section" id="id5">
 <h3>Пример.<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
@@ -600,16 +505,18 @@ ispisi_grupu(devojcice_13_14)
 </textarea>
 </div>
 
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p>Изврши исти програм и у Пајтон окружењу!</p>
 <p>Покрени IDLE, из фолдера <code class="docutils literal notranslate"><span class="pre">P06</span></code> учитај програм <code class="docutils literal notranslate"><span class="pre">Decaci_devojcice.py</span></code> и изврши га.</p>
 <p>Ево и кратке видео демонстрације:</p>
 
     <div  id="vHlu3ZJE8ow" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/vHlu3ZJE8ow/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
         </div>
       
 
@@ -621,7 +528,7 @@ ispisi_grupu(devojcice_13_14)
     
     
     
-    </p></div></div>
+    </div></div>
 </div>
 </div>
 <div class="section" id="id6">
@@ -662,13 +569,15 @@ print(izdvoj_pozitivne([]))
 </textarea>
 </div>
 
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p>Изврши исти програм и у Пајтон окружењу!</p>
 <p>Покрени IDLE, из фолдера <code class="docutils literal notranslate"><span class="pre">P06</span></code> учитај програм <code class="docutils literal notranslate"><span class="pre">Izdvoj_pozitivne.py</span></code> и изврши га.</p>
 
-    </p></div></div>
+    </div></div>
 <p>Да се подсетимо:</p>
 <ol class="arabic simple">
 <li><p>наредба <code class="docutils literal notranslate"><span class="pre">rez</span> <span class="pre">=</span> <span class="pre">[]</span></code> поставља помоћни низ <code class="docutils literal notranslate"><span class="pre">rez</span></code> на празан низ, који се означава овако: <code class="docutils literal notranslate"><span class="pre">[]</span></code>;</p></li>
@@ -705,16 +614,18 @@ print(pozicije_pozitivnih([]))
 </textarea>
 </div>
 
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p>Изврши исти програм и у Пајтон окружењу!</p>
 <p>Покрени IDLE, из фолдера <code class="docutils literal notranslate"><span class="pre">P06</span></code> учитај програм <code class="docutils literal notranslate"><span class="pre">Pozicije_pozitivnih.py</span></code> и изврши га.</p>
 <p>Ево и кратке видео демонстрације:</p>
 
     <div  id="zDrQeHGrdbE" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/zDrQeHGrdbE/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
         </div>
       
 
@@ -726,7 +637,7 @@ print(pozicije_pozitivnih([]))
     
     
     
-    </p></div></div>
+    </div></div>
 <p>Пошто нам за овај задатак требају позиције позитивних бројева, дакле, индекси кућица у којима су
 смештени позитивни бројеви, кроз низ пролазимо на други начин!
 Овај пут променљива <code class="docutils literal notranslate"><span class="pre">i</span></code> пролази кроз редне бројеве кућица, па ако је <code class="docutils literal notranslate"><span class="pre">L[i]</span> <span class="pre">&gt;</span> <span class="pre">0</span></code> (тј. ако i-та кућица садржи
@@ -735,6 +646,35 @@ print(pozicije_pozitivnih([]))
 </div>
 <div class="section" id="id9">
 <h2>Тражење елемента у низу<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<p>Тражење првог елемента са одређеном вредношћу у листи можемо да урадимо брзо помоћу функције <code class="docutils literal notranslate"><span class="pre">.index()</span></code> коју примењујемо на листу и која за аргумент узима тражену вредност. L.index(x) она враћа индекс првог елемента са вредношћу x у листи L.</p>
+
+<div data-childcomponent="trazenje1" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=trazenje1 data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+a = [3,4,5,4,5,6].index(4)
+print(a)
+</textarea>
+</div>
+<p>Уколико желимо појављивање одређене вредности у делу листе који почиње индексом <code class="docutils literal notranslate"><span class="pre">s</span></code>, онда то наведемо као други аргумент функције. То може да нам врати друго, треће итд. појављивање ове вредности.
+Пример</p>
+
+<div data-childcomponent="trazenje2" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=trazenje2 data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+a = [3,4,5,4,5,6].index(4,2)
+print(a)
+</textarea>
+</div>
+<p>У наставку ћемо, вежбе ради, пробати да решимо сличне задатке писањем једноставних програма у Пајтону без коришћења функције <code class="docutils literal notranslate"><span class="pre">.index()</span></code>.</p>
+<p>Оператор <code class="docutils literal notranslate"><span class="pre">In</span></code></p>
 <p>Често је потребно проверити да ли се неки елемент налази у низу, и ако се налази у низу, на ком месту се јавља.
 У Пајтону је веома лако проверити да ли се неки елемент налази у низу користећи уграђени оператор <code class="docutils literal notranslate"><span class="pre">in</span></code>.
 Ево примера.</p>
@@ -778,13 +718,15 @@ print(prvo_pojav(&quot;iva&quot;, B))
 </textarea>
 </div>
 
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p>Изврши исти програм и у Пајтон окружењу!</p>
 <p>Покрени IDLE, из фолдера <code class="docutils literal notranslate"><span class="pre">P06</span></code> учитај програм <code class="docutils literal notranslate"><span class="pre">Prvo_pojav.py</span></code> и изврши га.</p>
 
-    </p></div></div>
+    </div></div>
 <p>Ова функција користи <code class="docutils literal notranslate"><span class="pre">for</span></code> циклус да би прошла кроз елементе низа.</p>
 <ol class="arabic simple">
 <li><p>У сваком пролазу кроз <code class="docutils literal notranslate"><span class="pre">for</span></code> циклус проверавамо да ли је одговарајући елемент низа једнак са <code class="docutils literal notranslate"><span class="pre">x</span></code>.
@@ -795,7 +737,7 @@ print(prvo_pojav(&quot;iva&quot;, B))
 
     <div  id="9BwJOaXlEX0" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/9BwJOaXlEX0/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
         </div>
       
 
@@ -833,13 +775,15 @@ print(posl_pojav(&quot;iva&quot;, B))
 </textarea>
 </div>
 
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p>Изврши исти програм и у Пајтон окружењу!</p>
 <p>Покрени IDLE, из фолдера <code class="docutils literal notranslate"><span class="pre">P06</span></code> учитај програм <code class="docutils literal notranslate"><span class="pre">Posl_pojav.py</span></code> и изврши га.</p>
 
-    </p></div></div>
+    </div></div>
 <p>Ова функција се заснива на чињеници да је последње појављивање елемента у низу заправо <em>прво када се кроз низ пролази здесна у лево</em>.
 Ту нам је од помоћи функција <code class="docutils literal notranslate"><span class="pre">reversed</span></code> која обрће низ који јој је прослеђен</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>          <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">-&gt;</span>  <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span>
@@ -851,7 +795,7 @@ print(posl_pojav(&quot;iva&quot;, B))
 
     <div  id="EzUSr0PvgGc" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/EzUSr0PvgGc/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
         </div>
       
 
@@ -863,267 +807,6 @@ print(posl_pojav(&quot;iva&quot;, B))
     
     
     </div>
-<div class="section" id="id10">
-<h2>Задаци.<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id11">
-<h3>Задатак 1.<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
-<p>Нутритивни подаци за неке рибе и морске плодове су дати у следећој табели:</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>             Енергетска   Угљени
-Намирница    вредност     хидрати   Беланчевине  Масти
-(100г)       (kcal)       (г)       (г)          (г)
-Туна           116         0        26.0         1.0
-Ослић           88         0        17.2         0.8
-Пастрмка       119         0        18.0         5.0
-Лосос          116         0        20.0         3.5
-Скуша          205         0        19.0        14.0
-Сардине        135         0        18.0         5.0
-Харинга        158         0        18.0         9.0
-Бакалар         82         0        18.0         0.7
-Сом             95         0        16.4         2.8
-Шаран          127         0        17.6         5.6
-Орада          115         0        16.5         5.5
-Јегуља         184         0        18.4        11.7
-Шкампи         106         1        20.0         2.0
-Дагње           86         4        12.0         2.0
-Козице          71         1        13.0         1.0
-Лигње           92         3        15.6         1.3
-Хоботница       81         0        16.4         0.9
-Јастог         112         0        20.0         1.5
-</pre></div>
-</div>
-<p>Из ове табеле издвој оне намирнице које не садрже угљене хидрате и имају мање од 10 г масти на 100 г намирнице.</p>
-
-<div data-childcomponent="primer6-Z1" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=primer6-Z1 data-lang="python" 
-      data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
-               data-hidehistory=true
-       >
-morski_plodovi = [
-   ["Туна", 116, 0, 26, 1],
-   ["Ослић", 88, 0, 17.2, 0.8],
-   ["Пастрмка", 119, 0, 18, 5],
-   ["Лосос", 116, 0, 20, 3.5],
-   ["Скуша", 205, 0, 19, 14],
-   ["Сардине", 135, 0, 18, 5],
-   ["Харинга", 158, 0, 18, 9],
-   ["Бакалар", 82, 0, 18, 0.7],
-   ["Сом", 95, 0, 16.4, 2.8],
-   ["Шаран", 127, 0, 17.6, 5.6],
-   ["Орада", 115, 0, 16.5, 5.5],
-   ["Јегуља", 184, 0, 18.4, 11.7],
-   ["Шкампи", 106, 1, 20, 2],
-   ["Дагње", 86, 4, 12, 2],
-   ["Козице", 71, 1, 13, 1],
-   ["Лигње", 92, 3, 15.6, 1.3],
-   ["Хоботница", 81, 0, 16.4, 0.9],
-   ["Јастог", 112, 0, 20, 1.5]]
-
-print(???)
-</textarea>
-</div>
-</div>
-<div class="section" id="id12">
-<h3>Задатак 2.<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
-<p>Ученици једног разреда су скакали у даљ. Сваки ученик је скакао три пута и резултати су дати у низу испод.
-Издвој из табеле оне редове који садрже ученике који су начинили бар један преступ. Преступ је у табели означен тако што је
-дужина одговарајућег скока постављена на 0.</p>
-
-<div data-childcomponent="primer6-Z2" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=primer6-Z2 data-lang="python" 
-      data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
-               data-hidehistory=true
-       >
-takmicari = [["Алексић Алекса", 4.25, 4.31, 4.22],
-             ["Бранковић Бранко", 3.89, 4.02, 4.05],
-             ["Вуковић Вук", 0, 3.91, 4.1],
-             ["Гавриловић Гаврило", 3.78, 3.26, 3.11],
-             ["Дејановић Дејан", 4.56, 4.31, 4.27],
-             ["Ђорђевић Ђорђе", 4.63, 4.6, 4.52],
-             ["Жарковић Жарко", 3.47, 3.51, 3.58],
-             ["Зорић Зоран", 4.12, 4.15, 4.09],
-             ["Ивановић Иван", 3.91, 3.26, 0],
-             ["Јовановић Јован", 4.01, 4.1, 4.12],
-             ["Костић Коста", 3.51, 3.72, 3.41],
-             ["Лукић Лука", 2.15, 2.17, 2.18],
-             ["Марковић Марко", 3.39, 0, 3.26],
-             ["Ненадовић Ненад", 4.25, 4.18, 4.22],
-             ["Огњановић Огњен", 4.31, 4.26, 4.12],
-             ["Петровић Петар", 4.23, 4.34, 4.34],
-             ["Ракић Рака", 3.51, 3.54, 3.62],
-             ["Станојевић Станоје", 4.57, 4.59, 4.63]]
-
-print(???)
-</textarea>
-</div>
-</div>
-<div class="section" id="id13">
-<h3>Задатак 3.<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
-<p>У низу испод се налазе подаци о неколико ученика. За сваког ученика је наведено његово презиме, име, ЈМБГ, пол,
-разред који похађа и просек на крају тог разреда. Допуни print наредбе тако да добијеш податке који су наведени у коментару
-изнад print наредбе.</p>
-
-<div data-childcomponent="primer6-Z3" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=primer6-Z3 data-lang="python" 
-      data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
-               data-hidehistory=true
-    data-includesrc="podaci = [
-    [&quot;Петровић&quot;,  &quot;Петар&quot;, &quot;0308003800019&quot;, &quot;м&quot;, 8, 4.52],
-    [&quot;Јаснић&quot;,    &quot;Јасна&quot;, &quot;1210003805026&quot;, &quot;ж&quot;, 8, 5.00],
-    [&quot;Аничић&quot;,    &quot;Аница&quot;, &quot;1105004805019&quot;, &quot;ж&quot;, 7, 4.11],
-    [&quot;Веснић&quot;,    &quot;Весна&quot;, &quot;2901005705011&quot;, &quot;ж&quot;, 6, 5.00],
-    [&quot;Ђорђевић&quot;,  &quot;Ђорђе&quot;, &quot;1504005700012&quot;, &quot;м&quot;, 6, 3.12],
-    [&quot;Милошев&quot;,   &quot;Милош&quot;, &quot;1506004400056&quot;, &quot;м&quot;, 7, 2.51],
-    [&quot;Милошев&quot;,   &quot;Петар&quot;, &quot;1506004400057&quot;, &quot;м&quot;, 7, 2.48],
-    [&quot;Ненадовић&quot;, &quot;Ненад&quot;, &quot;2109003800046&quot;, &quot;м&quot;, 8, 3.58],
-    [&quot;Ненадовић&quot;, &quot;Јасна&quot;, &quot;2109003805021&quot;, &quot;ж&quot;, 8, 4.21]]
-
-# Направи нову табелу коју чине само ученици осмог разреда.
-print(???)
-
-# Направи нову табелу коју чине само врло добри ученици.
-print(???)
-
-# Направи нову табелу коју чине само дечаци који нису одлични.
-print(???)
-"   >
-
-
-</textarea>
-</div>
-
-    <div class="course-box course-box-info">
-        <div class="course-content">
-            <p>
-<p>Реши задатак и у Пајтон окружењу!</p>
-<p>Покрени IDLE, из фолдера <code class="docutils literal notranslate"><span class="pre">P06</span></code> учитај датотеку <code class="docutils literal notranslate"><span class="pre">Zad_ucenici.py</span></code> и ту реши задатак.</p>
-
-    </p></div></div>
-</div>
-<div class="section" id="id14">
-<h3>Задатак 4.<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
-<p>Написати функцију <code class="docutils literal notranslate"><span class="pre">nadji_sve(x,</span> <span class="pre">L)</span></code> која враћа низ са позицијама свих појављивања елемента <code class="docutils literal notranslate"><span class="pre">x</span></code> у низу <code class="docutils literal notranslate"><span class="pre">L</span></code>.</p>
-
-<div data-childcomponent="primer6-Z4" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=primer6-Z4 data-lang="python" 
-      data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
-               data-hidehistory=true
-    data-includesrc="def nadji_sve(x, L):
-    ???
-
-# Провера
-B = [&quot;ovo&quot;, &quot;ono&quot;, &quot;oko&quot;, &quot;oro&quot;, &quot;era&quot;, &quot;rad&quot;, &quot;dar&quot;, &quot;oko&quot;, &quot;era&quot;, &quot;ono&quot;]
-print(nadji_sve(&quot;oko&quot;, B))
-print(nadji_sve(&quot;rad&quot;, B))
-print(nadji_sve(&quot;iva&quot;, B))
-
-"   >
-
-
-</textarea>
-</div>
-
-    <div class="course-box course-box-info">
-        <div class="course-content">
-            <p>
-<p>Реши задатак и у Пајтон окружењу!</p>
-<p>Покрени IDLE, из фолдера <code class="docutils literal notranslate"><span class="pre">P06</span></code> учитај датотеку <code class="docutils literal notranslate"><span class="pre">Nadji_sve.py</span></code> и ту реши задатак.</p>
-
-    </p></div></div>
-</div>
-<div class="section" id="id15">
-<h3>Задатак 5.<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
-<p>Написати Пајтон функцију <code class="docutils literal notranslate"><span class="pre">presek(L,</span> <span class="pre">M)</span></code> која враћа низ свих елемената који се јављају и у низу <code class="docutils literal notranslate"><span class="pre">L</span></code> и у низу <code class="docutils literal notranslate"><span class="pre">M</span></code>.</p>
-
-<div data-childcomponent="primer6-Z5" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=primer6-Z5 data-lang="python" 
-      data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
-               data-hidehistory=true
-    data-includesrc="def presek(L, M):
-    ???
-
-# Провера
-print(presek([3,1,2,3], [2,4,0,5,1]))
-print(presek([1,2,3], [4,5,6]))
-print(presek([1,2,3], []))
-
-"   >
-
-
-</textarea>
-</div>
-
-    <div class="course-box course-box-info">
-        <div class="course-content">
-            <p>
-<p>Реши задатак и у Пајтон окружењу!</p>
-<p>Покрени IDLE, из фолдера <code class="docutils literal notranslate"><span class="pre">P06</span></code> учитај датотеку <code class="docutils literal notranslate"><span class="pre">Presek.py</span></code> и ту реши задатак.</p>
-
-    </p></div></div>
-</div>
-<div class="section" id="id16">
-<h3>Задатак 6.<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
-<p>Написати Пајтон функцију <code class="docutils literal notranslate"><span class="pre">razlika(L,</span> <span class="pre">M)</span></code> која враћа низ свих елемената
-који се јављају у једном од ова два низа, а не јављају се у другом.</p>
-
-<div data-childcomponent="primer6-Z6" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=primer6-Z6 data-lang="python" 
-      data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
-               data-hidehistory=true
-    data-includesrc="def razlika(L, M):
-    ???
-
-# Провера
-print(razlika([3,1,2,3], [2,4,0,5,1]))
-print(razlika([1,2,3], [4,5,6]))
-print(razlika([1,2,3], []))
-"   >
-
-
-</textarea>
-</div>
-
-    <div class="course-box course-box-info">
-        <div class="course-content">
-            <p>
-<p>Реши задатак и у Пајтон окружењу!</p>
-<p>Покрени IDLE, из фолдера <code class="docutils literal notranslate"><span class="pre">P06</span></code> учитај датотеку <code class="docutils literal notranslate"><span class="pre">Razlika.py</span></code> и ту реши задатак.</p>
-
-    </p></div></div>
-</div>
-<div class="section" id="id17">
-<h3>Задатак 7*.<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
-<p>(Задатак реши у IDLE окружењу)
-Написати програм који од корисника учитава природан број <span class="math notranslate nohighlight">\(n\)</span>, потом <span class="math notranslate nohighlight">\(n\)</span> реалних бројева (сваки у новом реду) и онда
-проверава да ли међу учитаним бројевима има једнаких. Ако је то случај програм треба да испише „IMA JEDNAKIH”,
-а у супротном треба да испише „SVI RAZLICITI”.</p>
-</div>
-<div class="section" id="id18">
-<h3>Задатак 8*.<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
-<p>(Задатак реши у IDLE окружењу)
-Написати програм који од корисника учитава природан број <span class="math notranslate nohighlight">\(n\)</span>, потом <span class="math notranslate nohighlight">\(n\)</span> реалних бројева (сваки у новом реду)
-за које се зна да су сви различити (и то не треба проверавати!) и онда проверава да ли међу учитаних <span class="math notranslate nohighlight">\(n\)</span> реалних бројева
-постоје три чији збир је нула.</p>
-</div>
-<div class="section" id="id19">
-<h3>Задатак 9*.<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
-<p>(Задатак реши у IDLE окружењу)
-Написати програм који од корисника учитава природан број <span class="math notranslate nohighlight">\(n\)</span>, потом <span class="math notranslate nohighlight">\(n\)</span> реалних бројева (сваки у новом реду)
-и онда исписује учитане бројеве „по популарности”: прво испише број који се највише пута појавио у низу, потом
-испише следећег „по популарност”, све до оног који се најмањи број пута појавио у низу.</p>
-</div>
-</div>
 </div>
 
 
@@ -1131,7 +814,7 @@ print(razlika([1,2,3], []))
     
     <div>
 <div class="lecture-prev-next-toggle">
-  <a  href="index.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходно лекција </span> </a>
+  <a  href="index.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходна лекција </span> </a>
   
   <a id="nextLectureLink" class="lecture-toggler-arrows"><span> Следећа лекција</span>  <i class="fas fa-arrow-right fa"></i> </a>
 </div>
@@ -1145,9 +828,11 @@ print(razlika([1,2,3], []))
     
   </div>
 </div>
+
 <div class="petljadoc-resources">
   <span class="pull-left">(Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>) <br> © 2022 Petlja</span>
 </div>
+
 
 <div class="lectureToolbox">
 

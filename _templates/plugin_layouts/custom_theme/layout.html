@@ -1,0 +1,188 @@
+{% extends "basic_layout.html" %}
+
+{% set script_files = ['_static/runestonebase.js',
+                       '_static'+'/skulpt.min.js', 
+                       '_static'+'/skulpt-stdlib.js'
+                      ] + 
+                      script_files +
+                      [
+                        '_static'+'/jquery-ui-1.10.3.custom.min.js',
+                        '_static'+'/jquery-fix.js',
+                        '_static'+'/bootstrap-4.0.0-dist/js/bootstrap.min.js',
+                        '_static'+'/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js',
+                        '_static'+'/bootstrap-sphinx.js',
+                        '_static'+'/waypoints.min.js',
+                        '_static'+'/rangy-core.js',
+                        '_static'+'/rangy-textrange.js',
+                        '_static'+'/rangy-cssclassapplier.js',
+                        '_static'+'/user-highlights.js',
+                        '_static'+'/jquery.idle-timer.js',
+                        '_static'+'/processing-1.4.1.min.js',
+                        '_static'+'/jquery.hotkey.js',
+                        '_static'+'/jquery-migrate-1.2.1.min.js',
+                        '_static'+'/course-errors.js',
+                        '_static'+'/petlja.js',
+                        '_static'+ '/require.js'
+                      ]
+%}
+
+{% set css_files = css_files + 
+  [
+    '_static'+'/basic.css',
+    '_static'+'/user-highlights.css',
+    'https://use.fontawesome.com/releases/v5.1.1/css/all.css',
+    'https://fonts.googleapis.com/css?family=Source+Sans+Pro',
+    '_static'+'/bootstrap-4.0.0-dist/css/bootstrap.min.css',
+    '_static'+'/flatly.min.css',
+    '_static'+'/petlja-course.css',
+    '_static'+'/nbstyle.css'
+  ]
+%}
+{%- if page_settings is not defined -%}
+{% set page_settings = none %}
+{%- endif -%}
+{%- if page_settings is none -%}
+{% set page_settings = namespace(copy_right=true,navigation=true,header_nav=true,petlja_links=true) %}
+{%- endif -%}
+
+{%block lang %}
+<html xmlns="http://www.w3.org/1999/xhtml" lang="{{course.lang}}">
+{%- endblock %}
+
+{% macro navBar() %}
+<div id="navbar" class="content-header">
+  <div class="right-side-nav">
+    {% if course.externalLinkLinks|length > 0 %}
+    <div id="usefulLinksToggle" class="useful-links-toggle">
+        <a class="dropdown-toggle dropdown-toggle-burger" role="button" href="#" id="usefulLinksDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-bars fa-2x"></i>
+        </a>
+        <div class="dropdown-menu dropdown-nav-links shadow-lg" aria-labelledby="usefulLinksDropdown" x-placement="bottom-start" style="position: absolute; transform: translate3d(-55px, 32px, 0px); top: 0px; left: 0px; will-change: transform;">
+          <div class="links-title"> {{ _('Useful links' )}}</div>
+          {% for n in range(course.externalLinkTexts| length) -%}
+          <div class="useful-link">
+            <a href="{{course.externalLinkLinks[n]}}" target="_blank">{{course.externalLinkTexts[n]}}</a></div>
+          {% endfor %}
+        </div>
+    </div>
+
+    {% endif %}
+</div>
+{%if page_settings.petlja_links %}
+<div class="left-side-nav">
+  <div class="course-logo-nav">
+      <a target="_blank" href="https://petlja.org">
+          <img src="{{pathto('_static/img/petlja-logo-wt.svg', 1)}}" alt="petlja.org" id="lightPetljaLogo">
+      </a>
+  </div>
+  <div class="course-logo-nav-kabinet">
+      <a target="_blank" href="https://petlja.org/net.kabinet">
+          <img src="{{pathto('_static/img/netkabinet-logo-strelica-wt.svg', 1)}}" alt="petlja.org" id="lightNetKabinetLogo">
+      </a>
+  </div>
+</div>
+{% endif %}
+{% if pagename != 'index' %}
+<div class="content-header-label" id = "content-header-label" href="{{pathto('', 1)}}">{{ course.shortDesc }}</div>
+{% endif %}
+</div>
+{% endmacro %}
+
+{%- block extrahead %}
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link rel="shortcut icon" href="{{pathto('_static/favicon.ico', 1)}}" type="image/ico" />
+    <script type="text/javascript">
+      eBookConfig = {};
+      eBookConfig.host = '{{course_url}}' ? '{{course_url}}' : 'http://127.0.0.1:8000';
+      eBookConfig.app = eBookConfig.host + '/{{appname}}';
+      eBookConfig.ajaxURL = eBookConfig.app + '/ajax/';
+      eBookConfig.course = '{{course_id}}';
+      eBookConfig.logLevel = '{{ loglevel }}';
+      eBookConfig.loginRequired = '{{ login_required }}';
+      eBookConfig.build_info = "{{build_info}}";
+      eBookConfig.isLoggedIn = false;
+      eBookConfig.useRunestoneServices = false;
+      eBookConfig.python3 = true;
+      eBookConfig.basecourse = '{{ basecourse }}';
+      eBookConfig.runestone_version = '{{ runestone_version }}';
+      eBookConfig.imagesDir = '{{ pathto("_images/",1) }}';
+      eBookConfig.staticDir = '{{ pathto("_static/",1) }}';
+      if (typeof (Sk) != "undefined")
+        Sk.imgPath = eBookConfig.imagesDir;
+    </script>
+{% endblock %}
+
+{# Silence the sidebar's, relbar's #}
+{% block header %}{% endblock %}
+{% block sidebar1 %}{% endblock %}
+{% block sidebar2 %}{% endblock %}
+{% block relbar1 %}{% endblock %}
+{% block relbar2 %}{% endblock %}
+{% block sidebarsourcelink %}{% endblock %}
+
+{%- block content %}
+{% if page_settings.header_nav %}
+{{ navBar() }}
+{% endif %}
+{% if pagename == 'index' %}
+{% block homepage %}
+{% include "course_homepage.html" %}
+{% endblock %}
+{% else %}
+
+<div class="petljaCourseContainer">
+{% if page_settings.navigation %}
+<div class="petljaCourseContent">
+  {{ sidebar()}}
+</div>
+{% else %}
+<div class="petljaCourseContent d-none">
+  {{ sidebar()}}
+</div>
+{% endif %}
+
+{% if page_settings.navigation%}
+<div class="lectureContent">
+{% else %}
+<div class="container" style="padding-left: 20px; height: calc(100vh - 115px);">
+{% endif %}
+  <div id="errors">
+  </div>
+  {% if page_settings.navigation%}
+  <div class="lectureContentMaterial">
+  {% else %}
+  <div class="lectureContentMaterial" style="overflow-x: visible;">
+  {% endif %}
+    <div id="main-content">
+    {% block body %}
+    {% endblock %}
+    </div>
+    {% block nextprevious %}
+    {% include "subchapter.html" %}
+    {% endblock %}
+  </div>
+</div>
+{% if page_settings.copy_right %}
+<div class="petljadoc-resources">
+  <span class="pull-left">(Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>) <br> © 2022 Petlja</span>
+</div>
+{% endif %}
+{% if page_settings.navigation%}
+<div class="lectureToolbox">
+
+  <label class="font-size-toggle" id="fontSizeToggle">
+
+      <i class="fas fa-font"></i><label>{{ _('Letters') }}</label>
+  </label>
+  <div class="font-change d-none" id="fontChangeModal">
+      <span class="dec-letter-icon" id="decLetterIcon">A-</span>
+      <label id="currentFontSize">16</label>
+      <span class="inc-letter-icon" id="incLetterIcon">A+</span>
+  </div>
+</div>
+{% endif %}
+</div>
+{% endif %}
+{%- endblock %}

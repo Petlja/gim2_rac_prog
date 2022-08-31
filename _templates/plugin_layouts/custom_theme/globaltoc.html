@@ -1,0 +1,32 @@
+
+           <div class="tableOfContent">
+            <h5> {{ _('Table of content') }} </h5>
+            </div>
+           <div>{% for lesson in course.active_lessons %}
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-{{lesson.folder_url}}>
+                    <h5>{{lesson.title}}</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none">
+                    {%- for activity in lesson.active_activies -%}
+                    {%- if pagename == 'index' -%}
+                        <a href=./{{lesson.folder_url}}/{{activity.toc_url}}.html>
+                    {%- else -%}
+                        <a href=../{{lesson.folder_url}}/{{activity.toc_url}}.html>
+                    {%- endif -%}
+                    <div class="studioLecture" id=activity-{{activity.toc_url}}>
+                        {%- if "reading" == activity.type -%}
+                        <i class="fas fa-file-alt activity-icon"></i>
+                        {%- elif "video" == activity.type -%}
+                        <i class="fas fa-film activity-icon"></i>
+                        {%- else -%}
+                        <i class="far fa-question-circle activity-icon"></i>
+                        {%- endif -%}
+                        {{activity.title}}</div></a>
+                {% endfor -%}
+                </div>
+            </div>
+                {% endfor -%}
+            </div>

@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Рад са табелама</title>
+    <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja-course.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/nbstyle.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
+    <script type="text/javascript" src="../_static/webglinteractive.js"></script>
+    <script type="text/javascript" src="../_static/FileSaver.min.js"></script>
+    <script type="text/javascript" src="../_static/Blob.js"></script>
+    <script type="text/javascript" src="../_static/karelCorner.js"></script>
+    <script type="text/javascript" src="../_static/karelRobot.js"></script>
+    <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
+    <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
+    <script type="text/javascript" src="../_static/karelUI.js"></script>
+    <script type="text/javascript" src="../_static/karel.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/notes.js"></script>
+    <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
+    <script type="text/javascript" src="../_static/gallery.js"></script>
+    <script type="text/javascript" src="../_static/associations.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../_static/course-errors.js"></script>
+    <script type="text/javascript" src="../_static/petlja.js"></script>
+    <script type="text/javascript" src="../_static/require.js"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+    <script type="text/javascript">
+      eBookConfig = {};
+      eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+      eBookConfig.app = eBookConfig.host + '/runestone';
+      eBookConfig.ajaxURL = eBookConfig.app + '/ajax/';
+      eBookConfig.course = 'Настава програмирања за Други разред гимназије';
+      eBookConfig.logLevel = '0';
+      eBookConfig.loginRequired = 'false';
+      eBookConfig.build_info = "";
+      eBookConfig.isLoggedIn = false;
+      eBookConfig.useRunestoneServices = false;
+      eBookConfig.python3 = true;
+      eBookConfig.basecourse = 'Настава програмирања за Други разред гимназије';
+      eBookConfig.runestone_version = '';
+      eBookConfig.imagesDir = '../_images/';
+      eBookConfig.staticDir = '../_static/';
+      if (typeof (Sk) != "undefined")
+        Sk.imgPath = eBookConfig.imagesDir;
+    </script>
+
+  </head>
+
+  <body>
+
+
+
+<div id="navbar" class="content-header">
+  <div class="right-side-nav">
+    
+    <div id="usefulLinksToggle" class="useful-links-toggle">
+        <a class="dropdown-toggle dropdown-toggle-burger" role="button" href="#" id="usefulLinksDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-bars fa-2x"></i>
+        </a>
+        <div class="dropdown-menu dropdown-nav-links shadow-lg" aria-labelledby="usefulLinksDropdown" x-placement="bottom-start" style="position: absolute; transform: translate3d(-55px, 32px, 0px); top: 0px; left: 0px; will-change: transform;">
+          <div class="links-title"> Корисни линкови</div>
+          <div class="useful-link">
+            <a href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html" target="_blank">Sphinx Docs</a></div>
+          <div class="useful-link">
+            <a href="https://github.com/Petlja/PetljaDoc/blob/master/README.md" target="_blank">Petljadoc</a></div>
+          <div class="useful-link">
+            <a href="https://github.com/RunestoneInteractive/overview" target="_blank">Runestone Interactive</a></div>
+          
+        </div>
+    </div>
+
+    
+</div>
+
+<div class="left-side-nav">
+  <div class="course-logo-nav">
+      <a target="_blank" href="https://petlja.org">
+          <img src="../_static/img/petlja-logo-wt.svg" alt="petlja.org" id="lightPetljaLogo">
+      </a>
+  </div>
+  <div class="course-logo-nav-kabinet">
+      <a target="_blank" href="https://petlja.org/net.kabinet">
+          <img src="../_static/img/netkabinet-logo-strelica-wt.svg" alt="petlja.org" id="lightNetKabinetLogo">
+      </a>
+  </div>
+</div>
+
+
+<div class="content-header-label" id = "content-header-label" href="../">Анализа података у Џупитеру и технике програмирања за други разред гимназије</div>
+
+</div>
+
+
+
+
+<div class="petljaCourseContainer">
+
+<div class="petljaCourseContent">
+  
+           <div class="tableOfContent">
+            <h5> Садржај </h5>
+            </div>
+           <div>
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J0A>
+                    <h5>Пре него што почнемо</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../J0A/howto.html><div class="studioLecture" id=activity-howto><i class="fas fa-file-alt activity-icon"></i>Како да користиш овај приручник</div></a>
+                <a href=../J0A/J0A.html><div class="studioLecture" id=activity-J0A><i class="fas fa-file-alt activity-icon"></i>Покретање Џупитер радних свески</div></a>
+                <a href=../J0A/J01.html><div class="studioLecture" id=activity-J01><i class="fas fa-file-alt activity-icon"></i>Увод у Џупитер</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-podsetnik>
+                    <h5>Подсетник Пајтон</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../podsetnik/Podsetnik%20-%20Pajton.html><div class="studioLecture" id=activity-Podsetnik%20-%20Pajton><i class="fas fa-file-alt activity-icon"></i>Подсетник Пајтон</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y01>
+                    <h5>Низови података</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Y01/L801.html><div class="studioLecture" id=activity-L801><i class="fas fa-file-alt activity-icon"></i>Увод у процесирање низова података</div></a>
+                <a href=../Y01/03_zadaci.html><div class="studioLecture" id=activity-03_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - процесирање низова</div></a>
+                <a href=../Y01/Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension.html><div class="studioLecture" id=activity-Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension><i class="fas fa-file-alt activity-icon"></i>Креирање листа у Пајтону</div></a>
+                <a href=../Y01/Низови%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-Низови%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>Низови - додатни задаци</div></a>
+                <a href=../Y01/test801.html><div class="studioLecture" id=activity-test801><i class="far fa-question-circle activity-icon"></i>Квиз - Листе</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y05>
+                    <h5>Сортирање</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Y05/L805.html><div class="studioLecture" id=activity-L805><i class="fas fa-file-alt activity-icon"></i>Сортирање</div></a>
+                <a href=../Y05/04_zadaci.html><div class="studioLecture" id=activity-04_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - сортирање</div></a>
+                <a href=../Y05/Сортирање%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-Сортирање%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>Сортирање - додатни задаци</div></a>
+                <a href=../Y05/test805.html><div class="studioLecture" id=activity-test805><i class="far fa-question-circle activity-icon"></i>Квиз - Сортирање</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y06>
+                    <h5>Филтрирање и претраживање</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Y06/L806.html><div class="studioLecture" id=activity-L806><i class="fas fa-file-alt activity-icon"></i>Филтрирање и претраживање</div></a>
+                <a href=../Y06/05_zadaci.html><div class="studioLecture" id=activity-05_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - филтрирање и претраживање</div></a>
+                <a href=../Y06/test806.html><div class="studioLecture" id=activity-test806><i class="far fa-question-circle activity-icon"></i>Квиз - Филтрирање и претраживање</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-predstavljanje>
+                    <h5>Представљање низова података</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../predstavljanje/Predstavljanje%20nizova%20podataka.html><div class="studioLecture" id=activity-Predstavljanje%20nizova%20podataka><i class="fas fa-file-alt activity-icon"></i>Представљање низова података</div></a>
+                <a href=../predstavljanje/Graficko_predstavljanje.html><div class="studioLecture" id=activity-Graficko_predstavljanje><i class="fas fa-file-alt activity-icon"></i>Графичко представљање низова података</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-tekstualni>
+                    <h5>Рад са текстуалним подацима</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../tekstualni/Rad%20sa%20tekstualnim%20podacima.html><div class="studioLecture" id=activity-Rad%20sa%20tekstualnim%20podacima><i class="fas fa-file-alt activity-icon"></i>Рад са текстуалним подацима</div></a>
+                <a href=../tekstualni/tekstualne_datoteke.html><div class="studioLecture" id=activity-tekstualne_datoteke><i class="fas fa-file-alt activity-icon"></i>Коришћење текстуалних датотека</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-rad%20sa%20tabelama>
+                    <h5>Рад са табелама</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../rad%20sa%20tabelama/Rad%20sa%20tabelama.html><div class="studioLecture" id=activity-Rad%20sa%20tabelama><i class="fas fa-file-alt activity-icon"></i>Рад са табелама</div></a>
+                <a href=../rad%20sa%20tabelama/indeksiranje.html><div class="studioLecture" id=activity-indeksiranje><i class="fas fa-file-alt activity-icon"></i>Индексирање табела</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-obrada_tabele>
+                    <h5>Обрада и приказ табеларних података</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../obrada_tabele/obrada_prikaz.html><div class="studioLecture" id=activity-obrada_prikaz><i class="fas fa-file-alt activity-icon"></i>Обрада и приказ табеларних података</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J10>
+                    <h5>Џупитер и Ексел</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../J10/J10.html><div class="studioLecture" id=activity-J10><i class="fas fa-file-alt activity-icon"></i>Џупитер и Ексел</div></a>
+                <a href=../J10/testJ10.html><div class="studioLecture" id=activity-testJ10><i class="far fa-question-circle activity-icon"></i>Џупитер и Ексел</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-projektni%20zadatak>
+                    <h5>Пример скупа података за пројекто учење</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../projektni%20zadatak/projekat.html><div class="studioLecture" id=activity-projekat><i class="fas fa-file-alt activity-icon"></i>Пример скупа података за пројекто учење</div></a>
+                </div>
+            </div>
+                </div>
+</div>
+
+
+
+<div class="lectureContent">
+
+  <div id="errors">
+  </div>
+  
+  <div class="lectureContentMaterial">
+  
+    <div id="main-content">
+    
+  <div class="section" id="id1">
+<h1>Рад са табелама<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>До сада смо обрађивали и анализирали податке смештене у листе и
+стрингове. Неке функције за рад са њима већ постоје у Пајтоновој
+стандардној библиотеци, док смо за неке морали да пишемо своје функције.
+Сада је тренутак да пређемо на следећи ниво – да податке организујемо у
+табеле. Пракса нам говори да су табеларно сложени подаци најзгоднији за
+употребу. Базе података све што имају чувају у разним табелама које
+повезују по одређеним атрибутима или променљивим, како их зовемо у
+Пајтону. За рад са табелама нам је неопходно да увеземо библиотеку која
+табелу има као тип података. За ову намену најчешће коришћена библиотека
+је <em>pandas</em>. Она има мноштво функција које ће нам олакшати посао. Неће
+бити потребе да поново пишемо функције као што су биле оне за средњу
+вредност или медијану.</p>
+<div class="section" id="id2">
+<h2>Табеларно представљени подаци<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>У овој лекцији ћемо говорити о:</p>
+<ol class="arabic simple">
+<li><p>представљању табеларно задатих података помоћу листи у Пајтону,</p></li>
+<li><p>ефикаснијем представљању табеларних података користећи библиотеку pandas,</p></li>
+</ol>
+<p>3. визуелизацији табеларно представљених података, и 4. учитавање табела из локалних и удаљених
+ресурса.</p>
+<div class="section" id="id3">
+<h3>Представљање табеларно задатих података помоћу листи<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>Најчешћи начин да организујемо велике количине података је да их
+представимо табелом. Рецимо, ова табела садржи податке о једној групи
+деце (при чему је, наравно, старост изражена у годинама, тежина у
+килограмима, а висина у центиметрима):</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 11%" />
+<col style="width: 26%" />
+<col style="width: 15%" />
+<col style="width: 22%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Ime</p></th>
+<th class="head"><p>Pol</p></th>
+<th class="head"><p>Starost</p></th>
+<th class="head"><p>Masa</p></th>
+<th class="head"><p>Visina</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Ana</p></td>
+<td><p>ž</p></td>
+<td><p>13</p></td>
+<td><p>46</p></td>
+<td><p>160</p></td>
+</tr>
+<tr class="row-odd"><td><p>Bojan</p></td>
+<td><p>m</p></td>
+<td><p>14</p></td>
+<td><p>52</p></td>
+<td><p>165</p></td>
+</tr>
+<tr class="row-even"><td><p>Vlada</p></td>
+<td><p>m</p></td>
+<td><p>13</p></td>
+<td><p>47</p></td>
+<td><p>157</p></td>
+</tr>
+<tr class="row-odd"><td><p>Gordana</p></td>
+<td><p>ž</p></td>
+<td><p>15</p></td>
+<td><p>54</p></td>
+<td><p>165</p></td>
+</tr>
+<tr class="row-even"><td><p>Dejan</p></td>
+<td><p>m</p></td>
+<td><p>15</p></td>
+<td><p>56</p></td>
+<td><p>163</p></td>
+</tr>
+<tr class="row-odd"><td><p>Đorđe</p></td>
+<td><p>m</p></td>
+<td><p>13</p></td>
+<td><p>45</p></td>
+<td><p>159</p></td>
+</tr>
+<tr class="row-even"><td><p>Elena</p></td>
+<td><p>ž</p></td>
+<td><p>14</p></td>
+<td><p>49</p></td>
+<td><p>161</p></td>
+</tr>
+<tr class="row-odd"><td><p>Žaklina</p></td>
+<td><p>ž</p></td>
+<td><p>15</p></td>
+<td><p>52</p></td>
+<td><p>164</p></td>
+</tr>
+<tr class="row-even"><td><p>Zoran</p></td>
+<td><p>m</p></td>
+<td><p>15</p></td>
+<td><p>57</p></td>
+<td><p>167</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ivana</p></td>
+<td><p>ž</p></td>
+<td><p>13</p></td>
+<td><p>45</p></td>
+<td><p>158</p></td>
+</tr>
+<tr class="row-even"><td><p>Jasna</p></td>
+<td><p>ž</p></td>
+<td><p>14</p></td>
+<td><p>51</p></td>
+<td><p>162</p></td>
+</tr>
+</tbody>
+</table>
+<p>Да бисмо могли машински да обрађујемо и анализирамо податке прво их
+морамо представити у облику неке структуре података. Један једноставан
+начин да се то уради је да сваки ред табеле представимо једном листом, и
+да потом све те листе запакујемо у једну велику листу, рецимо овако:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">podaci</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">&quot;Ana&quot;</span><span class="p">,</span>     <span class="s2">&quot;ž&quot;</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">46</span><span class="p">,</span> <span class="mi">160</span><span class="p">],</span>
+          <span class="p">[</span><span class="s2">&quot;Bojan&quot;</span><span class="p">,</span>   <span class="s2">&quot;m&quot;</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">52</span><span class="p">,</span> <span class="mi">165</span><span class="p">],</span>
+          <span class="p">[</span><span class="s2">&quot;Vlada&quot;</span><span class="p">,</span>   <span class="s2">&quot;m&quot;</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">47</span><span class="p">,</span> <span class="mi">157</span><span class="p">],</span>
+          <span class="p">[</span><span class="s2">&quot;Gordana&quot;</span><span class="p">,</span> <span class="s2">&quot;ž&quot;</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">54</span><span class="p">,</span> <span class="mi">165</span><span class="p">],</span>
+          <span class="p">[</span><span class="s2">&quot;Dejan&quot;</span><span class="p">,</span>   <span class="s2">&quot;m&quot;</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">56</span><span class="p">,</span> <span class="mi">163</span><span class="p">],</span>
+          <span class="p">[</span><span class="s2">&quot;Đorđe&quot;</span><span class="p">,</span>   <span class="s2">&quot;m&quot;</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">159</span><span class="p">],</span>
+          <span class="p">[</span><span class="s2">&quot;Elena&quot;</span><span class="p">,</span>   <span class="s2">&quot;ž&quot;</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">49</span><span class="p">,</span> <span class="mi">161</span><span class="p">],</span>
+          <span class="p">[</span><span class="s2">&quot;Žaklina&quot;</span><span class="p">,</span> <span class="s2">&quot;ž&quot;</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">52</span><span class="p">,</span> <span class="mi">164</span><span class="p">],</span>
+          <span class="p">[</span><span class="s2">&quot;Zoran&quot;</span><span class="p">,</span>   <span class="s2">&quot;m&quot;</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">57</span><span class="p">,</span> <span class="mi">167</span><span class="p">],</span>
+          <span class="p">[</span><span class="s2">&quot;Ivana&quot;</span><span class="p">,</span>   <span class="s2">&quot;ž&quot;</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">158</span><span class="p">],</span>
+          <span class="p">[</span><span class="s2">&quot;Jasna&quot;</span><span class="p">,</span>   <span class="s2">&quot;ž&quot;</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">51</span><span class="p">,</span> <span class="mi">162</span><span class="p">]]</span>
+</pre></div>
+</div>
+<p>Из овако представљених података лако можемо добити податке о сваком
+појединачном детету у групи. Рецимо, податке о Дејану добијамо тако што
+испишемо елемент листе са индексом 4.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">podaci</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;Dejan&#39;</span><span class="p">,</span> <span class="s1">&#39;m&#39;</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">56</span><span class="p">,</span> <span class="mi">163</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Овај начин представљања података, међутим, није погодан за обраде по
+колонама. Рецимо, ако желимо да израчунамо просечну висину деце у групи
+морамо да пишемо програм. То није немогуће, чак није ни тешко, али је
+непрактично. Ево програма:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">dete</span> <span class="ow">in</span> <span class="n">podaci</span><span class="p">:</span>
+    <span class="nb">sum</span> <span class="o">+=</span> <span class="n">dete</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+<span class="nb">sum</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">podaci</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">161.9090909090909</span>
+</pre></div>
+</div>
+<p>Програм ради на следећи начин: - прво помоћну променљиву <code class="docutils literal notranslate"><span class="pre">sum</span></code>
+поставимо на нулу (у њој ће се полако акумулирати збир висина све деце у
+групи); - након тога циклус <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">dete</span> <span class="pre">in</span> <span class="pre">podaci:</span></code> прође кроз свако
+дете у групи (јер сваки елемент листе <code class="docutils literal notranslate"><span class="pre">podaci</span></code> представља податке о
+једном детету) и на суму дода његову висину (висина детета се налази на
+петом месту у групи података за то дете, а то је елемент листе са
+индексом 4); - коначно, добијени збир поделимо бројем података да бисмо
+израчунали просек.</p>
+<p>Као што смо већ рекли, ово није јако тешко, али је непрактично. Треба
+нам флексибилнија структура података.</p>
+</div>
+<div class="section" id="pandas-dataframe">
+<h3>Библиотека <em>pandas</em>, структура података <em>DataFrame</em> и рад са колонама табеле<a class="headerlink" href="#pandas-dataframe" title="Permalink to this headline">¶</a></h3>
+
+    <div class="note-wrapper technicalnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/technicalnote-img.svg" class="note-image technicalnote-image" /> 
+        <div class="course-content">
+            
+<p>Остатак ове лекције препоручујемо да читаш на свом рачунару тако што ћеш у <a class="reference external" href="https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip">фолдеру за рад офлајн</a> покренути Џупитер свеску <cite>Obrada i prikaz tabelarnih podataka.ipynb</cite> на начин на који је то објашњено у поглављу <a class="reference external" href="/J0A/J0A.html#jupyter">Покретање Џупитер радних свески</a> у уводу овог приручника.</p>
+
+    </div></div>
+<p>За ефикасно манипулисање табеларно представљеним подацима у Пајтону
+развијена је библиотека <em>pandas</em>. Њу можемо увести као што смо увозили и
+остале библиотеке (и уз пут ћемо јој дати надимак да бисмо мање морали
+да куцамо):</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+</div>
+<p>Из ове библиотеке ћемо користити структуру података која се зове
+<em>DataFrame</em> (енгл. <em>data</em> значи „подаци”, <em>frame</em> значи „оквир”, тако да
+<em>DataFrame</em> значи „оквир са подацима”, односно „табела”).</p>
+<p>Податке о деци сада лако можемо да препакујемо у <em>DataFrame</em> позивом
+функције са истим именом:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tabela</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">podaci</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Претходна команда није дала никакав излаз. Она је просто препаковала
+податке наведене у листи <code class="docutils literal notranslate"><span class="pre">podaci</span></code> у нову структуру података. Да бисмо
+се уверили да се ради само о препакивању, исписаћемо садржај променљиве
+<code class="docutils literal notranslate"><span class="pre">tabela</span></code>:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tabela</span>
+</pre></div>
+</div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Ana</td>
+      <td>ž</td>
+      <td>13</td>
+      <td>46</td>
+      <td>160</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Bojan</td>
+      <td>m</td>
+      <td>14</td>
+      <td>52</td>
+      <td>165</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Vlada</td>
+      <td>m</td>
+      <td>13</td>
+      <td>47</td>
+      <td>157</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Gordana</td>
+      <td>ž</td>
+      <td>15</td>
+      <td>54</td>
+      <td>165</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Dejan</td>
+      <td>m</td>
+      <td>15</td>
+      <td>56</td>
+      <td>163</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Đorđe</td>
+      <td>m</td>
+      <td>13</td>
+      <td>45</td>
+      <td>159</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Elena</td>
+      <td>ž</td>
+      <td>14</td>
+      <td>49</td>
+      <td>161</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Žaklina</td>
+      <td>ž</td>
+      <td>15</td>
+      <td>52</td>
+      <td>164</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Zoran</td>
+      <td>m</td>
+      <td>15</td>
+      <td>57</td>
+      <td>167</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Ivana</td>
+      <td>ž</td>
+      <td>13</td>
+      <td>45</td>
+      <td>158</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Jasna</td>
+      <td>ž</td>
+      <td>14</td>
+      <td>51</td>
+      <td>162</td>
+    </tr>
+  </tbody>
+</table>
+</div><p>Ево и кратког видеа:</p>
+
+    <div  id="_AJYNXq53hk" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
+        <div style="background-image: url('https://img.youtube.com/vi/_AJYNXq53hk/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
+            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
+        </div>
+      
+
+        </div>
+    <div id="modal-_AJYNXq53hk" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
+        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal-_AJYNXq53hk">
+        </div>
+    </div>
+    
+    
+    <p>Да би табела била прегледнија, даћемо колонама називе.
+овако:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tabela</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">podaci</span><span class="p">)</span>                               <span class="c1"># tabelu iz formata liste pretvaramo u DataFrame</span>
+<span class="n">tabela</span><span class="o">.</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Ime&quot;</span><span class="p">,</span> <span class="s2">&quot;Pol&quot;</span><span class="p">,</span> <span class="s2">&quot;Starost&quot;</span><span class="p">,</span> <span class="s2">&quot;Masa&quot;</span><span class="p">,</span> <span class="s2">&quot;Visina&quot;</span><span class="p">]</span>  <span class="c1"># kolonama u tabeli pridružujemo nazive</span>
+<span class="n">tabela</span>
+</pre></div>
+</div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Ime</th>
+      <th>Pol</th>
+      <th>Starost</th>
+      <th>Masa</th>
+      <th>Visina</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Ana</td>
+      <td>ž</td>
+      <td>13</td>
+      <td>46</td>
+      <td>160</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Bojan</td>
+      <td>m</td>
+      <td>14</td>
+      <td>52</td>
+      <td>165</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Vlada</td>
+      <td>m</td>
+      <td>13</td>
+      <td>47</td>
+      <td>157</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Gordana</td>
+      <td>ž</td>
+      <td>15</td>
+      <td>54</td>
+      <td>165</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Dejan</td>
+      <td>m</td>
+      <td>15</td>
+      <td>56</td>
+      <td>163</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Đorđe</td>
+      <td>m</td>
+      <td>13</td>
+      <td>45</td>
+      <td>159</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Elena</td>
+      <td>ž</td>
+      <td>14</td>
+      <td>49</td>
+      <td>161</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Žaklina</td>
+      <td>ž</td>
+      <td>15</td>
+      <td>52</td>
+      <td>164</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Zoran</td>
+      <td>m</td>
+      <td>15</td>
+      <td>57</td>
+      <td>167</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Ivana</td>
+      <td>ž</td>
+      <td>13</td>
+      <td>45</td>
+      <td>158</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Jasna</td>
+      <td>ž</td>
+      <td>14</td>
+      <td>51</td>
+      <td>162</td>
+    </tr>
+  </tbody>
+</table>
+</div><p>Када свака колона има своје име, можемо да приступимо појединачним
+колонама:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tabela</span><span class="p">[</span><span class="s2">&quot;Ime&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">0</span>         <span class="n">Ana</span>
+<span class="mi">1</span>       <span class="n">Bojan</span>
+<span class="mi">2</span>       <span class="n">Vlada</span>
+<span class="mi">3</span>     <span class="n">Gordana</span>
+<span class="mi">4</span>       <span class="n">Dejan</span>
+<span class="mi">5</span>       <span class="n">Đorđe</span>
+<span class="mi">6</span>       <span class="n">Elena</span>
+<span class="mi">7</span>     <span class="n">Žaklina</span>
+<span class="mi">8</span>       <span class="n">Zoran</span>
+<span class="mi">9</span>       <span class="n">Ivana</span>
+<span class="mi">10</span>      <span class="n">Jasna</span>
+<span class="n">Name</span><span class="p">:</span> <span class="n">Ime</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="nb">object</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tabela</span><span class="p">[</span><span class="s2">&quot;Visina&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">0</span>     <span class="mi">160</span>
+<span class="mi">1</span>     <span class="mi">165</span>
+<span class="mi">2</span>     <span class="mi">157</span>
+<span class="mi">3</span>     <span class="mi">165</span>
+<span class="mi">4</span>     <span class="mi">163</span>
+<span class="mi">5</span>     <span class="mi">159</span>
+<span class="mi">6</span>     <span class="mi">161</span>
+<span class="mi">7</span>     <span class="mi">164</span>
+<span class="mi">8</span>     <span class="mi">167</span>
+<span class="mi">9</span>     <span class="mi">158</span>
+<span class="mi">10</span>    <span class="mi">162</span>
+<span class="n">Name</span><span class="p">:</span> <span class="n">Visina</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span>
+</pre></div>
+</div>
+<p>Имена свих колона су увек доступна у облику листе овако:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tabela</span><span class="o">.</span><span class="n">columns</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Index</span><span class="p">([</span><span class="s1">&#39;Ime&#39;</span><span class="p">,</span> <span class="s1">&#39;Pol&#39;</span><span class="p">,</span> <span class="s1">&#39;Starost&#39;</span><span class="p">,</span> <span class="s1">&#39;Masa&#39;</span><span class="p">,</span> <span class="s1">&#39;Visina&#39;</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;object&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Позивом једне од следећих функција лако можемо да вршимо елементарну
+анализу података који су представљени табелом: - <code class="docutils literal notranslate"><span class="pre">.sum()</span></code> – рачуна
+збир елемената у колони (сума); - <code class="docutils literal notranslate"><span class="pre">.mean()</span></code> – рачуна средњу вредност
+елемената у колони; - <code class="docutils literal notranslate"><span class="pre">.median()</span></code> – рачуна медијану елемената у
+колони; - <code class="docutils literal notranslate"><span class="pre">.min()</span></code> – рачуна најмању вредност у колони (минимум); -
+<code class="docutils literal notranslate"><span class="pre">.max()</span></code> – рачуна највећу вредност у колони (максимум).</p>
+<p>На пример, висина најнижег детета у групи је:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tabela</span><span class="p">[</span><span class="s2">&quot;Visina&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">157</span>
+</pre></div>
+</div>
+<p>Најстарије дете у групи има оволико година:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tabela</span><span class="p">[</span><span class="s2">&quot;Starost&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">15</span>
+</pre></div>
+</div>
+<p>Средња вредност висине деце у групи је:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tabela</span><span class="p">[</span><span class="s2">&quot;Visina&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">161.9090909090909</span>
+</pre></div>
+</div>
+<p>Медијална висина:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tabela</span><span class="p">[</span><span class="s2">&quot;Visina&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">162.0</span>
+</pre></div>
+</div>
+<p>Да ли цела група може да стане у лифт чија носивост је 600 кг?</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">tabela</span><span class="p">[</span><span class="s2">&quot;Masa&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">&lt;=</span> <span class="mi">600</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mogu svi da stanu u lift.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Ne. Zajedno su preteški.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Mogu</span> <span class="n">svi</span> <span class="n">da</span> <span class="n">stanu</span> <span class="n">u</span> <span class="n">lift</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+    </div>
+    
+    <div>
+<div class="lecture-prev-next-toggle">
+  <a  href="index.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходна лекција </span> </a>
+  
+  <a id="nextLectureLink" class="lecture-toggler-arrows"><span> Следећа лекција</span>  <i class="fas fa-arrow-right fa"></i> </a>
+</div>
+
+<script type="text/javascript">
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+</script>
+</div>
+
+    
+  </div>
+</div>
+
+<div class="petljadoc-resources">
+  <span class="pull-left">(Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>) <br> © 2022 Petlja</span>
+</div>
+
+
+<div class="lectureToolbox">
+
+  <label class="font-size-toggle" id="fontSizeToggle">
+
+      <i class="fas fa-font"></i><label>Слова</label>
+  </label>
+  <div class="font-change d-none" id="fontChangeModal">
+      <span class="dec-letter-icon" id="decLetterIcon">A-</span>
+      <label id="currentFontSize">16</label>
+      <span class="inc-letter-icon" id="incLetterIcon">A+</span>
+  </div>
+</div>
+
+</div>
+
+  </body>
+</html>

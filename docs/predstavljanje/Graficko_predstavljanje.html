@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Графичко представљање низова података</title>
+    <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja-course.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/nbstyle.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
+    <script type="text/javascript" src="../_static/webglinteractive.js"></script>
+    <script type="text/javascript" src="../_static/FileSaver.min.js"></script>
+    <script type="text/javascript" src="../_static/Blob.js"></script>
+    <script type="text/javascript" src="../_static/karelCorner.js"></script>
+    <script type="text/javascript" src="../_static/karelRobot.js"></script>
+    <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
+    <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
+    <script type="text/javascript" src="../_static/karelUI.js"></script>
+    <script type="text/javascript" src="../_static/karel.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/notes.js"></script>
+    <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
+    <script type="text/javascript" src="../_static/gallery.js"></script>
+    <script type="text/javascript" src="../_static/associations.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../_static/course-errors.js"></script>
+    <script type="text/javascript" src="../_static/petlja.js"></script>
+    <script type="text/javascript" src="../_static/require.js"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+    <script type="text/javascript">
+      eBookConfig = {};
+      eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+      eBookConfig.app = eBookConfig.host + '/runestone';
+      eBookConfig.ajaxURL = eBookConfig.app + '/ajax/';
+      eBookConfig.course = 'Настава програмирања за Други разред гимназије';
+      eBookConfig.logLevel = '0';
+      eBookConfig.loginRequired = 'false';
+      eBookConfig.build_info = "";
+      eBookConfig.isLoggedIn = false;
+      eBookConfig.useRunestoneServices = false;
+      eBookConfig.python3 = true;
+      eBookConfig.basecourse = 'Настава програмирања за Други разред гимназије';
+      eBookConfig.runestone_version = '';
+      eBookConfig.imagesDir = '../_images/';
+      eBookConfig.staticDir = '../_static/';
+      if (typeof (Sk) != "undefined")
+        Sk.imgPath = eBookConfig.imagesDir;
+    </script>
+
+  </head>
+
+  <body>
+
+
+
+<div id="navbar" class="content-header">
+  <div class="right-side-nav">
+    
+    <div id="usefulLinksToggle" class="useful-links-toggle">
+        <a class="dropdown-toggle dropdown-toggle-burger" role="button" href="#" id="usefulLinksDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-bars fa-2x"></i>
+        </a>
+        <div class="dropdown-menu dropdown-nav-links shadow-lg" aria-labelledby="usefulLinksDropdown" x-placement="bottom-start" style="position: absolute; transform: translate3d(-55px, 32px, 0px); top: 0px; left: 0px; will-change: transform;">
+          <div class="links-title"> Корисни линкови</div>
+          <div class="useful-link">
+            <a href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html" target="_blank">Sphinx Docs</a></div>
+          <div class="useful-link">
+            <a href="https://github.com/Petlja/PetljaDoc/blob/master/README.md" target="_blank">Petljadoc</a></div>
+          <div class="useful-link">
+            <a href="https://github.com/RunestoneInteractive/overview" target="_blank">Runestone Interactive</a></div>
+          
+        </div>
+    </div>
+
+    
+</div>
+
+<div class="left-side-nav">
+  <div class="course-logo-nav">
+      <a target="_blank" href="https://petlja.org">
+          <img src="../_static/img/petlja-logo-wt.svg" alt="petlja.org" id="lightPetljaLogo">
+      </a>
+  </div>
+  <div class="course-logo-nav-kabinet">
+      <a target="_blank" href="https://petlja.org/net.kabinet">
+          <img src="../_static/img/netkabinet-logo-strelica-wt.svg" alt="petlja.org" id="lightNetKabinetLogo">
+      </a>
+  </div>
+</div>
+
+
+<div class="content-header-label" id = "content-header-label" href="../">Анализа података у Џупитеру и технике програмирања за други разред гимназије</div>
+
+</div>
+
+
+
+
+<div class="petljaCourseContainer">
+
+<div class="petljaCourseContent">
+  
+           <div class="tableOfContent">
+            <h5> Садржај </h5>
+            </div>
+           <div>
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J0A>
+                    <h5>Пре него што почнемо</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../J0A/howto.html><div class="studioLecture" id=activity-howto><i class="fas fa-file-alt activity-icon"></i>Како да користиш овај приручник</div></a>
+                <a href=../J0A/J0A.html><div class="studioLecture" id=activity-J0A><i class="fas fa-file-alt activity-icon"></i>Покретање Џупитер радних свески</div></a>
+                <a href=../J0A/J01.html><div class="studioLecture" id=activity-J01><i class="fas fa-file-alt activity-icon"></i>Увод у Џупитер</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-podsetnik>
+                    <h5>Подсетник Пајтон</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../podsetnik/Podsetnik%20-%20Pajton.html><div class="studioLecture" id=activity-Podsetnik%20-%20Pajton><i class="fas fa-file-alt activity-icon"></i>Подсетник Пајтон</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y01>
+                    <h5>Низови података</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Y01/L801.html><div class="studioLecture" id=activity-L801><i class="fas fa-file-alt activity-icon"></i>Увод у процесирање низова података</div></a>
+                <a href=../Y01/03_zadaci.html><div class="studioLecture" id=activity-03_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - процесирање низова</div></a>
+                <a href=../Y01/Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension.html><div class="studioLecture" id=activity-Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension><i class="fas fa-file-alt activity-icon"></i>Креирање листа у Пајтону</div></a>
+                <a href=../Y01/Низови%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-Низови%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>Низови - додатни задаци</div></a>
+                <a href=../Y01/test801.html><div class="studioLecture" id=activity-test801><i class="far fa-question-circle activity-icon"></i>Квиз - Листе</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y05>
+                    <h5>Сортирање</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Y05/L805.html><div class="studioLecture" id=activity-L805><i class="fas fa-file-alt activity-icon"></i>Сортирање</div></a>
+                <a href=../Y05/04_zadaci.html><div class="studioLecture" id=activity-04_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - сортирање</div></a>
+                <a href=../Y05/Сортирање%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-Сортирање%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>Сортирање - додатни задаци</div></a>
+                <a href=../Y05/test805.html><div class="studioLecture" id=activity-test805><i class="far fa-question-circle activity-icon"></i>Квиз - Сортирање</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y06>
+                    <h5>Филтрирање и претраживање</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Y06/L806.html><div class="studioLecture" id=activity-L806><i class="fas fa-file-alt activity-icon"></i>Филтрирање и претраживање</div></a>
+                <a href=../Y06/05_zadaci.html><div class="studioLecture" id=activity-05_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - филтрирање и претраживање</div></a>
+                <a href=../Y06/test806.html><div class="studioLecture" id=activity-test806><i class="far fa-question-circle activity-icon"></i>Квиз - Филтрирање и претраживање</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-predstavljanje>
+                    <h5>Представљање низова података</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../predstavljanje/Predstavljanje%20nizova%20podataka.html><div class="studioLecture" id=activity-Predstavljanje%20nizova%20podataka><i class="fas fa-file-alt activity-icon"></i>Представљање низова података</div></a>
+                <a href=../predstavljanje/Graficko_predstavljanje.html><div class="studioLecture" id=activity-Graficko_predstavljanje><i class="fas fa-file-alt activity-icon"></i>Графичко представљање низова података</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-tekstualni>
+                    <h5>Рад са текстуалним подацима</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../tekstualni/Rad%20sa%20tekstualnim%20podacima.html><div class="studioLecture" id=activity-Rad%20sa%20tekstualnim%20podacima><i class="fas fa-file-alt activity-icon"></i>Рад са текстуалним подацима</div></a>
+                <a href=../tekstualni/tekstualne_datoteke.html><div class="studioLecture" id=activity-tekstualne_datoteke><i class="fas fa-file-alt activity-icon"></i>Коришћење текстуалних датотека</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-rad%20sa%20tabelama>
+                    <h5>Рад са табелама</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../rad%20sa%20tabelama/Rad%20sa%20tabelama.html><div class="studioLecture" id=activity-Rad%20sa%20tabelama><i class="fas fa-file-alt activity-icon"></i>Рад са табелама</div></a>
+                <a href=../rad%20sa%20tabelama/indeksiranje.html><div class="studioLecture" id=activity-indeksiranje><i class="fas fa-file-alt activity-icon"></i>Индексирање табела</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-obrada_tabele>
+                    <h5>Обрада и приказ табеларних података</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../obrada_tabele/obrada_prikaz.html><div class="studioLecture" id=activity-obrada_prikaz><i class="fas fa-file-alt activity-icon"></i>Обрада и приказ табеларних података</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J10>
+                    <h5>Џупитер и Ексел</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../J10/J10.html><div class="studioLecture" id=activity-J10><i class="fas fa-file-alt activity-icon"></i>Џупитер и Ексел</div></a>
+                <a href=../J10/testJ10.html><div class="studioLecture" id=activity-testJ10><i class="far fa-question-circle activity-icon"></i>Џупитер и Ексел</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-projektni%20zadatak>
+                    <h5>Пример скупа података за пројекто учење</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../projektni%20zadatak/projekat.html><div class="studioLecture" id=activity-projekat><i class="fas fa-file-alt activity-icon"></i>Пример скупа података за пројекто учење</div></a>
+                </div>
+            </div>
+                </div>
+</div>
+
+
+
+<div class="lectureContent">
+
+  <div id="errors">
+  </div>
+  
+  <div class="lectureContentMaterial">
+  
+    <div id="main-content">
+    
+  <div class="section" id="id1">
+<h1>Графичко представљање низова података<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>Велику количину података није лако представити. Због тога се подаци
+организују у табеле, групишу и пребројавају. Зато се раде обрада и
+анализа података. Да би овај процес био једноставнији и разумљивији
+потребно је да “видимо” податаке. Графичко представљање података постоји
+већ вековима, али никада није било тако важно као данас када је количина
+података са којом се срећемо неупоредиво већа него раније. Графичко
+приказивање података, или <strong>визуелизација</strong>, има задатак да верно
+прикаже податке и истакне оно што сматрамо најважнијим. Иако ова два
+захтева могу да буду супротстављена, добра визуелизација мора да испуни
+оба.</p>
+<p>Да бисмо податке графички приказали у Пајтону потребно је да их
+организујемо у низове или табеле.</p>
+
+    <div class="note-wrapper technicalnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/technicalnote-img.svg" class="note-image technicalnote-image" /> 
+        <div class="course-content">
+            
+<p>Остатак ове лекције препоручујемо да читаш на свом рачунару тако што ћеш у <a class="reference external" href="https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip">фолдеру за рад офлајн</a> покренути Џупитер свеску <cite>Predstavljanje nizova podataka.ipynb</cite> на начин на који је то објашњено у поглављу <a class="reference external" href="/J0A/J0A.html#jupyter">Покретање Џупитер радних свески</a> у уводу овог приручника.</p>
+
+    </div></div>
+<div class="section" id="matplotlib-pyplot">
+<h2>Коришћење библиотеке <code class="docutils literal notranslate"><span class="pre">matplotlib.pyplot</span></code> за визуелизацију<a class="headerlink" href="#matplotlib-pyplot" title="Permalink to this headline">¶</a></h2>
+<p>Стандардна Пајтонова библиотека нема функције за цртање графика. Зато је
+неопходно да увеземо неку која те функције има. Најчешће се за
+визуелизацију увози библиотека <code class="docutils literal notranslate"><span class="pre">matplotlib.pyplot</span></code>. Због тога многи
+Пајтон програми на самом почетку имају
+<code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">matplotlib.pyplot</span> <span class="pre">as</span> <span class="pre">plt</span></code>, што значи да одмах увозимо тражену
+библиотеку компликованог имена уз напомену да ћемо је убудуће позивати
+преко скраћеног имена <code class="docutils literal notranslate"><span class="pre">plt</span></code>.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+<p>Ова библиотека има огроман број различитих функција и опција за
+приказивање резултата. (Пробајте <code class="docutils literal notranslate"><span class="pre">dir(plt)</span></code> да видите шта све у
+библиотеци постоји.) Ми ћемо овде приказати само неколико најчешће
+коришћених.</p>
+</div>
+<div class="section" id="id4">
+<h2>Линијски, тачкасти и стубичасти дијаграми<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>Екран рачунара, као и папир на ком цртамо графиконе, има две димензије
+које користимо за потребе визуелизације. Где год да ставимо тачку, она
+име две координате: <em>x</em> по хоризонтали и <em>y</em> по вертикали. Како год да
+приказујемо податке, морамо да их сведемо на две димензије и да цео
+графикон прикажемо као скуп тачака у равни. Због тога су
+најједноставнији они графикони где низ тачака одређују два низа
+координата, један за <em>x</em>, други за <em>y</em>-осу.</p>
+<p>У следећем примеру ћемо помоћу функције <code class="docutils literal notranslate"><span class="pre">scatter()</span></code> приказати
+<strong>тачкасти дијаграм</strong>, односно тачке одређене са два низа координата:
+<code class="docutils literal notranslate"><span class="pre">x=[3,4,5]</span></code> и <code class="docutils literal notranslate"><span class="pre">y=[4,2,1]</span></code>. Приметите како за низове координата
+користимо листе. Тако је најједноставније.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+<span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">matplotlib</span><span class="o">.</span><span class="n">collections</span><span class="o">.</span><span class="n">PathCollection</span> <span class="n">at</span> <span class="mh">0x24e3d41ed00</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<img alt="../_images/output_46_1.png" src="../_images/output_46_1.png" />
+<p>Вероватно примећујете да координатни систем не почиње од нуле. Функција
+сама подешава границе тако да максимално искорити простор који је на
+располагању. То можете да промените сами помоћу функција <code class="docutils literal notranslate"><span class="pre">xlim()</span></code> и
+<code class="docutils literal notranslate"><span class="pre">ylim()</span></code>. Ставите, на пример,</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">6</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">6</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>одмах после линије у којој је <code class="docutils literal notranslate"><span class="pre">scatter()</span></code> функција.</p>
+
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <div class="course-content">
+            
+<p>Напомена</p>
+<p>Осим што цртају график, графичке функције, као и било које друге функције, врећају одговарајућу вредност. У претходном примеру смо видели да је изнад графика исписан текст <code class="docutils literal notranslate"><span class="pre">&lt;matplotlib.collections.PathCollection</span> <span class="pre">at</span> <span class="pre">0x1866f81a460&gt;</span></code>. Та нам вредност као повратна информација углавном није потребна, а често квари изглед графика. Ако желимо да функција не исписује ту вредност, на крају реда који исцртава график ставите тачка-зарез <code class="docutils literal notranslate"><span class="pre">;</span></code>. У наредним примерима ћемо овако завршавати ове линије кода како не би било непотребног исписа.</p>
+
+    </div></div>
+<p>Претходни пример је вероватно превише једноставан па ћемо дати још
+један. Ми у пракси ретко кад укуцавамо све вредности које треба
+приказати на графику. Податке за график или учитавамо из неког фајла или
+их рачунамо. Овде ћемо дати пример са рачунањем вредности. Конкретно,
+узећемо све целобројне вредности од -5 до 5 за <em>x</em> координату, а њихове
+квадрате за <em>y</em> координату.</p>
+<p>Начин на који записујемо све бројаве од -5 до 5 вам је можда необичан,
+али не желимо да куцамо свих 11 бројева. Зато користимо колекцију типа
+<code class="docutils literal notranslate"><span class="pre">range</span></code> која даје све те бројеве, да би је потом претворили у листу
+помоћу функције <code class="docutils literal notranslate"><span class="pre">list()</span></code>. За другу координату рачунамо вредности
+користећи <em>list comprehension</em> конструкцију. Унутар угластих заграда
+пише да у листу уносимо квадрате броја <code class="docutils literal notranslate"><span class="pre">t</span></code> за свако <code class="docutils literal notranslate"><span class="pre">t</span></code> из листе
+<code class="docutils literal notranslate"><span class="pre">x</span></code>. На крају прикажемо податке на графику као што смо радили и у
+претходном примеру.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="n">t</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">x</span><span class="p">]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">matplotlib</span><span class="o">.</span><span class="n">collections</span><span class="o">.</span><span class="n">PathCollection</span> <span class="n">at</span> <span class="mh">0x24e3dbee250</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<img alt="../_images/output_49_1.png" src="../_images/output_49_1.png" />
+
+    <div class="note-wrapper suggestionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/suggestionnote-img.svg" class="note-image suggestionnote-image" /> 
+        <div class="course-content">
+            
+<p>Ако желите да се на графику појави мрежа хоризонталних и вертикалних линија за вредности које су већ означене на x и y оси, после линије која исцртава график додајте линију која црта мрежу: plt.grid().</p>
+
+    </div></div>
+<p>Тачкасти дијаграми су стандарни начин приказа података који су добијени
+мерењем. Ипак, често се уместо тачкастих користе <strong>линијски дијаграми</strong>
+који суседне тачке у низу повезују правим линијама, односно дужима. За
+овај тип дијаграма користимо функцију <code class="docutils literal notranslate"><span class="pre">plot()</span></code>. Да видимо сад исте оне
+податке од малопре на линијском дијаграму.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="n">t</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">x</span><span class="p">]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="o">&lt;</span><span class="n">matplotlib</span><span class="o">.</span><span class="n">lines</span><span class="o">.</span><span class="n">Line2D</span> <span class="n">at</span> <span class="mh">0x24e3dc53430</span><span class="o">&gt;</span><span class="p">]</span>
+</pre></div>
+</div>
+<img alt="../_images/output_51_1.png" src="../_images/output_51_1.png" />
+<p>Овако смо добили изломљену криву линију која личи на параболу. Ако
+хоћете да буде мање изломљена, узмите више тачака из интервала од -5 до
+5.</p>
+<p>Некад имамо само један низ података који хоћемо да прикажемо графички.
+На пример, број поена који је дао Стеф Кари у финалној серији НБА лиге:
+34, 29, 31, 43, 16, 34. Како да прикажемо ове податке кад имамо само
+једну координату? Истина је, заправо, да имамо и другу, само што није
+експлицитно наведена. То је редни број утакмице. Пошто података о броју
+поена има шест, онда су одговарајуће вредности за <em>x</em>-координату бројеви
+од 1 до 6.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pts</span><span class="o">=</span><span class="p">[</span><span class="mi">34</span><span class="p">,</span><span class="mi">29</span><span class="p">,</span><span class="mi">31</span><span class="p">,</span><span class="mi">43</span><span class="p">,</span><span class="mi">16</span><span class="p">,</span><span class="mi">34</span><span class="p">]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">],</span><span class="n">pts</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">BarContainer</span> <span class="nb">object</span> <span class="n">of</span> <span class="mi">6</span> <span class="n">artists</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<img alt="../_images/output_54_1.png" src="../_images/output_54_1.png" />
+<p>За разлику од тачкастих и линијских дијаграма где вредности за <em>x</em> и <em>y</em>
+координате могу да имају било које нецелобројне вредности, <strong>стубичне
+дијаграме</strong> обично користимо за податке који на <em>x</em>-оси имају узастопне
+целобројне вредности, редне бројеве или чак стрингове као називе
+категорија. Идеја стубичног дијагарама је да омогући лако поређење
+између вредности у низу. То се најбоље види ако су вредности на <em>x</em>-оси
+еквидистантне (тј. да су растојања између суседних стубића иста). Због
+тога су редни бројеви или називи категорија идеални.</p>
+<p><strong>Задатак</strong>: Прикажите стубични дијаграм за фреквенције одређених
+бројева ципела садржаних у листи <code class="docutils literal notranslate"><span class="pre">bc</span></code>.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">interval</span><span class="p">,</span><span class="n">bp</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">BarContainer</span> <span class="nb">object</span> <span class="n">of</span> <span class="mi">12</span> <span class="n">artists</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<img alt="../_images/output_57_1.png" src="../_images/output_57_1.png" />
+<p>Стубучни дијаграм је намењен независно променљивим које имају дискретне,
+тј. унпред утврђене фиксне вредности. То не морају да буду само
+нумеричке већ и номиналне променљиве.</p>
+<p>У листи која следи наведена су имена свих победника Вимблдона у мушкој
+конкуренцији у “опен ери”, тј. од 1968. до 2022. године. Можете ли да
+прикажете фреквенције победника помоћу стубичног дијаграма?</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ww</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Rod Laver&quot;</span><span class="p">,</span> <span class="s2">&quot;Rod Laver&quot;</span><span class="p">,</span> <span class="s2">&quot;John Newcombe&quot;</span><span class="p">,</span> <span class="s2">&quot;John Newcombe&quot;</span><span class="p">,</span> <span class="s2">&quot;Stan Smith&quot;</span><span class="p">,</span> <span class="s2">&quot;Jan Kodeš&quot;</span><span class="p">,</span> <span class="s2">&quot;Jimmy Connors&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Arthur Ashe&quot;</span><span class="p">,</span> <span class="s2">&quot;Björn Borg&quot;</span><span class="p">,</span> <span class="s2">&quot;Björn Borg&quot;</span><span class="p">,</span> <span class="s2">&quot;Björn Borg&quot;</span><span class="p">,</span> <span class="s2">&quot;Björn Borg&quot;</span><span class="p">,</span> <span class="s2">&quot;Björn Borg&quot;</span><span class="p">,</span> <span class="s2">&quot;John McEnroe&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Jimmy Connors&quot;</span><span class="p">,</span> <span class="s2">&quot;John McEnroe&quot;</span><span class="p">,</span> <span class="s2">&quot;John McEnroe&quot;</span><span class="p">,</span> <span class="s2">&quot;Boris Becker&quot;</span><span class="p">,</span> <span class="s2">&quot;Boris Becker&quot;</span><span class="p">,</span> <span class="s2">&quot;Pat Cash&quot;</span><span class="p">,</span> <span class="s2">&quot;Stefan Edberg&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Boris Becker&quot;</span><span class="p">,</span> <span class="s2">&quot;Stefan Edberg&quot;</span><span class="p">,</span> <span class="s2">&quot;Michael Stich&quot;</span><span class="p">,</span> <span class="s2">&quot;Andre Agassi&quot;</span><span class="p">,</span> <span class="s2">&quot;Pete Sampras&quot;</span><span class="p">,</span> <span class="s2">&quot;Pete Sampras&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Pete Sampras&quot;</span><span class="p">,</span> <span class="s2">&quot;Richard Krajicek&quot;</span><span class="p">,</span> <span class="s2">&quot;Pete Sampras&quot;</span><span class="p">,</span> <span class="s2">&quot;Pete Sampras&quot;</span><span class="p">,</span> <span class="s2">&quot;Pete Sampras&quot;</span><span class="p">,</span> <span class="s2">&quot;Pete Sampras&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Goran Ivanišević&quot;</span><span class="p">,</span> <span class="s2">&quot;Lleyton Hewitt&quot;</span><span class="p">,</span> <span class="s2">&quot;Rodger Federer&quot;</span><span class="p">,</span> <span class="s2">&quot;Rodger Federer&quot;</span><span class="p">,</span> <span class="s2">&quot;Rodger Federer&quot;</span><span class="p">,</span> <span class="s2">&quot;Rodger Federer&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Rodger Federer&quot;</span><span class="p">,</span> <span class="s2">&quot;Rafael Nadal&quot;</span><span class="p">,</span> <span class="s2">&quot;Rodger Federer&quot;</span><span class="p">,</span> <span class="s2">&quot;Rafael Nadal&quot;</span><span class="p">,</span> <span class="s2">&quot;Novak Đoković&quot;</span><span class="p">,</span> <span class="s2">&quot;Rodger Federer&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Andy Murray&quot;</span><span class="p">,</span> <span class="s2">&quot;Novak Đoković&quot;</span><span class="p">,</span> <span class="s2">&quot;Novak Đoković&quot;</span><span class="p">,</span> <span class="s2">&quot;Andy Murray&quot;</span><span class="p">,</span> <span class="s2">&quot;Rodger Federer&quot;</span><span class="p">,</span> <span class="s2">&quot;Novak Đoković&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Novak Đoković&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;Novak Đoković&quot;</span><span class="p">,</span> <span class="s2">&quot;Novak Đoković&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ji</span><span class="o">=</span><span class="p">[]</span>                               <span class="c1"># lista jedinstvenih imena</span>
+<span class="n">bpw</span><span class="o">=</span><span class="p">[]</span>                              <span class="c1"># lista broja pojavljivanja u ji listi</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">ww</span><span class="p">:</span>                        <span class="c1"># za svaki element liste ww</span>
+    <span class="k">if</span> <span class="n">x</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ji</span><span class="p">:</span>                 <span class="c1"># ako ime nije već u listi jedinstvenih imena</span>
+        <span class="n">ji</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>                <span class="c1"># dodaj ga u listu</span>
+        <span class="n">broj_pobeda</span><span class="o">=</span><span class="n">ww</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>     <span class="c1"># prebroj koliko se puta pojavljuje u listi ww</span>
+        <span class="n">bpw</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">broj_pobeda</span><span class="p">)</span>     <span class="c1"># dodaj broj pobeda u listu bpw za to jedinstveno ime</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="n">ji</span><span class="p">,</span><span class="n">bpw</span><span class="p">);</span>                   <span class="c1"># nacrtaj (horizonatlni) stubičasti dijagram za ji i bpw</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">BarContainer</span> <span class="nb">object</span> <span class="n">of</span> <span class="mi">22</span> <span class="n">artists</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<img alt="../_images/output_61_1.png" src="../_images/output_61_1.png" />
+<p>Због прегледности дигаграма, тачније имена тенисера, овде смо нацртали
+хоризонтални стубичасти (или тракасти) дијаграм. Само смо уместо функције
+<code class="docutils literal notranslate"><span class="pre">.bar()</span></code> користили <code class="docutils literal notranslate"><span class="pre">.barh()</span></code>.</p>
+<p>Тумачење овог дијаграма можете да урадите сами. У јулу 2022. године,
+Федерер (још увек) има највећи број освојених Вимблдона. Ажурирајте ове
+податке ако се нешто значајно промени у будућности.</p>
+<p><strong>Секторски дијаграми</strong> (или „питице”) могу да прикажу исте ове податке. Они површину круга деле на делове (секторе) чије су површине сразмерне вредностима у низу. Овај тип дијаграма се сматра атрактивним иако има лошу прегледност и слабе могућности поређења вредности у низу. Секторске дијаграме не би требало користити када је потребно да се лако упореде вредности у низу или да се уочи тренд промене. Ови дијаграми имају највише смисла када приказују удео одређених вредности у укупном броју.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">pie</span><span class="p">(</span><span class="n">bpw</span><span class="p">,</span><span class="n">labels</span><span class="o">=</span><span class="n">ji</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+</pre></div>
+</div>
+<img alt="../_images/output_65_0.png" src="../_images/output_65_0.png" />
+</div>
+<div class="section" id="id5">
+<h2>Хистограм<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p><strong>Хистограм</strong> је графички приказ расподеле бројачаних података у
+одређеном скупу. Идеја хистограма је да се распон од најмањег до
+највећег броја у скупу подели на интервале исте ширине, да се преброји
+колико бројева упада у који од тих интервала и да се, коначно, резултат
+тог пребројавања прикаже као стубичасти дијаграм по тим интервалима.</p>
+<p>Иако хистограм изгледа као стубичасти дијаграм, постоје разлике. Док се
+стубичасти дијаграм приказује за низ бројева на <em>x</em>-оси, код хистограма се
+стубићи придружују интервалима. Осим тога, хистограм пре приказивања
+ради статистичку обраду података, односно дељење на интервале и
+пребројавање одговарајућих вредности.</p>
+<p>Да бисмо добили неке случајне вредности бројева које треба приказати на
+хистограму, прво ћемо генерисати један таквих бројева помоћу функције
+<code class="docutils literal notranslate"><span class="pre">random()</span></code> из <code class="docutils literal notranslate"><span class="pre">random</span></code> библиотеке. Ова функција даје случајан број
+између 0 и 1. Ако 100 пута генеришемо случајан број на овај начин и све
+их ставимо у листу, добићемо низ од 100 независно добијених случајних
+бројева.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>                             <span class="c1"># prvo uvozimo biblioteku</span>
+<span class="n">rb</span><span class="o">=</span><span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">)]</span>  <span class="c1"># za pravljenje liste koristimo list comprehension</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">rb</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">6</span><span class="p">])</span>                            <span class="c1"># prikazujemo prvih nekoliko brojeva iz liste</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mf">0.2892938921375111</span><span class="p">,</span> <span class="mf">0.20248641226680386</span><span class="p">,</span> <span class="mf">0.3309940636093184</span><span class="p">,</span> <span class="mf">0.4324842008887402</span><span class="p">,</span> <span class="mf">0.37595924481469134</span><span class="p">,</span> <span class="mf">0.7259436975407871</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Да не бисмо штампали вредности свих сто елемената листе, боље да их
+прикажемо као хистограм. За то користимо функцију <code class="docutils literal notranslate"><span class="pre">hist()</span></code> која има
+само један аргумент: назив листе.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">rb</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">array</span><span class="p">([</span><span class="mf">11.</span><span class="p">,</span>  <span class="mf">7.</span><span class="p">,</span>  <span class="mf">7.</span><span class="p">,</span> <span class="mf">16.</span><span class="p">,</span> <span class="mf">17.</span><span class="p">,</span>  <span class="mf">9.</span><span class="p">,</span>  <span class="mf">6.</span><span class="p">,</span> <span class="mf">12.</span><span class="p">,</span>  <span class="mf">6.</span><span class="p">,</span>  <span class="mf">9.</span><span class="p">]),</span>
+ <span class="n">array</span><span class="p">([</span><span class="mf">0.00609241</span><span class="p">,</span> <span class="mf">0.10477677</span><span class="p">,</span> <span class="mf">0.20346114</span><span class="p">,</span> <span class="mf">0.30214551</span><span class="p">,</span> <span class="mf">0.40082988</span><span class="p">,</span>
+        <span class="mf">0.49951425</span><span class="p">,</span> <span class="mf">0.59819862</span><span class="p">,</span> <span class="mf">0.69688299</span><span class="p">,</span> <span class="mf">0.79556736</span><span class="p">,</span> <span class="mf">0.89425173</span><span class="p">,</span>
+        <span class="mf">0.99293609</span><span class="p">]),</span>
+ <span class="o">&lt;</span><span class="n">BarContainer</span> <span class="nb">object</span> <span class="n">of</span> <span class="mi">10</span> <span class="n">artists</span><span class="o">&gt;</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/output_72_1.png" src="../_images/output_72_1.png" />
+<p>Добили смо хистограм. Додуше, ако хоћемо да будемо цепидлаке, он није
+најпрегледнији јер не знамо где су тачно границе интервала и колике су
+за њих вредности стубића. То можемо још мало да средимо. Прво ћемо да
+кажемо функцији <code class="docutils literal notranslate"><span class="pre">hist()</span></code> да не дели интервал од најмање до највеће
+вредности на подинтервале, него да то уради за интервал од 0 до 1. То
+радимо тако што функцији уз аргумент који смо већ унели, саопштимо и да
+су границе тог великог интервала (<em>range</em>) 0 и 1. Онда ће границе
+подинтервала бити тачно на 0, 0.1, 0.2, итд. Друго, нацртаћемо мрежу
+(<em>grid</em>) преко графика да бисмо боље видели вредности и границе
+интервала.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">rb</span><span class="p">,</span><span class="nb">range</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+</pre></div>
+</div>
+<img alt="../_images/output_74_0.png" src="../_images/output_74_0.png" />
+<p>Сада је резулат свакако прегледнији и лакши за читање.</p>
+</div>
+</div>
+
+
+    </div>
+    
+    <div>
+<div class="lecture-prev-next-toggle">
+  <a  href="Predstavljanje nizova podataka.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходна лекција </span> </a>
+  
+  <a id="nextLectureLink" class="lecture-toggler-arrows"><span> Следећа лекција</span>  <i class="fas fa-arrow-right fa"></i> </a>
+</div>
+
+<script type="text/javascript">
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+</script>
+</div>
+
+    
+  </div>
+</div>
+
+<div class="petljadoc-resources">
+  <span class="pull-left">(Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>) <br> © 2022 Petlja</span>
+</div>
+
+
+<div class="lectureToolbox">
+
+  <label class="font-size-toggle" id="fontSizeToggle">
+
+      <i class="fas fa-font"></i><label>Слова</label>
+  </label>
+  <div class="font-change d-none" id="fontChangeModal">
+      <span class="dec-letter-icon" id="decLetterIcon">A-</span>
+      <label id="currentFontSize">16</label>
+      <span class="inc-letter-icon" id="incLetterIcon">A+</span>
+  </div>
+</div>
+
+</div>
+
+  </body>
+</html>

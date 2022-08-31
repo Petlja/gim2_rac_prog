@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Програмирање у Пајтону - Текстуални подаци</title>
+    <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja-course.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/nbstyle.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
+    <script type="text/javascript" src="../_static/webglinteractive.js"></script>
+    <script type="text/javascript" src="../_static/FileSaver.min.js"></script>
+    <script type="text/javascript" src="../_static/Blob.js"></script>
+    <script type="text/javascript" src="../_static/karelCorner.js"></script>
+    <script type="text/javascript" src="../_static/karelRobot.js"></script>
+    <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
+    <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
+    <script type="text/javascript" src="../_static/karelUI.js"></script>
+    <script type="text/javascript" src="../_static/karel.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/notes.js"></script>
+    <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
+    <script type="text/javascript" src="../_static/gallery.js"></script>
+    <script type="text/javascript" src="../_static/associations.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../_static/course-errors.js"></script>
+    <script type="text/javascript" src="../_static/petlja.js"></script>
+    <script type="text/javascript" src="../_static/require.js"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+    <script type="text/javascript">
+      eBookConfig = {};
+      eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+      eBookConfig.app = eBookConfig.host + '/runestone';
+      eBookConfig.ajaxURL = eBookConfig.app + '/ajax/';
+      eBookConfig.course = 'Настава програмирања за Други разред гимназије';
+      eBookConfig.logLevel = '0';
+      eBookConfig.loginRequired = 'false';
+      eBookConfig.build_info = "";
+      eBookConfig.isLoggedIn = false;
+      eBookConfig.useRunestoneServices = false;
+      eBookConfig.python3 = true;
+      eBookConfig.basecourse = 'Настава програмирања за Други разред гимназије';
+      eBookConfig.runestone_version = '';
+      eBookConfig.imagesDir = '../_images/';
+      eBookConfig.staticDir = '../_static/';
+      if (typeof (Sk) != "undefined")
+        Sk.imgPath = eBookConfig.imagesDir;
+    </script>
+
+  </head>
+
+  <body>
+
+
+
+<div id="navbar" class="content-header">
+  <div class="right-side-nav">
+    
+    <div id="usefulLinksToggle" class="useful-links-toggle">
+        <a class="dropdown-toggle dropdown-toggle-burger" role="button" href="#" id="usefulLinksDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-bars fa-2x"></i>
+        </a>
+        <div class="dropdown-menu dropdown-nav-links shadow-lg" aria-labelledby="usefulLinksDropdown" x-placement="bottom-start" style="position: absolute; transform: translate3d(-55px, 32px, 0px); top: 0px; left: 0px; will-change: transform;">
+          <div class="links-title"> Корисни линкови</div>
+          <div class="useful-link">
+            <a href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html" target="_blank">Sphinx Docs</a></div>
+          <div class="useful-link">
+            <a href="https://github.com/Petlja/PetljaDoc/blob/master/README.md" target="_blank">Petljadoc</a></div>
+          <div class="useful-link">
+            <a href="https://github.com/RunestoneInteractive/overview" target="_blank">Runestone Interactive</a></div>
+          
+        </div>
+    </div>
+
+    
+</div>
+
+<div class="left-side-nav">
+  <div class="course-logo-nav">
+      <a target="_blank" href="https://petlja.org">
+          <img src="../_static/img/petlja-logo-wt.svg" alt="petlja.org" id="lightPetljaLogo">
+      </a>
+  </div>
+  <div class="course-logo-nav-kabinet">
+      <a target="_blank" href="https://petlja.org/net.kabinet">
+          <img src="../_static/img/netkabinet-logo-strelica-wt.svg" alt="petlja.org" id="lightNetKabinetLogo">
+      </a>
+  </div>
+</div>
+
+
+<div class="content-header-label" id = "content-header-label" href="../">Анализа података у Џупитеру и технике програмирања за други разред гимназије</div>
+
+</div>
+
+
+
+
+<div class="petljaCourseContainer">
+
+<div class="petljaCourseContent">
+  
+           <div class="tableOfContent">
+            <h5> Садржај </h5>
+            </div>
+           <div>
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J0A>
+                    <h5>Пре него што почнемо</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../J0A/howto.html><div class="studioLecture" id=activity-howto><i class="fas fa-file-alt activity-icon"></i>Како да користиш овај приручник</div></a>
+                <a href=../J0A/J0A.html><div class="studioLecture" id=activity-J0A><i class="fas fa-file-alt activity-icon"></i>Покретање Џупитер радних свески</div></a>
+                <a href=../J0A/J01.html><div class="studioLecture" id=activity-J01><i class="fas fa-file-alt activity-icon"></i>Увод у Џупитер</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-podsetnik>
+                    <h5>Подсетник Пајтон</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../podsetnik/Podsetnik%20-%20Pajton.html><div class="studioLecture" id=activity-Podsetnik%20-%20Pajton><i class="fas fa-file-alt activity-icon"></i>Подсетник Пајтон</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y01>
+                    <h5>Низови података</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Y01/L801.html><div class="studioLecture" id=activity-L801><i class="fas fa-file-alt activity-icon"></i>Увод у процесирање низова података</div></a>
+                <a href=../Y01/03_zadaci.html><div class="studioLecture" id=activity-03_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - процесирање низова</div></a>
+                <a href=../Y01/Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension.html><div class="studioLecture" id=activity-Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension><i class="fas fa-file-alt activity-icon"></i>Креирање листа у Пајтону</div></a>
+                <a href=../Y01/Низови%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-Низови%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>Низови - додатни задаци</div></a>
+                <a href=../Y01/test801.html><div class="studioLecture" id=activity-test801><i class="far fa-question-circle activity-icon"></i>Квиз - Листе</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y05>
+                    <h5>Сортирање</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Y05/L805.html><div class="studioLecture" id=activity-L805><i class="fas fa-file-alt activity-icon"></i>Сортирање</div></a>
+                <a href=../Y05/04_zadaci.html><div class="studioLecture" id=activity-04_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - сортирање</div></a>
+                <a href=../Y05/Сортирање%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-Сортирање%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>Сортирање - додатни задаци</div></a>
+                <a href=../Y05/test805.html><div class="studioLecture" id=activity-test805><i class="far fa-question-circle activity-icon"></i>Квиз - Сортирање</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y06>
+                    <h5>Филтрирање и претраживање</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Y06/L806.html><div class="studioLecture" id=activity-L806><i class="fas fa-file-alt activity-icon"></i>Филтрирање и претраживање</div></a>
+                <a href=../Y06/05_zadaci.html><div class="studioLecture" id=activity-05_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - филтрирање и претраживање</div></a>
+                <a href=../Y06/test806.html><div class="studioLecture" id=activity-test806><i class="far fa-question-circle activity-icon"></i>Квиз - Филтрирање и претраживање</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-predstavljanje>
+                    <h5>Представљање низова података</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../predstavljanje/Predstavljanje%20nizova%20podataka.html><div class="studioLecture" id=activity-Predstavljanje%20nizova%20podataka><i class="fas fa-file-alt activity-icon"></i>Представљање низова података</div></a>
+                <a href=../predstavljanje/Graficko_predstavljanje.html><div class="studioLecture" id=activity-Graficko_predstavljanje><i class="fas fa-file-alt activity-icon"></i>Графичко представљање низова података</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-tekstualni>
+                    <h5>Рад са текстуалним подацима</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../tekstualni/Rad%20sa%20tekstualnim%20podacima.html><div class="studioLecture" id=activity-Rad%20sa%20tekstualnim%20podacima><i class="fas fa-file-alt activity-icon"></i>Рад са текстуалним подацима</div></a>
+                <a href=../tekstualni/tekstualne_datoteke.html><div class="studioLecture" id=activity-tekstualne_datoteke><i class="fas fa-file-alt activity-icon"></i>Коришћење текстуалних датотека</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-rad%20sa%20tabelama>
+                    <h5>Рад са табелама</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../rad%20sa%20tabelama/Rad%20sa%20tabelama.html><div class="studioLecture" id=activity-Rad%20sa%20tabelama><i class="fas fa-file-alt activity-icon"></i>Рад са табелама</div></a>
+                <a href=../rad%20sa%20tabelama/indeksiranje.html><div class="studioLecture" id=activity-indeksiranje><i class="fas fa-file-alt activity-icon"></i>Индексирање табела</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-obrada_tabele>
+                    <h5>Обрада и приказ табеларних података</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../obrada_tabele/obrada_prikaz.html><div class="studioLecture" id=activity-obrada_prikaz><i class="fas fa-file-alt activity-icon"></i>Обрада и приказ табеларних података</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J10>
+                    <h5>Џупитер и Ексел</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../J10/J10.html><div class="studioLecture" id=activity-J10><i class="fas fa-file-alt activity-icon"></i>Џупитер и Ексел</div></a>
+                <a href=../J10/testJ10.html><div class="studioLecture" id=activity-testJ10><i class="far fa-question-circle activity-icon"></i>Џупитер и Ексел</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-projektni%20zadatak>
+                    <h5>Пример скупа података за пројекто учење</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../projektni%20zadatak/projekat.html><div class="studioLecture" id=activity-projekat><i class="fas fa-file-alt activity-icon"></i>Пример скупа података за пројекто учење</div></a>
+                </div>
+            </div>
+                </div>
+</div>
+
+
+
+<div class="lectureContent">
+
+  <div id="errors">
+  </div>
+  
+  <div class="lectureContentMaterial">
+  
+    <div id="main-content">
+    
+  <div class="section" id="id1">
+<h1>Програмирање у Пајтону - Текстуални подаци<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>Постоје два основна формата рачунарских фајлова: текстуални и бинарни.
+Текстуалне можемо да читамо и ми људи. Бинарни су резервисани за машине.
+Фајлови са екстензијом .txt, .py, .csv или .srt (титл за филмове обично
+има ову екстензију) су текстуални. Њих можемо да отворимо у било коме
+едитору (нпр. <em>Notepad</em>) и да видимо текст, знакове интерпункције,
+децималне бројеве, размаке итд. Бинарне фајлове (нпр. .zip, .docx или
+.pdf) не можемо да отворимо у едиторима за текст. Чак и кад бисмо успели
+на неки начин, видели бисмо бесмислени низ чудних знакова попут
+<code class="docutils literal notranslate"><span class="pre">©ãGnû–¼5º¼Z6ÖÅ_¹.]p®\5«†</span></code> који не бисмо знали да растумачимо.</p>
+<p>Текстуални начин записивања података је веома практичан за памћење и
+преношење података. Због тога се нпр. изворни кôд рачунарских програма и
+табеларни подаци чувају као текст. Основни елемент ових записа је
+<strong>карактер</strong>. То је једно слово, цифра, знак интерпункције или можда
+неки контролни знак (нпр. знак за крај реда). Текст није ништа друго до
+низ карактера. Тип података у Пајтону у који можемо да ставимо текст је
+стринг (или ниска карактера).</p>
+<div class="section" id="id2">
+<h2>Конверзија карактера у бајтове и обрнуто<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Рачунар у својој меморији чува само нуле и јединице организоване у
+бајтове. Без обзира што ми кажемо да су у некој променљивој карактери,
+рачунар тим карактерима придружује број и онда тај број памти. Сваки
+карактер има свој број. Ако је карактер из ASCII скупа од 256 знакова,
+довољан је један бајт за чување. Уколико су то ћирилични знаци или знаци
+са дијакритицима (нпр. <em>ž</em> или <em>ć</em>), за чување ће бити потребно два
+бајта. Функција <code class="docutils literal notranslate"><span class="pre">ord()</span></code> нам даје број који је придружен знаку који
+навидимо као аргумент.</p>
+
+<div data-childcomponent="konverzija_str" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=konverzija_str data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+print(ord("a"))
+</textarea>
+</div>
+<p>У супротном смеру, функција <code class="docutils literal notranslate"><span class="pre">chr()</span></code> нам за број у аргументу враћа одговарајући карактер.</p>
+
+<div data-childcomponent="konverzija_ord" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=konverzija_ord data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+print(chr(97))
+</textarea>
+</div>
+<p>Пробајте функцију <code class="docutils literal notranslate"><span class="pre">ord()</span></code> за различита ћирилична и латинична слова. Да
+ли је број који добијате мањи или већи од 255? Ако је мањи или једнак,
+за меморисање ће користити само један бајт.</p>
+<p>За сваки број од 0 до 255 постоји одговарајући карактер. Неки од њих су
+контролни па не можемо лепо да их прикажемо. Почевши од броја 32 који
+одговара знаку ” ” то су “нормални” карактери које можемо да испишемо.</p>
+
+<div data-childcomponent="petlja_chr" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=petlja_chr data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+for i in range(32,256):
+    print(chr(i), end="")
+</textarea>
+</div>
+
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
+        <div class="course-content">
+<p>Напишите програм који генерише стринг са свим великим словима енглеског алфабета (ABCD…WXYZ) не укуцавајући ручно свако слово.</p>
+
+    </div></div>
+
+<div data-childcomponent="string_slova" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=string_slova data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+#ovde napiši program
+</textarea>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>Стринг као листа карактера<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>Стрингови се чувају као низови карактера. Пошто се у Пајтону низови
+стандардно представљају листама, онда стринг овде представља листу
+карактера. Начин на који приступамо карактерима у стрингу је исти као
+што приступамо елементима у листи: помоћу индекса и слајсова.</p>
+
+<div data-childcomponent="strin_lista" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=strin_lista data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+S="String je lista karaktera: slova, cifara i ostalih znakova."
+print(S[1])     # karakter sa indeksom 1
+print(S[3:6])   # slajs karaktera sa indeksima od 3 do 5
+print(S[-1])    # poslednji karakter u stringu
+</textarea>
+</div>
+<div class="section" id="in">
+<h3>Оператор <code class="docutils literal notranslate"><span class="pre">in</span></code><a class="headerlink" href="#in" title="Permalink to this headline">¶</a></h3>
+<p>Када проверавамо да ли се одређени карактер или стринг (s) налазе у
+неком већем стрингу (S) користимо оператор <code class="docutils literal notranslate"><span class="pre">in</span></code>. Резултат операције је
+булеан који има вредност тачно ако се s садржи у S, односно нетачно ако
+тај услов није испуњен. Слично, можемо да проверимо и да ли се s не
+садржи у S са <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">in</span></code>.</p>
+
+<div data-childcomponent="in" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=in data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+S="String je lista karaktera: slova, cifara i ostalih znakova."
+print("ta" in S)     # string "ta" se pojavljuje u stringu S
+print(";" in S)      # znak ";" se ne pojavljuje u S
+print("R" not in S)  # tačno je da se "R" ne pojavljuje u S
+</textarea>
+</div>
+</div>
+<div class="section" id="id5">
+<h3>Функције за рад са стринговима<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>Функције које имамо за рад са листама углавном постоје и за стрингове. У
+следећој ћелији су примери две функције: прва враћа дужину стринга S,
+док друга враћа број колико пута се карактер “а” појављује у стрингу S.</p>
+
+<div data-childcomponent="funkcije1" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=funkcije1 data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+S="String je lista karaktera: slova, cifara i ostalih znakova."
+print(len(S))
+print(S.count("a"))
+</textarea>
+</div>
+
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
+        <div class="course-content">
+<p>Напишите функцију која враћа број карактера у стрингу не користећи функцију <code class="docutils literal notranslate"><span class="pre">len()</span></code>.</p>
+
+    </div></div>
+
+<div data-childcomponent="funkcije2" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=funkcije2 data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+#ovde napišite fuknciju
+</textarea>
+</div>
+
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
+        <div class="course-content">
+<p>Напишите функцију која враћа број знакова интерпункције.</p>
+
+    </div></div>
+
+    <div class="note-wrapper suggestionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/suggestionnote-img.svg" class="note-image suggestionnote-image" /> 
+        <div class="course-content">
+            
+<p>Функција за рад са стринговима има више десетина. Овде их нећемо све помињати. Извршите <code class="docutils literal notranslate"><span class="pre">dir(str)</span></code> да видите које све постоје.</p>
+
+    </div></div>
+</div>
+<div class="section" id="index">
+<h3>Функција <code class="docutils literal notranslate"><span class="pre">.index()</span></code><a class="headerlink" href="#index" title="Permalink to this headline">¶</a></h3>
+<p>Уколико се “мали” стринг (s) налази у “великом” (S), функција
+<code class="docutils literal notranslate"><span class="pre">.index()</span></code> може да дам каже којим индексом великог стринга почиње
+мали. Синтакса ове функције је <code class="docutils literal notranslate"><span class="pre">S.index(s,start,end)</span></code>. Приметите да
+функцију примењујемо на велики стринг, а да мали стављамо као њен
+аргумент. Уколико унесемо само један аргумент. што је овде дозвољено,
+функција <code class="docutils literal notranslate"><span class="pre">.index()</span></code> ће стринг s тражити почевши од индекса 0, тј. од
+почетка великог стринга и вратиће нам само индекс где се стринг s први
+пут појављује. Уколико унесемо и други аргумент функције (<em>start</em> -
+индекс од ког почиње претрагу), можемо да нађемо и каснија појављивања.
+Уколико желимо можемо да ставимо и индекс (<em>end</em>) за крај претраге као
+трећи аргумент.</p>
+
+<div data-childcomponent="string_index" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=string_index data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+S="String je lista karaktera: slova, cifara i ostalih znakova."
+i=S.index("ta")           # gde se string "ta" prvi put pojavljuje u stringu S
+print(i)
+print(S.index("ta",i+1))  # gde se "ta" pojavljuje prvi put posle toga
+</textarea>
+</div>
+<p>Наравно, један стринг у другом може да се појави више пута. Немамо
+функцију која аутоматски враћа све те позиције, али бисмо могли да је
+напишемо помоћу петље, слајсова и функције <code class="docutils literal notranslate"><span class="pre">.index()</span></code>.</p>
+
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
+        <div class="course-content">
+<p>Напишите функцију која приказује све индексе са којима у стрингу S=“String je lista karaktera: slova, cifara i ostalih znakova.” почиње произвољни стринг s.</p>
+
+    </div></div>
+
+<div data-childcomponent="funkcije3" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=funkcije3 data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+#ovde napišite fuknciju
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>Токенизација<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>Анализа текста заснива се на анализи токена, односно јединица текста.
+Токен може да буде слово, слог, реч, синтагма итд. Сваки текст у
+дигиталном облику можемо да поделимо на токене и да их онда статистички
+обрађујемо. Уколико текст није чист него има и контролне знакове, то
+неће бити сасвим једноставно.</p>
+<p>Једна од најважнијих функција за рад са стринговима је она која стринг
+дели на делове и појединачне делове ставља у листу. У примеру где је
+цела реченица један стринг, тај стринг можемо да поделимо на низ мањих у
+којима су речи. Најједноставнији начин да то урадимо јесте да одвојимо
+делове стринга између којих је размак, тј. знак ” “. Функција коју за то
+користимо је <code class="docutils literal notranslate"><span class="pre">.split()</span></code>. Аргумент ове функције може да буде било који
+карактер. Уколико не наведемо који је, Пајтон ће подразумевати да је то
+размак.</p>
+
+<div data-childcomponent="tokenizacija" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=tokenizacija data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+S="String je lista karaktera: slova, cifara i ostalih znakova."
+print(S.split())
+</textarea>
+</div>
+<p>Наравно, постоје детаљи, као што су знаци интерпункције, који нам не
+дозвољавају да речи једноставно издвојимо као део стринга између два
+размака. Згодно решење, мада ни оно није свеобухватно, јесте да прво
+уклонимо све “проблематичне” знаке помоћу функције <code class="docutils literal notranslate"><span class="pre">.replace()</span></code>. Ова
+функција има два аргумента којима означавамо који карактер у стрингу
+желимо да заменимо којим другим. На пример, ако хоћемо да избришемо
+тачку из стринга <code class="docutils literal notranslate"><span class="pre">S</span></code> онда карактер “.” мењамо са празним стрингом ,
+тј. са ““.</p>
+
+<div data-childcomponent="tokenizacija2" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=tokenizacija2 data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+S="String je lista karaktera: slova, cifara i ostalih znakova."
+S2=S.replace(".","")
+S2=S2.replace(",","")
+S2=S2.replace(":","")
+print(S2)
+</textarea>
+</div>
+<p>Функција која извршава супротну радњу од <code class="docutils literal notranslate"><span class="pre">.split()</span></code> je <code class="docutils literal notranslate"><span class="pre">.join()</span></code>.
+Она спаја елементе листе у један стринг раздвајајући их одређеним
+карактером. Синтакса је мало необична јер се функција примењује на
+сепратор, а листа се наводи као аргумент. Свеједно, једноставна је за
+употребу.</p>
+
+<div data-childcomponent="spajanje" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=spajanje data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+a = "_".join(["Ovo","treba","spojiti","donjom","crtom"])
+print(a)
+</textarea>
+</div>
+</div>
+<div class="section" id="id7">
+<h2>Спајање стрингова<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p>Слично као и са листама, оператори <code class="docutils literal notranslate"><span class="pre">+</span></code> и <code class="docutils literal notranslate"><span class="pre">*</span></code> раде и са стринговима.
+“Сабирање” стрингова је заправо спајање два стринга у један, док је
+“множење” стринга неким природним бројем понављање истог стринга толико
+пута.</p>
+
+<div data-childcomponent="spajanje2" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=spajanje2 data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+s1="Prvi"
+s2="Drugi"
+print(s1+s2)
+print(s1*3)
+</textarea>
+</div>
+</div>
+<div class="section" id="id8">
+<h2>Контролни карактери<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<p>Како бисте у стринг ставили текст који у себи има део под наводницима,
+нпр. <code class="docutils literal notranslate"><span class="pre">OŠ</span> <span class="pre">&quot;Vuk</span> <span class="pre">Karadžić&quot;</span></code>? Ово не можемо да изведемо тако што просто у
+стринг (који иначе стављамо под наводнике) убацимо још пар истих
+наводника. То би само разбило стринг на два и добили бисмо информацију
+да унети кôд има синтаксну грешку. Пробајте.</p>
+<p>Једно могуће решење је да унутар стринга који смо ставили између
+двоструких наводника ставимо део текста под једноструким наводницима,
+или обрнуто. То ће Пајтон разумети и прихватити.</p>
+
+<div data-childcomponent="kotrnolni" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=kotrnolni data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+s1="OŠ 'Vuk Karadžić', Loznica"  # prva mogućnost
+print(s1)
+s2='OŠ "Vuk Karadžić", Loznica'  # druga mogućnost
+print(s2)
+</textarea>
+</div>
+<p>Друго решење је да користимо контролне карактере. Има карактера који се
+не исписују као “нормални” знаци већ пребацују испис текста у нови ред,
+враћају курзор за једно место уназад или додају већи размак (таб). За
+њих постоје контролни кодови. Тај код је за нови ред <code class="docutils literal notranslate"><span class="pre">\n</span></code>. Погледајте
+како изгледа испис стринга у ком је садржан овај карактер.</p>
+
+<div data-childcomponent="novired" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=novired data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+print("Prvi red\ndrugi red")
+</textarea>
+</div>
+<p>За наводнике такође постоје контролни кодови. Потребно је само да испред
+наводника ставимо обрнуту косу црту (<em>backslash</em>). Проблем од малопре са
+наводницима у стрингу могли смо да решимо и овако.</p>
+
+<div data-childcomponent="navodnici" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=navodnici data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+               data-hidehistory=true
+       >
+s1="OŠ \"Vuk Karadžić\", Loznica"
+print(s1)
+</textarea>
+</div>
+
+    <div class="note-wrapper suggestionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/suggestionnote-img.svg" class="note-image suggestionnote-image" /> 
+        <div class="course-content">
+            
+<p>Сви контролни кодови почињу обрутом косом цртом. Ево неких од њих. Пробајте да их ставите у неки стринг који исписујете.</p>
+<p><code class="docutils literal notranslate"><span class="pre">\'</span></code> једноструки наводници</p>
+<p><code class="docutils literal notranslate"><span class="pre">\&quot;</span></code> двоструки наводници</p>
+<p><code class="docutils literal notranslate"><span class="pre">\n</span></code> крај реда</p>
+<p><code class="docutils literal notranslate"><span class="pre">\t</span></code> таб</p>
+<p><code class="docutils literal notranslate"><span class="pre">\\</span></code> обрнута коса црта</p>
+
+    </div></div>
+
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
+        <div class="course-content">
+<p>Напишите Пајтон функцију која за два стринга утврђује да ли је први анаграм оног другог. На пример, стринг „I am Lord Voldemort” је анаграм стринга „Tom Marvolo Riddle”. Обратити пажњу на то да приликом провере да ли је један стринг анаграм оног другог празнине и величина слова не играју никакву улогу.</p>
+
+    </div></div>
+</div>
+</div>
+
+
+    </div>
+    
+    <div>
+<div class="lecture-prev-next-toggle">
+  <a  href="index.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходна лекција </span> </a>
+  
+  <a id="nextLectureLink" class="lecture-toggler-arrows"><span> Следећа лекција</span>  <i class="fas fa-arrow-right fa"></i> </a>
+</div>
+
+<script type="text/javascript">
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+</script>
+</div>
+
+    
+  </div>
+</div>
+
+<div class="petljadoc-resources">
+  <span class="pull-left">(Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>) <br> © 2022 Petlja</span>
+</div>
+
+
+<div class="lectureToolbox">
+
+  <label class="font-size-toggle" id="fontSizeToggle">
+
+      <i class="fas fa-font"></i><label>Слова</label>
+  </label>
+  <div class="font-change d-none" id="fontChangeModal">
+      <span class="dec-letter-icon" id="decLetterIcon">A-</span>
+      <label id="currentFontSize">16</label>
+      <span class="inc-letter-icon" id="incLetterIcon">A+</span>
+  </div>
+</div>
+
+</div>
+
+  </body>
+</html>

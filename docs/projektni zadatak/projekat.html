@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Пример скупа података за пројектно учење</title>
+    <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja-course.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/nbstyle.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
+    <script type="text/javascript" src="../_static/webglinteractive.js"></script>
+    <script type="text/javascript" src="../_static/FileSaver.min.js"></script>
+    <script type="text/javascript" src="../_static/Blob.js"></script>
+    <script type="text/javascript" src="../_static/karelCorner.js"></script>
+    <script type="text/javascript" src="../_static/karelRobot.js"></script>
+    <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
+    <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
+    <script type="text/javascript" src="../_static/karelUI.js"></script>
+    <script type="text/javascript" src="../_static/karel.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/notes.js"></script>
+    <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
+    <script type="text/javascript" src="../_static/gallery.js"></script>
+    <script type="text/javascript" src="../_static/associations.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../_static/course-errors.js"></script>
+    <script type="text/javascript" src="../_static/petlja.js"></script>
+    <script type="text/javascript" src="../_static/require.js"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+    <script type="text/javascript">
+      eBookConfig = {};
+      eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+      eBookConfig.app = eBookConfig.host + '/runestone';
+      eBookConfig.ajaxURL = eBookConfig.app + '/ajax/';
+      eBookConfig.course = 'Настава програмирања за Други разред гимназије';
+      eBookConfig.logLevel = '0';
+      eBookConfig.loginRequired = 'false';
+      eBookConfig.build_info = "";
+      eBookConfig.isLoggedIn = false;
+      eBookConfig.useRunestoneServices = false;
+      eBookConfig.python3 = true;
+      eBookConfig.basecourse = 'Настава програмирања за Други разред гимназије';
+      eBookConfig.runestone_version = '';
+      eBookConfig.imagesDir = '../_images/';
+      eBookConfig.staticDir = '../_static/';
+      if (typeof (Sk) != "undefined")
+        Sk.imgPath = eBookConfig.imagesDir;
+    </script>
+
+  </head>
+
+  <body>
+
+
+
+<div id="navbar" class="content-header">
+  <div class="right-side-nav">
+    
+    <div id="usefulLinksToggle" class="useful-links-toggle">
+        <a class="dropdown-toggle dropdown-toggle-burger" role="button" href="#" id="usefulLinksDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-bars fa-2x"></i>
+        </a>
+        <div class="dropdown-menu dropdown-nav-links shadow-lg" aria-labelledby="usefulLinksDropdown" x-placement="bottom-start" style="position: absolute; transform: translate3d(-55px, 32px, 0px); top: 0px; left: 0px; will-change: transform;">
+          <div class="links-title"> Корисни линкови</div>
+          <div class="useful-link">
+            <a href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html" target="_blank">Sphinx Docs</a></div>
+          <div class="useful-link">
+            <a href="https://github.com/Petlja/PetljaDoc/blob/master/README.md" target="_blank">Petljadoc</a></div>
+          <div class="useful-link">
+            <a href="https://github.com/RunestoneInteractive/overview" target="_blank">Runestone Interactive</a></div>
+          
+        </div>
+    </div>
+
+    
+</div>
+
+<div class="left-side-nav">
+  <div class="course-logo-nav">
+      <a target="_blank" href="https://petlja.org">
+          <img src="../_static/img/petlja-logo-wt.svg" alt="petlja.org" id="lightPetljaLogo">
+      </a>
+  </div>
+  <div class="course-logo-nav-kabinet">
+      <a target="_blank" href="https://petlja.org/net.kabinet">
+          <img src="../_static/img/netkabinet-logo-strelica-wt.svg" alt="petlja.org" id="lightNetKabinetLogo">
+      </a>
+  </div>
+</div>
+
+
+<div class="content-header-label" id = "content-header-label" href="../">Анализа података у Џупитеру и технике програмирања за други разред гимназије</div>
+
+</div>
+
+
+
+
+<div class="petljaCourseContainer">
+
+<div class="petljaCourseContent">
+  
+           <div class="tableOfContent">
+            <h5> Садржај </h5>
+            </div>
+           <div>
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J0A>
+                    <h5>Пре него што почнемо</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../J0A/howto.html><div class="studioLecture" id=activity-howto><i class="fas fa-file-alt activity-icon"></i>Како да користиш овај приручник</div></a>
+                <a href=../J0A/J0A.html><div class="studioLecture" id=activity-J0A><i class="fas fa-file-alt activity-icon"></i>Покретање Џупитер радних свески</div></a>
+                <a href=../J0A/J01.html><div class="studioLecture" id=activity-J01><i class="fas fa-file-alt activity-icon"></i>Увод у Џупитер</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-podsetnik>
+                    <h5>Подсетник Пајтон</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../podsetnik/Podsetnik%20-%20Pajton.html><div class="studioLecture" id=activity-Podsetnik%20-%20Pajton><i class="fas fa-file-alt activity-icon"></i>Подсетник Пајтон</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y01>
+                    <h5>Низови података</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Y01/L801.html><div class="studioLecture" id=activity-L801><i class="fas fa-file-alt activity-icon"></i>Увод у процесирање низова података</div></a>
+                <a href=../Y01/03_zadaci.html><div class="studioLecture" id=activity-03_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - процесирање низова</div></a>
+                <a href=../Y01/Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension.html><div class="studioLecture" id=activity-Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension><i class="fas fa-file-alt activity-icon"></i>Креирање листа у Пајтону</div></a>
+                <a href=../Y01/Низови%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-Низови%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>Низови - додатни задаци</div></a>
+                <a href=../Y01/test801.html><div class="studioLecture" id=activity-test801><i class="far fa-question-circle activity-icon"></i>Квиз - Листе</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y05>
+                    <h5>Сортирање</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Y05/L805.html><div class="studioLecture" id=activity-L805><i class="fas fa-file-alt activity-icon"></i>Сортирање</div></a>
+                <a href=../Y05/04_zadaci.html><div class="studioLecture" id=activity-04_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - сортирање</div></a>
+                <a href=../Y05/Сортирање%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-Сортирање%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>Сортирање - додатни задаци</div></a>
+                <a href=../Y05/test805.html><div class="studioLecture" id=activity-test805><i class="far fa-question-circle activity-icon"></i>Квиз - Сортирање</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y06>
+                    <h5>Филтрирање и претраживање</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Y06/L806.html><div class="studioLecture" id=activity-L806><i class="fas fa-file-alt activity-icon"></i>Филтрирање и претраживање</div></a>
+                <a href=../Y06/05_zadaci.html><div class="studioLecture" id=activity-05_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - филтрирање и претраживање</div></a>
+                <a href=../Y06/test806.html><div class="studioLecture" id=activity-test806><i class="far fa-question-circle activity-icon"></i>Квиз - Филтрирање и претраживање</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-predstavljanje>
+                    <h5>Представљање низова података</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../predstavljanje/Predstavljanje%20nizova%20podataka.html><div class="studioLecture" id=activity-Predstavljanje%20nizova%20podataka><i class="fas fa-file-alt activity-icon"></i>Представљање низова података</div></a>
+                <a href=../predstavljanje/Graficko_predstavljanje.html><div class="studioLecture" id=activity-Graficko_predstavljanje><i class="fas fa-file-alt activity-icon"></i>Графичко представљање низова података</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-tekstualni>
+                    <h5>Рад са текстуалним подацима</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../tekstualni/Rad%20sa%20tekstualnim%20podacima.html><div class="studioLecture" id=activity-Rad%20sa%20tekstualnim%20podacima><i class="fas fa-file-alt activity-icon"></i>Рад са текстуалним подацима</div></a>
+                <a href=../tekstualni/tekstualne_datoteke.html><div class="studioLecture" id=activity-tekstualne_datoteke><i class="fas fa-file-alt activity-icon"></i>Коришћење текстуалних датотека</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-rad%20sa%20tabelama>
+                    <h5>Рад са табелама</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../rad%20sa%20tabelama/Rad%20sa%20tabelama.html><div class="studioLecture" id=activity-Rad%20sa%20tabelama><i class="fas fa-file-alt activity-icon"></i>Рад са табелама</div></a>
+                <a href=../rad%20sa%20tabelama/indeksiranje.html><div class="studioLecture" id=activity-indeksiranje><i class="fas fa-file-alt activity-icon"></i>Индексирање табела</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-obrada_tabele>
+                    <h5>Обрада и приказ табеларних података</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../obrada_tabele/obrada_prikaz.html><div class="studioLecture" id=activity-obrada_prikaz><i class="fas fa-file-alt activity-icon"></i>Обрада и приказ табеларних података</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J10>
+                    <h5>Џупитер и Ексел</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../J10/J10.html><div class="studioLecture" id=activity-J10><i class="fas fa-file-alt activity-icon"></i>Џупитер и Ексел</div></a>
+                <a href=../J10/testJ10.html><div class="studioLecture" id=activity-testJ10><i class="far fa-question-circle activity-icon"></i>Џупитер и Ексел</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-projektni%20zadatak>
+                    <h5>Пример скупа података за пројекто учење</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../projektni%20zadatak/projekat.html><div class="studioLecture" id=activity-projekat><i class="fas fa-file-alt activity-icon"></i>Пример скупа података за пројекто учење</div></a>
+                </div>
+            </div>
+                </div>
+</div>
+
+
+
+<div class="lectureContent">
+
+  <div id="errors">
+  </div>
+  
+  <div class="lectureContentMaterial">
+  
+    <div id="main-content">
+    
+  <div class="section" id="id1">
+<h1>Пример скупа података за пројектно учење<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>Идеја пројектног учења је да оно што сте научили примените на конкретан
+проблем и онда пустите исти тај проблем да вас још нешто научи. При
+томе, наравно, нико не очекује да решавање проблема буде праволинијско.
+Има детаља којих ћете морати да се подсетите, док ћете неке трикове
+“успут” морати да научите. Тражење сличних примера и решења је увек
+дозвољено и врло пожељно.</p>
+
+    <div class="note-wrapper technicalnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/technicalnote-img.svg" class="note-image technicalnote-image" /> 
+        <div class="course-content">
+            
+<p>Остатак ове лекције препоручујемо да читаш на свом рачунару тако што ћеш у <a class="reference external" href="https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip">фолдеру за рад офлајн</a> покренути Џупитер свеску <cite>Primer skupa podataka za projektno ucenje.ipynb</cite> на начин на који је то објашњено у поглављу <a class="reference external" href="/J0A/J0A.html#jupyter">Покретање Џупитер радних свески</a> у уводу овог приручника.</p>
+
+    </div></div>
+<div class="section" id="id4">
+<h2>Пројектни задатак – Квалитет ваздуха<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>Ваш пројектни задатак је да обрадите податке о квалитету ваздуха у
+Србији који су доступни на <a class="reference external" href="https://data.gov.rs/en/datasets/kvalitet-vazduha/">Порталу отворених
+података</a>. Оно што
+нас посебно интересује су различити параметри квалитета ваздуха
+прикупљени на свих доступним станицама у последњих месец дана. Јасно вам
+је да се ови подаци стално ажурирају због чега нема смисла да их
+учитавамо из унапред припремљеног фајла. Табелу са овим подацима морамо
+да преузмемо директно са веб сајта који објављује последње доступне
+податке. На овој страни имате више табела (скупова података) у
+различитим форматима. Осим табеле у којој су тражени подаци за последњих
+месеца дана (<a class="reference external" href="http://data.sepa.gov.rs/dataset/11104dfd-b110-4b25-b350-9253e9233b6b/resource/0b6a7aa5-9b13-4a7c-8a80-f964e1c67bc3/download/air_quality_by_station.csv">Kvalitet vazduha po
+stanicama</a>)
+још две су нам потребне: <a class="reference external" href="http://data.sepa.gov.rs/dataset/11104dfd-b110-4b25-b350-9253e9233b6b/resource/dd7f4e4b-2375-4657-bb91-d541a2759891/download/station.csv">Stanice za merenje kvaliteta vazduha -
+šifarnik</a>
+и <a class="reference external" href="http://data.sepa.gov.rs/dataset/11104dfd-b110-4b25-b350-9253e9233b6b/resource/7fa4ab3f-423a-4016-8508-37164b49c087/download/component.csv">Merene komponente -
+šifarnik</a>.
+Тренутно су ове табеле доступне на локацијама датим у хиперлинку. Могуће
+је да Портал промени локацију ових фајлова у будућности. Погледајте онда
+који је “<em>Latest URL</em>” за одговарајући скуп података и примените га.</p>
+<p>Конкретно, изаберите вама најближу станицу која прикупља тражене
+параметре ваздуха. Изаберите параметар или параметре које желите да
+анализирате и прикажете. Проверите да ли та станица стварно има податке
+за тражени период. Издвојте потребне податке из табеле са свим доступним
+подацима. Прикажите податке као временску серију (време мерења на
+<em>x</em>-оси, параметар на <em>y</em>-оси) и као хистограм за вредности изабраног
+параметра. Покушајте да протумачите резултате и видите колико често је
+квалитет ваздуха био одличан, добар, прихватљив, загађен или јако
+загађен. Ово тумачење није једноставно. Можда вам помогне текст <a class="reference external" href="https://balkangreenenergynews.com/rs/caqi-aqi-saqi-srbiji-treba-jasan-pristup-tumacenju-zagadenosti-vazduha/">CAQI,
+AQI, SAQI… Srbiji treba jasan pristup tumačenju zagađenosti
+vazduha</a>.</p>
+<p>Прво увезите библиотеке за рад са табелама и цртање графикона.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+<p>На основу URL адреса које се завршавају са CSV, јасно је да су фајлови
+које треба учитати управо у овом формату. Оно што се не види из адресе
+јесте који је сепаратор коришћен за одвајање суседних вредности.
+Подразумева се да је зарез тај сепаратор, али то у већини европских
+земаља није згодно јер се децимални бројеви пишу са зарезом. Због тога
+се као сепаратор често користи знак тачка-зарез. У Србији се користе обе
+варијанте. Који је сепаратор у ком фајлу коришћен, углавном видимо тек
+кад учитавање са једним од њих не успе, односно кад добијемо нераздојене
+вредности. У сваком случају, учитајте све три табеле помоћу функције
+<code class="docutils literal notranslate"><span class="pre">pd.read_csv()</span></code>.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">stanice</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://data.gov.rs/en/datasets/r/dd7f4e4b-2375-4657-bb91-d541a2759891&#39;</span><span class="p">,</span><span class="n">sep</span><span class="o">=</span><span class="s2">&quot;;&quot;</span><span class="p">)</span>
+<span class="n">komponente</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://data.gov.rs/en/datasets/r/7fa4ab3f-423a-4016-8508-37164b49c087&#39;</span><span class="p">,</span><span class="n">sep</span><span class="o">=</span><span class="s2">&quot;;&quot;</span><span class="p">)</span>
+<span class="n">podaci</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://data.gov.rs/en/datasets/r/0b6a7aa5-9b13-4a7c-8a80-f964e1c67bc3&#39;</span><span class="p">,</span><span class="n">sep</span><span class="o">=</span><span class="s2">&quot;,&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">podaci</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>date_time</th>
+      <th>station_id</th>
+      <th>so2</th>
+      <th>pm10</th>
+      <th>o3</th>
+      <th>no2</th>
+      <th>nox</th>
+      <th>co</th>
+      <th>benzene</th>
+      <th>toluene</th>
+      <th>no</th>
+      <th>pm2_5</th>
+      <th>pm1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2022-06-24 00:00:00</td>
+      <td>1</td>
+      <td>10.549119</td>
+      <td>NaN</td>
+      <td>57.495900</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.178599</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2022-06-24 00:00:00</td>
+      <td>2</td>
+      <td>8.010171</td>
+      <td>18.566102</td>
+      <td>NaN</td>
+      <td>47.382533</td>
+      <td>68.781508</td>
+      <td>0.157805</td>
+      <td>0.227148</td>
+      <td>6.058088</td>
+      <td>13.80288</td>
+      <td>12.512833</td>
+      <td>10.150000</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2022-06-24 00:00:00</td>
+      <td>3</td>
+      <td>5.254099</td>
+      <td>NaN</td>
+      <td>51.986375</td>
+      <td>15.060899</td>
+      <td>21.328835</td>
+      <td>0.273868</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>4.07056</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2022-06-24 00:00:00</td>
+      <td>4</td>
+      <td>18.783293</td>
+      <td>2.522000</td>
+      <td>NaN</td>
+      <td>6.210549</td>
+      <td>11.375379</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>3.36544</td>
+      <td>2.115254</td>
+      <td>1.659932</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2022-06-24 00:00:00</td>
+      <td>5</td>
+      <td>11.628788</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>13.173505</td>
+      <td>23.608374</td>
+      <td>0.291652</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>6.82448</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div><p>Примећујемо да су у колони <code class="docutils literal notranslate"><span class="pre">date_time</span></code> датум и време мерења. Судећи по
+првих пет редова, мерења су бележена на сваких сат времена. Да бисмо ову
+колону могли да користимо као континуалну независно променљиву, потребно
+је да буде препозната као тип <code class="docutils literal notranslate"><span class="pre">datetime</span></code>. То се вероватно није
+догодило. Пајтон при учитавању податка из фајла покушава да препозна тип
+податка који је заједнички за све елементе сваке појединачне колоне али
+ће целу колону оставити као објекат, односно колону стрингова уколико
+има икакву дилему. Проверите помоћу функције <code class="docutils literal notranslate"><span class="pre">.dtypes</span></code> који су типови
+податка у појединачним колонама табеле.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">podaci</span><span class="o">.</span><span class="n">dtypes</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">date_time</span>      <span class="nb">object</span>
+<span class="n">station_id</span>      <span class="n">int64</span>
+<span class="n">so2</span>           <span class="n">float64</span>
+<span class="n">pm10</span>          <span class="n">float64</span>
+<span class="n">o3</span>            <span class="n">float64</span>
+<span class="n">no2</span>           <span class="n">float64</span>
+<span class="n">nox</span>           <span class="n">float64</span>
+<span class="n">co</span>            <span class="n">float64</span>
+<span class="n">benzene</span>       <span class="n">float64</span>
+<span class="n">toluene</span>       <span class="n">float64</span>
+<span class="n">no</span>            <span class="n">float64</span>
+<span class="n">pm2_5</span>         <span class="n">float64</span>
+<span class="n">pm1</span>           <span class="n">float64</span>
+<span class="n">dtype</span><span class="p">:</span> <span class="nb">object</span>
+</pre></div>
+</div>
+<p>Функција <code class="docutils literal notranslate"><span class="pre">.to_datetime()</span></code> ће претворити све текстуалне податке у датум
+и време уколико је то могуће. Урадите то за све вредности у колони
+<code class="docutils literal notranslate"><span class="pre">date_time</span></code>.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">podaci</span><span class="o">.</span><span class="n">date_time</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">podaci</span><span class="o">.</span><span class="n">date_time</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Подаци у табели <code class="docutils literal notranslate"><span class="pre">stanice</span></code> садржи називе станица и њихове географске
+локације. То су кључни подаци помоћу којих ћемо закључити која је
+станица најближа. Пошто имена променљивих нису иста у свим табелама
+потребна нам је вредност <code class="docutils literal notranslate"><span class="pre">id</span></code> из табеле <code class="docutils literal notranslate"><span class="pre">stanice</span></code> која одговара
+вредности <code class="docutils literal notranslate"><span class="pre">station_id</span></code> у табели <code class="docutils literal notranslate"><span class="pre">podaci</span></code>. У табели <code class="docutils literal notranslate"><span class="pre">komponente</span></code> су
+пуни називи и јединице мерених компененти. Ови подаци су неопходни да
+бисмо могли да тумачимо резултате.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">stanice</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>k_eoi_code</th>
+      <th>k_airbase_code</th>
+      <th>k_network_id</th>
+      <th>k_local_code</th>
+      <th>k_name</th>
+      <th>k_start_date</th>
+      <th>k_stop_date</th>
+      <th>latitude</th>
+      <th>longitude</th>
+      <th>altitude</th>
+      <th>aq_stationclassification</th>
+      <th>aq_areaclassification</th>
+      <th>k_char_of_zone</th>
+      <th>k_ozone_classification</th>
+      <th>k_main_emission_source</th>
+      <th>k_city</th>
+      <th>k_city_population</th>
+      <th>k_street_name</th>
+      <th>k_report</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>RS1002A</td>
+      <td>RS0034A</td>
+      <td>1</td>
+      <td>0001</td>
+      <td>Kikinda Centar</td>
+      <td>2010-02-01</td>
+      <td>NaN</td>
+      <td>45.821483</td>
+      <td>20.454008</td>
+      <td>78.0</td>
+      <td>background</td>
+      <td>urban</td>
+      <td>residential</td>
+      <td>suburban</td>
+      <td>Agriculture</td>
+      <td>Kikinda</td>
+      <td>38.0</td>
+      <td>Svetosavska bb</td>
+      <td>t</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>RS1007A</td>
+      <td>RS0029A</td>
+      <td>1</td>
+      <td>1007</td>
+      <td>Novi Sad SPENS</td>
+      <td>2015-06-08</td>
+      <td>NaN</td>
+      <td>45.245065</td>
+      <td>19.841190</td>
+      <td>78.0</td>
+      <td>traffic</td>
+      <td>urban</td>
+      <td>residential/commercial</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Novi Sad</td>
+      <td>342.0</td>
+      <td>Bulevar oslobodjenja</td>
+      <td>t</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>RS1008A</td>
+      <td>RS0031A</td>
+      <td>1</td>
+      <td>1008</td>
+      <td>Novi Sad Liman</td>
+      <td>2015-06-01</td>
+      <td>NaN</td>
+      <td>45.238642</td>
+      <td>19.835704</td>
+      <td>81.0</td>
+      <td>background</td>
+      <td>urban</td>
+      <td>residential</td>
+      <td>urban</td>
+      <td>NaN</td>
+      <td>Novi Sad</td>
+      <td>342.0</td>
+      <td>Narodnog fronta 45</td>
+      <td>t</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>RS1009A</td>
+      <td>RS0001A</td>
+      <td>1</td>
+      <td>1009</td>
+      <td>Beočin Centar</td>
+      <td>2015-07-02</td>
+      <td>NaN</td>
+      <td>45.208386</td>
+      <td>19.721709</td>
+      <td>87.0</td>
+      <td>background</td>
+      <td>urban</td>
+      <td>residential/industrial</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Beočin</td>
+      <td>15.0</td>
+      <td>Kralja Petra bb</td>
+      <td>t</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>RS1010A</td>
+      <td>RS1010A</td>
+      <td>1</td>
+      <td>1010</td>
+      <td>Sremska Mitrovica</td>
+      <td>2015-07-02</td>
+      <td>NaN</td>
+      <td>44.972185</td>
+      <td>19.609349</td>
+      <td>82.0</td>
+      <td>traffic</td>
+      <td>urban</td>
+      <td>residential/commercial</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Sremska Mitrovica</td>
+      <td>86.0</td>
+      <td>NaN</td>
+      <td>t</td>
+    </tr>
+  </tbody>
+</table>
+</div><div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Najbliža stanica je&quot;</span><span class="p">,</span> <span class="n">stanice</span><span class="p">[</span><span class="s1">&#39;k_name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">&quot;sa vrednošću id=&quot;</span><span class="p">,</span> <span class="n">stanice</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span><span class="s2">&quot;.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Najbliža</span> <span class="n">stanica</span> <span class="n">je</span> <span class="n">Kikinda</span> <span class="n">Centar</span> <span class="n">sa</span> <span class="n">vrednošću</span> <span class="nb">id</span><span class="o">=</span> <span class="mi">1</span> <span class="o">.</span>
+</pre></div>
+</div>
+<p>Обратите пажњу да неименовани индекс табеле није исти као вредност
+променљиве која се налази у колони <code class="docutils literal notranslate"><span class="pre">id</span></code>. Да бисмо издвојили, тј.
+филтрирали табелу <code class="docutils literal notranslate"><span class="pre">podaci</span></code> по тој вредности треба да је препознамо у
+колони <code class="docutils literal notranslate"><span class="pre">station_id</span></code>.</p>
+<p>Сад кад имате све тражене табеле и податке одговарајућег типа, треба да
+издвојите само оне податке који се тичу вама најближе станице. У примеру
+који следи узета је станица са индексом 0. Ако ваша најближа станица
+није “Кикинда Центар”, унесите прави индекс у приступник тамо где треба.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">podaci_najbliza</span><span class="o">=</span><span class="n">podaci</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">podaci</span><span class="p">[</span><span class="s1">&#39;station_id&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Користите функцију <code class="docutils literal notranslate"><span class="pre">.head()</span></code> да проверите има ли података за тражену
+станицу у последњих месец дана. Ако их из било којих разлога нема, онда
+узмите другу најближу станицу.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">podaci_najbliza</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>date_time</th>
+      <th>station_id</th>
+      <th>so2</th>
+      <th>pm10</th>
+      <th>o3</th>
+      <th>no2</th>
+      <th>nox</th>
+      <th>co</th>
+      <th>benzene</th>
+      <th>toluene</th>
+      <th>no</th>
+      <th>pm2_5</th>
+      <th>pm1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2022-06-24 00:00:00</td>
+      <td>1</td>
+      <td>10.549119</td>
+      <td>NaN</td>
+      <td>57.495900</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.178599</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>61</th>
+      <td>2022-06-24 01:00:00</td>
+      <td>1</td>
+      <td>9.001029</td>
+      <td>NaN</td>
+      <td>46.433625</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.170444</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>122</th>
+      <td>2022-06-24 02:00:00</td>
+      <td>1</td>
+      <td>8.604286</td>
+      <td>NaN</td>
+      <td>37.881725</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.168619</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>183</th>
+      <td>2022-06-24 03:00:00</td>
+      <td>1</td>
+      <td>8.970360</td>
+      <td>NaN</td>
+      <td>29.526000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.158601</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>244</th>
+      <td>2022-06-24 04:00:00</td>
+      <td>1</td>
+      <td>8.687549</td>
+      <td>NaN</td>
+      <td>28.728000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.203100</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div><p>Ми ћемо, примера ради, да прикажемо измерене вредности из прве колоне са
+параметрима квалитета ваздуха, <code class="docutils literal notranslate"><span class="pre">so2</span></code>. Ви изаберите који желите. Иако
+нам је за цртање овог графика потребна само једна линија кôда, ми ћемо
+да би побољшали изглед графика употребити још три. Подразумевани график
+у Џупитеру је прилично узан због чега није погодан за дуже временске
+серије. Да би график покрио ширину расположивог екрана, ставићемо да су
+димензије графика 18 пута 6 инча. Друго, временске ознаке садрже велики
+број карактера па се зато преклапају ако их све хоризонтално испишемо на
+<em>x</em>-оси. То можемо да решимо ако ознаке исписујемо вертикално. Треће,
+ставићемо мрежу (<em>grid</em>) преко графика како бисмо лакше очитавали
+вредности.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span> <span class="c1"># dimenzije grafika</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">podaci_najbliza</span><span class="p">[</span><span class="s1">&#39;date_time&#39;</span><span class="p">],</span><span class="n">podaci_najbliza</span><span class="p">[</span><span class="s1">&#39;so2&#39;</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">90</span><span class="p">);</span>   <span class="c1"># date_time podatke ispisujemo vertikalno</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+</pre></div>
+</div>
+<img alt="../_images/output_23_01.png" src="../_images/output_23_01.png" />
+<p>Исте ове податке можемо да прикажемо и хистограмом. Тада ћемо јасно
+видети расподелу измерених вредности, односно колико је пута очитана
+која вредност за месец дана. Са друге стране, изгубићемо информацију о
+времену када је вршено мерење. Да би график био прегледнији нагласићемо
+да интервал од 0 до 30 делимо на 30 делова.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">podaci_najbliza</span><span class="p">[</span><span class="s1">&#39;so2&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">bins</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span><span class="nb">range</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">30</span><span class="p">))</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">AxesSubplot</span><span class="p">:</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<img alt="../_images/output_25_11.png" src="../_images/output_25_11.png" />
+<p>Овде анализа података о квалитету ваздуха тек почиње. Тумачење ћемо
+препустити вама. Још боље би било да то радите тимски са професорима у
+школи. Из мало труда, могли бисте да на направите “контролну таблу” где
+би у рeалном времену били исцртавани актуелни подаци са упозорењем када
+је квалитет ваздуха испод прихватљивог нивоа.</p>
+</div>
+</div>
+
+
+    </div>
+    
+    <div>
+<div class="lecture-prev-next-toggle">
+  <a  href="index.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходна лекција </span> </a>
+  
+</div>
+
+<script type="text/javascript">
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+</script>
+</div>
+
+    
+  </div>
+</div>
+
+<div class="petljadoc-resources">
+  <span class="pull-left">(Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>) <br> © 2022 Petlja</span>
+</div>
+
+
+<div class="lectureToolbox">
+
+  <label class="font-size-toggle" id="fontSizeToggle">
+
+      <i class="fas fa-font"></i><label>Слова</label>
+  </label>
+  <div class="font-change d-none" id="fontChangeModal">
+      <span class="dec-letter-icon" id="decLetterIcon">A-</span>
+      <label id="currentFontSize">16</label>
+      <span class="inc-letter-icon" id="incLetterIcon">A+</span>
+  </div>
+</div>
+
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Обрада и приказ табеларних података</title>
+    <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja-course.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/nbstyle.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
+    <script type="text/javascript" src="../_static/webglinteractive.js"></script>
+    <script type="text/javascript" src="../_static/FileSaver.min.js"></script>
+    <script type="text/javascript" src="../_static/Blob.js"></script>
+    <script type="text/javascript" src="../_static/karelCorner.js"></script>
+    <script type="text/javascript" src="../_static/karelRobot.js"></script>
+    <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
+    <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
+    <script type="text/javascript" src="../_static/karelUI.js"></script>
+    <script type="text/javascript" src="../_static/karel.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/notes.js"></script>
+    <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
+    <script type="text/javascript" src="../_static/gallery.js"></script>
+    <script type="text/javascript" src="../_static/associations.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../_static/course-errors.js"></script>
+    <script type="text/javascript" src="../_static/petlja.js"></script>
+    <script type="text/javascript" src="../_static/require.js"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+    <script type="text/javascript">
+      eBookConfig = {};
+      eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+      eBookConfig.app = eBookConfig.host + '/runestone';
+      eBookConfig.ajaxURL = eBookConfig.app + '/ajax/';
+      eBookConfig.course = 'Настава програмирања за Други разред гимназије';
+      eBookConfig.logLevel = '0';
+      eBookConfig.loginRequired = 'false';
+      eBookConfig.build_info = "";
+      eBookConfig.isLoggedIn = false;
+      eBookConfig.useRunestoneServices = false;
+      eBookConfig.python3 = true;
+      eBookConfig.basecourse = 'Настава програмирања за Други разред гимназије';
+      eBookConfig.runestone_version = '';
+      eBookConfig.imagesDir = '../_images/';
+      eBookConfig.staticDir = '../_static/';
+      if (typeof (Sk) != "undefined")
+        Sk.imgPath = eBookConfig.imagesDir;
+    </script>
+
+  </head>
+
+  <body>
+
+
+
+<div id="navbar" class="content-header">
+  <div class="right-side-nav">
+    
+    <div id="usefulLinksToggle" class="useful-links-toggle">
+        <a class="dropdown-toggle dropdown-toggle-burger" role="button" href="#" id="usefulLinksDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-bars fa-2x"></i>
+        </a>
+        <div class="dropdown-menu dropdown-nav-links shadow-lg" aria-labelledby="usefulLinksDropdown" x-placement="bottom-start" style="position: absolute; transform: translate3d(-55px, 32px, 0px); top: 0px; left: 0px; will-change: transform;">
+          <div class="links-title"> Корисни линкови</div>
+          <div class="useful-link">
+            <a href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html" target="_blank">Sphinx Docs</a></div>
+          <div class="useful-link">
+            <a href="https://github.com/Petlja/PetljaDoc/blob/master/README.md" target="_blank">Petljadoc</a></div>
+          <div class="useful-link">
+            <a href="https://github.com/RunestoneInteractive/overview" target="_blank">Runestone Interactive</a></div>
+          
+        </div>
+    </div>
+
+    
+</div>
+
+<div class="left-side-nav">
+  <div class="course-logo-nav">
+      <a target="_blank" href="https://petlja.org">
+          <img src="../_static/img/petlja-logo-wt.svg" alt="petlja.org" id="lightPetljaLogo">
+      </a>
+  </div>
+  <div class="course-logo-nav-kabinet">
+      <a target="_blank" href="https://petlja.org/net.kabinet">
+          <img src="../_static/img/netkabinet-logo-strelica-wt.svg" alt="petlja.org" id="lightNetKabinetLogo">
+      </a>
+  </div>
+</div>
+
+
+<div class="content-header-label" id = "content-header-label" href="../">Анализа података у Џупитеру и технике програмирања за други разред гимназије</div>
+
+</div>
+
+
+
+
+<div class="petljaCourseContainer">
+
+<div class="petljaCourseContent">
+  
+           <div class="tableOfContent">
+            <h5> Садржај </h5>
+            </div>
+           <div>
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J0A>
+                    <h5>Пре него што почнемо</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../J0A/howto.html><div class="studioLecture" id=activity-howto><i class="fas fa-file-alt activity-icon"></i>Како да користиш овај приручник</div></a>
+                <a href=../J0A/J0A.html><div class="studioLecture" id=activity-J0A><i class="fas fa-file-alt activity-icon"></i>Покретање Џупитер радних свески</div></a>
+                <a href=../J0A/J01.html><div class="studioLecture" id=activity-J01><i class="fas fa-file-alt activity-icon"></i>Увод у Џупитер</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-podsetnik>
+                    <h5>Подсетник Пајтон</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../podsetnik/Podsetnik%20-%20Pajton.html><div class="studioLecture" id=activity-Podsetnik%20-%20Pajton><i class="fas fa-file-alt activity-icon"></i>Подсетник Пајтон</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y01>
+                    <h5>Низови података</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Y01/L801.html><div class="studioLecture" id=activity-L801><i class="fas fa-file-alt activity-icon"></i>Увод у процесирање низова података</div></a>
+                <a href=../Y01/03_zadaci.html><div class="studioLecture" id=activity-03_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - процесирање низова</div></a>
+                <a href=../Y01/Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension.html><div class="studioLecture" id=activity-Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension><i class="fas fa-file-alt activity-icon"></i>Креирање листа у Пајтону</div></a>
+                <a href=../Y01/Низови%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-Низови%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>Низови - додатни задаци</div></a>
+                <a href=../Y01/test801.html><div class="studioLecture" id=activity-test801><i class="far fa-question-circle activity-icon"></i>Квиз - Листе</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y05>
+                    <h5>Сортирање</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Y05/L805.html><div class="studioLecture" id=activity-L805><i class="fas fa-file-alt activity-icon"></i>Сортирање</div></a>
+                <a href=../Y05/04_zadaci.html><div class="studioLecture" id=activity-04_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - сортирање</div></a>
+                <a href=../Y05/Сортирање%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-Сортирање%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>Сортирање - додатни задаци</div></a>
+                <a href=../Y05/test805.html><div class="studioLecture" id=activity-test805><i class="far fa-question-circle activity-icon"></i>Квиз - Сортирање</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Y06>
+                    <h5>Филтрирање и претраживање</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Y06/L806.html><div class="studioLecture" id=activity-L806><i class="fas fa-file-alt activity-icon"></i>Филтрирање и претраживање</div></a>
+                <a href=../Y06/05_zadaci.html><div class="studioLecture" id=activity-05_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - филтрирање и претраживање</div></a>
+                <a href=../Y06/test806.html><div class="studioLecture" id=activity-test806><i class="far fa-question-circle activity-icon"></i>Квиз - Филтрирање и претраживање</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-predstavljanje>
+                    <h5>Представљање низова података</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../predstavljanje/Predstavljanje%20nizova%20podataka.html><div class="studioLecture" id=activity-Predstavljanje%20nizova%20podataka><i class="fas fa-file-alt activity-icon"></i>Представљање низова података</div></a>
+                <a href=../predstavljanje/Graficko_predstavljanje.html><div class="studioLecture" id=activity-Graficko_predstavljanje><i class="fas fa-file-alt activity-icon"></i>Графичко представљање низова података</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-tekstualni>
+                    <h5>Рад са текстуалним подацима</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../tekstualni/Rad%20sa%20tekstualnim%20podacima.html><div class="studioLecture" id=activity-Rad%20sa%20tekstualnim%20podacima><i class="fas fa-file-alt activity-icon"></i>Рад са текстуалним подацима</div></a>
+                <a href=../tekstualni/tekstualne_datoteke.html><div class="studioLecture" id=activity-tekstualne_datoteke><i class="fas fa-file-alt activity-icon"></i>Коришћење текстуалних датотека</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-rad%20sa%20tabelama>
+                    <h5>Рад са табелама</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../rad%20sa%20tabelama/Rad%20sa%20tabelama.html><div class="studioLecture" id=activity-Rad%20sa%20tabelama><i class="fas fa-file-alt activity-icon"></i>Рад са табелама</div></a>
+                <a href=../rad%20sa%20tabelama/indeksiranje.html><div class="studioLecture" id=activity-indeksiranje><i class="fas fa-file-alt activity-icon"></i>Индексирање табела</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-obrada_tabele>
+                    <h5>Обрада и приказ табеларних података</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../obrada_tabele/obrada_prikaz.html><div class="studioLecture" id=activity-obrada_prikaz><i class="fas fa-file-alt activity-icon"></i>Обрада и приказ табеларних података</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-J10>
+                    <h5>Џупитер и Ексел</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../J10/J10.html><div class="studioLecture" id=activity-J10><i class="fas fa-file-alt activity-icon"></i>Џупитер и Ексел</div></a>
+                <a href=../J10/testJ10.html><div class="studioLecture" id=activity-testJ10><i class="far fa-question-circle activity-icon"></i>Џупитер и Ексел</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-projektni%20zadatak>
+                    <h5>Пример скупа података за пројекто учење</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../projektni%20zadatak/projekat.html><div class="studioLecture" id=activity-projekat><i class="fas fa-file-alt activity-icon"></i>Пример скупа података за пројекто учење</div></a>
+                </div>
+            </div>
+                </div>
+</div>
+
+
+
+<div class="lectureContent">
+
+  <div id="errors">
+  </div>
+  
+  <div class="lectureContentMaterial">
+  
+    <div id="main-content">
+    
+  <div class="section" id="id1">
+<h1>Обрада и приказ табеларних података<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>Обраду, анализу и графички приказ података је тешко раздвојити. Све то
+углавном иде паралелно. У Пајтону постоји неколико најчешће коришћених
+библиотека које су усаглашене тако да објекти које користимо за обраду
+података имају функције за цртање, а функције за цртање враћају табеле и
+серије. Зато је то овде једна лекција.</p>
+<div class="section" id="id2">
+<h2>Обрада табеларних података<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Много тога за шта су нам потребни програмерско знање и труд при обради
+података у листама постаје једноставна примена готових функција када
+податке спакујемо у <em>DataFrame</em>. Библиотека <em>pandas</em> омогућава да рад са
+табелама буде једноставан, брз и ефикасан.</p>
+
+    <div class="note-wrapper technicalnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/technicalnote-img.svg" class="note-image technicalnote-image" /> 
+        <div class="course-content">
+            
+<p>Остатак ове лекције препоручујемо да читаш на свом рачунару тако што ћеш у <a class="reference external" href="https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip">фолдеру за рад офлајн</a> покренути Џупитер свеску <cite>Obrada i prikaz tabelarnih podataka.ipynb</cite> на начин на који је то објашњено у поглављу <a class="reference external" href="/J0A/J0A.html#jupyter">Покретање Џупитер радних свески</a> у уводу овог приручника.</p>
+
+    </div></div>
+<div class="section" id="id5">
+<h3>Учитавање табеле из датотеке<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>Податке најчешће чувамо у табелама. Чак су и базе података само
+колекције различитих табела. За поновну употребу табеле снимамо у
+датотеке (или фајлове, како их понекад зовемо). Те снимљене табеле
+касније учитавамо по потреби. Уобичајени формат датотека за снимање
+табела је CSV (енгл. <em>comma separated value</em>, тј. вредности одвојене
+зарезом). Библиотека <em>pandas</em> има функције за учитавање и снимање
+табела. За учитавање користимо функцију <code class="docutils literal notranslate"><span class="pre">pd.read_csv()</span></code>. Aргумент ове
+функције је стринг са локацијом и називом датотеке, нпр.
+“data/countries.csv”. Ова датотека се не налази у Пајтоновом радном
+директоријуму већ у поддиректоријуму <em>data</em>, због чега је потребно да то
+напишемо и да назив директоријума и датотеке раздвојимо косом цртом.
+Учитаћемо сада баш ту датотеку.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>                <span class="c1"># prvo uvozimo pandas biblioteku</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>    <span class="c1"># i biblioteku za crtanje grafika</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dt</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/countries.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>При позивању функција из одређене библиотеке потребно је да наведемо
+ознаке библиотека. Зато није довољно да напишемо <code class="docutils literal notranslate"><span class="pre">read_csv()</span></code> већ
+морамо <code class="docutils literal notranslate"><span class="pre">pd.read_csv()</span></code>. При увожењу библиотека ми смо нагласили да
+ћемо користити скраћена имена уместо пуних. Користићемо <code class="docutils literal notranslate"><span class="pre">pd</span></code> уместо
+<code class="docutils literal notranslate"><span class="pre">pandas</span></code> и <code class="docutils literal notranslate"><span class="pre">plt</span></code> уместо <code class="docutils literal notranslate"><span class="pre">matplotlib.pyplot</span></code> што ће нам олакшати
+писање кôда.</p>
+<p>Садржај датотеке смо учитали и сместили у табелу (тачније променљиву
+типа <em>dataframe</em>) <code class="docutils literal notranslate"><span class="pre">dt</span></code>. Да бисмо видели шта је учитано, згодно је да
+прикажемо на екрану заглавље те табеле са првих неколико редова. За то
+нам служи функција <code class="docutils literal notranslate"><span class="pre">.head()</span></code>.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dt</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country</th>
+      <th>Continent</th>
+      <th>Population</th>
+      <th>Area</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Afghanistan</td>
+      <td>Asia</td>
+      <td>31056997</td>
+      <td>647500</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Albania</td>
+      <td>Europe</td>
+      <td>3581655</td>
+      <td>28748</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Algeria</td>
+      <td>Africa</td>
+      <td>32930091</td>
+      <td>2381740</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>American Samoa</td>
+      <td>Oceania</td>
+      <td>57794</td>
+      <td>199</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Andorra</td>
+      <td>Europe</td>
+      <td>71201</td>
+      <td>468</td>
+    </tr>
+  </tbody>
+</table>
+</div><div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">sum</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">6</span>
+</pre></div>
+</div>
+<p>У колони без имена на почетку са леве стране, тј. индексној колони стоје
+бројеви од 0 до <em>n</em>-1, при чему је <em>n</em> број редова у табели. Свака
+табела мора да има индексну колону. То не морају да буду редни бројеви,
+али ако при учитавању табеле ништа не нагласимо, Пајтон ће сам да је
+направи. Индексна колона служи да се по њој позивају елементи. Елементи
+табеле су редови у табели. Тако је <code class="docutils literal notranslate"><span class="pre">dt[2]</span></code> ред у ком су подаци за
+Алжир. Свака колона у којој нема понављања вредности може да буде
+индексна, али се овде нећемо на томе задржавати.</p>
+<p>Видимо да су државе наведене по редовима, а да по колонама имамо основне
+податке о тим државама. У колони <em>Country</em> је име државе, <em>Continent</em>
+означава континент на ком се налази, <em>Population</em> број становника, а
+<em>Area</em> површину државе у квадратним километрима. Називе свих колона
+можемо да добијемо помоћу <code class="docutils literal notranslate"><span class="pre">dt.columns</span></code>.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dt</span><span class="o">.</span><span class="n">columns</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Index</span><span class="p">([</span><span class="s1">&#39;Country&#39;</span><span class="p">,</span> <span class="s1">&#39;Continent&#39;</span><span class="p">,</span> <span class="s1">&#39;Population&#39;</span><span class="p">,</span> <span class="s1">&#39;Area&#39;</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;object&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Вредности које се налазе у одређеној колони се позивају тако што после
+имена табеле у угластим заграда наведемо име колоне под једноструким или
+двоструким наводницима. Да бисмо приказали колону са именима држава,
+написаћемо <code class="docutils literal notranslate"><span class="pre">dt['Country']</span></code> или <code class="docutils literal notranslate"><span class="pre">dt[&quot;Country&quot;]</span></code>.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dt</span><span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">0</span>         <span class="n">Afghanistan</span>
+<span class="mi">1</span>             <span class="n">Albania</span>
+<span class="mi">2</span>             <span class="n">Algeria</span>
+<span class="mi">3</span>      <span class="n">American</span> <span class="n">Samoa</span>
+<span class="mi">4</span>             <span class="n">Andorra</span>
+            <span class="o">...</span>
+<span class="mi">222</span>         <span class="n">West</span> <span class="n">Bank</span>
+<span class="mi">223</span>    <span class="n">Western</span> <span class="n">Sahara</span>
+<span class="mi">224</span>             <span class="n">Yemen</span>
+<span class="mi">225</span>            <span class="n">Zambia</span>
+<span class="mi">226</span>          <span class="n">Zimbabwe</span>
+<span class="n">Name</span><span class="p">:</span> <span class="n">Country</span><span class="p">,</span> <span class="n">Length</span><span class="p">:</span> <span class="mi">227</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="nb">object</span>
+</pre></div>
+</div>
+<p>Ако хоћете да видите само део ове листе, користите <em>слајсове</em>. Са
+<code class="docutils literal notranslate"><span class="pre">[:10]</span></code> ћете нпр. добити првих 10, а са <code class="docutils literal notranslate"><span class="pre">[10:20]</span></code> других 10
+елемената колоне.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dt</span><span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">][</span><span class="mi">10</span><span class="p">:</span><span class="mi">20</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">10</span>           <span class="n">Aruba</span>
+<span class="mi">11</span>       <span class="n">Australia</span>
+<span class="mi">12</span>         <span class="n">Austria</span>
+<span class="mi">13</span>      <span class="n">Azerbaijan</span>
+<span class="mi">14</span>    <span class="n">Bahamas</span><span class="p">,</span> <span class="n">The</span>
+<span class="mi">15</span>         <span class="n">Bahrain</span>
+<span class="mi">16</span>      <span class="n">Bangladesh</span>
+<span class="mi">17</span>        <span class="n">Barbados</span>
+<span class="mi">18</span>         <span class="n">Belarus</span>
+<span class="mi">19</span>         <span class="n">Belgium</span>
+<span class="n">Name</span><span class="p">:</span> <span class="n">Country</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="nb">object</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id6">
+<h3>Додавање нових колона<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>Табеле могу да се мењају, да се табели додају и бришу колоне и врсте,
+као и да се мењају вредности које су већ у табели. Ако бисмо хтели да
+додамо колону у којој ће бити густина насељености, треба само да
+израчунамо тражене вредности и ставимо их у посебну колону. Довољно је
+да, још увек непостојећој, колони са новим именом, нпр. <em>Density</em>,
+придружимо резултат тог израчунавања.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dt</span><span class="p">[</span><span class="s1">&#39;Density&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">dt</span><span class="p">[</span><span class="s1">&#39;Population&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">dt</span><span class="p">[</span><span class="s1">&#39;Area&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+
+    <div class="note-wrapper suggestionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/suggestionnote-img.svg" class="note-image suggestionnote-image" /> 
+        <div class="course-content">
+            
+<p>Напомена: Приметите како једноставно можемо да поделимо све вредности
+једне колоне са одговарајућим вредностима друге колоне. То са листама
+не можемо да радимо, али ако користимо <em>pandas</em> табеле, онда ће
+колоне те табеле бити променљиве типа <em>Series</em>. За серије су основне
+математичке операције дефинисане тако да операције вршимо за сваки
+елемент једне серије са одговарајућим елементом из друге. Некад је
+згодно листе претворити у серије како бисмо могли да рачунамо на овај
+начин. То би изгледало отприлике овако:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">lista</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">serija</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span>
+<span class="n">serija_na_kvadrat</span><span class="o">=</span><span class="n">serija</span><span class="o">*</span><span class="n">serija</span>
+</pre></div>
+</div>
+
+    </div></div>
+<p>Нова колона са именом <em>Density</em> је аутоматски додата чим смо је
+израчунали. Можемо да погледамо како изгледа заглавље табеле и тако
+проверимо да ли је нова колона додата како треба.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lista</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">serija</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span>
+<span class="n">serija_na_kvadrat</span><span class="o">=</span><span class="n">serija</span><span class="o">*</span><span class="n">serija</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dt</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country</th>
+      <th>Continent</th>
+      <th>Population</th>
+      <th>Area</th>
+      <th>Density</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Afghanistan</td>
+      <td>Asia</td>
+      <td>31056997</td>
+      <td>647500</td>
+      <td>47.964474</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Albania</td>
+      <td>Europe</td>
+      <td>3581655</td>
+      <td>28748</td>
+      <td>124.587971</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Algeria</td>
+      <td>Africa</td>
+      <td>32930091</td>
+      <td>2381740</td>
+      <td>13.826065</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>American Samoa</td>
+      <td>Oceania</td>
+      <td>57794</td>
+      <td>199</td>
+      <td>290.422111</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Andorra</td>
+      <td>Europe</td>
+      <td>71201</td>
+      <td>468</td>
+      <td>152.138889</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+<div class="section" id="id7">
+<h3>Сортирање<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>Библиотека <em>pandas</em> има прегршт корисних функција за рад са табелама и
+њиховим колонама. Функција <code class="docutils literal notranslate"><span class="pre">.sort_values()</span></code> сортира све вредности у
+одређеној колони и прерасподељује садржај осталих колона у складу са
+тим. Ако хоћемо да видимо које то државе имају најмању и највећу густину
+насељености, можемо да сортирамо вредности по тој колони и погледамо
+које се државе налази на почетку и крају табеле.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dt</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;Density&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country</th>
+      <th>Continent</th>
+      <th>Population</th>
+      <th>Area</th>
+      <th>Density</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>80</th>
+      <td>Greenland</td>
+      <td>North America</td>
+      <td>56361</td>
+      <td>2166086</td>
+      <td>0.026020</td>
+    </tr>
+    <tr>
+      <th>223</th>
+      <td>Western Sahara</td>
+      <td>Africa</td>
+      <td>273008</td>
+      <td>266000</td>
+      <td>1.026346</td>
+    </tr>
+    <tr>
+      <th>139</th>
+      <td>Mongolia</td>
+      <td>Asia</td>
+      <td>2832224</td>
+      <td>1564116</td>
+      <td>1.810751</td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td>French Guiana</td>
+      <td>South America</td>
+      <td>199509</td>
+      <td>91000</td>
+      <td>2.192407</td>
+    </tr>
+    <tr>
+      <th>143</th>
+      <td>Namibia</td>
+      <td>Africa</td>
+      <td>2044147</td>
+      <td>825418</td>
+      <td>2.476499</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>78</th>
+      <td>Gibraltar</td>
+      <td>Europe</td>
+      <td>27928</td>
+      <td>7</td>
+      <td>3989.714286</td>
+    </tr>
+    <tr>
+      <th>91</th>
+      <td>Hong Kong</td>
+      <td>Asia</td>
+      <td>6940432</td>
+      <td>1092</td>
+      <td>6355.706960</td>
+    </tr>
+    <tr>
+      <th>184</th>
+      <td>Singapore</td>
+      <td>Asia</td>
+      <td>4492150</td>
+      <td>693</td>
+      <td>6482.178932</td>
+    </tr>
+    <tr>
+      <th>122</th>
+      <td>Macau</td>
+      <td>Asia</td>
+      <td>453125</td>
+      <td>28</td>
+      <td>16183.035714</td>
+    </tr>
+    <tr>
+      <th>138</th>
+      <td>Monaco</td>
+      <td>Europe</td>
+      <td>32543</td>
+      <td>2</td>
+      <td>16271.500000</td>
+    </tr>
+  </tbody>
+</table>
+<p>227 rows × 5 columns</p>
+</div><p>Табеле са великим бројем редова нису прегледне чак ни када их сортирамо. Зато је пожељно да направимо графички приказ који би нам помогао у тумачењу података. Овде ћемо дати примере два типа дијаграма (стубичасти дијаграм и хистограм) за приказ колоне са густином насељености и површином држава.</p>
+<p>Прво дајемо стубичасти дијаграм. Аргументи функције су ознаке стубића (име
+државе) и дужина стубића (густина насељености). Пошто држава у табели
+има преко 200, тешко је направити прегледан график са свим државамо.
+Зато смо узели само двадесет држава са највећом густином насељености.
+Због прегледности исписа згодније нам је да стубићи буду хоризонтални.
+Зато користимо функцију <code class="docutils literal notranslate"><span class="pre">barh()</span></code> уместо <code class="docutils literal notranslate"><span class="pre">bar()</span></code>. Пробајте и са
+<code class="docutils literal notranslate"><span class="pre">bar()</span></code> да видите како би изгледало.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">spd</span><span class="o">=</span><span class="n">dt</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;Density&#39;</span><span class="p">)</span>                  <span class="c1"># sortiramo tabelu po gustini naseljenosti i dodeljujemo je novoj tabeli</span>
+<span class="n">spd20</span><span class="o">=</span><span class="n">spd</span><span class="p">[</span><span class="o">-</span><span class="mi">20</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>                              <span class="c1"># zbog preglednosti, pomoću slajsa, izdvajamo samo poslednjih 20 redova</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="n">spd20</span><span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">],</span><span class="n">spd20</span><span class="p">[</span><span class="s1">&#39;Density&#39;</span><span class="p">])</span>    <span class="c1"># crtamo horizontalni stubični dijagram</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">BarContainer</span> <span class="nb">object</span> <span class="n">of</span> <span class="mi">19</span> <span class="n">artists</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<img alt="../_images/output_31_1.png" src="../_images/output_31_1.png" />
+
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <div class="course-content">
+            
+<p>Напомена</p>
+<p>Приметићете да пре цртања графикона Пајтон исписује неки текст. У овом случају је исписао &lt;BarContainer object of 19 artists&gt;. Ако вам овај испис смета, ставите тачка-зарез на крај реда у програму који исцртава графикон. Тада неће исписивати ништа.</p>
+
+    </div></div>
+<p>Други важан графикон за приказ расподеле података је хистограм. Он нам
+даје приказ броја држава по одређеним интервалима вредности за површину
+држава. Функција <code class="docutils literal notranslate"><span class="pre">.hist()</span></code> дели интервал од најмање до највеће
+вредности на десет једнаких под-интервала уколико не наведемо конкретан
+број као други аргумент функције. У овом примеру распон од 0 до 20
+милиона km² (што задајемо са <code class="docutils literal notranslate"><span class="pre">range=(0,2e7)</span></code>) делимо на 20 једнаких
+интервала и пребројавамо колико држава има у сваком од њих. У првом
+интервалу, од 0 до 100 000 квадратних килoмeтара, има скоро 200 држава.
+И Србија је међу њима. Ретке су оне које имају површину већу од 300 000
+km².</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">spd</span><span class="p">[</span><span class="s1">&#39;Area&#39;</span><span class="p">],</span><span class="mi">20</span><span class="p">,</span><span class="nb">range</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mf">2e7</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>                               <span class="c1"># crtanje mreže na grafikonu</span>
+</pre></div>
+</div>
+<img alt="../_images/output_34_0.png" src="../_images/output_34_0.png" />
+</div>
+<div class="section" id="id8">
+<h3>Филтрирање табеле<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>Филтрирање значи да од целе табеле желимо да издвојимо само оне редове
+који нас интересују. За филтрирање података у табели користимо
+критеријуме, односно логичке исказе као што је нпр.
+<code class="docutils literal notranslate"><span class="pre">dt['Continent']==&quot;North</span> <span class="pre">America&quot;</span></code>. Овде проверавамо које су вредности
+у колони <code class="docutils literal notranslate"><span class="pre">dt['Continent']</span></code> једнаке стрингу <code class="docutils literal notranslate"><span class="pre">&quot;North</span> <span class="pre">America&quot;</span></code>. У
+угласте заграде после назива табеле треба унети тражени критеријум. На
+тај начин од целе почетне табеле издвајамо само онај део табеле где је
+критеријум испуњен.</p>
+<p>На пример, овако можемо да издвојимо само државе које се налазе у
+Северној Америци.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dt</span><span class="p">[</span><span class="n">dt</span><span class="p">[</span><span class="s1">&#39;Continent&#39;</span><span class="p">]</span><span class="o">==</span><span class="s2">&quot;North America&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country</th>
+      <th>Continent</th>
+      <th>Population</th>
+      <th>Area</th>
+      <th>Density</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>22</th>
+      <td>Bermuda</td>
+      <td>North America</td>
+      <td>65773</td>
+      <td>53</td>
+      <td>1241.000000</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>Canada</td>
+      <td>North America</td>
+      <td>33098932</td>
+      <td>9984670</td>
+      <td>3.314975</td>
+    </tr>
+    <tr>
+      <th>80</th>
+      <td>Greenland</td>
+      <td>North America</td>
+      <td>56361</td>
+      <td>2166086</td>
+      <td>0.026020</td>
+    </tr>
+    <tr>
+      <th>174</th>
+      <td>St Pierre &amp; Miquelon</td>
+      <td>North America</td>
+      <td>7026</td>
+      <td>242</td>
+      <td>29.033058</td>
+    </tr>
+    <tr>
+      <th>214</th>
+      <td>United States</td>
+      <td>North America</td>
+      <td>298444215</td>
+      <td>9631420</td>
+      <td>30.986523</td>
+    </tr>
+  </tbody>
+</table>
+</div><p>Слично можемо да издвојимо све државе са мање од 20000 становника. Шта
+мислите колико их има?</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dt</span><span class="p">[</span><span class="n">dt</span><span class="p">[</span><span class="s1">&#39;Population&#39;</span><span class="p">]</span><span class="o">&lt;</span><span class="mi">20000</span><span class="p">]</span>
+</pre></div>
+</div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country</th>
+      <th>Continent</th>
+      <th>Population</th>
+      <th>Area</th>
+      <th>Density</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>6</th>
+      <td>Anguilla</td>
+      <td>South America</td>
+      <td>13477</td>
+      <td>102</td>
+      <td>132.127451</td>
+    </tr>
+    <tr>
+      <th>140</th>
+      <td>Montserrat</td>
+      <td>South America</td>
+      <td>9439</td>
+      <td>102</td>
+      <td>92.539216</td>
+    </tr>
+    <tr>
+      <th>144</th>
+      <td>Nauru</td>
+      <td>Oceania</td>
+      <td>13287</td>
+      <td>21</td>
+      <td>632.714286</td>
+    </tr>
+    <tr>
+      <th>171</th>
+      <td>Saint Helena</td>
+      <td>Africa</td>
+      <td>7502</td>
+      <td>413</td>
+      <td>18.164649</td>
+    </tr>
+    <tr>
+      <th>174</th>
+      <td>St Pierre &amp; Miquelon</td>
+      <td>North America</td>
+      <td>7026</td>
+      <td>242</td>
+      <td>29.033058</td>
+    </tr>
+    <tr>
+      <th>209</th>
+      <td>Tuvalu</td>
+      <td>Oceania</td>
+      <td>11810</td>
+      <td>26</td>
+      <td>454.230769</td>
+    </tr>
+    <tr>
+      <th>221</th>
+      <td>Wallis and Futuna</td>
+      <td>Oceania</td>
+      <td>16025</td>
+      <td>274</td>
+      <td>58.485401</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
+        <div class="course-content">
+<p>Испишите податаке из табеле <cite>dt</cite> за европске земље са више од 20 милиона становника.</p>
+
+    </div></div>
+</div>
+<div class="section" id="id9">
+<h3>Записивање табеле у датотеку<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<p>Измењену табелу, за почетак, имамо само у меморији рачунара. Ако хоћемо
+да сачувамо те измене, потребно је да снимимо табелу у датотеку.
+Функција коју користимо за ту намену је <code class="docutils literal notranslate"><span class="pre">.to_csv()</span></code>. Аргумент функције
+је назив датотеке у коју ћемо да снимимо табелу.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dt</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;data/countries2.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id10">
+<h2>Статистички и графички приказ табеларних података<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<p>Статистичко и графичко приказивање података тешко је раздвојити. Велики
+број података, без обзира да ли их је 20 или 20 милијарди, приказујемо у
+сведеном облику користећи мањи број карактеристичних вредности или
+графички приказ расподела и вредности података. Не постоји “најбољи
+начин” за приказивање података. Избор начина приказа зависи од природе
+податка. Морамо да их познајемо да бисмо знали шта да ставимо у први
+план. Почећемо са једноставнијим примерима – са низовима података.</p>
+<div class="section" id="id11">
+<h3>Колоне са номиналним подацима<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<p>У табели типа <em>dataframe</em> можемо да имамо различите типове података.
+Битно је само да су у једној колони сви подаци истог типа. Два
+најважнија типа података, заправо групе типова су номинални (или
+категоријални) и нумерички подаци. Номинални подаци означавају нека
+имена, називе или кратке текстуалне описе. Имена држава представљају
+номиналне податке. Чак и када се означавају бројем (нпр. број зграде у
+улици), ти подаци остају номинални. Са тим бројевима се ништа не рачуна.
+Већина номиналних података су стрингови који означавају различите
+објекте. Једина статистика коју можемо да радимо са номиналним подацима
+јесте да пребројимо колико их има, тј. да видимо колико се често
+појављују.</p>
+<p>У табели <code class="docutils literal notranslate"><span class="pre">dt</span></code> имамо колону са именом континента на ком се држава
+налази. Ако бисмо пребројали колико се пута појављују ови подаци, видели
+бисмо колико држава имамо на ком континенту. Библиотека <em>pandas</em> нам
+омогућава да то радимо помоћу функције <code class="docutils literal notranslate"><span class="pre">.value_counts()</span></code> коју
+применимо на одговарајућу колону.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vc</span><span class="o">=</span><span class="n">dt</span><span class="p">[</span><span class="s1">&#39;Continent&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">vc</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Africa</span>           <span class="mi">57</span>
+<span class="n">Asia</span>             <span class="mi">52</span>
+<span class="n">Europe</span>           <span class="mi">47</span>
+<span class="n">South</span> <span class="n">America</span>    <span class="mi">45</span>
+<span class="n">Oceania</span>          <span class="mi">21</span>
+<span class="n">North</span> <span class="n">America</span>     <span class="mi">5</span>
+<span class="n">Name</span><span class="p">:</span> <span class="n">Continent</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span>
+</pre></div>
+</div>
+<p>Видимо да је резултат функције <code class="docutils literal notranslate"><span class="pre">.value_counts()</span></code> серија у којој су
+наведени континенти са бројем држава које тај континент има. Серије су у
+суштини табеле са само једном колоном. Као што табеле осим регуларних
+колона имају и индексну колону у којој су имена редова, тако и серије
+имају низ са вредностима и индексни низ у ком су имена редова, тј.
+елемената у серији. Конкретно, серија <code class="docutils literal notranslate"><span class="pre">vc</span></code> има низ са вредностима
+<code class="docutils literal notranslate"><span class="pre">vc.values</span></code> (број држава на континенту) и индексни низ <code class="docutils literal notranslate"><span class="pre">vc.index</span></code>
+(име континента).</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vc</span><span class="o">.</span><span class="n">values</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">array</span><span class="p">([</span><span class="mi">57</span><span class="p">,</span> <span class="mi">52</span><span class="p">,</span> <span class="mi">47</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span>  <span class="mi">5</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">int64</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vc</span><span class="o">.</span><span class="n">index</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Index</span><span class="p">([</span><span class="s1">&#39;Africa&#39;</span><span class="p">,</span> <span class="s1">&#39;Asia&#39;</span><span class="p">,</span> <span class="s1">&#39;Europe&#39;</span><span class="p">,</span> <span class="s1">&#39;South America&#39;</span><span class="p">,</span> <span class="s1">&#39;Oceania&#39;</span><span class="p">,</span>
+       <span class="s1">&#39;North America&#39;</span><span class="p">],</span>
+      <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;object&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id12">
+<h3>Колоне са нумеричким подацима<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<p>Бројеви могу да се пореде међусобно по величини. Са бројевима могу да се
+раде и рачунске операције. Због тога су могућности за обраду и анализу
+нумеричких низова много веће него за номиналне. Наш основни задатак је
+да цео низ података што једноставније и разумљивије представимо. Низ
+података често поједностављено приказујемо помоћу карактеристичних
+вредности, као што је нпр. средња вредност. Други важан начин је да цео
+низ података прикажемо графички како бисмо податке могли да “видимо”.</p>
+</div>
+<div class="section" id="id13">
+<h3>Описивање низова података преко карактеристичних вредности<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<p>Шта је просек? Просек није дефинисан као посебна математичка функција.
+Просек је било која вредност (као што су средња вредност, мод или
+медијана) која се узима за карактеристичну вредност једног скупа
+различитих података. Кад се каже просек, најчешће се мисли на средњу
+вредност (аритметичку средину), али просек може да буде и медијана или
+мод. Врло је важно да се нагласи шта подразумевамо под просеком.
+Конкретно, просек оцена у школи је њихова аритметичка средина.</p>
+<p>За рачунање средње вредности се користи <em>pandas</em> функција <code class="docutils literal notranslate"><span class="pre">.mean()</span></code>
+која се примењује на нумеричку колону у табели. Користећи табелу са
+подацима о државама израчунаћемо средњу вредност површина држава.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dt</span><span class="p">[</span><span class="s1">&#39;Area&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">598226.9559471365</span>
+</pre></div>
+</div>
+<p>Средња вредност површина свих држава је приближно 598 000 km². Толика би
+била површина сваке појединачне државе на свету када би територија била
+равномерно распоређена. Ми, међутим, знамо да постоје минијатурне државе
+са по неколико квадратних километра, док са друге стране имамо Русију са
+17 милиона km². Шта нам говори средња вредност? Да ли је површина
+типичне државе на овој планети?</p>
+<p>Ако погледамо хистограм површине држава, видећемо да је највише малих
+држава, а да су врло ретке оне са више милиона km². Држава са површином
+598 000 km² би била заста велика. Не рачунајући Русију, само би Украјина
+од европских држава имала већу површину. То свакако не би била типична
+држава. Од ње би 45 држава биле веће, док би чак 182 биле мање. Боља
+мера за типичну површину државе би била да има подједнак број држава
+које имају већу и држава које имају мању површину. Пошто имамо 227
+држава, она која се налази на 114 месту по површини одговара том
+критеријуму.</p>
+<p>Да бисмо видели која је 114 држава по површини, сортираћемо табелу
+<code class="docutils literal notranslate"><span class="pre">dt</span></code> тако да не буде у растућем већ у опадајућем редоследу
+(<code class="docutils literal notranslate"><span class="pre">acdending=False</span></code>) и тако да занемари старе индексе и постави нове
+према (<code class="docutils literal notranslate"><span class="pre">ignore_index=True</span></code>). Онда ћемо помоћу <em>слајса</em> приказати
+редове од 112 до 114, који због тога што први ред има индекс 0,
+одговарају државама са 113, 114. и 115. највећом површином.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sdt</span><span class="o">=</span><span class="n">dt</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;Area&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># sortiramo u opadajućem resoledu</span>
+<span class="n">sdt</span><span class="p">[</span><span class="mi">112</span><span class="p">:</span><span class="mi">115</span><span class="p">]</span> <span class="c1"># izdavajamo redove 112, 113 i 114 pomoću slajsa</span>
+</pre></div>
+</div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country</th>
+      <th>Continent</th>
+      <th>Population</th>
+      <th>Area</th>
+      <th>Density</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>112</th>
+      <td>Serbia</td>
+      <td>Europe</td>
+      <td>9396411</td>
+      <td>88361</td>
+      <td>106.341157</td>
+    </tr>
+    <tr>
+      <th>113</th>
+      <td>Azerbaijan</td>
+      <td>Asia</td>
+      <td>7961619</td>
+      <td>86600</td>
+      <td>91.935554</td>
+    </tr>
+    <tr>
+      <th>114</th>
+      <td>Austria</td>
+      <td>Europe</td>
+      <td>8192880</td>
+      <td>83870</td>
+      <td>97.685466</td>
+    </tr>
+  </tbody>
+</table>
+</div><p>Површина типичне државе је 86 600 km² колика је површина Азербејџана.
+Исту ову вредност смо могли да добијемо помоћу функције <code class="docutils literal notranslate"><span class="pre">.median()</span></code>.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dt</span><span class="p">[</span><span class="s1">&#39;Area&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">86600.0</span>
+</pre></div>
+</div>
+<p><strong>Медијана</strong> је математичка функција која нам даје средишњу вредност за
+низ који је сортиран по величини. Она дели низ на два дела са истим
+бројем елемената. Ако низ, на пример, садржи висине 101 ученика,
+медијана нам даје висину 51. највишег ученика. Од њега има 50 виших и 50
+нижих, док је он у самој средини. Ако имамо паран број ученика, онда
+нема ученика који је баш у средини па се медијана рачуна мало другачије:
+као средња вредност висине првог елемента испод и првог изнад те
+средине. То значи да је медијана низа од 100 бројева, средња вредност
+50. и 51. највеће вредности овог низа.</p>
+
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
+        <div class="course-content">
+<p>Одредите медијану броја становника за државе света. Да ли за Србију можемо да кажемо да је типична држава и по овом параметру?</p>
+
+    </div></div>
+<p>Трећа помињана мера за карактеристичну вредност је мод. Она говори о
+томе која се вредност понавља највише пута. Функција која рачуна мод је
+<code class="docutils literal notranslate"><span class="pre">.mode()</span></code>. Она се, пре свега, примењује за номиналне податке.</p>
+
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
+        <div class="course-content">
+<p>Одредите медијану броја становника за државе света. Да ли за Србију можемо да кажемо да је типична држава и по овом параметру?</p>
+
+    </div></div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dt</span><span class="p">[</span><span class="s1">&#39;Population&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">4786994.0</span>
+</pre></div>
+</div>
+<p>Приметите како код школских оцена обе мере: и средња вредност и медијана
+добро карактеришу цео низ оцена. То је зато што су оцене углавном
+груписане и немају велике екстреме. Међутим, када поредимо средњу
+вредност и медијану за низ у ком су неке вредности милион пута веће од
+неких других, ове две мере дају прилично различите вредности.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">niz_ocena</span><span class="o">=</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+<span class="n">serija</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">niz_ocena</span><span class="p">)</span>               <span class="c1"># lakše je računati kad listu pretvorimo u seriju</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Средња вредност:&#39;</span><span class="p">,</span> <span class="n">serija</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span> <span class="c1"># onda možemo da primenimo pandas funkcije</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Медијана:&#39;</span><span class="p">,</span> <span class="n">serija</span><span class="o">.</span><span class="n">median</span><span class="p">())</span> <span class="c1"># .mean() i .median()</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Средња</span> <span class="n">вредност</span><span class="p">:</span> <span class="mf">4.333333333333333</span>
+<span class="n">Медијана</span><span class="p">:</span> <span class="mf">4.5</span>
+</pre></div>
+</div>
+<p>Екстреме имамо код површине држава и броја становника. Погледајте
+хистограм држава по површини. Највише је оних малих које видимо као врло
+висок стубић са леве стране, док су са десне само појединачни случајеви
+врло ретких великих држава. Не улазећи даље у тумачење података, хоћемо
+само да покажемо колико средња вредност и медијана могу да се разликују.
+На графикону доле, црвеном линијом је обележена медијана, а наранџастом
+средња вредност. Пробајте сами да откријете шта ради која линија у
+програму.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mArea</span><span class="o">=</span><span class="n">dt</span><span class="p">[</span><span class="s1">&#39;Area&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">mdArea</span><span class="o">=</span><span class="n">dt</span><span class="p">[</span><span class="s1">&#39;Area&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">dt</span><span class="p">[</span><span class="s1">&#39;Area&#39;</span><span class="p">],</span><span class="mi">40</span><span class="p">,</span><span class="nb">range</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mf">2e6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">vlines</span><span class="p">(</span><span class="n">mArea</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="n">colors</span><span class="o">=</span><span class="s1">&#39;orange&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">vlines</span><span class="p">(</span><span class="n">mdArea</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="n">colors</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+<img alt="../_images/output_72_0.png" src="../_images/output_72_0.png" />
+</div>
+<div class="section" id="id14">
+<h3>Груписање и рачунање статистика за групе<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<p>За анализе података по групама користимо функцију <code class="docutils literal notranslate"><span class="pre">groupby()</span></code>. У
+примеру са државама света, можемо да направимо преглед укупне површине
+или броја становника груписаних по континентима. Аргумент функције је
+назив колоне по којој групишемо податке.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">bspk</span><span class="o">=</span><span class="n">dt</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Continent&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Структура коју добијамо после груписања није <em>dataframe</em> већ сложенији
+тип податка који није погодан за приказивање на екрану. Када изаберемо
+податак који групишемо и функцију којом то радимо, онда резултат постаје
+серија. У примеру који наводимо груписаћемо податке о броју становника
+тако што ћемо те површине сабрати. За то користимо функцију <code class="docutils literal notranslate"><span class="pre">.sum()</span></code>.
+Слично бисмо, користећи неке друге функције, могли да нађемо државе са
+најмањим бројем становника по континентима или средње вредности броја
+становника.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">bspk</span><span class="p">[</span><span class="s1">&#39;Population&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Continent</span>
+<span class="n">Africa</span>            <span class="mi">910844133</span>
+<span class="n">Asia</span>             <span class="mi">3958768088</span>
+<span class="n">Europe</span>            <span class="mi">727803762</span>
+<span class="n">North</span> <span class="n">America</span>     <span class="mi">331672307</span>
+<span class="n">Oceania</span>            <span class="mi">33131662</span>
+<span class="n">South</span> <span class="n">America</span>     <span class="mi">561824599</span>
+<span class="n">Name</span><span class="p">:</span> <span class="n">Population</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span>
+</pre></div>
+</div>
+
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
+        <div class="course-content">
+<p>Израчунајте колика је средња густина становништва за сваки континент.</p>
+
+    </div></div>
+</div>
+</div>
+</div>
+
+
+    </div>
+    
+    <div>
+<div class="lecture-prev-next-toggle">
+  <a  href="index.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходна лекција </span> </a>
+  
+  <a id="nextLectureLink" class="lecture-toggler-arrows"><span> Следећа лекција</span>  <i class="fas fa-arrow-right fa"></i> </a>
+</div>
+
+<script type="text/javascript">
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+</script>
+</div>
+
+    
+  </div>
+</div>
+
+<div class="petljadoc-resources">
+  <span class="pull-left">(Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>) <br> © 2022 Petlja</span>
+</div>
+
+
+<div class="lectureToolbox">
+
+  <label class="font-size-toggle" id="fontSizeToggle">
+
+      <i class="fas fa-font"></i><label>Слова</label>
+  </label>
+  <div class="font-change d-none" id="fontChangeModal">
+      <span class="dec-letter-icon" id="decLetterIcon">A-</span>
+      <label id="currentFontSize">16</label>
+      <span class="inc-letter-icon" id="incLetterIcon">A+</span>
+  </div>
+</div>
+
+</div>
+
+  </body>
+</html>
