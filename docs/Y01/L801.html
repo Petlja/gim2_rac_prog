@@ -6,6 +6,7 @@
     <title>Увод у процесирање низова података у Пајтону</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -108,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -151,7 +153,7 @@
       eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
       eBookConfig.app = eBookConfig.host + '/runestone';
       eBookConfig.ajaxURL = eBookConfig.app + '/ajax/';
-      eBookConfig.course = '';
+      eBookConfig.course = 'Настава програмирања за Други разред гимназије';
       eBookConfig.logLevel = '0';
       eBookConfig.loginRequired = 'false';
       eBookConfig.build_info = "";
@@ -252,6 +254,7 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Y01/L801.html><div class="studioLecture" id=activity-L801><i class="fas fa-file-alt activity-icon"></i>Увод у процесирање низова података</div></a>
+                <a href=../Y01/03_zadaci.html><div class="studioLecture" id=activity-03_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - процесирање низова</div></a>
                 <a href=../Y01/Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension.html><div class="studioLecture" id=activity-Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension><i class="fas fa-file-alt activity-icon"></i>Креирање листа у Пајтону</div></a>
                 <a href=../Y01/Низови%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-Низови%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>Низови - додатни задаци</div></a>
                 <a href=../Y01/test801.html><div class="studioLecture" id=activity-test801><i class="far fa-question-circle activity-icon"></i>Квиз - Листе</div></a>
@@ -265,6 +268,7 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Y05/L805.html><div class="studioLecture" id=activity-L805><i class="fas fa-file-alt activity-icon"></i>Сортирање</div></a>
+                <a href=../Y05/04_zadaci.html><div class="studioLecture" id=activity-04_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - сортирање</div></a>
                 <a href=../Y05/Сортирање%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-Сортирање%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>Сортирање - додатни задаци</div></a>
                 <a href=../Y05/test805.html><div class="studioLecture" id=activity-test805><i class="far fa-question-circle activity-icon"></i>Квиз - Сортирање</div></a>
                 </div>
@@ -277,6 +281,7 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Y06/L806.html><div class="studioLecture" id=activity-L806><i class="fas fa-file-alt activity-icon"></i>Филтрирање и претраживање</div></a>
+                <a href=../Y06/05_zadaci.html><div class="studioLecture" id=activity-05_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - филтрирање и претраживање</div></a>
                 <a href=../Y06/test806.html><div class="studioLecture" id=activity-test806><i class="far fa-question-circle activity-icon"></i>Квиз - Филтрирање и претраживање</div></a>
                 </div>
             </div>
@@ -461,18 +466,18 @@ for i in range(5):
 </textarea>
 </div>
 
-    <div class="note-wrapper infonote-type">
+    <div class="note-wrapper technicalnote-type">
         <div class="note-icon-holder"> </div>
-        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <img src="../_static/img/technicalnote-img.svg" class="note-image technicalnote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p>Изврши исти програм и у Пајтон окружењу!</p>
-<p>Покрени IDLE, из фолдера <code class="docutils literal notranslate"><span class="pre">P01</span></code> учитај програм <code class="docutils literal notranslate"><span class="pre">Dejanove_ocene.py</span></code> и изврши га.</p>
+<p>Покрени овај програм на свом рачунару тако што ћеш у <a class="reference external" href="https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip">фолдеру за рад офлајн</a>, покренути IDLE и из потфолдеру <code class="docutils literal notranslate"><span class="pre">P01</span></code> извршити програм <code class="docutils literal notranslate"><span class="pre">Dejanove_ocene.py</span></code>.</p>
 
-    </p></div></div>
+    </div></div>
 </div>
-<div class="section" id="id3">
-<h2>Стандардне функције<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id4">
+<h2>Стандардне функције<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <p>Како би се писање програма поједноставило за велики број важних задатака који се веома
 често користе у Пајтону већ постоје функције које их обављају. На пример, функција
 <code class="docutils literal notranslate"><span class="pre">len</span></code> рачуна дужину низа, као што смо већ видели.
@@ -487,7 +492,7 @@ for i in range(5):
     data-audio=''   
                data-hidehistory=true
        >
-print(min[2,3])
+print(min(2,3))
 </textarea>
 </div>
 
@@ -498,7 +503,7 @@ print(min[2,3])
     data-audio=''   
                data-hidehistory=true
        >
-print(max[4,5,-2])
+print(max(4,5,-2))
 </textarea>
 </div>
 
@@ -514,8 +519,8 @@ print("Najmanja Dejanova ocena je", min(Dejanove_ocene))
 print("Najveca Dejanova ocena je", max(Dejanove_ocene))
 </textarea>
 </div>
-<div class="section" id="id4">
-<h3>Пример 1.<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id5">
+<h3>Пример 1.<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <p>Променљива <code class="docutils literal notranslate"><span class="pre">Zikine_ocene</span></code> садржи Жикине оцене из информатике. Она је сакривена негде на овој страни и ти је не видиш.
 У следећем малом програму поправи програмски код тако да добијеш највећу и најмању Жикину оцену из информатике,
 као и колико оцена је Жика добио из информатике.</p>
@@ -551,8 +556,8 @@ myTests().main()
 </textarea>
 </div>
 </div>
-<div class="section" id="id5">
-<h3>Пример 2.<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id6">
+<h3>Пример 2.<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
 <p>Функција <code class="docutils literal notranslate"><span class="pre">sum</span></code> рачуна збир елемената низа, рецимо овако:</p>
 
 <div data-childcomponent="primer1-13" class="course-box course-box-problem course-content">
@@ -599,8 +604,8 @@ myTests().main()
 </div>
 </div>
 </div>
-<div class="section" id="id6">
-<h2>Дефинисање функција и минимум низа<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id7">
+<h2>Дефинисање функција и минимум низа<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
 <p>Када неки компликован процес треба поновити више пута, а не постоји већ дефинисана функција
 која то може да уради за нас, постоји могућност да дефинишемо своју функцију.
 Функција је мала целина која мора бити именована како бисмо касније могли да је
@@ -643,18 +648,18 @@ izvestaj_o_ocenama(&quot;Milena&quot;, predmeti, Milenine_ocene)
 </textarea>
 </div>
 
-    <div class="note-wrapper infonote-type">
+    <div class="note-wrapper technicalnote-type">
         <div class="note-icon-holder"> </div>
-        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <img src="../_static/img/technicalnote-img.svg" class="note-image technicalnote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p>Изврши исти програм и у Пајтон окружењу!</p>
-<p>Покрени IDLE, из фолдера <code class="docutils literal notranslate"><span class="pre">P01</span></code> учитај програм <code class="docutils literal notranslate"><span class="pre">Ocene_izvestaj.py</span></code> и изврши га.</p>
+<p>Покрени овај програм на свом рачунару тако што ћеш у <a class="reference external" href="https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip">фолдеру за рад офлајн</a>, покренути IDLE и из потфолдеру <code class="docutils literal notranslate"><span class="pre">P06</span></code> извршити програм <code class="docutils literal notranslate"><span class="pre">Ocene_izvestaj.py</span></code>.</p>
 
-    </p></div></div>
+    </div></div>
 <p>Функције се најчешће користе за аутоматизацију релативно компликованих рачунских процеса.</p>
-<div class="section" id="id7">
-<h3>Пример 3.<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id9">
+<h3>Пример 3.<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
 <p>Написати функцију <code class="docutils literal notranslate"><span class="pre">min_niza(A)</span></code> која одређује најмањи елемент низа <code class="docutils literal notranslate"><span class="pre">A</span></code>
 и враћа га као резултат свог рада, али без коришћења уграђене функције <code class="docutils literal notranslate"><span class="pre">min</span></code>.</p>
 <p><em>Решење.</em> Погледајмо, прво, како бисмо овај проблем решили када тражимо мањи од два броја, А0 и А1:</p>
@@ -722,23 +727,23 @@ print(min_niza([3,1,5,-1,2]))
 </textarea>
 </div>
 
-    <div class="note-wrapper infonote-type">
+    <div class="note-wrapper technicalnote-type">
         <div class="note-icon-holder"> </div>
-        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <img src="../_static/img/technicalnote-img.svg" class="note-image technicalnote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p>Изврши исти програм и у Пајтон окружењу!</p>
-<p>Покрени IDLE, из фолдера <code class="docutils literal notranslate"><span class="pre">P01</span></code> учитај програм <code class="docutils literal notranslate"><span class="pre">Min_niza.py</span></code> и изврши га.</p>
+<p>Покрени овај програм на свом рачунару тако што ћеш у <a class="reference external" href="https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip">фолдеру за рад офлајн</a>, покренути IDLE и из потфолдеру <code class="docutils literal notranslate"><span class="pre">P01</span></code> извршити програм <code class="docutils literal notranslate"><span class="pre">Min_niza.py</span></code>.</p>
 
-    </p></div></div>
+    </div></div>
 </div>
 </div>
-<div class="section" id="id8">
-<h2>Учитавање низова<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id11">
+<h2>Учитавање низова<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
 <p>Постоје ситуације када је потребно од корисника учитати низ података и обрадити га. У следећем примеру
 ћемо се подсетити како се низови бројева учитавају од корисника, односно уносе помоћу тастатуре.</p>
-<div class="section" id="id9">
-<h3>Пример.<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id12">
+<h3>Пример.<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
 <p>Написати програм који од корисника учитава оцене из неколико предмета, а онда исписује из којих предмета има најлошију оцену, а из којих има
 најбољу оцену.</p>
 
@@ -793,13 +798,13 @@ for-циклуса се на крај сваког од њих дода по ј�
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p>Да би видео како програм ради покрени IDLE окружење из фолдера <code class="docutils literal notranslate"><span class="pre">P01</span></code> учитај програм <code class="docutils literal notranslate"><span class="pre">Naj_predmeti.py</span></code> и изврши га.</p>
 <p>Ево и кратке видео демонстрације:</p>
 
     <div  id="GnsDOougiPA" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/GnsDOougiPA/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
         </div>
       
 
@@ -811,282 +816,13 @@ for-циклуса се на крај сваког од њих дода по ј�
     
     
     
-    </p></div></div>
-</div>
-</div>
-<div class="section" id="id10">
-<h2>Задаци<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id11">
-<h3>Задатак 1.<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
-<p>Напиши функцију <code class="docutils literal notranslate"><span class="pre">najveci_od_tri(A0,</span> <span class="pre">A1,</span> <span class="pre">A2)</span></code> која рачуна  и враћа највећи од три дата броја, али без употребе стандардне функције <code class="docutils literal notranslate"><span class="pre">max</span></code>.
-Напиши тело функције, па онда провери како функција ради.</p>
-
-<div data-childcomponent="zadatak1-1" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=zadatak1-1 data-lang="python" 
-      data-timelimit=25000    
-    data-audio=''   
-          data-runortest="test1 test2 test3"     data-hidehistory=true
-       >
-# -*- acsection: general-init -*-
-# -*- acsection: main -*-
-def najveci_od_tri(A0, A1, A2):
-    # Овде напиши функцију која рачуна највећи од бројева A0, A1, A2
-    return -1234  # поправи овај ред!
-
-# Провера
-test1 = najveci_od_tri(5, 7, 11)
-test2 = najveci_od_tri(5, 75, 11)
-test3 = najveci_od_tri(55, 7, 11)
-# -*- acsection: after-main -*-
-print(test1, test2, test3)
-====
-from unittest.gui import TestCaseGui
-class myTests(TestCaseGui):
-    def testOne(self):
-        rez1 = max([5, 7,  11])
-        rez2 = max([5, 75, 11])
-        rez3 = max([55, 7, 11])
-        run_test = acMainSection(test1=test1,test2=test2,test3=test3)
-        self.assertEqual(run_test["test1"], rez1, "Вредност променљиве 'test1' треба да буде %s" % rez1)
-        self.assertEqual(run_test["test2"], rez2, "Вредност променљиве 'test2' треба да буде %s" % rez2)
-        self.assertEqual(run_test["test3"], rez3, "Вредност променљиве 'test3' треба да буде %s" % rez3)
-myTests().main()
-</textarea>
-</div>
-</div>
-<div class="section" id="id12">
-<h3>Задатак 2.<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
-<p>Напиши функцију <code class="docutils literal notranslate"><span class="pre">najveci_od_pet(A0,</span> <span class="pre">A1,</span> <span class="pre">A2,</span> <span class="pre">A3,</span> <span class="pre">A4)</span></code>
-која рачуна и враћа највећи од пет датих бројева, али без употребе стандардне функције <code class="docutils literal notranslate"><span class="pre">max</span></code>.
-Напиши тело функције, па онда провери како функција ради.</p>
-
-<div data-childcomponent="zadatak1-2" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=zadatak1-2 data-lang="python" 
-      data-timelimit=25000    
-    data-audio=''   
-          data-runortest="test1 test2 test3 test4 test5"     data-hidehistory=true
-       >
-# -*- acsection: general-init -*-
-# -*- acsection: main -*-
-def najveci_od_pet(A0, A1, A2, A3, A4):
-    # Овде напиши функцију која рачуна највећи од бројева A0, A1, A2, A3, A4
-    return -1234  # поправи овај ред!
-
-# Провера
-test1 = najveci_od_pet(1, 2, 3, 4, 55)
-test2 = najveci_od_pet(1, 2, 3, 44, 5)
-test3 = najveci_od_pet(1, 2, 33, 4, 5)
-test4 = najveci_od_pet(1, 22, 3, 4, 5)
-test5 = najveci_od_pet(11, 2, 3, 4, 5)
-# -*- acsection: after-main -*-
-print(test1, test2, test3, test4, test5)
-====
-from unittest.gui import TestCaseGui
-class myTests(TestCaseGui):
-    def testOne(self):
-        rez1 = max(1, 2, 3, 4, 55)
-        rez2 = max(1, 2, 3, 44, 5)
-        rez3 = max(1, 2, 33, 4, 5)
-        rez4 = max(1, 22, 3, 4, 5)
-        rez5 = max(11, 2, 3, 4, 5)
-        run_test=acMainSection(test1=test1,test2=test2,test3=test3,test4=test4,test5=test5)
-        self.assertEqual(run_test["test1"], rez1, "Вредност променљиве 'test1' треба да буде %s" % rez1)
-        self.assertEqual(run_test["test2"], rez2, "Вредност променљиве 'test2' треба да буде %s" % rez2)
-        self.assertEqual(run_test["test3"], rez3, "Вредност променљиве 'test3' треба да буде %s" % rez3)
-        self.assertEqual(run_test["test4"], rez4, "Вредност променљиве 'test4' треба да буде %s" % rez4)
-        self.assertEqual(run_test["test5"], rez5, "Вредност променљиве 'test5' треба да буде %s" % rez5)
-myTests().main()
-</textarea>
-</div>
-</div>
-<div class="section" id="id13">
-<h3>Задатак 3.<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
-<p>Напиши функцију <code class="docutils literal notranslate"><span class="pre">max_niza(A)</span></code> која за дати низ <code class="docutils literal notranslate"><span class="pre">А</span></code>
-рачуна и враћа највећи елемент, али без употребе стандардне функције <code class="docutils literal notranslate"><span class="pre">max</span></code>.
-Напиши тело функције, па онда провери како функција ради.</p>
-
-<div data-childcomponent="zadatak1-3" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=zadatak1-3 data-lang="python" 
-      data-timelimit=25000    
-    data-audio=''   
-          data-runortest="test1 test2 test3 test4 test5"     data-hidehistory=true
-       >
-# -*- acsection: general-init -*-
-# -*- acsection: main -*-
-def max_niza(A):
-    # Овде напиши функцију
-    return -1234  # поправи овај ред!
-
-# Провера
-test1 = max_niza([1, 2, 3, 4, 55, 6])
-test2 = max_niza([1, 2, 3, 4, 55, 777])
-test3 = max_niza([111, 2, 3, 4])
-test4 = max_niza([1, 222])
-test5 = max_niza([22])
-# -*- acsection: after-main -*-
-print(test1, test2, test3, test4, test5)
-====
-from unittest.gui import TestCaseGui
-class myTests(TestCaseGui):
-    def testOne(self):
-        rez1 = max([1, 2, 3, 4, 55, 6])
-        rez2 = max([1, 2, 3, 4, 55, 777])
-        rez3 = max([111, 2, 3, 4])
-        rez4 = max([1, 222])
-        rez5 = max([22])
-        run_test=acMainSection(test1=test1,test2=test2,test3=test3,test4=test4,test5=test5)
-        self.assertEqual(run_test["test1"], rez1, "Вредност променљиве 'test1' треба да буде %s" % rez1)
-        self.assertEqual(run_test["test2"], rez2, "Вредност променљиве 'test2' треба да буде %s" % rez2)
-        self.assertEqual(run_test["test3"], rez3, "Вредност променљиве 'test3' треба да буде %s" % rez3)
-        self.assertEqual(run_test["test4"], rez4, "Вредност променљиве 'test4' треба да буде %s" % rez4)
-        self.assertEqual(run_test["test5"], rez5, "Вредност променљиве 'test5' треба да буде %s" % rez5)
-myTests().main()
-</textarea>
-</div>
-</div>
-<div class="section" id="id14">
-<h3>Задатак 4.<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
-<p>На контролној провери из информатике у једној школи се ради шест задатака од којих сваки носи по 20 поена, али наставник даје оцену
-на основу пет најбоље урађених задатака. Напиши функцију <code class="docutils literal notranslate"><span class="pre">zbir_najboljih_5(Z1,</span> <span class="pre">Z2,</span> <span class="pre">Z3,</span> <span class="pre">Z4,</span> <span class="pre">Z5,</span> <span class="pre">Z6)</span></code> која
-за списак поена по задацима које је освојио неки ученик на тој контролној провери враћа збир поена пет најбоље урађених задатака.
-Напиши тело функције, па онда провери како функција ради.
-(Упутство: Задатак можеш решити употребом неколико if-ова, али и употребом стандардних функција <code class="docutils literal notranslate"><span class="pre">sum</span></code> и <code class="docutils literal notranslate"><span class="pre">min</span></code>)</p>
-
-<div data-childcomponent="zadatak1-4" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=zadatak1-4 data-lang="python" 
-      data-timelimit=25000    
-    data-audio=''   
-          data-runortest="test1 test2 test3"     data-hidehistory=true
-       >
-# -*- acsection: general-init -*-
-# -*- acsection: main -*-
-def zbir_najboljih_5(Z1, Z2, Z3, Z4, Z5, Z6):
-    # Овде напиши функцију
-    return -1234  # поправи овај ред!
-
-# Провера
-test1 = zbir_najboljih_5(20, 20, 20, 20, 20, 20)
-test2 = zbir_najboljih_5(10,  0, 15, 20,  0, 20)
-test3 = zbir_najboljih_5( 5,  7, 10, 15, 17, 20)
-# -*- acsection: after-main -*-
-print(test1, test2, test3)
-====
-from unittest.gui import TestCaseGui
-class myTests(TestCaseGui):
-    def testOne(self):
-        L = [20, 20, 20, 20, 20, 20]; rez1 = sum(L) - min(L)
-        L = [10,  0, 15, 20,  0, 20]; rez2 = sum(L) - min(L)
-        L = [ 5,  7, 10, 15, 17, 20]; rez3 = sum(L) - min(L)
-        run_test = acMainSection(test1=test1,test2=test2,test3=test3)
-        self.assertEqual(run_test["test1"], rez1, "Вредност променљиве 'test1' треба да буде %s" % rez1)
-        self.assertEqual(run_test["test2"], rez2, "Вредност променљиве 'test2' треба да буде %s" % rez2)
-        self.assertEqual(run_test["test3"], rez3, "Вредност променљиве 'test3' треба да буде %s" % rez3)
-myTests().main()
-</textarea>
-</div>
-</div>
-<div class="section" id="id15">
-<h3>Задатак 5.<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
-<p>Напиши функцију <code class="docutils literal notranslate"><span class="pre">srednji_od_tri(A0,</span> <span class="pre">A1,</span> <span class="pre">A2)</span></code> која рачуна и враћа средњи од три дата броја.
-Напиши тело функције, па онда провери како функција ради.
-(Упутство: Задатак можеш решити употребом неколико if-ова, али и употребом функција <code class="docutils literal notranslate"><span class="pre">sum</span></code>, <code class="docutils literal notranslate"><span class="pre">min</span></code> и <code class="docutils literal notranslate"><span class="pre">max</span></code>!)</p>
-
-<div data-childcomponent="zadatak1-5" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=zadatak1-5 data-lang="python" 
-      data-timelimit=25000    
-    data-audio=''   
-          data-runortest="test1 test2 test3 test4"     data-hidehistory=true
-       >
-# -*- acsection: general-init -*-
-# -*- acsection: main -*-
-def srednji_od_tri(A0, A1, A2):
-    # Овде напиши функцију
-    return -1234  # поправи овај ред!
-
-# Провера
-test1 = srednji_od_tri(2, 7, 5)
-test2 = srednji_od_tri(2, 5, 5)
-test3 = srednji_od_tri(5, 5, 1)
-test4 = srednji_od_tri(2, 2, 2)
-# -*- acsection: after-main -*-
-print(test1, test2, test3, test4)
-====
-from unittest.gui import TestCaseGui
-class myTests(TestCaseGui):
-    def testOne(self):
-        L = [2, 7, 5]; rez1 = sum(L) - min(L) - max(L)
-        L = [2, 5, 5]; rez2 = sum(L) - min(L) - max(L)
-        L = [5, 5, 1]; rez3 = sum(L) - min(L) - max(L)
-        L = [2, 2, 2]; rez4 = sum(L) - min(L) - max(L)
-        run_test=acMainSection(test1=test1,test2=test2,test3=test3,test4=test4)
-        self.assertEqual(run_test["test1"], rez1, "Вредност променљиве 'test1' треба да буде %s" % rez1)
-        self.assertEqual(run_test["test2"], rez2, "Вредност променљиве 'test2' треба да буде %s" % rez2)
-        self.assertEqual(run_test["test3"], rez3, "Вредност променљиве 'test3' треба да буде %s" % rez3)
-        self.assertEqual(run_test["test4"], rez4, "Вредност променљиве 'test4' треба да буде %s" % rez4)
-myTests().main()
-</textarea>
-</div>
-</div>
-<div class="section" id="id16">
-<h3>Задатак 6.<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
-<p>Један наставник информатике закључује оцене тако што пре рачунања средње оцене одбаци највећу и најмању оцену,
-па средњу вредност рачуна на основу преосталих оцена. Напиши функцију <code class="docutils literal notranslate"><span class="pre">srednja_vrednost_bez_ekstrema(ocene)</span></code> која
-за списак оцена које је неки ученик добио из информатике рачуна средњу оцену на описани начин.
-Напиши тело функције, па онда провери како функција ради.
-(Упутство: Задатак можеш решити употребом стандардних функција <code class="docutils literal notranslate"><span class="pre">sum</span></code>, <code class="docutils literal notranslate"><span class="pre">min</span></code>, <code class="docutils literal notranslate"><span class="pre">max</span></code> и <code class="docutils literal notranslate"><span class="pre">len</span></code>)</p>
-
-<div data-childcomponent="zadatak1-6" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=zadatak1-6 data-lang="python" 
-      data-timelimit=25000    
-    data-audio=''   
-          data-runortest="test1 test2 test3"     data-hidehistory=true
-       >
-# -*- acsection: general-init -*-
-# -*- acsection: main -*-
-def srednja_vrednost_bez_ekstrema(ocene):
-    # Овде напиши функцију
-    return -1234  # поправи овај ред!
-
-# Провера
-test1 = srednja_vrednost_bez_ekstrema([5, 5, 5, 5, 5])
-test2 = srednja_vrednost_bez_ekstrema([1, 2, 5])
-test3 = srednje_vrednost_bez_ekstrema([1, 2, 3, 4, 5])
-# -*- acsection: after-main -*-
-print(test1, test2, test3)
-====
-from unittest.gui import TestCaseGui
-class myTests(TestCaseGui):
-    def testOne(self):
-        L = [5, 5, 5, 5, 5]; rez1 = (sum(L) - min(L) - max(L))/(len(L) - 2)
-        L = [1, 2, 5];       rez2 = (sum(L) - min(L) - max(L))/(len(L) - 2)
-        L = [1, 2, 3, 4, 5]; rez3 = (sum(L) - min(L) - max(L))/(len(L) - 2)
-        run_test = acMainSection(test1=test1,test2=test2,test3=test3)
-        self.assertEqual(run_test["test1"], rez1, "Вредност променљиве 'test1' треба да буде %s" % rez1)
-        self.assertEqual(run_test["test2"], rez2, "Вредност променљиве 'test2' треба да буде %s" % rez2)
-        self.assertEqual(run_test["test3"], rez3, "Вредност променљиве 'test3' треба да буде %s" % rez3)
-myTests().main()
-</textarea>
-</div>
-</div>
-</div>
-<div class="section" id="id17">
-<h2>Задаци из Алгоритамске збирке задатака<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h2>
-<p>У следећим задацима можете да увежбате основне операције са низовима.</p>
-<p><a class="reference external" href="https://petlja.org/biblioteka/r/problemi/Zbirka/ispis_u_obratnom_redosledu">https://petlja.org/biblioteka/r/problemi/Zbirka/ispis_u_obratnom_redosledu</a></p>
-<p><a class="reference external" href="https://petlja.org/biblioteka/r/problemi/Zbirka/parni_i_neparni_elementi">https://petlja.org/biblioteka/r/problemi/Zbirka/parni_i_neparni_elementi</a></p>
+    </div></div>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-</div>
-<div class="section" id="id18">
-<h2>(Администрација)<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
-<p><em>Овде не треба ништа да радиш! Слободно пређи на следећу лекцију!</em></p>
+
+    <div data-component="reveal" id="administracija"   data-showtitle="#" data-hidetitle="Hide">
+    <p><em>Овде не треба ништа да радиш! Слободно пређи на следећу лекцију!</em></p>
 
 <div data-childcomponent="Zikine_ocene" class="course-box course-box-problem course-content">
 
@@ -1098,6 +834,9 @@ myTests().main()
 Zikine_ocene = [2, 4, 3, 5, 4, 5, 4, 3]
 </textarea>
 </div>
+
+    </div>
+    </div>
 </div>
 </div>
 

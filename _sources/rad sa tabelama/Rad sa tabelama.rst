@@ -93,10 +93,10 @@ Jasna   ž   14      51   162
 
 .. code:: ipython3
 
-    sum = 0
-    for dete in podaci:
-        sum += dete[4]
-    sum/len(podaci)
+  sum = 0                # početna vrednost sume je 0
+  for dete in podaci:    # za svaki red u tabeli
+      sum += dete[4]     # uzimamo vrednost sa indeksom 4 (visina) i dodajemo je na sumu
+  sum/len(podaci)        # sumu na kraju delimo sa brojem redova tabele
 
 
 

@@ -235,17 +235,19 @@
 
 Ево Пајтон функције која тачно тако сортира низ:
 
-.. code-block:: python
+.. activecode:: selection_sort1
+   :passivecode: true
+   :nocodelens:
 
-   def selection_sort(L):
+    def selection_sort(L):
        n = len(L)
-       if n <= 1: return
-       for i in range (n-1):
-           m = i
-           for j in range(i+1,n):
-               if L[j] < L[m]:
-                   m = j
-           L[i], L[m] = L[m], L[i]
+       if n <= 1: return       # ako niz ima jedan ili nijedan element, to je već sortirano
+       for i in range (n-1):   # za svaki indeks od 0 do pretposlednjeg
+           m = i                     # indeks najmanje vrednosti (m) za početak je i 
+           for j in range(i+1,n):    # za svaku poziciju u ostatku liste (j)
+               if L[j] < L[m]:       # ispitujemo da li ima vrednost manju od L[m] 
+                   m = j             # ako jeste, novi indeks najmanje vrednosti postaje j
+           L[i], L[m] = L[m], L[i]   # nakon pretrage po j zamenjujemo vrednosti sa indeksima i i m 
 
 .. suggestionnote::
    
@@ -442,19 +444,21 @@
 
 Ево Пајтон функције која тачно тако сортира низ:
 
-.. code-block:: python
+.. activecode:: bubble_sort_1
+   :passivecode: true
+   :nocodelens:
 
    def bubble_sort(L):
        n = len(L)
        if n <= 1: return
-       zamena = True
-       while zamena:
-           zamena = False
-           for i in range(n-1):
-               if L[i] > L[i+1]:
-                   zamena = True
-                   L[i], L[i+1] = L[i+1], L[i]
-           n -= 1
+       zamena = True       # zamena je u startu True kako bi se petlja pokrenula
+       while zamena:       # dok god imamo bar jednu izmenu, petlja pravi još jedan prolaz
+           zamena = False         # na početku petlje resetujemo promenljivu zamena
+           for i in range(n-1):   # pretražujemo ostatak liste
+               if L[i] > L[i+1]:  # ako nađemo da je neka vrednost veća od sledeće u listi 
+                   zamena = True  # onda počinje zamena
+                   L[i], L[i+1] = L[i+1], L[i]   # najveću vrednost stalno guramo na kraj liste
+           n -= 1          # n smanjujemo za 1 na kraju petlje jer smo poslednji element već sortirali
 
 Неколико коментара:
 

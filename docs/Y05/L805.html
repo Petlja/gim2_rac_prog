@@ -6,6 +6,7 @@
     <title>Сортирање</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -108,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -151,7 +153,7 @@
       eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
       eBookConfig.app = eBookConfig.host + '/runestone';
       eBookConfig.ajaxURL = eBookConfig.app + '/ajax/';
-      eBookConfig.course = '';
+      eBookConfig.course = 'Настава програмирања за Други разред гимназије';
       eBookConfig.logLevel = '0';
       eBookConfig.loginRequired = 'false';
       eBookConfig.build_info = "";
@@ -252,6 +254,7 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Y01/L801.html><div class="studioLecture" id=activity-L801><i class="fas fa-file-alt activity-icon"></i>Увод у процесирање низова података</div></a>
+                <a href=../Y01/03_zadaci.html><div class="studioLecture" id=activity-03_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - процесирање низова</div></a>
                 <a href=../Y01/Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension.html><div class="studioLecture" id=activity-Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension><i class="fas fa-file-alt activity-icon"></i>Креирање листа у Пајтону</div></a>
                 <a href=../Y01/Низови%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-Низови%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>Низови - додатни задаци</div></a>
                 <a href=../Y01/test801.html><div class="studioLecture" id=activity-test801><i class="far fa-question-circle activity-icon"></i>Квиз - Листе</div></a>
@@ -265,6 +268,7 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Y05/L805.html><div class="studioLecture" id=activity-L805><i class="fas fa-file-alt activity-icon"></i>Сортирање</div></a>
+                <a href=../Y05/04_zadaci.html><div class="studioLecture" id=activity-04_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - сортирање</div></a>
                 <a href=../Y05/Сортирање%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-Сортирање%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>Сортирање - додатни задаци</div></a>
                 <a href=../Y05/test805.html><div class="studioLecture" id=activity-test805><i class="far fa-question-circle activity-icon"></i>Квиз - Сортирање</div></a>
                 </div>
@@ -277,6 +281,7 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Y06/L806.html><div class="studioLecture" id=activity-L806><i class="fas fa-file-alt activity-icon"></i>Филтрирање и претраживање</div></a>
+                <a href=../Y06/05_zadaci.html><div class="studioLecture" id=activity-05_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - филтрирање и претраживање</div></a>
                 <a href=../Y06/test806.html><div class="studioLecture" id=activity-test806><i class="far fa-question-circle activity-icon"></i>Квиз - Филтрирање и претраживање</div></a>
                 </div>
             </div>
@@ -478,18 +483,18 @@ for i in range(k):
 </textarea>
 </div>
 
-    <div class="note-wrapper infonote-type">
+    <div class="note-wrapper technicalnote-type">
         <div class="note-icon-holder"> </div>
-        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <img src="../_static/img/technicalnote-img.svg" class="note-image technicalnote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p>Изврши исти програм и у Пајтон окружењу!</p>
-<p>Покрени IDLE, из фолдера <code class="docutils literal notranslate"><span class="pre">P05</span></code> учитај програм <code class="docutils literal notranslate"><span class="pre">K_najvecih.py</span></code> и изврши га.</p>
+<p>Покрени овај програм на свом рачунару тако што ћеш у <a class="reference external" href="https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip">фолдеру за рад офлајн</a>, покренути IDLE и из потфолдеру <code class="docutils literal notranslate"><span class="pre">P05</span></code> извршити програм <code class="docutils literal notranslate"><span class="pre">K_najvecih.py</span></code>.</p>
 <p>Ево и кратке видео демонстрације:</p>
 
     <div  id="Z-NWhN9DFME" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/Z-NWhN9DFME/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
         </div>
       
 
@@ -501,10 +506,10 @@ for i in range(k):
     
     
     
-    </p></div></div>
+    </div></div>
 </div>
-<div class="section" id="id4">
-<h3>Пример.<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id5">
+<h3>Пример.<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <p>Написати програм који од корисника учитава <em>паран</em> природан број <span class="math notranslate nohighlight">\(n\)</span>, потом
 <span class="math notranslate nohighlight">\(n\)</span> различитих реалних бројева и онда одређује и штампа реалан број <span class="math notranslate nohighlight">\(m\)</span>
 такав да је тачно половина од учитаних бројева мања од <span class="math notranslate nohighlight">\(m\)</span>, а друга половина
@@ -556,19 +561,19 @@ print(m)
 </textarea>
 </div>
 
-    <div class="note-wrapper infonote-type">
+    <div class="note-wrapper technicalnote-type">
         <div class="note-icon-holder"> </div>
-        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <img src="../_static/img/technicalnote-img.svg" class="note-image technicalnote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p>Изврши исти програм и у Пајтон окружењу!</p>
-<p>Покрени IDLE, из фолдера <code class="docutils literal notranslate"><span class="pre">P05</span></code> учитај програм <code class="docutils literal notranslate"><span class="pre">Broj_na_sredini.py</span></code> и изврши га.</p>
+<p>Покрени овај програм на свом рачунару тако што ћеш у <a class="reference external" href="https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip">фолдеру за рад офлајн</a>, покренути IDLE и из потфолдеру <code class="docutils literal notranslate"><span class="pre">P05</span></code> извршити програм <code class="docutils literal notranslate"><span class="pre">Broj_na_sredini.py</span></code>.</p>
 
-    </p></div></div>
+    </div></div>
 </div>
 </div>
-<div class="section" id="id5">
-<h2>Како раде алгоритми за сортирање<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id7">
+<h2>Како раде алгоритми за сортирање<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
 <p>Погледајмо следећи пример у коме нам је за групу ученика дато неколико података о њима (име, пол, старост, маса и висина):</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">razred</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">&quot;Ana&quot;</span><span class="p">,</span>     <span class="s2">&quot;ž&quot;</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">46</span><span class="p">,</span> <span class="mi">160</span><span class="p">],</span>
           <span class="p">[</span><span class="s2">&quot;Bojan&quot;</span><span class="p">,</span>   <span class="s2">&quot;m&quot;</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">52</span><span class="p">,</span> <span class="mi">165</span><span class="p">],</span>
@@ -608,6 +613,7 @@ print(m)
 </div>
 <p>Најмањи елемент у том низу је -1 и ми ћемо га практично заменити са првим елементом:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>-1; 1, 2, 5, 0, 3, 4
+#-#            #-#
 </pre></div>
 </div>
 <p>За потребе овог примера иза елемента -1 смо ставили ознаку <code class="docutils literal notranslate"><span class="pre">;</span></code> како бисмо означили да је тај део низа сортиран и
@@ -619,18 +625,22 @@ print(m)
 <p>Тако смо сортирани део низа продужили за једно место. Најмањи број <em>у остатку низа</em> (дакле, иза знака <code class="docutils literal notranslate"><span class="pre">;</span></code>)
 сада је 1, па ћемо га заменити са трећим елементом низа:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>-1, 0, 1; 5, 2, 3, 4
+      #-#   #-#
 </pre></div>
 </div>
 <p>Најмањи број <em>у остатку низа</em> (дакле, иза знака <code class="docutils literal notranslate"><span class="pre">;</span></code>) је 2, и њега ћемо заменити са четвртим елементом низа:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>-1, 0, 1, 2; 5, 3, 4
+         #-##-#
 </pre></div>
 </div>
 <p>Најмањи број <em>у остатку низа</em> је 3, и њега ћемо заменити са петим елементом низа:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>-1, 0, 1, 2, 3; 5, 4
+            #-##-#
 </pre></div>
 </div>
 <p>Коначно, најмањи број <em>у остатку низа</em> је 4, и њега ћемо заменити са шестим елементом низа:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>-1, 0, 1, 2, 3, 4; 5
+               #-##-#
 </pre></div>
 </div>
 <p>Алгоритам се завршава када у несортираном делу низа остане само један елемент, јер је он сигурно најмањи <em>у несортираном
@@ -647,6 +657,12 @@ print(m)
         <span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">L</span><span class="p">[</span><span class="n">m</span><span class="p">]</span> <span class="o">=</span> <span class="n">L</span><span class="p">[</span><span class="n">m</span><span class="p">],</span> <span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 </pre></div>
 </div>
+
+    <div class="note-wrapper suggestionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/suggestionnote-img.svg" class="note-image suggestionnote-image" /> 
+        <div class="course-content">
+            
 <p>Неколико коментара:</p>
 <ol class="arabic simple">
 <li><p>за празне низове и низове дужине 1 не треба ништа радити (нпр. низ [3] је већ сортиран);</p></li>
@@ -657,11 +673,13 @@ print(m)
 размењује вредност првог елемента несортираног дела низа (што је <code class="docutils literal notranslate"><span class="pre">L[i]</span></code>) са најмањим елементом у несортираном делу низа
 (што је <code class="docutils literal notranslate"><span class="pre">L[m]</span></code>).</p></li>
 </ol>
+
+    </div></div>
 <p>Следећи видео демонстрира рад функције <code class="docutils literal notranslate"><span class="pre">selection_sort</span></code> на још једном примеру:</p>
 
     <div  id="xDeoqAycfT8" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/xDeoqAycfT8/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
         </div>
       
 
@@ -672,8 +690,8 @@ print(m)
     </div>
     
     
-    <div class="section" id="id6">
-<h3>Пример.<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+    <div class="section" id="id8">
+<h3>Пример.<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
 <p>Написати програм који од корисника учитава природан број <span class="math notranslate nohighlight">\(n\)</span> који представља број запослених у
 некој компанији, потом учитава <span class="math notranslate nohighlight">\(n\)</span> реалних бројева који представљају
 зараде запослених и штампа те зараде по величини, од највеће до најмање.</p>
@@ -711,18 +729,18 @@ for i in range(n):
 </textarea>
 </div>
 
-    <div class="note-wrapper infonote-type">
+    <div class="note-wrapper technicalnote-type">
         <div class="note-icon-holder"> </div>
-        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <img src="../_static/img/technicalnote-img.svg" class="note-image technicalnote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p>Изврши исти програм и у Пајтон окружењу!</p>
-<p>Покрени IDLE, из фолдера <code class="docutils literal notranslate"><span class="pre">P05</span></code> учитај програм <code class="docutils literal notranslate"><span class="pre">Od_najvece_do_najmanje.py</span></code> и изврши га.</p>
+<p>Покрени овај програм на свом рачунару тако што ћеш у <a class="reference external" href="https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip">фолдеру за рад офлајн</a>, покренути IDLE и из потфолдеру <code class="docutils literal notranslate"><span class="pre">P05</span></code> извршити програм <code class="docutils literal notranslate"><span class="pre">Od_najvece_do_najmanje.py</span></code>.</p>
 
-    </p></div></div>
+    </div></div>
 </div>
-<div class="section" id="id7">
-<h3>Пример.<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id10">
+<h3>Пример.<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
 <p>Решићемо поново следећи задатак.
 Написати програм који од корисника учитава природан број <span class="math notranslate nohighlight">\(n\)</span> који представља број запослених у
 некој компанији, и природан број <span class="math notranslate nohighlight">\(k\)</span>, потом учитава <span class="math notranslate nohighlight">\(n\)</span> реалних бројева који представљају
@@ -762,18 +780,18 @@ for i in range(k):
 </textarea>
 </div>
 
-    <div class="note-wrapper infonote-type">
+    <div class="note-wrapper technicalnote-type">
         <div class="note-icon-holder"> </div>
-        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <img src="../_static/img/technicalnote-img.svg" class="note-image technicalnote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p>Изврши исти програм и у Пајтон окружењу!</p>
-<p>Покрени IDLE, из фолдера <code class="docutils literal notranslate"><span class="pre">P05</span></code> учитај програм <code class="docutils literal notranslate"><span class="pre">Samo_K_najvecih.py</span></code> и изврши га.</p>
+<p>Покрени овај програм на свом рачунару тако што ћеш у <a class="reference external" href="https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip">фолдеру за рад офлајн</a>, покренути IDLE и из потфолдеру <code class="docutils literal notranslate"><span class="pre">P05</span></code> извршити програм <code class="docutils literal notranslate"><span class="pre">Samo_K_najvecih.py</span></code>.</p>
 
-    </p></div></div>
+    </div></div>
 </div>
-<div class="section" id="id8">
-<h3>Пример.<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id12">
+<h3>Пример.<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
 <p>У следећем низу је за групу ученика дато неколико података о њима (име, пол, старост, маса и висина):</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">razred</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">&quot;Ana&quot;</span><span class="p">,</span>     <span class="s2">&quot;ž&quot;</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">46</span><span class="p">,</span> <span class="mi">160</span><span class="p">],</span>
           <span class="p">[</span><span class="s2">&quot;Bojan&quot;</span><span class="p">,</span>   <span class="s2">&quot;m&quot;</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">52</span><span class="p">,</span> <span class="mi">165</span><span class="p">],</span>
@@ -840,15 +858,15 @@ ispisi_razred(razred)
 </textarea>
 </div>
 
-    <div class="note-wrapper infonote-type">
+    <div class="note-wrapper technicalnote-type">
         <div class="note-icon-holder"> </div>
-        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <img src="../_static/img/technicalnote-img.svg" class="note-image technicalnote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p>Изврши исти програм и у Пајтон окружењу!</p>
-<p>Покрени IDLE, из фолдера <code class="docutils literal notranslate"><span class="pre">P05</span></code> учитај програм <code class="docutils literal notranslate"><span class="pre">SelSort_po_kriterijumu.py</span></code> и изврши га.</p>
+<p>Покрени овај програм на свом рачунару тако што ћеш у <a class="reference external" href="https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip">фолдеру за рад офлајн</a>, покренути IDLE и из потфолдеру <code class="docutils literal notranslate"><span class="pre">P05</span></code> извршити програм <code class="docutils literal notranslate"><span class="pre">SelSort_po_kriterijumu.py</span></code>.</p>
 
-    </p></div></div>
+    </div></div>
 </div>
 </div>
 <div class="section" id="bubble-sort">
@@ -958,7 +976,7 @@ ispisi_razred(razred)
 
     <div  id="vY8QD8UYLpk" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/vY8QD8UYLpk/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
         </div>
       
 
@@ -969,8 +987,8 @@ ispisi_razred(razred)
     </div>
     
     
-    <div class="section" id="id9">
-<h3>Пример.<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+    <div class="section" id="id14">
+<h3>Пример.<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
 <p>У следећем низу је за групу ученика дато неколико података о њима (име, пол, старост, маса и висина):</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">razred</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">&quot;Ana&quot;</span><span class="p">,</span>     <span class="s2">&quot;ž&quot;</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">46</span><span class="p">,</span> <span class="mi">160</span><span class="p">],</span>
           <span class="p">[</span><span class="s2">&quot;Bojan&quot;</span><span class="p">,</span>   <span class="s2">&quot;m&quot;</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">52</span><span class="p">,</span> <span class="mi">165</span><span class="p">],</span>
@@ -1040,369 +1058,15 @@ ispisi_razred(razred)
 </textarea>
 </div>
 
-    <div class="note-wrapper infonote-type">
+    <div class="note-wrapper technicalnote-type">
         <div class="note-icon-holder"> </div>
-        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <img src="../_static/img/technicalnote-img.svg" class="note-image technicalnote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p>Изврши исти програм и у Пајтон окружењу!</p>
-<p>Покрени IDLE, из фолдера <code class="docutils literal notranslate"><span class="pre">P05</span></code> учитај програм <code class="docutils literal notranslate"><span class="pre">BubSort_po_kriterijumu.py</span></code> и изврши га.</p>
+<p>Покрени овај програм на свом рачунару тако што ћеш у <a class="reference external" href="https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip">фолдеру за рад офлајн</a>, покренути IDLE и из потфолдеру <code class="docutils literal notranslate"><span class="pre">P05</span></code> извршити програм <code class="docutils literal notranslate"><span class="pre">BubSort_po_kriterijumu.py</span></code>.</p>
 
-    </p></div></div>
-</div>
-</div>
-<div class="section" id="id10">
-<h2>Задаци.<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id11">
-<h3>Задатак 1.<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
-<p>Написати Пајтон функцију <code class="docutils literal notranslate"><span class="pre">kti_po_velicini(L,</span> <span class="pre">k)</span></code> која враћа елемент низа <code class="docutils literal notranslate"><span class="pre">L</span></code> који је k-ти по величини
-у том низу.</p>
-
-<div data-childcomponent="primer5-Z1" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=primer5-Z1 data-lang="python" 
-      data-timelimit=25000    
-    data-audio=''   
-          data-runortest="test1 test2 test3"     data-hidehistory=true
-       >
-# -*- acsection: general-init -*-
-# -*- acsection: main -*-
-
-def kti_po_velicini(L, k):
-    # Овде напиши функцију
-    return -1234  # поправи овај ред!
-
-# Провера
-test1 = kti_po_velicini([3, 1, 2, 5, 4, 7, 1, 0], 1)
-test2 = kti_po_velicini([3, 1, 2, 5, 4, 7, 1, 0], 3)
-test3 = kti_po_velicini([3, 1, 2, 5, 4, 7, 1, 0], 8)
-# -*- acsection: after-main -*-
-
-print(test1, test2, test3)
-====
-from unittest.gui import TestCaseGui
-class myTests(TestCaseGui):
-    def testOne(self):
-        def __kpv(L, k):
-           L.sort(reverse=True)
-           return L[k-1]
-        rez1 = __kpv([3, 1, 2, 5, 4, 7, 1, 0], 1)
-        rez2 = __kpv([3, 1, 2, 5, 4, 7, 1, 0], 3)
-        rez3 = __kpv([3, 1, 2, 5, 4, 7, 1, 0], 8)
-        run_test = acMainSection(test1=test1,test2=test2,test3=test3)
-        self.assertEqual(run_test["test1"], rez1, "Вредност променљиве 'test1' треба да буде '%s'" % rez1)
-        self.assertEqual(run_test["test2"], rez2, "Вредност променљиве 'test2' треба да буде '%s'" % rez2)
-        self.assertEqual(run_test["test3"], rez3, "Вредност променљиве 'test3' треба да буде '%s'" % rez3)
-myTests().main()
-</textarea>
-</div>
-</div>
-<div class="section" id="id12">
-<h3>Задатак 2*.<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
-<p>За два низа бројева кажемо да је један <em>пермутација</em> оног другог ако се елементи првог низа
-могу испремештати тако да се добије онај други низ. Написати Пајтон функцију <code class="docutils literal notranslate"><span class="pre">permutacija_od(L,</span> <span class="pre">M)</span></code> која проверава да ли
-је низ <code class="docutils literal notranslate"><span class="pre">M</span></code> пермутација низа <code class="docutils literal notranslate"><span class="pre">M</span></code>.</p>
-<p><em>Идеја решења.</em> Сортирај оба низа и провери да ли су добијени низови једнаки!</p>
-
-<div data-childcomponent="primer5-Z5666" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=primer5-Z5666 data-lang="python" 
-      data-timelimit=25000    
-    data-audio=''   
-          data-runortest="test1 test2 test3"     data-hidehistory=true
-       >
-# -*- acsection: general-init -*-
-# -*- acsection: main -*-
-
-def permutacija_od(L, M):
-    # Овде напиши функцију
-    return -1234 # поправи овај ред
-
-test1 = permutacija_od([2, 1, 4, 5, 3], [5, 4, 1, 3, 2]) # jeste
-test2 = permutacija_od([1, 2, 4, 3], [2, 4, 5, 1]) # nije
-test3 = permutacija_od([3, 1, 4, 2], [2, 3, 2, 4]) # nije
-# -*- acsection: after-main -*-
-
-print(test1, test2, test3)
-====
-from unittest.gui import TestCaseGui
-class myTests(TestCaseGui):
-    def testOne(self):
-        rez1 = True
-        rez2 = False
-        rez3 = False
-        run_test = acMainSection(test1=test1,test2=test2,test3=test3)
-        self.assertEqual(run_test["test1"], rez1, "Вредност променљиве 'test1' треба да буде '%s'" % rez1)
-        self.assertEqual(run_test["test2"], rez2, "Вредност променљиве 'test2' треба да буде '%s'" % rez2)
-        self.assertEqual(run_test["test3"], rez3, "Вредност променљиве 'test3' треба да буде '%s'" % rez3)
-myTests().main()
-</textarea>
-</div>
-</div>
-<div class="section" id="id13">
-<h3>Задатак 3.<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
-<p>Написати Пајтон функцију <code class="docutils literal notranslate"><span class="pre">selection_sort_desc(L)</span></code> која сортира низ стратегијом бирања највећег елемента
-(<em>selection sort</em>), тако да елементи низа буду поређани од највећег до најмањег елемента.</p>
-
-<div data-childcomponent="primer5-Z4" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=primer5-Z4 data-lang="python" 
-      data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
-               data-hidehistory=true
-       >
-def selection_sort_desc(L):
-    # Овде напиши функцију
-
-# Провера
-test1 = [3, 1, 4, 2, 7]
-selection_sort_desc(test1)
-test2 = [1, 2, 3, 4]
-selection_sort_desc(test2)
-test3 = [4, 3, 2, 1]
-selection_sort_desc(test3)
-
-print(test1)
-print(test2)
-print(test3)
-</textarea>
-</div>
-</div>
-<div class="section" id="id14">
-<h3>Задатак 4.<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
-<p>Написати Пајтон функцију <code class="docutils literal notranslate"><span class="pre">bubble_sort_desc(L)</span></code> која сортира низ бабл-сорт стратегијом,
-али тако да елементи низа буду поређани од највећег до најмањег елемента.</p>
-
-<div data-childcomponent="primer5-Z555" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=primer5-Z555 data-lang="python" 
-      data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
-               data-hidehistory=true
-       >
-def bubble_sort_desc(L):
-    # Овде напиши функцију
-
-# Провера
-test1 = [3, 1, 4, 2, 7]
-bubble_sort_desc(test1)
-test2 = [1, 2, 3, 4]
-bubble_sort_desc(test2)
-test3 = [4, 3, 2, 1]
-bubble_sort_desc(test3)
-
-print(test1)
-print(test2)
-print(test3)
-</textarea>
-</div>
-</div>
-<div class="section" id="id15">
-<h3>Задатак 5*.<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
-<p><em>Хиршов h-индекс</em> је једна од мера научне компетенције истраживача. Хиршов h-индекс неког истраживача је највећи број <span class="math notranslate nohighlight">\(n\)</span>
-такав да тај истраживач има барем <span class="math notranslate nohighlight">\(n\)</span> научних радова од којих је сваки цитиран барем <span class="math notranslate nohighlight">\(n\)</span> пута.</p>
-<p>На пример,</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Цитираност научних радова     Хиршов h-индекс     Образложење
--------------------------     ---------------     --------------------------------------------------------
-[0, 0, 0]                     0                   ниједан рад није цитиран ниједном
-[1, 1, 1, 1, 1, 1]            1                   има један рад који је цитиран једном, а нема
-                                                  два рада од којих је сваки цитиран бар два птуа
-[1, 2, 1, 1, 1, 1]            1                   (исто као горе)
-[1, 1, 10, 1, 5, 1]           2                   има два рада који су цитирани бар два пута, а нема
-                                                  три рада са особином да је сваки цитиран бар три пута
-</pre></div>
-</div>
-<p>Написати Пајтон функцију <code class="docutils literal notranslate"><span class="pre">h_indeks(citiranost)</span></code> која за листу са бројевима цитата научних радова истраживача (као у примеру)
-рачуна Хиршов h-индекс тог истраживача.</p>
-<p><em>Идеја решења.</em> Сортирати листу од већих ка мањим вредностима и онда проверити да ли је на првом месту тако сортиране листе број који
-је већи или једнак са 1, да ли је на другом месту број који је већи или једнак са 2, да ли је на трећем месту број који је
-већи или једнак са 3 итд. Водити рачуна о томе да индекси низова у Пајтону почињу од 0.</p>
-
-<div data-childcomponent="primer5-Z-хирш" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=primer5-Z-хирш data-lang="python" 
-      data-timelimit=25000    
-    data-audio=''   
-          data-runortest="test1 test2 test3 test4"     data-hidehistory=true
-       >
-# -*- acsection: general-init -*-
-# -*- acsection: main -*-
-
-def h_indeks(citiranost):
-    # Овде напиши функцију
-    return -1234  # поправи овај ред!
-
-# Провера
-test1 = h_indeks([0, 0, 0])
-test2 = h_indeks([1, 1, 1, 1, 1, 1])
-test3 = h_indeks([1, 2, 1, 1, 1, 1])
-test4 = h_indeks([1, 1, 10, 1, 5, 1])
-# -*- acsection: after-main -*-
-
-print(test1, test2, test3, test4)
-====
-from unittest.gui import TestCaseGui
-class myTests(TestCaseGui):
-    def testOne(self):
-        rez1 = 0
-        rez2 = 1
-        rez3 = 1
-        rez4 = 2
-        run_test = acMainSection(test1=test1,test2=test2,test3=test3,test4=test4)
-        self.assertEqual(run_test["test1"], rez1, "Вредност променљиве 'test1' треба да буде '%s'" % rez1)
-        self.assertEqual(run_test["test2"], rez2, "Вредност променљиве 'test2' треба да буде '%s'" % rez2)
-        self.assertEqual(run_test["test3"], rez3, "Вредност променљиве 'test3' треба да буде '%s'" % rez3)
-        self.assertEqual(run_test["test4"], rez4, "Вредност променљиве 'test4' треба да буде '%s'" % rez4)
-myTests().main()
-</textarea>
-</div>
-</div>
-<div class="section" id="id16">
-<h3>Задатак 6.<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
-<p>Написати Пајтон функцију <code class="docutils literal notranslate"><span class="pre">po_prezimenu(L)</span></code> која податке о ученицима једног разреда сортира по презимену.
-Подаци о ученицима су дати низом у коме сваки ред садржи име, презиме и оцене ученика, на пример овако:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">razred</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">[</span><span class="s2">&quot;Dejan&quot;</span><span class="p">,</span> <span class="s2">&quot;Dejanović&quot;</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span>
-    <span class="p">[</span><span class="s2">&quot;Mara&quot;</span><span class="p">,</span> <span class="s2">&quot;Marić&quot;</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
-    <span class="p">[</span><span class="s2">&quot;Miloš&quot;</span><span class="p">,</span> <span class="s2">&quot;Milošević&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
-    <span class="p">[</span><span class="s2">&quot;Petar&quot;</span><span class="p">,</span> <span class="s2">&quot;Marković&quot;</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
-<span class="p">]</span>
-</pre></div>
-</div>
-
-<div data-childcomponent="primer5-Z3" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=primer5-Z3 data-lang="python" 
-      data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
-               data-hidehistory=true
-    data-includesrc="def ispisi_razred(L):
-    for red in L:
-        for x in red:
-            s = str(x).rjust(10)
-            print(s, end=&quot;&quot;)
-        print()
-
-def po_prezimenu(L):
-    ???
-
-# Провера
-razred = [
-    [&quot;Dejan&quot;, &quot;Dejanović&quot;, 3, 4, 5, 4, 5],
-    [&quot;Mara&quot;, &quot;Marić&quot;, 4, 5, 5, 4, 2],
-    [&quot;Miloš&quot;, &quot;Milošević&quot;, 2, 5, 4, 3, 3],
-    [&quot;Petar&quot;, &quot;Marković&quot;, 5, 4, 5, 5, 5]
-]
-
-po_prezimenu(razred)
-ispisi_razred(razred)
-"   >
-
-
-</textarea>
-</div>
-
-    <div class="note-wrapper infonote-type">
-        <div class="note-icon-holder"> </div>
-        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
-        <div class="course-content">
-            <p>
-<p>Реши задатак и у Пајтон окружењу!</p>
-<p>Покрени IDLE, из фолдера <code class="docutils literal notranslate"><span class="pre">P05</span></code> учитај датотеку <code class="docutils literal notranslate"><span class="pre">Po_prezimenu.py</span></code> и ту реши задатак.</p>
-
-    </p></div></div>
-</div>
-<div class="section" id="id17">
-<h3>Задатак 7.<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
-<p>На такмичењу из информатике такмичари су радили по 4 задатка. Подаци о именима такмичара и о томе колико су
-поена за који задатак освојили дати су низом као у следећем примеру:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">takmicenje</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">[</span><span class="s2">&quot;Dejan&quot;</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">25</span><span class="p">],</span>
-    <span class="p">[</span><span class="s2">&quot;Mira&quot;</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">25</span><span class="p">],</span>
-    <span class="p">[</span><span class="s2">&quot;Milan&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
-    <span class="p">[</span><span class="s2">&quot;Milica&quot;</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">25</span><span class="p">],</span>
-    <span class="p">[</span><span class="s2">&quot;Nenad&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
-<span class="p">]</span>
-</pre></div>
-</div>
-<p>Написати Пајтон функцију <code class="docutils literal notranslate"><span class="pre">rang_lista(T)</span></code> која за овако представљене исписује ранг-листу. На пример,</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rang_lista</span><span class="p">(</span><span class="n">takmicenje</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>треба да испише:</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Milica 100
-Dejan 75
-Mira 70
-Nenad 40
-</pre></div>
-</div>
-
-<div data-childcomponent="primer5-Z7" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=primer5-Z7 data-lang="python" 
-      data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
-               data-hidehistory=true
-    data-includesrc="def rang_lista(T):
-    ???
-
-# Провера
-takmicenje = [
-    [&quot;Dejan&quot;, 25, 25, 0, 25],
-    [&quot;Mira&quot;, 25, 0, 20, 25],
-    [&quot;Milan&quot;, 0, 0, 10, 0],
-    [&quot;Milica&quot;, 25, 25, 25, 25],
-    [&quot;Nenad&quot;, 10, 0, 25, 5]
-]
-rang_lista(takmicenje)
-"   >
-
-
-</textarea>
-</div>
-
-    <div class="note-wrapper infonote-type">
-        <div class="note-icon-holder"> </div>
-        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
-        <div class="course-content">
-            <p>
-<p>Реши задатак и у Пајтон окружењу!</p>
-<p>Покрени IDLE, из фолдера <code class="docutils literal notranslate"><span class="pre">P05</span></code> учитај датотеку <code class="docutils literal notranslate"><span class="pre">Rang_lista.py</span></code> и ту реши задатак.</p>
-
-    </p></div></div>
-</div>
-<div class="section" id="id18">
-<h3>Задатак 8.<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
-<p>Написати Пајтон функцију <code class="docutils literal notranslate"><span class="pre">svi_razliciti(L)</span></code> која проверава да ли су сви елементи низа <code class="docutils literal notranslate"><span class="pre">L</span></code> различити.</p>
-
-<div data-childcomponent="primer5-Z6" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=primer5-Z6 data-lang="python" 
-      data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
-               data-hidehistory=true
-    data-includesrc="def svi_razliciti(L):
-    ???
-
-# Провера
-print(svi_razliciti([3, 1, 4, 2, 7]))
-print(svi_razliciti([3, 1, 4, 1, 3, 4, 1]))
-print(svi_razliciti([1]))
-"   >
-
-
-</textarea>
-</div>
-
-    <div class="note-wrapper infonote-type">
-        <div class="note-icon-holder"> </div>
-        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
-        <div class="course-content">
-            <p>
-<p>Реши задатак и у Пајтон окружењу!</p>
-<p>Покрени IDLE, из фолдера <code class="docutils literal notranslate"><span class="pre">P05</span></code> учитај датотеку <code class="docutils literal notranslate"><span class="pre">Svi_razliciti.py</span></code> и ту реши задатак.</p>
-
-    </p></div></div>
+    </div></div>
 </div>
 </div>
 </div>

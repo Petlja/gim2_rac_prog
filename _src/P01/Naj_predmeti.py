@@ -1,23 +1,22 @@
-# Učitavanje podataka
-n = int(input("Koliko ima predmeta? "))
+n = int(input("Koliko ima predmeta? "))         # unos broja predmeta
 print("Za", n, "predmeta unesi imena i ocene")
-predmeti = []
+predmeti = []                                   # liste predmeti i ocene su prazne na početku
 ocene = []
-for i in range(n):
-  ime = input("Ime "+ str(i+1) + ". predmeta: ")
-  ocena = int(input("Ocena: "))
-  predmeti.append(ime)
-  ocene.append(ocena)
+for i in range(n):                                  # za svaki predmet 
+  ime = input("Ime "+ str(i+1) + ". predmeta: ")    # prvo unosimo ime
+  ocena = int(input("Ocena: "))                     # pa onda ocenu koju pretvaramo u integer
+  predmeti.append(ime)                 # listi predmeti dodajemo novo ime
+  ocene.append(ocena)                  # listi ocene dodajemo novu ocenu
 
-# Računanje minimuma i maksimuma
+# računanje minimuma i maksimuma
 min_ocena = min(ocene)
 max_ocena = max(ocene)
 
-# Ispis predmeta iz kojih je učenih najbolje, odnosno, najlošije ocenjen
-if min_ocena == max_ocena:
-  print("Ti si primer konstantnog kvaliteta!")
-else:
-  print("Tvoji najbolje ocenjeni predmeti su:")
+# ispis predmeta iz kojih je učenih najbolje, odnosno, najlošije ocenjen
+if min_ocena == max_ocena:                      # ako su najveća i najmanja ocena iste
+  print("Ti si primer konstantnog kvaliteta!")  # ispiši ovu poruku
+else:                                           # u protivnom
+  print("Tvoji najbolje ocenjeni predmeti su:") # ispiši liste najbolje i nalošije ocenjenih predmeta
   for i in range(n):
     if(ocene[i] == max_ocena):
       print("-", predmeti[i])

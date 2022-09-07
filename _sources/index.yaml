@@ -99,6 +99,11 @@ lessons:
         file: Kreiranje lista u Pajtonu - List comprehension.rst 
         description: #Optional
         guid: 392fa143-13ac-4fdb-82f4-f55145f6cd11
+      - type: reading
+        title: Задаци - Креирање листа у Пајтону
+        file: 03_zadaci_2.rst 
+        description: #Optional
+        guid: 429f7e63-fb58-4df2-9a41-119303fad31d
       - type: coding-quiz
         title: Низови - додатни задаци
         problems:

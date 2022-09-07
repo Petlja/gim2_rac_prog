@@ -6,6 +6,7 @@
     <title>Обрада и приказ табеларних података</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -108,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -151,7 +153,7 @@
       eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
       eBookConfig.app = eBookConfig.host + '/runestone';
       eBookConfig.ajaxURL = eBookConfig.app + '/ajax/';
-      eBookConfig.course = '';
+      eBookConfig.course = 'Настава програмирања за Други разред гимназије';
       eBookConfig.logLevel = '0';
       eBookConfig.loginRequired = 'false';
       eBookConfig.build_info = "";
@@ -252,6 +254,7 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Y01/L801.html><div class="studioLecture" id=activity-L801><i class="fas fa-file-alt activity-icon"></i>Увод у процесирање низова података</div></a>
+                <a href=../Y01/03_zadaci.html><div class="studioLecture" id=activity-03_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - процесирање низова</div></a>
                 <a href=../Y01/Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension.html><div class="studioLecture" id=activity-Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension><i class="fas fa-file-alt activity-icon"></i>Креирање листа у Пајтону</div></a>
                 <a href=../Y01/Низови%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-Низови%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>Низови - додатни задаци</div></a>
                 <a href=../Y01/test801.html><div class="studioLecture" id=activity-test801><i class="far fa-question-circle activity-icon"></i>Квиз - Листе</div></a>
@@ -265,6 +268,7 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Y05/L805.html><div class="studioLecture" id=activity-L805><i class="fas fa-file-alt activity-icon"></i>Сортирање</div></a>
+                <a href=../Y05/04_zadaci.html><div class="studioLecture" id=activity-04_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - сортирање</div></a>
                 <a href=../Y05/Сортирање%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-Сортирање%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>Сортирање - додатни задаци</div></a>
                 <a href=../Y05/test805.html><div class="studioLecture" id=activity-test805><i class="far fa-question-circle activity-icon"></i>Квиз - Сортирање</div></a>
                 </div>
@@ -277,6 +281,7 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Y06/L806.html><div class="studioLecture" id=activity-L806><i class="fas fa-file-alt activity-icon"></i>Филтрирање и претраживање</div></a>
+                <a href=../Y06/05_zadaci.html><div class="studioLecture" id=activity-05_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - филтрирање и претраживање</div></a>
                 <a href=../Y06/test806.html><div class="studioLecture" id=activity-test806><i class="far fa-question-circle activity-icon"></i>Квиз - Филтрирање и претраживање</div></a>
                 </div>
             </div>
@@ -376,12 +381,12 @@
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/technicalnote-img.svg" class="note-image technicalnote-image" /> 
         <div class="course-content">
-            <p>
-<p>Остатак ове лекције препоручујемо да читаш на свом рачунару тако што ћеш у <a class="reference external" href="https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip">фолдеру за рад офлајн</a> покренути Џупитер свеску <cite>Obrada i prikaz tabelarnih podataka.ipynb</cite> на начин на који је то објашњено у поглављу <a class="reference external" href="/J0A/J0A.html#jupyter">Покретање Џупитер радних свески</a> у уводу овог приручника.</p>
+            
+<p>Препоручујемо да ову лекцију покренеш на свом рачунару тако што ћеш у <a class="reference external" href="https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip">фолдеру за рад офлајн</a> покренути Џупитер свеску <code class="docutils literal notranslate"><span class="pre">09_obrada.ipynb</span></code>, на начин на који је то објашњено у поглављу <a class="reference external" href="/J0A/J0A.html#jupyter">Покретање Џупитер радних свески</a> у уводу овог приручника, или тако што ћеш отићи на <a class="reference external" href="https://petlja.github.io/gim2_rac_prog_radni/lab/index.html">овај линк</a> и тамо радити задатке.</p>
 
-    </p></div></div>
-<div class="section" id="id5">
-<h3>Учитавање табеле из датотеке<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+    </div></div>
+<div class="section" id="id6">
+<h3>Учитавање табеле из датотеке<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
 <p>Податке најчешће чувамо у табелама. Чак су и базе података само
 колекције различитих табела. За поновну употребу табеле снимамо у
 датотеке (или фајлове, како их понекад зовемо). Те снимљене табеле
@@ -542,31 +547,38 @@
 </pre></div>
 </div>
 </div>
-<div class="section" id="id6">
-<h3>Додавање нових колона<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id7">
+<h3>Додавање нових колона<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
 <p>Табеле могу да се мењају, да се табели додају и бришу колоне и врсте,
 као и да се мењају вредности које су већ у табели. Ако бисмо хтели да
 додамо колону у којој ће бити густина насељености, треба само да
 израчунамо тражене вредности и ставимо их у посебну колону. Довољно је
 да, још увек непостојећој, колони са новим именом, нпр. <em>Density</em>,
 придружимо резултат тог израчунавања.</p>
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span> <span class="n">dt</span><span class="p">[</span><span class="s1">&#39;Density&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">dt</span><span class="p">[</span><span class="s1">&#39;Population&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">dt</span><span class="p">[</span><span class="s1">&#39;Area&#39;</span><span class="p">]</span>
-
-<span class="n">Напомена</span><span class="p">:</span> <span class="n">Приметите</span> <span class="n">како</span> <span class="n">једноставно</span> <span class="n">можемо</span> <span class="n">да</span> <span class="n">поделимо</span> <span class="n">све</span> <span class="n">вредности</span>
-<span class="n">једне</span> <span class="n">колоне</span> <span class="n">са</span> <span class="n">одговарајућим</span> <span class="n">вредностима</span> <span class="n">друге</span> <span class="n">колоне</span><span class="o">.</span> <span class="n">То</span> <span class="n">са</span> <span class="n">листама</span>
-<span class="n">не</span> <span class="n">можемо</span> <span class="n">да</span> <span class="n">радимо</span><span class="p">,</span> <span class="n">али</span> <span class="n">ако</span> <span class="n">користимо</span> <span class="o">*</span><span class="n">pandas</span><span class="o">*</span> <span class="n">табеле</span><span class="p">,</span> <span class="n">онда</span> <span class="n">ће</span>
-<span class="n">колоне</span> <span class="n">те</span> <span class="n">табеле</span> <span class="n">бити</span> <span class="n">променљиве</span> <span class="n">типа</span> <span class="o">*</span><span class="n">Series</span><span class="o">*.</span> <span class="n">За</span> <span class="n">серије</span> <span class="n">су</span> <span class="n">основне</span>
-<span class="n">математичке</span> <span class="n">операције</span> <span class="n">дефинисане</span> <span class="n">тако</span> <span class="n">да</span> <span class="n">операције</span> <span class="n">вршимо</span> <span class="n">за</span> <span class="n">сваки</span>
-<span class="n">елемент</span> <span class="n">једне</span> <span class="n">серије</span> <span class="n">са</span> <span class="n">одговарајућим</span> <span class="n">елементом</span> <span class="n">из</span> <span class="n">друге</span><span class="o">.</span> <span class="n">Некад</span> <span class="n">је</span>
-<span class="n">згодно</span> <span class="n">листе</span> <span class="n">претворити</span> <span class="n">у</span> <span class="n">серије</span> <span class="n">како</span> <span class="n">бисмо</span> <span class="n">могли</span> <span class="n">да</span> <span class="n">рачунамо</span> <span class="n">на</span> <span class="n">овај</span>
-<span class="n">начин</span><span class="o">.</span> <span class="n">То</span> <span class="n">би</span> <span class="n">изгледало</span> <span class="n">отприлике</span> <span class="n">овако</span><span class="p">:</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dt</span><span class="p">[</span><span class="s1">&#39;Density&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">dt</span><span class="p">[</span><span class="s1">&#39;Population&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">dt</span><span class="p">[</span><span class="s1">&#39;Area&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
+
+    <div class="note-wrapper suggestionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/suggestionnote-img.svg" class="note-image suggestionnote-image" /> 
+        <div class="course-content">
+            
+<p>Напомена: Приметите како једноставно можемо да поделимо све вредности
+једне колоне са одговарајућим вредностима друге колоне. То са листама
+не можемо да радимо, али ако користимо <em>pandas</em> табеле, онда ће
+колоне те табеле бити променљиве типа <em>Series</em>. За серије су основне
+математичке операције дефинисане тако да операције вршимо за сваки
+елемент једне серије са одговарајућим елементом из друге. Некад је
+згодно листе претворити у серије како бисмо могли да рачунамо на овај
+начин. То би изгледало отприлике овако:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">lista</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
 <span class="n">serija</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span>
 <span class="n">serija_na_kvadrat</span><span class="o">=</span><span class="n">serija</span><span class="o">*</span><span class="n">serija</span>
 </pre></div>
 </div>
+
+    </div></div>
 <p>Нова колона са именом <em>Density</em> је аутоматски додата чим смо је
 израчунали. Можемо да погледамо како изгледа заглавље табеле и тако
 проверимо да ли је нова колона додата како треба.</p>
@@ -647,8 +659,8 @@
   </tbody>
 </table>
 </div></div>
-<div class="section" id="id7">
-<h3>Сортирање<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id8">
+<h3>Сортирање<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
 <p>Библиотека <em>pandas</em> има прегршт корисних функција за рад са табелама и
 њиховим колонама. Функција <code class="docutils literal notranslate"><span class="pre">.sort_values()</span></code> сортира све вредности у
 одређеној колони и прерасподељује садржај осталих колона у складу са
@@ -775,12 +787,8 @@
   </tbody>
 </table>
 <p>227 rows × 5 columns</p>
-</div><p>Табеле са великим бројем редова нису прегледне чак ни када их сортирамо.
-Зато је пожељно да направимо графички приказ који би нам помогао у
-тумачењу података. Овде ћемо дати примере два типа дијаграма (стубични
-дијаграм и хистограм) за приказ колоне са густином насељености и
-површином држава.</p>
-<p>Прво дајемо стубични дијаграм. Аргументи функције су ознаке стубића (име
+</div><p>Табеле са великим бројем редова нису прегледне чак ни када их сортирамо. Зато је пожељно да направимо графички приказ који би нам помогао у тумачењу података. Овде ћемо дати примере два типа дијаграма (стубичасти дијаграм и хистограм) за приказ колоне са густином насељености и површином држава.</p>
+<p>Прво дајемо стубичасти дијаграм. Аргументи функције су ознаке стубића (име
 државе) и дужина стубића (густина насељености). Пошто држава у табели
 има преко 200, тешко је направити прегледан график са свим државамо.
 Зато смо узели само двадесет држава са највећом густином насељености.
@@ -801,11 +809,11 @@
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p>Напомена</p>
 <p>Приметићете да пре цртања графикона Пајтон исписује неки текст. У овом случају је исписао &lt;BarContainer object of 19 artists&gt;. Ако вам овај испис смета, ставите тачка-зарез на крај реда у програму који исцртава графикон. Тада неће исписивати ништа.</p>
 
-    </p></div></div>
+    </div></div>
 <p>Други важан графикон за приказ расподеле података је хистограм. Он нам
 даје приказ броја држава по одређеним интервалима вредности за површину
 држава. Функција <code class="docutils literal notranslate"><span class="pre">.hist()</span></code> дели интервал од најмање до највеће
@@ -816,14 +824,14 @@
 интервалу, од 0 до 100 000 квадратних килoмeтара, има скоро 200 држава.
 И Србија је међу њима. Ретке су оне које имају површину већу од 300 000
 km².</p>
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">spd</span><span class="p">[</span><span class="s1">&#39;Area&#39;</span><span class="p">],</span><span class="mi">20</span><span class="p">,</span><span class="nb">range</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mf">2e7</span><span class="p">));</span>  <span class="c1"># primetite znak ; na kraju reda</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">spd</span><span class="p">[</span><span class="s1">&#39;Area&#39;</span><span class="p">],</span><span class="mi">20</span><span class="p">,</span><span class="nb">range</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mf">2e7</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>                               <span class="c1"># crtanje mreže na grafikonu</span>
 </pre></div>
 </div>
 <img alt="../_images/output_34_0.png" src="../_images/output_34_0.png" />
 </div>
-<div class="section" id="id8">
-<h3>Филтрирање табеле<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id9">
+<h3>Филтрирање табеле<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
 <p>Филтрирање значи да од целе табеле желимо да издвојимо само оне редове
 који нас интересују. За филтрирање података у табели користимо
 критеријуме, односно логичке исказе као што је нпр.
@@ -994,9 +1002,17 @@ km².</p>
     </tr>
   </tbody>
 </table>
-</div></div>
-<div class="section" id="id9">
-<h3>Записивање табеле у датотеку<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+</div>
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
+        <div class="course-content">
+<p>Испишите податаке из табеле <cite>dt</cite> за европске земље са више од 20 милиона становника.</p>
+
+    </div></div>
+</div>
+<div class="section" id="id10">
+<h3>Записивање табеле у датотеку<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
 <p>Измењену табелу, за почетак, имамо само у меморији рачунара. Ако хоћемо
 да сачувамо те измене, потребно је да снимимо табелу у датотеку.
 Функција коју користимо за ту намену је <code class="docutils literal notranslate"><span class="pre">.to_csv()</span></code>. Аргумент функције
@@ -1006,8 +1022,8 @@ km².</p>
 </div>
 </div>
 </div>
-<div class="section" id="id10">
-<h2>Статистички и графички приказ табеларних података<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id11">
+<h2>Статистички и графички приказ табеларних података<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
 <p>Статистичко и графичко приказивање података тешко је раздвојити. Велики
 број података, без обзира да ли их је 20 или 20 милијарди, приказујемо у
 сведеном облику користећи мањи број карактеристичних вредности или
@@ -1015,8 +1031,8 @@ km².</p>
 начин” за приказивање података. Избор начина приказа зависи од природе
 податка. Морамо да их познајемо да бисмо знали шта да ставимо у први
 план. Почећемо са једноставнијим примерима – са низовима података.</p>
-<div class="section" id="id11">
-<h3>Колоне са номиналним подацима<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id12">
+<h3>Колоне са номиналним подацима<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
 <p>У табели типа <em>dataframe</em> можемо да имамо различите типове података.
 Битно је само да су у једној колони сви подаци истог типа. Два
 најважнија типа података, заправо групе типова су номинални (или
@@ -1069,8 +1085,8 @@ km².</p>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id12">
-<h3>Колоне са нумеричким подацима<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id13">
+<h3>Колоне са нумеричким подацима<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
 <p>Бројеви могу да се пореде међусобно по величини. Са бројевима могу да се
 раде и рачунске операције. Због тога су могућности за обраду и анализу
 нумеричких низова много веће него за номиналне. Наш основни задатак је
@@ -1079,8 +1095,8 @@ km².</p>
 вредности, као што је нпр. средња вредност. Други важан начин је да цео
 низ података прикажемо графички како бисмо податке могли да “видимо”.</p>
 </div>
-<div class="section" id="id13">
-<h3>Описивање низова података преко карактеристичних вредности<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id14">
+<h3>Описивање низова података преко карактеристичних вредности<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
 <p>Шта је просек? Просек није дефинисан као посебна математичка функција.
 Просек је било која вредност (као што су средња вредност, мод или
 медијана) која се узима за карактеристичну вредност једног скупа
@@ -1118,8 +1134,8 @@ km².</p>
 према (<code class="docutils literal notranslate"><span class="pre">ignore_index=True</span></code>). Онда ћемо помоћу <em>слајса</em> приказати
 редове од 112 до 114, који због тога што први ред има индекс 0,
 одговарају државама са 113, 114. и 115. највећом површином.</p>
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sdt</span><span class="o">=</span><span class="n">dt</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;Area&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">sdt</span><span class="p">[</span><span class="mi">112</span><span class="p">:</span><span class="mi">115</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sdt</span><span class="o">=</span><span class="n">dt</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;Area&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># sortiramo u opadajućem resoledu</span>
+<span class="n">sdt</span><span class="p">[</span><span class="mi">112</span><span class="p">:</span><span class="mi">115</span><span class="p">]</span> <span class="c1"># izdavajamo redove 112, 113 i 114 pomoću slajsa</span>
 </pre></div>
 </div>
 <div>
@@ -1191,11 +1207,25 @@ km².</p>
 као средња вредност висине првог елемента испод и првог изнад те
 средине. То значи да је медијана низа од 100 бројева, средња вредност
 50. и 51. највеће вредности овог низа.</p>
+
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
+        <div class="course-content">
+<p>Одредите медијану броја становника за државе света. Да ли за Србију можемо да кажемо да је типична држава и по овом параметру?</p>
+
+    </div></div>
 <p>Трећа помињана мера за карактеристичну вредност је мод. Она говори о
 томе која се вредност понавља највише пута. Функција која рачуна мод је
 <code class="docutils literal notranslate"><span class="pre">.mode()</span></code>. Она се, пре свега, примењује за номиналне податке.</p>
-<p><strong>Задатак</strong>: Одредите медијану броја становника за државе света. Да ли
-за Србију можемо да кажемо да је типична држава и по овом параметру?</p>
+
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
+        <div class="course-content">
+<p>Одредите медијану броја становника за државе света. Да ли за Србију можемо да кажемо да је типична држава и по овом параметру?</p>
+
+    </div></div>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dt</span><span class="p">[</span><span class="s1">&#39;Population&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -1208,9 +1238,9 @@ km².</p>
 вредност и медијану за низ у ком су неке вредности милион пута веће од
 неких других, ове две мере дају прилично различите вредности.</p>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">niz_ocena</span><span class="o">=</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
-<span class="n">serija</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">niz_ocena</span><span class="p">)</span>               <span class="c1"># лакше је рачунати кад листу претворимо у серију</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Средња вредност:&#39;</span><span class="p">,</span> <span class="n">serija</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Медијана:&#39;</span><span class="p">,</span> <span class="n">serija</span><span class="o">.</span><span class="n">median</span><span class="p">())</span>
+<span class="n">serija</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">niz_ocena</span><span class="p">)</span>               <span class="c1"># lakše je računati kad listu pretvorimo u seriju</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Средња вредност:&#39;</span><span class="p">,</span> <span class="n">serija</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span> <span class="c1"># onda možemo da primenimo pandas funkcije</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Медијана:&#39;</span><span class="p">,</span> <span class="n">serija</span><span class="o">.</span><span class="n">median</span><span class="p">())</span> <span class="c1"># .mean() i .median()</span>
 </pre></div>
 </div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Средња</span> <span class="n">вредност</span><span class="p">:</span> <span class="mf">4.333333333333333</span>
@@ -1235,8 +1265,8 @@ km².</p>
 </div>
 <img alt="../_images/output_72_0.png" src="../_images/output_72_0.png" />
 </div>
-<div class="section" id="id14">
-<h3>Груписање и рачунање статистика за групе<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id15">
+<h3>Груписање и рачунање статистика за групе<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
 <p>За анализе података по групама користимо функцију <code class="docutils literal notranslate"><span class="pre">groupby()</span></code>. У
 примеру са државама света, можемо да направимо преглед укупне површине
 или броја становника груписаних по континентима. Аргумент функције је
@@ -1265,9 +1295,14 @@ km².</p>
 <span class="n">Name</span><span class="p">:</span> <span class="n">Population</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span>
 </pre></div>
 </div>
-<p><strong>Задатак 1</strong>: Израчунајте колика је густина становништва типичне државе
-за сваки континент. Узмите да типична држава има медијалну вредност
-параметра за одређену групу држава.</p>
+
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
+        <div class="course-content">
+<p>Израчунајте колика је средња густина становништва за сваки континент.</p>
+
+    </div></div>
 </div>
 </div>
 </div>

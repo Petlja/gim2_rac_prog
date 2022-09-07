@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Покретање Џупитер (Jupyter) радних свески</title>
+    <title>Покретање Џупитер радних свески</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -108,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -151,7 +153,7 @@
       eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
       eBookConfig.app = eBookConfig.host + '/runestone';
       eBookConfig.ajaxURL = eBookConfig.app + '/ajax/';
-      eBookConfig.course = '';
+      eBookConfig.course = 'Настава програмирања за Други разред гимназије';
       eBookConfig.logLevel = '0';
       eBookConfig.loginRequired = 'false';
       eBookConfig.build_info = "";
@@ -252,6 +254,7 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Y01/L801.html><div class="studioLecture" id=activity-L801><i class="fas fa-file-alt activity-icon"></i>Увод у процесирање низова података</div></a>
+                <a href=../Y01/03_zadaci.html><div class="studioLecture" id=activity-03_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - процесирање низова</div></a>
                 <a href=../Y01/Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension.html><div class="studioLecture" id=activity-Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension><i class="fas fa-file-alt activity-icon"></i>Креирање листа у Пајтону</div></a>
                 <a href=../Y01/Низови%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-Низови%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>Низови - додатни задаци</div></a>
                 <a href=../Y01/test801.html><div class="studioLecture" id=activity-test801><i class="far fa-question-circle activity-icon"></i>Квиз - Листе</div></a>
@@ -265,6 +268,7 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Y05/L805.html><div class="studioLecture" id=activity-L805><i class="fas fa-file-alt activity-icon"></i>Сортирање</div></a>
+                <a href=../Y05/04_zadaci.html><div class="studioLecture" id=activity-04_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - сортирање</div></a>
                 <a href=../Y05/Сортирање%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-Сортирање%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>Сортирање - додатни задаци</div></a>
                 <a href=../Y05/test805.html><div class="studioLecture" id=activity-test805><i class="far fa-question-circle activity-icon"></i>Квиз - Сортирање</div></a>
                 </div>
@@ -277,6 +281,7 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Y06/L806.html><div class="studioLecture" id=activity-L806><i class="fas fa-file-alt activity-icon"></i>Филтрирање и претраживање</div></a>
+                <a href=../Y06/05_zadaci.html><div class="studioLecture" id=activity-05_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - филтрирање и претраживање</div></a>
                 <a href=../Y06/test806.html><div class="studioLecture" id=activity-test806><i class="far fa-question-circle activity-icon"></i>Квиз - Филтрирање и претраживање</div></a>
                 </div>
             </div>
@@ -358,45 +363,51 @@
   
     <div id="main-content">
     
-  <div class="section" id="jupyter">
-<h1>Покретање Џупитер (<em>Jupyter</em>) радних свески<a class="headerlink" href="#jupyter" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="id1">
+<h1>Покретање Џупитер радних свески<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <p>Сада ћемо продискутовати неколико начина да се покрену Џупитер интерактивне радне свеске. Тако ћеш добити могућност да сам прођеш кроз примере и задатке који су предвиђени овим курсом.</p>
-<p>Џупитер интерактивне радне свеске се могу покренути на више начина, а ми ћемо описати два:</p>
-<ol class="arabic simple">
-<li><p>помоћу сервиса <em>Binder</em> који је доступан на адреси <em>mybinder.org</em> (не треба ништа инсталирати, не треба креирати никакав налог, измене у свескама се <em>не</em> чувају), и</p></li>
-<li><p>на твом рачунару (потребно је инсталирати Пајтон и Џупитер).</p></li>
-</ol>
-<div class="section" id="id1">
-<h2>Покретање Џупитер радних свески на твом рачунару<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>Џупитер интерактивне радне свеске се могу покренути на више начина, а ми ћемо ти показати како да их покренеш на свом рачунару и како да свескама приступиш онлајн, у свом браузеру.</p>
+<div class="section" id="id2">
+<h2>Покретање Џупитер радних свески на твом рачунару<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>Ово је свакако најфлексибилнији начин да се користе Џупитер радне свеске, али зато захтева највише припрема.</p>
 <p><strong>Корак 1.</strong> Ако имаш инсталиран Пајтон на свом рачунару пређи на Корак 2.</p>
 <p>Ако немаш инсталиран Пајтон на свом рачунару, прати први део следећег упутства (за рад са Џупитер радним свескама ти <em>PyGame</em> не треба, зато је довољно пратити само први део упутства који се односи на Пајтон):</p>
-<p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Help/Uputstvo%20Python%20pygame.pdf">Упутство за инсталацију Пајтона</a></p>
+<p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Help/Uputstvo%20Python%20pygame.pdf">Упутство за инсталацију Пајтона</a>.</p>
 <p><strong>Корак 2.</strong> Са следећег линка</p>
 <p><a class="reference external" href="https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip">https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip</a></p>
-<p>преузми ZIP фајл и распакуј га у неки фолдер на свом рачунару:</p>
-<a class="reference internal image-reference" href="../_images/inst101m.jpg"><img alt="../_images/inst101m.jpg" class="align-center" src="../_images/inst101m.jpg" style="width: 600px;" /></a>
+<p>преузми ZIP фајл и распакуј га у неки фолдер на свом рачунару</p>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/inst101m.jpg"><img alt="../_images/inst101m.jpg" class="screenshot-shadow" src="../_images/inst101m.jpg" style="width: 780px;" /></a>
+</div>
 <p>Потом покрени команду SETUP.BAT тако што ћеш два пута кликнути на њено име:</p>
-<a class="reference internal image-reference" href="../_images/inst101n.png"><img alt="../_images/inst101n.png" class="align-center" src="../_images/inst101n.png" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/inst101n.png"><img alt="../_images/inst101n.png" class="screenshot-shadow" src="../_images/inst101n.png" style="width: 780px;" /></a>
+</div>
 <p>Ова команда ће радити неко време и при томе ће инсталирати све неопходне библиотеке
 за рад са Џупитер окружењем:</p>
-<a class="reference internal image-reference" href="../_images/inst101c.jpg"><img alt="../_images/inst101c.jpg" class="align-center" src="../_images/inst101c.jpg" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/inst101c.jpg"><img alt="../_images/inst101c.jpg" class="screenshot-shadow" src="../_images/inst101c.jpg" style="width: 780px;" /></a>
+</div>
 <p>Када се команда заврши у фолдеру ће се појавити команда START_JUPYTER.BAT и пречица
 START_IDLE:</p>
-<a class="reference internal image-reference" href="../_images/inst101p.png"><img alt="../_images/inst101p.png" class="align-center" src="../_images/inst101p.png" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/inst101p.png"><img alt="../_images/inst101p.png" class="screenshot-shadow" src="../_images/inst101p.png" style="width: 780px;" /></a>
+</div>
 <p>Пречица START_IDLE ће нам требати у наредном сегменту курса у коме обрађујемо
 програмирање у Пајтону и за сада је слободно можемо игнорисати.</p>
 <p>За покретање Џупитера треба да покренеш команду START_JUPYTER.BAT
 тако што ћеш два пута кликнути на њено име.</p>
 <p>На твом рачунару ће се отворити веб прегледач са страном на којој се
 виде линкови на радне свеске. Кликом на име, радна свеска се отвара у новом табу веб прегледача:</p>
-<a class="reference internal image-reference" href="../_images/inst103.png"><img alt="../_images/inst103.png" class="align-center" src="../_images/inst103.png" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/inst103.png"><img alt="../_images/inst103.png" class="screenshot-shadow" src="../_images/inst103.png" style="width: 780px;" /></a>
+</div>
 <p>Крени да читаш свеске и да их извршаваш корак по корак.</p>
 <p>Ево и кратког видеа у коме је ово демонстрирано:</p>
 
     <div  id="LRMlIIv1maQ" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/LRMlIIv1maQ/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
         </div>
       
 
@@ -408,6 +419,14 @@ START_IDLE:</p>
     
     
     </div>
+<div class="section" id="id4">
+<h2>Покретање Џупитер радних свески онлајн<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>Алтернативни начин да отвориш свеске је да одеш на овај линк на коме се налазе <a class="reference external" href="https://petlja.github.io/gim2_rac_prog_radni/lab/index.html">свеске за рад</a>. Требало би да ти се у браузеру отвори Џупитер окружење у коме ћеш моћи да наставиш са радом. Требало би да изгледа овако:</p>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/jupyter_lite.png"><img alt="../_images/jupyter_lite.png" class="screenshot-shadow" src="../_images/jupyter_lite.png" style="width: 780px;" /></a>
+</div>
+<p>Овај начин покретања Џупитер окружења ти може бити згоднији, поготово што материјалима можеш приступити са било ког уређаја, али обрати посебну пажњу да се твој рад и измене које направиш на свескама у овом окружењу не чувају онлајн, већ ћеш морати да на рачунар преузмеш све што је потребно сачувати.</p>
+</div>
 </div>
 
 

@@ -87,9 +87,9 @@
     :nocodelens:
     :include: fajl
 
-    f = open("A_Very_Short_Story.txt", "r")
+    f = open("A_Very_Short_Story.txt", "r")  # f je poseban tip promenljive, fajl
     br_redova = 0
-    for red in f:
+    for red in f: # fajl se sastoji od linija teksta, svaki red je jedna linija
         br_redova += 1
     f.close()
     print("Datoteka 'A_Very_Short_Story.txt' ima", br_redova, "redova.")
@@ -345,8 +345,10 @@
 добијамо спајањем јединствене речи, зареза, броја понављања у облику
 стринга и знака за крај реда.
 
-.. code:: ipython3
-
+.. activecode:: ilijada
+    :passivecode: true
+    :nocodelens:
+    
     g = open("data/Iliad stat.txt", "w") # otvaramo fajla sa ovim imenom za upisivanje
     for i in range(len(jr)):             # za svaku jedinstvenu reč
         zapis=jr[i]+','+str(bpr[i])+'\n' # napravi string u kom su jed. reč, broj pojavljivanja i znak za kraj reda

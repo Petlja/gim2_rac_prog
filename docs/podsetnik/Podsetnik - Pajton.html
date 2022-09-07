@@ -6,6 +6,7 @@
     <title>Подсетник - Пајтон</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -108,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -151,7 +153,7 @@
       eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
       eBookConfig.app = eBookConfig.host + '/runestone';
       eBookConfig.ajaxURL = eBookConfig.app + '/ajax/';
-      eBookConfig.course = '';
+      eBookConfig.course = 'Настава програмирања за Други разред гимназије';
       eBookConfig.logLevel = '0';
       eBookConfig.loginRequired = 'false';
       eBookConfig.build_info = "";
@@ -252,6 +254,7 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Y01/L801.html><div class="studioLecture" id=activity-L801><i class="fas fa-file-alt activity-icon"></i>Увод у процесирање низова података</div></a>
+                <a href=../Y01/03_zadaci.html><div class="studioLecture" id=activity-03_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - процесирање низова</div></a>
                 <a href=../Y01/Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension.html><div class="studioLecture" id=activity-Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension><i class="fas fa-file-alt activity-icon"></i>Креирање листа у Пајтону</div></a>
                 <a href=../Y01/Низови%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-Низови%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>Низови - додатни задаци</div></a>
                 <a href=../Y01/test801.html><div class="studioLecture" id=activity-test801><i class="far fa-question-circle activity-icon"></i>Квиз - Листе</div></a>
@@ -265,6 +268,7 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Y05/L805.html><div class="studioLecture" id=activity-L805><i class="fas fa-file-alt activity-icon"></i>Сортирање</div></a>
+                <a href=../Y05/04_zadaci.html><div class="studioLecture" id=activity-04_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - сортирање</div></a>
                 <a href=../Y05/Сортирање%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-Сортирање%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>Сортирање - додатни задаци</div></a>
                 <a href=../Y05/test805.html><div class="studioLecture" id=activity-test805><i class="far fa-question-circle activity-icon"></i>Квиз - Сортирање</div></a>
                 </div>
@@ -277,6 +281,7 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Y06/L806.html><div class="studioLecture" id=activity-L806><i class="fas fa-file-alt activity-icon"></i>Филтрирање и претраживање</div></a>
+                <a href=../Y06/05_zadaci.html><div class="studioLecture" id=activity-05_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - филтрирање и претраживање</div></a>
                 <a href=../Y06/test806.html><div class="studioLecture" id=activity-test806><i class="far fa-question-circle activity-icon"></i>Квиз - Филтрирање и претраживање</div></a>
                 </div>
             </div>
@@ -764,9 +769,9 @@ print(a,b)
        >
 s1={'beli','plavi','crveni','zeleni'}
 s2={'plavi','crni','sivi'}
-unija=s1.union(s2)
-presek=s1.intersection(s2)
-razlika=s1.difference(s2)
+unija=s1.union(s2)  # unija prvog i drugog skupa
+presek=s1.intersection(s2) # presek prvog i drugog skupa
+razlika=s1.difference(s2) # razlika prvog i drugog skupa
 print(presek)
 </textarea>
 </div>
@@ -774,8 +779,8 @@ print(presek)
 елемент који се већ налази у скупу. Нема дупликата. Кад год нам је
 потребно да нађемо јединствене елементе неке друге колекције, можемо
 помоћу скупа да уклонимо дупликате. На пример, ако узмемо листу у којој
-има дупликата, претворимо је у скуп, а по потом поново ул листу, у тој
-другој листи ће остати само једниствене вредности. Погледајте пример.</p>
+има дупликата, претворимо је у скуп, а по потом поново у листу, у тој
+другој листи ће остати само јединствене вредности. Погледајте пример.</p>
 
 <div data-childcomponent="lista_set" class="course-box course-box-problem course-content">
 
@@ -785,8 +790,8 @@ print(presek)
                data-hidehistory=true
        >
 lista1=[1,2,2,2,3,4,5,6]
-skup=set(lista1)
-lista2=list(skup)
+skup=set(lista1)  # listu pretvaramo u skup kako bismo ukunuli duplikate
+lista2=list(skup) # sad skup vreaćamo u listu
 print(lista2)
 </textarea>
 </div>
@@ -870,10 +875,10 @@ for c in "Python":
     data-audio=''   
                data-hidehistory=true
        >
-i=0
-while i<10:
-    print(i)
-    i+=1
+i=0          # početna vrednost iteratora/brojača
+while i<10:  # dok god je brojač manji od 10
+    print(i) # štampaj njegovu vrednost
+    i+=1     # i povećavaj je za 1
 </textarea>
 </div>
 
@@ -881,12 +886,12 @@ while i<10:
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/suggestionnote-img.svg" class="note-image suggestionnote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p>Приметите да овде “ручно” морамо да мењамо вредност индекса <code class="docutils literal notranslate"><span class="pre">i</span></code>. Израз
 <code class="docutils literal notranslate"><span class="pre">i+=1</span></code> је скраћени запис од <code class="docutils literal notranslate"><span class="pre">i=i+1</span></code>. То значи да у свакој итерацији
 вредност индекса <code class="docutils literal notranslate"><span class="pre">i</span></code> повећавамо за 1.</p>
 
-    </p></div></div>
+    </div></div>
 <div class="section" id="id9">
 <h3>Угњеждене петље<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
 <p>Унутар једне петље лако можете да ставите другу. Пазите само да
@@ -905,10 +910,10 @@ while i<10:
                data-hidehistory=true
        >
 n=5
-for i in range(1,n+1):
-    for j in range (1,n+1):
-        print(i*j,end="\t")
-    print("\n")
+for i in range(1,n+1):      # za svako i od 1 do 5
+    for j in range (1,n+1): # za svako j od 1 do 5
+        print(i*j,end="\t") # štampaj i*j i pomeri kurzor za jedan tab
+    print("\n")             # kad j dođe do 5 premesti kurzor na početak sledećeg reda
 </textarea>
 </div>
 <p>Ако занемарите мало чудан начин исписа, програм је крајње једноставан.
@@ -937,11 +942,11 @@ for i in range(1,n+1):
     data-audio=''   
                data-hidehistory=true
        >
-a=int(input())
-if a%2==0:
-    print('паран')
-else:
-    print('непаран')
+a=int(input())       # traži unos sa tastature i prevaraga u integer
+if a%2==0:           # ako je ostatak pri deljenju sa 2 jednak nuli
+    print('паран')   # štampaj da je broj paran
+else:                # ako nije
+    print('непаран') # štampaj da je neparan
 </textarea>
 </div>
 <p>У овом примеру прво тражимо да неко помоћу тастатуре укуца број, онда
@@ -955,7 +960,7 @@ else:
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/suggestionnote-img.svg" class="note-image suggestionnote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p>Обратите пажњу на синтаксу. У Пајтону се инструкција <code class="docutils literal notranslate"><span class="pre">then</span></code> уопште не
 користи. Уместо тога користе се знак <code class="docutils literal notranslate"><span class="pre">:</span></code> и увучени блокови
 инструкција. Видите како се после реда који се завршава са <code class="docutils literal notranslate"><span class="pre">:</span></code>
@@ -963,7 +968,7 @@ else:
 произвољно много линија кôда) се извршава ако је услов испуњен, а други
 блок (после <code class="docutils literal notranslate"><span class="pre">else:</span></code>) ако услов није испуњен.</p>
 
-    </p></div></div>
+    </div></div>
 <p>Уколико гранање на две могућности није довољно, можемо да уведемо и нове
 блокове помоћу <code class="docutils literal notranslate"><span class="pre">elif</span></code> инструкције. Нема ограничења колико ових услова
 може да буде. Када први услов није испуњен, онда можемо да испитамо да
@@ -978,12 +983,12 @@ else:
        >
 a=5
 b=6
-if a==b:
-    print("a и b су једнаки.")
-elif a<b:
-    print("a је мање од b.")
-else:
-    print("a је веће од b.")
+if a==b:                           # ako su a i b jednaki
+    print("a и b су једнаки.")     # ako su a i b jednaki
+elif a<b:                          # ako je a manje od b
+    print("a је мање од b.")       # napiši da je a manje od b
+else:                              # u protivnom
+    print("a је веће од b.")       # napiši da je a veće od b
 </textarea>
 </div>
 <p>Други начин да проверимо више услова је да у <em>if-then-else</em> блоковима
@@ -1031,13 +1036,13 @@ else:
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p>Инструкције <code class="docutils literal notranslate"><span class="pre">try</span></code> и <code class="docutils literal notranslate"><span class="pre">except</span></code> омогућавају да се програм регуларно
 заврши и онда када дође до грешке. Програм покушава да уради оно што је
 у блоку <code class="docutils literal notranslate"><span class="pre">try</span></code>. Уколико дође до грешке, онда извршава оно у блоку
 <code class="docutils literal notranslate"><span class="pre">except</span></code>.</p>
 
-    </p></div></div>
+    </div></div>
 <p>Демонстрираћемо како <em>try-except</em> ради на примеру који смо
 већ помињали.</p>
 
@@ -1048,15 +1053,15 @@ else:
     data-audio=''   
                data-hidehistory=true
        >
-a=input()
-try:
-    a=int(a)
-    if a%2==0:
+a=input()                          # unesi podatak sa tastature
+try:                               # proba
+    a=int(a)                       # ako je a celobrojna vrednost u decimalnom obliku, promeni mu tip u integer
+    if a%2==0:                     # i onda proveri da li je broj paran ili neparan
         print('паран')
     else:
         print('непаран')
-except:
-    print('Унели сте број који није цео.')
+except:                                     # ako promena tipa u integer nije uspela
+    print('Унели сте број који није цео.')  # onda samo ispiši poruku
 </textarea>
 </div>
 <p>Гранање <em>try-except</em> има сложенију структуру него што је приказано у
@@ -1086,25 +1091,23 @@ except:
     data-audio=''   
                data-hidehistory=true
        >
-def proizvod(L):     # аргумент, односно листа коју прослеђујемо функцији биће смештена у променљиву L
-    p=1              # почетна вредност производа је 1
-    for x in L:      # за сваку вредност из листе
-        p=p*x        # производ множимо том вредношћу
-    return p         # функција враћа производ свих вредности у листи
+def proizvod(L):     # argument, odnosno lista koju prosleđujemo funkciji biće smeštena u promenljivu
+    p=1              # početna vrednost proizvoda je 1
+    for x in L:      # za svaku vrednost iz liste
+        p=p*x        # proizvod množimo tom vrednošću
+    return p         # funkcija vraća proizvod svih vrednosti u listi
 
 proizvod([1,2,3,4,5])
 </textarea>
 </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Задатак: Можете ли, по угледу на претходни пример, сами да напишете функцију <code class="docutils literal notranslate"><span class="pre">zbir()</span></code> која би сабрала све елементе листе?</p>
 
-    </p></div></div>
+    </div></div>
 
 <div data-childcomponent="лифт_апсолутна_вредност_input" class="course-box course-box-problem course-content">
 
@@ -1138,18 +1141,16 @@ myTests().main()
 </textarea>
 </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Како бисте написали функцију чији је улаз листа, а излаз најмања
 вредност из те листе? Та функција треба да пронађе најмању вредност у
 листи и да је врати. Оваква функција већ постоји у Пајтону и зове се
 <code class="docutils literal notranslate"><span class="pre">min()</span></code>, али ћемо искористи прилику да напишемо своју верзију.</p>
 
-    </p></div></div>
+    </div></div>
 <p>Име ове нове функције ће бити <code class="docutils literal notranslate"><span class="pre">minimum()</span></code>. Ево једне могућности како то може
 да се напише.</p>
 
@@ -1161,11 +1162,11 @@ myTests().main()
                data-hidehistory=true
        >
 def minimum(L):
-    m=L[0]            # за почетак, најмања вредност ће бити она прва у листи
-    for x in L[1:]:   # итерације крећу од друге вредности у листи и иду до краја
-        if x<m:       # ако је текућа вредност итератора x мања од m, тј.оне која је до сад била најмања
-            m=x       # онда нека нови минимум буде x
-    return m          # на крају функција враћа вредност m
+    m=L[0]            # za početak, najmanje vrednost će biti ona prva u listi
+    for x in L[1:]:   # iteracije kreću od druge vrednosti u listi i idu do kraja
+        if x<m:       # ako je tekuća vrednost iteratora x manja од m, tj. one koja je do sad bila najmanja
+            m=x       # onda neka novi minimum bude
+    return m          # na kraju funkcija vraća vrednost
 lista=[11,22,33,14,25,36,17,28,39,10,21,32]
 print(minimum(lista))
 </textarea>
@@ -1239,7 +1240,7 @@ print(math.cos(math.pi))
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p>Многе важне екстерене библиотеке су већ инсталиране у Џупитер окружењу.
 Оне које се најчешће користе су <code class="docutils literal notranslate"><span class="pre">pandas</span></code> за рад са табелама и
 фајловима, <code class="docutils literal notranslate"><span class="pre">matplotlib.pyplot</span></code> за цртање графикона и <code class="docutils literal notranslate"><span class="pre">numpy</span></code> за рад
@@ -1249,7 +1250,7 @@ print(math.cos(math.pi))
 укуцате <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">&lt;назив</span> <span class="pre">библиотеке&gt;</span></code> и Пајтон ће библиотеку сам
 пронаћи, преузети и инсталирати.</p>
 
-    </p></div></div>
+    </div></div>
 </div>
 </div>
 
