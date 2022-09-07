@@ -22,7 +22,7 @@
 
     d3=[]                  # prvo promenljivoj pridružujemo praznu listu
     for i in range(1,21):  # zapamtite da range(a,b) uzima vrednosti od a do b-1 
-        if i%3==0:         # operator % nam daje sotatak pri deljenju dva cela broja pa proveravamo da li je ostatak nula
+        if i%3==0:         # operator % nam daje ostatak pri deljenju dva cela broja pa proveravamo da li je ostatak nula
             d3.append(i)   # konačno, listi pridružujemo tekuću vrednost izraza ako je uslov ispunjen
     print(d3)
 
@@ -105,6 +105,7 @@
     delovi6=[s for s in delovi if len(s)==6]
     print(delovi6)
 
-Користите овај “пајтоновски” начин креирања листа кад год можете је је
-једноставан и разумљив. Провежбајте задатке на ову тему из збирке.
+Користите овај “пајтоновски” начин креирања листа кад год можете, јер је
+једноставан и разумљив (а и ефикаснији од експлицитне петље). Провежбајте 
+задатке на ову тему из збирке.
 
