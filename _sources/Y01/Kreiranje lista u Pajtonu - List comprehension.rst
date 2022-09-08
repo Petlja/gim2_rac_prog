@@ -78,6 +78,21 @@
     
     print(kvad[:15])
 
+
+.. mchoice:: liste1
+   :answer_a: [2, 2, 2, 2] 
+   :answer_b: [2, 2, 2, 2, 2] 
+   :answer_c: [0, 2, 4, 6] 
+   :answer_d: [0, 2, 4, 6, 8]
+   :correct: c
+   :feedback_a: Пробај поново! 
+   :feedback_b: Пробај поново! 
+   :feedback_c: Тачно!
+   :feedback_d: Пробај поново! 
+
+   Нека је ``list1 = [2 * x for x in range(0, 4)]``. Шта ћемо добити ако штампамо list1?
+
+
 Слично можемо да радимо и са листама у којима су стрингови. Ево једног
 примера.
 
@@ -109,3 +124,21 @@
 једноставан и разумљив (а и ефикаснији од експлицитне петље). Провежбајте 
 задатке на ову тему из збирке.
 
+.. activecode:: kvadrat_15_prints
+    :include: kvadrat_liste
+    
+    print(kvad[:15])
+
+
+.. mchoice:: liste2
+   :answer_a: [x in range(1, 1000) if x%3==0]
+   :answer_b: [x for x in range(1000) if x%3==0]
+   :answer_c: [x%3 for x in range(1, 1000)]
+   :answer_d: [x%3=0 for x in range(1, 1000)]
+   :correct: b
+   :feedback_a: Пробај поново! 
+   :feedback_b: Тачно!
+   :feedback_c: Пробај поново! 
+   :feedback_d: Пробај поново! 
+
+   Који ће од наредних израза издвојити бројеве између 1 и 1000 који су дељиви са 3?

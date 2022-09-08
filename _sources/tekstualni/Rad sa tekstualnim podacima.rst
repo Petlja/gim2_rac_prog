@@ -84,6 +84,25 @@
     print(S[-1])    # poslednji karakter u stringu
 
 
+.. mchoice:: pajton_1
+    :answer_a: 1 2 3
+    :answer_b: 1 2 3 4
+    :answer_c: 2
+    :answer_d: 4 3 2 1
+    :correct: d
+    :feedback_a: Покушај поново!
+    :feedback_b: Покушај поново!
+    :feedback_c: Покушај поново!
+    :feedback_d: Тачно!
+
+    Шта је излаз следећег блока инструкција? 
+
+    .. code-block:: python
+
+        for i in [1, 2, 3, 4][::-1]:
+            print (i)
+
+   
 
 Оператор ``in``
 ~~~~~~~~~~~~~~~
@@ -246,7 +265,23 @@
     print(s1+s2)
     print(s1*3)
     
+.. mchoice:: pajton_2
+    :answer_a: a
+    :answer_b: abc
+    :answer_c: bc
+    :answer_d: bca
+    :correct: b
+    :feedback_a: Покушај поново!
+    :feedback_b: Тачно!
+    :feedback_c: Покушај поново!
+    :feedback_d: Покушај поново!
 
+    Шта је излаз следећег израза у Пајтону?
+
+    .. code-block:: python
+
+        "a"+"bc"
+	  
 Контролни карактери
 -------------------
 

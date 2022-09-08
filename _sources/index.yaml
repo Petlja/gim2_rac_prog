@@ -79,6 +79,11 @@ lessons:
         file: Podsetnik - Pajton.rst 
         description: #Optional
         guid: aafcbaab-8b48-4d70-a713-c58186907dc4
+      - type: quiz
+        title: Квиз - Пајтон
+        file: pajton_test.rst 
+        description: #Optional
+        guid: f182382f-b23e-4a63-9068-cae691f42c3b
   - title: Низови података
     guid: 8144bc95-df86-4197-91bd-55f28e3beca1
     description: Your first lesson. Description is not required attribute

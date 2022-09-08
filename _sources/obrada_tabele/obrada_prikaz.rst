@@ -348,6 +348,18 @@
     </div>
 
 
+.. mchoice:: pandas1
+   :answer_a: 1
+   :answer_b: a
+   :answer_c: 'а'
+   :answer_d: ['а']
+   :correct: a
+   :feedback_a: Тачно!
+   :feedback_b: Пробај поново! 
+   :feedback_c: Пробај поново! 
+   :feedback_d: Пробај поново! 
+
+   Који ће од наредних израза издвојити бројеве између 1 и 1000 који су дељиви са 3?
 
 Сортирање
 ~~~~~~~~~
