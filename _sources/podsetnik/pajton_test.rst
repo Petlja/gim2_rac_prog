@@ -43,7 +43,7 @@
 
 .. quizq::
       
-   .. mchoice:: Тест1_4_Питање3
+   .. mchoice:: pajton3
       :answer_a: витичастим заградама
       :answer_b: кључним речима
       :answer_c: табулацијом блокa
@@ -61,7 +61,7 @@
 
 .. quizq::
       
-   .. mchoice:: Тест1_4_Питање4
+   .. mchoice:: pajton4
       :answer_a: //
       :answer_b: /*
       :answer_c: #
