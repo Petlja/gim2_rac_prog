@@ -1225,4 +1225,4 @@ Jasna   ž   14      51   162
 
 .. technicalnote::
 
-    Остатак ове лекције препоручујемо да читаш на свом рачунару тако што ћеш у `фолдеру за рад офлајн <https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip>`_ покренути Џупитер свеску `08_indeksiranje.ipynb` на начин на који је то објашњено у поглављу `Покретање Џупитер радних свески </J0A/J0A.html#jupyter>`_ у уводу овог приручника, или тако што ћеш отићи на `овај линк <https://petlja.github.io/gim2_rac_prog_radni/lab/index.html>`_ и тамо радити задатке.  
+    Остатак ове лекције препоручујемо да читаш на свом рачунару тако што ћеш у `фолдеру за рад офлајн <https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip>`_ покренути Џупитер свеску `08_indeksiranje.ipynb` на начин на који је то објашњено у поглављу `Покретање Џупитер радних свески <https://petlja.org/kurs/478/1/6141>`_ у уводу овог приручника, или тако што ћеш отићи на `овај линк <https://petlja.github.io/gim2_rac_prog_radni/lab/index.html>`_ и тамо радити задатке.  
