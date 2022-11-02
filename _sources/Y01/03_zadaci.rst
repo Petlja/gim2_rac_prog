@@ -251,8 +251,8 @@
 
 У следећим задацима можете да увежбате основне операције са низовима. 
 
-https://petlja.org/biblioteka/r/problemi/Zbirka/ispis_u_obratnom_redosledu
+https://petlja.org/biblioteka/r/Zbirka/ispis_u_obratnom_redosledu
 
-https://petlja.org/biblioteka/r/problemi/Zbirka/parni_i_neparni_elementi
+https://petlja.org/biblioteka/r/Zbirka/parni_i_neparni_elementi
 
 |
