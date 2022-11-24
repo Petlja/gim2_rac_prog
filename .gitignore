@@ -7,3 +7,5 @@ _intermediate
 course 
 _tmp
 course.json
+override.json
+export
