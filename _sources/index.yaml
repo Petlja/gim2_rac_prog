@@ -60,7 +60,7 @@ lessons:
         description: #Optional
         guid: 2cee184a-c1f8-48a8-b74d-0ad48d28f258
       - type: reading
-        title: Покретање Џупитер радних свески
+        title: Фајлови за вежбу и коришћење Џупитер окружења
         file: J0A.rst
         description: #Optional
         guid: a74ee2ce-a1ce-4f89-b23c-3c127a9c5ee7
