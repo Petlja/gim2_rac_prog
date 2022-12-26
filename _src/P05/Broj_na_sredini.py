@@ -1,8 +1,8 @@
 n = int(input())
 brojevi = []
 for i in range(n):    # svaki od n unetih podataka
-  x = float(input())  # pretvori u decimalni broj
-  brojevi.append(x)   # i stavi ga u listu brojevi
+    x = float(input())  # pretvori u decimalni broj
+    brojevi.append(x)   # i stavi ga u listu brojevi
 
 brojevi.sort()        # sortiraj listu
 

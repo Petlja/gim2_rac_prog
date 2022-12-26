@@ -3,7 +3,7 @@ def izvestaj_o_ocenama(ime_ucenika, spisak_predmeta, ocene):
     print("Učenik:", ime_ucenika)
     n = len(spisak_predmeta)
     for i in range(n):
-       print("-", spisak_predmeta[i], ocene[i])
+        print("-", spisak_predmeta[i], ocene[i])
 
 # Сада је можемо позвати више пута ако нам треба извештај о оценама
 # за неколико ученика

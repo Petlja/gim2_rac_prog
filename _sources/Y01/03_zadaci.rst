@@ -246,13 +246,4 @@
 
 
 
-Задаци из Алгоритамске збирке задатака
-----------------------------------------------
 
-У следећим задацима можете да увежбате основне операције са низовима. 
-
-https://petlja.org/biblioteka/r/Zbirka/ispis_u_obratnom_redosledu
-
-https://petlja.org/biblioteka/r/Zbirka/parni_i_neparni_elementi
-
-|

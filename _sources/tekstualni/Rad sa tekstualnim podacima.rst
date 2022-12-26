@@ -146,11 +146,24 @@
 .. activecode:: funkcije2
     :nocodelens:
 
-    #ovde napišite fuknciju
+    s = 'neki_string'
+    def duzina(a):
+        # dopuni funkciju
+        print(???)
+    duzina(s)
 
 ..  Questionnote:: 
     
     Напишите функцију која враћа број знакова интерпункције.
+
+.. activecode:: funkcije_interpuncija_stringovi
+    :nocodelens:
+
+    s = 'Prebroj koliko u ovoj rečenici ima znakova interpunkcije! Na primer: ! ili ? kao i . ili ,'
+    def broj_znakova_interpunkcije(a):
+        # dopuni funkciju
+        print(???)
+    broj_znakova_interpunkcije(s)
 
 .. suggestionnote:: 
     
@@ -191,7 +204,11 @@
 .. activecode:: funkcije3
     :nocodelens:
 
-    #ovde napišite fuknciju
+    S = 'String je lista karaktera: slova, cifara i ostalih znakova.'
+    def index_podstringa(a):
+        # dopuni funkciju
+        print(???)
+    index_podstringa(S)
 
 Токенизација
 ------------

@@ -12,10 +12,10 @@ def selection_sort_reversed(L):
 n = int(input())
 zarade = []
 for i in range(n):
-  x = float(input())
-  zarade.append(x)
+    x = float(input())
+    zarade.append(x)
 
 selection_sort_reversed(zarade)
 
 for i in range(n):
-  print(zarade[i])
+    print(zarade[i])

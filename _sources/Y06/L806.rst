@@ -38,7 +38,7 @@
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени овај програм на свом рачунару тако што ћеш у `фолдеру за рад офлајн <https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip>`_, покренути *IDLE* и из потфолдеру ``P06`` извршити програм ``Poz_neg.py``.
+   Покрени овај програм на свом рачунару тако што ћеш у `пакету фајлова за вежбу <https://github.com/Petlja/gim2_rac_prog_radni/archive/refs/heads/master.zip>`_, покренути *IDLE* и из потфолдеру ``P06`` извршити програм ``Poz_neg.py``.
 
    
    
@@ -54,7 +54,7 @@
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени овај програм на свом рачунару тако што ћеш у `фолдеру за рад офлајн <https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip>`_, покренути *IDLE* и из потфолдеру ``P06`` извршити програм ``Maks_5_slova.py``.
+   Покрени овај програм на свом рачунару тако што ћеш у `пакету фајлова за вежбу <https://github.com/Petlja/gim2_rac_prog_radni/archive/refs/heads/master.zip>`_, покренути *IDLE* и из потфолдеру ``P06`` извршити програм ``Maks_5_slova.py``.
 
 
 
@@ -88,7 +88,7 @@
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени овај програм на свом рачунару тако што ћеш у `фолдеру за рад офлајн <https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip>`_, покренути *IDLE* и из потфолдеру ``P06`` извршити програм ``Decaci_devojcice.py``.
+   Покрени овај програм на свом рачунару тако што ћеш у `пакету фајлова за вежбу <https://github.com/Petlja/gim2_rac_prog_radni/archive/refs/heads/master.zip>`_, покренути *IDLE* и из потфолдеру ``P06`` извршити програм ``Decaci_devojcice.py``.
 
    Ево и кратке видео-демонстрације:
    
@@ -123,7 +123,7 @@
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени овај програм на свом рачунару тако што ћеш у `фолдеру за рад офлајн <https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip>`_, покренути *IDLE* и из потфолдеру ``P06`` извршити програм ``Izdvoj_pozitivne.py``.
+   Покрени овај програм на свом рачунару тако што ћеш у `пакету фајлова за вежбу <https://github.com/Petlja/gim2_rac_prog_radni/archive/refs/heads/master.zip>`_, покренути *IDLE* и из потфолдеру ``P06`` извршити програм ``Izdvoj_pozitivne.py``.
 
 
 Да се подсетимо:
@@ -146,7 +146,7 @@
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени овај програм на свом рачунару тако што ћеш у `фолдеру за рад офлајн <https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip>`_, покренути *IDLE* и из потфолдеру ``P06`` извршити програм ``Pozicije_pozitivnih.py``.
+   Покрени овај програм на свом рачунару тако што ћеш у `пакету фајлова за вежбу <https://github.com/Petlja/gim2_rac_prog_radni/archive/refs/heads/master.zip>`_, покренути *IDLE* и из потфолдеру ``P06`` извршити програм ``Pozicije_pozitivnih.py``.
 
    Ево и кратке видео-демонстрације:
    
@@ -206,7 +206,7 @@
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени овај програм на свом рачунару тако што ћеш у `фолдеру за рад офлајн <https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip>`_, покренути *IDLE* и из потфолдеру ``P06`` извршити програм ``Prvo_pojav.py``.
+   Покрени овај програм на свом рачунару тако што ћеш у `пакету фајлова за вежбу <https://github.com/Petlja/gim2_rac_prog_radni/archive/refs/heads/master.zip>`_, покренути *IDLE* и из потфолдеру ``P06`` извршити програм ``Prvo_pojav.py``.
 
 
 Ова функција користи ``for`` циклус да би прошла кроз елементе низа.
@@ -232,7 +232,7 @@
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени овај програм на свом рачунару тако што ћеш у `фолдеру за рад офлајн <https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip>`_, покренути *IDLE* и из потфолдеру ``P06`` извршити програм ``Posl_pojav.py``.
+   Покрени овај програм на свом рачунару тако што ћеш у `пакету фајлова за вежбу <https://github.com/Petlja/gim2_rac_prog_radni/archive/refs/heads/master.zip>`_, покренути *IDLE* и из потфолдеру ``P06`` извршити програм ``Posl_pojav.py``.
 
 
 Ова функција се заснива на чињеници да је последње појављивање елемента у низу заправо *прво када се кроз низ пролази здесна улево*.

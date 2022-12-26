@@ -88,7 +88,7 @@
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени овај програм на свом рачунару тако што ћеш у `фолдеру за рад офлајн <https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip>`_, покренути *IDLE* и из потфолдеру ``P05`` извршити програм ``K_najvecih.py``.
+   Покрени овај програм на свом рачунару тако што ћеш у `пакету фајлова за вежбу <https://github.com/Petlja/gim2_rac_prog_radni/archive/refs/heads/master.zip>`_, покренути *IDLE* и из потфолдеру ``P05`` извршити програм ``K_najvecih.py``.
 
    Ево и кратке видео-демонстрације:
    
@@ -138,7 +138,7 @@
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени овај програм на свом рачунару тако што ћеш у `фолдеру за рад офлајн <https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip>`_, покренути *IDLE* и из потфолдеру ``P05`` извршити програм ``Broj_na_sredini.py``.
+   Покрени овај програм на свом рачунару тако што ћеш у `пакету фајлова за вежбу <https://github.com/Petlja/gim2_rac_prog_radni/archive/refs/heads/master.zip>`_, покренути *IDLE* и из потфолдеру ``P05`` извршити програм ``Broj_na_sredini.py``.
 
 
 Како раде алгоритми за сортирање
@@ -283,7 +283,7 @@
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени овај програм на свом рачунару тако што ћеш у `фолдеру за рад офлајн <https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip>`_, покренути IDLE и из потфолдеру ``P05`` извршити програм ``Od_najvece_do_najmanje.py``.
+   Покрени овај програм на свом рачунару тако што ћеш у `пакету фајлова за вежбу <https://github.com/Petlja/gim2_rac_prog_radni/archive/refs/heads/master.zip>`_, покренути IDLE и из потфолдеру ``P05`` извршити програм ``Od_najvece_do_najmanje.py``.
 
 
 Пример.
@@ -306,7 +306,7 @@
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени овај програм на свом рачунару тако што ћеш у `фолдеру за рад офлајн <https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip>`_, покренути *IDLE* и из потфолдеру ``P05`` извршити програм ``Samo_K_najvecih.py``.
+   Покрени овај програм на свом рачунару тако што ћеш у `пакету фајлова за вежбу <https://github.com/Petlja/gim2_rac_prog_radni/archive/refs/heads/master.zip>`_, покренути *IDLE* и из потфолдеру ``P05`` извршити програм ``Samo_K_najvecih.py``.
 
 
 Пример.
@@ -338,7 +338,7 @@
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени овај програм на свом рачунару тако што ћеш у `фолдеру за рад офлајн <https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip>`_, покренути *IDLE* и из потфолдеру ``P05`` извршити програм ``SelSort_po_kriterijumu.py``.
+   Покрени овај програм на свом рачунару тако што ћеш у `пакету фајлова за вежбу <https://github.com/Petlja/gim2_rac_prog_radni/archive/refs/heads/master.zip>`_, покренути *IDLE* и из потфолдеру ``P05`` извршити програм ``SelSort_po_kriterijumu.py``.
 
 
 Бабл-сорт алгоритам (*bubble sort*)
@@ -509,4 +509,4 @@
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени овај програм на свом рачунару тако што ћеш у `фолдеру за рад офлајн <https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip>`_, покренути *IDLE* и из потфолдеру ``P05`` извршити програм ``BubSort_po_kriterijumu.py``.
+   Покрени овај програм на свом рачунару тако што ћеш у `пакету фајлова за вежбу <https://github.com/Petlja/gim2_rac_prog_radni/archive/refs/heads/master.zip>`_, покренути *IDLE* и из потфолдеру ``P05`` извршити програм ``BubSort_po_kriterijumu.py``.

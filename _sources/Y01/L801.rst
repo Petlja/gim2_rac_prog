@@ -92,7 +92,7 @@
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени овај програм на свом рачунару тако што ћеш у `фолдеру за рад офлајн <https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip>`_, покренути *IDLE* и из потфолдеру ``P01`` извршити програм ``Dejanove_ocene.py``.
+   Покрени овај програм на свом рачунару тако што ћеш у `пакету фајлова за вежбу <https://github.com/Petlja/gim2_rac_prog_radni/archive/refs/heads/master.zip>`_, покренути *IDLE* и из потфолдеру ``P01`` извршити програм ``Dejanove_ocene.py``.
 
    
 
@@ -224,7 +224,7 @@
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени овај програм на свом рачунару тако што ћеш у `фолдеру за рад офлајн <https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip>`_, покренути *IDLE* и из потфолдеру ``P06`` извршити програм ``Ocene_izvestaj.py``.
+   Покрени овај програм на свом рачунару тако што ћеш у `пакету фајлова за вежбу <https://github.com/Petlja/gim2_rac_prog_radni/archive/refs/heads/master.zip>`_, покренути *IDLE* и из потфолдеру ``P06`` извршити програм ``Ocene_izvestaj.py``.
 
 
 
@@ -301,8 +301,7 @@
 
    Изврши исти програм и у Пајтон окружењу!
    
-   Покрени овај програм на свом рачунару тако што ћеш у `фолдеру за рад офлајн <https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip>`_, покренути *IDLE* и из потфолдеру ``P01`` извршити програм ``Min_niza.py``.
-
+   Покрени овај програм на свом рачунару тако што ћеш у `пакету фајлова за вежбу <https://github.com/Petlja/gim2_rac_prog_radni/archive/refs/heads/master.zip>`_, покренути *IDLE* и из потфолдеру ``P01`` извршити програм ``Min_niza.py``.
 
 Учитавање низова
 ---------------------------------------
