@@ -112,8 +112,8 @@ lessons:
       - type: coding-quiz
         title: Низови - додатни задаци
         problems:
-          - https://petlja.org/biblioteka/r/problemi/Zbirka/ispis_u_obratnom_redosledu
-          - https://petlja.org/biblioteka/r/problemi/Zbirka/parni_i_neparni_elementi
+          - https://petlja.org/biblioteka/r/Zbirka/ispis_u_obratnom_redosledu
+          - https://petlja.org/biblioteka/r/Zbirka/parni_i_neparni_elementi
         guid: 1daa6860-4861-416f-ab9e-0299781652d5          
       - type: quiz
         title: Квиз - Листе
@@ -138,10 +138,10 @@ lessons:
       - type: coding-quiz
         title: Сортирање - додатни задаци
         problems:
-          - https://petlja.org/biblioteka/r/problemi/Zbirka/sortiranje_brojeva
-          - https://petlja.org/biblioteka/r/problemi/Zbirka/najvredniji_predmeti
-          - https://petlja.org/biblioteka/r/problemi/Zbirka/objedinjavanje
-          - https://petlja.org/biblioteka/r/problemi/Zbirka/presek_tri_sortirana_niza
+          - https://petlja.org/biblioteka/r/Zbirka/sortiranje_brojeva
+          - https://petlja.org/biblioteka/r/Zbirka/najvredniji_predmeti
+          - https://petlja.org/biblioteka/r/Zbirka2/objedinjavanje
+          - https://petlja.org/biblioteka/r/Zbirka2/presek_tri_sortirana_niza
         guid: 3a4bc728-2c22-4306-a886-f3df96cdfac9  
       - type: quiz
         title: Квиз - Сортирање
