@@ -234,7 +234,7 @@ lessons:
         description: #Optional
         guid: 0066024f-323b-4d1c-9aa1-4598421c57b0
       - type: quiz
-        title: Џупитер и Ексел
+        title: Џупитер и Ексел - квиз
         file: testJ10.rst 
         description: #Optional
         guid: a2c6d977-59fb-4977-8353-830e2b7ed382
