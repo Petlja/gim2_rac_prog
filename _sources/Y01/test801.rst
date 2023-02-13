@@ -89,7 +89,7 @@
       :answer_b: 1 2 3 4
       :answer_c: a b c d
       :answer_d: error
-      :correct: d
+      :correct: a
       :feedback_a: Тачно!
       :feedback_b: Пробај поново!
       :feedback_c: Пробај поново!
