@@ -9,25 +9,25 @@ description:
     text: Runestone Interactive
   longDescription: '<div class="document">
 
-    <p>Овај курс је намењен ученицима 2. разреда гимназије за предмет Рачунарство
+    <p>Овај курс је намењен ученицима другог разреда гимназије за предмет Рачунарство
     и информатика у току другог полугодишта.
 
-    У оквиру овог курса детаљно је  обрађена наставна тема Рад са подацима у текстуалном
+    У оквиру овог курса детаљно је обрађена наставна тема Рад са подацима у текстуалном
     програмском језику и Програмирање.
 
     Курс у потпуности прати план наставе и учења за овај предмет. Курс је организован
     по двочасима.
 
-    Током курса детаљно се изучава окружење Џупитер за обраду, визуализацију и анализи
+    Током курса детаљно се изучава окружење Џупитер за обраду, визуализацију и анализу
     података.
 
     Такође, у овом курсу се наставља детаљније изучавање програмског језика Пајтон
     кроз основне
 
-    алгоритме над серијама података. Материјал намењен за један двочас се састоји
+    алгоритме над серијама података. Материјал намењен за један двочас састоји се
     од лекције, дела са питалицама,
 
-    којима се ученицима скреће пажња на најбитније делове из садржаја лекције и  квизова,
+    којима се ученицима скреће пажња на оно најбитније из садржаја лекције и  квизова,
 
     који имају за циљ проверу усвојеног градива.</p>
 
@@ -50,14 +50,14 @@ description:
 
     '
   requirements:
-  - Имаш инсталиран Пајтон
-  - Имаш рачунар са приступом интернету
+  - да имаш инсталиран Пајтон
+  - да имаш рачунар са приступом интернету
   shortDescription: Анализа података у Џупитеру и технике програмирања за други разред
     гимназије
   toc:
   - Intro to Petljadoc INDEX.yaml
   willLearn:
-  - РАД СА ПОДАЦИМА У ТЕКСТУАЛНОМ ПРОГРАМСКОМ ЈЕЗИКУ (ПТПЈ)
+  - РАД СА ПОДАЦИМА У ТЕКСТУАЛНОМ ПРОГРАМСКОМ ЈЕЗИКУ
   - Програмски језици и окружења погодни за анализу и обраду података.
   - Унос података у једнодимензионе низове.
   - Једноставне анализе низова података помоћу библиотечких функција (сабирање, просек,
@@ -65,7 +65,7 @@ description:
   - Графичко представљање низова података.
   - Унос и представљање табеларно записаних података.
   - Анализе табеларно записаних података (просек сваке колоне, минимум сваке врсте,
-    ...).
+    итд.).
   - Обраде табеларно записаних података (сортирање, филтрирање, ...).
   - ПРОГРАМИРАЊЕ У ПАЈТОНУ (ПРОГ)
   - Основни алгоритми над серијама података (бројање, одређивање збира, производа,
@@ -79,18 +79,21 @@ lessons:
   - description: ''
     file: howto.html
     guid: 2cee184a-c1f8-48a8-b74d-0ad48d28f258
+    normalized_title: Како да користиш овај приручник
     src: howto.rst
     title: Како да користиш овај приручник
     type: reading
   - description: ''
     file: J0A.html
     guid: a74ee2ce-a1ce-4f89-b23c-3c127a9c5ee7
+    normalized_title: Покретање Џупитер радних свески
     src: J0A.rst
     title: Покретање Џупитер радних свески
     type: reading
   - description: ''
     file: J01.html
     guid: 13ba6234-160c-400c-b9bf-c222ece4f1bc
+    normalized_title: Увод у Џупитер
     src: J01.rst
     title: Увод у Џупитер
     type: reading
@@ -104,9 +107,17 @@ lessons:
   - description: ''
     file: Podsetnik - Pajton.html
     guid: aafcbaab-8b48-4d70-a713-c58186907dc4
+    normalized_title: Подсетник Пајтон
     src: Podsetnik - Pajton.rst
     title: Подсетник Пајтон
     type: reading
+  - description: ''
+    file: pajton_test.html
+    guid: f182382f-b23e-4a63-9068-cae691f42c3b
+    normalized_title: Квиз - Пајтон
+    src: pajton_test.rst
+    title: Квиз - Пајтон
+    type: quiz
   archived-activities: []
   description: Your first lesson. Description is not required attribute
   folder: podsetnik
@@ -117,32 +128,44 @@ lessons:
   - description: ''
     file: L801.html
     guid: c446aa22-83a1-4903-b9f1-a07fcda3164e
+    normalized_title: Увод у процесирање низова података
     src: L801.rst
     title: Увод у процесирање низова података
     type: reading
   - description: ''
     file: 03_zadaci.html
     guid: 4a696f93-e418-4603-a88e-dcbd112e6c11
+    normalized_title: Задаци - процесирање низова
     src: 03_zadaci.rst
     title: Задаци - процесирање низова
     type: reading
   - description: ''
     file: Kreiranje lista u Pajtonu - List comprehension.html
     guid: 392fa143-13ac-4fdb-82f4-f55145f6cd11
+    normalized_title: Креирање листа у Пајтону
     src: Kreiranje lista u Pajtonu - List comprehension.rst
     title: Креирање листа у Пајтону
     type: reading
   - description: ''
+    file: 03_zadaci_2.html
+    guid: 429f7e63-fb58-4df2-9a41-119303fad31d
+    normalized_title: Задаци - Креирање листа у Пајтону
+    src: 03_zadaci_2.rst
+    title: Задаци - Креирање листа у Пајтону
+    type: reading
+  - description: ''
     file: Низови - додатни задаци.html
     guid: 1daa6860-4861-416f-ab9e-0299781652d5
+    normalized_title: Низови - додатни задаци
     src:
-    - https://petlja.org/biblioteka/r/problemi/Zbirka/ispis_u_obratnom_redosledu
-    - https://petlja.org/biblioteka/r/problemi/Zbirka/parni_i_neparni_elementi
+    - https://petlja.org/biblioteka/r/Zbirka/ispis_u_obratnom_redosledu
+    - https://petlja.org/biblioteka/r/Zbirka/parni_i_neparni_elementi
     title: Низови - додатни задаци
     type: coding-quiz
   - description: ''
     file: test801.html
     guid: 8682a28a-883c-476e-9faa-6322bf92c8ee
+    normalized_title: Квиз - Листе
     src: test801.rst
     title: Квиз - Листе
     type: quiz
@@ -156,28 +179,32 @@ lessons:
   - description: ''
     file: L805.html
     guid: 4a3c4ce4-5b6f-4a86-bc83-c875fbbc652f
+    normalized_title: Сортирање
     src: L805.rst
     title: Сортирање
     type: reading
   - description: ''
     file: 04_zadaci.html
     guid: 6a946c1a-a1c9-4256-999e-d5ae3f3c77a5
+    normalized_title: Задаци - сортирање
     src: 04_zadaci.rst
     title: Задаци - сортирање
     type: reading
   - description: ''
     file: Сортирање - додатни задаци.html
     guid: 3a4bc728-2c22-4306-a886-f3df96cdfac9
+    normalized_title: Сортирање - додатни задаци
     src:
-    - https://petlja.org/biblioteka/r/problemi/Zbirka/sortiranje_brojeva
-    - https://petlja.org/biblioteka/r/problemi/Zbirka/najvredniji_predmeti
-    - https://petlja.org/biblioteka/r/problemi/Zbirka/objedinjavanje
-    - https://petlja.org/biblioteka/r/problemi/Zbirka/presek_tri_sortirana_niza
+    - https://petlja.org/biblioteka/r/Zbirka/sortiranje_brojeva
+    - https://petlja.org/biblioteka/r/Zbirka/najvredniji_predmeti
+    - https://petlja.org/biblioteka/r/Zbirka2/objedinjavanje
+    - https://petlja.org/biblioteka/r/Zbirka2/presek_tri_sortirana_niza
     title: Сортирање - додатни задаци
     type: coding-quiz
   - description: ''
     file: test805.html
     guid: f4bd386a-8c62-494a-ad6a-ca3ba0212f35
+    normalized_title: Квиз - Сортирање
     src: test805.rst
     title: Квиз - Сортирање
     type: quiz
@@ -191,18 +218,21 @@ lessons:
   - description: ''
     file: L806.html
     guid: 7c4bf775-af06-47ef-9059-c79bde7deba2
+    normalized_title: Филтрирање и претраживање
     src: L806.rst
     title: Филтрирање и претраживање
     type: reading
   - description: ''
     file: 05_zadaci.html
     guid: 41ce3daf-2542-4e2f-a4fd-25ad2d57607c
+    normalized_title: Задаци - филтрирање и претраживање
     src: 05_zadaci.rst
     title: Задаци - филтрирање и претраживање
     type: reading
   - description: ''
     file: test806.html
     guid: ef93844c-d7e5-4b85-8f78-c521db719b2d
+    normalized_title: Квиз - Филтрирање и претраживање
     src: test806.rst
     title: Квиз - Филтрирање и претраживање
     type: quiz
@@ -216,12 +246,14 @@ lessons:
   - description: ''
     file: Predstavljanje nizova podataka.html
     guid: c1a5fe57-9934-4e63-9daa-00b18be2ca21
+    normalized_title: Представљање низова података
     src: Predstavljanje nizova podataka.rst
     title: Представљање низова података
     type: reading
   - description: ''
     file: Graficko_predstavljanje.html
     guid: 6488a57a-cfd1-453d-89c3-767bf84cc15b
+    normalized_title: Графичко представљање низова података
     src: Graficko_predstavljanje.rst
     title: Графичко представљање низова података
     type: reading
@@ -235,12 +267,14 @@ lessons:
   - description: ''
     file: Rad sa tekstualnim podacima.html
     guid: 37d711da-ebc6-46b2-901d-2c9813f2b5ed
+    normalized_title: Рад са текстуалним подацима
     src: Rad sa tekstualnim podacima.rst
     title: Рад са текстуалним подацима
     type: reading
   - description: ''
     file: tekstualne_datoteke.html
     guid: a18298fb-a83e-4c9b-8065-b70b0c7d5324
+    normalized_title: Коришћење текстуалних датотека
     src: tekstualne_datoteke.rst
     title: Коришћење текстуалних датотека
     type: reading
@@ -254,12 +288,14 @@ lessons:
   - description: ''
     file: Rad sa tabelama.html
     guid: 168af5d6-862c-4316-a38e-44fcd43e1d9a
+    normalized_title: Рад са табелама
     src: Rad sa tabelama.rst
     title: Рад са табелама
     type: reading
   - description: ''
     file: indeksiranje.html
     guid: 2eac0e8a-cb3b-4a82-a23a-403aff38933a
+    normalized_title: Индексирање табела
     src: indeksiranje.rst
     title: Индексирање табела
     type: reading
@@ -273,6 +309,7 @@ lessons:
   - description: ''
     file: obrada_prikaz.html
     guid: ca4b6b34-d937-4e5f-850d-7aa5458a58d3
+    normalized_title: Обрада и приказ табеларних података
     src: obrada_prikaz.rst
     title: Обрада и приказ табеларних података
     type: reading
@@ -286,14 +323,16 @@ lessons:
   - description: ''
     file: J10.html
     guid: 0066024f-323b-4d1c-9aa1-4598421c57b0
+    normalized_title: Џупитер и Ексел
     src: J10.rst
     title: Џупитер и Ексел
     type: reading
   - description: ''
     file: testJ10.html
     guid: a2c6d977-59fb-4977-8353-830e2b7ed382
+    normalized_title: Џупитер и Ексел - квиз
     src: testJ10.rst
-    title: Џупитер и Ексел
+    title: Џупитер и Ексел - квиз
     type: quiz
   archived-activities: []
   description: Your first lesson. Description is not required attribute
@@ -305,6 +344,7 @@ lessons:
   - description: ''
     file: projekat.html
     guid: 2ae897fb-21b9-48e4-a0ea-82ed2fe70f26
+    normalized_title: Пример скупа података за пројекто учење
     src: projekat.rst
     title: Пример скупа података за пројекто учење
     type: reading

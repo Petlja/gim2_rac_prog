@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Покретање Џупитер радних свески</title>
+    <title>Задаци - креирање листа</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
@@ -370,76 +370,150 @@
     <div id="main-content">
     
   <section id="id1">
-<h1>Покретање Џупитер радних свески<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
-<p>За тебе смо припремили пакет фајлова за вежбу са примерима радних свески које се користе у курсу и пратећим примерима података.</p>
-<p>Сви примери Џупитер радних свески који се користе у овом курсу су ти доступни тако да можеш самoстално да их покренеш и вежбаш.</p>
-<p>Џупитер интерактивне радне свеске се могу покренути на више начина, а ми ћемо ти показати како да их покренеш на свом рачунару и како да свескама приступиш онлајн, у свом браузеру.</p>
-<ol class="arabic simple">
-<li><p>Први је да преузмеш пакет фајлова за вежбу и користиш Џупитер окружење на свом рачунару,</p></li>
-<li><p>а други је да фајлове за вежбу отвараш у Џупитерлајт окружењу користећи само веб-браузер.</p></li>
-</ol>
-<p>Препоручујемо ти да на рачунару који редовно користиш преузмеш пакет фајлова за вежбу и инсталираш Џупитер,
-а када желиш да отвориш пример за вежбу са уређаја на коме немаш све то инсталирано, користиш други начин и Џупитерлајт окружење.</p>
-<p>Коришћење Џупитерлајт окружења не захтева да било шта додатно инсталираш на уређају са кога приступаш, али постоје одређена ограничења. Пре свега, промене које уносиш неће бити трајно запамћене, а поред тога, у Џупитерлајт окружењу је извршавање спорије и може се десити да не ради све на исти начин као у пуном Џупитер окружењу.</p>
+<h1>Задаци - креирање листа<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
 <section id="id2">
-<h2>Покретање Џупитер радних свески на твом рачунару<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
-<p>Ово је свакако најфлексибилнији начин да се користе Џупитер радне свеске, али зато захтева највише припрема.</p>
-<p><strong>Корак 1.</strong> Треба да имаш инсталиран Пајтон у било којој верзији између 3.7 и 3.10. Ако већ имаш инсталиран Пајтон на свом рачунару пређи на Корак 2.</p>
-<p>Ако немаш инсталиран Пајтон на свом рачунару, прати први део следећег упутства (за рад са Џупитер радним свескама ти Пајгејм не треба, зато је довољно пратити само први део упутства који се односи на Пајтон):</p>
-<p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Help/Uputstvo%20Python%20pygame.pdf">Упутство за инсталацију Пајтона</a>.</p>
-<p><strong>Корак 2.</strong> Са следећег линка</p>
-<p><a class="reference external" href="https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip">https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip</a></p>
-<p>преузми <em>ZIP</em> фајл и распакуј га у неки фолдер на свом рачунару</p>
-<figure class="align-center">
-<a class="screenshot-shadow reference internal image-reference" href="../_images/inst101m.jpg"><img alt="../_images/inst101m.jpg" class="screenshot-shadow" src="../_images/inst101m.jpg" style="width: 780px;" /></a>
-</figure>
-<p>Потом покрени команду SETUP.BAT тако што ћеш два пута кликнути на њено име:</p>
-<figure class="align-center">
-<a class="screenshot-shadow reference internal image-reference" href="../_images/inst101n.png"><img alt="../_images/inst101n.png" class="screenshot-shadow" src="../_images/inst101n.png" style="width: 780px;" /></a>
-</figure>
-<p>Ова команда ће радити неко време и при томе ће инсталирати све неопходне библиотеке
-за рад са Џупитер окружењем:</p>
-<figure class="align-center">
-<a class="screenshot-shadow reference internal image-reference" href="../_images/inst101c.jpg"><img alt="../_images/inst101c.jpg" class="screenshot-shadow" src="../_images/inst101c.jpg" style="width: 780px;" /></a>
-</figure>
-<p>Када се команда заврши у фолдеру ће се појавити команда START_JUPYTER.BAT и пречица
-START_IDLE:</p>
-<figure class="align-center">
-<a class="screenshot-shadow reference internal image-reference" href="../_images/inst101p.png"><img alt="../_images/inst101p.png" class="screenshot-shadow" src="../_images/inst101p.png" style="width: 780px;" /></a>
-</figure>
-<p>Пречица START_IDLE ће нам бити потребна у наредном сегменту курса у коме обрађујемо
-програмирање у Пајтону и за сада је слободно можемо игнорисати.</p>
-<p>За покретање Џупитера треба да покренеш команду START_JUPYTER.BAT
-тако што ћеш два пута кликнути на њено име.</p>
-<p>На твом рачунару ће се отворити веб-прегледач са страном на којој се
-виде линкови на радне свеске. Кликом на име радна свеска се отвара у новом табу веб-прегледача:</p>
-<figure class="align-center">
-<a class="screenshot-shadow reference internal image-reference" href="../_images/inst103.png"><img alt="../_images/inst103.png" class="screenshot-shadow" src="../_images/inst103.png" style="width: 780px;" /></a>
-</figure>
-<p>Крени да читаш свеске и да их извршаваш корак по корак.</p>
-<p>Ево и кратког видеа у коме је ово демонстрирано:</p>
+<h2>Задатак 1.<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
 
-    <div  id="LRMlIIv1maQ" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
-        <div style="background-image: url('https://img.youtube.com/vi/LRMlIIv1maQ/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
-        </div>
-      
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
+        <div class="course-content">
+<p>Направите листу помоћу <em>list comprehension</em> у којој су вредности 1, 3, 6, 10, 15 …, односно збирови узастопних природних бројева од 1 до n за свако n од 1 до 20.</p>
 
-        </div>
-    <div id="modal-LRMlIIv1maQ" class="ytvideoclose" style="display: none; background-color: transparent; z-index: 10000;">
-        <div style="background-color: white; position: relative; width:  780px; height:  500px; z-index: 100;" id="YTmodal-LRMlIIv1maQ">
-        </div>
-    </div>
-    
-    
-    </section>
+    </div></div>
+
+<div data-childcomponent="zadatak1_1_1" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=zadatak1_1_1 data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+          data-runortest="n"     data-hidehistory=true
+       >
+# -*- acsection: general-init -*-
+# Izmeni prvu liniju koda tako da bude oblika
+# lista = [___ for n in range(___, ___)]
+# i umesto linija stavi odgovarajuce izraze
+# -*- acsection: main -*-
+lista = []
+print(lista)
+# -*- acsection: after-main -*-
+====
+from unittest.gui import TestCaseGui
+class myTests(TestCaseGui):
+    def testOne(self):
+        for n in [20]:
+            lista = [sum(range(1,k+1)) for k in range(1, n+1)]
+            expected = str(lista)
+            actual = "\n".join(acStdout(n=n))
+            correct = (actual == expected)
+            expected = expected.replace("\n", "<br>")
+            actual = actual.replace("\n","<br>")
+            if correct:
+                comment = 'Добијен је исправан резултат' % (n,)
+            else:
+                comment = 'Програм даје погрешан резултат:<br>добијено је<br>%s<br>а очекивано<br>%s'
+                comment = comment % (actual, expected)
+            self.appendResult(correct, actual, expected, comment)
+
+myTests().main()
+</textarea>
+</div>
+</section>
+<section id="id3">
+<h2>Задатак 2.<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
+        <div class="course-content">
+<p>Направите листу [„1. broj”, „2. broj” … „20. broj”] помоћу list comprehension.</p>
+
+    </div></div>
+
+<div data-childcomponent="zadatak1-2_2" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=zadatak1-2_2 data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+          data-runortest="n"     data-hidehistory=true
+       >
+# -*- acsection: general-init -*-
+# Izmeni prvu liniju koda tako da bude oblika
+# lista = [___ +'. broj' ___]
+# i umesto linija stavi odgovarajuce izraze
+# -*- acsection: main -*-
+lista = []
+print(lista)
+# -*- acsection: after-main -*-
+====
+from unittest.gui import TestCaseGui
+class myTests(TestCaseGui):
+    def testOne(self):
+        for n in [20]:
+            lista = [str(i)+'. broj' for i in range(1,n+1)]
+            expected = str(lista)
+            actual = "\n".join(acStdout(n=n))
+            correct = (actual == expected)
+            expected = expected.replace("\n", "<br>")
+            actual = actual.replace("\n","<br>")
+            if correct:
+                comment = 'Добијен је исправан резултат' % (n,)
+            else:
+                comment = 'Програм даје погрешан резултат:<br>добијено је<br>%s<br>а очекивано<br>%s'
+                comment = comment % (actual, expected)
+            self.appendResult(correct, actual, expected, comment)
+
+myTests().main()
+</textarea>
+</div>
+</section>
 <section id="id4">
-<h2>Покретање Џупитер радних свески онлајн<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
-<p>Алтернативни начин да отвориш свеске је да одеш на овај линк на коме се налазе <a class="reference external" href="https://petlja.github.io/gim2_rac_prog_radni/lab/index.html">свеске за рад</a>. Требало би да ти се у браузеру отвори Џупитер окружење у коме ћеш моћи да наставиш са радом. Требало би да изгледа овако:</p>
-<figure class="align-center">
-<a class="screenshot-shadow reference internal image-reference" href="../_images/jupyter_lite.png"><img alt="../_images/jupyter_lite.png" class="screenshot-shadow" src="../_images/jupyter_lite.png" style="width: 780px;" /></a>
-</figure>
-<p>Овај начин покретања Џупитер окружења ти може бити згоднији, поготово што материјалима можеш приступити са било ког уређаја, али обрати посебну пажњу да се твој рад и измене које направиш на свескама у овом окружењу не чувају онлајн, већ ћеш морати да на рачунар преузмеш све што је потребно сачувати.</p>
+<h2>Задатак 3.<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
+
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
+        <div class="course-content">
+<p>Направите листу свих цифара свих бројева од 1 до 100.</p>
+
+    </div></div>
+
+<div data-childcomponent="zadatak1-3_3" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=zadatak1-3_3 data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+          data-runortest="n"     data-hidehistory=true
+       >
+# -*- acsection: general-init -*-
+# Izmeni prvu liniju koda tako da bude oblika
+# lista = [___ for i in range(___) for j in range(___)]
+# i umesto linija stavi odgovarajuce izraze
+# -*- acsection: main -*-
+lista = []
+print(lista)
+# -*- acsection: after-main -*-
+====
+from unittest.gui import TestCaseGui
+class myTests(TestCaseGui):
+    def testOne(self):
+        for n in [100]:
+            lista = [str(i)[j] for i in range(1,n+1) for j in range(len(str(i)))]
+            expected = str(lista)
+            actual = "\n".join(acStdout(n=n))
+            correct = (actual == expected)
+            expected = expected.replace("\n", "<br>")
+            actual = actual.replace("\n","<br>")
+            if correct:
+                comment = 'Добијен је исправан резултат' % (n,)
+            else:
+                comment = 'Програм даје погрешан резултат:<br>добијено је<br>%s<br>а очекивано<br>%s'
+                comment = comment % (actual, expected)
+            self.appendResult(correct, actual, expected, comment)
+
+myTests().main()
+</textarea>
+</div>
 </section>
 </section>
 
@@ -448,7 +522,7 @@ START_IDLE:</p>
     
     <div>
 <div class="lecture-prev-next-toggle">
-  <a  href="howto.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходна лекција </span> </a>
+  <a  href="Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходна лекција </span> </a>
   
   <a id="nextLectureLink" class="lecture-toggler-arrows"><span> Следећа лекција</span>  <i class="fas fa-arrow-right fa"></i> </a>
 </div>

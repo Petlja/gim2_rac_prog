@@ -2,8 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>Увод у процесирање низова података у Пајтону</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
     <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
@@ -37,113 +40,115 @@
     <link rel="stylesheet" href="../_static/petlja-course.css" type="text/css" />
     <link rel="stylesheet" href="../_static/nbstyle.css" type="text/css" />
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../_static/runestonebase.js"></script>
-    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
-    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/language_data.js"></script>
-    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
-    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
-    <script type="text/javascript" src="../_static/codemirror.js"></script>
-    <script type="text/javascript" src="../_static/xml.js"></script>
-    <script type="text/javascript" src="../_static/css.js"></script>
-    <script type="text/javascript" src="../_static/python.js"></script>
-    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
-    <script type="text/javascript" src="../_static/javascript.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
-    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
-    <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/activecode-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/activecode.js"></script>
-    <script type="text/javascript" src="../_static/clike.js"></script>
-    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
-    <script type="text/javascript" src="../_static/animationbase.js"></script>
-    <script type="text/javascript" src="../_static/mchoice.js"></script>
-    <script type="text/javascript" src="../_static/timedmc.js"></script>
-    <script type="text/javascript" src="../_static/timed.js"></script>
-    <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/mchoice-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/clickable.js"></script>
-    <script type="text/javascript" src="../_static/timedclickable.js"></script>
-    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
-    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
-    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
-    <script type="text/javascript" src="../_static/pytutor.js"></script>
-    <script type="text/javascript" src="../_static/codelens.js"></script>
-    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
-    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
-    <script type="text/javascript" src="../_static/datafile.js"></script>
-    <script type="text/javascript" src="../_static/dragndrop.js"></script>
-    <script type="text/javascript" src="../_static/timeddnd.js"></script>
-    <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/dragndrop-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/fitb.js"></script>
-    <script type="text/javascript" src="../_static/timedfitb.js"></script>
-    <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/fitb-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/matrixeq.js"></script>
-    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
-    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
-    <script type="text/javascript" src="../_static/parsons.js"></script>
-    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/parsons-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/timedparsons.js"></script>
-    <script type="text/javascript" src="../_static/poll.js"></script>
-    <script type="text/javascript" src="../_static/reveal.js"></script>
-    <script type="text/javascript" src="../_static/shortanswer.js"></script>
-    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
-    <script type="text/javascript" src="../_static/showEval.js"></script>
-    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
-    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
-    <script type="text/javascript" src="../_static/webglinteractive.js"></script>
-    <script type="text/javascript" src="../_static/FileSaver.min.js"></script>
-    <script type="text/javascript" src="../_static/Blob.js"></script>
-    <script type="text/javascript" src="../_static/karelCorner.js"></script>
-    <script type="text/javascript" src="../_static/karelRobot.js"></script>
-    <script type="text/javascript" src="../_static/karelWorld.js"></script>
-    <script type="text/javascript" src="../_static/karelChat.js"></script>
-    <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
-    <script type="text/javascript" src="../_static/karelUI.js"></script>
-    <script type="text/javascript" src="../_static/karel.js"></script>
-    <script type="text/javascript" src="../_static/karel-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/notes.js"></script>
-    <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="../_static/gallery.js"></script>
-    <script type="text/javascript" src="../_static/associations.js"></script>
-    <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/editor.js"></script>
-    <script type="text/javascript" src="../_static/jszip.js"></script>
-    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/translations.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
-    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
-    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
-    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
-    <script type="text/javascript" src="../_static/rangy-core.js"></script>
-    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
-    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
-    <script type="text/javascript" src="../_static/user-highlights.js"></script>
-    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
-    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
-    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
-    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="../_static/course-errors.js"></script>
-    <script type="text/javascript" src="../_static/petlja.js"></script>
-    <script type="text/javascript" src="../_static/require.js"></script>
+    <script src="../_static/runestonebase.js"></script>
+    <script src="../_static/skulpt.min.js"></script>
+    <script src="../_static/skulpt-stdlib.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/jquery.highlight.js"></script>
+    <script src="../_static/bookfuncs.js"></script>
+    <script src="../_static/codemirror.js"></script>
+    <script src="../_static/xml.js"></script>
+    <script src="../_static/css.js"></script>
+    <script src="../_static/python.js"></script>
+    <script src="../_static/htmlmixed.js"></script>
+    <script src="../_static/javascript.js"></script>
+    <script src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script src="../_static/activecode-i18n.en.js"></script>
+    <script src="../_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/activecode.js"></script>
+    <script src="../_static/clike.js"></script>
+    <script src="../_static/timed_activecode.js"></script>
+    <script src="../_static/animationbase.js"></script>
+    <script src="../_static/mchoice.js"></script>
+    <script src="../_static/timedmc.js"></script>
+    <script src="../_static/timed.js"></script>
+    <script src="../_static/mchoice-i18n.en.js"></script>
+    <script src="../_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/clickable.js"></script>
+    <script src="../_static/timedclickable.js"></script>
+    <script src="../_static/d3.v2.min.js"></script>
+    <script src="../_static/jquery.ba-bbq.min.js"></script>
+    <script src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script src="../_static/pytutor.js"></script>
+    <script src="../_static/codelens.js"></script>
+    <script src="../_static/skulpt.min.js"></script>
+    <script src="../_static/skulpt-stdlib.js"></script>
+    <script src="../_static/datafile.js"></script>
+    <script src="../_static/dragndrop.js"></script>
+    <script src="../_static/timeddnd.js"></script>
+    <script src="../_static/dragndrop-i18n.en.js"></script>
+    <script src="../_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/fitb.js"></script>
+    <script src="../_static/timedfitb.js"></script>
+    <script src="../_static/fitb-i18n.en.js"></script>
+    <script src="../_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/matrixeq.js"></script>
+    <script src="../_static/lib/prettify.js"></script>
+    <script src="../_static/lib/hammer.min.js"></script>
+    <script src="../_static/parsons.js"></script>
+    <script src="../_static/parsons-i18n.en.js"></script>
+    <script src="../_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/timedparsons.js"></script>
+    <script src="../_static/poll.js"></script>
+    <script src="../_static/reveal.js"></script>
+    <script src="../_static/shortanswer.js"></script>
+    <script src="../_static/timed_shortanswer.js"></script>
+    <script src="../_static/showEval.js"></script>
+    <script src="../_static/tabbedstuff.js"></script>
+    <script src="../_static/runestonevideo.js"></script>
+    <script src="../_static/webglinteractive.js"></script>
+    <script src="../_static/FileSaver.min.js"></script>
+    <script src="../_static/Blob.js"></script>
+    <script src="../_static/karelCorner.js"></script>
+    <script src="../_static/karelRobot.js"></script>
+    <script src="../_static/karelWorld.js"></script>
+    <script src="../_static/karelChat.js"></script>
+    <script src="../_static/karelRobotDrawer.js"></script>
+    <script src="../_static/karelUI.js"></script>
+    <script src="../_static/karel.js"></script>
+    <script src="../_static/karel-i18n.en.js"></script>
+    <script src="../_static/karel-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/notes.js"></script>
+    <script src="../_static/pygamelib-init.js"></script>
+    <script src="../_static/gallery.js"></script>
+    <script src="../_static/associations.js"></script>
+    <script src="../_static/associations-i18n.en.js"></script>
+    <script src="../_static/associations-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/editor.js"></script>
+    <script src="../_static/jszip.js"></script>
+    <script src="../_static/editor-i18n.en.js"></script>
+    <script src="../_static/editor-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../_static/jquery-fix.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/waypoints.min.js"></script>
+    <script src="../_static/rangy-core.js"></script>
+    <script src="../_static/rangy-textrange.js"></script>
+    <script src="../_static/rangy-cssclassapplier.js"></script>
+    <script src="../_static/user-highlights.js"></script>
+    <script src="../_static/jquery.idle-timer.js"></script>
+    <script src="../_static/processing-1.4.1.min.js"></script>
+    <script src="../_static/jquery.hotkey.js"></script>
+    <script src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../_static/course-errors.js"></script>
+    <script src="../_static/petlja.js"></script>
+    <script src="../_static/require.js"></script>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -244,6 +249,7 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../podsetnik/Podsetnik%20-%20Pajton.html><div class="studioLecture" id=activity-Podsetnik%20-%20Pajton><i class="fas fa-file-alt activity-icon"></i>Подсетник Пајтон</div></a>
+                <a href=../podsetnik/pajton_test.html><div class="studioLecture" id=activity-pajton_test><i class="far fa-question-circle activity-icon"></i>Квиз - Пајтон</div></a>
                 </div>
             </div>
                 
@@ -256,6 +262,7 @@
                 <div class="courseContentsSubSection d-none"><a href=../Y01/L801.html><div class="studioLecture" id=activity-L801><i class="fas fa-file-alt activity-icon"></i>Увод у процесирање низова података</div></a>
                 <a href=../Y01/03_zadaci.html><div class="studioLecture" id=activity-03_zadaci><i class="fas fa-file-alt activity-icon"></i>Задаци - процесирање низова</div></a>
                 <a href=../Y01/Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension.html><div class="studioLecture" id=activity-Kreiranje%20lista%20u%20Pajtonu%20-%20List%20comprehension><i class="fas fa-file-alt activity-icon"></i>Креирање листа у Пајтону</div></a>
+                <a href=../Y01/03_zadaci_2.html><div class="studioLecture" id=activity-03_zadaci_2><i class="fas fa-file-alt activity-icon"></i>Задаци - Креирање листа у Пајтону</div></a>
                 <a href=../Y01/Низови%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-Низови%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>Низови - додатни задаци</div></a>
                 <a href=../Y01/test801.html><div class="studioLecture" id=activity-test801><i class="far fa-question-circle activity-icon"></i>Квиз - Листе</div></a>
                 </div>
@@ -336,7 +343,7 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../J10/J10.html><div class="studioLecture" id=activity-J10><i class="fas fa-file-alt activity-icon"></i>Џупитер и Ексел</div></a>
-                <a href=../J10/testJ10.html><div class="studioLecture" id=activity-testJ10><i class="far fa-question-circle activity-icon"></i>Џупитер и Ексел</div></a>
+                <a href=../J10/testJ10.html><div class="studioLecture" id=activity-testJ10><i class="far fa-question-circle activity-icon"></i>Џупитер и Ексел - квиз</div></a>
                 </div>
             </div>
                 
@@ -363,8 +370,8 @@
   
     <div id="main-content">
     
-  <div class="section" id="id1">
-<h1>Увод у процесирање низова података у Пајтону<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+  <section id="id1">
+<h1>Увод у процесирање низова података у Пајтону<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
 <p>У овој лекцији ћемо:</p>
 <ol class="arabic simple">
 <li><p>поновити како се записују низови података,</p></li>
@@ -373,8 +380,8 @@
 <li><p>поновити неколико функција које су уграђене у Пајтон, и</p></li>
 <li><p>поновити како се листа може учитати од корисника (са стандардног улаза).</p></li>
 </ol>
-<div class="section" id="id2">
-<h2>Записивање низова података<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<section id="id2">
+<h2>Записивање низова података<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
 <p>Да се подсетимо, низови података се у Пајтону записују унутар угластих заграда,
 у облику <em>листе</em>. На пример, оцене неког ученика из једног предмета могу да се запишу као низ овако:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Dejanove_ocene</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
@@ -401,7 +408,7 @@
 Специфичност Пајтона је у томе да кућни бројеви, тј. индекси, увек почињу од 0, рецимо овако:</p>
 <a class="reference internal image-reference" href="../_images/Y101.jpg"><img alt="../_images/Y101.jpg" src="../_images/Y101.jpg" style="width: 600px;" /></a>
 <p>Број елемената низа се добија позивом уграђене функције <code class="docutils literal notranslate"><span class="pre">len</span></code>
-(од енглеског <em>length</em> што значи „дужина”):</p>
+(од енглеског <em>length</em> што значи „дужина“):</p>
 
 <div data-childcomponent="primer1-5" class="course-box course-box-problem course-content">
 
@@ -414,7 +421,7 @@ predmeti = ["matematika", "srpski", "likovno", "istorija", "fizičko"]
 print(len(predmeti))
 </textarea>
 </div>
-<p>Ако желимо да приступимо појединачној кућици довољно је да наведемо њену „адресу” која се,
+<p>Ако желимо да приступимо појединачној кућици, довољно је да наведемо њену „адресу“ која се,
 као и поштанска адреса, састоји од имена улице иза кога се наводи кућни број, рецимо овако:</p>
 
 <div data-childcomponent="primer1-6" class="course-box course-box-problem course-content">
@@ -429,8 +436,8 @@ print(Dejanove_ocene[0])
 </textarea>
 </div>
 <p>Вредности бројева у кућицама се могу мењати веома једноставно.
-Рецимо, ако Дејан је поправио оцену која је уписана у прву кућицу
-(<em>чији индекс је 0</em>) то можемо регистровати овако:</p>
+Рецимо, ако је Дејан поправио оцену која је уписана у прву кућицу
+(<em>чији индекс је 0</em>), то можемо регистровати овако:</p>
 
 <div data-childcomponent="primer1-7" class="course-box course-box-problem course-content">
 
@@ -472,18 +479,18 @@ for i in range(5):
         <div class="course-content">
             
 <p>Изврши исти програм и у Пајтон окружењу!</p>
-<p>Покрени овај програм на свом рачунару тако што ћеш у <a class="reference external" href="https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip">фолдеру за рад офлајн</a>, покренути IDLE и из потфолдеру <code class="docutils literal notranslate"><span class="pre">P01</span></code> извршити програм <code class="docutils literal notranslate"><span class="pre">Dejanove_ocene.py</span></code>.</p>
+<p>Покрени овај програм на свом рачунару тако што ћеш у <a class="reference external" href="https://github.com/Petlja/gim2_rac_prog_radni/archive/refs/heads/master.zip">пакету фајлова за вежбу</a>, покренути <em>IDLE</em> и из потфолдеру <code class="docutils literal notranslate"><span class="pre">P01</span></code> извршити програм <code class="docutils literal notranslate"><span class="pre">Dejanove_ocene.py</span></code>.</p>
 
     </div></div>
-</div>
-<div class="section" id="id4">
-<h2>Стандардне функције<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-<p>Како би се писање програма поједноставило за велики број важних задатака који се веома
+</section>
+<section id="id4">
+<h2>Стандардне функције<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
+<p>Како би се писање програма поједноставило, за велики број важних задатака који се веома
 често користе у Пајтону већ постоје функције које их обављају. На пример, функција
 <code class="docutils literal notranslate"><span class="pre">len</span></code> рачуна дужину низа, као што смо већ видели.
 Одређивање најмањег и највећег елемента низа бројева спадају међу важне задатке,
 и зато Пајтон има уграђене функције <code class="docutils literal notranslate"><span class="pre">min</span></code> и <code class="docutils literal notranslate"><span class="pre">max</span></code> које могу да одреде најмањи,
-односно, највећи елемент неколико бројева који су унапред наведени, или целог низа бројева:</p>
+односно највећи елемент неколико бројева који су унапред наведени, или целог низа бројева:</p>
 
 <div data-childcomponent="primer1-9" class="course-box course-box-problem course-content">
 
@@ -519,8 +526,8 @@ print("Najmanja Dejanova ocena je", min(Dejanove_ocene))
 print("Najveca Dejanova ocena je", max(Dejanove_ocene))
 </textarea>
 </div>
-<div class="section" id="id5">
-<h3>Пример 1.<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<section id="id5">
+<h3>Пример 1.<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
 <p>Променљива <code class="docutils literal notranslate"><span class="pre">Zikine_ocene</span></code> садржи Жикине оцене из информатике. Она је сакривена негде на овој страни и ти је не видиш.
 У следећем малом програму поправи програмски код тако да добијеш највећу и најмању Жикину оцену из информатике,
 као и колико оцена је Жика добио из информатике.</p>
@@ -555,9 +562,9 @@ class myTests(TestCaseGui):
 myTests().main()
 </textarea>
 </div>
-</div>
-<div class="section" id="id6">
-<h3>Пример 2.<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="id6">
+<h3>Пример 2.<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
 <p>Функција <code class="docutils literal notranslate"><span class="pre">sum</span></code> рачуна збир елемената низа, рецимо овако:</p>
 
 <div data-childcomponent="primer1-13" class="course-box course-box-problem course-content">
@@ -576,7 +583,7 @@ print(sum(brojevi))
 \[\frac{\mathrm{збир\ свих\ оцена}}{\mathrm{укупан\ број\ оцена}}\]</div>
 <p>У следећем малом програму поправи означени ред тако да добијеш израз који рачуна средњу вредност
 Жикиних оцена из информатике. Као и раније, Жикине оцене из информатике су смештене у променљиву
-<code class="docutils literal notranslate"><span class="pre">Zikine_ocene</span></code> која је сакривена од тебе, али је програм види.</p>
+<code class="docutils literal notranslate"><span class="pre">Zikine_ocene</span></code>, која је сакривена од тебе, али је програм види.</p>
 
 <div data-childcomponent="primer1-14" class="course-box course-box-problem course-content">
 <p>У наредби испод уместо 0 упиши ИЗРАЗ који ће на основу низа оцена
@@ -602,10 +609,10 @@ class myTests(TestCaseGui):
 myTests().main()
 </textarea>
 </div>
-</div>
-</div>
-<div class="section" id="id7">
-<h2>Дефинисање функција и минимум низа<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="id7">
+<h2>Дефинисање функција и минимум низа<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h2>
 <p>Када неки компликован процес треба поновити више пута, а не постоји већ дефинисана функција
 која то може да уради за нас, постоји могућност да дефинишемо своју функцију.
 Функција је мала целина која мора бити именована како бисмо касније могли да је
@@ -631,7 +638,7 @@ def izvestaj_o_ocenama(ime_ucenika, spisak_predmeta, ocene):
     print(&quot;Učenik:&quot;, ime_ucenika)
     n = len(spisak_predmeta)
     for i in range(n):
-       print(&quot;-&quot;, spisak_predmeta[i], ocene[i])
+        print(&quot;-&quot;, spisak_predmeta[i], ocene[i])
 
 # Сада је можемо позвати више пута ако нам треба извештај о оценама
 # за неколико ученика
@@ -654,12 +661,12 @@ izvestaj_o_ocenama(&quot;Milena&quot;, predmeti, Milenine_ocene)
         <div class="course-content">
             
 <p>Изврши исти програм и у Пајтон окружењу!</p>
-<p>Покрени овај програм на свом рачунару тако што ћеш у <a class="reference external" href="https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip">фолдеру за рад офлајн</a>, покренути IDLE и из потфолдеру <code class="docutils literal notranslate"><span class="pre">P06</span></code> извршити програм <code class="docutils literal notranslate"><span class="pre">Ocene_izvestaj.py</span></code>.</p>
+<p>Покрени овај програм на свом рачунару тако што ћеш у <a class="reference external" href="https://github.com/Petlja/gim2_rac_prog_radni/archive/refs/heads/master.zip">пакету фајлова за вежбу</a>, покренути <em>IDLE</em> и из потфолдеру <code class="docutils literal notranslate"><span class="pre">P06</span></code> извршити програм <code class="docutils literal notranslate"><span class="pre">Ocene_izvestaj.py</span></code>.</p>
 
     </div></div>
 <p>Функције се најчешће користе за аутоматизацију релативно компликованих рачунских процеса.</p>
-<div class="section" id="id9">
-<h3>Пример 3.<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<section id="id9">
+<h3>Пример 3.<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
 <p>Написати функцију <code class="docutils literal notranslate"><span class="pre">min_niza(A)</span></code> која одређује најмањи елемент низа <code class="docutils literal notranslate"><span class="pre">A</span></code>
 и враћа га као резултат свог рада, али без коришћења уграђене функције <code class="docutils literal notranslate"><span class="pre">min</span></code>.</p>
 <p><em>Решење.</em> Погледајмо, прво, како бисмо овај проблем решили када тражимо мањи од два броја, А0 и А1:</p>
@@ -669,7 +676,7 @@ izvestaj_o_ocenama(&quot;Milena&quot;, predmeti, Milenine_ocene)
 </pre></div>
 </div>
 <p>Дакле, ако је А0 мањи, то је резултат рада. У супротном је А1 резултат рада.</p>
-<p>Ова идеја ради у случају два броја, али није погодна за уопштења.
+<p>Ова идеја ради у случају два броја, али није погодна за уопштавања.
 Зато ћемо написати нову верзију функције <code class="docutils literal notranslate"><span class="pre">manji_od_dva</span></code> која на први поглед делује чудно,
 али ће ускоро постати јасно зашто је погодна.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">manji_od_dva_ponovo</span><span class="p">(</span><span class="n">A0</span><span class="p">,</span> <span class="n">A1</span><span class="p">):</span>
@@ -678,7 +685,7 @@ izvestaj_o_ocenama(&quot;Milena&quot;, predmeti, Milenine_ocene)
     <span class="k">return</span> <span class="n">manji</span>
 </pre></div>
 </div>
-<p>Идеја се састоји у томе да гледамо елементе један по један, као да нам долазе на траци. Када стигне први елемент, то је најмањи елемент кога смо до сада уочили. Када стигне други елемент проверимо како се он односи према до сада најмањем уоченом елементу и ако је мањи од најмањег до сада, он постаје нови најмањи елемент.</p>
+<p>Идеја се састоји у томе да гледамо елементе један по један, као да нам долазе на траци. Када стигне први елемент, то је најмањи елемент који смо до сада уочили. Када стигне други елемент, проверимо како се он односи према до сада најмањем уоченом елементу и ако је мањи од најмањег до сада, он постаје нови најмањи елемент.</p>
 <p>Ево како се идеја коју смо управо описали проширује на три елемента:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">najmanji_od_tri</span><span class="p">(</span><span class="n">A0</span><span class="p">,</span> <span class="n">A1</span><span class="p">,</span> <span class="n">A2</span><span class="p">):</span>
     <span class="n">najmanji</span> <span class="o">=</span> <span class="n">A0</span>
@@ -733,17 +740,17 @@ print(min_niza([3,1,5,-1,2]))
         <div class="course-content">
             
 <p>Изврши исти програм и у Пајтон окружењу!</p>
-<p>Покрени овај програм на свом рачунару тако што ћеш у <a class="reference external" href="https://github.com/Petlja/revizija_2_radni/archive/refs/heads/main.zip">фолдеру за рад офлајн</a>, покренути IDLE и из потфолдеру <code class="docutils literal notranslate"><span class="pre">P01</span></code> извршити програм <code class="docutils literal notranslate"><span class="pre">Min_niza.py</span></code>.</p>
+<p>Покрени овај програм на свом рачунару тако што ћеш у <a class="reference external" href="https://github.com/Petlja/gim2_rac_prog_radni/archive/refs/heads/master.zip">пакету фајлова за вежбу</a>, покренути <em>IDLE</em> и из потфолдеру <code class="docutils literal notranslate"><span class="pre">P01</span></code> извршити програм <code class="docutils literal notranslate"><span class="pre">Min_niza.py</span></code>.</p>
 
     </div></div>
-</div>
-</div>
-<div class="section" id="id11">
-<h2>Учитавање низова<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="id11">
+<h2>Учитавање низова<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h2>
 <p>Постоје ситуације када је потребно од корисника учитати низ података и обрадити га. У следећем примеру
 ћемо се подсетити како се низови бројева учитавају од корисника, односно уносе помоћу тастатуре.</p>
-<div class="section" id="id12">
-<h3>Пример.<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<section id="id12">
+<h3>Пример.<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h3>
 <p>Написати програм који од корисника учитава оцене из неколико предмета, а онда исписује из којих предмета има најлошију оцену, а из којих има
 најбољу оцену.</p>
 
@@ -753,54 +760,52 @@ print(min_niza([3,1,5,-1,2]))
       data-timelimit=25000  data-codelens="true"  
     data-audio=''   
              data-passivecode="true"  data-hidehistory=true
-    data-includesrc="# Učitavanje podataka
-n = int(input(&quot;Koliko ima predmeta? &quot;))
+    data-includesrc="n = int(input(&quot;Koliko ima predmeta? &quot;))         # unos broja predmeta
 print(&quot;Za&quot;, n, &quot;predmeta unesi imena i ocene&quot;)
-predmeti = []
+predmeti = []                                   # liste predmeti i ocene su prazne na početku
 ocene = []
-for i in range(n):
-  ime = input(&quot;Ime &quot;+ str(i+1) + &quot;. predmeta: &quot;)
-  ocena = int(input(&quot;Ocena: &quot;))
-  predmeti.append(ime)
-  ocene.append(ocena)
+for i in range(n):                                  # za svaki predmet 
+    ime = input(&quot;Ime &quot;+ str(i+1) + &quot;. predmeta: &quot;)    # prvo unosimo ime
+    ocena = int(input(&quot;Ocena: &quot;))                     # pa onda ocenu koju pretvaramo u integer
+    predmeti.append(ime)                 # listi predmeti dodajemo novo ime
+    ocene.append(ocena)                  # listi ocene dodajemo novu ocenu
 
-# Računanje minimuma i maksimuma
+# računanje minimuma i maksimuma
 min_ocena = min(ocene)
 max_ocena = max(ocene)
 
-# Ispis predmeta iz kojih je učenih najbolje, odnosno, najlošije ocenjen
-if min_ocena == max_ocena:
-  print(&quot;Ti si primer konstantnog kvaliteta!&quot;)
-else:
-  print(&quot;Tvoji najbolje ocenjeni predmeti su:&quot;)
-  for i in range(n):
-    if(ocene[i] == max_ocena):
-      print(&quot;-&quot;, predmeti[i])
-  print(&quot;Tvoji najlošije ocenjeni predmeti su:&quot;)
-  for i in range(n):
-    if(ocene[i] == min_ocena):
-      print(&quot;-&quot;, predmeti[i])
-"   >
+# ispis predmeta iz kojih je učenih najbolje, odnosno, najlošije ocenjen
+if min_ocena == max_ocena:                      # ako su najveća i najmanja ocena iste
+    print(&quot;Ti si primer konstantnog kvaliteta!&quot;)  # ispiši ovu poruku
+else:                                           # u protivnom
+    print(&quot;Tvoji najbolje ocenjeni predmeti su:&quot;) # ispiši liste najbolje i nalošije ocenjenih predmeta
+    for i in range(n):
+        if(ocene[i] == max_ocena):
+            print(&quot;-&quot;, predmeti[i])
+    print(&quot;Tvoji najlošije ocenjeni predmeti su:&quot;)
+    for i in range(n):
+        if(ocene[i] == min_ocena):
+            print(&quot;-&quot;, predmeti[i])"   >
 
 
 </textarea>
 </div>
-<p>У овом програму имамо два низа: низ у коме памтимо имена предмета и низ у коме памтимо оцене. Оба низа су на почетку празни, а током рада
-for-циклуса се на крај сваког од њих дода по један податак: име новог предмета и оцена из тог предмета. Да се подсетимо, наредба</p>
+<p>У овом програму имамо два низа: низ у коме памтимо имена предмета и низ у коме памтимо оцене. Оба низа су на почетку празна, а током рада
+for циклуса се на крај сваког од њих дода по један податак: име новог предмета и оцена из тог предмета. Да се подсетимо, наредба</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">L</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>додаје податак <code class="docutils literal notranslate"><span class="pre">x</span></code> на крај листе <code class="docutils literal notranslate"><span class="pre">L</span></code>.</p>
-<p>Након тога позивом стандардних функција <code class="docutils literal notranslate"><span class="pre">min</span></code> и <code class="docutils literal notranslate"><span class="pre">mix</span></code> одредимо најлошију и најбољу оцену коју је ученик добио, па у последњем делу програма
-(у „трећој фази”) испишемо имена предмета из којих је ученик најбоље оцењен и имена предмета из којих је ученик најлошије оцењен.</p>
+<p>Након тога позивом стандардних функција <code class="docutils literal notranslate"><span class="pre">min</span></code> и <code class="docutils literal notranslate"><span class="pre">max</span></code> одредимо најлошију и најбољу оцену коју је ученик добио, па у последњем делу програма
+(у „трећој фази“) испишемо имена предмета из којих је ученик најбоље оцењен и имена предмета из којих је ученик најлошије оцењен.</p>
 
     <div class="note-wrapper infonote-type">
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
             
-<p>Да би видео како програм ради покрени IDLE окружење из фолдера <code class="docutils literal notranslate"><span class="pre">P01</span></code> учитај програм <code class="docutils literal notranslate"><span class="pre">Naj_predmeti.py</span></code> и изврши га.</p>
-<p>Ево и кратке видео демонстрације:</p>
+<p>Да би видео како програм ради, покрени <em>IDLE</em> окружење из фолдера <code class="docutils literal notranslate"><span class="pre">P01</span></code>, учитај програм <code class="docutils literal notranslate"><span class="pre">Naj_predmeti.py</span></code> и изврши га.</p>
+<p>Ево и кратке видео-демонстрације:</p>
 
     <div  id="GnsDOougiPA" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/GnsDOougiPA/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
@@ -809,8 +814,8 @@ for-циклуса се на крај сваког од њих дода по ј�
       
 
         </div>
-    <div id="modal-GnsDOougiPA" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
-        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal-GnsDOougiPA">
+    <div id="modal-GnsDOougiPA" class="ytvideoclose" style="display: none; background-color: transparent; z-index: 10000;">
+        <div style="background-color: white; position: relative; width:  780px; height:  500px; z-index: 100;" id="YTmodal-GnsDOougiPA">
         </div>
     </div>
     
@@ -836,9 +841,9 @@ Zikine_ocene = [2, 4, 3, 5, 4, 5, 4, 3]
 </div>
 
     </div>
-    </div>
-</div>
-</div>
+    </section>
+</section>
+</section>
 
 
     </div>
