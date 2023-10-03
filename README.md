@@ -2,7 +2,7 @@
 
 Ovaj repozitorijum posvećen je kursu za drugi razred gimnazije za nastavnu temu Programiranje.
 
-Kurs je na Petljom portalu dotupan ovde: https://petlja.org/kurs/478/0
+Kurs je na Petljinom portalu dotupan ovde: https://petlja.org/kurs/478/0
 
 Kurs možete integrisati u svoj LMS koristeći SCORM pakete koji se mogu preuzeti sa: https://github.com/Petlja/gim2_rac_prog/releases
 
